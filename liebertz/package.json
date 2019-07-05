@@ -1,0 +1,18 @@
+{
+    "name": "liebertz",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "browser-sync start --directory --server --files \"**/*\""
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "  url": "https://github.com/teloe/liebertz/issues"
+    },
+    "homepage": "https://github.com/teloe/liebertz#readme",
+    "devDependencies": {
+        "browser-sync": "^2.26.3"
+    }
+}

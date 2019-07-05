@@ -1,0 +1,225 @@
+/*
+Theme Name: {{TAG}}
+Author: NKP Development Team
+Description: NKP Medical responsive theme
+Template: nkpv2
+*/
+
+/*---- Do Not Remove ----*/
+@import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
+@import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+/*---- Do Not Remove ----*/
+
+/*---- GENERAL ----*/
+body{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+h1{}
+h2{}
+
+a,
+a:visited,
+a:link {
+    /* color: #1174a6; */
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+a:hover {
+    /* color: #09557c; */
+    text-decoration: none;
+    outline: none;
+}
+
+ol,ul{clear:both}
+.fl {float:left;} .fr {float:right;} .fn {float:none; display:inline-block;}
+.tal {text-align:left;} .tar {text-align:right;} .tac {text-align:center;}
+.clr-l {clear:left;} .clr-r {clear:right;} .clr, .clear {clear:both;}
+.nodisp {display:none;}
+
+/* START SITE STYLE */
+/* Variables -------*/
+:root {
+    /* Colors */
+    --main-text-color: #2d231b;
+    --sub-header-color: #bacc6a;
+    --dark-green: #5c8428;
+    --btn-bg: #2D231A;
+    /* Fonts */
+    --header-font: 'PoynterOSDisp', serif;
+    --main-font: 'Soleil', sans-serif;
+    /* Sizing */
+    --large-header-font-size: 140px;
+    --large-header-line-height: 140px;
+    --section-header-font-size: 48px;
+    --section-header-line-height: 48px;
+    --main-text-font-size: 14px;
+    --main-text-line-height: 34px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: var(--main-font);
+}
+h1 {
+    font-size: var(--large-header-font-size);
+    line-height: var(--large-header-line-height);
+    font-weight: 300;
+}
+h2 {
+    font-size: var(--section-header-font-size);
+    line-height: var(--section-header-line-height);
+    font-weight: 300;
+}
+h1,h2 {
+    font-family: var(--header-font);
+    position: relative;
+}
+h3, h4, h5, h6, p {
+    font-family: var(--main-font);
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--main-text-color);
+}
+p {
+    font-size: var(--main-text-font-size);
+    line-height: var(--main-text-line-height);
+}
+.section-header::after {
+    content: '';
+    background: var(--dark-green);
+    margin-left: 30px;
+    display: inline-block;
+    position: absolute;
+}
+h1.section-header::after {
+    width: 5px;
+    height: 150px;
+}
+h2.section-header::after {
+    width: 3.5px;
+    height: 57px;
+}
+.subheader, .btn {
+    color: var(--sub-header-color) !important;
+}
+.btn {
+    position: relative;
+    background: var(--btn-bg);
+    padding: 30px;
+    display: block;
+    max-width: 330px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-shadow: 10px 10px 0 var(--sub-header-color);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.btn:hover {
+    background: #080604;
+}
+.btn:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+#slider .slides li {
+    float:none !important;
+}
+#slider .slides .slide1 {
+    background: url(./images/main-banner-bg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 920px;
+}
+#slider .slides .slide1 #logo {
+    padding-top: 30px;
+}
+#slider .slides .slide1 .grid-50 {
+    margin: 200px 0;
+    background: url(images/watermark1.png) no-repeat center;
+    background-size: contain;
+}
+#slider .slides .slide1 .grid-50>div h1 {
+    font-size: 73px;
+    line-height: 70px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0);
+}
+#slider .slides .slide1 .grid-50>div h1:nth-of-type(2) {
+    text-indent: 110px;
+}
+#slider .slides .slide1 .grid-50>div h1:nth-of-type(3) {
+    text-indent: 210px;
+}
+#slider .slides .slide1 .btn {
+    color: var(--main-text-color) !important;
+    background: rgba(255,255,255,0.5);
+    margin: 20px auto 10px;
+    max-width: 100%;
+}
+#slider .slides .slide1 .btn:hover {
+    -webkit-box-shadow: inset 540px 0 0 0 rgba(186,204,106,0.5);
+    box-shadow: inset 540px 0 0 0 rgba(186,204,106,0.5);
+}
+
+.welcome {
+    padding: 80px 0;
+}
+
+
+/* END SITE STYLE */
+
+/* NKP GLOBAL STYLES */
+img {border:0px;}
+.img-resp, .img-responsive {max-width:100%; height:auto;}
+img.left, img.alignleft, .img-l {float:left; margin:10px 15px 0px 0px;}
+img.right, img.alignright, .img-r {float:right; margin:10px 0px 0px 15px;}
+
+iframe{width:100%; height:500px;}
+
+.embed-responsive{ position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; margin-bottom:20px }
+.embed-responsive iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid #ccc; }
+input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:all .5s ease-out; transition:all .5s ease-out;}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"], .contact-form input[type="url"], .contact-form textarea { width: 100%; border: 1px solid #CCC; background: #FFF; margin: 0 0 10px; padding: 15px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; box-sizing:border-box;}
+.contact-form input[type="text"]:focus, .contact-form input[type="email"]:focus, .contact-form input[type="tel"]:focus, .contact-form textarea:focus {background:rgba(1,105,147,0.4); color:#fff;}
+.contact-form input[type="submit"], .contact-form input[type="submit"][disabled] {width:100px; height:26px; background:#adadad; border:0px; color:#FFF; text-transform:uppercase; clear:both; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; outline:none;}.contact-form input[type="submit"]:hover, .contact-form input[type="submit"][disabled]:hover {background:#96bdda; border:2px solid #1174a6;}
+.contact-form textarea { height: 120px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.contact-form ::-webkit-input-placeholder { color: #777; } :-moz-placeholder { color: #777; } :-ms-input-placeholder { color: #777; }
+.contact-form input.wpcf7-captchar { width: 135px; }
+
+/* desktop view bxa gallery */
+.patient-single {width:50%}
+.patient-single img {width:96%; height:auto;}
+/* NKP GLOBAL STYLES */
+
+#nav{background-color: #000; height: 50px;}
+
+@media only screen and (max-width: 740px) {
+	iframe{width:100%; height:280px;}
+	.patient-single {width:100%!important;}
+}/*MOBILE*/
+
+@media only screen and (max-width: 960px) and (min-width: 740px) {
+
+}/*TABLET*/
+
+@media only screen and (max-width: 1024px) and (min-width: 960px) {
+
+}/*960 DESKTOP*/
