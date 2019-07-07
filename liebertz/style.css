@@ -262,7 +262,7 @@ h2.section-header::after {
     width: 70%;
     background: url(images/bxa-bg.jpg) no-repeat center;
     background-size: cover;
-    min-height: 650px;
+    min-height: 700px;
     position: absolute;
     z-index: -1;
 }
@@ -271,6 +271,12 @@ h2.section-header::after {
     padding: 60px 30px;
     background: #fff;
     margin-top: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+.bxa .btn {
+    margin-top: 50px;
 }
 
 .contact {
