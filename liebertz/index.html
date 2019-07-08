@@ -55,7 +55,7 @@
                             </a>
                         </div>
                         <div class="fixed-header">
-                            <button class="hamburger hamburger--spin" type="button" onclick="openNav()">
+                            <button class="hamburger hamburger--spin" type="button">
                                 <span class="menu">MENU</span>
                                 <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
@@ -208,10 +208,11 @@ wrinkles and lines, sun damage and sagging skin that can make you look angry, sa
         jQuery(document).ready(function($) {
             $('.hamburger').on('click', function(){
                 $('.hamburger').toggleClass('is-active');
+                $('nav').css('transform', 'translateX(0)');
             });
-            function openNav() {
-                $('nav').css('transformX', '450px');
-            }
+            <!-- function openNav() { -->
+                <!-- $('nav').css('transform', 'translateX(450px)'); -->
+            <!-- } -->
             function closeNav() {
                 $('nav').css('transformX', '0');
             }
