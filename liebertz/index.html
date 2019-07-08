@@ -15,13 +15,14 @@
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/kdm0pws.css">
 
 </head>
 <body>
 
-	<!-- <nav>
+    <nav>
         <div class="stellarnav">
              <ul>
                 <li><a href="#">Item</a></li>
@@ -29,19 +30,19 @@
                 <li><a href="#">Item</a></li>
                 <li><a href="#">Item</a></li>
                 <li><a href="#">Last Dropdown Item</a>
-                	<ul>
-                		<li><a href="#">Item</a></li>
-                		<li><a href="#">Item</a>
-                			<ul>
-                				<li><a href="#">Drop left menu item</a></li>
-                				<li><a href="#">Drop left menu item</a></li>
-                			</ul>
-                		</li>
-                	</ul>
+                    <ul>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a>
+                            <ul>
+                                <li><a href="#">Drop left menu item</a></li>
+                                <li><a href="#">Drop left menu item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
              </ul>
         </div>
-	</nav> -->
+    </nav>
 
 	<div id="slider">
 	    <ul class="slides">
@@ -52,6 +53,14 @@
                             <a href="#" title="">
                                 <img src="./images/yb-logo.png" alt="Yarrow Bay Plastic Surgery">
                             </a>
+                        </div>
+                        <div class="fixed-header">
+                            <button class="hamburger hamburger--spin" type="button" onclick="openNav()">
+                                <span class="menu">MENU</span>
+                                <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
                         </div>
                         <div class="grid-50 tablet-grid-50">
                             <div>
@@ -158,12 +167,11 @@ wrinkles and lines, sun damage and sagging skin that can make you look angry, sa
 
     <section class="contact">
         <div class="grid-container">
-            <div class="grid-80 tablet-grid-80 mobile-grid-100 suffix-10 grid-parent">
-                <div class="grid-50">
-                    <img class="img-resp" src="images/office.jpg" alt="Office">
+            <div class="grid-80 tablet-grid-80 mobile-grid-100 prefix-10">
+                <div class="grid-50 grid-parent">
                 </div>
-                <div class="grid-50">
-                    
+                <div class="grid-50 grid-parent">
+                    <h2 class="section-header">Contact Us</h2>
                 </div>
             </div>
         </div>
@@ -173,10 +181,22 @@ wrinkles and lines, sun damage and sagging skin that can make you look angry, sa
         <div class="grid-container">
             <div class="grid-40 tablet-grid-40 mobile-grid-100">
                 <img class="img-resp" src="images/yb-logo1.png" alt="Yarrow Bay Plastic Surgery">
-                <p>5209 lake ashington blvd ne, suite 115,<br>kirkland, wa 98033</p>
+                <div class="location">
+                    <i class="fas fa-map-marker"></i>
+                    <div>
+                        <p>5209 Lake Washington Blvd NE, Suite 115,</p>
+                        <p>Kirkland, WA 98033</p>
+                    </div>
+                </div>
             </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 tar">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <br>
+                <a href="" class="phone">425.822.0300</a>
+                <p>Yarrow Bay Plastic Surgery Copyright &copy; 2019 • All Rights Reserved</p>
             </div>
         </div>
     </footer>
@@ -184,6 +204,19 @@ wrinkles and lines, sun damage and sagging skin that can make you look angry, sa
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.hamburger').on('click', function(){
+                $('.hamburger').toggleClass('is-active');
+            });
+            function openNav() {
+                $('nav').css('transformX', '450px');
+            }
+            function closeNav() {
+                $('nav').css('transformX', '0');
+            }
+        });
+    </script>
 
 </body>
 </html>
