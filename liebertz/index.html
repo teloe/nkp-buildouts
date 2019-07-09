@@ -15,7 +15,6 @@
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="css/hamburgers.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/kdm0pws.css">
 
@@ -24,7 +23,7 @@
 
     <nav>
         <button class="close-btn" type="button">
-            <i class="fas fa-times"></i>
+            <img src="images/close.ico" alt="" class="img-resp" width="45">
         </button>
         <div class="stellarnav">
              <ul>
@@ -32,7 +31,7 @@
                 <li><a href="#">Item</a></li>
                 <li><a href="#">Item</a></li>
                 <li><a href="#">Item</a></li>
-                <li><a href="#">Last Dropdown Item</a>
+                <!-- <li><a href="#">Last Dropdown Item</a>
                     <ul>
                         <li><a href="#">Item</a></li>
                         <li><a href="#">Item</a>
@@ -42,30 +41,34 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
+                </li> -->
              </ul>
         </div>
     </nav>
+
 
 	<div id="slider">
 	    <ul class="slides">
 	        <li>
 	            <div class="slide1">
                     <div class="grid-container">
-                        <div id="logo">
+                        <div id="logo" class="hide-on-mobile">
                             <a href="#" title="">
-                                <img src="./images/yb-logo.png" alt="Yarrow Bay Plastic Surgery">
+                                <img class="img-resp" src="./images/yb-logo.png" alt="Yarrow Bay Plastic Surgery">
                             </a>
                         </div>
                         <div class="fixed-header">
                             <button class="hamburger" type="button">
                                 <span class="menu">MENU</span>
-                                <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                                </span>
+                                <img src="images/hamburger.png" alt="" class="img-resp">
                             </button>
                         </div>
-                        <div class="grid-50 tablet-grid-50">
+                        <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                            <div id="logo" class="hide-on-tablet hide-on-desktop">
+                                <a href="#" title="">
+                                    <img class="img-resp" src="./images/yb-logo.png" alt="Yarrow Bay Plastic Surgery">
+                                </a>
+                            </div>
                             <div>
                                 <h1>Be Glamourous</h1>
                                 <h1>Be Beautiful</h1>
@@ -92,9 +95,22 @@
         </div>
     </section>
 
-    <section class="meet">
+    <!-- MEET -->
+
+    <section class="mobile-meet hide-on-tablet hide-on-desktop">
+        <div class="mobile-meet-bg"></div>
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <h2 class="section-header">
+                    Dr. Daniel J. Liebertz, M.D.
+                </h2>
+                <p>Dr. Daniel J. Liebertz grew up in Beaverton, Oregon before moving to California to attend Santa Clara University, where he obtained both a Bachelor of Arts degree in Studio Art and a Bachelor of Science degree in Biology. He received his medical school education at the Keck School of Medicine of the University of Southern California.</p> 
+                <p>He then completed his residency in Otolaryngology – Head & Neck Surgery at Wayne State University in Michigan. Dr. Liebertz was one of only 46 surgeons worldwide selected to gain further subspecialty fellowship training in Facial Plastic and Reconstructive Surgery at Emory University in Atlanta.</p>
+            <a href="" class="btn">Meet Dr. Liebertz</a>
+            </div>
+    </section>
+    <section class="meet hide-on-mobile">
+        <div class="grid-container">
+            <div class="grid-50 tablet-grid-65 mobile-grid-100">
                 <h2 class="section-header">
                     Dr. Daniel J. Liebertz, M.D.
                 </h2>
@@ -207,17 +223,6 @@ wrinkles and lines, sun damage and sagging skin that can make you look angry, sa
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            $('.hamburger').on('click', function(){
-                $('nav .hamburger').addClass('is-active');
-                $('nav').css('transform', 'translateX(0)');
-            });
-            $('.close-btn').on('click', function() {
-                $('nav').css('transform', 'translateX(450px)');
-            });
-        });
-    </script>
 
 </body>
 </html>
