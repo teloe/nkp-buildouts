@@ -308,6 +308,7 @@ nav button:focus {
 .procs {
     background: url(images/procs-bg.jpg) no-repeat center;
     background-size: cover;
+    position: relative;
     padding: 100px 0;
 }
 .procs .grid-45 {
@@ -316,6 +317,28 @@ nav button:focus {
     z-index: 1;
     position: relative;
 }
+.procs .procs-list {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.procs .procs-list li {
+    margin: 20px 0;
+}
+.procs .procs-list li a {
+    color: var(--main-text-color);
+    display: block;
+    opacity: 0.4;
+    background: #fff;
+    padding: 20px;
+}
+
+.procs .procs-list li a.active {
+    opacity: 0.9;
+}
+
 .procs .btn {
     margin-top: 40px;
 }

@@ -33,4 +33,11 @@ jQuery(document).ready(function($) {
         $('nav').css('transform', 'translateX(500px)');
     });
 
+
+    $('.procs-list').on('mouseover', '.procs-list li a', function() {
+        $(this).addClass('active');
+    });
+
+
+
 });
