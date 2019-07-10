@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>NKP</title>
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -46,7 +46,7 @@
         </div>
     </nav>
 
-
+    <!-- #slider -->
 	<div id="slider">
 	    <ul class="slides">
 	        <li>
@@ -81,7 +81,7 @@
 	            </div>
 	        </li>
 	    </ul>
-	</div>
+	</div><!-- /#slider -->
     
     <section class="welcome">
         <div class="grid-container">
@@ -91,12 +91,10 @@
             <div class="grid-70 tablet-grid-70 mobile-grid-100 fr">
                 <p>Yarrow Bay Plastic Surgery, serving the greater Seattle area including Kirkland and Bellevue, is one of the pre-eminent plastic surgery facilities in the Pacific Northwest. Founded in March of 2010 on the shores of Lake Washington, Yarrow Bay Plastic Surgery offers Board Certified surgeons, an accredited on-site operating room, a full-line Spa, and medical staff, specially trained  in plastic surgery procedures.</p>
             </div>
-            
         </div>
     </section>
 
-    <!-- MEET -->
-
+    <!-- .meet -->
     <section class="mobile-meet hide-on-tablet hide-on-desktop">
         <div class="mobile-meet-bg"></div>
         <div class="grid-container">
@@ -119,7 +117,7 @@
             <a href="" class="btn">Meet Dr. Liebertz</a>
             </div>
         </div>
-    </section>
+    </section><!-- /.meet -->
 
     <section class="awards">
         <div class="grid-container">
@@ -132,27 +130,57 @@
         </div>
     </section>
 
+    <!-- .procs -->
     <section class="procs">
-        <div class="grid-container">
-            <div class="grid-45 tablet-grid-45 mobile-grid-100">
-                <h3 class="subheader">
-                    Our services
-                </h3>
-                <h2 class="section-header">Face Procedures</h2>
-                <p>Facial plastic surgery can “turn back time” by reducing the appearance of 
-wrinkles and lines, sun damage and sagging skin that can make you look angry, sad or tired. Learn more about some of the procedures we offer, helping you look as young and energetic as you feel.</p>
-                <a class="btn" href="">Learn more</a>
+        <div id="face" class="proc-container">
+            <div class="grid-container">
+                <div class="grid-45 tablet-grid-45 mobile-grid-100">
+                    <h3 class="subheader">Our services</h3>
+                    <h2 class="section-header">Face Procedures</h2>
+                    <p>Facial plastic surgery can “turn back time” by reducing the appearance of wrinkles and lines, sun damage and sagging skin that can make you look angry, sad or tired. Learn more about some of the procedures we offer, helping you look as young and energetic as you feel.</p>
+                    <a class="btn" href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div id="breast" class="proc-container">
+            <div class="grid-container">
+                <div class="grid-45 tablet-grid-45 mobile-grid-100">
+                    <h3 class="subheader">Our services</h3>
+                    <h2 class="section-header">Breast Procedures</h2>
+                    <p>Women may decide to undergo plastic surgery to enlarge or reduce their breasts, to achieve a balance in size or shape for their breasts, or to reconstruct one or both breasts after mastectomy. Men may also seek to reduce breast size. Whatever the motivation, breast surgery is safer and easier now than ever before. Listed below are some of the services we provide to help you make an informed decision and achieve the most satisfying results.</p>
+                    <a class="btn" href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div id="body" class="proc-container">
+            <div class="grid-container">
+                <div class="grid-45 tablet-grid-45 mobile-grid-100">
+                    <h3 class="subheader">Our services</h3>
+                    <h2 class="section-header">Body Procedures</h2>
+                    <p>Sometimes, our bodies just do not respond to diet and exercise the way we want them to. Cosmetic plastic surgery procedures can reshape many areas by removing excess fat and skin and toning muscle. Listed below are some of the procedures we perform for body contouring.</p>
+                    <a class="btn" href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div id="med-spa" class="proc-container">
+            <div class="grid-container">
+                <div class="grid-45 tablet-grid-45 mobile-grid-100">
+                    <h3 class="subheader">Our services</h3>
+                    <h2 class="section-header">Med Spa Procedures</h2>
+                    <p>Our goal is to provide a relaxing spa environment while integrating advanced approaches to skin rejuvenation. Our Licensed Medical Aesthetician specializes in catering every service to fit your individual needs.</p>
+                    <a class="btn" href="">Learn more</a>
+                </div>
             </div>
         </div>
         <div class="procs-list">
             <ul>
-                <li><a class="active" href="">Face</a> </li>
-                <li><a href="">Breast</a> </li>
-                <li><a href="">Body</a> </li>
-                <li><a href="">Med Spa</a> </li>
+                <li><button class="active" data-target="face">Face</button> </li>
+                <li><button data-target="breast">Breast</button> </li>
+                <li><button data-target="body">Body</button> </li>
+                <li><button data-target="med-spa">Med Spa</button> </li>
             </ul>
         </div>
-    </section>
+    </section><!-- /.procs -->
 
     <section class="associations">
         <div class="grid-container">

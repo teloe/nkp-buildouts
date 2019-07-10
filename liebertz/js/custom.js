@@ -33,11 +33,17 @@ jQuery(document).ready(function($) {
         $('nav').css('transform', 'translateX(500px)');
     });
 
-
-    $('.procs-list').on('mouseover', '.procs-list li a', function() {
+    // procs section
+    $('.procs-list li button').on('mouseover', function() {
+        $('button.active').removeClass('active');
         $(this).addClass('active');
     });
-
-
+    
+    $('#breast, #body, #med-spa').hide();
+    $('.procs-list').on('click', 'button', function() {
+        let target = '#' + $(this).data('target');
+        $('.proc-container').not(target).hide();
+        $(target).fadeIn(500);
+    });
 
 });

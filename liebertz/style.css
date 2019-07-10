@@ -306,11 +306,34 @@ nav button:focus {
 }
 
 .procs {
-    background: url(images/procs-bg.jpg) no-repeat center;
-    background-size: cover;
+    position: relative;
+    background-color: #F4F4F4;
+}
+
+.procs .proc-container {
+    background-size: cover !important;
     position: relative;
     padding: 100px 0;
+    min-height: 740px;
 }
+
+.procs #face {
+    background: url(images/face-bg.jpg) no-repeat center;
+    
+}
+
+.procs #breast {
+    background: url(images/breast-bg.jpg) no-repeat center;
+}
+
+.procs #body {
+    background: url(images/body-bg.jpg) no-repeat center;
+}
+
+.procs #med-spa {
+    background: url(images/med-spa-bg.jpg) no-repeat center;
+}
+
 .procs .grid-45 {
     background: rgba(255,255,255,0.5);
     padding: 50px 30px;
@@ -318,25 +341,37 @@ nav button:focus {
     position: relative;
 }
 .procs .procs-list {
-    width: 25%;
+    width: 24%;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 .procs .procs-list li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
-.procs .procs-list li a {
+.procs .procs-list li button {
     color: var(--main-text-color);
-    display: block;
+    font-family: var(--main-font);
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
     opacity: 0.4;
     background: #fff;
     padding: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.procs .procs-list li a.active {
+.procs .procs-list li button.active {
     opacity: 0.9;
+    margin-left: -10px;
+    transition-duration: 0.45s;
+    width: 105%;
 }
 
 .procs .btn {
