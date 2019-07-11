@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
     $('.procs-list').on('click', 'button', function() {
         let target = '#' + $(this).data('target');
         $('.proc-container').not(target).hide();
-        $(target).fadeIn(500);
+        $(target).fadeIn(350);
     });
 
 });

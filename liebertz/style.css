@@ -58,10 +58,10 @@ ol,ul{clear:both}
     --main-text-font-size: 14px;
     --main-text-line-height: 34px;
     /* Mobile Sizing */
-    --mobile-large-header-font-size: 60px;
-    --mobile-large-header-line-height: 80px;
-    --mobile-section-header-font-size: 40px;
-    --mobile-section-header-line-height: 60px;
+    --mobile-large-header-font-size: 64px;
+    --mobile-large-header-line-height: 84px;
+    --mobile-section-header-font-size: 36px;
+    --mobile-section-header-line-height: 56px;
     /* --mobile-main-text-font-size: 14px;
     --mobile-main-text-line-height: 34px; */
 }
@@ -138,7 +138,7 @@ h2.section-header::after {
     height: 100%;
     box-shadow: 10px 10px 0 var(--sub-header-color);
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all .35s ease-in-out;
 }
 .btn:hover {
     background: #080604;
@@ -221,7 +221,7 @@ nav button:focus {
 #slider .slides .slide1 {
     background: url(./images/main-banner-bg.jpg) no-repeat center;
     background-size: cover;
-    min-height: 920px;
+    min-height: 30vw;
 }
 #slider .slides .slide1 .grid-container {
     position: relative;
@@ -326,6 +326,10 @@ nav button:focus {
     background: url(images/breast-bg.jpg) no-repeat center;
 }
 
+.procs #breast {
+    padding-bottom: 20px;
+}
+
 .procs #body {
     background: url(images/body-bg.jpg) no-repeat center;
 }
@@ -368,7 +372,7 @@ nav button:focus {
 }
 
 .procs .procs-list li button.active {
-    opacity: 0.9;
+    opacity: 0.95;
     margin-left: -10px;
     transition-duration: 0.45s;
     width: 105%;
@@ -379,13 +383,24 @@ nav button:focus {
 }
 
 .associations {
-    background: url(images/leaf1.png) no-repeat;
-    background-size: cover;
-    padding: 100px 0;
+    padding: 120px 0 60px;
+    position: relative;
+}
+.associations > img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .reviews {
-    padding: 100px 0;
+    position: relative;
+    padding: 60px 0 120px;
+}
+.reviews > img:first-child {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    z-index: -1;
 }
 .reviews .grid-60 {
     position: relative;
@@ -417,7 +432,7 @@ nav button:focus {
     height: 2px;
     background: var(--sub-header-color);
     transform:  translateX(-100%);
-    transition: transform .5s ease;
+    transition: transform .35s ease;
 }
 
 .reviews a:hover::after {
@@ -596,10 +611,13 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
     #slider .slides .slide1 .grid-50>div h1:nth-of-type(3) {
         text-indent: 20vw;
     }
+    #slider .slides .slide1 .btn {
+        max-width: 75%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-    /* h1,h2,h3 {text-align: center;} */
+    h1,h2,h3 {text-align: center;}
     h1 {
         font-size: var(--mobile-large-header-font-size);
         line-height: var(--mobile-large-header-line-height);
@@ -610,11 +628,15 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
     }
     h1.section-header::after {
         width: 5px;
-        height: 80px;
+        height: 88px;
     }
     h2.section-header::after {
         width: 3.5px;
         height: 57px;
+    }
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
     }
     nav {
         width: 300px;
@@ -640,15 +662,82 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
     }
     .reviews .grid-60 img {
         position: inherit;
+        margin: auto;
+        display: block;
+    }
+    .reviews .grid-70 div {
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 960px) and (min-width: 740px) {
-
+@media only screen and (min-width: 960px) {
+    .procs .proc-container > div:first-child {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 960px) {
 
+@media only screen and (max-width: 959px) {
+    .procs {
+        background: #fff;
+    }
+    .procs .section-header {
+        padding: 15px 0 30px;
+    }
+    .procs .proc-container {
+        background: #fff !important;
+        min-height: auto;
+        padding: 0;
+    }
+    .procs .proc-container > div:first-child {
+        min-height: 300px;
+        background-color: #F4F4F4 !important;
+        background-size: cover !important;
+    }
+
+    .procs #face > div:first-child {
+        background: url(images/face-bg.jpg) no-repeat center;
+    }
+
+    .procs #breast > div:first-child {
+        background: url(images/breast-bg.jpg) no-repeat center;
+    }
+
+    .procs #body > div:first-child {
+        background: url(images/body-bg.jpg) no-repeat center;
+    }
+
+    .procs #med-spa > div:first-child {
+        background: url(images/med-spa-bg.jpg) no-repeat center;
+    }
+    
+    .procs .grid-45 {
+        padding: 45px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .procs .procs-list {
+        transform: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        max-width: 50%;
+    }
+    .procs .procs-list ul > li:first-child {
+        margin-top: 40px;
+    }
+    .procs .procs-list li button {
+        text-align: center;
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 1170px) and (min-width: 768px) {
+    h1.section-header {
+        font-size: 12vw;
+    }
 }
 
 @media only screen and (min-width: 1170px) {
