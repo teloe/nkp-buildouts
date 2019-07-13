@@ -13,8 +13,6 @@ Template: nkpv2
 
 /*---- GENERAL ----*/
 body{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
-h1{}
-h2{}
 
 a,
 a:visited,
@@ -531,28 +529,50 @@ footer .grid-40 .location div {
     display: inline-block;
 }
 
-footer .grid-50 a {
+footer .grid-60 a {
     color: #5B821D;
 }
 
-footer .grid-50 .phone {
+footer .grid-60 .phone {
     display: block;
     margin: 40px 0;
     font-size: 30px;
 }
 
-footer .grid-50 i {
+footer .grid-60 i {
     color: #5B821D;
     font-size: 30px;
     margin-left: 10px;
 }
 
-footer .grid-50 {
+footer .grid-60 {
     font-size: 24px;
     line-height: 30px;
 }
 
+form {
+    position: relative;
+    z-index: 1;
+}
 
+form input,
+form textarea {
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #000;
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+form button {
+    font-family: var(--main-font);
+    margin: 30px auto auto;
+    font-size: 1em;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
 
 /* END SITE STYLE */
 
@@ -668,6 +688,13 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
     .reviews .grid-70 div {
         text-align: center;
     }
+    footer .grid-40,
+    footer .grid-60 {
+        text-align: center;
+    }
+    footer .grid-40 .location {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -675,6 +702,11 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
         display: none;
     }
 }
+s
+@media only screen and (min-width: 960px) and (max-width: 1024) {
+    
+}
+
 
 
 @media only screen and (max-width: 959px) {
@@ -717,6 +749,10 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
         text-align: center;
     }
 
+    .procs .btn {
+        margin: 40px auto auto;
+    }
+
     .procs .procs-list {
         transform: none;
         top: 0;
@@ -732,6 +768,39 @@ input, select, textarea {-webkit-transition:all .5s ease-out; -moz-transition:al
         font-size: 14px;
         padding: 15px;
     }
+
+    .bxa > div:first-child {
+        width: 100%;
+        position: inherit;
+        min-height: 440px;
+    }
+    .bxa .grid-50 {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .bxa .grid-50 p {padding-bottom: 30px;}
+    .bxa .btn {
+        margin: 50px auto auto;
+    }
+    .contact .grid-container
+    
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact .grid-container {
+        top: -200px;
+    }
+    .contact .grid-80 .grid-50 {
+        height: auto;
+    }
+    .contact .grid-80 > .grid-50:nth-of-type(1) {
+        min-height: 250px;
+    }
+    /* .contact .grid-container {
+        top: -170px;
+    } */
 }
 
 @media only screen and (max-width: 1170px) and (min-width: 768px) {
