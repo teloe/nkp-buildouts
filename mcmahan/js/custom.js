@@ -12,6 +12,12 @@ jQuery(document).ready(function($) {
 	    animation: "fade",
 	    directionNav: false,
 	    controlNav: false
+    });
+    
+    $('.reviews-slider').flexslider({
+	    animation: "slide",
+	    directionNav: true,
+	    controlNav: false
 	});
 
 });
