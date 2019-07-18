@@ -13,4 +13,5 @@ jQuery(document).ready(function($) {
 	    directionNav: false,
 	    controlNav: false
 	});
+
 });
