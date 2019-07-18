@@ -184,7 +184,7 @@ nav {
 
 .stellarnav ul .nav-contact {
     display: flex;
-    float: right;
+    flex: 1;
 }
 .stellarnav .nav-contact li {
     display: inline-block;
