@@ -15,6 +15,7 @@
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/flexslider.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/kdm0pws.css">
 
@@ -135,15 +136,27 @@
 
     <section class="reviews">
         <div class="grid-container">
-            <div class="grid-50 tac">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 tac">
                 <img src="./images/stars.png" alt="Stars" class="img-resp">
                 <h1 class="section-header">Our Patients Reviews</h1>
                 <div class="reviews-slider">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="slides">
+                        <li>
+                            <p>“My experience with Dr. McMahan and his office staff was great. The results of the surgery were exactly what I was hoping for. His knowledge base and bedside manner are exceptional.”</p>
+                            <cite>Kathy - Tummy Tuck</cite>
+                        </li>
+                        <li>
+                            <p>“Tempor ex fugiat anim id fugiat et exercitation pariatur mollit. Exercitation ut eiusmod cupidatat sunt veniam dolor quis pariatur ad eu sunt sunt elit.”</p>
+                            <cite>John - Facelift</cite>
+                        </li>
+                        <li>
+                            <p>“Fugiat consequat dolor eu magna duis ipsum exercitation cupidatat labore cillum. Eu eu velit tempor et. Reprehenderit labore nostrud qui minim. Labore voluptate reprehenderit ut aliquip cillum incididunt sit minim magna proident consequat.”</p>
+                            <cite>Bob - Tummy Tuck</cite>
+                        </li>
+                        <li>
+                            <p>“Ipsum ipsum anim culpa cupidatat nulla consequat eu. Est culpa sunt eiusmod aliquip consectetur commodo veniam cupidatat aliquip irure ipsum. Nulla in Lorem proident eiusmod cupidatat laborum exercitation.”</p>
+                            <cite>Jane - Mommy Makeover</cite>
+                        </li>
                     </ul>
                 </div>
                 <a href="" class="btn">Read More &plus;</a>
@@ -153,26 +166,39 @@
 
     <section class="gallery">
         <div class="grid-container">
-            <div class="grid-60 tablet-grid-60 mobile-grid-100">
+
+            <div class="grid-55 tablet-grid-55 suffix-5 mobile-grid-100">
                 <div>
-                    Before
+                    <h2 class="section-header">Before</h2>
                     <img src="images/before.jpg" alt="Before" class="img-resp">
-                    &amp;
+                    <h2 class="section-header tac amp">&amp;</h2>
+                </div>
+                <div>
                     <img src="images/after.jpg" alt="After" class="img-resp">
-                    After
+                    <h2 class="section-header">After</h2>
                 </div>
             </div>
-            <div class="grid-40 tablet-grid-40 mobile-grid-100">
+            
+            <div class="grid-35 tablet-grid-35 mobile-grid-100 tac">
                 <h1 class="section-header">Our Photo Gallery</h1>
                 <p>Take a few minutes to browse through our full catalog of our before and after photos. For a full range of convenient procedures and services that we offer to help you achieve the aesthetic transformation that you desire, just click below:</p>
                 <a href="" class="btn">View More &plus;</a>
             </div>
+
         </div>
     </section>
 
     <section class="contact">
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100"></div>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 tac">
+                <div>
+                    <h1 class="section-header">Columbus Office</h1>
+                    <p>4845 Kinghtsbridge Blvd, Ste 230, Columbus, OH 43214</p>
+                </div>
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                    <a class="btn" href="">Get Directions</a>
+                </div>
             <div class="grid-50 tablet-grid-50 mobile-grid-100"></div>
         </div>
     </section>
@@ -180,23 +206,23 @@
     <footer>
         <div class="grid-container">
             <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                Copyright &copy; 2019 Advaced Aesthetic &amp; Laser Surgery. All Rights Reserved.
+                <p>Copyright &copy; 2019 Advaced Aesthetic &amp; Laser Surgery. All Rights Reserved.</p>            
             </div>
-            <div class="grid-40 tablet-grid-40 mobile-grid-100">
-                <div class="social tac">
+            <div class="grid-40 tablet-grid-50 mobile-grid-100">
+                <div class="social">
                     <a href="" class="fb icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="" class="li icon"><i class="fab fa-linkedin-in"></i></i></a>
                     <a href="" class="yt icon"><i class="fab fa-youtube"></i></i></a>
                     <a href="" class="inst icon"><i class="fab fa-instagram"></i></i></a>
                     <a href="" class="tw icon"><i class="fab fa-twitter"></i></i></a>
                 </div>
-                Advanced Aesthetic &amp; Laser Surgery.(614) 459-0060
+                <p>Advanced Aesthetic &amp; Laser Surgery.(614) 459-0060</p>
             </div>
         </div>
     </footer>
 
 
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 
