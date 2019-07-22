@@ -8,6 +8,8 @@ jQuery(document).ready(function ($) {
         locationBtn: ''
     });
 
+    $('.menu-item-51, .menu-item-52').wrapAll('<div class=nav-contact></div>');
+
     $('.reviews-slider').flexslider({
         animation: "fade",
         directionNav: true,
