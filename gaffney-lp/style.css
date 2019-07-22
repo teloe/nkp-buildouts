@@ -1,0 +1,204 @@
+/*
+Theme Name: {{TAG}}
+Author: NKP Development Team
+Description: NKP Medical responsive theme
+Template: nkpv2
+*/
+
+/*---- Do Not Remove ----*/
+@import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
+@import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+/*---- Do Not Remove ----*/
+
+/*---- GENERAL ----*/
+:root {
+    /* Fonts */
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Neuzeit Grotesk', sans-serif;
+    /* Sizing */
+    --body-font-size: 16px;
+    --body-line-height: 36px;
+    /* Colors */
+    --primary-color: #b5cfd0;
+    --secondary-color: #b5cecf;
+    --primary-text-color: #565656;
+    --secondary-text-color: #36433d;
+}
+body {
+    font-family: var(--body-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font);
+    font-weight: 100;
+}
+
+a,
+a:visited,
+a:link {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+a:hover {
+    color: #62796e;
+    text-decoration: none;
+    outline: none;
+}
+.btn {
+    background: var(--primary-color);
+    color: #fff !important;
+    padding: 1.2em 1em;
+    margin: 60px auto 0;
+    width: 100%;
+    font-size: 21px;
+    max-width: 600px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    clear: both;
+    border: 0;
+    position: relative
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    bottom: -11px;
+    left: 25px;
+    right: 25px;
+    z-index: -1;
+    border: 1px solid var(--primary-text-color);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    pointer-events: none
+}
+
+.btn:hover,
+.btn:focus {
+    background: #abc0c0;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+    top: 10px;
+    bottom: 10px;
+    left: -15px;
+    right: -15px
+}
+
+.btn--blue-border::before {
+    border-color: #f2f2f2
+}
+
+ul,ol{clear:both}
+.fl{float:left}
+.fr{float:right}
+.fn{float:none;display:inline-block}
+.tal{text-align:left}
+.tar{text-align:right}
+.tac{text-align:center}
+.clr-l{clear:left}
+.clr-r{clear:right}
+.clr,.clear{clear:both}
+.nodisp{display:none}
+
+/* HEADER --------------------------------------------------------- */
+.header-top {
+    background: var(--secondary-color);
+    padding: 20px 0;
+    color: var(--secondary-text-color);
+}
+
+.header-top .grid-85 span {
+    padding-right: 15px;
+}
+
+.header-top .grid-15 {
+    text-align: right;
+}
+.header-top i {
+    margin: 0 5px;
+}
+/* .header-top a {
+    color: var(--secondary-text-color);
+} */
+
+#slider .slides .slide1 {
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider .slides .slide1 #logo {
+    padding-top: 80px; 
+
+}
+#slider .slides .slide1 .grid-100 {
+    padding: 20vw 0 5vw;
+    z-index: 1;
+    position: relative;
+}
+#slider .slides .slide1 h1 {
+    color: #fff;
+    font-size: 92px;
+    line-height: 92px;
+    text-shadow: 1px 5px 10px rgba(0,0,0,.5);
+}
+
+/* HEADER --------------------------------------------------------- */
+/* HEADER --------------------------------------------------------- */
+/* HEADER --------------------------------------------------------- */
+/* HEADER --------------------------------------------------------- */
+/* HEADER --------------------------------------------------------- */
+/* HEADER --------------------------------------------------------- */
+/* HEADER --------------------------------------------------------- */
+
+/* NKP GLOBAL STYLES */
+img{border:0}
+.img-resp,.img-responsive{max-width:100%;height:auto}
+img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
+img.right,img.alignright,.img-r{float:right;margin:10px 0 0 15px}
+iframe{width:100%;height:500px}
+.embed-responsive{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-bottom:20px}
+.embed-responsive iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ccc}
+input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+.contact-form input[type='text'],.contact-form input[type='email'],.contact-form input[type='tel'],.contact-form input[type='url'],.contact-form textarea{width:100%;border:1px solid #ccc;background:#fff;margin:0 0 10px;padding:15px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-sizing:border-box}
+.contact-form input[type='text']:focus,.contact-form input[type='email']:focus,.contact-form input[type='tel']:focus,.contact-form textarea:focus{background:rgba(1,105,147,0.4);color:#fff}
+.contact-form input[type='submit'],.contact-form input[type='submit'][disabled]{width:100px;height:26px;background:#adadad;border:0;color:#fff;text-transform:uppercase;clear:both;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;outline:none}
+.contact-form input[type='submit']:hover,.contact-form input[type='submit'][disabled]:hover{background:#96bdda;border:2px solid #1174a6}
+.contact-form textarea{height:120px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.contact-form ::-webkit-input-placeholder{color:#777}
+:-moz-placeholder{color:#777}
+:-ms-input-placeholder{color:#777}
+.contact-form input.wpcf7-captchar{width:135px}
+/* desktop view bxa gallery */
+.patient-single{width:50%}
+.patient-single img{width:96%;height:auto}
+/* NKP GLOBAL STYLES */
+
+#nav{background-color:#000;height:50px}
+
+@media only screen and (max-width: 740px) {
+    iframe{width:100%;height:280px}
+    .patient-single{width:100%!important}
+}
+
+@media only screen and (max-width: 959px) {
+    
+}
+
+@media only screen and (max-width: 960px) and (min-width: 740px) {
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 960px) {
+}
