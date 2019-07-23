@@ -201,12 +201,20 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (max-width: 767px) {
+    .header-top .grid-85 a {
+        display: block;
+        padding: 5px 0;
+    }
+    .header-top .grid-15 {
+        text-align: center;
+        padding-top: 10px;
+    }
     #slider .slides .slide1 #logo {
         padding-top: 30px;
     }
     #slider .slides .slide1 h1 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 10vw;
+        line-height: 10vw;
     }
     #slider .slides .slide1 .btn {
         font-size: 14px;
