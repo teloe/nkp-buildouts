@@ -193,11 +193,35 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
-@media only screen and (max-width: 959px) {
-    
+@media only screen and (max-width: 595px) {
+    #slider .slides .slide1 h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
-@media only screen and (max-width: 960px) and (min-width: 740px) {
+@media only screen and (max-width: 767px) {
+    #slider .slides .slide1 #logo {
+        padding-top: 30px;
+    }
+    #slider .slides .slide1 h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    #slider .slides .slide1 .btn {
+        font-size: 14px;
+        max-width: 420px;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+}
+
+@media only screen and (max-width: 959px) and (min-width: 596px) {
+    #slider .slides .slide1 h1 {
+        font-size: 64px;
+        line-height: 64px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 960px) {

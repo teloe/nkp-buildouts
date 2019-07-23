@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
         breakpoint: 960,
