@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
         breakpoint: 960,
@@ -7,9 +7,9 @@ jQuery(document).ready(function ($) {
         locationBtn: '',
     });
 
-    $('#slider').flexslider({
-        animation: 'fade',
-        directionNav: false,
-        controlNav: false,
-    });
+    // $('#slider').flexslider({
+    //     animation: 'fade',
+    //     directionNav: false,
+    //     controlNav: false,
+    // });
 });
