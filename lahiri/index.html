@@ -42,8 +42,7 @@
         </div>
     </div>
 
-
-    <div class="header-bottom">
+    <div id="navbar" class="header-bottom">
         <div class="grid-container">
             <div class="grid-20 tablet-grid-20 mobile-grid-100">
                 <div id="logo">
@@ -56,21 +55,15 @@
                 <nav>
                     <div class="stellarnav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Doctor Profile</a></li>
-                            <li><a href="#">Procedures</a></li>
-                            <li><a href="#">Im</a></li>
-                            <li><a href="#">Last Dropdown Item</a>
-                                <ul>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a>
-                                        <ul>
-                                            <li><a href="#">Drop left menu item</a></li>
-                                            <li><a href="#">Drop left menu item</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Doctor Profile</a></li>
+                            <li><a href="">Procedures</a></li>
+                            <li><a href="">Injections</a></li>
+                            <li><a href="">Before &amp; After</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Patient Forms</a></li>
+                            <li><a href="">Links</a></li>
+                            <li><a href="">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -78,20 +71,45 @@
         </div>
     </div>
 
-
-
 	<div id="slider">
     	<ul class="slides">
-    		<li><div class="slide1"></div></li>
+    		<li>
+                <div class="slide1">
+                    <video autoplay muted loop id="video-bg">
+                        <source src="lahiri-slideshow-video.mp4".mp4" type="video/mp4">
+                    </video>
+                    <div class="gradient">
+                        <div class="grid-container">
+                            <div class="grid-70 tablet-grid-70 mobile-grid-100">
+                                <h3><em>North Houston's Leading Plastic Surgery</em></h3>
+                                <h1>Beauty that's naturally you</h1>
+                                <p>Dr. Lahiri and her staff maintain a strong commitment to ensure the absolute comfort and safety of each patient from consultation to post operative period and beyond.</p>
+                                <a href="" class="btn">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
     	</ul>
     </div>
+
+    <div class="consultation">
+        <div class="grid-container">
+            <div class="grid-80 tablet-grid-80 mobile-grid-100">
+                <p>Want to see the NEW YOU before the procedure? Click here to Book a 3D Consultation and find out!</p>
+            </div>
+            <div class="grid-20 tablet-grid-20 mobile-grid-100">
+                <a href="" class="btn">Learn more</a>
+            </div>
+        </div>
+    </div>
     
-    <section id="welcome">
+    <section class="welcome">
         <div class="grid-container">
             <div class="grid-60 template-grid-60 mobile-grid-100">
 
-				<h1 class="section-header"><strong>Welcome to</strong>Lahiri Plastic Surgery</h1>
-                <h4><strong>Providing Specialized &amp; Personal Plastic Surgery to The Woodlands and Greater Houston Area for over 20 years!</strong></h4>	
+				<h1 class="section-header tac"><strong>Welcome to</strong><br>Lahiri Plastic Surgery</h1>
+                <h4>Providing Specialized &amp; Personal Plastic Surgery to The Woodlands and Greater Houston Area for over 20 years!</h4>	
 
                 <p>Plastic Surgery is an ever changing field with new techniques, products, and procedures. Dr. Sabrina Lahiri is dedicated to providing patients with this technology combined with the highest quality medical care. Our role at Lahiri Plastic Surgery is to offer you our expertise and care so that you will look and feel your best.</p>
 
@@ -100,12 +118,126 @@
                 <p>You will also discover Dr. Lahiri’s own AAAASF certified surgery center – “The Center For Change”, as well as the “Maison Esthetique Recovery Retreat” for overnight patients, and the exquisite “Pluvia Medical Spa”. There is no other world-class facility in the greater Houston and Southwest Texas surrounding area.</p>
 
                 <p>Dr. Lahiri and her staff maintain a strong commitment to ensure the absolute comfort and safety of each patient from consultation to post operative period and beyond.</p>
+
+                <img src="./images/dr-lahiri-signature.png" alt="Dr. Lahiri’s signature" class="img-resp">
+                <p>Dr. Sabrina A. Lahiri</p>
             </div>
             <div class="grid-40 template-grid-40 mobile-grid-100">
                 <img src="./images/doc1.jpg" alt="" class="img-resp">
             </div>
         </div>
     </section>
+
+    <section class="procs">
+        <div>
+            <div class="procs-wrapper">
+                <a href=""><img src="./images/procs-body.jpg" alt="Body Procedures" class="img-resp"></a>
+                <div class="procs-content">
+                    <h3><a href="">Body Procedures</a></h3>
+                    <p>Plastic surgery encompasses both cosmetic and reconstructive surgery. Cosmetic surgery is performed...</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="procs-wrapper">
+                <a href=""><img src="./images/procs-breast.jpg" alt="Breast Procedures" class="img-resp"></a>
+                <div class="procs-content">
+                    <h3><a href="">Breast Procedures</a></h3>
+                    <p>Plastic surgery encompasses both cosmetic and reconstructive surgery. Cosmetic surgery is performed...</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="procs-wrapper">
+                <a href=""><img src="./images/procs-face.jpg" alt="Face Procedures" class="img-resp"></a>
+                <div class="procs-content">
+                    <h3><a href="">Face Procedures</a></h3>
+                    <p>Plastic surgery encompasses both cosmetic and reconstructive surgery. Cosmetic surgery is performed...</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="procs-wrapper">
+                    <a href=""><img src="./images/procs-injections.jpg" alt="Injections" class="img-resp"></a>
+                <div class="procs-content">
+                    <h3><a href="">Injections</a></h3>
+                    <p>Plastic surgery encompasses both cosmetic and reconstructive surgery. Cosmetic surgery is performed...</p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid-container">
+            <div class="grid-20 tablet-grid-20 mobile-grid-100">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Doctor Profile</a></li>
+                    <li><a href="">Tour Our Facility</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Patient Forms</a></li>
+                    <li><a href="">Links</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="grid-20 tablet-grid-20 mobile-grid-100">
+                <ul>
+                    <li><a href="">Financing</a></li>
+                    <li><a href="">Procedures</a></li>
+                    <li><a href="">Body</a></li>
+                    <li><a href="">Breast</a></li>
+                    <li><a href="">Face</a></li>
+                </ul>
+            </div>
+            <div class="grid-20 tablet-grid-20 mobile-grid-100">
+                <ul>
+                    <li><a href="">Injections</a></li>
+                    <li><a href="">Dysport</a></li>
+                    <li><a href="">Radiesse Injections</a></li>
+                    <li><a href="">Belotero</a></li>
+                    <li><a href="">JUVEDERM VolumaTM XC</a></li>
+                </ul>
+            </div>
+            <div class="grid-20 tablet-grid-20 mobile-grid-100">
+                <ul>
+                    <li><a href="">Before and After</a></li>
+                    <li><a href="">Breast Augmentation</a></li>
+                    <li><a href="">Breast Lift</a></li>
+                    <li><a href="">Breast Reduction</a></li>
+                    <li><a href="">Breast Reconstruction</a></li>
+                    <li><a href="">Tummy Tuck</a></li>
+                    <li><a href="">Liposuction</a></li>
+                </ul>
+            </div>
+            <div class="grid-20 tablet-grid-20 mobile-grid-100">
+                <ul>
+                    <li><a href="">Body Contouring After Weight Loss</a></li>
+                    <li><a href="">Male Breast Reduction</a></li>
+                    <li><a href="">Facelift</a></li>
+                    <li><a href="">Eyelid Surgery</a></li>
+                    <li><a href="">Neck Contouring</a></li>
+                    <li><a href="">Nose Surgery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-100 tac">
+                <a href="https://www.surgery.org/" target="_blank">
+                    <img src="./images/american_society_for_aesthetic_plastic_surgery.png" alt="The American Society for Aesthetic Plastic Surgery" class="img-resp" width="120">
+                </a>
+                <a href="https://www.abplasticsurgery.org/" target="_blank">
+                    <img src="./images/american_board_of_plastic_surgery.png" alt="The American Board of Plastic Surgery" class="img-resp" width="120">
+                </a>
+                <a href="https://find.plasticsurgery.org/?zip=77384&rd=Exact&member=lahiri" target="_blank">
+                    <img src="./images/american-society-logo.png" alt="American Society of Plastic Surgeons" class="img-resp" width="120">
+                </a>
+                <a href="http://www.absurgery.org/" target="_blank">
+                    <img src="./images/abs_logo.png" alt="The American Board of Surgery" class="img-resp" width="120">
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>

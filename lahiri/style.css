@@ -9,7 +9,7 @@ Template: nkpv2
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Source+Sans+Pro&display=swap');
 /*---- Do Not Remove ----*/
 
 /* variables ------------------------------------------------------ */
@@ -18,7 +18,8 @@ Template: nkpv2
     --header-font: 'Cinzel',serif;;
     --body-font: 'Source Sans Pro', sans-serif;
     /* colors */
-    --text-color: #4c4c4c;
+    --primary-text-color: #5a5a5a;
+    --secondary-text-color: #4c4c4c;
     --primary-color: #4B0703;
     --secondary-color: #7B130C;
 }
@@ -34,7 +35,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.1;
     color: var(--text-color);
+    margin: 11px 0;
 }
+
+h1, h2, h3, h4, h5, h6, a, .btn {text-transform: uppercase}
+
 p, a, li {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -42,6 +47,8 @@ p, a, li {
     font-size: 1em;
     line-height: 1.5em;
 }
+
+p {margin-bottom: 11px;color:var(--primary-text-color)}
 
 a,
 a:visited,
@@ -56,12 +63,13 @@ a:link {
 
 a:hover {
     color: var(--primary-color);
-    text-decoration: none;
+    /* text-decoration: none; */
     outline: none
 }
 
 .btn {
-    padding: 5px 30px;
+    text-transform: uppercase;
+    padding: 5px 15px;
     display: inline-block;
     border: solid 1px #fff;
     text-align: center;
@@ -69,6 +77,7 @@ a:hover {
 
 .btn:hover {
     background: var(--secondary-color);
+    color: #fff;
 }
 
 
@@ -122,7 +131,7 @@ ul,ol{clear:both}
     width: 30px;
     display: inline-block;
     border-radius: 50%;
-    border: solid 1px #fff;
+    border: solid 2px #fff;
     text-align: center;
     padding: 0;
     font-weight: 400;
@@ -136,17 +145,266 @@ ul,ol{clear:both}
 }
 
 .header-bottom {
-    background: rgba(255,255,255,0.5);
+    background: rgba(238,238,238,0.85);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    transition: all .5s;
+}
+
+.header-bottom .grid-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-bottom #logo img {
+    width: 165px;
+    transition: all .5s;
 }
 
 
 
-/* home ----------------------------------------------------------- */
-/* home ----------------------------------------------------------- */
-/* home ----------------------------------------------------------- */
-/* home ----------------------------------------------------------- */
-/* home ----------------------------------------------------------- */
-/* home ----------------------------------------------------------- */
+/* nav ----------------------------------------------------------- */
+#navbar.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #eee;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+#navbar.sticky #logo img {
+    width: 130px;
+}
+
+.stellarnav > ul > li > a {
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+.stellarnav > ul > li > a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    display: block;
+    transition: width .3s;
+}
+.stellarnav > ul > li > a.active {
+    color: var(--primary-color);
+}
+.stellarnav > ul > li > a.active::after {
+    width: 100%;
+
+}
+.stellarnav > ul > li > a:hover {
+    color: var(--primary-color);
+}
+.stellarnav > ul > li > a:hover::after {
+    width: 100%;
+}
+    
+
+/* #slider -------------------------------------------------------- */
+#slider .slides .slide1 {
+    height: 36vw;
+    position: relative;
+    overflow: hidden;
+    color: var(--primary-text-color);
+    background-color: rgba(255,255,255,0.3); 
+    display: flex;
+    align-items: center;
+}
+#slider .slides .slide1 .gradient {
+    max-width: 3000px;
+    /* height: 36vw; */
+    margin: auto;
+    /* margin-left: -50vw; */
+    background-image: linear-gradient(to right, #fff , transparent);
+    padding: 11.25em 6.25em 6.25em;
+}
+#slider .slides .slide1 #video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+#slider .slides .slide1 h3,
+#slider .slides .slide1 h1 {
+    color: var(--primary-text-color);
+}
+
+#slider .slides .slide1 h3 {
+    font-family: var(--body-font);
+    font-size: 112.5%;
+    font-weight: 900;
+}
+
+#slider .slides .slide1 h1 {
+    font-size: 250%;
+}
+
+#slider .slides .slide1 h1::after {
+    content: '';
+    height: 3px;
+    width: 60px;
+    display: block;
+}
+
+#slider .slides .slide1 .btn {
+    background: var(--secondary-color);
+    border: none;
+    color: #fff;
+}
+
+#slider .slides .slide1 .btn:hover {
+    background: var(--primary-color);
+}
+
+
+
+/* .consultation -------------------------------------------------- */
+.consultation {
+    color: #fff;
+    background: url(./images/pattern-bg.jpg) fixed center center repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.consultation p {
+    font-size: 112.5%;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+/* .welcome ------------------------------------------------------- */
+.welcome .grid-container {
+    padding-top: 45px; 
+}
+
+.welcome .grid-container h1 {
+    font-size: 42px;
+    margin: 0 auto 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+.welcome .grid-container h1 strong {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+.welcome .grid-container h1::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 80px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+}
+.welcome .grid-container h4 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+.welcome .grid-container p:last-child {
+    font-weight: 900;
+}
+
+
+/* .procs --------------------------------------------------------- */
+.procs {
+    padding-bottom: 45px;
+}
+
+.procs > div:first-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.procs .procs-wrapper > a {
+    opacity: .8;
+    filter: brightness(.9);
+}
+.procs .procs-wrapper:hover .procs-content h3::after {
+    width: 80px;
+}
+.procs .procs-wrapper > a:hover {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+.procs .procs-content {
+    padding: 15px;
+}
+
+.procs .procs-content h3::after {
+    content: '';
+    display: block;
+    background: var(--primary-color);
+    height: 3px;
+    width: 40px;
+    margin: 15px 0;
+    transition: all .5s;
+}
+
+.procs .procs-content h3 a {
+    font-family: var(--header-font);
+    font-size: 20px;
+}
+
+.procs .btn {
+    font-family: var(--header-font);
+    border: solid 1px var(--primary-text-color);
+}
+
+
+
+
+
+
+
+
+
+/* footer --------------------------------------------------------- */
+footer {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+footer .grid-container {
+    padding: 44px 15px 88px;
+}
+footer .grid-container:first-child a {
+    display: block;
+    padding: 5px 0;
+}
+footer .grid-container:first-child a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+footer .grid-container:last-child {
+    border-top: solid 1px #fff;
+}
+
+footer .grid-container:last-child a {
+    margin-right: 15px;
+}
+
+
+
+
+
 /* home ----------------------------------------------------------- */
 /* home ----------------------------------------------------------- */
 
