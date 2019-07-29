@@ -217,9 +217,9 @@ ul,ol{clear:both}
 }
 #slider .slides .slide1 .gradient {
     max-width: 3000px;
-    /* height: 36vw; */
-    margin: auto;
-    /* margin-left: -50vw; */
+    width: 100%;
+    height: 36vw;
+    margin: 0;
     background-image: linear-gradient(to right, #fff , transparent);
     padding: 11.25em 6.25em 6.25em;
 }
