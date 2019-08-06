@@ -1,0 +1,230 @@
+/*
+Theme Name: {{TAG}}
+Author: NKP Development Team
+Description: NKP Medical responsive theme
+Template: nkpv2
+*/
+
+/*---- Do Not Remove ----*/
+@import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
+@import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+/*---- Do Not Remove ----*/
+
+/*---- GENERAL ----*/
+body{font-family:'Neuzeit Grotesk',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;font-weight:100}
+.section-header{font-size:72px;color:#36433d}
+p{font-size:16px;line-height:36px;color:#565656}
+a,a:link,a:visited{color:#36433d;text-decoration:none;outline:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+a:hover{color:#62796e;text-decoration:none;outline:0}
+.btn {
+    background: #b5cfd0;
+    color: #fff !important;
+    padding: 1em;
+    margin: 50px auto 0;
+    width: 100%;
+    font-size: 21px;
+    max-width: 330px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    clear: both;
+    border: 0;
+    position: relative
+}
+
+.btn:focus,
+.btn:hover {
+    background: #abc0c0
+}
+
+
+ul,ol{clear:both}
+.fl{float:left}
+.fr{float:right}
+.fn{float:none;display:inline-block}
+.tal{text-align:left}
+.tar{text-align:right}
+.tac{text-align:center}
+.clr-l{clear:left}
+.clr-r{clear:right}
+.clr,.clear{clear:both}
+.nodisp{display:none}
+
+.header-top{background:#b5cecf;padding:20px 0;color:#36433d}
+.header-bottom{background-color:#fff}
+.header-bottom .grid-container{padding:15px}
+.header-bottom .section-header{font-size:36px}
+.header-top .grid-85 span{padding-right:15px}
+.header-top .grid-15{text-align:right}
+.header-top i{margin:0 5px}
+
+.stellarnav *{text-transform:uppercase}
+.stellarnav ul li a{padding:15px;color:#36433d!important}
+.stellarnav ul li a:hover{color:#62796e!important}
+.stellarnav.mobile ul{background:#fff}
+
+
+#slider .slides .slide1{background:url(images/banner.jpg) no-repeat center;background-size:cover}
+#slider .slides .slide1 #logo{padding-top:80px}
+#slider .slides .slide1 .grid-100{padding:160px 0 120px;z-index:1;position:relative}
+#slider .slides .slide1 h1{color:#fff;font-size:92px;line-height:92px;text-shadow:1px 5px 10px rgba(0,0,0,.5)}
+#slider .slides .slide1 .btn{max-width:600px}
+
+.about .grid-container{background:url(images/leaf.png) no-repeat left;background-color:#fff;background-size:cover;padding:70px 15px}
+.about .grid-80{z-index:1;position:relative}
+.about .section-header,.about img{padding-bottom:30px}
+
+.gift-card{background:url(images/leaf-bg2.jpg) no-repeat center;background-size:cover}
+.gift-card .grid-container{padding:30px 0}
+.gift-card a{font-weight:700;font-size:30px;color:#fff}
+
+.treatments{background:#f9f9f9;padding-bottom:68px;margin-bottom:70px}
+.treatments>div.hide-on-desktop{background:url(./images/model-img1.jpg) no-repeat;background-size:cover;height:80vw}
+.treatments .grid-50 h3{padding-top:30px;font-size:30px;color:#abc0c0}
+.treatments .grid-50 h1{font-size:30px;color:#36433d;font-size:52px;line-height:60px;padding-bottom:40px}
+.treatments ul{margin-top:30px}
+.treatments ul li{margin:24px 0}
+.treatments ul li a{color:#abc0c0;text-transform:uppercase;font-weight:700}
+.treatments ul li a:hover{color:#62796e}
+
+.video {
+    max-width: 1840px;
+}
+
+.meet-the-team{background:url(./images/team-bg.jpg) no-repeat center;background-size:cover}
+.meet-the-team .grid-container{display:flex;align-items:center;justify-content:center;height:360px}
+
+.concerns {background:url(images/services-bg.jpg) no-repeat center;background-size:cover}
+.concerns .grid-container {
+    padding: 70px 15px;
+}
+.concerns .btn {
+    max-width: 600px;
+}
+
+.testimonials {
+    background: url(./images/leaf-bg1.jpg) no-repeat center;
+    background-size: cover; 
+}
+
+
+.services{background:url(images/services-bg.jpg) no-repeat center;background-size:cover}
+.services .grid-container{padding:140px 0}
+.services .grid-container .grid-100{z-index:1;position:relative}
+.services .btn{max-width:600px}
+
+.contact{padding:70px 0}
+.contact .grid-40 .content{max-width:468px;float:right;padding:0 35px 0 15px;text-align:center}
+.contact .grid-40 .content a{display:block;font-weight:700;font-size:2em;margin:30px 0 15px}
+.contact .grid-60{background:url(images/contact-bg.jpg) no-repeat center;background-size:cover;min-height:700px}
+
+footer .grid-container{padding:100px 0}
+footer .grid-60{text-align:right}
+footer .grid-60 .social{padding-bottom:15px}
+footer .grid-60 a{font-size:1.5em;margin:5px}
+
+/* NKP GLOBAL STYLES */
+img{border:0}
+.img-resp,.img-responsive{max-width:100%;height:auto}
+img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
+img.right,img.alignright,.img-r{float:right;margin:10px 0 0 15px}
+iframe{width:100%;height:500px}
+.embed-responsive{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-bottom:20px}
+.embed-responsive iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ccc}
+input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+.contact-form input[type='text'],.contact-form input[type='email'],.contact-form input[type='tel'],.contact-form input[type='url'],.contact-form textarea{width:100%;border:1px solid #ccc;background:#fff;margin:0 0 10px;padding:15px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-sizing:border-box}
+.contact-form input[type='text']:focus,.contact-form input[type='email']:focus,.contact-form input[type='tel']:focus,.contact-form textarea:focus{background:rgba(1,105,147,0.4);color:#fff}
+.contact-form input[type='submit'],.contact-form input[type='submit'][disabled]{width:100px;height:26px;background:#adadad;border:0;color:#fff;text-transform:uppercase;clear:both;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;outline:none}
+.contact-form input[type='submit']:hover,.contact-form input[type='submit'][disabled]:hover{background:#96bdda;border:2px solid #1174a6}
+.contact-form textarea{height:120px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.contact-form ::-webkit-input-placeholder{color:#777}
+:-moz-placeholder{color:#777}
+:-ms-input-placeholder{color:#777}
+.contact-form input.wpcf7-captchar{width:135px}
+/* desktop view bxa gallery */
+.patient-single{width:50%}
+.patient-single img{width:96%;height:auto}
+/* NKP GLOBAL STYLES */
+
+#nav{background-color:#000;height:50px}
+
+/* ---- START MEDIA QUERIES ---- */
+@media only screen and (max-width: 740px) {
+    iframe{width:100%;height:280px}
+    .patient-single{width:100%!important}
+}
+
+@media only screen and (max-width: 595px) {
+    #slider .slides .slide1 h1{font-size:32px;line-height:40px}
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .about .grid-container {
+        margin-top: -50px;
+    }
+    .gift-card .grid-container {
+        padding: 60px 0;
+    }
+    .treatments {
+        margin-top: 182px;
+    }
+    .treatments .grid-60 {
+        margin-left: -10%;
+        margin-top: -80px;
+        background: url(./images/model-img1.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vw;
+        max-height: 866px;
+    }
+    .treatments .grid-50 {
+        padding-left: 24px;
+    }
+    .meet-the-team .grid-container {
+        height: 700px;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .treatments .grid-60 {
+        margin-top: -60px;
+    }
+    .treatments ul li {
+        margin: 18px 0;
+    }
+    .treatments .grid-50 .btn {
+        margin-top: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .section-header{font-size:46px;text-align:center}
+    .btn{margin-left:auto;margin-right:auto;display:block}
+    #slider .slides .slide1 #logo{padding-top:30px}
+    #slider .slides .slide1 h1{font-size:46px;line-height:50px}
+    #slider .slides .slide1 .btn,.services .btn{font-size:14px;max-width:420px}
+    .contact .grid-60{min-height:300px}
+}
+
+@media only screen and (max-width: 959px) {
+    .header-top .grid-85{width:100%;float:none}
+    .header-top .grid-15{width:100%;float:none}
+    .header-top .grid-85 a{display:block;padding:5px 0;text-align:center}
+    .header-top .grid-15{text-align:center;padding-top:10px}
+}
+
+@media only screen and (max-width: 959px) and (min-width: 596px) {
+   #slider .slides .slide1 h1{font-size:64px;line-height:64px}
+}
