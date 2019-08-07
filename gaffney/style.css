@@ -14,34 +14,19 @@ Template: nkpv2
 /*---- GENERAL ----*/
 body{font-family:'Neuzeit Grotesk',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;font-weight:100}
-.section-header{font-size:72px;color:#36433d}
-p{font-size:16px;line-height:36px;color:#565656}
+.section-header {
+    font-size: 4.5rem;
+    color: #36433d
+}
+p {
+    line-height: 36px;
+    color: #565656
+}
 a,a:link,a:visited{color:#36433d;text-decoration:none;outline:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
 a:hover{color:#62796e;text-decoration:none;outline:0}
-.btn {
-    background: #b5cfd0;
-    color: #fff !important;
-    padding: 1em;
-    margin: 50px auto 0;
-    width: 100%;
-    font-size: 21px;
-    max-width: 330px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    cursor: pointer;
-    clear: both;
-    border: 0;
-    position: relative
-}
 
-.btn:focus,
-.btn:hover {
-    background: #abc0c0
-}
+.btn{background:#b5cfd0;color:#fff!important;padding:1em;margin:50px auto 0;width:100%;font-size:1.3em;max-width:330px;text-align:center;font-weight:700;text-transform:uppercase;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;clear:both;border:0}
+.btn:focus,.btn:hover{background:#abc0c0}
 
 
 ul,ol{clear:both}
@@ -65,14 +50,14 @@ ul,ol{clear:both}
 .header-top i{margin:0 5px}
 
 .stellarnav *{text-transform:uppercase}
-.stellarnav ul li a{padding:15px;color:#36433d!important}
+.stellarnav ul li a{padding:15px;color:#36433d!important;font-size:.875rem}
 .stellarnav ul li a:hover{color:#62796e!important}
 .stellarnav.mobile ul{background:#fff}
 
 
 #slider .slides .slide1{background:url(images/banner.jpg) no-repeat center;background-size:cover}
 #slider .slides .slide1 #logo{padding-top:80px}
-#slider .slides .slide1 .grid-100{padding:160px 0 120px;z-index:1;position:relative}
+#slider .slides .slide1 .grid-100{padding:90px 0;z-index:1;position:relative}
 #slider .slides .slide1 h1{color:#fff;font-size:92px;line-height:92px;text-shadow:1px 5px 10px rgba(0,0,0,.5)}
 #slider .slides .slide1 .btn{max-width:600px}
 
@@ -80,12 +65,13 @@ ul,ol{clear:both}
 .about .grid-80{z-index:1;position:relative}
 .about .section-header,.about img{padding-bottom:30px}
 
-.gift-card{background:url(images/leaf-bg2.jpg) no-repeat center;background-size:cover}
+.gift-card{background:url(images/leaf-green-bg.jpg) no-repeat center;background-size:cover}
 .gift-card .grid-container{padding:30px 0}
 .gift-card a{font-weight:700;font-size:30px;color:#fff}
+.gift-card a:hover{opacity: .7;}
 
-.treatments{background:#f9f9f9;padding-bottom:68px;margin-bottom:70px}
-.treatments>div.hide-on-desktop{background:url(./images/model-img1.jpg) no-repeat;background-size:cover;height:80vw}
+.treatments{background:#f9f9f9;padding-bottom:68px}
+.treatments>div.hide-on-desktop{background:url(images/model-img1.jpg) no-repeat;background-size:cover;height:80vw}
 .treatments .grid-50 h3{padding-top:30px;font-size:30px;color:#abc0c0}
 .treatments .grid-50 h1{font-size:30px;color:#36433d;font-size:52px;line-height:60px;padding-bottom:40px}
 .treatments ul{margin-top:30px}
@@ -93,41 +79,88 @@ ul,ol{clear:both}
 .treatments ul li a{color:#abc0c0;text-transform:uppercase;font-weight:700}
 .treatments ul li a:hover{color:#62796e}
 
-.video {
-    max-width: 1840px;
-}
+.video{background:url(images/video.jpg) no-repeat center;background-size:cover;margin:60px auto;height:300px;max-width:1840px;cursor:pointer}
 
-.meet-the-team{background:url(./images/team-bg.jpg) no-repeat center;background-size:cover}
+.meet-the-team{background:url(images/team-bg.jpg) no-repeat center;background-size:cover}
 .meet-the-team .grid-container{display:flex;align-items:center;justify-content:center;height:360px}
 
-.concerns {background:url(images/services-bg.jpg) no-repeat center;background-size:cover}
-.concerns .grid-container {
-    padding: 70px 15px;
-}
-.concerns .btn {
-    max-width: 600px;
-}
+.concerns {background:url(images/leaf-white-bg.jpg) no-repeat center;background-size:cover}
+.concerns .grid-container{padding:70px 15px}
+.concerns .btn{max-width:600px}
 
-.testimonials {
-    background: url(./images/leaf-bg1.jpg) no-repeat center;
-    background-size: cover; 
-}
+.philosophy .hide-on-desktop{background:url(images/philosophy-bg.jpg) no-repeat center;background-size:cover;height:80vw}
+.philosophy .grid-container{padding:70px 15px}
+.philosophy h1{font-size:2.88rem;padding-bottom:50px}
 
+.testimonials{background:url(images/leaf-white-bg.jpg) no-repeat center;background-size:cover}
+.testimonials .grid-container{padding:70px 15px}
+.testimonials .grid-80{text-align:center}
+.testimonials .grid-80 h1{padding-bottom:50px}
+.testimonials .grid-80 span{font-size:2.88rem;display:inline-block;color:#bacbc3;vertical-align:top;font-weight:700}
+.testimonials .grid-80 p{max-width:80%;display:inline-block}
+.testimonials .grid-80 cite{display:block;font-weight:700;color:#36433d;padding-top:40px}
+.testimonials .grid-80 .btn{max-width:450px}
 
-.services{background:url(images/services-bg.jpg) no-repeat center;background-size:cover}
+.botox-fillers .grid-container{padding:70px 15px}
+.botox-fillers>div.hide-on-desktop{background:url(images/model-img2.jpg) no-repeat;background-size:cover;height:80vw}
+.botox-fillers .grid-40 h1{color:#36433d;padding-bottom:50px;font-size:52px}
+.botox-fillers .grid-60{box-shadow:30px -30px #f9f9f9}
+
+.visit{background:url(images/leaf-green-bg.jpg) no-repeat center;background-size:cover}
+.visit .grid-container{padding:75px 15px}
+.visit h1{padding-bottom:50px}
+.visit .grid-80 .grid-50:first-of-type{padding-bottom:50px}
+.visit .btn{display:block;background:#fff;color:#b6cfd0!important}
+.visit .btn:hover{background:#f9f9f9}
+
+.bxa .grid-container{padding:70px 15px}
+.bxa .hide-on-desktop{background:url(images/bxa-bg.jpg) no-repeat center;background-size:cover;height:80vw}
+.bxa .grid-40 h1{font-size:4rem;line-height:4rem}
+.bxa .grid-100{background:url(images/bxa-bg.jpg) no-repeat center;background-size:cover;height:100vw;max-height:706px;margin-left:40%;clear:none}
+
+.services{background:url(images/leaf-white-bg.jpg) no-repeat center;background-size:cover}
 .services .grid-container{padding:140px 0}
 .services .grid-container .grid-100{z-index:1;position:relative}
 .services .btn{max-width:600px}
 
-.contact{padding:70px 0}
-.contact .grid-40 .content{max-width:468px;float:right;padding:0 35px 0 15px;text-align:center}
-.contact .grid-40 .content a{display:block;font-weight:700;font-size:2em;margin:30px 0 15px}
-.contact .grid-60{background:url(images/contact-bg.jpg) no-repeat center;background-size:cover;min-height:700px}
+.contact {
+    padding: 70px 0;
+}
 
-footer .grid-container{padding:100px 0}
-footer .grid-60{text-align:right}
-footer .grid-60 .social{padding-bottom:15px}
-footer .grid-60 a{font-size:1.5em;margin:5px}
+.contact .grid-40 .content {
+    /* max-width: 468px;
+    float: right;
+    padding: 0 35px 0 15px; */
+    text-align: center;
+    padding: 70px 0;
+}
+
+.contact .grid-40 .content a {
+    display: block;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 30px 0 15px
+}
+
+.contact .grid-60 {
+    background: url(images/contact-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+
+footer .grid-container {
+    padding: 100px 0;
+    text-align: center;
+}
+
+footer .grid-60 .social {
+    padding: 30px 0 15px;
+}
+
+footer .grid-60 a {
+    font-size: 1.5em;
+    margin: 5px
+}
 
 /* NKP GLOBAL STYLES */
 img{border:0}
@@ -147,12 +180,17 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 :-moz-placeholder{color:#777}
 :-ms-input-placeholder{color:#777}
 .contact-form input.wpcf7-captchar{width:135px}
+
+
 /* desktop view bxa gallery */
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 /* NKP GLOBAL STYLES */
 
 #nav{background-color:#000;height:50px}
+
+
+
 
 /* ---- START MEDIA QUERIES ---- */
 @media only screen and (max-width: 740px) {
@@ -162,60 +200,58 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 @media only screen and (max-width: 595px) {
     #slider .slides .slide1 h1{font-size:32px;line-height:40px}
+    .testimonials .grid-80 span:first-of-type{padding-right:0}
 }
-
-
 
 
 @media only screen and (min-width: 768px) {
-    .about .grid-container {
-        margin-top: -50px;
+    #slider .slides .slide1 .grid-100{padding:100px 0}
+    .gift-card .grid-container{padding:60px 0}
+    .treatments{margin-top:182px}
+    .treatments .grid-60{margin-left:-10%;margin-top:-80px;background:url(images/model-img1.jpg) no-repeat center;background-size:cover;height:100vw;max-height:866px}
+    .treatments .grid-50{padding-left:24px}
+    .video { 
+        height: 40vw;
+        max-height: 600px;
     }
-    .gift-card .grid-container {
-        padding: 60px 0;
+    .meet-the-team .grid-container{height:18vw;min-height:700px}
+    .philosophy .grid-container{padding:100px 15px}
+    .testimonials .grid-80{text-align:left}
+    .testimonials .grid-80 span{font-size:70px}
+    .testimonials .grid-80 span:first-of-type{padding-right:30px}
+    .testimonials .grid-80 cite,.testimonials .grid-80 .btn{margin-left:65px}
+    .botox-fillers .grid-60{margin-left:-10%;background:url(images/model-img2.jpg) no-repeat center;background-size:cover;height:100vw;max-height:776px}
+    .botox-fillers .grid-40{padding-left:54px}
+    .visit .grid-80 .grid-50:first-of-type{padding-bottom:0}
+    .bxa .grid-40 h1{font-size:6rem;line-height:6rem;margin-top:50%}
+    
+    .contact .grid-40 .content {
+        float: right;
+        padding: 0 35px 0 15px;
+        /* margin-top: 50%; */
     }
-    .treatments {
-        margin-top: 182px;
+    .contact .grid-60 {
+        height: 800px;
+        background-position-y: -160px;
     }
-    .treatments .grid-60 {
-        margin-left: -10%;
-        margin-top: -80px;
-        background: url(./images/model-img1.jpg) no-repeat center;
-        background-size: cover;
-        height: 100vw;
-        max-height: 866px;
-    }
-    .treatments .grid-50 {
-        padding-left: 24px;
-    }
-    .meet-the-team .grid-container {
-        height: 700px;
-    }
+    footer .grid-60{text-align:right}
+    footer .grid-60 .social{padding-top:0}
 }
-
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .treatments .grid-60 {
-        margin-top: -60px;
-    }
-    .treatments ul li {
-        margin: 18px 0;
-    }
-    .treatments .grid-50 .btn {
-        margin-top: 30px;
-    }
+    .treatments .grid-60{margin-top:-60px}
+    .treatments ul li{margin:18px 0}
+    .treatments .grid-50 .btn{margin-top:30px}
 }
 
 
-
 @media only screen and (max-width: 767px) {
-    .section-header{font-size:46px;text-align:center}
+    .section-header{font-size:2.88rem;text-align:center}
     .btn{margin-left:auto;margin-right:auto;display:block}
     #slider .slides .slide1 #logo{padding-top:30px}
-    #slider .slides .slide1 h1{font-size:46px;line-height:50px}
+    #slider .slides .slide1 h1{font-size:2.88rem;line-height:50px}
     #slider .slides .slide1 .btn,.services .btn{font-size:14px;max-width:420px}
-    .contact .grid-60{min-height:300px}
 }
 
 @media only screen and (max-width: 959px) {
@@ -227,4 +263,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 @media only screen and (max-width: 959px) and (min-width: 596px) {
    #slider .slides .slide1 h1{font-size:64px;line-height:64px}
+}
+
+@media only screen and (min-width: 1024px) {
+    #slider .slides .slide1 .grid-100{padding:8vw 0}
+    .about .grid-container{margin-top:-2vw}
 }

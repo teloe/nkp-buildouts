@@ -6,11 +6,19 @@ jQuery(document).ready(function($) {
 		menuLabel:'Menu',
 		phoneBtn:'',
 		locationBtn:''
-	});
+    });
+    
+    $('.video').magnificPopup({
+        items: {
+            src: '<div class="embed-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/meNsxmyY8Ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+            type: 'inline'
+        }
+    });
 
-	// $('#slider').flexslider({
-	//     animation: "fade",
-	//     directionNav: false,
-	//     controlNav: false
-	// });
+	$('.testimonials-slider').flexslider({
+	    animation: "fade",
+	    directionNav: false,
+	    controlNav: false
+    });
+    
 });
