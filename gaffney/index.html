@@ -283,3 +283,65 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about">
+    <div class="grid-container">
+        <div class="grid-70 tablet-grid-100 mobile-grid-100 prefix-10">
+            <h1 class="section-header">The Medical Skin Clinic</h1>
+        </div>
+        <div class="grid-30 tablet-grid-100 mobile-grid-100 suffix-10 fr">
+            <img class="img-resp" src="<?php echo get_stylesheet_directory_uri(); ?>/images/cursive-text.png" alt="The Skin & Body Spa">
+        </div>
+        <div class="grid-80 fr">
+            <p>At The Medical Skin Clinic we are here to “enhance what nature gave you”. Let us evaluate your skin, discuss your goals and develop a treatment plan designed just for you. Reclaim that youthful glow with our minimally invasive solutions including botox, fillers, SkinPen Microneedling, BBL, Halo laser resurfacing and Coolsculpting.®</p>
+            <a href="#contact" class="btn noborder">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="grid-container">
+        <div class="grid-100 tac">
+            <h1 class="section-header">Interested in Our Services?</h1>
+                            <P><img class="img-resp" src="<?php echo get_stylesheet_directory_uri(); ?>/images/gift-card-fb.png"></P>
+            <a href="#giftCard" class="popup-with-move-anim btn">Get a $50 gift card toward your first appointment!<span>When you spend $200 or more</span></a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="grid-60 tablet-grid-60 mobile-grid-100 fr"></div>
+    <div class="grid-40 grid-parent tablet-grid-40 mobile-grid-100">
+        <div class="content">
+            <img class="img-resp" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="Medical Skin Clinic">
+            <a class="phone" href="tel:<?php echo $nkp_client_info->get_primary_practice_phone(); ?>"><?php echo $nkp_client_info->get_primary_practice_phone(); ?></a>
+            <p><?php echo $nkp_client_info->get_primary_practice_address(); ?> <?php echo $nkp_client_info->get_primary_practice_city(); ?>, <?php echo $nkp_client_info->get_primary_practice_state(); ?> <?php echo $nkp_client_info->get_primary_practice_postal(); ?></p>
+            <?php echo do_shortcode( '[contact-form-7 id="27" title="Footer Form"]' ); ?>
+        </div>
+
+    </div>
+</section>
+
+<div class="clr"></div>

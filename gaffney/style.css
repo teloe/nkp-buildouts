@@ -12,16 +12,10 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 
 /*---- GENERAL ----*/
-body{font-family:'Neuzeit Grotesk',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-size:16;font-family:'Neuzeit Grotesk',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif;font-weight:100}
-.section-header {
-    font-size: 4.5rem;
-    color: #36433d
-}
-p {
-    line-height: 36px;
-    color: #565656
-}
+.section-header{font-size:4.5rem;color:#36433d}
+p{line-height:36px;color:#565656}
 a,a:link,a:visited{color:#36433d;text-decoration:none;outline:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
 a:hover{color:#62796e;text-decoration:none;outline:0}
 
@@ -123,44 +117,14 @@ ul,ol{clear:both}
 .services .grid-container .grid-100{z-index:1;position:relative}
 .services .btn{max-width:600px}
 
-.contact {
-    padding: 70px 0;
-}
+.contact{padding:70px 0}
+.contact .grid-40 .content{text-align:center;padding:70px 0}
+.contact .grid-40 .content a{display:block;font-weight:700;font-size:2em;margin:30px 0 15px}
+.contact .grid-60{background:url(images/contact-bg.jpg) no-repeat center;background-size:cover;height:60vw}
 
-.contact .grid-40 .content {
-    /* max-width: 468px;
-    float: right;
-    padding: 0 35px 0 15px; */
-    text-align: center;
-    padding: 70px 0;
-}
-
-.contact .grid-40 .content a {
-    display: block;
-    font-weight: bold;
-    font-size: 2em;
-    margin: 30px 0 15px
-}
-
-.contact .grid-60 {
-    background: url(images/contact-bg.jpg) no-repeat center;
-    background-size: cover;
-    height: 60vw;
-}
-
-footer .grid-container {
-    padding: 100px 0;
-    text-align: center;
-}
-
-footer .grid-60 .social {
-    padding: 30px 0 15px;
-}
-
-footer .grid-60 a {
-    font-size: 1.5em;
-    margin: 5px
-}
+footer .grid-container{padding:100px 0;text-align:center}
+footer .grid-60 .social{padding:30px 0 15px}
+footer .grid-60 a{font-size:1.5em;margin:5px}
 
 /* NKP GLOBAL STYLES */
 img{border:0}
@@ -210,10 +174,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .treatments{margin-top:182px}
     .treatments .grid-60{margin-left:-10%;margin-top:-80px;background:url(images/model-img1.jpg) no-repeat center;background-size:cover;height:100vw;max-height:866px}
     .treatments .grid-50{padding-left:24px}
-    .video { 
-        height: 40vw;
-        max-height: 600px;
-    }
+    .video{height:40vw;max-height:600px}
     .meet-the-team .grid-container{height:18vw;min-height:700px}
     .philosophy .grid-container{padding:100px 15px}
     .testimonials .grid-80{text-align:left}
@@ -224,16 +185,8 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .botox-fillers .grid-40{padding-left:54px}
     .visit .grid-80 .grid-50:first-of-type{padding-bottom:0}
     .bxa .grid-40 h1{font-size:6rem;line-height:6rem;margin-top:50%}
-    
-    .contact .grid-40 .content {
-        float: right;
-        padding: 0 35px 0 15px;
-        /* margin-top: 50%; */
-    }
-    .contact .grid-60 {
-        height: 800px;
-        background-position-y: -160px;
-    }
+    .contact .grid-40 .content{float:right;padding:0 35px 0 15px}
+    .contact .grid-60{height:800px;background-position-y:-160px}
     footer .grid-60{text-align:right}
     footer .grid-60 .social{padding-top:0}
 }
