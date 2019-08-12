@@ -6,11 +6,18 @@ jQuery(document).ready(function($) {
 		menuLabel:'Menu',
 		phoneBtn:'',
 		locationBtn:''
-	});
-
-	$('#slider').flexslider({
+    });
+    
+    $('.testimonials-slider').flexslider({
 	    animation: "fade",
 	    directionNav: false,
 	    controlNav: false
-	});
+    });
+
+	// $('#slider').flexslider({
+	//     animation: "fade",
+	//     directionNav: false,
+	//     controlNav: false
+    // });
+    
 });
