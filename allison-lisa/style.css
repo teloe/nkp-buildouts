@@ -59,6 +59,21 @@ header .grid-container .grid-50 p{padding:15px 0}
 .stellarnav ul li a:hover{opacity:1}
 .stellarnav ul li a{padding:20px;color:#fff}
 
+#sidebar h1{font-size:1.8em;padding-bottom:30px;text-align:center;text-transform:uppercase}
+#sidebar .btn-wrapper{width:230px}
+#sidebar .btn{min-width:165px}
+#sidebar .btn::after{width:205px}
+#sidebar .testimonials,#sidebar .gallery,#sidebar .financing{padding:15px}
+#sidebar .testimonials{background:url(images/sidebar-testimonials.jpg) no-repeat;background-size:cover;min-height:570px;display:flex;flex-direction:column;justify-content:center;align-content:center}
+#sidebar .testimonials *{color:#fff}
+#sidebar .testimonials img{padding:45px 0;display:block;margin:0 auto}
+#sidebar .gallery{background:#F1F0F0;margin:40px 0;padding:45px 15px}
+#sidebar .gallery img{display:block;margin:auto}
+#sidebar .financing{background:url(images/sidebar-financing.jpg) no-repeat;background-size:cover;min-height:525px;display:flex;flex-direction:column;justify-content:center;align-content:center}
+#sidebar .financing .btn{background:#fff;color:#367282!important}
+#sidebar .financing .btn:hover{background:transparent;color:#fff!important}
+#sidebar .financing .btn::after{border:solid 2px #fff}
+
 .welcome{background:#eaeaea;padding:87px 0}
 .welcome .hide-on-desktop{background:url(images/welcome-bg.jpg) no-repeat center;background-size:cover;height:60vw}
 .welcome .grid-container,.about .grid-container,.gallery .grid-container{padding:60px 15px;background:#fff}
@@ -162,6 +177,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .welcome .grid-container .grid-55{padding:97px 35px}
     .welcome .grid-container .grid-60{max-height:750px}
     .about .grid-container .grid-60{padding:97px 35px 20px}
+    /* #sidebar .btn-wrapper{width:270px}
+    #sidebar .btn{min-width:205px}
+    #sidebar .btn::after{width:245px} */
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
