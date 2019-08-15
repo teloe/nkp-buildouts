@@ -19,5 +19,17 @@ jQuery(document).ready(function($) {
 	//     directionNav: false,
 	//     controlNav: false
     // });
+
+    
+    // Sticky Nav
+    if ($(window).width() >= 960) {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 180) {
+                $("#navbar").addClass('sticky');
+            } else {
+                $("#navbar").removeClass('sticky');
+            }
+        });
+    }
     
 });
