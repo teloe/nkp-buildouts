@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
     // Sticky Nav
     if ($(window).width() >= 960) {
         $(window).scroll(function () {
-            if ($(window).scrollTop() > 180) {
+            if ($(window).scrollTop() > 172) {
                 $("#navbar").addClass('sticky');
             } else {
                 $("#navbar").removeClass('sticky');
