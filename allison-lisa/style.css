@@ -74,6 +74,8 @@ header .grid-container .grid-50 p{padding:15px 0}
 #sidebar .financing .btn:hover{background:transparent;color:#fff!important}
 #sidebar .financing .btn::after{border:solid 2px #fff}
 
+#main{padding-top:100px}
+
 .welcome{background:#eaeaea;padding:87px 0}
 .welcome .hide-on-desktop{background:url(images/welcome-bg.jpg) no-repeat center;background-size:cover;height:60vw}
 .welcome .grid-container,.about .grid-container,.gallery .grid-container{padding:60px 15px;background:#fff}
@@ -102,10 +104,12 @@ header .grid-container .grid-50 p{padding:15px 0}
 .contact .grid-container .grid-40 .phone{font-size:2rem}
 .contact .grid-container .grid-40 .section-header{color:#3a7282}
 
-form *{font-family:'Proxima Nova',sans-serif;font-size:.8rem}
+form *{font-family:'Proxima Nova',sans-serif;font-size:.9rem}
 form input,form textarea{width:100%;padding:15px;margin:5px 0;box-sizing:border-box}
-form input[type=checkbox]{width:auto}
-form textarea{resize:none}
+form input[type=checkbox]{width:auto;opacity:0;cursor:pointer}
+form input[type=checkbox] + label::before{content:"\2714";border:1px solid #000;border-radius:0;display:inline-block;width:1.2rem;height:1.2rem;margin-right:.5rem;cursor:pointer;color:transparent;margin-left:-18px;transition:.2s}
+form input[type=checkbox]:checked + label::before{background-color:#367282;border-color:#367282;color:#fff}
+form textarea{resize:none;margin-bottom:20px}
 
 footer .grid-container{padding:100px 15px}
 footer .grid-container .grid-50{text-align:center;padding:15px}
