@@ -1,10 +1,11 @@
 jQuery(document).ready(function($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
-        breakpoint: 960,
+        breakpoint: 999999,
         menuLabel: 'Menu',
         phoneBtn: '',
-        locationBtn: ''
+        locationBtn: '',
+        mobileMode: true
     });
 
     $('#slider').flexslider({
