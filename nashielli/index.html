@@ -15,6 +15,8 @@
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/kdm0pws.css">
 
@@ -24,12 +26,11 @@
     <header>
         <div class="top grid-container">
             <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                <div class="grid-10">
-                    <img class="img-resp" src="images/logo1.png" alt="Nashielle Plastic Surgery Specialists">
-                </div>
-                <div class="grid-90">
+                <img class="img-resp hide-on-mobile" src="images/logo1.png" alt="Nashielle Plastic Surgery Specialists">
+                <img src="./images/logo2.png" alt="" class="img-resp hide-on-tablet hide-on-desktop">
+                <div>
                     <p>Guadalajara, Mex. | Puerto Vallarta, Mex. | +52 (33) 1562 197</p>
-                    <div class="socai">
+                    <div class="social">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
                         <a href=""><i class="fab fa-youtube"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
@@ -38,9 +39,9 @@
                 </div>
 
             </div>
-            <div class="grid-10 fr">
+            <div class="fixed-nav fr">
                 <div class="menu open-nav tar">
-                    MENU
+                    MENU    
                     <span></span>
                     <span></span>
                     <span></span>
@@ -52,14 +53,28 @@
             <ul class="slides">
                 <li>
                     <div class="slide1">
-                        <video autoplay="" loop="" muted="" autobuffer="" preload="auto" class="fill-width hide-mobile">
+                        <video autoplay="" loop="" muted="" autobuffer="" preload="auto" class="fill-width">
                             <source src="./videos/nashielle-banner-video.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser
                         </video>
+                        <div class="slide-content">
+                            <img src="./images/logo.png" alt="" class="img-resp">
+                            <a href="" class="btn hide-on-mobile">
+                                <span>Watch full video</span>
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
+        <div class="grid-container hide-on-desktop hide-on-tablet tac">
+            <a href="" class="btn">
+                <span>Watch full video</span>
+            </a>
+        </div>
     </header>
+    <div class="clr"></div>
+
+    <!-- data-aos="fade-up" -->
 
     <!-- <div id="logo">
         <a href="/" title="Nashielle Plastic Surgery Specialists">
@@ -87,10 +102,163 @@
                 </li>
              </ul>
         </div>
-	</nav>
+    </nav>
+    
+    <section class="meet" data-aos="fade-up" data-aos-duration="1500">
+        <div class="section-container">
+            <div class="hide-on-tablet hide-on-desktop"></div>
+            <div class="grid-60 tablet-grid-60 mobile-grid-100">
+                <h1>Meet the doctor</h1>
+                <h3 class="sub-header">Nashielli Torres Espinosa Chiu, MD</h3>
+                <p>Doctor Nashielli Torres Espinosa Chiu is certified by the Mexican Board of Plastic and Reconstructive Surgery (CMCPER) (cert. number 1457). Dr. Nashielli studied medicine at the Universidad Autónoma de Guadalajara, with a specialty of General Surgery from the University Hospital Dr. Angel Leaño. Completed her education by doing the sub specialty of Plastic and Reconstructive Surgery at the Jalisco Institute of Plastic and Reconstructive Surgery under the direction of Dr. Jose Guerrero Santos, renowned for its extensive experience in the field of surgery, as a pioneer and founding professional.</p>
+                <a href="" class="btn">
+                    <span>Learn more</span>
+                </a>
+            </div>
+            <div class="grid-75 tablet-grid-75">
+            </div>
+        </div>
+    </section>
 
-	
+    <section class="procs">
+        <div class="section-container">
+            <div class="grid-30">
+                <a href="">
+                    <div class="outer-border">
+                        <div class="inner-border">
+                            <p>Facelift Procedures</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-30">
+                <a href="">
+                    <div class="outer-border">
+                        <div class="inner-border">
+                            <p>Facelift Procedures</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-30">
+                <a href="">
+                    <div class="outer-border">
+                        <div class="inner-border">
+                            <p>Facelift Procedures</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-30">
+                <a href="">
+                    <div class="outer-border">
+                        <div class="inner-border">
+                            <p>Facelift Procedures</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <section class="international-patients">
+        <div class="section-container">
+            <div class="hide-on-tablet hide-on-desktop"></div>
+            <div class="grid-60 tablet-grid-60">
+                <div class="intl">
+                    <h1>International</h1>
+                    <h3 class="sub-header">Patients</h3>
+                    <p>We offer an extraordinary service for our patients coming to visit us from Canada and the USA or any country outside of Mexico!  First and foremost, we want to make patients feel comfortable with the process.  This starts with communication with Lori, the International Patient Coordinator.  She will send any written information needed and will set up the next step, which is a video call in order to meet Dr. Nashielli and go over patients' detailed questions about procedures.</p>
+                    <a href="" class="btn">Learn more</a>
+                </div>
+                <div class="local">
+                    <h1>Local</h1>
+                    <h3 class="sub-header">Patients</h3>
+                    <p>The same excellent care and service is provided for our Spanish speaking patients.  Magda is the point of contact to provide initial information needed, schedule the video calls and help arrange any and all details regarding consultations and/or surgeries.  Again, our priority is always you, the patient!</p>
+                    <a href="" class="btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-container clr">
+            <div class="grid-60 tablet-grid-60">
+                <img src="./images/stars.png" alt="Stars" class="img-resp">
+                <h1>Testimonials</h1>
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <h3 class="sub-header">"Professional, skilled, caring &amp; amazing!"</h3>
+                            <p>The experience I had with Nashielli is over the top better than I ever imagined. I visited her in 2017, returned in 2018 for my surgery. I had originally planned to just get my neck done – however her competence and confidence compelled me to do a full facelift. I had no pain! I have a small amount of bruising that is mostly gone by day 16. She provided immediate response to any concern.”</p>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <a href="" class="btn">Read more</a>
+            </div>
+            <div class="grid-75 tablet-grid-75">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="./images/bxa1.png" alt="Before and after" class="img-resp">
+        <img src="./images/bxa2.png" alt="Before and after" class="img-resp">
+        <img src="./images/bxa3.png" alt="Before and after" class="img-resp">
+        <img src="./images/bxa4.png" alt="Before and after" class="img-resp">
+        <img src="./images/bxa5.png" alt="Before and after" class="img-resp">
+        <img src="./images/bxa6.png" alt="Before and after" class="img-resp">
+    </section>
+
+    <section class="office">
+        <div class="section-container">
+            <div class="grid-container">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="grid-container">
+            <div class="grid-50">
+
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="">Back to top</a>
+    </div>
+
+    <footer>
+        <div class="grid-container">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <div class="grid-10">
+                    <img class="img-resp" src="images/logo1.png" alt="Nashielle Plastic Surgery Specialists">
+                </div>
+                <div class="grid-90">
+                    <p>Guadalajara, Mex. | Puerto Vallarta, Mex. | +52 (33) 1562 197</p>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <p>Copyright &copy; 2019 Dr. Nashielle Torres Espinosa Chiu</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
