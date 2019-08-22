@@ -7,6 +7,13 @@ jQuery(document).ready(function($) {
         mobileMode: true
     });
 
+    $('.testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: false,
+        customDirectionNav: ".flex-direction-nav li a"
+    });
+
     // function openNav() {
     //     $("").css('transform', 'translateX(0px)') ;
     // }
