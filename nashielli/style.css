@@ -20,11 +20,10 @@ body {
     font-family: 'Futura PT', sans-serif;
     color: #111111;
     background: #EDEDF0;
-    /* font-size: 16px; */
+    font-size: 16px;
 }
 
-.section-container {
-    width: 100%;
+.grid-container {
     max-width: 1445px;
 }
 
@@ -35,11 +34,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.2rem;
     text-transform: uppercase;
-    /* line-height: 2.5rem; */
-    /* padding-bottom: 1.5rem; */
+    text-align: center;
 }
 
 .sub-header {
+    text-align: center;
     color: #4d7bba;
     font-weight: 400;
     font-size: 1.3rem;
@@ -73,14 +72,14 @@ a:hover {
     max-width: 200px;
     margin: auto;
     font-weight: 300;
-    display: inline-block;
+    display: block;
     width: 100%;
 }
 .btn::before,
 .btn span {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .btn span {
@@ -101,11 +100,23 @@ a:hover {
     
 }
 
-.btn:hover::before,
+.btn:hover::before {
+    transform: translateX(5px);
+    background: #4d7bba;
+    color: #fff;
+    
+}
+
+.btn:hover span {
+    background: #4d7bba;
+    color: #fff;
+}
+
+/* .btn:hover::before,
 .btn:hover span {
     box-shadow: inset 185px 0 0 0 #4d7bba;
     color: #fff;
-}
+} */
 
 .social {
     margin-top: 15px;
@@ -119,6 +130,7 @@ a:hover {
     width: 38px;
     display: inline-block;
     margin: 5px;
+    text-align: center;
 }
 
 .social a:hover {
@@ -148,7 +160,7 @@ ul,ol{clear:both}
 header{position:relative;color:#4d7bba}
 header>.grid-container.top{z-index:3;padding:30px 15px;text-align:center}
 header>.grid-container .fixed-nav .menu{display:flex;flex-direction:column;align-items:flex-end;padding:10px;cursor:pointer;font-weight:700}
-header>.grid-container .fixed-nav .menu span{content:'';background:#4d7bba;height:2px;width:100%;display:block;margin:4px 0;transition:all .3s}
+header>.grid-container .fixed-nav .menu span{content:'';background:#4d7bba;height:2px;width:100%;display:block;margin:3px 0;transition:all .3s}
 header > .grid-container .fixed-nav .menu span:nth-child(1){width:50%}
 header > .grid-container .fixed-nav .menu span:nth-child(2){width:75%}
 header > .grid-container .fixed-nav .menu:hover span{width:100%}
@@ -157,9 +169,19 @@ video.fill-width{float:none;margin:0 auto;width:100%;height:auto;filter:brightne
 
 #slider .slides .slide1{position:relative}
 #slider .slides .slide1 .slide-content{position:absolute;top:35%;right:0;left:0;width:50%;margin:auto;text-align:center}
-#slider .slides .slide1 .slide-content .btn{display:block;margin-top:60px}
 header .grid-container.hide-on-desktop{padding:30px 15px}
-header .grid-container.hide-on-desktop .btn {max-width: 235px}
+header .btn {
+    display: block;
+    margin-top: 40px;
+    max-width: 240px
+}
+
+header .btn:hover span,
+header .btn:hover::before {
+    background: transparent;
+    border-color: #4d7bba !important;
+    color: #4d7bba !important;
+}
 
 /* NAV ----------------------------------------------------- */
 nav {
@@ -174,36 +196,89 @@ nav {
 
 
 /* .meet -------------------------------------------------- */
-.meet .section-container {
-    padding: 3rem 0;
+.meet .grid-container {
+    padding-top: 200px;
+    padding-bottom: 400px;
+    position: relative;
 }
+
+.meet .grid-container > img {
+    position: absolute;
+    bottom: 60px;
+}
+
 .meet .grid-60 {
-    padding: 2rem 15px;
+    border: solid 30px #F1F1F3;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0,.1);
+    background: #fff;
+    padding: 90px 100px;
 }
 .meet .grid-60 p {
     padding-bottom: 2.5rem;
 }
-.meet .grid-75,
+.meet .grid-55,
 .meet .hide-on-desktop {
-    background: url(./images/doctor.jpg) no-repeat;
+    background: url(images/doctor.jpg) no-repeat;
     background-size: cover;
+}
+
+.meet .grid-55 {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: -1;
+    height: 632px;
 }
 .meet .hide-on-desktop {
     height: 80vw;
 }
 
 
+/* .procs -------------------------------------------------- */
+.procs .grid-container{text-align:center}
+.procs ul{display:flex;flex-flow:row wrap;justify-content:center}
+.procs .grid-25{padding:10px;margin:auto}
+.procs .grid-25 a{display:block;position:relative;height:100%}
+.procs a::before{content:"";background:rgba(5,5,5,0.5);position:absolute;top:0;bottom:0;left:0;right:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+.procs a:hover::before{background:rgba(5,5,5,0)}
+.procs a .border{border:solid 2px #4d7bba;margin:10px;top:0;right:0;bottom:0;left:0;position:absolute}
+.procs a .border::after,.procs a .border::before{position:absolute;content:'';display:block}
+.procs a .border::before{height:35%;width:50%;top:0;left:0;box-shadow:inset 5px 5px 0 #4d7bba}
+.procs a .border::after{bottom:0;right:0;height:0;width:0;box-shadow:inset -5px -5px 0 #4d7bba}
+.procs a:hover .border::after,.procs a:hover .border::before{height:100%;width:100%;-webkit-transition:width .3s ease-out,height .3s ease-out;-moz-transition:width .3s ease-out,height .3s ease-out;transition:width .3s ease-out,height .3s ease-out}
+.procs a p{color:#fff;font-size:1.6rem;position:absolute;bottom:50px;left:0;right:0}
 
 
-/* HEADER -------------------------------------------------- */
-/* HEADER -------------------------------------------------- */
-/* HEADER -------------------------------------------------- */
+/* .intl-patients ------------------------------------------ */
+.intl-patients {
+    background: url(./images/international-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 1000px;
+}
+
+.intl-patients .grid-60 .intl,
+.intl-patients .grid-60 .local {
+    background: #fff;
+    padding: 90px;
+}
+
 /* HEADER -------------------------------------------------- */
 /* HEADER -------------------------------------------------- */
 /* HEADER -------------------------------------------------- */
 /* HEADER -------------------------------------------------- */
 /* HEADER -------------------------------------------------- */
 
+
+
+/* .back-to-top -------------------------------------------- */
+.back-to-top {
+    padding: 60px 0;
+    background: #4d7bba;
+    text-align: center;
+    display: block;
+    color: #fff !important;
+    position: relative;
+}
 
 
 /* NKP GLOBAL STYLES */
@@ -238,15 +313,47 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
-    header > .grid-container{position:absolute;left:0;right:0;color:#fff;text-a}
+    h1,.sub-header{text-align:left}
+    .btn {
+        display: inline-block;
+    }
+    header>.grid-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        color: #fff;
+    }
     header > .grid-container .grid-50 {
         text-align: left;
     }
-    header>.grid-container .grid-10 .menu span {
+    header > .grid-container .grid-50 > img {
+        display: inline-block;
+        vertical-align: top;
+    }
+    header > .grid-container .grid-50 > div {
+        display: inline-block;
+    }
+    header > .grid-container .grid-50 > div .social {
+        text-align: left;
+        margin-top: 5px;
+    }
+    header > .grid-container .fixed-nav .menu span {
         background: #fff;
     }
     video.fill-width {
         width: 100%;
+    }
+
+    #slider .slide1 .btn span {
+        border: solid 2px #fff;
+        color: #fff;
+    }
+    #slider .slide1 .btn::before {
+        border: solid 2px #fff;
+        color: #fff;
+    }
+    .procs .sub-header {
+        text-align: center;
     }
 }
 
