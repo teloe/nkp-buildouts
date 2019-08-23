@@ -11,7 +11,14 @@ jQuery(document).ready(function($) {
         animation: 'fade',
         directionNav: true,
         controlNav: false,
-        customDirectionNav: ".flex-direction-nav li a"
+        customDirectionNav: "#testimonials-direction-nav li a"
+    });
+
+    $('.office-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: false,
+        customDirectionNav: "#office-direction-nav li a"
     });
 
     // function openNav() {

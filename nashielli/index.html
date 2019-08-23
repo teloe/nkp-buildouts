@@ -165,7 +165,7 @@
         <div class="hide-on-tablet hide-on-desktop"></div>
         <div class="grid-container">    
             <div class="grid-60 tablet-grid-60 fr">
-                <div class="intl">
+                <div class="intl" data-aos="fade-left" data-aos-duration="2000">
                     <div class="inner">                    
                         <h1>International</h1>
                         <h3 class="sub-header">Patients</h3>
@@ -175,7 +175,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="local">
+                <div class="local" data-aos="fade-left" data-aos-duration="2000">
                     <div class="inner">
                         <h1>Local</h1>
                         <h3 class="sub-header">Patients</h3>
@@ -191,9 +191,9 @@
 
     <section class="testimonials">
         <div class="grid-container">
-            <div class="grid-60 tablet-grid-60">
+            <div class="grid-50 tablet-grid-50" data-aos="flip-left" data-aos-duration="1500">
                 <div class="inner">
-                    <img src="./images/stars.png" alt="Stars" class="img-resp">
+                    <img src="./images/stars.png" alt="Stars" class="img-resp stars">
                     <h1>Testimonials</h1>
                     <div class="testimonials-slider">
                         <ul class="slides">
@@ -213,7 +213,7 @@
                     </div>
                     <div class="clr"></div>
                     <div class="controls">
-                        <ul class="flex-direction-nav custom">
+                        <ul id="testimonials-direction-nav" class="flex-direction-nav">
                             <li class="flex-nav-prev">
                                 <a class="flex-prev" href="#"><i class="fas fa-chevron-left"></i></a>
                             </li>
@@ -227,28 +227,86 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-75 tablet-grid-75">
+            <div class="grid-65 tablet-grid-65">
+                <!-- <video autoplay="" loop="" muted="" autobuffer="" preload="auto" class="fill-width">
+                    <source src="./videos/Patient_Experience_Simone.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser
+                </video> -->
+                <img src="./images/testimonials-bg.jpg" alt="Testimonials" class="img-resp">
+                <a href="https://www.youtube.com/watch?v=Lz9gAg6A8zQ" target="_blank" class="btn">
+                    <span>Watch full video</span>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="gallery">
         <div class="grid-container">
-            <h1>Photo Gallery</h1>
+            <h1 class="tac">Photo Gallery</h1>
             <h3 class="sub-header">Before & After Photos from Real Patients</h3>
-            <img src="./images/bxa1.png" alt="Before and after" class="img-resp">
-            <img src="./images/bxa2.png" alt="Before and after" class="img-resp">
-            <img src="./images/bxa3.png" alt="Before and after" class="img-resp">
-            <img src="./images/bxa4.png" alt="Before and after" class="img-resp">
-            <img src="./images/bxa5.png" alt="Before and after" class="img-resp">
-            <img src="./images/bxa6.png" alt="Before and after" class="img-resp">
+            <img src="./images/bxa1.png" alt="Before and after" class="img-resp" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/bxa2.png" alt="Before and after" class="img-resp" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/bxa3.png" alt="Before and after" class="img-resp" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/bxa4.png" alt="Before and after" class="img-resp" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/bxa5.png" alt="Before and after" class="img-resp" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/bxa6.png" alt="Before and after" class="img-resp" data-aos="fade-up" data-aos-duration="2000">
         </div>
     </section>
 
     <section class="office">
         <div class="grid-container">
-            <div class="grid-container">
-
+            <div class="btn-wrapper">
+                <a href="" class="btn tour">
+                    <span>Tour our office</span>
+                </a>
+            </div>
+            <div class="grid-100">
+                <div class="inner">
+                    <div class="office-slider">
+                        <ul class="slides">
+                            <li>
+                                <div class="slide1">
+                                    <div class="grid-50 fr">
+                                        <h1>Lore Payne</h1>
+                                        <h3 class="sub-header">International Patient Coordinator</h3>
+                                        <p>I originally moved to Guadalajara from San Diego in September 2009 with a plan to sta, for 6 months. I never left…. except to go back and clean out my storavge unit! I had been taking Spanish for about 3 years prior to coming here and always took more classes on every visit. </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide2">
+                                    <div class="grid-50 fr">
+                                        <h1>John Doe</h1>
+                                        <h3 class="sub-header">Local Patient Coordinator</h3>
+                                        <p>Eiusmod dolore laborum labore irure ullamco excepteur. Proident tempor reprehenderit nisi enim dolore veniam ullamco voluptate cupidatat ullamco veniam. Consequat non in et amet esse elit Lorem. Eiusmod do velit mollit adipisicing anim velit mollit cupidatat ipsum ea voluptate.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide3">
+                                    <div class="grid-50 fr">
+                                        <h1>Some Body</h1>
+                                        <h3 class="sub-header">International Patient Coordinator</h3>
+                                        <p>Aliqua officia commodo aliqua magna. Cupidatat proident pariatur reprehenderit nostrud elit reprehenderit laborum commodo velit. Commodo enim occaecat sunt et consequat.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="controls">
+                        <ul id="office-direction-nav" class="flex-direction-nav">
+                            <li class="flex-nav-prev">
+                                <a class="flex-prev" href="#"><i class="fas fa-chevron-left"></i></a>
+                            </li>
+                            <li class="flex-nav-next">
+                                <a class="flex-next" href="#"><i class="fas fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                        <a href="" class="btn">
+                            <span>Read more</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -269,10 +327,8 @@
     <footer>
         <div class="grid-container">
             <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                <div class="grid-10">
-                    <img class="img-resp" src="images/logo1.png" alt="Nashielle Plastic Surgery Specialists">
-                </div>
-                <div class="grid-90">
+                <img class="img-resp" src="./images/logo2.png" alt="Nashielle Plastic Surgery Specialists">
+                <div>
                     <p>Guadalajara, Mex. | Puerto Vallarta, Mex. | +52 (33) 1562 197</p>
                     <div class="social">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
