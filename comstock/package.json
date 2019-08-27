@@ -1,0 +1,15 @@
+{
+    "name": "comstock",
+    "version": "1.0.0",
+    "description": "",
+    "main": ".eslintrc.js",
+    "scripts": {
+        "start": "browser-sync start --directory --server --files \"**/*\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^6.1.0",
+        "browser-sync": "^2.26.3"
+    }
+}
