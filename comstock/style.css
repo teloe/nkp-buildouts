@@ -8,19 +8,45 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap');
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
 /*---- GENERAL ----*/
+html {
+    box-sizing: border-box;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.47em;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.533em;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.3043em;
+}
+
+p, li {
+    font-family: "PT Sans",sans-serif;
+    color: #707070;
 }
 
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #222;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -28,10 +54,21 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    color: #af6014;
     text-decoration: none;
     outline: none;
 }
+
+.btn {
+    display: inline-block;
+    background: #af6014;
+    color: #fff !important;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-size: 1.067rem;
+    padding: 20px 30px 20px;
+}
+
 ul,ol{clear:both}
 .fl{float:left}
 .fr{float:right}
@@ -43,6 +80,79 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+
+
+
+/* HEADER ------------------------------------------------------------------- */
+.main-menu {
+    padding-top: 20px;
+}
+
+#logo img {
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    max-height: 3.6rem;
+}
+
+
+/* NAV ------------------------------------------------------------------- */
+.stellarnav > ul > li > a {
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 0.875rem;
+}
+
+
+
+/* SLIDER ------------------------------------------------------------------- */
+#slider .slide1 {
+    background: url(images/banner-image.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#slider .slide1 .grid-container {
+    height: 744px;
+}
+
+#slider .slide1 h1 {
+    text-transform: uppercase;
+}
+
+#slider .slide1 h1::after {
+    content: '';
+    display: block;
+    width: 1.7em;
+    height: 2px;
+    margin-top: 0.3em;
+    margin-left: 0.1em;
+}
+
+
+
+/* .welcome ------------------------------------------------------------------- */
+.welcome .grid-50:nth-of-type(2) {
+    background: url(images/doctor1.jpeg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+.welcome .grid-50:nth-of-type(2)::before {
+    content: 'e919';
+    font-size: 3.8em;
+    display: inline-block;
+}
+
+
+
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
 
 
 
