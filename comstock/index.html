@@ -23,11 +23,11 @@
 
     <div class="top-panel hide-on-mobile">
         <div class="grid-container">
-            <div class="grid-50">
+            <div class="grid-50 tablet-grid-50">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>6127 North La Cholla Blvd, #101 Tucson, AZ 85741</span>
             </div>
-            <div class="grid-50">
+            <div class="grid-50 tablet-grid-50">
                 <a href="">
                     <i class="fas fa-phone"></i>
                     <span>520.797.8855</span>
@@ -39,7 +39,7 @@
     <div class="main-menu">
         <div class="grid-container">
             <div class="grid-100">
-                <div id="logo">
+                <div id="logo" class="hide-on-mobile">
                     <a href="/" title="">
                         <img class="img-resp" src="./images/skin-spectrum-logo-orange.png" alt="Skin Spectrum">
                     </a>
@@ -65,12 +65,17 @@
                             <li><a href="#">Treatment Guide</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Request Appointment</a></li>
+                            <li><a class="apt" href="#">Request Appointment</a></li>
                          </ul>
                     </div>
                 </nav>
             </div>
         </div>
+    </div>
+    <div id="logo" class="hide-on-tablet hide-on-desktop tac">
+        <a href="/" title="">
+            <img class="img-resp" src="./images/skin-spectrum-logo-orange.png" alt="Skin Spectrum">
+        </a>
     </div>
 
 	<div id="slider">
@@ -78,9 +83,10 @@
     		<li>
                 <div class="slide1">
                     <div class="grid-container">
-                      <div class="grid-50 fr">
+                      <div class="grid-50 tablet-grid-50 mobile-grid-55 fr">
                           <h1>The art &amp; science <br> of dermatology</h1>
-                          <p>Exceptionsl results delieverd by our experienced and skilled team from our high-class Arizona office.</p>
+                          <p class="hide-on-mobile">Exceptionsl results delieverd by our experienced and skilled team from our high-class Arizona office.</p>
+                          <a class="btn" href="">Request appointment</a>
                       </div>
                     </div>
                 </div>
@@ -89,15 +95,13 @@
 	</div>
 
     <section class="welcome">
+        <!-- <div class="hide-on-tablet hide-on-desktop"></div> -->
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                <h1>Dermatology Specialists in Tucson, Arizona</h1>
-                <p>At Skin Spectrum, we specialize in the health and beauty of the skin. In practice for over 2 decades, our dermatologists are highly regarded in Tucson, Arizona, and across the United States for comprehensive, non-surgical skin rejuvenation that incorporates anti-aging and wellness strategies. We can help you have fresh, radiant skin that can renew your appearance and your self-confidence.</p>
-                <a class="btn" href="">More about us</a>
-            </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 push-50 tablet-push-50">
+                <img class="img-resp" src="images/doctor1.jpeg" alt="doctor">
                 <a href="">
                     <div class="phone">
+                        <i class="fas fa-phone"></i>
                     </div>
                     <div class="call">
                         <span>Call to schedule a consultation</span>
@@ -105,30 +109,64 @@
                     </div>
                 </a>
             </div>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 pull-50 tablet-pull-50">
+                <h1>Dermatology Specialists in Tucson, Arizona</h1>
+                <p>At Skin Spectrum, we specialize in the health and beauty of the skin. In practice for over 2 decades, our dermatologists are highly regarded in Tucson, Arizona, and across the United States for comprehensive, non-surgical skin rejuvenation that incorporates anti-aging and wellness strategies. We can help you have fresh, radiant skin that can renew your appearance and your self-confidence.</p>
+                <a class="btn" href="">More about us</a>
+            </div>
         </div>
     </section>
 
-
     <section class="services">
         <div class="grid-container">
-            <div class="grid-40">
-                <h1>Featured Servies</h1>
-                <p>Click on the area you're most interested in treating.</p>
+            <div class="oval"></div>
+            <div class="oval"></div>
+            <div class="oval"></div>
+            <div class="oval"></div>
+            <div class="text">
+                <h1>Featured Services</h1>
+                <p>Click on the area you're most<br> interested in treating.</p>
             </div>
+            <!-- <img class="img-resp" src="images/Interactive-model-face-neck.jpg" alt="Interactive model for facial procedures"> -->
         </div>
     </section>
 
     <section class="meet">
-        <div class="grid-container">
+        <div class="grid-container tac">
             <h6 class="sub-header">Our staff</h6>
-            <h1>Meet the Doctors</h1>
+            <h1 class="section-header">Meet the Doctors</h1>
             <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <a href="">
+                    <img src="./images/Dr._Comstock.jpg" alt="Dr. Comstock" class="img-resp">
+                    <div class="info">
+                        <h4>Jody Comstock, MD</h4>
+                    </div>
+                </a>
             </div>
             <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <a href="">
+                    <img src="./images/Dr._Pai.jpg" alt="Tina Pai, MD" class="img-resp">
+                    <div class="info">
+                        <h4>Tina Pai, MD</h4>
+                    </div>
+                </a>
             </div>
             <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <a href="">
+                    <img src="./images/Austin-Cope_MD.jpg" alt="Austin Cope, MD" class="img-resp">
+                    <div class="info">
+                        <h4>Austin Cope, MD</h4>
+                    </div>
+                </a>
             </div>
             <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <a href="">
+                    <img src="./images/Nicole_James.jpg" alt="Nicole James, PA" class="img-resp">
+                    <div class="info">
+                        <h4>Nicole James, PA</h4>
+                    </div>
+                    <div class="overlay"></div>
+                </a>
             </div>
         </div>
     </section>
