@@ -8,6 +8,14 @@ jQuery(document).ready(function ($) {
         locationBtn: 'https://goo.gl/maps/jRcWVdX9RbrBJp5x6'
     });
 
+    $('.oval').on('mouseenter', function () {
+        $(this).next('.blurb').show();
+    });
+
+    $('.blurb').on('mouseleave', function () {
+        $(this).hide();
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
