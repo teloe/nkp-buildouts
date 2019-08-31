@@ -145,6 +145,12 @@ ul,ol{clear:both}
     margin: 22px 0 15px;
 }
 
+.bxa .twentytwenty-container {
+    max-width: 820px;
+    margin: auto;
+} 
+
+
 
 /* .articles ------------------------------------------------------------------- */
 .articles{background:#f7f7f7}

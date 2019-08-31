@@ -16,6 +16,17 @@ jQuery(document).ready(function ($) {
         $(this).hide();
     });
 
+    $('.twentytwenty-container').twentytwenty({
+        default_offset_pct: .5,
+        orientation: 'horizontal',
+        before_label: '',
+        after_label: '',
+        no_overlay: true,
+        move_with_handle_only: true,
+        click_to_move: false
+    });
+    $(window).trigger('resize.twentytwenty');
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
