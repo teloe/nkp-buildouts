@@ -40,20 +40,27 @@ ul,ol{clear:both}
 .clr,.clear{clear:both}
 .nodisp{display:none}
 
-
-/* HEADER ------------------------------------------------------------------- */
 .top-panel{background:#000;color:#fff;font-weight:700;padding:15px 0}
 .top-panel .grid-50:nth-of-type(2){text-align:right}
 .top-panel .grid-50:nth-of-type(2) a{color:#fff}
 .top-panel .grid-50:nth-of-type(2) a:hover{color:#af6014}
-.main-menu #logo{text-align:center}
-.main-menu{padding-top:20px;background:#000;color:#fff}
-.main-menu .grid-container{padding:20px 15px}
 #logo img{display:inline-block;margin:0;max-width:100%;max-height:3.6rem}
 #logo.hide-on-desktop{padding:20px 0}
+.main-menu #logo{text-align:center}
+.main-menu{padding-top:20px;background:#000;color:#fff;width:100%;z-index:9999}
+.main-menu .grid-container{padding:20px 15px}
 
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-200px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 
-/* NAV ------------------------------------------------------------------- */
+.main-menu.sticky{top:0;width:100%;position:fixed;animation:smoothScroll .6s}
+
 .stellarnav > ul > li > a{padding:15px 10px;text-transform:uppercase;color:#222;font-size:.875rem}
 .stellarnav .call-btn-mobile,.stellarnav .close-menu,.stellarnav .location-btn-mobile,.stellarnav .menu-toggle{color:#fff}
 .stellarnav.mobile li a.dd-toggle,.stellarnav.mobile.light li a.dd-toggle{color:#af6014}
@@ -64,8 +71,6 @@ ul,ol{clear:both}
 .stellarnav.mobile li a:hover{color:#af6014;background:#fff}
 .stellarnav .apt{color:#fff;background:#af6014;border-radius:40px;padding:10px 20px;text-align:center}
 
-
-/* SLIDER ------------------------------------------------------------------- */
 #slider .slide1{background:url(images/banner-image.jpg) no-repeat center;background-size:cover}
 #slider .slide1 .grid-container{height:60vw;display:flex;align-items:center;justify-content:flex-end}
 #slider .slide1 h1{text-transform:uppercase;color:#af6014;font-size:4vw;line-height:5vw}
@@ -73,8 +78,6 @@ ul,ol{clear:both}
 #slider .slide1 h1::after{content:'';background:#af6014;display:block;width:1.7em;height:2px;margin:.5em auto 1em 0}
 #slider .slide1 p{color:#3c4f54}
 
-
-/* .welcome ------------------------------------------------------------------- */
 .welcome .grid-container{padding:80px 15px 65px}
 .welcome .grid-50:nth-of-type(1)::before{content:'e919';font-size:3.8em;display:inline-block}
 .welcome .grid-50:nth-of-type(1){position:relative}
@@ -88,8 +91,6 @@ ul,ol{clear:both}
 .welcome .phone{background:#af6014;color:#fff;display:flex;align-items:center;padding:2rem;position:relative}
 .welcome .phone::after{content:'';position:absolute;right:-16px;top:30%;border:8px solid transparent;border-left-color:#af6014}
 
-
-/* .services ---------------------------------------------------------------- */
 .services{margin-top:40px}
 .services .grid-container{position:relative;background:url(./images/Interactive-model-face-neck.jpg) no-repeat center;background-size:cover;height:60vw;max-height:650px}
 .services .grid-container img{display:block;margin:auto;position:relative}
@@ -115,8 +116,6 @@ ul,ol{clear:both}
 .services .cheeks .arrow,.services .face .arrow{left:0;margin-left:-10px;border-right:10px solid #af6014}
 .services .eyes .arrow,.services .neck .arrow{left:100%;margin-left:0;border-left:10px solid #af6014}
 
-
-/* .meet ------------------------------------------------------------------- */
 .meet{background:#f7f7f7}
 .meet .grid-container{padding:90px 15px}
 .meet .section-header::after{margin-bottom:1.5em}
@@ -128,89 +127,26 @@ ul,ol{clear:both}
 .meet a:hover .info h4{color:#af6014}
 .meet .info{background:#2f4649;color:#fff;text-align:center;padding:2rem 1rem 1rem;min-height:70px;margin-bottom:1rem}
 
-/* .bxa ------------------------------------------------------------------- */
-.bxa .grid-container {
-    padding: 6.9rem 15px;
-}
+.bxa .grid-container{padding:6.9rem 15px}
+.bxa .grid-container h1{margin-top:.4rem}
+.bxa .grid-container h1::after{margin-bottom:3.8rem}
+.bxa h5{margin:22px 0 15px}
+.bxa .twentytwenty-container{max-width:820px;margin:auto}
 
-.bxa .grid-container h1 {
-    margin-top: .4rem;
-}
-
-.bxa .grid-container h1::after {
-    margin-bottom: 3.8rem;
-}
-
-.bxa h5 {
-    margin: 22px 0 15px;
-}
-
-.bxa .twentytwenty-container {
-    max-width: 820px;
-    margin: auto;
-} 
-
-
-
-/* .articles ------------------------------------------------------------------- */
 .articles{background:#f7f7f7}
 .articles .grid-container{padding:6.9rem 15px}
 .articles .grid-33{text-align:center}
 .articles .grid-container h1::after{margin-bottom:3.8rem}
 .articles h4{font-size:1.333rem;line-height:1.5;padding:2em 0 .5em}
 .articles .btn{margin:auto;display:block;width:140px}
+.articles .container{position:relative;display:block;cursor:pointer}
+.articles .mask{content:'';background:rgba(0,0,0,0.7);position:absolute;top:0;right:0;bottom:0;left:0;opacity:0;display:flex;justify-content:center;align-items:center;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+.articles .grid-33 a.container img{width:100%}
+.articles a.container span{background:#af6014;height:6px;width:6px;display:inline-block;border-radius:50%;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+.articles .grid-33 a.container .mask{opacity:0}
+.articles .grid-33 a.container:hover span{margin:0 3px}
+.articles .grid-33 a.container:hover .mask{opacity:1}
 
-.articles .container {
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
-
-.articles .mask {
-    content: '';
-    background: rgba(0,0,0,0.7);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-transition:all .3s ease-out;
-    -moz-transition:all .3s ease-out;
-    transition:all .3s ease-out
-}
-
-.articles .grid-33 a.container img {
-    width: 100%;
-}
-
-.articles a.container span {
-    background: #af6014;
-    height: 6px;
-    width: 6px;
-    display: inline-block;
-    border-radius: 50%;
-    -webkit-transition:all .3s ease-out;
-    -moz-transition:all .3s ease-out;
-    transition:all .3s ease-out
-}
-
-.articles .grid-33 a.container .mask {
-    opacity: 0;
-}
-
-.articles .grid-33 a.container:hover span {
-    margin: 0 3px;
-}
-
-.articles .grid-33 a.container:hover .mask {
-    opacity: 1;
-} 
-
-/* .products ------------------------------------------------------------------- */
 .products .grid-container{padding:6.9rem 15px}
 .products .section-header::after{margin-left:0}
 .products .grid-50:nth-of-type(1){text-align:center}
@@ -220,15 +156,11 @@ ul,ol{clear:both}
 .products .grid-33 div .btn{display:block;width:80px;margin:auto;padding:7px 15px;font-size:12px}
 .products .grid-50:nth-of-type(2) h1::after{margin-bottom:3.8rem}
 
-
-/* .newsletter ------------------------------------------------------------------- */
 .newsletter{background:url(images/image-2.jpg) no-repeat center;background-size:cover}
 .newsletter .grid-container{padding:6rem 15px}
 .newsletter h4{color:#fff;padding-bottom:1rem}
 .newsletter .btn{text-transform:none}
 
-
-/* #contact ------------------------------------------------------------------- */
 #contact .grid-container{padding:3rem 15px}
 #contact .section-header::after{margin-left:0}
 #contact form{margin-top:4em}
@@ -236,19 +168,16 @@ ul,ol{clear:both}
 #contact form button{border:none;margin:1em 1em 0 0;cursor:pointer;padding:1rem 2rem;font-size:14px;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
 #contact form label{font-size:13px;line-height:1.5em}
 
-
-/* FOOTER ------------------------------------------------------------------- */
 footer{background:#2B2B2B;color:#fff}
 footer .right{float:right}
 footer p,footer a{color:#fff!important;margin-top:1em}
-footer .grid-container:nth-of-type(1){padding:5em 0 4em}
+footer > .grid-container:nth-of-type(1){padding:5em 0 4em}
 footer .grid-25{margin-bottom:2rem}
 footer .grid-25:nth-of-type(3) a{display:block}
-footer .grid-container:nth-of-type(2) .grid-50{text-align:center}
-footer .grid-container:nth-of-type(2){background:#000;padding:2em 0}
-footer .grid-container:nth-of-type(2) p{margin-top:0;padding:0;font-weight:700;font-size:13px}
-footer .grid-container:nth-of-type(2) a{background-color:rgba(255,255,255,0.2);display:inline-block;width:2.6em;height:2.6em;line-height:2.6em;text-align:center;border-radius:50%}
-
+footer .footer-bottom .grid-container .grid-50{text-align:center}
+footer .footer-bottom{background:#000;padding:2em 0}
+footer .footer-bottom p{margin-top:0;padding:0;font-weight:700;font-size:13px}
+footer .footer-bottom a{background-color:rgba(255,255,255,0.2);display:inline-block;width:2.6em;height:2.6em;line-height:2.6em;text-align:center;border-radius:50%}
 
 /* NKP GLOBAL STYLES */
 img{border:0}
@@ -274,8 +203,6 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 #nav{background-color:#000;height:50px}
 /* NKP GLOBAL STYLES */
 
-
-
 /*---- MEDIA QUERIES ----*/
 @media only screen and (max-width: 740px) {
     iframe{width:100%;height:280px}
@@ -283,111 +210,45 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (max-width: 540px) {
-    .services .blurb h3 {
-        font-size: 10px;
-        line-height: 15px;
-    }
+    .services .blurb h3{font-size:10px;line-height:15px}
 }
 
 @media only screen and (min-width: 768px) {
-    .section-header {
-        font-size: 3.2rem;
-        line-height: 1.2em;
-    }
-    .main-menu #logo {
-        display: block;
-        text-align: center;
-    }
-    #slider .slide1 .grid-container {
-        height: 744px;
-    }
-    #slider .slide1 h1 {
-        font-size: 30px;
-        line-height: 33px;
-    }
-    #slider .slide1 .btn {
-        font-size: 1.067rem;
-        padding: 20px 30px 20px;
-    }
-    .welcome .grid-50:nth-of-type(1) a {
-        position: relative;
-        width: auto;
-    }
-    .welcome .grid-50:nth-of-type(2) {
-        margin-top: auto;
-    }
-    .services .blurb {
-        width: 350px;
-        padding: 20px;
-    }
-    .services .blurb h3 {
-        font-size: 18px;
-    }
-    .services .blurb.eyes {
-        width: 250px;
-    }
-    .products .grid-50:nth-of-type(1) .btn {
-        margin-bottom: 0;
-    }
-    .products .grid-50:nth-of-type(2) .section-header,
-    .products .grid-50:nth-of-type(2) .sub-header {
-        padding-left: 15px;
-    }
-    footer .grid-25 {
-        margin-bottom: 0;
-    }
-    footer .grid-container:nth-of-type(2) {
-        display: flex;
-        align-items: center;
-    }
-    footer .grid-container:nth-of-type(2) .grid-50:nth-of-type(1) {
-        text-align: left;
-    }
-    footer .grid-container:nth-of-type(2) .grid-50:nth-of-type(2) {
-        text-align: right;
-    }
-    footer .grid-container:nth-of-type(2) a {
-        margin-top: 0;
-    }
+    .section-header{font-size:3.2rem;line-height:1.2em}
+    .main-menu #logo{display:block;text-align:center}
+    #slider .slide1 .grid-container{height:744px}
+    #slider .slide1 h1{font-size:30px;line-height:33px}
+    #slider .slide1 .btn{font-size:1.067rem;padding:20px 30px}
+    .welcome .grid-50:nth-of-type(1) a{position:relative;width:auto}
+    .welcome .grid-50:nth-of-type(2){margin-top:auto}
+    .services .blurb{width:350px;padding:20px}
+    .services .blurb h3{font-size:18px}
+    .services .blurb.eyes{width:250px}
+    .products .grid-50:nth-of-type(1) .btn{margin-bottom:0}
+    .products .grid-50:nth-of-type(2) .section-header,.products .grid-50:nth-of-type(2) .sub-header{padding-left:15px}
+    footer .grid-25{margin-bottom:0}
+    footer .footer-bottom .grid-container{display:flex;align-items:center}
+    footer .footer-bottom .grid-50:nth-of-type(1){text-align:left}
+    footer .footer-bottom .grid-50:nth-of-type(2){text-align:right}
+    footer .footer-bottom a{margin-top:0}
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    footer .grid-25:last-of-type p {
-        font-size: 13px;
-    }
+    footer .grid-25:last-of-type p{font-size:13px}
 }
-
 
 @media only screen and (min-width: 960px) {
-    .main-menu nav {
-        float: right;
-    }
-    .main-menu {
-        background: transparent;
-    }
-    .stellarnav ul li a:hover {
-        color: #af6014;
-    }
-    .stellarnav ul li a.apt:hover {
-        color: #fff;
-    }
-    #slider .slide1 h1 {
-        font-size: 45px;
-        line-height: 50px;
-    }
-    .services .text {
-        position: absolute;
-        bottom: 50%;
-        display: block;
-    }
+    .main-menu nav{float:right}
+    .main-menu{background:#fff;position:absolute;width:100%;z-index:9999}
+    .stellarnav ul li a:hover{color:#af6014}
+    .stellarnav ul li a.apt:hover{color:#fff}
+    #slider .slide1 h1{font-size:45px;line-height:50px}
+    .services .text{position:absolute;bottom:50%;display:block}
     
     
 }
-
 
 @media only screen and (min-width: 1215px) {
     .main-menu #logo{max-width:20%;float:left}
     .services .grid-container .oval{height:30px!important;width:30px!important}
 }
-

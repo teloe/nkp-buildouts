@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/kdm0pws.css">
     <link rel="stylesheet" href="./js/twentytwenty/css/twentytwenty.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -86,8 +87,8 @@
                     <div class="grid-container">
                       <div class="grid-50 tablet-grid-50 mobile-grid-55 fr">
                           <h1>The art &amp; science <br> of dermatology</h1>
-                          <p class="hide-on-mobile">Exceptionsl results delieverd by our experienced and skilled team from our high-class Arizona office.</p>
-                          <a class="btn" href="">Request appointment</a>
+                          <p class="hide-on-mobile" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500">Exceptional results delieverd by our experienced and skilled team from our high-class Arizona office.</p>
+                          <a class="btn" href="" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1500">Request appointment</a>
                       </div>
                     </div>
                 </div>
@@ -377,19 +378,25 @@
                 </p>
             </div>
         </div>
-        <div class="grid-container">
-            <div class="grid-50 tablet-grid-50">
-                <p>Skin Spectrum © 2019. All rights reserved.</p>
-            </div>
-            <div class="grid-50 tablet-grid-50">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
+        <div class="footer-bottom">
+            <div class="grid-container">
+                <div class="grid-50 tablet-grid-50">
+                    <p>Skin Spectrum © 2019. All rights reserved.</p>
+                </div>
+                <div class="grid-50 tablet-grid-50">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
 
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="./js/twentytwenty/js/jquery.event.move.js"></script>
     <script type="text/javascript" src="./js/twentytwenty/js/jquery.twentytwenty.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>

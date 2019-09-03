@@ -8,6 +8,15 @@ jQuery(document).ready(function ($) {
         locationBtn: 'https://goo.gl/maps/jRcWVdX9RbrBJp5x6'
     });
 
+    var sliderTop = $('#slider').offset().top;
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > sliderTop ) {
+            $('.main-menu').addClass('sticky');
+        } else {
+            $('.main-menu').removeClass('sticky');
+        }
+    });
+
     $('.oval').on('mouseenter', function () {
         $(this).next('.blurb').show();
     });
