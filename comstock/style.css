@@ -160,6 +160,55 @@ ul,ol{clear:both}
 .articles h4{font-size:1.333rem;line-height:1.5;padding:2em 0 .5em}
 .articles .btn{margin:auto;display:block;width:140px}
 
+.articles .container {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.articles .mask {
+    content: '';
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    transition:all .3s ease-out
+}
+
+.articles .grid-33 a.container img {
+    width: 100%;
+}
+
+.articles a.container span {
+    background: #af6014;
+    height: 6px;
+    width: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    transition:all .3s ease-out
+}
+
+.articles .grid-33 a.container .mask {
+    opacity: 0;
+}
+
+.articles .grid-33 a.container:hover span {
+    margin: 0 3px;
+}
+
+.articles .grid-33 a.container:hover .mask {
+    opacity: 1;
+} 
 
 /* .products ------------------------------------------------------------------- */
 .products .grid-container{padding:6.9rem 15px}

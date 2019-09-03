@@ -25,7 +25,6 @@ jQuery(document).ready(function ($) {
         move_with_handle_only: true,
         click_to_move: false
     });
-    $(window).trigger('resize.twentytwenty');
 
     /* $('#slider').flexslider({
         animation: 'fade',
