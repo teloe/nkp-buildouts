@@ -12,15 +12,29 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 
 /*---- GENERAL ----*/
+html {
+    box-sizing: border-box;
+}
 body {
+    width: 100%;
+    font-family: 'Soleil', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PoynterOSDisp', sans-serif;
+    font-weight: 200;
+    color: #08446c;
 }
 
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #116DAF;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -28,10 +42,21 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    color: #0e578b;
     text-decoration: none;
     outline: none;
 }
+a.btn {
+    background: #116DAF;
+    display: inline-block;
+    color: #fff;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+}
+a.btn:hover {
+    background: #0e578b;
+}
+
 ul,ol{clear:both}
 .fl{float:left}
 .fr{float:right}
@@ -43,6 +68,123 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+
+.social a {
+    background: #116DAF;
+    padding: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background: #0e578b;
+}
+
+/* Header ------------------------------------------------------------------- */
+.header-top {
+    color: #fff;
+    background: #1373B3;
+}
+
+.header-top .grid-70 {
+    opacity: .8;
+    line-height: 24px;
+}
+.header-top .grid-70,
+.header-top .grid-30 {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.header-top a {
+    color: #fff;
+}
+
+/* Nav ---------------------------------------------------------------------- */
+nav {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    max-width: 1460px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.stellarnav ul li a {
+    padding: 15px 10px;
+    color: #08446c;
+}
+.stellarnav .menu-toggle {
+    color: #08446c;
+}
+
+
+/* #slider ---------------------------------------------------------------------- */
+#slider .slides .slide1 {
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+#slider #logo {
+    text-align: center;
+}
+
+#slider .slides .slide1 .grid-container {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#slider .slides .slide1 h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+/* .cards ------------------------------------------------------------------- */
+.cards .grid-container {
+    text-align: center;
+}
+
+.cards .grid-container {
+    margin-top: -30px;
+}
+.cards h3 {
+    font-size: 1.75rem; 
+    line-height: 1.75rem; 
+    font-family: 'Soleil', sans-serif;
+    padding-bottom: 2rem;
+}
+
+.cards p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cards .grid-33 div {
+    background: #fff;
+    padding: 15px;
+}
+
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+/* NAV ---------------------------------------------------------------------- */
+
 
 
 
@@ -77,12 +219,35 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
+    .header-top .grid-80 {
+        display: flex;
+        align-items: center;
+    }
+    .header-top .grid-70 {
+        text-align: left;
+    }
+    .header-top .grid-30 {
+        text-align: right;
+    }
+    #slider #logo {
+        text-align: left;
+    }
+    #slider .slides .slide1 {
+        height: 50vw;
+    }
+    #slider .slides .slide1 h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 @media only screen and (min-width: 960px) {
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+    .stellarnav ul li a {
+        font-size: 12.5px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 960px) {
