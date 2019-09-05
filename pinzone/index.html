@@ -108,7 +108,7 @@
         <div class="grid-container">
           <div class="grid-80 prefix-10">
               <h1>Leading Experts in</h1>
-              <h2>Hyperthermia Treatment</h2>
+              <h2><em>Hyperthermia Treatment</em></h2>
               <p>We partner with you and your doctor to enhance your cancer care, and improve your health and the outcome of your treatments. Using non-invasive, FDA-approved treatment, we substantially increase the effectiveness of radiation therapy and chemotherapy in many tumor types, and improve treatment outcomes.</p>
               <a class="btn" href="">Cancers We Treat</a>
           </div>
@@ -116,20 +116,24 @@
     </section>
 
     <section class="about">
+        <div class="hide-on-tablet hide-on-desktop"></div>
         <div class="grid-container">
-            <div class="grid-100">
+            <div class="grid-100 hide-on-mobile">
+                <img class="img-resp" src="images/about-bg.jpg" alt="About Hyperthermia Cancer Institute">
             </div>
-          <div class="grid-80 prefix-10">
-              <h1>You're Not a Patient, You're Family.</h1>
-              <p>The Hyperthermia Cancer Institute (HCI) is the only ultrasound-based hyperthermia center in Santa Monica, CA and one of only a few in the United States. We serve the greater Los Angeles area and have many patients who travel to us from outside California. HCI is led by Dr. Joseph J. Pinzone and providers who are passionate about...</p>
-              <a class="btn" href="">Learn More</a>
+          <div class="grid-80 tablet-grid-80 tablet-prefix-10 prefix-10 mobile-grid-100">
+              <div class="content">
+                  <h1><em>You're Not a Patient, You're Family.</em></h1>
+                  <p>The Hyperthermia Cancer Institute (HCI) is the only ultrasound-based hyperthermia center in Santa Monica, CA and one of only a few in the United States. We serve the greater Los Angeles area and have many patients who travel to us from outside California. HCI is led by Dr. Joseph J. Pinzone and providers who are passionate about...</p>
+                  <a class="btn" href="">Learn More</a>
+              </div>
           </div>
         </div>
     </section>
 
     <div class="appt">
         <div class="grid-container">
-          <div class="grid-100">
+          <div class="grid-100 tac">
               <a class="btn" href="">Schedule An Appointment</a>
           </div>
         </div>
@@ -137,8 +141,8 @@
 
     <section class="testimonials">
         <div class="grid-container">
-            <div class="grid-55 tablet-grid-55 mobile-grid-100">
-                <img class="img-resp" src="./images/stars.png" alt="5 stars">
+            <div class="grid-50 tablet-grid-65 mobile-grid-75">
+                <img class="img-resp stars" src="./images/stars.png" alt="5 stars">
                 <div class="testimonials-slider">
                     <ul class="slides">
                         <li>
@@ -155,13 +159,14 @@
                         </li>
                     </ul>
                 </div>
+                <div class="clr"></div>
                 <a class="btn" href="">More Testimonials</a>
             </div>
         </div>
     </section>
 
     <section class="meet_dr">
-        <div class="grid-container">
+        <div class="grid-container tac">
             <div class="grid-100">
                 <h1>Meet Joseph J. Pinzone, M.D., M.B.A., F.A.C.P.</h1>
                 <video controls poster="./images/video.jpg" src="" width="100%">
@@ -175,7 +180,7 @@
 
     <section class="meet_team">
         <div class="grid-container">
-            <div class="grid-100">
+            <div class="grid-100 tac">
                 <a class="btn" href="">Meet The Team</a>
             </div>
         </div>
@@ -183,16 +188,16 @@
 
     <div class="call-today">
         <div class="grid-container">
-            <div class="grid-30 tablet-grid-30 mobile-grid-100">
+            <div class="grid-33 tablet-grid-33 mobile-grid-100 tac">
                 <img class="img-resp" src="./images/logo1.png" alt="Hyperthermia Cancer Institute">
             </div>
-            <div class="grid-30 tablet-grid-30 mobile-grid-100">
+            <div class="grid-33 tablet-grid-33 mobile-grid-100 tac">
                 <a class="btn" href="">
                     <i class="fas fa-calendar-alt"></i>
                     Schedule Appointment
                 </a>
             </div>
-            <div class="grid-30 tablet-grid-30 mobile-grid-100">
+            <div class="grid-33 tablet-grid-33 mobile-grid-100">
                 <h2><em>Call Us Today</em></h2>
                 <h4>(888) 580-5900</h4>
                 <p>Covered by Medicare and most other insurances</p>
@@ -202,8 +207,9 @@
 
     <footer>
         <div class="grid-container">
-            <div class="grid-70 tablet-grid-70 mobile-grid-100">
-                <form action="">
+            <div class="grid-60 tablet-grid-60 mobile-grid-100">
+                <h3>Schedule an Appointment</h3>
+                <form action="" class="footer-form">
                     <div class="grid-100">
                         <label for="">Name*</label>
                         <input type="text" placeholder="Full Name">
@@ -220,18 +226,24 @@
                         <label for="">Message*</label>
                         <textarea id="" name="" cols="30" rows="10" placeholder="Have any questions or comments?"></textarea>
                     </div>
+                    <div class="grid-100">
+                    </div>
+                    <div class="grid-100">
+                        <input type="submit" value="Send Message" class="btn">
+                    </div>
                 </form>
             </div>
-            <div class="grid-30 tablet-grid-30 mobile-grid-100">
-                <h1>Contact Information</h1>
+            <div class="grid-40 tablet-grid-40 mobile-grid-100">
+                <h3>Contact Information</h3>
                 <p>Phone Number</p>
                 <p class="sub">(888) 580-5900</p>
                 <p>FAX</p>
                 <p class="sub">(888) 510-0119</p>
                 <p>Address</p>
                 <p class="sub">2001 Santa Monica Blvd, Suite 1190 W. <br> Santa Monica, California 90404</p>
-                <img class="img-resp" src="./images/map.jpg" alt="2001 Santa Monica Blvd, Suite 1190 W. Santa Monica, CA 90404">
-                <p>Email</p>
+                <!-- <img class="img-resp" src="./images/map.jpg" alt="2001 Santa Monica Blvd, Suite 1190 W. Santa Monica, CA 90404"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5775023405004!2d-118.48215258478558!3d34.02905438061228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb3603027479%3A0x64828d7fb158fe85!2s2001%20Santa%20Monica%20Blvd%20%231190%2C%20Santa%20Monica%2C%20CA%2090404!5e0!3m2!1sen!2sus!4v1567712008170!5m2!1sen!2sus" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <p style="padding-top: 1rem;">Email</p>
                 <p class="sub">info@HClonogy.com</p>
                 <p>Social Media</p>
                 <div class="social">
