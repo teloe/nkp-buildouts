@@ -155,7 +155,8 @@ header .social a {
     text-align: center;
     padding: 4.7rem 15px;
 }
-.mission h1 {
+.mission h1,
+.collaboration h1 {
     font-size: 2rem;
     line-height: 3rem;
     color: #229ce1;
@@ -163,13 +164,48 @@ header .social a {
     padding-bottom: 3rem;
 }
 
+/* .providers ---------------------------------------------------------*/
+.providers .grid-container {
+    max-width: 2000px;
+}
+.providers .grid-33 div {
+    background: #229ce1;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.providers .grid-33 h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
 
 
+/* .collaboration ----------------------------------------------------------------*/
+.collaboration .grid-container {
+    max-width: 2370px;
+    text-align: center;
+    padding: 4.7rem 15px;
+}
+/* #contact ----------------------------------------------------------------*/
+#contact {
+    background: #6DBE2A;
+    color: #fff;
+}
+#contact .grid-container {
+    padding: 6rem 15px;
+}
+#contact h1 {
+    font-size: 1.75rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+}
+#contact a {
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: #fff;
+}
 
-
-/* NAV ----------------------------------------------------------------*/
-/* NAV ----------------------------------------------------------------*/
-/* NAV ----------------------------------------------------------------*/
 /* NAV ----------------------------------------------------------------*/
 /* NAV ----------------------------------------------------------------*/
 /* NAV ----------------------------------------------------------------*/
