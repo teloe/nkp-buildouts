@@ -45,13 +45,83 @@ nav .grid-container{max-width:1460px}
 nav .grid-20,nav .grid-80{width:100%}
 nav.sticky{position:fixed;top:0;background:rgba(255,255,255,.9);z-index:999;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
 .stellarnav ul li a{padding:15px 10px;color:#08446c;font-size:1.25rem}
-.stellarnav .menu-toggle{font-size:1.25rem;color:#08446c}
+.stellarnav ul li a:hover{color:#116DAF}
+.stellarnav .menu-toggle,
+.stellarnav .location-btn-mobile,
+.stellarnav .call-btn-mobile {
+    font-size: 1rem;
+    color: #08446c;
+}
 .stellarnav.mobile ul{background:transparent}
 
 #slider .slides .slide1{background:url(images/banner.jpg) no-repeat center;background-size:cover;display:flex;flex-direction:column;align-items:center;justify-content:center;height:675px}
 #slider #logo{text-align:center}
 #slider .slides .slide1 .grid-container{text-align:center;padding-top:2rem}
 #slider .slides .slide1 h1{color:#fff;text-align:center;font-size:2rem;line-height:2rem;padding:4rem 0 2rem;text-shadow:0 0 5px rgba(0,0,0,.5)}
+
+
+#slider.internal {
+    background: url(images/banner-internal.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+
+#main {
+    padding: 4rem 0;
+}
+
+#main #content h1 {
+    color: #08446c;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+}
+
+#main #content p,
+#main #content li {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+#main #content h2 {
+    font-size: 1.75rem;
+    line-height: 4rem;
+}
+
+#sidebar > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto 20px;
+    height: 300px;
+}
+
+#sidebar > a:hover h1 {
+    margin-bottom: 15px;
+}
+
+#sidebar .testimonials {
+    background: url(images/sidebar-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#sidebar .meet_team {
+    background: url(images/sidebar-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#sidebar .video {
+    background: url(images/sidebar-3.jpg) no-repeat center;
+    background-size: cover;
+}
+#sidebar h1 {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    --moz-transition: .3s;
+    --webkit-transition: .3s;
+    transition: .3s;
+}
 
 .cards .grid-container{text-align:center}
 .cards .grid-33:nth-of-type(1){margin-top:-30px}
@@ -172,6 +242,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     footer .grid-60{margin-bottom:0}
     footer .grid-container:nth-of-type(2) .grid-50:nth-of-type(1){padding-bottom:0;text-align:left}
     footer .grid-container:nth-of-type(2) .grid-50:nth-of-type(2){text-align:right}
+    #sidebar > a {
+        max-width: 330px;
+    }
 }
 
 @media only screen and (min-width: 960px) {

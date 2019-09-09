@@ -8,15 +8,6 @@ jQuery(document).ready(function ($) {
         locationBtn: ''
     });
 
-    let nav = $('nav').offset().top;
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > nav) {
-            $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
-        }
-    });
-
     /* $('#slider').flexslider({
 	    animation: "fade",
 	    directionNav: false,

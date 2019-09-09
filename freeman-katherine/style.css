@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #229ce1;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.3s ease-out;
@@ -35,7 +35,7 @@ a:link {
     transition: all 0.3s ease-out;
 }
 a:hover {
-    color: #09557c;
+    color: #1879b1;
     text-decoration: none;
     outline: none;
 }
@@ -69,6 +69,7 @@ header .social a {
     color: #6DBE2A;
 }
 
+
 /* NAV ----------------------------------------------------------------*/
 .stellarnav ul li a {
     padding: 20px;
@@ -76,9 +77,16 @@ header .social a {
     font-family: 'Century Gothic Pro', sans-serif;
     color: #229ce1;
 }
+.stellarnav ul li a:hover {
+    color: #1879b1;
+}
+.stellarnav.mobile ul {
+    background: transparent;
+}
 .stellarnav .menu-toggle {
     font-family: 'Century Gothic Pro', sans-serif;
     font-weight: bold;
+    color: #229ce1;
 }
 /* .about ----------------------------------------------------------------*/
 .about .grid-container {
@@ -148,8 +156,6 @@ header .social a {
 }
 
 
-
-
 /* .mission -----------------------------------------------------------*/
 .mission .grid-container {
     text-align: center;
@@ -164,29 +170,54 @@ header .social a {
     padding-bottom: 3rem;
 }
 
-/* .providers ---------------------------------------------------------*/
+/* .providers ----------------------------------------------------------*/
 .providers .grid-container {
     max-width: 2000px;
+}
+.providers .grid-33 {
+    margin-bottom: 2rem;
+}
+.providers a:hover div {
+    background: #45abe6;
+}
+.providers a:hover img {
+    filter: brightness(1);
 }
 .providers .grid-33 div {
     background: #229ce1;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem; 
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.providers img {
+    width: 100%;
+    filter: brightness(.8);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .providers .grid-33 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 
 
-/* .collaboration ----------------------------------------------------------------*/
+/* .collaboration ------------------------------------------------------*/
 .collaboration .grid-container {
     max-width: 2370px;
     text-align: center;
     padding: 4.7rem 15px;
 }
-/* #contact ----------------------------------------------------------------*/
+.collaboration a {
+    margin: 1rem .6rem;
+    display: inline-block;
+}
+
+
+/* #contact ------------------------------------------------------------*/
 #contact {
     background: #6DBE2A;
     color: #fff;
@@ -206,7 +237,24 @@ header .social a {
     color: #fff;
 }
 
-/* NAV ----------------------------------------------------------------*/
+/* Footer -------------------------------------------------------------*/
+footer {
+    margin-top: 4rem;
+    background: #229ce1;
+    color: #fff;
+}
+footer .grid-container {
+    padding: 5rem 15px;
+}
+footer .grid-50 {
+    text-align: center;
+}
+footer .grid-50:nth-of-type(1) {
+    padding-bottom: 2rem;
+}
+footer a {
+    color: #fff !important;
+}
 /* NAV ----------------------------------------------------------------*/
 /* NAV ----------------------------------------------------------------*/
 /* NAV ----------------------------------------------------------------*/
@@ -243,6 +291,13 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background: #fff;
+    }
     .about .grid-55 .text {
         padding: 50px;
     }
@@ -256,6 +311,18 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         display: flex;
         align-items: center;
         height: 630px;
+    }
+    .providers .grid-33 {
+        margin-bottom: 0;
+    }
+    footer .grid-50:nth-of-type(1) {
+        text-align: left;
+    }
+    footer .grid-50:nth-of-type(2) {
+        text-align: right;
+    }
+    footer .grid-50:nth-of-type(1) {
+        padding-bottom: 0;
     }
 }
 
@@ -272,6 +339,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .stellarnav ul  {
         text-align: right;
     }
+    .about .grid-container {
+        margin-top: 16rem;
+    }
     .about .grid-55 h1 {
         font-size: 3.75rem;
         padding-bottom: 2rem;
@@ -280,6 +350,15 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+    .about .grid-container {
+        margin-top: 22rem;
+    }
+}
+
+@media only screen and (max-width: 975px) and (min-width: 768px) {
+    .providers .grid-33 h2 {
+        font-size: 2.1vw;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
