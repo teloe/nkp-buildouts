@@ -12,33 +12,10 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 
 /*---- GENERAL ----*/
-body {
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'Proxima Nova', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Century Gothic Pro', sans-serif;
-}
-
-a,
-a:visited,
-a:link {
-    color: #229ce1;
-    text-decoration: none;
-    outline: none;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-a:hover {
-    color: #1879b1;
-    text-decoration: none;
-    outline: none;
-}
+body{font-size:16px;line-height:30px;font-family:'Proxima Nova',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+h1,h2,h3,h4,h5,h6{font-family:'Century Gothic Pro',sans-serif}
+a,a:visited,a:link{color:#229ce1;text-decoration:none;outline:none;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+a:hover{color:#1879b1;text-decoration:none;outline:none}
 
 ul,ol{clear:both}
 .fl{float:left}
@@ -52,213 +29,52 @@ ul,ol{clear:both}
 .clr,.clear{clear:both}
 .nodisp{display:none}
 
+header .grid-container{padding:24px 15px}
+header #logo{text-align:center}
+header .social{text-align:center;padding:30px 0}
+header .social a{margin:0 5px;font-size:1.25rem;color:#6DBE2A}
 
-header .grid-container {
-    padding: 24px 15px;
-}
-header #logo {
-    text-align: center;
-}
-header .social {
-    text-align: center;
-    padding: 30px 0;
-}
-header .social a {
-    margin: 0 5px; 
-    font-size: 1.25rem;
-    color: #6DBE2A;
-}
+.stellarnav ul li a{padding:20px;font-size:1.1rem;font-family:'Century Gothic Pro',sans-serif;color:#229ce1}
+.stellarnav ul li a:hover{color:#1879b1}
+.stellarnav.mobile ul{background:transparent}
+.stellarnav .menu-toggle{font-family:'Century Gothic Pro',sans-serif;font-weight:700;color:#229ce1}
 
+.about .grid-container{max-width:2000px}
+.about .grid-55 .content{height:630px;background:url(images/vision-bg.jpg) no-repeat center;background-size:cover;display:flex;align-items:flex-end}
+.about .grid-55 .text{background:#fff;padding:26px;margin-bottom:3rem;width:60%}
+.about .grid-55 h1{padding-bottom:1rem;color:#229ce1;font-weight:200;font-size:2.75rem;line-height:2.75rem}
+.about .grid-55 p{font-size:1.1rem}
+.about .grid-45{width:100vw;margin-left:calc(-50vw + 50%);padding:0}
+.about .grid-45 .content{background:url(images/meeting-bg.jpg) no-repeat center;margin-top:4rem;background-size:cover;color:#fff;align-items:center;padding:60px 30px}
+.about .grid-45 h1{color:#fff;font-weight:200;font-size:2.9rem;line-height:3rem;padding-bottom:2rem}
+.about .grid-45 p{margin-bottom:4rem}
+.about .grid-45 a{background:#6DBE2A;padding:20px 60px;text-transform:uppercase;font-weight:700;color:#fff}
+.about .grid-45 a:hover{background:#579821}
 
-/* NAV ----------------------------------------------------------------*/
-.stellarnav ul li a {
-    padding: 20px;
-    font-size: 1.1rem;
-    font-family: 'Century Gothic Pro', sans-serif;
-    color: #229ce1;
-}
-.stellarnav ul li a:hover {
-    color: #1879b1;
-}
-.stellarnav.mobile ul {
-    background: transparent;
-}
-.stellarnav .menu-toggle {
-    font-family: 'Century Gothic Pro', sans-serif;
-    font-weight: bold;
-    color: #229ce1;
-}
-/* .about ----------------------------------------------------------------*/
-.about .grid-container {
-    max-width: 2000px;
-}
+.mission .grid-container{text-align:center;padding:4.7rem 15px}
+.mission h1,.collaboration h1{font-size:2rem;line-height:3rem;color:#229ce1;font-weight:200;padding-bottom:3rem}
 
-.about .grid-55 .content {
-    height: 630px;
-}
+.providers .grid-container{max-width:2000px}
+.providers .grid-33{margin-bottom:2rem}
+.providers a:hover div{background:#45abe6}
+.providers a:hover img{filter:brightness(1)}
+.providers .grid-33 div{background:#229ce1;color:#fff;text-align:center;padding:2rem;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+.providers img{width:100%;filter:brightness(.8);-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}
+.providers .grid-33 h2{font-size:1.5rem;font-weight:200}
 
-.about .grid-55 .content {
-    background: url(images/vision-bg.jpg) no-repeat center;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
+.collaboration .grid-container{max-width:2370px;text-align:center;padding:4.7rem 15px}
+.collaboration a{margin:1rem .6rem;display:inline-block}
 
-}
-.about .grid-55 .text {
-    background: #fff;
-    padding: 26px;
-    margin-bottom: 3rem;
-    width: 60%;
-}
-.about .grid-55 h1 {
-    padding-bottom: 1rem;
-    color: #229ce1;
-    font-weight: 200;
-    font-size: 2.75rem;
-    line-height: 2.75rem;
-}
-.about .grid-55 p {
-    font-size: 1.1rem;
-}
-.about .grid-45 {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    padding: 0;
-}
-.about .grid-45 .content {
-    background: url(images/meeting-bg.jpg) no-repeat center;
-    margin-top: 4rem;
-    background-size: cover;
-    color: #fff;
-    align-items: center;
-    padding: 60px 30px;
-}
+#contact{background:#6DBE2A;color:#fff}
+#contact .grid-container{padding:6rem 15px}
+#contact h1{font-size:1.75rem;font-weight:200;text-transform:uppercase;padding-bottom:3rem}
+#contact a{font-size:3rem;margin:0 1rem;color:#fff}
 
-.about .grid-45 h1 {
-    color: #fff;
-    font-weight: 200;
-    font-size: 2.9rem;
-    line-height: 3rem;
-    padding-bottom: 2rem;
-}
-.about .grid-45 p {
-    margin-bottom: 4rem;
-}
-.about .grid-45 a {
-    background: #6DBE2A;
-    padding: 20px 60px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #fff;
-}
-.about .grid-45 a:hover {
-    background: #579821;
-}
-
-
-/* .mission -----------------------------------------------------------*/
-.mission .grid-container {
-    text-align: center;
-    padding: 4.7rem 15px;
-}
-.mission h1,
-.collaboration h1 {
-    font-size: 2rem;
-    line-height: 3rem;
-    color: #229ce1;
-    font-weight: 200;
-    padding-bottom: 3rem;
-}
-
-/* .providers ----------------------------------------------------------*/
-.providers .grid-container {
-    max-width: 2000px;
-}
-.providers .grid-33 {
-    margin-bottom: 2rem;
-}
-.providers a:hover div {
-    background: #45abe6;
-}
-.providers a:hover img {
-    filter: brightness(1);
-}
-.providers .grid-33 div {
-    background: #229ce1;
-    color: #fff;
-    text-align: center;
-    padding: 2rem; 
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-.providers img {
-    width: 100%;
-    filter: brightness(.8);
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-.providers .grid-33 h2 {
-    font-size: 1.5rem;
-    font-weight: 200;
-}
-
-
-/* .collaboration ------------------------------------------------------*/
-.collaboration .grid-container {
-    max-width: 2370px;
-    text-align: center;
-    padding: 4.7rem 15px;
-}
-.collaboration a {
-    margin: 1rem .6rem;
-    display: inline-block;
-}
-
-
-/* #contact ------------------------------------------------------------*/
-#contact {
-    background: #6DBE2A;
-    color: #fff;
-}
-#contact .grid-container {
-    padding: 6rem 15px;
-}
-#contact h1 {
-    font-size: 1.75rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    padding-bottom: 3rem;
-}
-#contact a {
-    font-size: 3rem;
-    margin: 0 1rem;
-    color: #fff;
-}
-
-/* Footer -------------------------------------------------------------*/
-footer {
-    margin-top: 4rem;
-    background: #229ce1;
-    color: #fff;
-}
-footer .grid-container {
-    padding: 5rem 15px;
-}
-footer .grid-50 {
-    text-align: center;
-}
-footer .grid-50:nth-of-type(1) {
-    padding-bottom: 2rem;
-}
-footer a {
-    color: #fff !important;
-}
-/* NAV ----------------------------------------------------------------*/
-/* NAV ----------------------------------------------------------------*/
-/* NAV ----------------------------------------------------------------*/
-
+footer{margin-top:4rem;background:#229ce1;color:#fff}
+footer .grid-container{padding:5rem 15px}
+footer .grid-50{text-align:center}
+footer .grid-50:nth-of-type(1){padding-bottom:2rem}
+footer a{color:#fff!important}
 
 /* NKP GLOBAL STYLES */
 img{border:0}
@@ -291,96 +107,39 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
-    header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-        background: #fff;
-    }
-    .about .grid-55 .text {
-        padding: 50px;
-    }
-    .about .grid-45 {
-        width: 45%;
-        margin-left: 0;
-        padding: 0 15px;
-    }
-    .about .grid-45 .content {
-        margin-top: 0;
-        display: flex;
-        align-items: center;
-        height: 630px;
-    }
-    .providers .grid-33 {
-        margin-bottom: 0;
-    }
-    footer .grid-50:nth-of-type(1) {
-        text-align: left;
-    }
-    footer .grid-50:nth-of-type(2) {
-        text-align: right;
-    }
-    footer .grid-50:nth-of-type(1) {
-        padding-bottom: 0;
-    }
+    header{position:fixed;top:0;width:100%;z-index:999;background:#fff}
+    .about .grid-55 .text{padding:50px}
+    .about .grid-45{width:45%;margin-left:0;padding:0 15px}
+    .about .grid-45 .content{margin-top:0;display:flex;align-items:center;height:630px}
+    .providers .grid-33{margin-bottom:0}
+    footer .grid-50:nth-of-type(1){text-align:left}
+    footer .grid-50:nth-of-type(2){text-align:right}
+    footer .grid-50:nth-of-type(1){padding-bottom:0}
 }
 
 @media only screen and (min-width: 960px) {
-    header .grid-20 {
-        width: 20%;
-        float: left;
-    }
-    header .social {
-        text-align: right;
-        padding-bottom: 0;
-        padding-right: 15px;
-    }
-    .stellarnav ul  {
-        text-align: right;
-    }
-    .about .grid-container {
-        margin-top: 16rem;
-    }
-    .about .grid-55 h1 {
-        font-size: 3.75rem;
-        padding-bottom: 2rem;
-        line-height: 3.75rem;
-    }
+    header .grid-20{width:20%;float:left}
+    header .social{text-align:right;padding-bottom:0;padding-right:15px}
+    .stellarnav ul{text-align:right}
+    .about .grid-container{margin-top:16rem}
+    .about .grid-55 h1{font-size:3.75rem;padding-bottom:2rem;line-height:3.75rem}
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
-    .about .grid-container {
-        margin-top: 22rem;
-    }
+    .about .grid-container{margin-top:22rem}
 }
 
 @media only screen and (max-width: 975px) and (min-width: 768px) {
-    .providers .grid-33 h2 {
-        font-size: 2.1vw;
-    }
+    .providers .grid-33 h2{font-size:2.1vw}
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .about .grid-45 .content {
-        padding: 0 15px; 
-    }
-    .about .grid-45 p {
-        margin-bottom: 4vw;
-    }
-    .about .grid-45 h1 {
-        font-size: 4vw;
-        line-height: 4.5vw;
-        padding-bottom: 2vw;
-    }
+    .about .grid-45 .content{padding:0 15px}
+    .about .grid-45 p{margin-bottom:4vw}
+    .about .grid-45 h1{font-size:4vw;line-height:4.5vw;padding-bottom:2vw}
 }
 
 @media only screen and (min-width: 1024px) {
-    .about .grid-45 h1 {
-        padding-bottom: 3rem;
-    }
-    .about .grid-45 .content {
-        height: 630px;
-        padding: 0 50px;
-    }
+    .about .grid-45 h1{padding-bottom:3rem}
+    .about .grid-45 .content{height:630px;padding:0 50px}
 }
