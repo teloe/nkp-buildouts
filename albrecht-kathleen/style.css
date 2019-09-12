@@ -12,9 +12,24 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 
 /*---- GENERAL ----*/
+html {
+    box-sizing: border-box;
+}
 body {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Garmond Premier Pro', serif;
+    color: #292929;
+}
+
+p {
+    color: #666;
 }
 
 a,
@@ -23,9 +38,9 @@ a:link {
     color: #1174a6;
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    /* -webkit-transition: all 0.5s ease-out; */
+    /* -moz-transition: all 0.5s ease-out; */
+    /* transition: all 0.5s ease-out; */
 }
 a:hover {
     color: #09557c;
@@ -33,26 +48,63 @@ a:hover {
     outline: none;
 }
 
-.btn {
+@keyframes shine {
+    0% {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+a.btn {
     text-transform: uppercase;
-    /* font-family: 'Exo 2', sans-serif;
-    font-weight: 300;
-    font-size: 30px; */
-  
+    /* background: blue; */
+    padding: 1rem 2rem;
     display: inline-block;
+    display: block;
+    margin: 300px auto;
+    width: 300px;
     position: relative;
     text-align: center;
     color: #000;
     border: 1px solid #000;
-    border-radius: $corner-radius;
-  
-    line-height: 3em;
-    padding-left: 5em;
-    padding-right: 5em;
-  
+    border-radius: 0;
     box-shadow: 0 0 0 0 transparent;
-  
-    @include transition(all 0.2s ease-in);
+    --moz-transition: all 0.3s ease-in;
+    --webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+a.btn:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    opacity: 0;
+    box-shadow: 0 0 15px 3px #fff;
+    transform: skew(-20deg);
+}
+
+a.btn:hover {
+    background: #000;
+    color: #fff;
+    /* transition: all .2s ease-out; */
+    /* box-shadow: 0 0 30px 0 transparentize(#000, 0.5); */
+}
+
+a.btn:hover:before {
+    animation: shine .5s 0s linear;
 }
 
 
