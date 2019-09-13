@@ -16,6 +16,8 @@ html {
     box-sizing: border-box;
 }
 body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Proxima Nova', sans-serif;
     font-size: 16px;
     line-height: 1.5rem;
@@ -23,11 +25,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Garmond Premier Pro', serif;
+    font-family: 'Garamond Premier Pro', serif;
+    font-weight: 200;
     color: #292929;
 }
 
@@ -38,38 +38,223 @@ p {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #000;
     text-decoration: none;
     outline: none;
-    /* -webkit-transition: all 0.5s ease-out; */
-    /* -moz-transition: all 0.5s ease-out; */
-    /* transition: all 0.5s ease-out; */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 a:hover {
-    color: #09557c;
+    color: #666;
     text-decoration: none;
     outline: none;
 }
 
-@keyframes shine {
-    0% {
-        opacity: 0;
-        left: 0%;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        left: 100%;
-    }
+.btn {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    display: inline-block;
+    padding: 1rem 2rem;
+    /* width: 250px; */
+    z-index: 1;
+    transition: all 0.3s;
 }
 
-a.btn {
+.btn::before, 
+.btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.btn::before {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.85);
+    transform: scale(0.1, 1);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+}
+
+
+/* HEADER ------------------------------------------------------------------- */
+header {
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255,255,255,.8);
+}
+
+header .grid-container {
+    position: relative;
+}
+
+header .grid-60 {
+    width: 100%;
+    text-align: center;
+}
+
+header #logo {
+    padding-top: 60px;
+}
+
+header .grid-40 {
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+header .top-right {
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+header .top-info {
+    font-size: 1.5rem;
+    transform: translate(0px);
+    transition: all 0.3s ease-out;
+}
+
+header .open-nav {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    display: flex;
+    font-size: .6em;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+header .open-nav span:nth-of-type(2) {
+    margin: auto;
+}
+
+header .open-nav:hover span:nth-of-type(2) {
+    width: 50%; 
+}
+
+header .hamburger {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header .hamburger span {
+    background: #000;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 8px;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+header .phone {
+    margin-top: 2rem;
+    display: block;
+}
+
+header .social {
+    margin-top: 1rem;
+    font-size: .6em;
+}
+
+header .social a {
+    font-size: 1rem;
+    margin: 0 .5em;  
+}
+
+/* #slider ------------------------------------------------------------------ */
+#slider {
+    position: relative;
+}
+#slider .slide1 {
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#slider .slide1 .grid-container {
+    padding-bottom: 15%;
+}
+
+#slider .slide1 h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
     text-transform: uppercase;
-    /* background: blue; */
+}
+
+
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+
+/* .facial-rejuv ------------------------------------------------------------ */
+.facial-rejuv .bg {
+    position: relative;
+}
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
+
+/* #contact ----------------------------------------------------------------- */
+#contact {
+    background: url(images/contact-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 860px;
+}
+
+
+/* FOOTER ------------------------------------------------------------------- */
+footer {
+    padding: 4rem 0;
+}
+
+/* a.btn {
+    text-transform: uppercase;
     padding: 1rem 2rem;
     display: inline-block;
     display: block;
@@ -102,13 +287,11 @@ a.btn:before {
 a.btn:hover {
     background: #000;
     color: #fff;
-    /* transition: all .2s ease-out; */
-    /* box-shadow: 0 0 30px 0 transparentize(#000, 0.5); */
 }
 
 a.btn:hover:before {
     animation: shine .5s 0s linear;
-}
+} */
 
 
 
@@ -153,14 +336,60 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     iframe{width:100%;height:280px}
     .patient-single{width:100%!important}
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 576px) {
+    header img {
+        width: 75%;
+    }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (min-width: 768px) {
+    #slider .slide1 {
+        height: 900px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    header {
+        background: transparent;
+    }
+    header .top-right {
+        align-items: flex-end;
+    }
+    header.sticky {
+        background: rgba(255,255,255,.8);
+    }
+    header.sticky img {
+        width: 80%;
+        transition: all 0.3s ease-out;
+    }
+
+    header.sticky .top-info {
+        transform: translate(-150px, -30px);
+    }
+    header.sticky .phone,
+    header.sticky .social {
+        margin-top: 0;
+        display: inline-block;
+    }
+    header .grid-60 {
+        text-align: left;
+        width: 60%;
+    }
+    header .grid-40 {
+        text-align: right;
+        width: 40%;
+    }
+    header img {
+        width: auto;
+        transition: all 0.3s ease-out;
+    }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+
+    header.sticky img {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 960px) {

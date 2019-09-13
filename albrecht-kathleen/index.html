@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NKP</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -21,51 +22,67 @@
 </head>
 <body>
 
-    <a href="" class="btn">Request Consulation</a>
-
-    <section>
-        <div class="grid-container">
-            <div class="grid-100 tablet-grid-100 mobile-grid-100">
-            </div>
-            <div class="grid-100 tablet-grid-100 mobile-grid-100">
-            </div>
-        </div>
-    </section>
-
     <header>
         <div class="grid-container">
-        <div class="grid-50 tablet-grid-50 mobile-grid-100">
-            <div id="logo">
-                <a href="#" title="">
-                    <img class="img-resp" src="./images/logo.png" alt="Kathleen Albrecht, M.D.">
-                </a>
-            </div>
-        </div>
-        <div class="grid-50 tablet-grid-50 mobile-grid-100">
-            <div class="menu">
-                <span>MENU</span>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="grid-60 tablet-grid-60 mobile-grid-100">
+                <div id="logo">
+                    <a href="#" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="Kathleen Albrecht, M.D.">
+                    </a>
                 </div>
             </div>
-            <a class="phone" href="">[1-877-898-3937]</a>
-            <div class="social">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fas fa-rss"></i></a>
-                <a href=""><i class="fas fa-instagram"></i></a>
+            <div class="grid-40 tablet-grid-40 mobile-grid-100">
+                <div class="top-right">
+                    <div class="open-nav">
+                        <span>MENU</span>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="top-info">
+                    <a class="phone" href="">[1-877-898-3937]</a>
+                        <div class="social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fas fa-rss"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+	</header>
+
+	<!-- <nav>
+        <div class="stellarnav">
+             <ul>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Last Dropdown Item</a>
+                	<ul>
+                		<li><a href="#">Item</a></li>
+                		<li><a href="#">Item</a>
+                			<ul>
+                				<li><a href="#">Drop left menu item</a></li>
+                				<li><a href="#">Drop left menu item</a></li>
+                			</ul>
+                		</li>
+                	</ul>
+                </li>
+             </ul>
+        </div>
+	 </nav> -->
 
 	<div id="slider">
     	<ul class="slides">
     		<li>
                 <div class="slide1">
                     <div class="grid-container">
-                        <div class="grid-100">
+                        <div class="grid-100 tac">
                             <h1>Precision | Artistry | Balance</h1>
                             <a class="btn" href="">Request your consultation</a>
                         </div>
@@ -73,18 +90,18 @@
                 </div>
             </li>
     	</ul>
-	</header>
 
     <div class="assoc">
         <div class="grid-container">
           <div class="grid-100">
-              <a href=""><img class="img-resp" src="./images/assoc-3.png" alt=""></a>
-              <a href=""><img class="img-resp" src="./images/assoc-4.png" alt=""></a>
-              <a href=""><img class="img-resp" src="./images/assoc-6.png" alt=""></a>
-              <a href=""><img class="img-resp" src="./images/assoc-7.png" alt=""></a>
-              <a href=""><img class="img-resp" src="./images/assoc-8.png" alt=""></a>
-              <a href=""><img class="img-resp" src="./images/assoc-9.png" alt=""></a>
-              <a href=""><img class="img-resp" src="./images/assoc-10.png" alt=""></a>
+              <img class="img-resp" src="./images/associations.png" alt="Associations">
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-3.png" alt=""></a> -->
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-4.png" alt=""></a> -->
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-6.png" alt=""></a> -->
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-7.png" alt=""></a> -->
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-8.png" alt=""></a> -->
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-9.png" alt=""></a> -->
+              <!-- <a href=""><img class="img-resp" src="./images/assoc-10.png" alt=""></a> -->
           </div>
         </div>
     </div>
@@ -118,31 +135,122 @@
         </div>
     </section>
 
-
-	<!-- <nav>
-        <div class="stellarnav">
-             <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Last Dropdown Item</a>
-                	<ul>
-                		<li><a href="#">Item</a></li>
-                		<li><a href="#">Item</a>
-                			<ul>
-                				<li><a href="#">Drop left menu item</a></li>
-                				<li><a href="#">Drop left menu item</a></li>
-                			</ul>
-                		</li>
-                	</ul>
-                </li>
-             </ul>
+    <section class="meet-dr">
+        <div class="grid-container">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <img class="img-resp" src="./images/dr-albrecht.jpg" alt="Dr. Kathleen Albrecht">
+            </div>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <h1>Meet Dr. Kathleen Albrecht</h1>
+                <p>Dr. Kathleen Albrecht is a board-certified ophthalmologist with subspecialty training in Oculoplastic and Reconstructive surgery of the eyelids, orbit and face.</p>
+                <p>Aging, genetics and sun exposure can lead to drooping and bagginess of the eyes. However, these changes may also affect the ability of the lids to protect the eye, affect the vision and certainly the comfort of the eye with problems such as dry, irritated eyes or tearing eyes occurring. Medical conditions such as allergies, thyroid disease and skin cancer can also affect the eyelids.</p>
+                <a class="btn" href="">Learn more</a>
+            </div>
         </div>
-	 </nav> -->
+    </section>
 
+    <section class="facial-rejuv">
+        <div class="bg">
+            <img class="img-resp" src="./images/facial-rejuv-bg.jpg" alt="Facial Rejuvenation">
+        </div>
+        <div class="grid-container">
+            <div class="grid-40 tablet-grid-40 mobile-grid-100">
+                <h1>Cosmetic Facial Rejuvenation</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada magna ac diam consectetur accumsan. Curabitur sed ligula ac mi ultricies tincidunt. Duis lobortis mauris non porttitor aliquet. Suspendisse id velit at dolor efficitur auctor. In vel risus efficitur, viverra lacus nec, tempus est. Duis ornare tristique sem, pulvinar tristique urna euismod in. Pellentesque ligula felis, cursus at tincidunt quis, vehicula sed sem.
+</p>
+                <a class="btn" href="">Learn more</a>
+            </div>
+            <!-- <div class="grid-100 tablet-grid-100 mobile-grid-100"> -->
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="grid-container">
+            <div class="grid-60 tablet-grid-60 mobile-grid-100">
+                <h1>Photo Gallery</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna ipsum, fringilla pulvinar efficitur in, malesuada eget ligula. Mauris blandit porttitor tortor et tristique.</p>
+                <a class="btn" href="">Learn more</a>
+            </div>
+            <!-- <div class="grid-100 tablet-grid-100 mobile-grid-100">
+            </div> -->
+        </div>
+        <div class="bg">
+            <img class="img-resp" src="./images/gallery-bg.jpg" alt="Photo Gallery">
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-container">
+            <div class="grid-100 tablet-grid-100 mobile-grid-100">
+            </div>
+            <div class="grid-100 tablet-grid-100 mobile-grid-100">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="grid-container">
+            <div class="grid-100">
+                <div class="testimonials-slider">
+                    <ul class="slides">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna ipsum, fringilla pulvinar efficitur in, malesuada eget ligula. Mauris blandit porttitor tortor et tristique.</li>
+                        <li>Ullamco irure nisi nulla culpa deserunt fugiat ad reprehenderit velit voluptate consectetur excepteur incididunt.Proident ut ex est cupidatat do ea irure.Officia qui duis commodo consectetur officia consectetur pariatur proident ut nulla.</li>
+                        <li>Ad mollit est culpa ex ad commodo.Occaecat reprehenderit voluptate labore sit Lorem laborum non id sit reprehenderit sunt id quis.Irure minim deserunt consectetur veniam mollit aliquip irure velit enim nostrud deserunt exercitation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="follow-us">
+        <div class="grid-container">
+          <div class="grid-45 tablet-grid-45 mobile-grid-100">
+              <h1>Follow Us</h1>
+              <h3>@Dr. Kathleen</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna ipsum, fringilla pulvinar efficitur in, malesuada eget ligula. Mauris blandit porttitor tortor et tristique. Lorem ipsum dolor sit amet.</p>
+              <a class="btn" href="">Learn more</a>
+          </div>
+          <div class="grid-50 tablet-grid-50 mobile-grid-100">
+              <img class="img-resp" src="./images/model-1.jpg" alt="Model">
+              <img class="img-resp" src="./images/model-2.jpg" alt="Model">
+              <img class="img-resp" src="./images/model-3.jpg" alt="Model">
+              <img class="img-resp" src="./images/city.jpg" alt="City">
+          </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="grid-container">
+            <div class="grid-100">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid-container">
+            <div class="grid-100 tac">
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fas fa-rss"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>Copyright &copy; 2019 Dr. Kathleen Albrecht. All rights reserved.</p>
+                <p>
+                    <a href="">Sitemap</a> | 
+                    <a href="">Terms &amp; Conditions</a> | 
+                    <a href="">HIPPA Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 
