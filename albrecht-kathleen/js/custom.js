@@ -16,6 +16,12 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $('.testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: false
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
