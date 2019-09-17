@@ -51,7 +51,7 @@ a:link {
     transition: all 0.3s ease-out;
 }
 a:hover {
-    color: #666;
+    color: #333;
     text-decoration: none;
     outline: none;
 }
@@ -63,8 +63,9 @@ a:hover {
     color: #000;
     display: inline-block;
     padding: 1rem 2rem;
-    /* width: 250px; */
     z-index: 1;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
     transition: all 0.3s;
 }
 
@@ -82,7 +83,7 @@ a:hover {
 
 .btn::before {
     opacity: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: #292929;
     transform: scale(0.1, 1);
 }
 
@@ -142,8 +143,143 @@ header .open-nav:hover span:nth-of-type(2){width:50%}
 header .hamburger{width:35px;display:flex;flex-direction:column;align-items:center;margin-left:10px}
 header .hamburger span{background:#000;display:block;height:2px;width:100%;margin:8px;-moz-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
 header .phone{display:block}
-header .social{margin-top:.5rem;font-size:.6em}
-header .social a{font-size:1rem;margin:0 .5em}
+header .social{margin-left:1rem}
+.social{margin-top:.5rem}
+.social a{font-size:1rem;margin:0 .25em;font-size:1.25rem}
+
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 450px;
+    max-width: 90%;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0px 1px 2.28px 0.72px rgba(0,0,0,0.05);
+    transform: translateX(450px);
+    -moz-transition: transform .25s cubic-bezier(.165, .84, .44, 1);
+    -webkit-transition: transform .25s cubic-bezier(.165, .84, .44, 1);
+    transition: transform .25s cubic-bezier(.165, .84, .44, 1);
+    transition-duration: .45s;
+}
+#main-nav .close-btn {
+    font-size: 4rem;
+    padding: 35px;
+}
+
+#main-nav .overlay-content {
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.stellarnav.mobile > ul {
+    display: block !important;
+}
+
+.stellarnav.mobile ul {
+    background: transparent;
+}
+.stellarnav {
+    position: absolute !important;
+    padding: 40px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.stellarnav .menu-toggle {
+    display: none !important;
+}
+
+.stellarnav .dd-toggle {
+    padding: 15px !important;
+    border-bottom: 0 !important;
+    height: 44px
+}
+
+.stellarnav .dd-toggle .fa-plus::before {
+    content: ""
+}
+
+.stellarnav li.open>a.dd-toggle i {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+/* .stellarnav li.no-link:hover>a {
+    color: 
+} */
+
+.stellarnav li.no-link>.dd-toggle {
+    width: 100%;
+    text-align: right
+}
+
+.stellarnav li.no-link>.dd-toggle .fa-plus {
+    padding-right: 19px
+}
+
+.stellarnav ul {
+    font-size: 16px;
+    border-top: 0 !important
+}
+
+.stellarnav ul li.open>a,
+.stellarnav ul li .current-menu-item>a {
+    color: #333;
+}
+
+.stellarnav ul li a {
+    border-bottom: 0 !important;
+    padding: 12px 0 12px 15px !important;
+    text-transform: uppercase
+}
+.stellarnav ul li a {
+    color: #000;
+    text-transform: uppercase;
+}
+.stellarnav ul li a:hover,
+.stellarnav ul li a:focus {
+    color: #333;
+}
+
+.stellarnav ul li ul {
+    font-size: 15px
+}
+
+.stellarnav ul li ul .dd-toggle {
+    height: 42px
+}
+
+.stellarnav ul li ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    margin-left: 30px !important;
+}
+
+.stellarnav ul li ul ul li a {
+    margin-left: 60px !important
+}
+
+.stellarnav ul li ul ul ul li a {
+    margin-left: 90px !important
+}
+
+#nav-overlay-close {
+    background: rgba(5, 5, 5, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    cursor: default
+}
 
 /* #slider ------------------------------------------------------------------ */
 #slider {
@@ -213,11 +349,9 @@ header .social a{font-size:1rem;margin:0 .5em}
 }
 
 
-
-
 /* .meet-dr ----------------------------------------------------------------- */
 .meet-dr {
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
 }
 .meet-dr .grid-50 {
     position: relative;
@@ -296,6 +430,7 @@ header .social a{font-size:1rem;margin:0 .5em}
 }
 .gallery .gallery-content {
     background: #fff;
+    padding-bottom: 4rem;
 }
 .gallery h1 {
     font-size: 2.2rem;
@@ -310,12 +445,15 @@ header .social a{font-size:1rem;margin:0 .5em}
 }
 
 
-
 /* .testimonials ------------------------------------------------------------- */
 .testimonials {
     background: #f9f9f9;
     padding: 100px 0;
     text-align: center;
+    position: relative;
+}
+
+.testimonials .grid-100 {
     position: relative;
 }
 .testimonials .stars i {
@@ -336,6 +474,11 @@ header .social a{font-size:1rem;margin:0 .5em}
 .testimonials li {
     font-weight: 200;
 }
+.testimonials .flex-nav-prev,
+.testimonials .flex-nav-next {
+    display: none;
+}
+
 
 /* .follow-us --------------------------------------------------------------- */
 .follow-us .grid-container {
@@ -350,41 +493,39 @@ header .social a{font-size:1rem;margin:0 .5em}
     font-family: 'Proxima Nova', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
+    line-height: 3rem;
+    padding-bottom: 2rem;
     color: #01cefa;
+}
+.follow-us .grid-45 {
+    padding-bottom: 4rem;
+    text-align: center;
 }
 .follow-us .grid-50 {
     position: relative;
 }
 .follow-us img {
-    /* position: absolute; */
-    box-shadow: 15px 15px 0 lightgray;
-}
-.follow-us img:nth-of-type(1) {
-    top: 0;
-    left: 0;
-}
-.follow-us img:nth-of-type(2) {
-    top: 0;
-    right: 0;
-}
-.follow-us img:nth-of-type(3) {
-    bottom: 0;
-    right: 0;
-}
-.follow-us img:nth-of-type(4) {
-    bottom: 0;
-    left: 0;
+    box-shadow: 10px 10px 0 #D8D8D8;
+    margin: 1rem auto;
+    width: 100%;
+    display: block;
 }
 
-
-/* HEADER ------------------------------------------------------------------- */
-/* HEADER ------------------------------------------------------------------- */
 
 /* #contact ----------------------------------------------------------------- */
 #contact {
     background: url(images/contact-bg.jpg) no-repeat center;
     background-size: cover;
     height: 860px;
+}
+#contact .grid-container {
+    padding: 10rem 15px;
+}
+#contact h1 {
+    color: #fff;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-align: center;
 }
 
 
@@ -468,6 +609,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     .facial-rejuv .grid-40 {
         padding: 0 30px;
+        max-width: 468px;
     }
     .facial-rejuv h1 {
         padding-top: 8rem;
@@ -479,11 +621,10 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .gallery {
         padding: 6rem 0;
     }
-    .gallery .grid-50 {
-        background:#F9F9F9;
+    .gallery .gallery-content {
+        /* background:#F9F9F9; */
         margin: 80px 0;
-        padding:60px;
-
+        padding: 60px;
     }
     .gallery .gallery-bg {
         position: absolute;
@@ -492,7 +633,44 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         height: 100%;
         max-height: 683px;
     }
+    .testimonials .flex-nav-prev,
+    .testimonials .flex-nav-next {
+        display: block;
+        position: absolute;
+    }
 
+    .testimonials .flex-nav-prev {
+        left: 15px;
+        top: 50%;
+    }
+
+    .testimonials .flex-nav-next {
+        right: 15px;
+        top: 50%;
+    }
+
+    .testimonials .flex-prev,
+    .testimonials .flex-next {
+        color: #fff;
+        padding: 20px 25px;
+        background: #000;
+    }
+    .testimonials .flex-prev:hover,
+    .testimonials .flex-next:hover {
+        background: #333;
+    }
+    .follow-us .grid-45 {
+        text-align: left;
+        padding-bottom: 0;
+    }
+    .follow-us img {
+        display: inline-block;
+        margin: 0;
+        width: auto;
+    }
+    .follow-us img.mt {
+        margin-top: 2rem;
+    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -514,6 +692,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     #slider .slide1 .grid-container {
         padding-bottom: 16rem;
     }
+    .follow-us .grid-45 {
+        padding-top: 6rem;
+    }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
@@ -524,6 +705,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         font-size: 3vw;
     }
     
+    .follow-us .grid-45 {
+        padding-top: 3rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {

@@ -53,29 +53,35 @@
                 </div>
             </div>
         </div>
-	</header>
+    </header>
+    <a id="nav-overlay-close" href="javascript:void(0)" onclick="closeNav()"></a>
 
-	<!-- <nav>
-        <div class="stellarnav">
-             <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Last Dropdown Item</a>
-                	<ul>
-                		<li><a href="#">Item</a></li>
-                		<li><a href="#">Item</a>
-                			<ul>
-                				<li><a href="#">Drop left menu item</a></li>
-                				<li><a href="#">Drop left menu item</a></li>
-                			</ul>
-                		</li>
-                	</ul>
-                </li>
-             </ul>
-        </div>
-	 </nav> -->
+	<nav id="main-nav">
+	    <div class="overlay-content">
+            <a href="javascript:void(0)" class="close-btn">×</a>
+	        <div class="stellarnav">
+	            <ul>
+	                <li><a href="#">Item</a></li>
+	                <li><a href="#">Item</a></li>
+	                <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+	                <li><a href="#">Last Dropdown Item</a>
+	                    <ul>
+	                        <li><a href="#">Item</a></li>
+	                        <li><a href="#">Item</a>
+	                            <ul>
+	                                <li><a href="#">Drop left menu item</a></li>
+	                                <li><a href="#">Drop left menu item</a></li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
 
 	<div id="slider">
     	<ul class="slides">
@@ -111,28 +117,36 @@
 
     <section class="procs">
         <div class="grid-container">
-            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+            <div class="grid-25 tablet-grid-25 mobile-grid-100" data-aos="fade-right" data-aos-duration="1000">
                 <div class="content">
-                    <img class="img-resp" src="./images/ptosis.jpg" alt="Ptosis">
-                    <h1>Ptosis</h1>
+                    <a href="">
+                        <img class="img-resp" src="./images/ptosis.jpg" alt="Ptosis">
+                        <h1>Ptosis</h1>
+                    </a>
                 </div>
             </div>
-            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+            <div class="grid-25 tablet-grid-25 mobile-grid-100" data-aos="fade-right" data-aos-duration="1000">
                 <div class="content">
-                    <img class="img-resp" src="./images/ectropion.jpg" alt="Ectropion">
-                    <h1>Ectropion</h1>
+                    <a href="">
+                        <img class="img-resp" src="./images/ectropion.jpg" alt="Ectropion">
+                        <h1>Ectropion</h1>
+                    </a>
                 </div>
             </div>
-            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+            <div class="grid-25 tablet-grid-25 mobile-grid-100" data-aos="fade-right" data-aos-duration="1000">
                 <div class="content">
-                    <img class="img-resp" src="./images/entropion.jpg" alt="Entropion">
-                    <h1>Entropion</h1>
+                    <a href="">
+                        <img class="img-resp" src="./images/entropion.jpg" alt="Entropion">
+                        <h1>Entropion</h1>
+                    </a>
                 </div>
             </div>
-            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+            <div class="grid-25 tablet-grid-25 mobile-grid-100" data-aos="fade-right" data-aos-duration="1000">
                 <div class="content">
-                    <img class="img-resp" src="./images/lid-retation.jpg" alt="Lid Retration">
-                    <h1>Lid Retration</h1>
+                    <a href="">
+                        <img class="img-resp" src="./images/lid-retation.jpg" alt="Lid Retration">
+                        <h1>Lid Retration</h1>
+                    </a>
                 </div>
             </div>
         </div>
@@ -171,7 +185,7 @@
     <section class="gallery">
         <div class="gallery-bg grid-70 tablet-70 mobile-100 grid-parent"></div>
         <div class="grid-container grid-parent">
-            <div class="gallery-content grid-50 tablet-grid-50">
+            <div class="gallery-content grid-50 tablet-grid-50" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Photo Gallery</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna ipsum, fringilla pulvinar efficitur in, malesuada eget ligula. Mauris blandit porttitor tortor et tristique.</p>
                 <a href="" class="btn">Learn more</a>
@@ -183,7 +197,7 @@
 
     <section class="testimonials">
         <div class="grid-container">
-            <div class="grid-60 prefix-20">
+            <div class="grid-100">
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -192,7 +206,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <h1>Patient Reviews</h1>
-                <div class="testimonials-slider">
+                <div class="testimonials-slider grid-60 prefix-20 tablet-grid-60 tablet-prefix-20">
                     <ul class="slides">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna ipsum, fringilla pulvinar efficitur in, malesuada eget ligula. Mauris blandit porttitor tortor et tristique.</li>
                         <li>Ullamco irure nisi nulla culpa deserunt fugiat ad reprehenderit velit voluptate consectetur excepteur incididunt.Proident ut ex est cupidatat do ea irure.Officia qui duis commodo consectetur officia consectetur pariatur proident ut nulla.</li>
@@ -211,11 +225,19 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna ipsum, fringilla pulvinar efficitur in, malesuada eget ligula. Mauris blandit porttitor tortor et tristique. Lorem ipsum dolor sit amet.</p>
               <a class="btn" href="">Learn more</a>
           </div>
-          <div class="grid-50 tablet-grid-50 mobile-grid-100">
-              <img class="img-resp" src="./images/model-1.jpg" alt="Model">
-              <img class="img-resp" src="./images/model-2.jpg" alt="Model">
-              <img class="img-resp" src="./images/model-3.jpg" alt="Model">
-              <img class="img-resp" src="./images/city.jpg" alt="City">
+          <div class="grid-50 tablet-grid-50 mobile-grid-100" data-aos="fade-left" data-aos-duration=1500>
+              <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                  <img class="img-resp" src="./images/model-1.jpg" alt="Model">
+              </div>
+              <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                  <img class="img-resp mt" src="./images/model-2.jpg" alt="Model">
+              </div>
+              <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                  <img class="img-resp" src="./images/model-3.jpg" alt="Model">
+              </div>
+              <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                  <img class="img-resp mt" src="./images/city.jpg" alt="City">
+              </div>
           </div>
         </div>
     </section>
@@ -223,6 +245,14 @@
     <section id="contact">
         <div class="grid-container">
             <div class="grid-100">
+                <h1>Contact us</h1>
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -236,7 +266,7 @@
                     <a href=""><i class="fas fa-rss"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
                 </div>
-                <p>Copyright &copy; 2019 Dr. Kathleen Albrecht. All rights reserved.</p>
+                <span>Copyright &copy; 2019 Dr. Kathleen Albrecht. All rights reserved.</span>
                 <p>
                     <a href="">Sitemap</a> | 
                     <a href="">Terms &amp; Conditions</a> | 
