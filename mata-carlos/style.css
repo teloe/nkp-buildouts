@@ -25,7 +25,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    /* color: #1174a6; */
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -33,10 +33,35 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    /* color: #09557c; */
     text-decoration: none;
     outline: none;
 }
+
+.btn {
+    min-width: 200px;
+    max-width: 250px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    background:#30164b;
+    padding: 15px 20px 12px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: center;
+    letter-spacing: 2px;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background: #231137;
+}
+
 
 ul,ol{clear:both}
 .fl{float:left}
@@ -68,7 +93,12 @@ ul,ol{clear:both}
 
 
 
-/* HEADER ------------------------------------------------*/
+/* .about ------------------------------------------------*/
+.about {
+    background: url(images/dr-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 1100px;
+}
 /* HEADER ------------------------------------------------*/
 /* HEADER ------------------------------------------------*/
 /* HEADER ------------------------------------------------*/
