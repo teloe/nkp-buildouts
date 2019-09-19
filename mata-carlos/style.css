@@ -8,11 +8,16 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
 /*---- GENERAL ----*/
+html {
+    box-sizing: border-box;
+}
 body {
+    font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -48,6 +53,34 @@ ul,ol{clear:both}
 /* https://assets.doctorlogic.com/Images/Sites/M/MataCarlos/Masterpage/337281.svg */
 
 /* https://assets.doctorlogic.com/Images/Sites/M/MataCarlos/Masterpage/337132.svg */
+
+
+/* HEADER ------------------------------------------------*/
+
+
+
+
+
+/* NAV ---------------------------------------------------*/
+.stellarnav ul li a {
+    text-transform: uppercase;
+}
+
+
+
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+/* HEADER ------------------------------------------------*/
+
+
+
+
 
 /* NKP GLOBAL STYLES */
 img{border:0}

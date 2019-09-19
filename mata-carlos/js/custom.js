@@ -1,17 +1,17 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
-	$('.stellarnav').stellarNav({
-		showArrows:false,
-		breakpoint:960,
-		menuLabel:'Menu',
-		phoneBtn:'',
-		locationBtn:''
-	});
+    $('.stellarnav').stellarNav({
+        showArrows: false,
+        breakpoint: 1240,
+        menuLabel: 'Menu',
+        phoneBtn: '',
+        locationBtn: ''
+    });
 
-	/* $('#slider').flexslider({
-	    animation: "fade",
-	    directionNav: false,
-	    controlNav: false
-	}); */
+    $('#slider').flexslider({
+        animation: 'slide',
+        directionNav: false,
+        controlNav: false
+    });
 
 });
