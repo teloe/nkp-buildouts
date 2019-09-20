@@ -8,14 +8,17 @@ jQuery(document).ready(function ($) {
         locationBtn: ''
     });
 
-    $('.stellarnav.mobile').append('<a class="appointment" href=""><i class="fas fa-phone"></i></a>', 
-                                   '<a class="appointment" href=""><i class="fas fa-phone"></i></a>', 
-                                   '<a class="appointment" href=""><i class="fas fa-calendar-plus"></i></a>', 
-                                   '<a class="open-nav"><span></span><span></span><span></span></a>');
-
     $('.open-nav').on('click', function() {
-        // $('header').css('transform', 'translateX(0)');
-        $('header').css('transform', 'translateX(-450px)');
+        $('.stellarnav.mobile > ul, .header-container').toggleClass('is-open');
+        $(this).toggleClass('is-open');
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30 ) {
+            $('header').addClass('sticky');
+        } else {
+            $('header').removeClass('sticky');
+        }
     });
 
     $('#slider').flexslider({
