@@ -4,8 +4,16 @@ jQuery(document).ready(function($) {
         showArrows:false,
         breakpoint:960,
         menuLabel:'Menu',
-        phoneBtn:'',
-        locationBtn:''
+        phoneBtn:'334-558-0262',
+        locationBtn:'https://goo.gl/maps/HaRorjqrWnVdguUE7'
+    });
+
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 30) {
+            $('header').addClass('sticky');
+        } else {
+            $('header').removeClass('sticky');
+        }
     });
 
     /* $('#slider').flexslider({
