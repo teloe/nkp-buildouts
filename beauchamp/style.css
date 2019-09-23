@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
 }
 body {
+    font-family: 'Proxima Nova', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +24,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    /* color: #1174a6; */
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -31,9 +32,48 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    /* color: #09557c; */
     text-decoration: none;
     outline: none;
+}
+
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: 1rem 3rem;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn::before {
+  opacity: 0;
+  /* background: purple; */
+  transform: scale(1, 0.1);
+}
+.btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.section-header {
+    color: #a0a0e4;
+    font-size: 3rem;
+    line-height: 1.5rem; 
+    font-weight: 200;
 }
 
 ul,ol{clear:both}
@@ -47,6 +87,66 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+
+
+
+/* Header ----------------------------------------------------------*/
+header {
+    background: #A0A1E6;
+}
+header .grid-container {
+    padding: 30px 15px;
+}
+
+
+/* #slider ---------------------------------------------------------*/
+#slider .slide1 {
+    height: 900px;
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider .slide1 .btn {
+    background: #FFFBD6; 
+    color: #6666b0;
+}
+#slider .slide1 .btn::before {
+  background: #6666b0; 
+}
+#slider .slide1 .btn:hover {
+    color: #FFFBD6; 
+}
+
+
+
+/* .about ----------------------------------------------------------*/
+.about .content {
+    position: relative;
+}
+.about h2 {
+    position: absolute;
+    bottom: 50px;
+    font-family: 'Garamond Premier Pro', serif;
+}
+.about .grid-25 span {
+    font-size: 50%;
+}
+
+
+
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+/* Section ---------------------------------------------------------*/
+
 
 /* NKP GLOBAL STYLES */
 img{border:0}
