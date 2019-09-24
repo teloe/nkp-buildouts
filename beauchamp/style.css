@@ -21,6 +21,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+p,li,a {
+    color: #494949;
+    line-height: 1.75rem;
+    padding-bottom: 15px;
+}
+
 a,
 a:visited,
 a:link {
@@ -43,6 +49,7 @@ a:hover {
     text-align: center;
     position: relative;
     padding: 1.5rem 2rem;
+    line-height: 1.5;
     z-index: 1;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -62,7 +69,7 @@ a:hover {
 }
 .btn::before {
   opacity: 0;
-  /* background: purple; */
+  background: #6666b0; 
   transform: scale(1, 0.1);
 }
 .btn:hover::before {
@@ -73,7 +80,8 @@ a:hover {
 .section-header {
     color: #a0a0e4;
     font-size: 3rem;
-    line-height: 1.5rem; 
+    line-height: 1; 
+    padding-bottom: 2rem;
     font-weight: 200;
 }
 
@@ -171,14 +179,15 @@ header .bottom {
 #slider .slide1 .grid-container {
     padding: 4rem 15px;
     display: flex;
-    min-height: 300px;
+    min-height: 350px;
     align-items: flex-end;
 }
 #slider .slide1 h1 {
     text-transform: uppercase;
     font-size: 2rem;
+    line-height: 2.2rem;
     font-weight: 200;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     color: #6666b0;
 }
 #slider .slide1 .btn {
@@ -187,31 +196,62 @@ header .bottom {
     background: #FFFBD6; 
     color: #6666b0;
 }
-#slider .slide1 .btn::before {
-  background: #6666b0; 
-}
 #slider .slide1 .btn:hover {
     color: #FFFBD6; 
 }
 
 
-
 /* .about ----------------------------------------------------------*/
+.about .grid-container {
+    padding: 4rem 15px;
+}
 .about .content {
     position: relative;
 }
 .about h2 {
     position: absolute;
-    bottom: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #FFFBD6; 
+    font-size: 6rem;
+    font-weight: 200;
     font-family: 'Garamond Premier Pro', serif;
 }
+.about p {
+    padding-bottom: 4rem;
+}
+.about .grid-25 {
+    margin-bottom: 2rem;
+    width: 100%;
+}
 .about .grid-25 span {
-    font-size: 50%;
+    font-size: 75%;
+}
+
+/* .dr -------------------------------------------------------------*/
+.dr {
+    background: none;
+}
+.dr .grid-container {
+    padding: 4rem 15px;
+}
+.dr h1 {
+    text-align: center;
+}
+.dr .hide-on-desktop {
+    background: url(images/dr-mobile.jpg) no-repeat center;
+    background-size: cover;
+    height: 80vw;
+}
+.dr .btn {
+    background: #a0a0e4;
+    color: #FFFBD6; 
+    margin-top: 2rem;
 }
 
 
 
-/* Section ---------------------------------------------------------*/
 /* Section ---------------------------------------------------------*/
 /* Section ---------------------------------------------------------*/
 /* Section ---------------------------------------------------------*/
@@ -259,19 +299,39 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 @media only screen and (min-width: 452px) {
     #slider .slide1 .btn {
         font-size: 1rem;
-        width: auto;
     }
 }
 
 @media only screen and (min-width: 768px) {
     #slider .slide1 h1 {
         font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    .about .grid-25 {
+        width: 25%;
+        float: left;
+    }
+    .dr {
+        background: url(images/dr.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .dr .grid-container {
+        padding: 4rem 15px;
+    }
+    .dr h1 {
+        text-align: left;
     }
 }
 
 @media only screen and (min-width: 960px) {
+    .btn {
+        width: 100%;
+        max-width: 450px;
+    }
     header {
-        /* position: fixed; */
+        position: fixed;
+        top: 0;
+        transition: .3s;
     }
     header img {
         width: 100%;
@@ -286,9 +346,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         opacity: 0;
     }
     header.sticky {
-        position: fixed;
-        top: 0;
-        transition: .3s;
+        box-shadow: 10px 10px 20px rgba(0,0,0,.2);
     }
     header .grid-container {
         display: flex;
@@ -310,13 +368,33 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .stellarnav ul {
         text-align: right;
     }
+    #slider {
+        margin-top: 8rem;
+    }
     #slider .slide1 .grid-container {
         align-items: center;
-        min-height: 600px;
+        min-height: 672px;
+        height: 20vw;
+    }
+    .dr {
+        height: 700px;
+    }
+    .dr .grid-container {
+        padding: 6rem 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .about .grid-25 {
+        float: left;
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+    .dr {
+        background-position-x: -38rem;
+    }
 }
 
 @media only screen and (max-width: 1168px) and (min-width: 960px) {
