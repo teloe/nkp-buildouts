@@ -205,14 +205,15 @@ header .bottom {
 .about .grid-container {
     padding: 4rem 15px;
 }
-.about .content {
+.about a {
     position: relative;
+    display: block;
 }
 .about h2 {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 2rem;
     color: #FFFBD6; 
     font-size: 6rem;
     font-weight: 200;
@@ -227,6 +228,19 @@ header .bottom {
 }
 .about .grid-25 span {
     font-size: 75%;
+}
+.about a {
+    overflow: hidden;
+    padding: 0;
+}
+.about img {
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.about a:hover img {
+    transform: scale(1.05);
+    filter: brightness(.9);
 }
 
 /* .dr -------------------------------------------------------------*/
@@ -251,20 +265,121 @@ header .bottom {
 }
 
 
+/* .services -------------------------------------------------------*/
+.services .grid-container {
+    padding: 4rem 15px;
+}
+.services h1 {
+    padding-bottom: 4rem;
+}
+.services .grid-25 {
+    margin-bottom: 2rem;
+}
+.services .content {
+    position: relative;
+}
+.services img {
+    width: 100%;
+}
+.services h3 {
+    background: #a0a0e4;
+    color: #FFFBD6; 
+    font-weight: 200;
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.services a .overlay {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.25); 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-out;
+}
+.services a:hover .overlay {
+    opacity: 1;
+}
+.services .overlay span {
+    display: inline-block;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background: #FFFBD6; 
+    transition: all .2s ease-out;
+}
+.services a:hover span {
+    margin: 0 3px;
+}
 
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
+/* .bxa ------------------------------------------------------------*/
+.bxa {
+    background: #E6E6FB;
+}
+.bxa .grid-container {
+    padding: 4rem 15px;
+    position: relative;
+}
+.bxa h1 {
+    text-align: center;
+}
+.bxa .custom-control--nav {
+    padding-bottom: 2rem;
+}
+.bxa .custom-control--nav li {
+    cursor: pointer;
+    background: #FFFBD6; 
+    color: #6666b0;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    transition: all .3s ease-out;
+}
+.bxa .custom-control--nav .flex-active {
+    background: #6568B2; 
+    color: #FFFBD6; 
+}
+.bxa-slider ul li {
+    padding-bottom: 0;
+}
 
+footer {
+    background: #6568B2;
+    margin-top: 4rem;
+}
+footer .grid-container {
+    text-align: center;
+    padding: 4rem 15px;
+}
+footer .grid-20 {
+    margin-bottom: 2rem;
+}
+footer .footer-header {
+    padding-bottom: 1rem;
+}
+footer h4,
+footer a {
+    color: #FFFBD6; 
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    background: #fff;
+}
+.footer-bottom * {
+    color: #6666b0;
+    font-size: .8rem;
+}
 
 /* NKP GLOBAL STYLES */
 img{border:0}
@@ -320,6 +435,19 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     .dr h1 {
         text-align: left;
+    }
+    .bxa .grid-container {
+        display: flex;
+        align-items: flex-end;
+    }
+    .bxa h1 {
+        text-align: left;
+    }
+    .bxa .custom-control--nav {
+        padding-bottom: 0;
+    }
+    .bxa .custom-control--nav li {
+        max-width: 70%;
     }
 }
 
@@ -400,5 +528,12 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 @media only screen and (max-width: 1168px) and (min-width: 960px) {
     .stellarnav ul li a {
         padding: .5vw;
+    }
+}
+@media only screen and (min-width: 3000px) {
+    .dr {
+        height: 20vw;
+        display: flex;
+        align-items: center;
     }
 }
