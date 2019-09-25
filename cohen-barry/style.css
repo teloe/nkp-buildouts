@@ -18,38 +18,79 @@ html {
 body {
     width: 100%;
     overflow-x: hidden;
+    font-size: 14px;
+    line-height: 27px;
     font-family: 'Proxima Nova', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+    font-weight: 200;
+}
+
 a,
 a:visited,
 a:link {
-    color: #8cbede;
+    /* color: #8cbede; */
+    color: #000;
     font-family: 'Baskerville URW', serif;
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 a:hover {
-    color: #5ea4d1;
+    color: #8cbede;
     text-decoration: none;
     outline: none;
 }
 
-/* Button hover effect */
-/* https://codepen.io/sazzad/pen/yNNNJG */
+.section-header {
+    color: #8cbede;
+    font-style: italic;
+}
 
 .btn {
+    font-size: 1.2rem;
+    text-transform: capitalize;
     width: 330px;
-    height: 66px;
+    position: relative;
     padding: 1rem;
+    text-align: center;
+    z-index: 1;
+    font-style: italic;
     display: block;
-    background: #D3EDFD;
-    color: #000;
+    overflow: hidden;
+    background-color: #d3edfd;
+    color: #000 !important;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    border: solid 3px #000;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    /* color: #d3edfd !important; */
+    /* background: transparent; */
+    background: #000;
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.btn:hover::after {
+    height: 400% !important;
+    opacity: 1;
+    color:#FFF;
+}
+.btn:hover {
+    color: #d3edfd !important;
+    /* background-color: transparent; */
 }
 
 h1, h2, h3, h4, h5, h6 {
