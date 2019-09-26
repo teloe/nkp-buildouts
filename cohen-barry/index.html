@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cohen</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -20,15 +21,6 @@
 
 </head>
 <body>
-
-    <section class="">
-        <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-            </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-            </div>
-        </div>
-    </section>
 
     <header>
         <div class="grid-container">
@@ -39,24 +31,22 @@
                             <img class="img-resp" src="./images/logo.png" alt="Barry J. Cohen, M.D.">
                         </a>
                     </div>
-                    <div class="header-nav">
-                        <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Procedures</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Patient Information</a></li>
-                            <li><a href="">Specials</a></li>
-                            <li><a href="">Skin Care Store</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
+                    <ul class="header-nav">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Procedures</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Patient Information</a></li>
+                        <li><a href="">Specials</a></li>
+                        <li><a href="">Skin Care Store</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
                     <div class="text">
                         <h1 class="section-header">From Skincare to Scalpel</h1>
                         <p>As a center specializing in aesthetic plastic surgery, we strive to provide state-of-the-art facilities for our patients. We are especially proud to offer preoperative computer imaging for our patients. This capability affords a tremendous advantage in improving doctor-patient communications.</p>
                         <a class="btn" href="">Request your consultation</a>
                     </div>
                     <div class="contact-info">
-                        <a href="">CALL NOW: 301-656-5398</a>
+                        <p>CALL NOW: 301-656-5398</p>
                         <div class="social">
                             <a href=""><i class="fab fa-facebook-f"></i></a>
                             <a href=""><i class="fab fa-instagram"></i></a>
@@ -66,10 +56,12 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="main-menu">
-                <nav>
+
+            <nav id="main-nav">
+                <div class="close-btn">×</div>
+                <div class="overlay-content">
                     <div class="stellarnav">
-                         <ul>
+                        <ul>
                             <li><a href="#">Item</a></li>
                             <li><a href="#">Item</a></li>
                             <li><a href="#">Item</a></li>
@@ -85,14 +77,25 @@
                                     </li>
                                 </ul>
                             </li>
-                         </ul>
+                        </ul>
                     </div>
-                </nav>
-            </div> -->
+                </div>
+            </nav>
+
+        </div><!-- ./grid-container -->
+        <div class="open-nav">
+            <span>MENU</span>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+        <div class="hide-on-tablet hide-on-desktop"></div>
     </header>
 
     <section class="dr">
+        <div class="hide-on-tablet hide-on-desktop"></div>
         <div class="grid-container">
             <div class="grid-60 tablet-grid-60 mobile-grid-100">
                 <img class="img-resp" src="./images/dr.jpg" alt="Dr. Barry J. Cohen, M.D. P.C.">
@@ -109,22 +112,23 @@
 
     <section class="services">
         <h1 class="section-header tac">Our Services</h1>
-        <div class="hide-on-tablet-hide-on-desktop"></div>
+        <div class="hide-on-tablet hide-on-desktop"></div>
         <div class="grid-container">
             <div class="grid-50 tablet-grid-50 mobile-grid-100">
                 <h2 class="section-header">Face Procedures</h2>
                 <p>Certified Plastic Surgeon Dr. Barry J. Cohen, MD PC. offers plastic surgery in the Washington DC metro area, including Virginia & Maryland. We constantly strive to maintain impeccable customer service as well as outstanding.</p>
                 <ul class="proc-list">
-                    <li><a href="">Facelift</a></li>
-                    <li><a href="">Rhinoplasty</a></li>
-                    <li><a href="">Brow Lift</a></li>
-                    <li><a href="">Blepharoplasty</a></li>
-                    <li><a href="">Westernization Surgery</a></li>
+                    <li><a href="" class="btn">Facelift</a></li>
+                    <li><a href="" class="btn">Rhinoplasty</a></li>
+                    <li><a href="" class="btn">Brow Lift</a></li>
+                    <li><a href="" class="btn">Blepharoplasty</a></li>
+                    <li><a href="" class="btn">Westernization Surgery</a></li>
                 </ul>
             </div>
         </div>
         <div class="bg-extend">
-            <div class="grid-80"></div>
+            <div class="grid-50">
+            </div>
         </div>
         <div class="procs">
             <ul>
@@ -288,6 +292,10 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

@@ -27,6 +27,7 @@ body {
 
 p {
     font-weight: 200;
+    padding-bottom: 1.5rem;
 }
 
 a,
@@ -48,14 +49,16 @@ a:hover {
 }
 
 .section-header {
+    font-weight: 200;
     color: #8cbede;
-    font-style: italic;
+    transform: skewX(-8deg);
 }
 
 .btn {
     font-size: 1.2rem;
     text-transform: capitalize;
-    width: 330px;
+    width: auto;
+    max-width: 330px;
     position: relative;
     padding: 1rem;
     text-align: center;
@@ -94,10 +97,14 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Baskerville URW', serif;
+    font-family: 'Baskerville URW Regular', serif;
 }
 p {
     color: #323232;
+}
+.social a {
+    display: inline-block;
+    margin: 1rem .5rem;
 }
 
 ul,ol{clear:both}
@@ -114,6 +121,194 @@ ul,ol{clear:both}
 
 
 /* inner width 1965px */
+
+/* Header -----------------------------------------------------*/
+header .hide-on-desktop {
+    background: url(images/banner-mobile.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+header .grid-container {
+    padding: 30px 15px;
+}
+header .grid-50 {
+    background: rgba(255,255,255,.8);
+    text-align: center;
+}
+
+header .grid-50 .btn {
+    margin: 2rem auto 0;
+}
+header .grid-50 h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding: 2rem 0;
+}
+header .header-nav {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+header .header-nav a {
+    padding: 10px 15px;
+    display: inline-block;
+}
+header .contact-info {
+    margin-top: 2rem;
+}
+
+.open-nav>span,
+.open-nav>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.open-nav >span {
+    font-family: 'Baskerville URW Regular', serif;
+}
+.open-nav div {
+    width: 30px;
+    padding-left: 5px;
+}
+.open-nav {
+    cursor: pointer;
+    z-index: 9;
+    background: rgba(255,255,255,.8);
+    box-shadow: 0 0 10px rgba(0,0,0,.2); 
+    position: fixed;
+    padding: 15px;
+    top: 0;
+    right: 30px;
+}
+.open-nav div span {
+    text-align: right;
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    background: #000;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.open-nav:hover div span:nth-of-type(1) {
+    width: 50%;
+}
+.open-nav:hover div span:nth-of-type(2) {
+    width: 75%;
+}
+
+#main-nav {
+    height: 100%;
+    width: 450px;
+    max-width: 90%;
+    -webkit-transform: translateX(450px);
+    transform: translateX(450px);
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    background-color:#fff;
+    overflow-x: hidden;
+    -webkit-transition: transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: .45s;
+    -webkit-box-shadow: 0px 1px 2.28px 0.72px rgba(0,0,0,0.05);
+    box-shadow: 0px 1px 2.28px 0.72px
+    rgba(0,0,0,0.05);
+}
+#main-nav .close-btn {
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    font-size: 50px;
+    transition: all 0.3s ease;
+}
+#main-nav .close-btn:hover {
+    color: #8cbede;
+}
+
+
+/* .dr ----------===-------------------------------------------*/
+.dr {
+    padding: 4rem 0;
+}
+.dr .hide-on-desktop {
+    background: url(images/dr.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+.dr .grid-container {
+    position: relative;
+}
+.dr .grid-60 {
+    display: none;
+}
+.dr .grid-50 {
+    float: right;
+    margin-top: 1.5rem;
+    background: #fff;
+    padding: 30px 15px;
+}
+.dr h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+}
+.dr .btn {
+    margin: 1rem auto 0;
+}
+
+
+/* .services --------------------------------------------------*/
+.services {
+    position: relative;
+}
+.services .bg-extend .grid-50 {
+    background: url(images/facelift.jpg) no-repeat center;
+    background-size: cover;
+    height: 635px;
+    max-width: 987px;
+    position: absolute;
+    right: 0;
+    top: -34rem;
+}
+.services .bg-extend {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1970px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.services h1.section-header {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+.services h2.section-header {
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    padding: 2rem 0;
+}
+.services .btn {
+    margin: 1rem 0;
+}
+
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
+/* Header -----------------------------------------------------*/
 
 
 
@@ -148,12 +343,49 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
+    .btn {
+        width: 330px;
+    }
+    header {
+        background: url(images/banner.jpg) no-repeat center;
+        background-size: cover;
+    }
+    header .grid-50 .btn {
+        margin: 4rem auto 0;
+    }
+    header .grid-50 h1 {
+        font-size: 3.7rem;
+        line-height: 4rem;
+    }
+    .dr .hide {
+        display: none;
+    }
+    .dr h1 {
+        text-align: left;
+    }
+    .dr .grid-60 {
+        position: absolute;
+        display: block;
+        left: 0;
+        z-index: -1;
+    }
+    .dr .btn {
+        margin-left: 0;
+    }
+    .services h2.section-header {
+        text-align: left;
+    }
+
 }
 
 @media only screen and (min-width: 960px) {
+    
+    
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+    
+    
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 960px) {
