@@ -7,6 +7,7 @@ Template: nkpv2
 
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Lato&display=swap');
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
@@ -23,20 +24,23 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+p {
+    margin: 0 0 10px;
+}
 
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #212121;
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    /* -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; */
 }
 a:hover {
-    color: #09557c;
-    text-decoration: none;
+    color: #1e73be;
+    text-decoration: underline;
     outline: none;
 }
 
@@ -49,27 +53,213 @@ a:hover {
     background: #b19f76;
     color: #000;
     border: 1px solid #958155;
+    border-radius: 4px;
+    transition: none !important;
+}
+.btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #045204;
+    border: 1px solid #011801;
 }
 
+.social a {
+    display: inline-block;
+    margin: 0 4px;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    background: #212121;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social a:hover {
+    background: #1e73be;
+}
 
 @keyframes zoom {
     0% {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
 }
 
-/* Header ----------------------------------------------------------*/
+/* header ----------------------------------------------------------*/
+header {
+    z-index: 999;
+    background: #fff;
+}
+header > .grid-container:nth-child(1) {
+    padding: 15px;
+    font-size: 16px;
+}
+header #logo {
+    text-align: center;
+}
+header .grid-50:nth-of-type(2) {
+    text-align: center;
+}
+header .contact-info {
+    padding: 25px 0;
+}
+header .social {
+    padding-top: 15px;
+}
+
+
+/* nav -------------------------------------------------------------*/
+.stellarnav {
+    margin-bottom: 20px;
+}
+.stellarnav .menu-toggle {
+    text-transform: none;
+    background: #E6E6E6;
+    text-align: center;
+}
+.stellarnav a {
+    font-family: "Helvetica",Verdana,Arial,sans-serif !important;
+    color: #212121 !important;
+}
+.stellarnav.mobile ul {
+    background: #fff;
+}
+.stellarnav.mobile ul li {
+    border-bottom: solid 1px #e6e6e6;
+}
+.stellarnav a:hover {
+    color: #1e73be !important;
+}
+
+
+/* slider ----------------------------------------------------------*/
+#slider .slide1 {
+    background: url(images/banner-bg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 545px;
+    position: relative;
+    z-index: 1;
+}
+#slider .slide1::after {
+    background: rgba(28,28,28,0.55);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#slider .slide1 .grid-container {
+    padding: 40px 15px 60px;
+}
+#slider .slide1 h1,
+#slider .slide1 h2,
+#slider .slide1 p{color:#fff}
+#slider .slide1 h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 50px;
+    padding-bottom: 4rem;
+}
+#slider .slide1 h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    padding: 60px 0 15px;
+}
+#slider .slide1 p {
+    font-weight: bolder;
+}
+#slider .slide1 .btn {
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+}
+#slider .banner-slider {
+    position: relative;
+}
+#slider .banner-slider .container {
+    overflow: hidden;
+}
+#slider .banner-slider .container img {
+    width: 100%;
+    animation: zoom 5s infinite;
+}
+#slider .banner-slider .flex-prev,
+#slider .banner-slider .flex-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 55px;
+    display: flex;
+    margin: auto;
+    font-size: 4rem;
+    opacity: .5;
+    z-index: 2;
+    padding: 20px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#slider .banner-slider .flex-prev:hover,
+#slider .banner-slider .flex-next:hover {
+    opacity: 1;
+}
+#slider .banner-slider .flex-prev {
+    left: 0;
+}
+#slider .banner-slider .flex-next {
+    right: 0;
+}
+
+.member-logos .grid-container {
+    padding: 30px 15px;
+}
+
+
+
+/* .testimonials ---------------------------------------------------*/
+.testimonials {
+    background: #b2a077;
+    color: #fff;
+}
+.testimonials .grid-container {
+    position: relative;
+}
+.testimonials h1 {
+    font-size: 30px;
+    margin: .3em 0;
+}
+.testimonials .flex-prev,
+.testimonials .flex-next {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background: #fff;
+    color: #b2a077;
+    border-radius: 50%;
+}
+.testimonials .flex-prev {
+    right: 20px;
+}
+.testimonials p {
+    font-size: 18px;
+}
 
 
 
 
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
-/* Section ---------------------------------------------------------*/
 /* Section ---------------------------------------------------------*/
 /* Section ---------------------------------------------------------*/
 /* Section ---------------------------------------------------------*/
@@ -127,6 +317,71 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    header.sticky {
+        position: fixed;
+        top: 0;
+    }
+    header img {
+        width: 370px;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+    header.sticky img {
+        width: 140px;
+    }
+    header .grid-50:nth-of-type(2) {
+        text-align: right;
+    }
+    header .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    header #logo {
+        text-align: left;
+    }
+    header .contact-info {
+        padding: 0;
+    }
+    header .social {
+        padding: 0;
+    }
+    .stellarnav {
+        margin-bottom: 0;
+    }
+    .stellarnav ul {
+        text-align: left;
+    }
+    nav,
+    .stellarnav ul ul {
+        background: linear-gradient(to bottom, #393939 0%, #2c2c2c 100%);
+    }
+    .stellarnav li a {
+        color: #fff !important;
+        font-weight: bold;
+    }
+    .stellarnav li a:hover {
+        color: #b19f76 !important;
+    }
+    .stellarnav > ul > li > a {
+        border-right: 1px solid rgba(252,252,252,0.1);
+        margin: 10px 0;
+        padding: 5px 15px;
+    }
+    #slider .slide1 .grid-container {
+        padding-top: 250px;
+    }
+    #slider .slide1 h1 {
+        padding-top: 2rem;
+    }
+    #slider .slide1 h2 {
+        padding-top: 0;
+    }
+
 }
 
 @media only screen and (min-width: 960px) {
