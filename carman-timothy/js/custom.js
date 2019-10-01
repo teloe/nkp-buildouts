@@ -36,10 +36,6 @@ jQuery(document).ready(function($) {
     $('#slider .flex-prev').html('<img class="img-resp" src="../images/prev.png">');
     $('#slider .flex-next').html('<img class="img-resp" src="../images/next.png">');
 
-    $('.testimonials .flex-prev').html('<i class="fas fa-chevron-left"></i>');
-    $('.testimonials .flex-next').html('<i class="fas fa-chevron-right"></i>');
-
-
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
