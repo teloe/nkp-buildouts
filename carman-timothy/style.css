@@ -23,6 +23,8 @@ a:hover{color:#1e73be;text-decoration:underline;outline:none}
 .btn:hover{color:#fff;text-decoration:none;background:#045204;border:1px solid #011801}
 .social a{display:inline-block;margin:0 4px;height:2em;width:2em;line-height:2em;position:relative;vertical-align:middle;background:#212121;color:#fff;border-radius:50%;text-align:center}
 .social a:hover{background:#1e73be}
+.to-top{background-color:rgba(0,0,0,.2);position:fixed;bottom:15px;right:15px;width:44px;height:42px;text-align:center;position:fixed;cursor:pointer;display:none;z-index:9999}
+.to-top i{position:absolute;top:12px;left:14px;color:#fff;font-size:16px;line-height:16px}
 
 @keyframes zoom {
     0% {
