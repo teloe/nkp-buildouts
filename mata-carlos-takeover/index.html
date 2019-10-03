@@ -11,8 +11,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NKP</title>
+    <title>Mata</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -21,53 +22,174 @@
 </head>
 <body>
 
-    <!-- SNIPPET
-    <section class="">
+    <header>
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="grid-35 tablet-grid-35 mobile-grid-100">
+                <div id="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="Natural Results Medical Spa">
+                    </a>
+                </div>
             </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="grid-65 tablet-grid-65 mobile-grid-100">
+                <div class="contact-info">
+                <a class="phone" href="">(480) 500-8585</a>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-pinterest-p"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <nav>
+                    <div class="stellarnav">
+                         <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a>
+                                <ul>
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Injectables</a></li>
+                                    <li><a href="#">Non-Surgical</a></li>
+                                    <li><a href="#">Male</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a class="price" href="#">Pricing Estimator</a></li>
+                         </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-    </section> -->
-
-    <div id="logo">
-        <a href="/" title="">
-            <img class="img-resp" src="./images/logo.png" alt="">
-        </a>
-	</div>
-
-	<nav>
-        <div class="stellarnav">
-             <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Last Dropdown Item</a>
-                	<ul>
-                		<li><a href="#">Item</a></li>
-                		<li><a href="#">Item</a>
-                			<ul>
-                				<li><a href="#">Drop left menu item</a></li>
-                				<li><a href="#">Drop left menu item</a></li>
-                			</ul>
-                		</li>
-                	</ul>
-                </li>
-             </ul>
-        </div>
-	</nav>
+    </header>
 
 	<div id="slider">
     	<ul class="slides">
-    		<li><div class="slide1">slide1</div></li>
-    		<li><div class="slide2">slide2</div></li>
-    		<li><div class="slide3">slide3</div></li>
+    		<li>
+                <div class="slide1">
+                    <video autoplay="" loop="" muted="" playsinline="" class="hero__video">
+                        <source src="./videos/opening-city.mp4" type="video/mp4" width="100%" height="100%">
+                    </video>
+                    <img class="img-resp" src="./images/N.png" alt="" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="2000">
+                    <img class="img-resp" src="./images/icon.png" alt="" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="2500">
+                    <img class="img-resp" src="./images/R.png" alt="" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="3000">
+                </div>
+            </li>
     	</ul>
 	</div>
 
+    <section class="consult">
+        <div class="grid-container">
+            <div class="grid-100">
+            </div>
+        </div>
+    </section>
+
+    <section class="procs">
+        <div class="grid-container">
+            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+                <a href="">
+                    <img class="img-resp" src="./images/injectables.jpg" alt="Injectables">
+                    <h2>Injectables</h2>
+                </a>
+            </div>
+            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+                <a href="">
+                    <img class="img-resp" src="./images/laser-treatments.jpg" alt="Laser Treatments">
+                    <h2>Laser Treatments</h2>
+                </a>
+            </div>
+            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+                <a href="">
+                    <img class="img-resp" src="./images/sexual-enhancements.jpg" alt="Sexual Enhancements">
+                    <h2>Sexual Enhancements</h2>
+                </a>
+            </div>
+            <div class="grid-25 tablet-grid-25 mobile-grid-100">
+                <a href="">
+                    <img class="img-resp" src="./images/male-services.jpg" alt="Men's Services">
+                    <h2>Men's Services</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="dr">
+        <div class="grid-container">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <img class="img-resp" src="./images/doctor-mata.jpg" alt="CARLOS MATA, MD, FACS, MBA">
+            </div>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <h1>CARLOS MATA, MD, FACS, MBA</h1>
+                <p>Dr. Carlos Mata, aka Dr. Scottsdale, is board certified through the American Board of Plastic Surgery for plastic and reconstructive surgery in Scottsdale, AZ. Dr. Mata is a highly-skilled plastic surgeon for the breasts, face, neck, skin, and abdomen. He also performs skin rejuvenation treatments.</p>
+                <img class="img-resp" src="./images/associations.jpg" alt="Associations">
+                <a class="btn" href="">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="new-you">
+        <div class="grid-container">
+            <div class="grid-100">
+                <h1>WANT TO SEE <span>THE NEW YOU BEFORE THE PROCEDURE?</span></h1>
+                <a class="btn" href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="trusculpt">
+        <div class="grid-container">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                <h1>TruSculpt</h1>
+                <p>Natural Results Plastic Surgery offers TruSculpt for clients looking to eliminate deposits of stubborn fat in their body. Diet and exercise may not always grant a slimmer figure, and TruSculpt is a proven method to eliminate fat cells regardless of body type or shape. This treatment is a non-invasive RF (Radio Frequency) technology that uses radio waves to deliver deep heating into adipose tissue. </p>
+                <a class="btn" href="">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="map">
+    </div>
+
+    <footer>
+        <div class="grid-container">
+            <div class="grid-100">
+                <img class="img-resp" src="./images/logo.png" alt="Natural Results Medical Spa">
+                <div class="contact-info tac">
+                    <p>Natural Results Medical Spa</p>
+                    <p>7930 E. Thompson Peak Pkwy. Road Suite 101</p>
+                    <p>Scottsdale Arizona 85255</p>
+                    <p>Phone: (480) 500-8585</p>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-google"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="grid-container">
+                <div class="grid-70 tablet-grid-70 mobile-grid-100">
+                    <p>&copy; 2019 Natural Results Medical Spa</p>
+                    <a href="">Sitemap</a>
+                </div>
+                <div class="grid-30 tablet-grid-30 mobile-grid-100">
+                    <img class="img-resp" src="./images/CCDM_Logo-Footer.png" alt="Crystal Clear logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 
