@@ -8,6 +8,14 @@ jQuery(document).ready(function ($) {
         locationBtn: ''
     });
 
+    $(window).on('scroll', function() {
+        if ( $(this).scrollTop() > 0 ) {
+            $('#main-nav').addClass('sticky');
+        } else {
+            $('#main-nav').removeClass('sticky');
+        }
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
