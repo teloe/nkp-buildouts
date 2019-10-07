@@ -16,6 +16,9 @@ html {
     box-sizing: border-box;
 }
 body {
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +26,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    /* color: #1174a6; */
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -31,10 +34,22 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    /* color: #09557c; */
     text-decoration: none;
     outline: none;
 }
+
+
+.btn {
+    font-family: 'PoynterOSDispCond', serif;
+    font-size: 1.3rem;
+    line-height: .85rem;
+    display: inline-block;
+    padding: 1rem;
+    color: #48312b;
+    background: #C1987D;
+}
+
 
 ul,ol{clear:both}
 .fl{float:left}
@@ -49,6 +64,58 @@ ul,ol{clear:both}
 .nodisp{display:none}
 
 /* 2014px */
+.outer-container {
+    max-width: 2014px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* header --------------------------------------------------------- */
+header .outer-container {
+    position: relative;
+    /* background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 800px;
+    max-height: 1000px; */
+}
+header .outer-container a {
+    color: #fff;
+}
+header .grid-container {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+}
+header .grid-container #logo {
+    text-align: center;
+}
+
+
+/* nav ------------------------------------------------------------ */
+.stellarnav li a {
+    color: #fff;
+}
+.stellarnav > ul > li > a {
+    padding: 10px 5px;
+}
+
+
+
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+/* section -------------------------------------------------------- */
+
+
+
 
 
 
