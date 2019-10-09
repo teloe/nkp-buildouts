@@ -216,6 +216,7 @@ nav {
 .about .btn {
     margin: .5rem auto 0;
     display: block;
+    max-width: 120px;
 }
 
 
@@ -284,11 +285,13 @@ nav {
 
 
 /* .dr -------------------------------------------------------- */
-.dr {
+.dr .hide {
     background: url(images/dr.jpg) no-repeat center;
     background-size: cover;
-    max-width: 2014px;
-    margin: auto;
+    height: 60vw;
+}
+.dr .grid-60 {
+    width: 100%;
 }
 .dr .grid-60 .content {
     background: #fff;
@@ -307,8 +310,9 @@ nav {
 }
 .dr .btn {
     margin: 1rem 0 1.5rem;
+    display: block;
+    width: 140px;
 }
-
 
 /* .testimonials -------------------------------------------------- */
 .testimonials {
@@ -316,31 +320,19 @@ nav {
     margin: auto;
     position: relative;
 }
-.testimonials .grid-container {
-    margin: 6rem auto;
+.testimonials .hide {
+    background: url(images/testimonials-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
 }
-.testimonials .grid-50:first-of-type img {
-    position: absolute;
-    top: 0;
+.testimonials .grid-container {
+    margin: 2rem auto 6rem;
+}
+.testimonials .grid-50:first-of-type {
+    display: none;
 }
 .testimonials .grid-50:last-of-type {
-    float: right;
-}
-.testimonials .grid-50:last-of-type .content {
-    background: #FFF8F4;
-    margin-top: 30%;
-    padding-top: 2rem;
-}
-.testimonials .grid-50:last-of-type .content::after {
-    content: '';
-    display: block;
-    background: #FFF8F4;
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    top: 25%;
-    width: 60%;
-    height: 100%;
+    width: 100%;
 }
 .testimonials h1 {
     z-index: 1;
@@ -356,10 +348,9 @@ nav {
 }
 
 
-
 /* #contact ------------------------------------------------------- */
 #contact {
-    margin: 18rem auto 4rem;
+    margin: 0 auto 4rem;
     max-width: 2014px;
     background: url(images/contact-bg.jpg) no-repeat center;
     background-size: cover;
@@ -496,6 +487,11 @@ textarea {
     iframe{width:100%;height:280px}
     .patient-single{width:100%!important}
 }
+@media only screen and (max-width: 400px) {
+    .services .grid-container {
+        margin-top: 5rem;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     h1 {
@@ -524,6 +520,10 @@ textarea {
     .services h2 {
         font-size: 6rem;
         padding-bottom: 2rem;
+    }
+    #contact {
+        margin: 18rem auto 4rem;
+        max-width: 2014px;
     }
     #contact h2 {
         font-size: 6rem;
@@ -614,8 +614,49 @@ textarea {
     #slider .slide1 .grid-container {
         padding-top: 10rem;
     }
-    
-
+    .dr {
+        background: url(images/dr.jpg) no-repeat center;
+        background-size: cover;
+        max-width: 2014px;
+        margin: auto;
+    }
+    .dr .hide {
+        display: none;
+    }
+    .testimonials .hide {
+        display: none;
+    }
+    .testimonials .grid-container {
+        margin: 6rem auto;
+    }
+    .dr .grid-60 {
+        width: 60%;
+    }
+    .testimonials .grid-50:first-of-type {
+        display: block;
+    }
+    .testimonials .grid-50:last-of-type {
+        width: 50%;
+    }
+    .testimonials .grid-50:last-of-type {
+        float: right;
+    }
+    .testimonials .grid-50:last-of-type .content {
+        background: #FFF8F4;
+        margin-top: 30%;
+        padding-top: 2rem;
+    }
+    .testimonials .grid-50:last-of-type .content::after {
+        content: '';
+        display: block;
+        background: #FFF8F4;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 25%;
+        width: 60%;
+        height: 100%;
+    }
     
 }
 
@@ -625,9 +666,28 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 960px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .services .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
 
-@media only screen and (min-width: 1350px) {
+@media only screen and (max-width: 1260px) and (min-width: 1025px) {
+    .services .content:hover h1 {
+        transform: translateY(-140%);
+    }
+    .services .content .overlay p {
+        padding: 1vw;
+        font-size: 1.1vw;
+        line-height: 1.6vw;
+    }
+}
 
+@media only screen and (min-width: 1200px) {
+    .testimonials .grid-50:first-of-type img {
+        position: absolute;
+        top: 0;
+    }
 }
