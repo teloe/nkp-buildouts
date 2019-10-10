@@ -8,6 +8,10 @@ jQuery(document).ready(function($) {
         locationBtn:''
     });
 
+    $(window).on('scroll', function() {
+
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
