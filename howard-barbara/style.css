@@ -18,19 +18,26 @@ html {
 body {
     background: #F1F1F1; 
     color: #737373;
+    width: 100%;
+    overflow-x: hidden;
     font-size: 17px;
     font-family: 'Proxima Nova', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Proxima Nova Thin', sans-serif;
     color: #000;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 p {
     line-height: 1.5;
 }
 .sub {
     font-weight: bold;
+    font-family: 'Proxima Nova', sans-serif;
+    letter-spacing: 6px;
 }
 
 a,
@@ -76,21 +83,35 @@ header .social {
     margin: 1rem 0;
 }
 header .social a {
+    color: #363636;
     margin: 0 .25rem;
 }
 header .contact-info p {
+    color: #363636;
     padding: 5px 0;
+}
+header .phone {
+    color: #363636;
 }
 
 
 /* nav ------------------------------------- */
+.stellarnav {
+    border-top: solid 1px lightgrey;
+}
 .stellarnav ul li a {
     color: #000;
 }
+.stellarnav > ul > li > a {
+    padding: 20px;
+}
 .stellarnav.mobile .menu-toggle {
-    color: #000;
+    color: #363636;
 }
 .stellarnav.mobile ul {
+    background: #F1F1F1; 
+}
+.stellarnav ul ul {
     background: #F1F1F1; 
 }
 .stellarnav ul li a:hover {
@@ -98,13 +119,250 @@ header .contact-info p {
 }
 
 
+/* slider ------------------------------------- */
+#slider .slide1 {
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider .slide1 .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vw;
+}
 
-/* section ------------------------------------- */
-/* section ------------------------------------- */
-/* section ------------------------------------- */
-/* section ------------------------------------- */
-/* section ------------------------------------- */
-/* section ------------------------------------- */
+#slider .slide1 h1 {
+    color: #fff;
+    font-size: 5.5vw;
+}
+
+
+/* .procs ------------------------------------- */
+.procs {
+    position: relative;
+}
+.procs::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    background: #fff;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+}
+.procs .grid-container {
+    padding: 4rem 15px;
+    max-width: 1456px;
+}
+.procs h1 {
+    font-size: 1.9rem;
+}
+.procs .flex {
+    margin-top: 4rem;
+}
+.procs .grid-25 {
+    margin-bottom: 4rem;
+}
+.procs img {
+    width: 100%;
+}
+.procs h3.sub {
+    text-align: center;
+    color: #000;
+    font-size: .9rem;
+    line-height: 1.25rem;
+    padding: 1rem 0;
+}
+.procs h2 {
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+.procs .text {
+    background: #fff;
+    color: #737373;
+    padding: 60px 30px;
+}
+.procs .content {
+    display: block;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.1); 
+}
+.procs .grid-25:nth-child(1) .content {
+    border-bottom: solid 15px #213F9A;
+}
+.procs .grid-25:nth-child(2) .content {
+    border-bottom: solid 15px #EABC4B;
+}
+.procs .grid-25:nth-child(3) .content {
+    border-bottom: solid 15px #C73B48;
+}
+.procs .grid-25:nth-child(4) .content {
+    border-bottom: solid 15px #BAB544;
+}
+
+
+/* .about ------------------------------------- */
+.about {
+    margin-bottom: 6rem;
+    position: relative;
+}
+.about::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -450px;
+    left: -515px;
+    background: #fff;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    z-index: -1;
+
+}
+.about h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    position: relative;
+}
+.about h1::before {
+    content: '';
+    width: 5rem;
+    height: 2px;
+    background: lightgrey;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -1rem;
+}
+.about .sub {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.25rem;
+    padding: 3rem 0 2rem;
+}
+.about .circles {
+    display: none;
+}
+.about .grid-80 img {
+    margin-top: 4rem;
+    position: relative;
+    box-shadow: 2rem -2rem #fff;
+}
+.about .grid-80 .content::after {
+    display: none;
+}
+.about .grid-container:last-child {
+    position: relative;
+}
+.about .grid-container:last-child p {
+    display: none;
+}
+
+
+/* .testimonials ------------------------------------- */
+.testimonials {
+    background: #C73B48;
+}
+.testimonials .grid-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 1456px;
+}
+.testimonials .grid-25 {
+    display: none;
+}
+.testimonials .grid-50 img {
+    width: 100%;
+}
+.testimonials h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+.testimonials .sub {
+    color: #fff;
+    padding: 2rem 0;
+}
+.testimonials .stars {
+    color: #EABD4C;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.testimonials .text {
+    background: #fff;
+    padding: 45px 30px;
+    border-bottom: solid 15px #C73B48;
+}
+.testimonials .text h2 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+.testimonials .text p,
+.testimonials .text blockquote {
+    text-align: center;
+} 
+.testimonials p {
+    margin-top: 2rem;
+}
+
+
+/* .gallery ------------------------------------- */
+.gallery {
+    padding: 4rem 0;
+}
+.gallery h1 {
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
+.gallery h1::before {
+    content: '';
+    width: 5rem;
+    height: 2px;
+    background: lightgrey;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -1rem;
+}
+.gallery .grid-container > img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+}
+.gallery .sub {
+    padding: 3rem 0 1.5rem;
+    text-align: center;
+}
+.gallery .grid-55 img {
+    width: 100%;
+    margin: 4rem 0 2rem;
+}
+.gallery a {
+    text-decoration: underline;
+}
+.gallery .circles {
+    display: none;
+}
+
+
+/* .blog ------------------------------------- */
+
+
+
+
 /* section ------------------------------------- */
 /* section ------------------------------------- */
 /* section ------------------------------------- */
@@ -142,6 +400,26 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
+@media only screen and (min-width: 576px) {
+    .procs h3 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .procs h1,
+    .about h1,
+    .testimonials h1,
+    .gallery h1,
+    .blog h1,
+    #contact h1 {
+        font-size: 3rem;
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
     header .grid-container {
         display: flex;
@@ -156,14 +434,157 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     header .social {
         margin: 5px 0;
     }
+    .procs .grid-container {
+        padding: 6rem 15px;
+    }
+    .procs h1 {
+        font-size: 3.9rem;
+    }
+    .procs h3 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .about h1 {
+        text-align: left;
+    }
+    .about h1::before {
+        top: 50%;
+        width: 20%;
+        left: -10rem;
+        margin: 0;
+    }
+    .about .sub {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .about .grid-container:last-child p {
+        text-transform: uppercase;
+        display: block;
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 30%;
+        left: -10%;
+        color: #d3d3d3;
+        letter-spacing: 6px;
+        font-size: 1.2rem;
+        text-align: right;
+    }
+    .about .grid-80 img {
+        box-shadow: none;
+    }
+    .about .grid-80 .content::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -3.4rem;
+        background: #fff;
+        width: 44.2rem;
+        height: 80%;
+        right: -7rem;
+        z-index: -1;
+    }
+    .about .circles {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: -3.3rem;
+        left: -6.8rem;
+    }
+    .testimonials {
+        position: relative;
+        min-height: 730px;
+    }
+    .testimonials .grid-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .testimonials h1 {
+        font-size: 3.9rem;
+    }
+    .testimonials .sub {
+        padding-bottom: 6rem;
+    }
+    .testimonials .grid-25 {
+        display: block;
+    }
+    .testimonials .text h2 {
+        font-size: 1.7rem;
+    }
+    .gallery {
+        padding-top: 26rem;
+    }
+    .gallery .grid-container {
+        position: relative;
+    }
+    .gallery .grid-container > img {
+        width: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin-left: 0;
+    }
+    .gallery h1,
+    .gallery .sub {
+        text-align: left;
+    }
+    .gallery h1::before {
+        top: 50%;
+        width: 20%;
+        left: -10rem;
+        margin: 0;
+    }
+    .gallery img.circles {
+        display: block;
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 3rem;
+        right: -7rem;
+        z-index: -1;
+    }
 
 }
 
 @media only screen and (min-width: 960px) {
+    #slider .slide1 .grid-container {
+        height: 800px;
+    }
+    #slider .slide1 h1 {
+        font-size: 3.9rem;
+    }
 }
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (max-width: 1469px) and (min-width: 768px) {
+    .procs .grid-25 {
+        width: 50%;
+    }
+    .procs .text {
+        min-height: 192px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 960px) {
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1136px) {
+    .about h1,
+    .gallery h1 {
+        font-size: 5.25vw;
+    }
+} 
+
+@media only screen and (min-width: 1137px) {
+    .about h1,
+    .gallery h1 {
+        font-size: 3.9rem;
+    }
+} 
+
+@media only screen and (min-width: 1470px) {
+    .procs .text {
+        min-height: 200px;
+    }
+} 
+
