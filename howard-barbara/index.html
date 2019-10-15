@@ -15,6 +15,7 @@
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/kdm0pws.css">
 
@@ -75,7 +76,7 @@
                 <div class="slide1">
                     <div class="grid-container">
                         <div class="grid-100">
-                            <h1 class="tac">Real patients - Real results</h1>
+                            <h1 class="tac" data-aos="fade-up" data-aos-duration="1200">Real patients - Real results</h1>
                         </div>
                     </div>
                 </div>
@@ -89,8 +90,8 @@
                 <h1 class="tac">Our Procedures</h1>
                 <h3 class="sub tac">Jefferson city in Missouri</h3>
             </div>
-            <div class="flex">
-                <div class="grid-25 tablet-grid-50 mobile-grid-100">
+            <div class="procs-row">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/face.jpg" alt="Face Procedures">
                         <div class="text">
@@ -99,7 +100,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/breast.jpg" alt="Breast Procedures">
                         <div class="text">
@@ -108,7 +109,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/body.jpg" alt="Body Procedures">
                         <div class="text">
@@ -117,7 +118,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-25 tablet-grid-50 mobile-grid-100">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/skin.jpg" alt="Skin Procedures">
                         <div class="text">
@@ -132,15 +133,15 @@
 
     <section class="about">
         <div class="grid-container">
-            <div class="grid-60 tablet-grid-60 mobile-grid-100 fr">
+            <div class="grid-60 tablet-grid-60 mobile-grid-100 fr" data-aos="fade-left" data-aos-duration="1200">
                 <h1>About our practice</h1>
                 <h3 class="sub">River City plastic surgery</h3>
                 <p>Providing a wide range of cosmetic surgical procedures ranging from Breast Augmentations and Implants to Tummy Tucks and Liposuction. Dr. Barbara Howard is one of the only female plastic surgeons serving the Jefferson City, Columbia and Lake of the Ozarks area; adding a feminine touch to delicate procedures. We’ll make sure you approach your surgery with a full understanding of the procedure and a realistic expectation of your results. And Dr. Howard will be involved through the entire process; from the initial consultation to post-operative care.</p>
             </div>
         </div>
         <div class="grid-container">
-            <img class="img-resp circles" src="./images/circles1.png" alt="circles">
-            <p>The art of plastic surgery</p>
+            <img class="img-resp circles" src="./images/circles1.png" alt="circles" data-aos="fade-right" data-aos-duration="1200">
+            <p data-aos="fade-up" data-aos-duration="1200">The art of plastic surgery</p>
             <div class="grid-80 tablet-grid-80 mobile-grid-100 fr">
                 <div class="content">
                     <img class="img-resp" src="./images/doctor.jpg" alt="About our practice">
@@ -150,13 +151,11 @@
     </section>
 
     <section class="testimonials">
-        <div class="grid-container grid-parent">
+        <div class="grid-container">
             <h1 class="tac">Our Testimonials</h1>
             <h3 class="tac sub">See what patients are saying</h3>
-            <div class="grid-25 tablet-grid-10">
-                <img class="img-resp" src="./images/model1.jpg" alt="Model">
-            </div>
-            <div class="grid-50 tablet-grid-80 mobile-grid-100">
+            <div class="grid-25 tablet-grid-10" data-aos="zoom-in-right" data-aos-duration="1000"></div>
+            <div class="grid-50 tablet-grid-80 mobile-grid-100" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                 <div class="content">
                     <img class="img-resp" src="./images/model3.jpg" alt="Model">
                     <div class="text">
@@ -188,15 +187,13 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-25 tablet-grid-10">
-                <img class="img-resp" src="./images/model2.jpg" alt="Model">
-            </div>
+            <div class="grid-25 tablet-grid-10" data-aos="zoom-in-left" data-aos-duration="1000"></div>
         </div>
     </section>
 
     <section class="gallery">
         <div class="grid-container">
-            <img class="img-resp" src="./images/logo1.png" alt="Photo gallery">
+            <img class="img-resp" src="./images/logo1.png" alt="Photo gallery" data-aos="fade-right" data-aos-duration="1200">
             <div class="grid-55 tablet-grid-55 mobile-grid-100 fr">
                 <h1>Photo gallery</h1>
                 <h3 class="sub">View our before &amp; after photos</h3>
@@ -209,20 +206,23 @@
     </section>
 
     <section class="blog">
-        <div class="bg-extend"></div>
+        <div class="hide-on-tablet hide-on-desktop"></div>
+        <div class="bg-extend" data-aos="zoom-out" data-aos-duration="1500"></div>
         <div class="grid-container">
-            <div class="grid-80 tablet-grid-80 mobile-grid-100">
-                <h1>Our blog</h1>
-                <h3 class="sub">Breast lift with fat transfer</h3>
-                <p>Some people accumulate just as much or more abdominal fat internally around and between their organs in the same way they accumulate fat right beneath the skin. Unfortunately, the intra-abdominal fat (also called Visceral Fat) cannot be removed with either a tummy tuck or liposuction, leaving only one alternative... <a href="">Read More</a></p>
-                <p class="post"><strong>Posted</strong> March 7, 2019</p>
+            <div class="grid-55 tablet-grid-55 mobile-grid-100 fr">
+                <div class="content">
+                    <h1>Our blog</h1>
+                    <h3 class="sub">Breast lift with fat transfer</h3>
+                    <p>Some people accumulate just as much or more abdominal fat internally around and between their organs in the same way they accumulate fat right beneath the skin. Unfortunately, the intra-abdominal fat (also called Visceral Fat) cannot be removed with either a tummy tuck or liposuction, leaving only one alternative... <a href="">Read More</a></p>
+                    <p class="post"><strong>Posted</strong> March 7, 2019</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="insta">
         <div class="grid-container">
-            <div class="grid-100">
+            <div class="grid-100 tac">
                 <i class="fab fa-facebook-square"></i>
                 <i class="fab fa-instagram"></i>
                 <h3 class="sub">Follow us @Howardplasticsurgery</h3>
@@ -232,16 +232,34 @@
 
     <section id="contact">
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-            </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="grid-50 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1000">
+                <h3 class="sub">Have a question?</h3>
+                <div class="footer-form">
+                    <form action="">
+                        <div class="grid-50">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="grid-50">
+                            <input type="text" placeholder="+1 (555) 555-5555">
+                        </div>
+                        <div class="grid-100">
+                            <input type="text" placeholder="youremail@here.com">
+                        </div>
+                        <div class="grid-100">
+                            <textarea id="" name="" cols="30" rows="6" placeholder="Have any questions or comments?"></textarea>
+                        </div>
+                        <div class="grid-10">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="grid-container">
-            <div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 mobile-grid-100">
+            <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
                 <div class="social">
                     <a href=""><i class="fab fa-pinterest-p"></i></a>
                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -264,6 +282,10 @@
 
 
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 
