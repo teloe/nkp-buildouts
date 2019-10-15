@@ -76,7 +76,7 @@
                 <div class="slide1">
                     <div class="grid-container">
                         <div class="grid-100">
-                            <h1 class="tac" data-aos="fade-up" data-aos-duration="1200">Real patients - Real results</h1>
+                            <h1 class="tac" data-aos="fade-up">Real patients - Real results</h1>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                 <h3 class="sub tac">Jefferson city in Missouri</h3>
             </div>
             <div class="procs-row">
-                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/face.jpg" alt="Face Procedures">
                         <div class="text">
@@ -100,7 +100,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/breast.jpg" alt="Breast Procedures">
                         <div class="text">
@@ -109,7 +109,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/body.jpg" alt="Body Procedures">
                         <div class="text">
@@ -118,7 +118,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right" data-aos-duration="1200">
+                <div class="grid-25 tablet-grid-50 mobile-grid-100" data-aos="fade-right">
                     <a class="content" href="">
                         <img class="img-resp" src="./images/skin.jpg" alt="Skin Procedures">
                         <div class="text">
@@ -133,15 +133,15 @@
 
     <section class="about">
         <div class="grid-container">
-            <div class="grid-60 tablet-grid-60 mobile-grid-100 fr" data-aos="fade-left" data-aos-duration="1200">
+            <div class="grid-60 tablet-grid-60 mobile-grid-100 fr" data-aos="fade-left">
                 <h1>About our practice</h1>
                 <h3 class="sub">River City plastic surgery</h3>
                 <p>Providing a wide range of cosmetic surgical procedures ranging from Breast Augmentations and Implants to Tummy Tucks and Liposuction. Dr. Barbara Howard is one of the only female plastic surgeons serving the Jefferson City, Columbia and Lake of the Ozarks area; adding a feminine touch to delicate procedures. We’ll make sure you approach your surgery with a full understanding of the procedure and a realistic expectation of your results. And Dr. Howard will be involved through the entire process; from the initial consultation to post-operative care.</p>
             </div>
         </div>
         <div class="grid-container">
-            <img class="img-resp circles" src="./images/circles1.png" alt="circles" data-aos="fade-right" data-aos-duration="1200">
-            <p data-aos="fade-up" data-aos-duration="1200">The art of plastic surgery</p>
+            <img class="img-resp circles" src="./images/circles1.png" alt="circles" data-aos="fade-right">
+            <p data-aos="fade-up">The art of plastic surgery</p>
             <div class="grid-80 tablet-grid-80 mobile-grid-100 fr">
                 <div class="content">
                     <img class="img-resp" src="./images/doctor.jpg" alt="About our practice">
@@ -283,9 +283,20 @@
 
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+
+    <!-- AOS initialise -->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
     </script>
+
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 
