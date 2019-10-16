@@ -8,8 +8,9 @@ jQuery(document).ready(function ($) {
         locationBtn: ''
     });
 
+    let nav = $('nav').offset().top;
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 0) {
+        if ($(this).scrollTop() > nav) {
             $('nav').addClass('sticky');
         } else {
             $('nav').removeClass('sticky');

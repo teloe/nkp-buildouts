@@ -214,6 +214,20 @@ input[type='submit']:hover,input[type='submit'][disabled]:hover{color:#C73B48}
 }
 
 @media only screen and (min-width: 960px) {
+    nav {
+        position: absolute;
+        width: 100%;
+        background: #F1F1F1;
+        z-index: 999;
+    }
+    nav.sticky {
+        position: fixed;
+        top: 0;
+        box-shadow: 0 0 15px rgba(0,0,0,.2);
+    }
+    #slider {
+        margin-top: 60px;
+    }
     #slider .slide1 .grid-container{height:800px}
     #slider .slide1 h1{font-size:3.9rem}
 }
