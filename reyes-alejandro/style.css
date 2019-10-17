@@ -16,6 +16,8 @@ html {
     box-sizing: border-box;
 }
 body {
+    width: 100%;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +25,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    /* color: #1174a6; */
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -31,7 +33,7 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    /* color: #09557c; */
     text-decoration: none;
     outline: none;
 }
@@ -47,6 +49,20 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+
+
+/* section ------------------------------------------- */
+
+
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
+/* section ------------------------------------------- */
 
 
 
