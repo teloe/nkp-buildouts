@@ -16,6 +16,17 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // $('.procs-slider').flexslider({
+    //     animation: 'slide',
+    //     directionNav: true,
+    //     slideshow: false,
+    //     itemWidth: 300,
+    //     itemMargin: 10,
+    //     minItems: 1,
+    //     maxIteam: 1,
+    //     move: 1
+    // });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,

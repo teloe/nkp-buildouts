@@ -118,7 +118,7 @@ ul,ol{clear:both}
 .nodisp{display:none}
 
 
-/* section ------------------------------------------- */
+/* header ------------------------------------------- */
 header .grid-container {
     padding: 30px 15px;
 }
@@ -202,21 +202,98 @@ header .social a {
 
 /* .dr ------------------------------------------- */
 .dr {
-    padding: 6rem 0;
+    padding: 0 0 4rem;
     position: relative;
+}
+.dr .hide-on-desktop {
+    background: url(images/doctor.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
 }
 .dr .grid-container {
     position: relative;
+    background: rgba(154,185,213,.9); 
+    background: linear-gradient(#9AB9D5, #7ea6c9); 
 }
 .dr .content {
-    background: url(images/doctor.jpg) no-repeat center;
-    background-size: cover;
-    padding: 6rem 2rem;
+    background: none; 
+    padding: 2rem 15px;
+}
+.dr h1 {
+    color: #9AB9D5;
+    font-size: 2.6rem;
+    margin-top: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    background: #fff;
+    border: solid 4px #9AB9D5;
 }
 
 
-/* section ------------------------------------------- */
-/* section ------------------------------------------- */
+/* .gallery ------------------------------------------- */
+.gallery {
+    margin: 2rem 0 8rem;
+}
+.gallery .grid-container {
+    max-width: 1385px;
+    position: relative;
+}
+.gallery .grid-container > img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.gallery .grid-80 {
+    position: relative;
+    text-align: center;
+}
+.gallery .grid-80 .content {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+
+}
+.gallery h1 {
+    font-size: 16vw;
+    font-weight: 100;
+    font-family: "baskerville-urw",serif;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.8);
+}
+.gallery .btn {
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 200px;
+}
+
+
+
+/* .procs ------------------------------------------- */
+.procs {
+    margin-bottom: 10rem;
+}
+.procs .bg {
+    background: url(images/procs-bg.png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.procs .grid-container:last-of-type {
+    max-width: 1385px;
+}
+.procs h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #9AB9D5;
+}
+
+
 /* section ------------------------------------------- */
 /* section ------------------------------------------- */
 /* section ------------------------------------------- */
@@ -258,6 +335,13 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .stellarnav.mobile > a span {
         display: inline-block;
     }
+    /* .gallery h1 {
+        font-size: 4.5rem;
+    } */
+    .gallery .btn {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -283,12 +367,8 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         align-items: center;
     }
     .about h1 {
-        font-size: 4rem;
         text-align: right;
     
-    }
-    .about .grid-50:first-of-type {
-        margin-top: 6rem;
     }
     .about .content {
         position: relative;
@@ -302,20 +382,42 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         height: 100%;
         width: 50%;
     }
+    .dr {
+        margin-bottom: 10rem;
+    }
+    .dr .grid-container {
+        background: none;
+        position: relative;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+    .dr .grid-50 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .dr .content {
+        background: url(images/doctor.jpg) no-repeat center;
+        background-size: cover;
+        padding: 6rem 2rem;
+    }
+    .dr h1 {
+        margin-bottom: 6rem;
+    }
     .dr .content p {
         width: 40%;
         margin-left: auto;
     }
     .dr .bg-extend {
-        background: url(images/doctor-bg.png) no-repeat center;
+        background: url(images/doctor-bg.png) no-repeat;
         background-size: cover;
         height: 400px;
         width: 40%;
         position: absolute;
         right: 0;
+        bottom: 0;
+        z-index: -1;
     }
-
-
 
 }
 
@@ -394,18 +496,47 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .stellarnav ul ul li a:hover {
         background: rgba(155,184,212,.4);
     }
+    .about .grid-50:first-of-type {
+        margin-top: 6rem;
+    }
+    .about h1,
+    .dr h1 {
+        font-size: 4rem;
+    }
 
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 768px) {
+    .gallery h1 {
+        font-size: 17vw;
+    }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
     #slider .slide1 {
         height: 450px;
     }
+    .about .grid-50:first-of-type {
+        margin-top: 16rem;
+    }
+    .about h1,
+    .dr h1 {
+        font-size: 3.5rem;
+    }
+    .dr .btn {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 2559px) and (min-width: 960px) {
     #slider .slide1 {
         height: 900px;
+    }
+}
+
+@media only screen and (min-width: 1221px) {
+    .gallery h1 {
+        font-size: 13rem;
     }
 }
 
