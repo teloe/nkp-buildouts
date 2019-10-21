@@ -16,17 +16,19 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    // $('.procs-slider').flexslider({
-    //     animation: 'slide',
-    //     directionNav: true,
-    //     slideshow: false,
-    //     itemWidth: 300,
-    //     itemMargin: 10,
-    //     minItems: 1,
-    //     maxIteam: 1,
-    //     move: 1
-    // });
+    $('.procs-slider').flipster({
+        style: 'carousel',
+        spacing: -0.5,
+        nav: true
+    });
 
+    $('.testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        manualControls: '.controls li a'
+    });
+    
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
