@@ -272,8 +272,6 @@ header .social a {
     max-width: 200px;
 }
 
-
-
 /* .procs ------------------------------------------- */
 .procs {
     margin-bottom: 10rem;
@@ -341,6 +339,7 @@ header .social a {
     color: #fff;
     font-weight: 500;
     display: inline-block;
+    font-size: .9rem;
     margin: .5rem 1rem;
 }
 .procs .flipster .text a::before {
@@ -380,9 +379,12 @@ header .social a {
 .testimonials h1 {
     font-size: 2.5rem;
     font-weight: 100;
+    text-align: center;
+    padding-bottom: 2rem;
 }
 .testimonials .controls ul {
     display: flex;
+    justify-content: center;
 }
 .testimonials .controls a::before {
     content: '';
@@ -426,49 +428,58 @@ header .social a {
     color: #fff !important;
 }
 #contact h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     text-align: center;
+    text-transform: uppercase;
 }
 #contact .content {
-    width: 585px;
     text-align: center;
     position: relative;
     margin: 4rem 0;
 }
-#contact .grid-50:first-of-type .content {
-    float: right;
-}
-#contact .grid-50:last-of-type .content {
-    float: left;
-}
 #contact .grid-50:first-of-type {
     background: url(images/contact-bg1.jpg) no-repeat center;
     background-size: cover;
-    height: 300px;
+    height: auto;
+}
+#contact .grid-50:last-of-type {
+    background: url(images/contact-bg2.jpg) no-repeat center;
+    background-size: cover;
+    height: auto;
 }
 #contact .grid-50:first-of-type h3 {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 100;
 }
-#contact .grid-50:last-of-type {
-    background: url(images/contact-bg2.jpg) no-repeat center;
-    background-size: cover;
-    height: 300px;
-}
 #contact .social {
-    position: absolute;
-    top: 15px;
+    margin-top: 2rem;
 }
 #contact .social a {
-    display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 0 .25rem;
 }
 
 /* footer ------------------------------------------- */
+footer .footer-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+footer .footer-nav ul li a {
+    padding: 15px;
+    display: inline-block;
+}
 footer .grid-container {
-    padding: 4rem 15px;
+    padding: 2rem 15px;
+}
+footer .grid-50 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+footer p {
+    padding: 0;
 }
 
 
@@ -506,9 +517,6 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .stellarnav.mobile > a span {
         display: inline-block;
     }
-    /* .gallery h1 {
-        font-size: 4.5rem;
-    } */
     .gallery .btn {
         width: 100%;
         max-width: 320px;
@@ -592,8 +600,59 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .procs h1 {
         font-size: 4.3rem;
     }
+    .procs .flipster .text a {
+        font-size: 1rem;
+    }
     .specials h2 {
         font-size: 4.3rem;
+    }
+    .testimonials .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    .testimonials h1 {
+        font-size: 4rem;
+    }
+    .testimonials .controls ul {
+        justify-content: flex-start;
+    }
+    #contact h1 {
+        font-size: 4rem;
+    }
+    #contact .content {
+        max-width: 585px;
+        min-height: 170px;
+        text-align: center;
+        position: relative;
+        margin: 4rem 0;
+    }
+    #contact .grid-50:first-of-type .content {
+        float: right;
+        width: 100%;
+    }
+    #contact .social {
+        position: absolute;
+        top: 0px;
+        margin-top: 1.5rem;
+    }
+    #contact .social a {
+        display: block;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    #contact .btn {
+        margin-top: 1rem;
+    }
+    footer .grid-container:last-of-type {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+    }
+    footer .grid-50:first-of-type {
+        text-align: left;
+    }
+    footer .grid-50:last-of-type {
+        text-align: right;
     }
 
 }
@@ -677,8 +736,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         margin-top: 6rem;
     }
     .about h1,
-    .dr h1,
-    .testimonials h1 {
+    .dr h1 {
         font-size: 4rem;
     }
 
