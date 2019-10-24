@@ -13,6 +13,10 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 
 @font-face {
+    font-family: Butler;
+    src: url(fonts/Butler_Regular.otf);
+}
+@font-face {
     font-family: ButlerBold;
     src: url(fonts/Butler_Bold.otf);
 }
@@ -37,7 +41,7 @@ h1 {
 }
 
 p {
-    padding-bottom: 1rem;
+    padding-bottom: 1.25rem;
 }
 
 a,
@@ -46,14 +50,50 @@ a:link {
     /* color: #1174a6; */
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    /* -webkit-transition: all 0.5s ease-out; */
+    /* -moz-transition: all 0.5s ease-out; */
+    /* transition: all 0.5s ease-out; */
 }
 a:hover {
     /* color: #09557c; */
     text-decoration: none;
     outline: none;
+}
+
+.btn {
+    background: #2a3888;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "open-sans", sans-serif;
+    color: #fff;
+    border-radius: 30px;
+    position: relative;
+    font-weight: 700;
+    padding: 10px 26px;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.btn::after {
+    content: '\f0a9';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    margin-left: -1em;
+    opacity: 0;
+    padding-left: 4px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.btn:hover {
+    padding: 10px 40px 10px 20px !important;
+}
+.btn:hover::after {
+    margin-left: .3em;
+    opacity: 1;
 }
 
 ul,ol{clear:both} 
@@ -68,7 +108,7 @@ ul,ol{clear:both}
 .clr,.clear{clear:both}
 .nodisp{display:none}
 
-/* .header-top  */
+/* header */
 .header-top {
     background: linear-gradient(270deg,#358ca2,#6eb7c2);
 }
@@ -85,37 +125,186 @@ ul,ol{clear:both}
 .header-top .phone i {
     color: #c7db00;
 }
-
-header {
+.header-bottom {
     padding: 20px 0;
 }
+.header-bottom #logo img {
+    max-height: 144px;
+}
 
+/* .stellarnav */
 .stellarnav.mobile > a span {
     display: none;
 }
+.stellarnav.mobile ul {
+    background: #fff;
+}
+.stellarnav.mobile ul li a {
+    color: #666;
+    font-size: 14px;
+    padding: 10px 5%;
+    border-bottom: 1px solid rgba(0,0,0,.03);
+    font-weight: 700;
+}
+.stellarnav.mobile ul li a:hover {
+    background: #F7F7F7;
+}
+.stellarnav.mobile li.has-sub > ul li {
+    padding-left: 5%;
+}
+.stellarnav ul li a {
+    font-size: 12px;
+    padding: 20px 15px;
+}
+.stellarnav > ul > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
 
-/* .mobile=banner */
-.mobile-banner {
+/* #slider */
+#slider {
+    display: none;
+}
+#slider .slide1 {
+    background: url(images/banner.jpg) no-repeat top left;
+    background-size: cover;
+}
+#slider .slide1 .grid-container {
+    height: 60vh;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#slider .slide1 .grid-80 {
+    text-align: center;
+}
+#slider .slide1 h1 {
+    font-family: 'Butler',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: #6eb7c2;
+    text-align: center;
+}
+#slider .slide1 h2 {
+    font-family: 'open-sans',Helvetica,Arial,Lucida,sans-serif;
+    text-align: right;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 58px;
+    color: #358ca2;
+}
+#slider .slide1 .btn {
+    top: 30px;
+    left: 40px;
+}
+
+/* .about */
+.about-top {
     background: linear-gradient(90deg,#6EB7C2 0%,#358ca2 100%);
 }
-.mobile-banner .grid-container {
+.about-top .grid-container,
+.about-bottom .grid-container {
 	padding: 4rem 15px;
 }
-.mobile-banner h1,
-.mobile-banner, h3 {
+.about-top h1,
+.about-top, h3 {
 	color: #fff;
 }
-.mobile-banner h3 {
-	margin-bottom: 2rem;
+.about-top h3 {
+	margin-bottom: 20px;
 	font-size: 18px;
 	font-weight: 100;
 	text-transform: uppercase;
 }
-.mobile-banner h1 {
+.about-top h1 {
 	font-family: ButlerBold, Helvetica,Arial,Lucida,sans-serif;
 	font-size: 36px;
 }
+.about-bottom {
+   background: #358CA2; 
+   color: #fff;
+}
+.about-bottom .video-container {
+    display: none;
+    position: relative;
+}
 
+/* .procs */
+.procs {
+    background: url(images/Blue-Marble-Paper-Texture.jpg) no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+.procs .grid-container {
+    margin-top: -120px;
+}
+.procs .grid-25 {
+    width: 50%;
+    float: left;
+}
+.procs img {
+    width: 100%;
+}
+.procs .container {
+    position: relative;
+    overflow: hidden;
+}
+.procs .container:hover h2 {
+    transform: translate(0,-140px);
+}
+.procs .container:hover .overlay {
+    transform: translate(0,-180px);
+}
+.procs h2 {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+    transition: all .3s ease-out;
+}
+.procs .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    transition: all .3s ease-out;
+}
+.procs .overlay a {
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* .associations */
+.associations {
+    background: linear-gradient(90deg,#6EB7C2 0%,#358ca2 100%);
+}
+.associations .grid-container {
+    max-width: 600px;
+	padding: 40px 15px;
+}
+.associations .grid-33 {
+	background: #fff;
+	border: solid 1px;
+	text-align: center;
+}
+.associations .grid-33:nth-of-type(1) {
+	margin-bottom: 30px;	
+}
+.associations .grid-33:nth-of-type(2) {
+	margin-bottom: 30px;	
+}
+.associations .grid-33 img {
+	max-width: 200px;
+	width: 100%;
+}
 
 /* NKP GLOBAL STYLES */
 img{border:0}
@@ -148,12 +337,115 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
+    .header-top .grid-50 {
+        text-align: right;
+    }
+    #slider {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 960px) {
+	.associations .grid-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.associations .grid-33:nth-of-type(1) {
+		margin-bottom: 0;	
+	}
+	.associations .grid-33:nth-of-type(2) {
+		margin-bottom: 0;	
+	}
+	.associations .grid-33 {
+		width: 28%;
+	}
 }
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+/* min-width: 1005px */
+@media only screen and (min-width: 1005px) {
+    #main-nav {
+        background: #2a3888;
+    }
+    .stellarnav > ul li > ul {
+        border-top: solid 4px #358ca2;
+    }
+    .stellarnav.desktop ul li a:hover {
+        opacity: .7;
+    }
+    .stellarnav ul ul {
+        background: #2a3888;
+    }
+    .stellarnav.desktop ul li a {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .stellarnav.desktop > ul > li.mega > ul {
+        border-top: solid 4px #358ca2;
+        right: 0;
+        margin: auto;
+        padding: 4px;
+    }
+    .stellarnav.desktop > ul > li.mega li.has-sub >a {
+        padding: 20px 15px 5px;
+    }
+    .stellarnav.desktop > ul > li.mega > ul > li > a {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .stellarnav.desktop > ul > li.mega > ul > li > ul {
+        border-top: none;
+    }
+    .about-bottom .grid-100,
+    .about-bottom .video-container {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    .about-bottom .video-overlay {
+        background: url(images/HomePagePreview.jpg) no-repeat center;
+        background-size: cover;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .about-bottom .video-overlay i {
+        display: block;
+        position: absolute;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-top: -3rem;
+        margin-left: -3rem;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        color:#fff;
+    }
+    .about-bottom .video-container video,
+    .testimonials .video-container video {
+        display: block;
+        width: 100%;
+    }
+    .procs .grid-container {
+        margin-top: -160px;
+    }
+    .procs .grid-25 {
+        width: 25%;
+        float: left;
+    }
+
+}
+
+@media only screen and (max-width: 1004px) and (min-width: 768px) {
+    .procs .grid-25 {
+        padding-top: 2rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 960px) {
