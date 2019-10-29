@@ -55,7 +55,7 @@ ul,ol{clear:both}
 
 /* header {{{ */
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 999;
@@ -124,7 +124,6 @@ header #logo h1 {
 
 /* }}} */
 
-
 /* section {{{ */
 /* }}} */
 
@@ -168,6 +167,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
+/* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
     #slider .slide1 h1 {
         font-size: 48px;
@@ -176,8 +176,15 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         font-size: 24px;
     }
 }
+/* }}} */
 
 @media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        position: fixed;
+    }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
