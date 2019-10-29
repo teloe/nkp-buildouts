@@ -14,12 +14,13 @@
      <title>Ho, Tina</title>
  
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
  
  </head>
  <body>
  
-     <header>
+     <header data-aos="fade-zoom-in" data-aos-delay="1000">
          <div class="grid-container">
              <div class="grid-45">
                  <div id="logo">
@@ -32,7 +33,7 @@
                  <nav>
                      <div class="stellarnav">
                           <ul>
-                             <li><a href="#">Home</a></li>
+                             <li><a href="#">Welcome</a></li>
                              <li><a href="#">About</a></li>
                              <li><a href="#">Procedures</a>
                                  <ul>
@@ -41,8 +42,12 @@
                                  </ul>
                              </li>
                              <li><a href="#">Before &amp; After</a></li>
-                             <li><a href="#">Patient Reviews</a></li>
-                             <li><a href="#">Contact</a></li>
+                             <li><a href="#">More...</a>
+                                 <ul>
+                                     <li><a href="#">Patient Reviews</a></li>
+                                     <li><a href="#">Contact</a></li>
+                                 </ul>
+                             </li>
                           </ul>
                      </div>
                  </nav>
@@ -50,25 +55,25 @@
          </div>
      </header>
 
-     <!-- <div class="contact-info">
-         <div class="social">
-             <a href=""><i class="fab fa-facebook-f"></i></a>
-             <a href=""><i class="fab fa-instagram"></i></a>
-             <a href=""><i class="far fa-envelope"></i></a>
-         </div>
-         <p>
-             <span>484.254.6564</span> | 
-             <span>267.759.6056</span> <br>
-             <span>Newtown</span>
-         </p>
-     </div> -->
      
      <div id="slider">
          <ul class="slides">
              <li>
                  <div class="slide1">
                      <div class="grid-container">
-                         <div class="grid-100">
+                         <div class="contact-info" data-aos="fade-up" data-aos-delay="1200">
+                             <div class="social">
+                                 <a href=""><i class="fab fa-facebook-f"></i></a>
+                                 <a href=""><i class="fab fa-instagram"></i></a>
+                                 <a href=""><i class="far fa-envelope"></i></a>
+                             </div>
+                             <p>
+                                 <span>484.254.6564</span> | 
+                                 <span>267.759.6056</span> <br>
+                                 <span>Newtown</span>
+                             </p>
+                         </div>
+                         <div class="grid-100" data-aos="fade-up" data-aos-delay="1500">
                              <h1>Philadelphia's Female Facial Plastic Surgeon</h1>
                              <p>Empowering Patients with Beautiful, Natural Results</p>
                          </div>
@@ -86,18 +91,27 @@
          </div>
      </div>
 
-     <div class="welcome-letter--heading">
-         <h1><em>Welcome Letter to Prospective Patients</em></h1>
+     <div class="welcome-letter--header">
+         <div class="grid-container">
+             <div class="grid-100">
+                 <h1 class="tac"><em>Welcome Letter to Prospective Patients</em></h1>
+             </div>
+         </div>
      </div>
 
      <section class="welcome-letter">
          <div class="grid-container">
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-100">
                  <p>Dear Prospective Patient,</p>
+
+                 <img class="img-resp doctor-desktop" src="./images/doctor.jpeg" alt="Dr. Thuy-Van Tina Ho">
 
                  <p>Welcome to my practice. My dream of becoming a reconstructive surgeon came into fruition early, as it originated from my own personal childhood surgeries. I grew up in Yardley, Pennsylvania and the suburbs of Washington, DC and ultimately attended the College of William and Mary as a 1693 Scholar. My undergraduate endeavors that included two medical mission trips to Nicaragua and Costa Rica fostered another priority in my life: a passion for service. The 1693 Scholars program made possible a pinnacle summer internship with Operation Smile Vietnam.</p>
 
+
                  <p>I continued my education at the University of Virginia School of Medicine where I was bestowed with a Global Health Scholar award that allowed me to return to Vietnam as a medical student to interview patient families and study the epidemiology of cleft lip and palate. I was immediately drawn to the intricate anatomy of the head and neck and reconstructive aspects of facial plastic surgery during my Otolaryngology rotation and matched at the University of Kansas Medical Center for residency.</p>
+
+                 <img class="img-resp doctor-mobile" src="./images/doctor.jpeg" alt="Dr. Thuy-Van Tina Ho">
 
                  <p>My head and neck surgery residency training experience further clarified and strengthened my dream of becoming a facial plastic surgeon and enabled me the opportunity to participate in a medical mission trip in Antigua, Guatemala as a surgeon. I then pursued a fellowship in facial plastic and reconstructive surgery at the University of Illinois in Chicago and trained under Dr. Dean Toriumi and Dr. Steven Dayan, world-renowned leading authorities in rhinoplasty and injectable procedures.</p>
 
@@ -128,6 +142,7 @@
 
              </div>
          </div>
+         
      </section>
 
      <section class="associations">
@@ -147,25 +162,24 @@
     <section class="insta">
         <div class="grid-container">
             <div class="grid-100">
+                <h1 class="tac">Instagram</h1>
             </div>
         </div>
     </section>
  
     <footer>
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="grid-50 prefix-25">
                 <div class="tac social">
                     <a href=""><i class="fab fa-facebook-f"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="far fa-envelope"></i></a>
                 </div>
-            </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
                 <a href="" class="btn">Contact us</a>
             </div>
             <div class="grid-100">
                 <p>
-                    <span>484.254.6564</span> |
+                <span><i class="fas fa-phone-alt"></i> 484.254.6564</span> |
                     <span>267.759.6056</span> <br>
                     <span>Newtown</span>
                 </p>
@@ -182,6 +196,20 @@
 
      <script type="text/javascript" src="js/custom.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS initialise -->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
+    </script>
      <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
  
  </body>
