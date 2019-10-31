@@ -146,7 +146,9 @@ header {
 	text-align: center;
 }
 .banner .btn {
-	margin-top: 2rem;
+	margin: 4rem auto;
+	display: block;
+	max-width: 90px;
 }
 /* }}} */
 
@@ -159,6 +161,22 @@ header {
 }
 .banner-bottom a {
 	color: #000;
+}
+.banner-bottom .social a {
+	color: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.banner-bottom .social .fb {
+	background: #4565AC; 
+}
+.banner-bottom .social .insta {
+	background: #D82377; 
+}
+.banner-bottom .social .tw {
+	background: #059FF5; 
 }
 /* }}} */
 
@@ -210,9 +228,14 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 		font-size: 2.4rem;
 		line-height: 3rem;
 	}
-	/* .banner .grid-container { */
-		/* padding: 2rem 15px; */
-	/* } */
+	.banner .btn {
+		margin: 2rem 0 0;
+		display: inline-block;
+	}
+	.banner-bottom .social {
+		display: inline-block;
+	} 
+
 }
 
 @media only screen and (min-width: 1024px) {
