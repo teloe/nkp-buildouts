@@ -8,6 +8,7 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url("https://use.typekit.net/dev8bow.css");
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
@@ -16,14 +17,21 @@ html {
     box-sizing: border-box;
 }
 body {
+    font-size: 17px;
+    line-height: 1.8rem; 
+    font-family: 'proxima nova', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
 }
 
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #DC2B57;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -31,9 +39,40 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    color: #af1d41;
     text-decoration: none;
     outline: none;
+}
+.btn {
+    background: #DC2B57;
+    color: #fff !important;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    position: relative;
+	overflow: hidden;
+    text-transform: capitalize;
+	z-index: 1;
+    transition: all 275ms cubic-bezier(0.53, -0.67, 0.73, 0.74);
+}
+.btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	right: -50px;
+	bottom: 0;
+	left: 0;
+	border-right: 50px solid
+	transparent;
+	border-bottom: 80px solid #af1d41;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	transition: all .3s ease-in-out;
+}
+.btn:hover::before {
+	transform: translateX(0);
 }
 
 ul,ol{clear:both}
@@ -49,8 +88,78 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
-/* section {{{ */
+/* header {{{ */
+header {
+    background: #2F4265;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
 
+/* }}} */
+
+/* .stellarnav {{{ */
+.stellarnav ul ul {
+	background: #2F4265; 
+}
+.stellarnav li a {
+    color: #fff;
+}
+.stellarnav li a:hover {
+    background: #23314a;
+    opacity: .8;
+}
+.stellarnav.mobile > a {
+    color: #fff;
+	padding: 20px 15px;
+    font-size: 16px;
+}
+.stellarnav.mobile ul {
+    background: none;
+}
+/* }}} */
+
+/* .banner {{{ */
+.banner .hide-on-desktop:nth-of-type(1) .grid-container {
+	padding: 4rem 15px;
+}
+.banner .hide-on-desktop:nth-of-type(2) {
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+.banner h1 {
+	font-size: 2rem;
+	margin: 4rem 0;
+	padding-left: 1.5rem;
+	line-height: 2.5rem;
+	position: relative;
+}
+.banner h1::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 2px;
+	background: #DD2A57;
+}
+.banner .hide-on-desktop #logo {
+	text-align: center;
+}
+.banner .btn {
+	margin-top: 2rem;
+}
+/* }}} */
+
+/* .banner-bottom {{{ */
+.banner-bottom {
+	background: #D7E9F1;
+}
+.banner-bottom .grid-container {
+	padding: 4rem 15px;
+}
+.banner-bottom a {
+	color: #000;
+}
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
@@ -83,10 +192,39 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
+    .stellarnav.mobile > a {
+        font-size: 17px;
+    }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 768px) {
+	.banner {
+		background: url(images/banner.jpg) no-repeat center;
+		background-size: cover;
+		height: 986px;
+		display: flex;
+		align-items: center;
+	}
+	.banner h1 {
+		font-size: 2.4rem;
+		line-height: 3rem;
+	}
+	/* .banner .grid-container { */
+		/* padding: 2rem 15px; */
+	/* } */
+}
+
+@media only screen and (min-width: 1024px) {
+	header {
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+		top: 0;
+	}
+	.stellarnav > ul > li > a {
+		padding: 20px 30px;
+	}
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
