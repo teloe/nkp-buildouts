@@ -8,11 +8,20 @@ jQuery(document).ready(function ($) {
         locationBtn: 'https://goo.gl/maps/HA4nDTBosaPr6ry36'
     });
 
-    /* $('#slider').flexslider({
+    $('#slider').flexslider({
         animation: 'fade',
-        directionNav: false,
+        directionNav: true,
+        prevText: '',
+        nextText: '',
+        controlsContainer: '.controls',
         controlNav: false
-    }); */
+    });
 
+    /* $('#loc-slider').flexslider({
+        animation: 'fade',
+        manualControls: '#loc-slider ul li',
+        directionNav: false,
+        controlNav: true
+    }); */
 
 });
