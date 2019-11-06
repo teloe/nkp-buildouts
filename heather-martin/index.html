@@ -12,15 +12,15 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Heather, Martin</title>
- 
+
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <link rel="stylesheet" href="style.css">
- 
+
  </head>
  <body>
  
- 
-     <header>
+     <header data-aos="fade-down">
          <div class="grid-container">
              <nav>
                  <div class="stellarnav">
@@ -60,14 +60,16 @@
          <div class="hide-on-tablet hide-on-desktop"></div>
          <div class="grid-container">
              <div class="grid-60 tablet-grid-60 mobile-grid-100">
-                 <div id="logo" class="hide-on-mobile">
+                 <div id="logo" class="hide-on-mobile" data-aos="fade-right" data-aos-delay="800">
                      <a href="/" title="">
                          <img class="img-resp" src="./images/logo.png" alt="East Bay Cardiovascular and Thoracic Associates">
                      </a>
                  </div>
-                 <h1>Welcome to East Bay Cardiovascular & Thoracic Associates</h1>
-                 <p>Welcome to East Bay Cardiovascular and Thoracic Associates (EBCVT), the premier multi-specialty surgical group serving the East Bay. Our group of experienced board-certified surgeons are some of the top-ranked surgeons in the state and offer comprehensive and cutting edge care throughout the East Bay with five convenient locations.</p>
-                 <a class="btn" href="">Learn more</a>
+                 <div data-aos="fade-right" data-aos-delay="1400">
+                    <h1>Welcome to East Bay Cardiovascular & Thoracic Associates</h1>
+                    <p>Welcome to East Bay Cardiovascular and Thoracic Associates (EBCVT), the premier multi-specialty surgical group serving the East Bay. Our group of experienced board-certified surgeons are some of the top-ranked surgeons in the state and offer comprehensive and cutting edge care throughout the East Bay with five convenient locations.</p>
+                    <a class="btn" href="">Learn more</a>
+                </div>
              </div>
          </div>
      </section>
@@ -76,9 +78,9 @@
          <div class="grid-container">
              <div class="grid-100">
                  <div class="contact-info">
-                     <a href=""><i class="fas fa-map-marker-alt"></i> 1320 El Capitan Dr. #120 Danville, CA 94526</a>
-                     <a href=""><i class="fas fa-phone"></i> (925) 676-2600</a>
-                     <div class="social">
+                     <a href="" data-aos="fade-left"><i class="fas fa-map-marker-alt"></i> 1320 El Capitan Dr. #120 Danville, CA 94526</a>
+                     <a href="" data-aos="fade-left" data-aos-delay="200"><i class="fas fa-phone"></i> (925) 676-2600</a>
+                     <div class="social" data-aos="fade-left" data-aos-delay="400">
                          <a href="" class="fb"><i class="fab fa-facebook-f"></i></a>
                          <a href="" class="insta"><i class="fab fa-instagram"></i></a>
                          <a href="" class="tw"><i class="fab fa-twitter"></i></a>
@@ -90,7 +92,7 @@
 
      <section class="procs">
          <div class="grid-container">
-             <div class="grid-20 tablet-grid-50 mobile-grid-100">
+             <div class="grid-20 tablet-grid-50 mobile-grid-100" data-aos="">
                  <div class="content">
                      <a class="container" href="">
                          <img class="img-resp" src="./images/cardiac.jpg" alt="Cardiac specialty services">
@@ -170,7 +172,7 @@
 
      <section class="lab-slider">
          <div class="grid-container">
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50 tablet-grid-50 mobile-grid-100" data-aos="fade-right">
                  <div id="slider">
                      <ul class="slides">
                          <li>
@@ -198,7 +200,7 @@
 
      <section class="doctors">
          <div class="grid-container">
-             <div class="grid-60 prefix-20 tablet-grid-60 tablet-prefix-20 mobile-grid-100">
+             <div class="grid-60 prefix-20 tablet-grid-60 tablet-prefix-20 mobile-grid-100" data-aos="fade-up">
                  <h1>Meet Our Doctors</h1>
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend sem ac nunc mattis, at feugiat orci placerat. Cras eleifend suscipit libero et ultrices. Suspendisse egestas rutrum dolor, eu tincidunt nisl aliquam at.</p>
              </div>
@@ -210,64 +212,71 @@
 
      <section class="locations">
          <div class="grid-container">
-			 <div class="grid-40 hide-on-tablet hide-on-mobile">
-			     <div id="loc-slider">
-					 <ul class="slides">
-					     <li>
-					         <img class="img-resp" src="./images/heart.png" alt="location">
-					     </li>
-					     <li>
-					         <img class="img-resp" src="./images/heart.png" alt="location">
-					     </li>
-					     <li>
-					         <img class="img-resp" src="./images/heart.png" alt="location">
-					     </li>
-					     <li>
-					         <img class="img-resp" src="./images/heart.png" alt="location">
-					     </li>
-					     <li>
-					         <img class="img-resp" src="./images/heart.png" alt="location">
-					     </li>
-					 </ul>
-			     </div>
-			 </div>
              <div class="grid-60 tablet-grid-80 mobile-grid-100 fr">
-                 <h1>Our Locations</h1>
-				 <div class="test-slider">
-				     <ul class="slides">
-				         <li>
-							 <a href="">Danville</a> |
-				         </li>
-				         <li>
-							 <a href="">Antioch</a> |
-				         </li>
-				         <li>
-							 <a href="">Concord</a> |
-				         </li>
-				         <li>
-							 <a href="">Pleasanton</a> |
-				         </li>
-				         <li>
-							 <a href="">Brentwood</a>
-				         </li>
-				     </ul>
-				 </div>
-                 <!-- <p>
-                     <a href="">Danville</a> |
-                     <a href="">Antioch</a> |
-                     <a href="">Concord</a> |
-                     <a href="">Pleasanton</a> |
-                     <a href="">Brentwood</a>
-                 </p> -->
-                 <p>1320 El Capitan Dr #120 Danville, CA 94526</p>
-                 <a class="btn" href="">Get Directions</a>
+                 <h1 data-aos="fade-left">Our Locations</h1>
+                 <div class="controls">
+                     <div>
+                         Danville
+                         <img class="img-resp hide-on-tablet hide-on-mobile" src="./images/heart.png" alt="location">
+                     </div> |
+                     <div>
+                         Antioch
+                         <img class="img-resp hide-on-tablet hide-on-mobile" src="./images/heart.png" alt="location">
+                     </div> |
+                     <div>
+                         Concord
+                         <img class="img-resp hide-on-tablet hide-on-mobile" src="./images/heart.png" alt="location">
+                     </div> |
+                     <div>
+                         Pleasanton
+                         <img class="img-resp hide-on-tablet hide-on-mobile" src="./images/heart.png" alt="location">
+                     </div> |
+                     <div>
+                         Brentwood
+                         <img class="img-resp hide-on-tablet hide-on-mobile" src="./images/heart.png" alt="location">
+                     </div> |
+                 </div>
+                 <div id="loc-slider">
+                     <ul class="slides">
+                         <li>
+                             <p>1320 El Capitan Dr #120 Danville, CA 94526</p>
+                             <a class="btn" href="">Get Directions</a>
+                         </li>
+                         <li>
+                             <p>4721 Dallas Ranch Rd, Antioch, CA 94531</p>
+                             <a class="btn" href="">Get Directions</a>
+                         </li>
+                         <li>
+                             <p>2222 East Street Suite #375 Concord, CA 94520</p>
+                             <a class="btn" href="">Get Directions</a>
+                         </li>
+                         <li>
+                             <p>5860 Owens Dr, Pleasanton, CA 94588</p>
+                             <a class="btn" href="">Get Directions</a>
+                         </li>
+                         <li>
+                             <p>2400 Balfour Rd, Brentwood, CA 94513</p>
+                             <a class="btn" href="">Get Directions</a>
+                         </li>
+                     </ul>
+                 </div>
              </div>
          </div>
      </section>
 
      <section id="contact">
          <div class="grid-container">
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50 prefix-25 tablet-grid-60 tablet-prefix-20 mobile-grid-100" data-aos="fade-up">
+                 <h1 class="tac">Contact Us</h1>
+                 <div class="footer-form">
+                     <form action="">
+                         <input type="text" placeholder="Name">
+                         <input type="text" placeholder="Email">
+                         <input type="text" placeholder="Phone">
+                         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                         <input class="btn" type="submit" value="Send Message">
+                     </form>
+                 </div>
              </div>
          </div>
      </section>
@@ -287,8 +296,23 @@
          </div>
      </footer>
 
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS initialise -->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
+    </script>
  
-     <script type="text/javascript" src="js/custom.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
  

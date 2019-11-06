@@ -17,11 +17,11 @@ jQuery(document).ready(function ($) {
         controlNav: false
     });
 
-    /* $('#loc-slider').flexslider({
+    $('#loc-slider').flexslider({
         animation: 'fade',
-        manualControls: '#loc-slider ul li',
+        manualControls: '.locations .controls div',
         directionNav: false,
         controlNav: true
-    }); */
+    });
 
 });
