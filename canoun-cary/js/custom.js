@@ -16,6 +16,21 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $('.video').magnificPopup({
+        items: {
+            src: 'https://www.youtube.com/watch?v=7B0bA89IufI'
+        },
+        type: 'iframe'
+    });
+
+    $('#testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        prevText: '',
+        nextText: '',
+        controlNav: false
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,

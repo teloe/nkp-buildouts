@@ -14,6 +14,7 @@
      <title>Canoun, Cary</title>
  
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" media="all" href="https://static.nkpmedical.com/magnific-popup/magnific-popup.css" />
      <link rel="stylesheet" href="style.css">
  
  </head>
@@ -77,12 +78,17 @@
                  <p>Refined face, breast and body procedures performed by an experience, double board certified plastic surgeon.</p>
                  <a class="btn" href="">Book an Appointment</a>
              </div>
-             <div class="grid-100 hide-on-tablet hide-on-desktop">
-                 <h1>See yourself in a new light</h1>
+         </div>
+     </section>
+
+     <div class="banner-text-mobile hide-on-tablet hide-on-desktop">
+         <div class="grid-container">
+             <div class="grid-100">
+                 <h1>See yourself<br>in a new light</h1>
                  <a class="btn" href="">Book an Appointment</a>
              </div>
          </div>
-     </section>
+     </div>
 
      <div class="caption">
          <div class="grid-container">
@@ -95,8 +101,7 @@
 
      <section class="about">
          <div class="grid-container">
-             <span>experience</span>
-             <h1>K. Cary Canoun MD, FACS</h1>
+             <a href="" class="name"><h1>K. Cary Canoun MD, FACS</h1></a>
              <div class="grid-50 tablet-grid-50 mobile-grid-100">
                  <img class="img-resp" src="./images/doctor.png" alt="K. Cary Canoun MD, FACS">
              </div>
@@ -104,9 +109,22 @@
                  <p>Deciding to undergo cosmetic surgery is a very important and personal decision It is essential that you choose the best surgeon for you. one that you trust. This is why you need to know about the training and experience of the surgeon you are considering.</p>
                  <p>This site provides information on Dr. Canoun, pre and postoperative photos, and descriptions of common aesthetic procedures.</p>
                  <p>Dr. Canoun has been practicing plastic surgery for over 20 years. He is a Harvard trained, double board certified plastic surgeon. He was previously director of Craniofacial surgery at the Medical College of Virginia.</p>
+                 <br>
+                 <div class="cta-wrapper">
+                     <img class="img-resp" src="./images/associations.png" alt="Associations">
+                     <br>
+                     <div class="btn-wrapper">
+                         <a class="btn" href="">More about Dr. Canoun</a>
+                         <a class="video" href=""><i class="far fa-play-circle"></i> Watch video</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="grid-100 cta tac">
                  <img class="img-resp" src="./images/associations.png" alt="Associations">
+                 <br>
+                 <br>
                  <a class="btn" href="">More about Dr. Canoun</a>
-                 <a class="btn" href=""><i class="far fa-play-circle"></i> Watch video</a>
+                 <a class="video" href=""><i class="far fa-play-circle"></i> Watch video</a>
              </div>
          </div>
      </section>
@@ -130,24 +148,25 @@ less recovery than traditional techniques.</p>
 
      <section class="gallery">
          <div class="grid-container">
+             <h1 class="tac">Photo Gallery</h1>
              <div class="grid-25 tablet-grid-50 mobile-grid-100">
                  <div class="content">
-                     <img class="img-resp" src="./images/face.png" alt="Face procedures">
+                     <a href=""><img class="img-resp" src="./images/face.png" alt="Face procedures"></a>
                  </div>
              </div>
              <div class="grid-25 tablet-grid-50 mobile-grid-100">
                  <div class="content">
-                     <img class="img-resp" src="./images/nose.png" alt="Nose procedures">
+                     <a href=""><img class="img-resp" src="./images/nose.png" alt="Nose procedures"></a>
                  </div>
              </div>
              <div class="grid-25 tablet-grid-50 mobile-grid-100">
                  <div class="content">
-                     <img class="img-resp" src="./images/breast.png" alt="Breast procedures">
+                     <a href=""><img class="img-resp" src="./images/breast.png" alt="Breast procedures"></a>
                  </div>
              </div>
              <div class="grid-25 tablet-grid-50 mobile-grid-100">
                  <div class="content">
-                     <img class="img-resp" src="./images/body.png" alt="Body procedures">
+                     <a href=""><img class="img-resp" src="./images/body.png" alt="Body procedures"></a>
                  </div>
              </div>
          </div>
@@ -156,9 +175,8 @@ less recovery than traditional techniques.</p>
      <section class="testimonials">
          <div class="grid-container">
              <div class="grid-100">
-                 <span>testimonials</span>
-                 <h1>What Our Patients Say...</h1>
-                 <div class="testimonials-slider">
+                 <h1 class="tac">What Our Patients Say...</h1>
+                 <div id="testimonials-slider">
                      <ul class="slides">
                          <li>
                              <blockquote>I am a patient of Dr Canoun, and am 100% satisfied with his service.  He is very down to earth and straight to the point.  He cares about his patients well being and is a very skilled surgeon.  I look foward to my next procedure with Dr Canoun, and would recommend him to anyone!</blockquote> 
@@ -273,20 +291,23 @@ Livermore, Oakley, Brentwood area, Discovery Bay, Lodi and Stockton.</p>
                  </ul>
              </div>
          </div>
-         <div class="grid-container footer-bottom">
-             <div class="grid-50">
+     </footer>
+     <div class="footer-bottom">
+         <div class="grid-container">
+             <div class="grid-50 tablet-grid-50 mobile-grid-100">
                  <img class="img-resp" src="./images/logo-dark.png" alt="K. Cary Canoun MD, FACS">
                  <p>Board Certified Plastic Surgeon</p>
                  <p>&copy; 2019 K. Cary Canoun. All Rights Reserved.</p>
              </div>
-             <div class="grid-50">
+             <div class="grid-50 tablet-grid-50 mobile-grid-100">
                  <a class="btn" href="">Book An Appointment</a>
              </div>
          </div>
-     </footer>
+     </div>
 
      <script type="text/javascript" src="js/custom.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
+     <script type="text/javascript" src="https://static.nkpmedical.com/magnific-popup/jquery.magnific-popup.min.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
  
  </body>
