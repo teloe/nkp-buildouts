@@ -11,9 +11,11 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>NKP</title>
+     <title>Rafailov, Sam</title>
  
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <link rel="stylesheet" href="./css/universal-parallax.min.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
  
  </head>
@@ -21,18 +23,18 @@
 
      <header>
          <div class="grid-container">
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50">
                  <div id="logo">
                      <a href="/" title="">
                          <img class="img-resp" src="./images/logo.png" alt="NJ Aesthetics and Cosmetic Surgery">
                      </a>
                  </div>
              </div>
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50">
                  <div class="contact-info">
                      <a class="phone" href="">(555) 949-7799</a>
                      <div class="social">
-                         <a href=""><i class="fab fa-facebook-f"></i></a>
+                         <a href=""><i class="fab fa-facebook"></i></a>
                          <a href=""><i class="fab fa-linkedin-in"></i></a>
                          <a href=""><i class="fab fa-instagram"></i></a>
                          <a href=""><i class="fab fa-twitter"></i></a>
@@ -65,9 +67,11 @@
          <ul class="slides">
              <li>
                  <div class="slide1">
-                     <div class="grid-container">
-                         <div class="grid-100">
-                             <h1>The Path to Beauty Starts Here</h1>
+                     <div class="par">
+                         <div class="grid-container">
+                             <div class="grid-100">
+                                 <h1 data-aos="fade-up" data-aos-duration="1500">The Path to Beauty Starts Here</h1>
+                             </div>
                          </div>
                      </div>
                  </div>
@@ -161,7 +165,7 @@
                  <div class="contact-info">
                      <a class="phone" href="">(555) 949-7799</a>
                      <div class="social">
-                         <a href=""><i class="fab fa-facebook-f"></i></a>
+                         <a href=""><i class="fab fa-facebook"></i></a>
                          <a href=""><i class="fab fa-linkedin-in"></i></a>
                          <a href=""><i class="fab fa-instagram"></i></a>
                          <a href=""><i class="fab fa-twitter"></i></a>
@@ -181,6 +185,25 @@
      </footer>
 
      <script type="text/javascript" src="js/custom.js"></script>
+     <script type="text/javascript" src="./js/universal-parallax.min.js"></script>
+     <script>
+         new universalParallax().init();
+     </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- AOS initialise -->
+     <script type="text/javascript">
+         AOS.init({
+             duration: 1000
+         })
+         jQuery(function () {
+             AOS.init();
+         });
+         jQuery(window).on('load', function () {
+             AOS.refresh();
+         });
+     </script>
+
      <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
  
