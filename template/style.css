@@ -11,7 +11,7 @@ Template: nkpv2
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
-/*---- GENERAL ----*/
+/* GENERAL {{{ */
 html {
     box-sizing: border-box;
 }
@@ -47,12 +47,9 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+/* }}} */
 
-
-
-
-
-/* NKP GLOBAL STYLES */
+/* NKP GLOBAL STYLES {{{ */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
 img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
@@ -73,7 +70,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 #nav{background-color:#000;height:50px}
-/* NKP GLOBAL STYLES */
+/* NKP GLOBAL STYLES }}} */
 
 
 /*---- MEDIA QUERIES ----*/
@@ -91,5 +88,3 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 960px) {
-}
