@@ -8,10 +8,11 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url("https://use.typekit.net/ubl0gti.css");
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
-/*---- GENERAL ----*/
+/* GENERAL {{{ */
 html {
     box-sizing: border-box;
 }
@@ -23,7 +24,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    /* color: #1174a6; */
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -31,7 +32,7 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    /* color: #09557c; */
     text-decoration: none;
     outline: none;
 }
@@ -47,12 +48,12 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+/* }}} */
 
 
 
 
-
-/* NKP GLOBAL STYLES */
+/* NKP GLOBAL STYLES {{{ */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
 img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
@@ -73,7 +74,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 #nav{background-color:#000;height:50px}
-/* NKP GLOBAL STYLES */
+/* NKP GLOBAL STYLES }}} */
 
 
 /*---- MEDIA QUERIES ----*/
