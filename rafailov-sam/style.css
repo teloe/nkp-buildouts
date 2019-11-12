@@ -239,10 +239,6 @@ header .phone {
 /* }}} */
 
 /* .welcome {{{ */
-.welcome {
-    background: url(images/welcome-bg.jpg) no-repeat center;
-    background-size: cover;
-}
 .welcome .grid-container {
     padding: 6rem 15px;
 }
