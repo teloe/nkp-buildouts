@@ -12,11 +12,24 @@ Template: nkpv2
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
+/* font-faces {{{ */
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: AvenirNextBold;
+  src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+/* }}} */
+
 /* GENERAL {{{ */
 html {
     box-sizing: border-box;
 }
 body {
+    font-family: lato, sans-serif;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -36,6 +49,18 @@ a:hover {
     text-decoration: none;
     outline: none;
 }
+.btn {
+    color: #fff;
+    border: solid 2px #fff;
+    background: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn:hover {
+    background: rgba(0,0,0,.3);
+}
 
 ul,ol{clear:both}
 .fl{float:left}
@@ -50,8 +75,126 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
+/* .header-top {{{ */
+.header-top .grid-container {
+    padding: 10px 15px;
+}
+.header-top .grid-50:last-of-type {
+    text-align: right;
+}
+.header-top .social a {
+    display: inline-block;
+    /* padding: 2px; */
+    background: #E26D5A;
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+.header-top .social a i {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.header-top .phone {
+    color: #E26D5A;
+    font-size: 24px;
+}
+.header-top .phone i {
+    vertical-align: top;
+}
+/* }}} */
 
+/* #main-nav {{{ */
+#main-nav {
+    background: #F8F4E3;
+}
+#main-nav .grid-container {
+    padding: 20px 15px;
+}
+#main-nav #logo {
+    padding-bottom: 20px;
+    text-align: center;
+}
+/* }}} */
 
+/* .stellarnav {{{ */
+.stellarnav.mobile > a span {
+    display: none;
+}
+.stellarnav.mobile > a {
+    color: #53391E;
+}
+.stellarnav.mobile ul {
+    background: #fff;
+}
+.stellarnav.mobile > ul > li > a {
+    padding: 10px 15px;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.stellarnav.mobile > ul > li > a:hover {
+    background: #143642;
+    color: #fff;
+}
+/* }}} */
+
+/* #main-banner {{{ */
+#main-banner {
+    background: url(images/main-banner.png) no-repeat center;
+    background-size: cover;
+}
+#main-banner .grid-container {
+    padding: 17rem 15px 10rem;
+   /* height: 600px;
+    display: flex;
+    align-items: center; */
+}
+#main-banner .grid-60 {
+    text-align: center;
+}
+#main-banner h1 {
+    color: #fff;
+    font-family: AvenirNextBold, sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+#main-banner h3 {
+    color: #fff;
+    font-family: AvenirNextRegular, sans-serif;
+    padding: 1rem 0 2rem;
+    font-size: 21px;
+    line-height: 32px;
+}
+#main-banner .btn {
+    display: block;
+    max-width: 210px;
+    margin: auto;
+}
+/* }}} */
+
+/* .treatments-cards {{{ */
+.treatments-cards {
+    background: #F8F4E3;
+}
+.treatments-cards .content {
+    background: #fff;
+    display: block;
+}
+/* }}} */
+
+/* .services {{{ */
+.services {
+    background: url(images/services-bg.png) no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+/* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
 img{border:0}
@@ -83,10 +226,34 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
+@media only screen and (min-width: 442px) {
+    .stellarnav.mobile > a span {
+        display: inline;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+    #main-banner .grid-container {
+        height: 360px;
+    }
+    #main-banner h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
 }
 
 @media only screen and (min-width: 960px) {
+    #main-banner .grid-60 {
+        text-align: right;
+    }
+    #main-banner .btn {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {

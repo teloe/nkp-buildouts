@@ -2,10 +2,10 @@ jQuery(document).ready(function($) {
 
     $('.stellarnav').stellarNav({
         showArrows:false,
-        breakpoint:960,
-        menuLabel:'Menu',
-        phoneBtn:'',
-        locationBtn:''
+        breakpoint:1023,
+        menuLabel:'<span>Menu</span>',
+        phoneBtn:'919-557-6400',
+        locationBtn:'https://goo.gl/maps/dCbRiqkLv72kRzjG7'
     });
 
     /* $('#slider').flexslider({
