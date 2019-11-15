@@ -209,7 +209,7 @@ ul,ol{clear:both}
     padding: 50px 16px;
     text-align: center;
     color: #000;
-    height: 416px;
+    min-height: 416px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
 }
 .treatments .content h2 {
@@ -285,10 +285,29 @@ ul,ol{clear:both}
 }
 .procs .grid-container {
     padding: 100px 15px;
+    text-align: center;
+}
+.procs h1 {
+    font-family: AvenirNextBold, sans-serif;
+    font-style: italic;
+    font-size: 1.68rem;
+    line-height: 2.4rem;
+    padding-bottom: 1rem;
+}
+.procs p {
+    padding-bottom: 64px;
+}
+.procs .grid-33 {
+    margin-bottom: 4rem;
 }
 .procs .content {
     background: #fff;
     padding: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+}
+.procs .content img {
+    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 /* }}} */
 
