@@ -21,20 +21,20 @@
 
      <header>
          <div class="grid-container">
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50">
                  <div id="logo">
                      <a href="/" title="">
                          <img class="img-resp" src="./images/logo.png" alt="">
                      </a>
                  </div>
              </div>
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50">
                  <div class="contact-info">
                      <a href=""><i class="fas fa-map-marker-alt"></i> DENVER, CO (303) 320-7826</a>
                      <a href=""><i class="fas fa-map-marker-alt"></i> LONE TREE (303) 320-7626</a>
                  </div>
                  
-                 <div class="menu-toggle">
+                 <div id="main-menu">
                      <div class="menu-box">
                          <div class="menu-inner">
                          </div>
@@ -49,6 +49,8 @@
              </div>
          </div>
      </header>
+
+     <a href="javascript:void(0)" id="nav-overlay-close"></a>
 
      <nav id="main-nav">
          <div class="overlay-content">
@@ -70,8 +72,8 @@
      </nav>
 
      <section id="main-banner">
-         <div class="grid-container">
-             <div class="grid-70 tablet-grid-80 mobile-grid-100">
+         <div class="grid-container grid-parent">
+             <div class="grid-70">
                  <h1>At Western Surgical Care we've been caring for Colorado since 1989 providing important services such as bariat...</h1>
                  <a class="btn" href="">Request your consultation</a>
              </div>
@@ -79,9 +81,10 @@
      </section>
  
      <section class="about">
+         <div class="hide-on-tablet hide-on-desktop"></div>
          <div class="bg-extend"></div>
          <div class="grid-container">
-             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+             <div class="grid-50 tablet-grid-50 mobile-grid-100 fr">
                  <h1>About Us</h1>
                  <p>Since 1989, Western Surgical Care has been dedicated to keeping the Rocky Mountain region healthy and active. We provide compassionate and comprehensive surgical care for each and every patient, making individualized patient care our number one priority.</p>
                  <p>Our professionalism, approachability, and surgical expertise continues to attract patients from Denver and the entire Rocky Mountain region – many of our patients are actually referred by friends and family we’ve treated in the past. Our ultimate goal is to provide you with an outstanding surgical experience and compassionate care so you can recover quickly and get back to doing the things you love.</p>
@@ -91,21 +94,34 @@
      </section>
 
      <section class="doctors">
-         <div class="grid-container">
-             <div class="grid-33">
-                 <img class="img-resp" src="./images/doctor1.jpg" alt="Doctors">
-             </div>
-             <div class="grid-33">
-                 <img class="img-resp" src="./images/doctor2.jpg" alt="Doctors">
-             </div>
-             <div class="grid-33">
-                 <img class="img-resp" src="./images/doctor3.jpg" alt="Doctors">
-             </div>
+         <div class="grid-container grid-parent">
+             <h1 class="tac">Meet the Doctors</h1>
+             <div class="flex-wrapper">
+                 <div class="grid-33 tablet-grid-50">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/doctor1.jpg" alt="Doctors">
+                         <h3>Dr. Joyce Moore</h3>
+                     </a>
+                 </div>
+                 <div class="grid-33 tablet-grid-50">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/doctor2.jpg" alt="Doctors">
+                         <h3>Dr. Barbara Schwartzberg</h3>
+                     </a>
+                 </div>
+                 <div class="grid-33 tablet-grid-50">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/doctor3.jpg" alt="Doctors">
+                         <h3>Dr. Justin Richardson</h3>
+                     </a>
+                 </div>
+             </div> 
          </div>
      </section>
 
      <section class="services">
          <div class="grid-container">
+             <h1 class="tac">Our Services</h1>
              <div class="grid-50">
                  <div class="services-slider">
                      <ul class="slides">
