@@ -9,6 +9,11 @@ jQuery(document).ready(function ($) {
         locationBtn: ''
     });
 
+    $('.menu-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $('#main-nav').toggleClass('open');
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
