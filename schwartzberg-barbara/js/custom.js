@@ -16,17 +16,20 @@ jQuery(document).ready(function ($) {
     });
 
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 0) {
-            $('header').addClass('sticky');    
-        } else {
-            $('header').removeClass('sticky');
+        $('header').addClass('sticky');
+        if ($(this).scrollTop() === 0) {
+            $('header').removeClass('sticky');    
         }
     });
 
     $('.services-slider').flexslider({
         animation: 'fade',
-        directionNav: false,
-        controlNav: false
+        directionNav: true,
+        controlNav: true,
+        prevText: '',
+        nextText: '',
+        manualControls: '.controls ul li',
+        slideshowSpeed: 10000
     });
 
     /* $('#slider').flexslider({
