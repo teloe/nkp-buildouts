@@ -438,6 +438,9 @@ header .social a {
 .services-slider .flex-prev {
     display: none;
 }
+.services .controls {
+    display: none;
+}
 
 /* }}} */
 
@@ -632,6 +635,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         font-size: 150px;
         line-height: 1;
         text-align: left;
+    }
+    .services .controls {
+        display: block;
     }
     .services .controls ul {
         display: flex;
