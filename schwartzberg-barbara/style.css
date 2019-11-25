@@ -45,7 +45,7 @@ p {
 a,
 a:visited,
 a:link {
-    /* color: #1174a6; */
+    color: #000;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -62,7 +62,7 @@ a:hover {
     position: relative;
     font-size: 1.25rem;
     line-height: 3.25rem;
-    color: #fff;
+    color: #fff !important;
     background: #000;
     text-transform: uppercase;
     margin: 2rem auto 0;
@@ -83,8 +83,8 @@ a:hover {
     transition: all 0.5s ease-out;
 }
 .btn:hover {
-    background: #fff;
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
 }
 .btn:hover::after {
     opacity: 1;
@@ -126,7 +126,7 @@ header .contact-info {
     margin-top: 2rem;
 }
 header a {
-    color: #fff;
+    color: #fff !important;
 }
 header a:hover {
     opacity: .7;
@@ -320,7 +320,7 @@ header .social a {
     font-size: 1rem;
     padding-left: 1rem;
     border: none;
-    color: #000;
+    color: #000 !important;
     margin-top: 3rem;
 }
 #main-banner .btn:hover {
@@ -446,7 +446,92 @@ header .social a {
 
 /* .financing {{{ */
 .financing {
-    margin-top: 20rem;
+    margin: 4rem auto;
+}
+.financing .hide-on-desktop {
+    background: url(images/financing-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+.financing h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.financing .ctas {
+    text-align: center;
+}
+.financing .ctas img {
+    padding: 1rem 0;
+}
+/* }}} */
+
+/* #contact {{{ */
+#contact {
+    background: url(images/contact-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+#contact .grid-container {
+    padding: 6rem 15px;
+}
+#contact .footer-form {
+    background: rgba(255,255,255,.8);
+    padding: 4rem 15px;
+}
+#contact .footer-form h1 {
+    text-align: center;
+    font-size: 2.9rem;
+    padding-bottom: 2rem;
+}
+#contact .footer-form button {
+    text-align: left;
+    cursor: pointer;
+    width: 230px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+/* }}}  */
+
+/* footer {{{ */
+footer {
+    max-width: 2000px;
+    background: #F5F5F5;
+    margin: 8rem auto 0;
+}
+footer a:hover {
+    opacity: .6;
+}
+footer .grid-container {
+    padding: 4rem 15px;
+}
+footer .grid-50 {
+    text-align: center;
+}
+footer p {
+    line-height: 1.5;
+}
+footer .grid-50:nth-of-type(1) {
+    padding-bottom: 2rem;
+}
+footer .grid-50:nth-of-type(1) img {
+    padding-bottom: 2rem;
+}
+footer .grid-50:nth-of-type(1) .loc {
+    display: block;
+    padding-bottom: 1rem;
+}
+footer .phone {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 1rem;
+}
+footer .social {
+    padding-bottom: 1rem;
+}
+footer .social a {
+    font-size: 1.5rem;
+    margin: 0 .25rem;
 }
 /* }}} */
 
@@ -458,16 +543,64 @@ img.right,img.alignright,.img-r{float:right;margin:10px 0 0 15px}
 iframe{width:100%;height:500px}
 .embed-responsive{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-bottom:20px}
 .embed-responsive iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ccc}
-input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
-.contact-form input[type='text'],.contact-form input[type='email'],.contact-form input[type='tel'],.contact-form input[type='url'],.contact-form textarea{width:100%;border:1px solid #ccc;background:#fff;margin:0 0 10px;padding:15px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-sizing:border-box}
-.contact-form input[type='text']:focus,.contact-form input[type='email']:focus,.contact-form input[type='tel']:focus,.contact-form textarea:focus{background:rgba(1,105,147,0.4);color:#fff}
-.contact-form input[type='submit'],.contact-form input[type='submit'][disabled]{width:100px;height:26px;background:#adadad;border:0;color:#fff;text-transform:uppercase;clear:both;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;outline:none}
-.contact-form input[type='submit']:hover,.contact-form input[type='submit'][disabled]:hover{background:#96bdda;border:2px solid #1174a6}
-.contact-form textarea{height:120px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
-.contact-form ::-webkit-input-placeholder{color:#777}
-:-moz-placeholder{color:#777}
-:-ms-input-placeholder{color:#777}
-.contact-form input.wpcf7-captchar{width:135px}
+
+input,
+select,
+textarea {
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+textarea {
+    font-family: "century-gothic",sans-serif;
+    font-size: 1rem;
+    color: #000;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #000;
+    background: transparent;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box
+}
+/* 
+.contact-form input[type='submit'],
+.contact-form input[type='submit'][disabled] {
+    width: 100px;
+    height: 26px;
+    background: #adadad;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    clear: both;
+    outline: none
+} */
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form ::-webkit-input-placeholder {
+    color: #000
+}
+
+:-moz-placeholder {
+    color: #000
+}
+
+:-ms-input-placeholder {
+    color: #000
+}
+
+.contact-form input.wpcf7-captchar {
+    width: 135px
+}
+
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 #nav{background-color:#000;height:50px}
@@ -508,6 +641,33 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .about h1 {
         text-align: left;
     }
+    .financing {
+        background: url(images/financing-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .financing .grid-container {
+        padding: 4rem 15px;
+    }
+    .financing h1 {
+        text-align: left;
+    }
+    .financing .ctas {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .financing .ctas > div {
+        width: 48%;
+    }
+    #contact .footer-form {
+        padding: 4rem 3rem;
+    }
+    #contact .footer-form button {
+        width: 340px;
+    }
+    #contact .footer-form h1 {
+        font-size: 5rem;
+    }
 }
 /* }}} */
 
@@ -518,10 +678,8 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     header::before {
         content: '';
-        /* background: linear-gradient(0deg,rgba(50,98,114,0) 0%,#326272 100%); */
-        background: linear-gradient(#326374, rgba(0,0,0,0));
+        /* background: linear-gradient(#326374, rgba(0,0,0,0)); */
         background: linear-gradient(#003549, rgba(0,0,0,0));
-        /* background: linear-gradient(#000, rgba(0,0,0,0));  */
         position: absolute;
         top: 0;
         bottom: 0;
@@ -537,10 +695,6 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         opacity: 1;
     }
     header.sticky {
-        /* background: rgba(70,110,123,.95); */
-        /* background: linear-gradient(0deg,rgba(70,110,123,0) 0%,#466e7b 100%); */
-        /* background: linear-gradient(0deg,rgba(0,0,0,0) 0%,black 100%); */
-        /* box-shadow: 0 0 10px rgba(0,0,0,.3); */
         position: fixed;
         top: 0;
     }
@@ -609,6 +763,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         font-size: 8.3rem;
         line-height: 9rem;
     }
+    .financing h1 {
+        font-size: 6rem;
+    }
 
 }
 /* }}} */
@@ -632,12 +789,11 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         padding: 0 15px 4rem;
     }
     .services h2 {
-        font-size: 150px;
-        line-height: 1;
         text-align: left;
     }
     .services .controls {
         display: block;
+        margin-top: 20rem;
     }
     .services .controls ul {
         display: flex;
@@ -680,6 +836,49 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     .services .controls li.flex-active::before {
         background: #000;
+    }
+    .services .services-slider ul li h2 {
+        padding-bottom: 4rem;
+    }
+    .services .services-slider ul li h2 span {
+        font-size: 33%;
+        display: block;
+        margin-top: 1.5rem;
+    }
+    .services .services-slider ul li:nth-of-type(1) h2 {
+        font-size: 140px;
+    }
+    .services .services-slider ul li:nth-of-type(2) h2 {
+        font-size: 120px;
+    }
+    .services .services-slider ul li:nth-of-type(3) h2 {
+        font-size: 65px;
+    }
+    .services .services-slider ul li:nth-of-type(4) h2 {
+        font-size: 120px;
+    }
+    .services .services-slider ul li:nth-of-type(5) h2 {
+        font-size: 92px;
+    }
+    .services .services-slider ul li:nth-of-type(6) h2 {
+        font-size: 70px;
+    }
+    .services .services-slider ul li:nth-of-type(7) h2 {
+        font-size: 135px;
+    }
+    .financing {
+        margin-top: 10rem;
+    }
+    footer .grid-container {
+        display: flex;
+        align-items: flex-end;
+    }
+    footer .grid-50:nth-of-type(1) {
+        text-align: left;
+        padding-bottom: 0;
+    }
+    footer .grid-50:nth-of-type(2) {
+        text-align: right;
     }
 
 }
@@ -775,6 +974,18 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         margin-top: 4rem;
     }
     
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 768px) {
+    .financing h1 {
+        font-size: 11vw;
+    }
+}
+
+@media only screen and (min-width: 1301px) {
+    .financing h1 {
+        font-size: 9rem;
+    }
 }
 
 @media only screen and (min-width: 1159px) {
