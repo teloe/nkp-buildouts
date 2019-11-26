@@ -11,7 +11,15 @@ Template: nkpv2
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
 
-/* GENERAL {{{ */
+/*---- GENERAL ----*/
+@font-face {
+    font-family: grifos-bold;
+    src: url(fonts/grifos-bold.otf);
+}
+@font-face {
+    font-family: gothamhtf-book;
+    src: url(fonts/gothamhtf-book.otf);
+}
 html {
     box-sizing: border-box;
 }
@@ -19,6 +27,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    font-family: gothamhtf-book, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,15 +35,15 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #BB9854;
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 a:hover {
-    color: #09557c;
+    color: #98793c;
     text-decoration: none;
     outline: none;
 }
@@ -50,9 +59,46 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
-/* }}} */
 
-/* NKP GLOBAL STYLES {{{ */
+header .grid-container {
+    padding: 60px 15px;
+}
+header .social {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+header .social a {
+    margin: 0 .25rem;
+}
+header h1 {
+    font-family: grifos-bold,serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: #BB9854;
+    padding: 4rem 0 2rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+.form p {
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.form form {
+    padding: 4rem 0;
+}
+.form .grid-100:last-of-type p {
+    font-weight: bold;
+}
+.insta {
+    padding: 4rem 0;
+}
+.insta h1 {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+
+/* NKP GLOBAL STYLES */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
 img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
@@ -73,7 +119,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 #nav{background-color:#000;height:50px}
-/* NKP GLOBAL STYLES }}} */
+/* NKP GLOBAL STYLES */
 
 
 /*---- MEDIA QUERIES ----*/
@@ -83,6 +129,11 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 768px) {
+    header h1 {
+        font-size: 4.75rem;
+        line-height: 5rem;
+        letter-spacing: 10px;
+    }
 }
 
 @media only screen and (min-width: 960px) {
