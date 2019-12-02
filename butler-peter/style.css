@@ -252,7 +252,11 @@ header .social a {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    /* z-index: 1; */
+    opacity: 1;
+    transition: all .4s ease;
+}
+.procs .content:hover::before {
+    opacity: 0;
 }
 .procs .content img {
     width: 100%;
