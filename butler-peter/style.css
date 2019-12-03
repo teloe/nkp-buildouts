@@ -20,6 +20,8 @@ html {
     box-sizing: inherit;
 }
 body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: mr-eaves-modern, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -52,14 +54,19 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
 }
 .section-header {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-align: center;
     padding-bottom: 3rem;
     line-height: 2.8rem;
     color: #000 !important;
     text-transform: uppercase;
 }
-
+.sub {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1.25rem;
+    text-align: center;
+}
 a,
 a:visited,
 a:link {
@@ -122,7 +129,7 @@ a.btn::after {
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 a.btn:hover::after {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 ul,ol{clear:both}
@@ -213,7 +220,7 @@ header .social a {
 
 /* .procs {{{ */
 .procs .grid-container {
-    padding: 4rem 15px;
+    padding: 5rem 15px;
     max-width: 1750px;
 }
 .procs h1 {
@@ -314,6 +321,95 @@ header .social a {
 }
 /* }}} */
 
+/* .welcome {{{ */
+.welcome .hide-on-desktop {
+    background: url(images/welcome-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+.welcome .grid-container {
+    padding: 4rem 15px;
+}
+.welcome .section-header,
+.welcome .sub {
+    text-align: center;
+}
+.welcome .grid-70 img {
+    display: block;
+    margin: 1rem auto;
+}
+.welcome .btn {
+    margin: 3rem 1rem;
+    text-align: center;
+}
+/* }}} */
+
+/* .financing {{{ */
+.financing {
+    margin: 3rem auto;
+}
+.financing .hide-on-desktop {
+    background: url(images/financing-bg1.png) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+.financing .grid-container {
+    padding: 4rem 15px;
+}
+.financing .btn {
+    margin: 3rem 0 0 1rem;
+}
+/* }}} */
+
+/* .doctors {{{ */
+.doctors .hide-on-desktop {
+    background: url(images/doctors-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+.doctors .grid-container {
+    padding: 4rem 15px;
+    /* background: #C5D984; */
+}
+.doctors .doctor-list {
+    background: #2770A8;
+    border-radius: 0 100px 0 100px;
+    border: solid 4px #C5D984;
+}
+.doctors .doctor-list {
+    padding: .5rem;
+}
+.doctors .doctor-list a {
+    color: #fff;
+    display: block;
+    margin: .8rem auto;
+    max-width: 115px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+.doctors .doctor-list a::after {
+    content: '\f054';
+    right: -1rem;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+.doctors .doctor-list a:hover::after {
+    right: -1.5rem;
+}
+.doctors .content::before {
+    content: '';
+    border: solid 2px #2770A8;
+    border-radius: 50%;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    z-index: -1;
+}
+/* }}} */
+
 /* NKP GLOBAL STYLES {{{ */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
@@ -357,6 +453,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         text-align: left;
         line-height: 3.2rem;
     }
+    .sub {
+        text-align: left;
+    }
     #slider .slide1 {
         background-position-x: -64rem;
     }
@@ -371,11 +470,86 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         flex-flow: row wrap;
         justify-content: center;
     }
+    .welcome .grid-70 img {
+        margin: 1rem 0;
+    }
+    .financing {
+        max-width: 1930px;
+        background: url(images/financing-bg1.png) no-repeat center;
+        background-size: cover;
+        margin: 5rem auto;
+        height: 660px;
+        display: flex;
+        align-items: center;
+    }
+    .financing .hide-on-desktop {
+        display: none;
+    }
+    .financing .grid-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .financing .grid-50 .content {
+        background: rgba(255,255,255,.9);
+        border-radius: 50%;
+        box-shadow: inset 15px 0px #c5d984;
+        padding: 8rem;
+        height: 550px;
+        width: 550px;
+    }
+    .doctors {
+        background: url(images/doctors-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .doctors .bg-extend {
+        background: #C5D984;
+        height: 100%;
+
+    }
+    .doctors .doctor-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .bxa {
+        background: url(images/bxa-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+
 }
 /* }}} */
 
+/* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
+    .welcome {
+        background: url(images/welcome-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .welcome .hide-on-desktop {
+        display: none;
+    }
+    .welcome .grid-container {
+        padding: 0 15px;
+    }
+    .welcome .section-header,
+    .welcome .sub {
+        text-align: left;
+    }
+    .welcome .grid-70 {
+        float: right;
+        width: 70%;
+    }
+    .welcome .grid-70 .content {
+        background: rgba(255,255,255,.9);
+        border-radius: 50%;
+        margin: -4rem;
+        /* height: 864px; */
+        padding: 10rem 7rem 10rem 10rem;
+    }
+    .financing {
+        height: 822px;
+    }
 }
+/* }}} */
 
 /* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
@@ -488,6 +662,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         position: absolute;
         top: 0;
         right: 15px;
+    }
+    .welcome .grid-70 .content {
+        height: 864px;
     }
 
 }
