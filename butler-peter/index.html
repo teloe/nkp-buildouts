@@ -14,6 +14,7 @@
      <title>Butler, Peter</title>
  
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
  
  </head>
@@ -64,10 +65,10 @@
                  <div class="slide1">
                      <div class="grid-container">
                          <div class="grid-65 fr">
-                             <h1>Beauty.</h1>
-                             <h1>Enhance.</h1>
-                             <h1>Renew.</h1>
-                             <a class="btn" href="">Explore your options</a>
+                             <h1 data-aos="fade-right">Beauty.</h1>
+                             <h1 data-aos="fade-right" data-aos-delay="300">Enhance.</h1>
+                             <h1 data-aos="fade-right" data-aos-delay="600">Renew.</h1>
+                             <a class="btn" href="" data-aos="fade-right" data-aos-delay="800">Explore your options</a>
                              <img class="img-resp" src="./images/banner-logo.png" alt="Gulf Coast Plastic Surgery">
                          </div>
                      </div>
@@ -251,14 +252,18 @@
      </section>
 
      <section class="bxa">
+         <div class="hide-on-desktop"></div>
          <div class="grid-container">
              <div class="grid-60 tablet-grid-60 mobile-grid-100 fr">
+                 <div class="bg-extend"></div>
                  <div class="content">
                      <img class="img-resp" src="./images/bxa-photos.png" alt="Before and after photos">
-                     <h3 class="sub">Before &amp; After</h3>
-                     <h1 class="section-header">Envision the difference</h1>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
-                     <a class="btn" href="">View photo gallery</a>
+                     <div class="text">
+                         <h3 class="sub">Before &amp; After</h3>
+                         <h1 class="section-header">Envision the difference</h1>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra</p>
+                         <a class="btn" href="">View photo gallery</a>
+                     </div>
                  </div>
              </div>
          </div>
@@ -267,32 +272,55 @@
      <section class="skincare">
          <div class="grid-container">
              <div class="grid-100">
-                 <img class="img-resp" src="./images/skincare-bg.png" alt="Skincare center">
+                     <div class="text hide-on-tablet hide-on-desktop">
+                         <h3 class="sub">Shop our</h3>
+                         <h1 class="section-header">Visit our skincare center</h1>
+                         <p>In labore in consequat ipsum consectetur consectetur ex excepteur. Eiusmod pariatur amet nostrud sint reprehenderit quis enim voluptate eu in anim. Sunt elit sint laboris voluptate deserunt voluptate minim velit cillum exercitation eiusmod. Mollit officia est sunt nisi quis consectetur duis ea anim aliqua do.</p>
+                         <a href="" class="btn">Read more</a>
+                     </div>
+                 <div class="wrapper">
+                     <img class="img-resp" src="./images/skincare-circle.png" alt="Skincare center">
+                 </div>
+                 <div class="content hide-on-mobile">
+                     <div class="text">
+                         <h3 class="sub">Shop our</h3>
+                         <h1 class="section-header">Visit our skincare center</h1>
+                         <p>In labore in consequat ipsum consectetur consectetur ex excepteur. Eiusmod pariatur amet nostrud sint reprehenderit quis enim voluptate eu in anim. Sunt elit sint laboris voluptate deserunt voluptate minim velit cillum exercitation eiusmod. Mollit officia est sunt nisi quis consectetur duis ea anim aliqua do.</p>
+                         <a href="" class="btn">Read more</a>
+                     </div>
+                 </div>
              </div>
-             <div class="grid-20">
-                 <a class="content" href="">
-                     <img class="img-resp" src="./images/vip.png" alt="VIP skincare">
-                 </a>
-             </div>
-             <div class="grid-20">
-                 <a class="content" href="">
-                     <img class="img-resp" src="./images/facial-peels.png" alt="Facial peels">
-                 </a>
-             </div>
-             <div class="grid-20">
-                 <a class="content" href="">
-                     <img class="img-resp" src="./images/microneedlng.png" alt="Microneedling">
-                 </a>
-             </div>
-             <div class="grid-20">
-                 <a class="content" href="">
-                     <img class="img-resp" src="./images/fillers.png" alt="Fillers">
-                 </a>
-             </div>
-             <div class="grid-20">
-                 <a class="content" href="">
-                     <img class="img-resp" src="./images/products.png" alt="Products">
-                 </a>
+             <div class="flex-wrapper">
+                 <div class="grid-20">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/vip.png" alt="VIP skincare">
+                         <p>VIP Skincare Membership program</p>
+                     </a>
+                 </div>
+                 <div class="grid-20">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/facial-peels.png" alt="Facial peels">
+                         <p>Facials &amp; peels</p>
+                     </a>
+                 </div>
+                 <div class="grid-20">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/microneedlng.png" alt="Microneedling">
+                         <p>Microneedling &amp; laser</p>
+                     </a>
+                 </div>
+                 <div class="grid-20">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/fillers.png" alt="Fillers">
+                         <p>Fillers</p>
+                     </a>
+                 </div>
+                 <div class="grid-20">
+                     <a class="content" href="">
+                         <img class="img-resp" src="./images/products.png" alt="Products">
+                         <p>Products</p>
+                     </a>
+                 </div>
              </div>
          </div>
      </section>
@@ -300,15 +328,59 @@
      <section id="contact">
          <div class="grid-container">
              <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                 <div class="content">
+                     <div class="location">
+                         <h3>Gulf Coast Plastic Surgery</h3>
+                         <h3>543-A Fontaine Street</h3>
+                         <h3>Pensacola, Floria 32503</h3>
+                         <a href="">Get directions</a>
+                     </div>
+                     <div class="location">
+                         <h3>Gulf Coast Plastic Surgery</h3>
+                         <h3>543-A Fontaine Street</h3>
+                         <h3>Pensacola, Floria 32503</h3>
+                         <a href="">Get directions</a>
+                     </div>
+                 </div>
              </div>
              <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                 <div class="content">
+                     <h1 class="section-header">Contact Us</h1>
+                     <div class="footer-form">
+                         <form action="">
+                             <input type="text" placeholder="Name">
+                             <input type="text" placeholder="Email">
+                             <textarea id="" name="" placeholder="Message"></textarea>
+                             <button class="btn">Send message</button>
+                         </form>
+                     </div>
+                 </div>
              </div>
          </div>
      </section>
 
      <footer>
          <div class="grid-container">
-             
+             <div class="grid-30">
+                 <a class="phone" href="">850.476.3223</a>
+                 <p>543-A Fontaine Street • Pensacola, FL</p>
+             </div>
+             <div class="grid-30">
+                 <p>
+                     <a href=""><i class="fas fa-th-large"></i> Sitemap</a> |
+                     <a href="">Terms &amp; Conditions</a> |
+                     <a href="">HIPAA Privacy Policy</a>
+                 </p>
+             </div>
+             <div class="grid-40">
+                 <div class="social">
+                     <a href=""><i class="fab fa-facebook-f"></i></a>
+                     <a href=""><i class="fab fa-twitter"></i></a>
+                     <a href=""><i class="fab fa-instagram"></i></a>
+                     <a href=""><i class="fab fa-youtube"></i></a>
+                 </div>
+                 <p>Copyright &copy; 2019 Gulf Coast Plastic Surgery. All Rights Reserved.</p>
+             </div>
          </div>
      </footer>
 
@@ -316,6 +388,20 @@
      <script type="text/javascript" src="js/custom.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
      <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- AOS initialise -->
+     <script type="text/javascript">
+         AOS.init({
+             duration: 1000
+         })
+         jQuery(function () {
+             AOS.init();
+         });
+         jQuery(window).on('load', function () {
+             AOS.refresh();
+         });
+     </script>
  
  </body>
  </html>

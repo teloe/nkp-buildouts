@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         locationBtn:'https://goo.gl/maps/hggQ69mAqTCE4Wwu8'
     });
 
-    $('a.btn').append('<span></span>');
+    $('a.btn, button.btn').append('<span></span>');
     $('.stellarnav > ul > li > a').append('<span></span>');
 
     const sliderTop = $('#slider').offset().top;

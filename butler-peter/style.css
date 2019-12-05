@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 .section-header {
     font-size: 2.25rem;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     line-height: 2.8rem;
     color: #000 !important;
     text-transform: uppercase;
@@ -82,7 +82,9 @@ a:hover {
     text-decoration: none;
     outline: none;
 }
-a.btn {
+a.btn,
+button.btn {
+    cursor: pointer;
     display: inline-block;
     color: #000;
     font-weight: 700;
@@ -90,7 +92,8 @@ a.btn {
     text-transform: uppercase;
     z-index: 1;
 }
-a.btn span {
+a.btn span,
+button.btn span {
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
@@ -101,7 +104,8 @@ a.btn span {
     background: rgba(198,217,132,.5);
     z-index: -1;
 }
-a.btn span::before {
+a.btn span::before,
+button.btn span::before {
     content: '';
     border-radius: 100%;
     position: absolute;
@@ -112,14 +116,16 @@ a.btn span::before {
     background: rgba(198,217,132,.5);
     transition: 0.5s ease;
 }
-a.btn:hover span::before {
+a.btn:hover span::before,
+button.btn:hover span::before {
     top: -20px;
     left: -20px;
     bottom: -20px;
     right: -20px;
     opacity: 0;
 }
-a.btn::after {
+a.btn::after,
+button.btn::after {
     content: '\f054';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -128,7 +134,8 @@ a.btn::after {
     margin-left: .8rem;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
-a.btn:hover::after {
+a.btn:hover::after,
+button.btn:hover::after {
     margin-left: 1.5rem;
 }
 
@@ -379,7 +386,7 @@ header .social a {
     height: 60vw;
 }
 .doctors .grid-container {
-    padding: 3rem 15px;
+    padding: 3rem 15px 0;
 }
 .doctors .grid-40 {
     position: relative;
@@ -429,10 +436,15 @@ header .social a {
 .doctors .doctor-list a::after {
     content: '\f054';
     right: -.5rem;
+    margin-left: .5rem;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+    transform: translateX(0);
     position: absolute;
     transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+.doctors .hide-on-desktop .doctor-list a::after {
+    bottom: 1.15rem;
 }
 .doctors .doctor-list a:hover::after {
     right: -1rem;
@@ -456,15 +468,213 @@ header .social a {
 /* }}} */
 
 /* .bxa {{{ */
+.bxa {
+    position: relative;
+    overflow: hidden;
+}
+.bxa .hide-on-desktop {
+    background: url(images/bxa-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
 .bxa .grid-container {
-    padding: 8rem 15px 0;
+    padding: 6rem 15px 0;
+}
+.bxa .grid-60 {
+    position: relative;
+}
+.bxa .bg-extend {
+    background: linear-gradient(#77ADCB,#B4C6CE);
+    position: absolute;
+    left: -50vw;
+    right: -50vw;
+    top: -6rem;
+    bottom: -16rem;
+    border-radius: 50%;
+    z-index: -1;
 }
 .bxa .content {
-    background: rgba(39,112,168,.2);
-    border-radius: 50%;
+    text-align: center;
+}
+.bxa .content .text {
+    background: url(images/bxa-logo.png) no-repeat center;
+    background-size: contain;
+    padding-bottom: 6rem;
+}
+.bxa .content img {
+    margin-bottom: 2.5rem;
 }
 .bxa .content .btn {
     margin: 2rem 0 0 1.5rem;
+}
+/* }}} */
+
+/* .skincare {{{ */
+.skincare {
+    background: url(images/skincare-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.skincare .grid-container {
+    padding: 3rem 15px;
+    text-align: center;
+}
+.skincare .grid-100 {
+    position: relative;
+    z-index: 1;
+}
+.skincare .grid-100 .text.hide-on-desktop {
+    text-align: center;
+}
+.skincare .grid-100 .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+.skincare .content .text {
+    width: 85%;
+    text-align: left;
+}
+.skincare .grid-100 .wrapper {
+    max-width: 821px;
+    max-height: 833px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: -10rem auto 0;
+    z-index: -1;
+}
+.skincare .grid-100 .wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: inset 25px 0px #c5d984;
+}
+.skincare .grid-100,
+.skincare .grid-20 {
+    margin-bottom: 3rem;
+}
+.skincare .grid-20 .content {
+    display: inline-block;
+}
+.skincare .grid-20 .content p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.skincare .grid-20 .content img {
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+.skincare .grid-20 .content:hover img {
+    transform: scale(1.15);
+}
+.skincare .grid-20 .content:hover {
+    transform: translateY(-1rem);
+}
+.skincare .btn {
+    margin: 3rem 0 4rem 1.5rem;
+}
+/* }}} */
+
+/* #contact {{{ */
+#contact {
+    background: url(images/contact-bg.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+#contact .grid-container {
+    padding: 8rem 15px 4rem;
+}
+#contact .footer-form {
+    max-width: 300px;
+    margin: auto;
+}
+#contact .grid-50 {
+    text-align: center;
+}
+#contact .grid-50:first-of-type {
+    margin-bottom: 2rem;
+}
+#contact .grid-50:first-of-type .content {
+    background: rgba(69,119,164,.95);
+    padding: 2rem 0;
+}
+#contact .grid-50:first-of-type .location:first-of-type {
+    margin-bottom: 2rem;
+}
+#contact .grid-50:first-of-type h3,
+#contact .grid-50:first-of-type a {
+    text-transform: uppercase;
+    color: #fff;
+}
+#contact .grid-50:first-of-type a {
+    font-weight: 900;
+    margin-top: 1rem;
+    display: inline-block;
+}
+#contact .grid-50:first-of-type a:hover {
+    opacity: .6;
+}
+#contact .grid-50:last-of-type .section-header {
+    text-align: center;
+}
+#contact .grid-50:last-of-type .content {
+    background: url(images/contact-logo.png) no-repeat center;
+    background-size: contain;
+    border: solid 3px rgba(197,216,132,.5);
+    background-color: rgba(255,255,255,.9);
+    padding: 60px 15px;
+    position: relative;
+    z-index: 1;
+}
+#contact .btn {
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border: none;
+    margin-top: 3rem;
+}
+/* }}} */
+
+/* footer {{{ */
+footer .grid-container {
+    padding: 4rem 15px;
+}
+footer .grid-30,
+footer .grid-40 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+footer .phone {
+    font-size: 2rem;
+    font-weight: 700;
+}
+footer .social {
+    padding: .5rem 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+footer .social a {
+    background: rgba(197,217,135,.7);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 .35rem;
+}
+footer .social a:hover {
+    color: #000;
+    background: rgba(197,217,135,1);
 }
 /* }}} */
 
@@ -476,15 +686,45 @@ img.right,img.alignright,.img-r{float:right;margin:10px 0 0 15px}
 iframe{width:100%;height:500px}
 .embed-responsive{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-bottom:20px}
 .embed-responsive iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ccc}
-input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
-.contact-form input[type='text'],.contact-form input[type='email'],.contact-form input[type='tel'],.contact-form input[type='url'],.contact-form textarea{width:100%;border:1px solid #ccc;background:#fff;margin:0 0 10px;padding:15px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-sizing:border-box}
-.contact-form input[type='text']:focus,.contact-form input[type='email']:focus,.contact-form input[type='tel']:focus,.contact-form textarea:focus{background:rgba(1,105,147,0.4);color:#fff}
-.contact-form input[type='submit'],.contact-form input[type='submit'][disabled]{width:100px;height:26px;background:#adadad;border:0;color:#fff;text-transform:uppercase;clear:both;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;outline:none}
-.contact-form input[type='submit']:hover,.contact-form input[type='submit'][disabled]:hover{background:#96bdda;border:2px solid #1174a6}
-.contact-form textarea{height:120px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
-.contact-form ::-webkit-input-placeholder{color:#777}
-:-moz-placeholder{color:#777}
-:-ms-input-placeholder{color:#777}
+input,
+select,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #000;
+    background: none;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form ::-webkit-input-placeholder {
+    color: #000
+}
+
+:-moz-placeholder {
+    color: #000
+}
+
+:-ms-input-placeholder {
+    color: #000
+}
 .contact-form input.wpcf7-captchar{width:135px}
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
@@ -493,6 +733,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 
 /*---- MEDIA QUERIES ----*/
+/* small screens {{{ */
 @media only screen and (max-width: 740px) {
     iframe{width:100%;height:280px}
     .patient-single{width:100%!important}
@@ -503,6 +744,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         display: inline;
     }
 }
+/* }}} */
 
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
@@ -523,7 +765,8 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     #slider .slide1 h1 {
         font-size: 5.5rem;
     }
-    .procs .flex-wrapper {
+    .procs .flex-wrapper,
+    .skincare .flex-wrapper {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -603,6 +846,62 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .bxa {
         background: url(images/bxa-bg.jpg) no-repeat center;
         background-size: cover;
+        z-index: 1;
+    }
+    .bxa .hide-on-desktop {
+        display: none;
+    }
+    .bxa .grid-60 {
+        position: initial;
+    }
+    .bxa .content {
+        text-align: left;
+    }
+    .skincare .content .text {
+        width: 65%;
+    }
+    .skincare .grid-100 {
+        z-index: 0;
+    }
+    .skincare .grid-100 .wrapper {
+        margin: auto;
+    }
+    .skincare .btn {
+        margin: 2rem 0 0 1.5rem;
+    }
+    #contact .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    #contact .grid-50:first-of-type {
+        margin-bottom: 0;
+    }
+    #contact .grid-50:first-of-type .content {
+        max-width: 70%;
+        margin: auto;
+    }
+    #contact .grid-50:last-of-type .content {
+        background: url(images/contact-logo.png) no-repeat center;
+        border: none;
+        background-size: contain;
+        padding: 60px 15px;
+        position: relative;
+        z-index: 1;
+    }
+    #contact .grid-50:last-of-type .content::after {
+        content: '';
+        background-color: rgba(255,255,255,.8);
+        position: absolute;
+        border-radius: 50%;
+        top: -5rem;
+        right: 0;
+        bottom: 0;
+        left: -18%;
+        display: block;
+        height: 750px;
+        width: 750px;
+        border: solid 3px rgba(197,216,132,.5);
+        z-index: -1;
     }
 
 }
@@ -641,6 +940,37 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .doctors .grid-60,
     .doctors .grid-40 {
         min-height: 800px;
+    }
+    .bxa .grid-container {
+        padding: 14rem 15px 0;
+    }
+    .bxa .content .text {
+        padding-bottom: 8rem;
+    }
+    .bxa .grid-60 {
+        position: relative;
+    }
+    .bxa .bg-extend {
+        background: rgba(39,112,168,.2);
+        width: 1200px;
+        height: 1200px;
+        left: initial;
+        right: -20rem;
+        top: -12rem;
+        bottom: initial;
+    }
+    .bxa .content::before {
+        content: '';
+        border: solid 3px rgba(197,217,132,.7);
+        border-radius: 50%;
+        height: 1500px;
+        width: 1500px;
+        display: block;
+        position: absolute;
+        top: -26rem;
+        bottom: 0;
+        right: 0;
+        left: -15rem;
     }
 }
 /* }}} */
@@ -763,19 +1093,77 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .welcome .grid-70 .content {
         height: 864px;
     }
+    .skincare .grid-container {
+        position: relative;
+        padding-bottom: 12rem;
+    }
+    .skincare .flex-wrapper {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 4rem;
+    }
+    footer .grid-container {
+        display: flex;
+        align-items: flex-end;
+    }
+    footer .grid-30:first-of-type,
+    footer .grid-30:nth-of-type(2) {
+        text-align: left;
+    }
+    footer .grid-40 {
+        text-align: right;
+    }
+    footer .social {
+        justify-content: flex-end;
+    }
 
 }
 /* }}} */
 
+/* 768px - 959px {{{ */
 @media only screen and (max-width: 959px) and (min-width: 768px) {
     .doctors .grid-60,
     .doctors .grid-40 {
         min-height: 600px;
     }
+    .bxa .grid-container {
+        padding: 6rem 15px 0;
+    }
+    .bxa .content .text {
+        padding-bottom: 5rem;
+    }
+    .bxa .bg-extend {
+        background: rgba(39,112,168,.2);
+        width: 900px;
+        height: 900px;
+        left: 16%;
+        right: 0;
+        top: 1rem;
+        bottom: 0;
+    }
+    .bxa .content img {
+        width: 80%;
+    }
+    .bxa .content::before {
+        content: '';
+        border: solid 3px rgba(197,217,132,.7);
+        border-radius: 50%;
+        height: 900px;
+        width: 900px;
+        display: block;
+        position: absolute;
+        top: -4rem;
+        bottom: 0;
+        right: 0;
+        left: 8rem;
+    }
 }
+/* }}} */
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .procs .grid-20 {
+    .procs .grid-20,
+    .skincare .grid-20 {
         width: 50%;
     }
 }
