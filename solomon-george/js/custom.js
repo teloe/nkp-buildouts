@@ -8,10 +8,10 @@ jQuery(document).ready(function($) {
         locationBtn:''
     });
 
-    $('#slider').flexslider({
+    /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false
-    });
+    }); */
 
 });
