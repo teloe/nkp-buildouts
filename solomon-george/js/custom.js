@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
         showArrows:false,
         breakpoint:960,
         menuLabel:'Menu',
-        phoneBtn:'',
-        locationBtn:''
+        phoneBtn:'727-288-9988',
+        locationBtn:'https://goo.gl/maps/Dc1UZ1tRJu6RCxJv9'
     });
 
     /* $('#slider').flexslider({
