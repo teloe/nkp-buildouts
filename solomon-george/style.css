@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 1rem;
 }
 .section-header {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     padding-bottom: 3rem;
 }
 p {
@@ -56,32 +56,49 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    /* color: #3B3735; */
     color: rgba(0,0,0,.6);
     text-decoration: none;
     outline: none;
 }
-.btn {
+a.btn {
     font-weight: 500;
+    margin-top: 2rem;
     position: relative;
-    width: 290px;
+    width: 260px;
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
     padding: 1rem;
-    color: #000;
+    color: #fff;
+    background: #000;
     border: solid 1px #000;
 }
-.btn::after {
+a.btn::after {
     content: '\f054';
     font-family: 'Font Awesome 5 Free';
+    color: #000;
     font-weight: 900;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -10px;
+    top: -10px;
     background:#fff; 
-    padding: 2rem;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    width: 70px;
+    height: 70px;
     border: solid 1px #000;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+a.btn:hover::after {
+    background: #000;
+    color: #fff;
+    height: 100%;
+    padding: .8rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 .social {
     margin: 2rem 0 .5rem;
@@ -203,6 +220,8 @@ header nav .grid-80 {
     align-items: flex-end;
 }
 #slider .slide1 .btn {
+    color: #000;
+    background: transparent;
     box-shadow: inset 0 0 0 0 rgba(0,0,0,.9);
     transition: ease-out 0.4s;
 }
@@ -251,7 +270,12 @@ header nav .grid-80 {
 
 /* .doc {{{ */
 .doc .grid-container {
-    padding: 5rem 15px 10rem; 
+    padding: 4rem 15px 8rem; 
+}
+.doc .heading {
+    background: #fff;
+    padding: 3rem 0 0 2rem;
+    margin: 2rem 0 0 -4rem;
 }
 .doc .grid-50:first-of-type {
     text-align: center;
@@ -270,6 +294,36 @@ header nav .grid-80 {
     background: url(images/about-bg.jpg) no-repeat center;
     background-size: cover;
     height: 60vw;
+}
+.about .grid-container {
+    margin-top: 4rem;
+}
+.about .content {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.about .content img {
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.about .content:hover img {
+    transform: scale(1.05);
+}
+.about .content:hover h4 {
+    bottom: 2.7rem;
+}
+.about h4 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #fff;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
 /* }}} */
 
@@ -331,7 +385,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
     .section-header {
-        font-size: 3.2rem;
+        font-size: 3.1rem;
     }
     #slider .slide1 .grid-container {
         height: 800px;
@@ -347,6 +401,14 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .doc img {
         box-shadow: -30px 30px #000;
         margin-bottom: 0;
+    }
+    .about .bg-extend {
+        background: url(images/about-bg.jpg) no-repeat;
+        background-position-x: -40vw;
+        background-size: cover;
+        position: absolute;
+        width: 50%;
+        height: 100%;
     }
 
 
@@ -422,6 +484,12 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 /* }}} */
 
+@media only screen and (min-width: 1600px) {
+    .about .bg-extend {
+        background-position: center;
+    }
+}
+
 @media only screen and (max-width:959px) and (min-width: 768px) {
     #slider .slide1 .grid-container {
         height: 800px;
@@ -429,6 +497,14 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 }
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (max-width: 1399px) and (min-width: 1250px) {
+    .about .bg-extend {
+        background-position-x: -30vw;
+    }
 }
 
+@media only screen and (max-width: 1599px) and (min-width: 1400px) {
+    .about .bg-extend {
+        background-position-x: -20vw;
+    }
+}
