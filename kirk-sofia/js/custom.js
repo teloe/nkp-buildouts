@@ -8,10 +8,17 @@ jQuery(document).ready(function($) {
         locationBtn:'https://goo.gl/maps/MbXnmtWqKCaebmrm8'
     });
 
-    $('#slider').flexslider({
+    $(window).on('scroll', function() {
+        $('nav').addClass('sticky');
+        if ( $(this).scrollTop() === 0 ) {
+            $('nav').removeClass('sticky');
+        }
+    });
+
+    /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false
-    });
+    }); */
 
 });
