@@ -7,6 +7,7 @@ Template: nkpv2
 
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
+@import url(https://use.typekit.net/wgt7kyo.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 /*---- Do Not Remove ----*/
@@ -50,6 +51,17 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+/* }}} */
+
+/* header {{{ */
+/* }}} */
+
+/* #slider {{{ */
+#slider .slide1 {
+    background: url(images/main-banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vw;
+}
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
