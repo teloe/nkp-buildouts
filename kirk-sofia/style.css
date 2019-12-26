@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     line-height: 2rem;
+    padding-bottom: 2rem;
 }
 .section-header {
     color: #0C8B93;
@@ -73,7 +74,6 @@ a.btn:hover {
     background-position: right center;
 }
  
-
 ul,ol{clear:both}
 .fl{float:left}
 .fr{float:right}
@@ -106,7 +106,7 @@ header .hide-dsktp .address,
 header .hide-dsktp .social {
     padding-bottom: 1rem;
 }
-header .hide-dsktp .social a {
+header .social a {
     font-size: 1.25rem;
     margin: 0 .35rem;
 }
@@ -166,6 +166,22 @@ header .hide-dsktp .phone {
 }
 /* }}} */
 
+/* .doctor {{{ */
+.doctor .grid-40, 
+.doctor .grid-60 {
+    text-align: center;
+}
+.doctor .grid-40 img {
+    box-shadow: -15px 15px #08B0BA;
+    margin-bottom: 4rem;
+}
+.doctor .btn {
+    background: none;
+    color: #0C8B93;
+    border: solid 1px #0C8B93;
+}
+/* }}} */
+
 /* NKP GLOBAL STYLES {{{ */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
@@ -201,7 +217,13 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         display: inline;
     }
 }
+@media only screen and (max-width: 1024px) {
+    nav {
+        transform: translateY(0) !important;
+    }
+}
 
+/* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
     .section-header {
         font-size: 2.5rem;
@@ -219,18 +241,47 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         font-size: 5rem;
         text-align: left;
     }
+    .doctor .grid-40,
+    .doctor .grid-60 {
+        text-align: left;
+    }
+    .doctor .btn-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; 
+    }
+    .doctor .btn:first-of-type {
+        margin-right: 1rem;
+    }
+    .doctor .btn {
+        flex: 1;
+    }
 }
+/* }}} */
 
+/* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
     nav {
-        background-image: linear-gradient(to right, #08B0B9, #0acad5);
         position: fixed;
         top: 0;
         width: 100%;
-        transition: top 0.3s;
+        box-shadow: 0 4px 5px -2px rgba(0,0,0,.25);
+        background-image: linear-gradient(to right, #08B0B9, #0acad5);
+        -moz-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    .stellarnav ul ul {
+        background-image: linear-gradient(to right, #08B0B9, #0acad5);
+    }
+    .stellarnav > ul > li > a {
+        padding: 20px 30px;
     }
     .stellarnav li a {
         color: #fff;
+    }
+    .stellarnav li a:hover {
+        color: #b8f0f4;
     }
     header {
         margin-top: 63px;
@@ -265,7 +316,11 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         height: 950px;
     }
 }
+/* }}} */
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
+    .doctor .btn {
+        font-size: 1.6vw;
+    }
 }
 
