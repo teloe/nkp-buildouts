@@ -8,13 +8,14 @@ jQuery(document).ready(function ($) {
         locationBtn: 'https://goo.gl/maps/MbXnmtWqKCaebmrm8'
     });
 
+    // sticky nav
     let lastScrollTop = 0;
     if ($(window).width() > 1024) {
         $(window).on('scroll', function () {
             let st = $(this).scrollTop();
             if (st > lastScrollTop) {
                 // downscroll code
-                $('nav').css('transform', 'translateY(-63px)');
+                $('nav').css('transform', 'translateY(-100%)');
             } else {
                 // upscroll code
                 $('nav').css('transform', 'translateY(0)');
@@ -22,6 +23,15 @@ jQuery(document).ready(function ($) {
             lastScrollTop = st;
         });
     }
+
+    $('#procs-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: true,
+        prevText: '',
+        nextText: '',
+        manualControls: '.slider-controls li'
+    });
 
     /* $('#slider').flexslider({
         animation: 'fade',
