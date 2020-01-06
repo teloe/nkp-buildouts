@@ -19,7 +19,7 @@
  </head>
  <body>
 
-     <div class="hide-on-tablet hide-on-desktop mobile-header">
+     <div class="mobile-header">
          <div class="grid-container">
              <div class="grid-100">
                  <div id="logo">
@@ -62,15 +62,15 @@
          <ul class="slides">
              <li>
                  <div class="slide1">
-                     <div class="hide-on-mobile">
-                         <div id="logo">
+                     <div class="hide">
+                         <div id="logo" data-aos="fade-right">
                              <a href="/" title="">
                                  <img class="img-resp" src="./images/logo.png" alt="Elsa Raskin, MD">
                              </a>
                          </div>
-                         <div class="top-info">
+                         <div class="top-info" data-aos="fade-left">
                              <a class="phone" href="tel:203-861-6620">203-861-6620</a>
-                             <p>2 1/2 Dearfiled Dr. Ste. 102 Greenwich, CT 06831</p>
+                             <p>2 1/2 Dearfield Dr. Ste. 102 Greenwich, CT 06831</p>
                              <div class="social">
                                  <a href=""><i class="fab fa-facebook-f"></i></a>
                                  <a href=""><i class="fab fa-instagram"></i></a>
@@ -79,11 +79,11 @@
                          </div>
                      </div>
                      <div class="grid-container">
-                         <div class="grid-50 tablet-grid-70 mobile-grid-100">
+                         <div class="grid-50 tablet-grid-60 mobile-grid-80">
                              <h1>Board Certified Plastic Surgeon</h1>
                              <h3>Castle Connolly top doctor</h3>
                              <h3>U.S. Training, Swiss Precision</h3>
-                             <a class="btn" href="">Schedule Your Consultation</a>
+                             <a class="btn ml-0" href="">Schedule Your Consultation</a>
                              <div class="assoc-wrapper">
                                  <img class="img-resp" src="./images/assoc1.png" alt="Association">
                                  <img class="img-resp" src="./images/assoc2.png" alt="Association">
@@ -100,20 +100,22 @@
          </ul>
      </div>
 
+     <div class="clr"></div>
+
      <section class="doctor">
-         <div class="bg-extend"></div>
          <div class="grid-container">
+             <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                 <img class="img-resp" src="./images/doctor.jpg" alt="Elsa Raskin, M.D.">
+             </div>
              <div class="grid-50 tablet-grid-50 mobile-grid-100">
                  <h2 class="sub">About The Doctor</h2>
                  <h1 class="section-header">Elsa Raskin, M.D.</h1>
                  <h3>Board Certified Plastic Surgeon</h3>
                  <p>Dr. Raskin grew up in Switzerland and earned her M.D. from the University of Geneva. After training in general surgery at New York University she studied ophthalmology at New York Eye and Ear Infirmary. She completed plastic surgery training at New York Presbyterian and a plastic surgery fellowship at the University of Pittsburgh Medical Center and an additional fellowship in oculoplastics at the University of Pennsylvania.</p>
                  <p>After practicing for five years in New York, Dr. Raskin relocated to Greenwich in 2006 and opened her current practice.</p>
-                 <img class="img-resp" src="./images/award.png" alt="Castle Connolly Top Doctors">
-                 <a class="btn" href="">Learn More About Dr. Raskin</a>
+                 <img class="img-resp ml-0" src="./images/award.png" alt="Castle Connolly Top Doctors">
+                 <a class="btn ml-0" href="">Learn More About Dr. Raskin</a>
              </div>
-             <!-- <div class="grid-50 tablet-grid-50 mobile-grid-100">
-             </div> -->
          </div>
      </section>
 
@@ -122,45 +124,66 @@
              <div id="procs-slider">
                  <ul class="slides">
                      <li>
+                         <div class="bg-extend"></div>
+                         <!-- <div class="grid-50 tablet-grid-50 mobile-grid-100 push-50 tablet-push-50">
+                             <img class="img-resp" src="./images/face.jpg" alt="Face Procedures">
+                         </div> -->
                          <div class="grid-50 tablet-grid-50 mobile-grid-100">
                              <h2 class="sub">Our Services</h2>
                              <h1 class="section-header">Face Surgery</h1>
                              <p>Genetics, aging, sun exposure and lifestyle factors can impact skin’s elasticity, causing it to sag and wrinkle. A facelift is an excellent option for patients who want to tighten their facial skin and reduce wrinkles. During this procedure, Dr. Elsa Raskin will make small incisions around your ears, temples, and chin to alter the underlying fat and muscle. Once she has removed any surplus fat, she will tighten the muscle and gently pull the skin back into place, removing any excess tissue.</p>
                              <p>This surgery is usually performed on an outpatient basis and can take two to three hours to complete.</p>
-                             <a class="btn" href="">Learn More</a>
+                             <a class="btn ml-0" href="">Learn More</a>
                          </div>
-                         <div class="bg-extend"></div>
                      </li>
                      <li>
-                         <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                         <div class="grid-50 tablet-grid-50 mobile-grid-100 push-50 tablet-push-50">
+                             <img class="img-resp" src="./images/body.jpg" alt="Body Procedures">
+                         </div>
+                         <div class="grid-50 tablet-grid-50 mobile-grid-100 pull-50 tablet-pull-50">
                              <h2 class="sub">Our Services</h2>
                              <h1 class="section-header">Body Contouring</h1>
                              <p>Body contouring helps patients transform various area of their body to improve their figure. This cosmetic procedure is highly sought after amongst patients who have lost weight, either naturally or using bariatric surgery, and therefore have been left with excess areas of fat and skin.</p>
                              <p>Stubborn areas of loose skin and fat pockets are typically fairly unresponsive to exercise, and they can only be improved using cosmetic surgery.</p>
-                             <a class="btn" href="">Learn More</a>
+                             <a class="btn ml-0" href="">Learn More</a>
                          </div>
-                         <div class="bg-extend"></div>
+                         <!-- <div class="bg-extend"></div> -->
                      </li>
                      <li>
-                         <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                         <div class="grid-50 tablet-grid-50 mobile-grid-100 push-50 tablet-push-50">
+                             <img class="img-resp" src="./images/breast.jpg" alt="Breast Procedures">
+                         </div>
+                         <div class="grid-50 tablet-grid-50 mobile-grid-100 pull-50 tablet-pull-50">
                              <h2 class="sub">Our Services</h2>
                              <h1 class="section-header">Breast Augmentation</h1>
                              <p>Dr. Elsa Raskin offers breast augmentation at our Greenwich, Connecticut practice. This popular cosmetic surgery procedure uses either saline or silicone* implants to enhance the shape and size of a woman’s breasts. Women choose this procedure in order to create a more proportional body, to make up for volume lost due to pregnancy, to make their breasts symmetrical, or simply because they want a more ample bosom.</p>
                              <p>Dr. Raskin is a leading breast augmentation provider who is highly regarded for her ability to help women achieve attractive, natural breasts.</p>
-                             <a class="btn" href="">Learn More</a>
+                             <a class="btn ml-0" href="">Learn More</a>
                          </div>
-                         <div class="bg-extend"></div>
+                         <!-- <div class="bg-extend"></div> -->
                      </li>
                      <li>
-                         <div class="grid-50 tablet-grid-50 mobile-grid-100">
+                         <div class="grid-50 tablet-grid-50 mobile-grid-100 push-50 tablet-push-50">
+                             <img class="img-resp" src="./images/non-surgical.jpg" alt="Non-surgical Procedures">
+                         </div>
+                         <div class="grid-50 tablet-grid-50 mobile-grid-100 pull-50 tablet-pull-50">
                              <h2 class="sub">Our Services</h2>
                              <h1 class="section-header">Non-Surgical Procedures</h1>
                              <p>Dr. Raskin is proud to be the only plastic surgeon in Greenwich, CT to offer Profound by Syneron-Candela. Profound is a handheld device that is clinically proven to reduce the appearance of deep wrinkles, saggy jowls, cellulite, and other negative side effects of ageing in the face, arms, and legs.</p>
                              <p>Profound by Syneron-Candela is a minimally invasive treatment that works by stimulating the production of collagen and elastin to naturally produce smoother, younger skin.</p>
-                             <a class="btn" href="">Learn More</a>
+                             <a class="btn ml-0" href="">Learn More</a>
                          </div>
-                         <div class="bg-extend"></div>
+                         <!-- <div class="bg-extend"></div> -->
                      </li>
+                 </ul>
+             </div>
+             <div class="clr"></div>
+             <div class="controls">
+                 <ul>
+                     <li>Face</li>
+                     <li>Body</li>
+                     <li>Breast</li>
+                     <li>Non-Surgical</li>
                  </ul>
              </div>
          </div>
