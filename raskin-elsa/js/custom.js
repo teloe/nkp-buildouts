@@ -33,7 +33,12 @@ jQuery(document).ready(function($) {
         manualControls: '.controls ul li',
         prevText: '',
         nextText: ''
+    });
 
+    $('#testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true
     });
 
 });
