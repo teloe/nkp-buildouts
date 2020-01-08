@@ -17,10 +17,10 @@ Template: nkpv2
 html{box-sizing:border-box}
 *,::before,::after{box-sizing:inherit}
 body{width:100%;overflow-x:hidden;font-family:"proxima-nova",sans-serif;font-size:16px;font-weight:300;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-section,nav,#slider,footer{max-width:2135px;margin:0 auto}
+#content,#slider,footer,nav,section{max-width:2135px;margin:0 auto}
 h1,h2,h3,h4,h5,h6{font-family:"playfair-display",serif;font-weight:400}
 .section-header{font-size:2.3rem;line-height:1.25;padding-bottom:1rem;color:#000;letter-spacing:2px;text-transform:uppercase}
-.sub{font-size:1.8rem;color:#CCC;font-weight:900;padding-bottom:1rem}
+.sub,#main #content h3{font-size:1.8rem;color:#CCC;font-weight:900;padding-bottom:1rem}
 p{line-height:2rem;padding-bottom:2rem}
 a,a:visited,a:link{color:#000;text-decoration:none;outline:none;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 a:hover{text-decoration:none;outline:none}
@@ -59,57 +59,23 @@ ul,ol{clear:both}
 .stellarnav li a{text-transform:uppercase;font-family:"gill-sans-nova",sans-serif;color:rgba(0,0,0,.6)}
 .stellarnav li a:hover{color:#000}
 
-#slider .slide1 {
-    background: url(images/banner-main.jpg)no-repeat center;
-    background-size: cover
-}
+#slider .slide1{background:url(images/banner-main.jpg)no-repeat center;background-size:cover}
+#slider .slide1 .hide{display:none}
+#slider .slide1 .assoc-wrapper{display:none}
+#slider .slide1 .grid-container{padding:4rem 15px}
+#slider .slide1 h1{font-size:2.5rem;letter-spacing:2px;line-height:1.25;padding-bottom:1rem;text-shadow:0 0 10px rgba(255,255,255,.5);text-transform:uppercase}
+#slider .slide1 h3:first-of-type{text-transform:uppercase}
+#slider .slide1 h3{font-size:1.2rem;font-weight:100;font-family:"gill-sans-nova",sans-serif}
+#slider .slide1 .btn{margin-left:0;font-size:.93rem}
+#slider.internal .slide1 .grid-container{padding:6rem 15px}
+#slider.internal .slide1{background:url(images/banner-internal.jpg) no-repeat center;background-size:cover}
+#slider.internal .slide1 h1{font-size:1.3rem}
 
-#slider .slide1 .hide {
-    display: none
-}
-
-#slider .slide1 .assoc-wrapper {
-    display: none
-}
-
-#slider .slide1 .grid-container {
-    padding: 4rem 15px
-}
-
-#slider .slide1 h1 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    line-height: 1.25;
-    padding-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(255, 255, 255, .5);
-    text-transform: uppercase
-}
-
-#slider .slide1 h3:first-of-type {
-    text-transform: uppercase
-}
-
-#slider .slide1 h3 {
-    font-size: 1.2rem;
-    font-weight: 100;
-    font-family: "gill-sans-nova", sans-serif
-}
-
-#slider .slide1 .btn {
-    margin-left: 0;
-    font-size: .93rem
-}
-
-#slider.internal .slide1 {
-    background: url(images/banner-internal.jpg) no-repeat center;
-    background-size: cover;
-}
-#slider .slide1 .grid-container {
-    padding: 6rem 15px
-}
-#slider.internal .slide1 h1 {
-    font-size: 1.3rem;
-}
+#main{padding:6rem 0}
+#main #content h1,h2,h3,h4,h5,h6{text-transform:uppercase}
+#main #content h1,h2{font-size:2.3rem;line-height:1.25;padding-bottom:2rem}
+#main #content h3{text-transform:none}
+#main #content .gray-bg{background:#F1F1F1;padding:4rem}
 
 .doctor{margin:6rem auto}
 .doctor .grid-50{padding:2rem 15px}
@@ -211,6 +177,7 @@ input,select,textarea{font-size:inherit;font-family:inherit;-webkit-transition:a
     .sub{font-size:2.25rem}
     #slider .slide1 .grid-container{display:flex}
     #slider .slide1 .btn{font-size:1rem}
+    #slider.internal .slide1 h1{font-size:2rem}
     .doctor .grid-container{position:relative}
     .doctor .grid-50:first-of-type img{background:none;position:absolute;left:-10%;max-width:60%;padding:15px}
     .procs .flex-direction-nav{display:none}
@@ -242,6 +209,7 @@ input,select,textarea{font-size:inherit;font-family:inherit;-webkit-transition:a
     nav{background:#000;position:fixed;top:0;right:0;left:0;width:100%;margin:0 auto;z-index:9999;-moz-transition:all .3s ease;-webkit-transition:all .3s ease;transition:all .3s ease}
     .stellarnav ul li a{color:rgba(255,255,255,.75)}
     .stellarnav ul ul{background:#000}
+    .stellarnav > ul > li > a{padding:20px 30px}
     .stellarnav ul li a:hover{color:#fff}
     #slider{margin-top:64px;position:relative}
     #slider .slide1 .hide{display:block}
@@ -254,6 +222,8 @@ input,select,textarea{font-size:inherit;font-family:inherit;-webkit-transition:a
     #slider .slide1 h3{font-size:1.5rem}
     #slider .slide1 .assoc-wrapper{margin-top:2rem;display:flex;flex-flow:row wrap;justify-content:space-between}
     #slider .slide1 .assoc-wrapper img{margin:1rem}
+    #slider.internal .slide1 .grid-container{height:510px}
+    #slider.internal .slide1 h1{font-size:3rem}
     .about .section-header{font-size:3.2rem}
     .testimonials{margin:6rem auto}
     .testimonials .grid-container{padding:0 15px}
@@ -271,6 +241,7 @@ input,select,textarea{font-size:inherit;font-family:inherit;-webkit-transition:a
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     #slider .slide1 .grid-container{height:600px;align-items:center}
+    #slider.internal .slide1 .grid-container{height:350px}
     .testimonials .quote{font-size:15rem}
     .testimonials .quote:first-of-type{top:-15px;left:0}
     .testimonials .quote:last-of-type{bottom:0;right:15px}
