@@ -25,6 +25,15 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.7rem;
+    padding-bottom: 1.5rem;
+}
 
 a,
 a:visited,
@@ -32,9 +41,9 @@ a:link {
     /* color: #1174a6; */
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 a:hover {
     /* color: #09557c; */
@@ -44,12 +53,51 @@ a:hover {
 
 .btn {
     background: #7A0B3B;
+    line-height: 1.25;
+    /* border: solid 1px #7A0B3B; */
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
     color: #fff;
     text-align:center;
-    padding: 1rem;
     display:block;
-    max-width:300px;
+    margin: auto;
+    text-transform: uppercase;
+    max-width:320px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
+.btn::before {
+    content: '';
+    position: absolute;
+    border: solid 1px #fff;
+    left: 6px;
+    right: 6px;
+    top: 6px;
+    bottom: 6px;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    /* background: transparent; */
+    background: #0A1721;
+    /* color: #7A0B3B; */
+}
+.btn:hover::before {
+    left: -8px;
+    right: -8px;
+    top: -8px;
+    bottom: -8px;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    /* opacity: 0; */
+    border: solid 2px #7A0B3B;
+}
+
 
 ul,ol{clear:both}
 .fl{float:left}
@@ -62,6 +110,93 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
+/* }}} */
+
+/* .mobile-header {{{ */
+.mobile-header {
+    /* background: #0A1721; */
+}
+.mobile-header .grid-container {
+    padding: 30px 15px;
+    text-align: center;
+}
+.mobile-header .contact-info {
+    margin: 1rem 0;
+}
+.mobile-header .phone {
+    font-weight: 900;
+    color: #790A3B;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+/* }}} */
+
+/* nav {{{ */
+nav {
+    background: #0A1721;
+}
+.stellarnav > a,
+.stellarnav li a {
+    color: #fff !important;
+}
+.stellarnav > a span {
+    display: none;
+}
+/* }}} */
+
+/* #slider {{{ */
+#slider .slide1 {
+    background: url(images/banner-main.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider .grid-container {
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+#slider h1 {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+#slider .top-info {
+    display: none;
+}
+#slider .btn {
+    margin-bottom: 4rem;
+}
+#slider .btn:hover {
+    color: #fff;
+}
+/* }}} */
+
+/* .welcome {{{ */
+/* }}} */
+
+/* .doctors {{{ */
+/* }}} */
+
+/* .med-derm {{{ */
+/* }}} */
+
+/* .procs {{{ */
+/* }}} */
+
+/* .services {{{ */
+/* }}} */
+
+/* .gallery {{{ */
+/* }}} */
+
+/* .testimonials {{{ */
+/* }}} */
+
+/* #contact {{{ */
+/* }}} */
+
+/* footer {{{ */
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
@@ -94,12 +229,26 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 421px) {
+    .stellarnav > a span {
+        display: inline;
+    }
 }
 
+/* min-width: 768px {{{ */
+@media only screen and (min-width: 768px) {
+    .btn {
+        max-width: 450px;
+    }
+}
+/* }}} */
+
+/* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
 }
+/* }}} */
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+/* min-width: 1025px {{{ */
+@media only screen and (min-width: 1025px) {
 }
-
+/* }}} */

@@ -2,16 +2,16 @@ jQuery(document).ready(function($) {
 
     $('.stellarnav').stellarNav({
         showArrows:false,
-        breakpoint:960,
-        menuLabel:'Menu',
-        phoneBtn:'',
-        locationBtn:''
+        breakpoint:1024,
+        menuLabel:'<span>Menu</span>',
+        phoneBtn:'603-577-5559',
+        locationBtn:'https://goo.gl/maps/mBZf7AxxB7hTLBhj9'
     });
 
-    $('#slider').flexslider({
+    /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false
-    });
+    }); */
 
 });
