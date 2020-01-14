@@ -30,10 +30,10 @@ jQuery(document).ready(function($) {
     checkWidth();
     $(window).resize(checkWidth);
 
-    /* $('#slider').flexslider({
+    $('#testimonials-slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false
-    }); */
+    });
 
 });
