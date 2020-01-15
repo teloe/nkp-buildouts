@@ -273,15 +273,12 @@
 
     <!-- AOS initialise -->
     <script type="text/javascript">
-        /* AOS.init({
+        AOS.init({
             duration: 1000,
             disable: 'mobile'
-        }) */
+        })
         jQuery(function () {
-            AOS.init({
-                duration: 1000,
-                disable: 'mobile'
-            });
+            AOS.init();
         });
         jQuery(window).on('load', function () {
             AOS.refresh();
