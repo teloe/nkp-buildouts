@@ -52,6 +52,36 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
+/* section {{{ */
+/* }}} */
+
 /* NKP GLOBAL STYLES {{{ */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
@@ -82,11 +112,20 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
+/* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
 }
+/* }}} */
 
+/* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
 }
+/* }}} */
+
+/* min-width: 1025px {{{ */
+@media only screen and (min-width: 1025px) {
+}
+/* }}} */
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 }
