@@ -21,13 +21,33 @@ jQuery(document).ready(function($) {
         controlNav: true,
     });
 
-    /* if ( $(window).width() >767 ) {
-        $('#doctors-slider').addClass('doctors-slider');
-    } */
-
-    /* $('.doctors-slider').flexslider({
+    $('#doctors-slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false,
-    }); */
+        slideshowSpeed: 10000
+    });
+
+    $('#testimonials-slider').flexslider({
+        animation: 'slide',
+        directionNav: false,
+        controlNav: false
+    });
+
+    /* function checkWidth() {
+        if ( $(window).width() > 767 ) {
+            $('.doctors > .grid-container > div').addClass('doctors-slider');
+            $('.doctors-slider').flexslider({
+                animation: 'fade',
+                directionNav: false,
+                controlNav: false,
+            });
+        }
+        else {
+            $('.doctors > .grid-container > div').removeClass('doctors-slider');
+        }
+    }
+    checkWidth();
+    $(window).resize(checkWidth); */
+
 });
