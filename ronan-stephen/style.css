@@ -37,8 +37,8 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "bodoni-urw", serif;
     font-weight: 300;
 }
-p,li {
-    padding-bottom: 1rem;
+p {
+    padding-bottom: 2rem;
     font-weight: 300;
     line-height: 1.625rem;
 }
@@ -58,12 +58,45 @@ a:hover {
     text-decoration: none;
     outline: none;
 }
+.btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    padding: 1rem 2rem;
+    text-align: center;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1)!important;
+}
+.btn::before {
+    content: '';
+    background: #00B6CA;
+    border: solid 2px transparent;
+    height: 11px;
+    width: 11px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    display: block;
+    /* transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    position: absolute;
+}
+.btn:hover {
+    color: #00B6CA;
+}
+.btn:hover::before {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: solid 2px #00B6CA;
+}
 .social {
     margin-bottom: 1rem;
     text-align:center;
 }
 .social a {
-    /* color: #00B6CA; */
     display:inline-block;
     font-size:1.25rem;
     margin: 0 .3rem;
@@ -71,7 +104,7 @@ a:hover {
 
 @keyframes slideDown {
     0% {
-        transform: translateY(-70px);
+        transform: translateY(-100%);
     }
     100% {
         transform: translateY(0);
@@ -172,27 +205,105 @@ header .logo {
 /* }}} */
 
 /* #slider {{{ */
-#slider .slide1 {
+#slider .slide1,
+#slider .slide2, 
+#slider .slide3 {
     background:url(images/banner-main.jpg) no-repeat center;
     background-size:cover;
 }
-#slider .slide1 .grid-container {
+#slider .slide1 .grid-container, 
+#slider .slide2 .grid-container, 
+#slider .slide3 .grid-container {
     height: 450px;
     display:flex;
     align-items:center;
 }
-#slider .slide1 h1 {
+#slider .slide1 h1,
+#slider .slide2 h1,
+#slider .slide3 h1 {
     color: #fff;
     font-family: "proxima-nova", sans-serif;
-    font-size:2rem;
-    line-height:2.25rem;
+    font-size:8.5vw;
+    line-height: 1.2;
+}
+#slider .flex-control-nav {
+    position: relative;
+    text-align: center;
+    z-index: 9;
+    top: -70px;
+    padding: 0;
+}
+#slider .flex-control-nav li {
+    display: inline-block;
+    margin: 0 .5rem;
+    padding: 0;
+}
+#slider .flex-control-nav a {
+    text-indent: -9999px;
+    display: block;
+    background: rgba(0,0,0,.7);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+#slider .flex-control-nav a.flex-active {
+    background: #00B6CA;
 }
 /* }}} */
 
-/* section {{{ */
+/* .about {{{ */
+.about h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.about p a {
+    color: #000;
+    font-weight: 700;
+}
 /* }}} */
 
-/* section {{{ */
+/* .doctors {{{ */
+.doctors {
+    margin: 4rem 0;
+}
+.doctors h2 {
+    font-size: 3.75rem;
+    line-height: 1;
+    margin: 2rem 0 1rem;
+}
+.doctors h3 {
+    font-family: "proxima-nova", sans-serif;
+    color: #00B6CA;
+    font-size: 2rem;
+    line-height: 1.25;
+    /* padding-bottom: 1rem; */
+}
+.doctors h3::after {
+    content: '';
+    display: block;
+    background: #00B6CA;
+    height: 2px;
+    width: 85%;
+    margin: 1.5rem 0 2rem;
+}
+.doctors .mobile-bg {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+.doctors .grid-55 {
+    margin-bottom: 3rem;
+}
+/* .doctors #doctors-slider li:nth-of-type(1) .content {
+    background: url(images/rankin.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+.doctors #doctors-slider li:nth-of-type(2) .content {
+    background: url(images/ronan.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+} */
 /* }}} */
 
 /* section {{{ */
@@ -239,15 +350,49 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     iframe{width:100%;height:280px}
     .patient-single{width:100%!important}
 }
+@media only screen and (min-width: 400px) {
+    #slider .slide1 h1,
+    #slider .slide2 h1,
+    #slider .slide3 h1 {
+        font-size:2rem;
+    }
+}
 
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
-    #slider .slide1 .grid-container {
+    #slider .slide1 .grid-container, 
+    #slider .slide2 .grid-container,
+    #slider .slide3 .grid-container {
         height: 686px;
     }
-    #slider .slide1 h1 {
+    #slider .slide1 h1, 
+    #slider .slide2 h1,
+    #slider .slide3 h1 {
         font-size:3rem;
-        line-height:3.25rem;
+        /* line-height:3.25rem; */
+    }
+    .doctors h2,
+    .doctors p {
+        color: #fff;
+    }
+    .doctors .mobile-bg {
+        display: none;
+    }
+    .doctors .doctors-slider .grid-55 {
+        float: none;
+    }
+    .doctors .doctors-slider li .content {
+        padding: 4rem 0;
+    }
+    .doctors .doctors-slider li:nth-of-type(1) .content {
+        background: url(images/rankin.jpg) no-repeat center;
+        background-size: cover;
+        background-position-x: -30rem;
+    }
+    .doctors .doctors-slider li:nth-of-type(2) .content {
+        background: url(images/ronan.jpg) no-repeat center;
+        background-size: cover;
+        background-position-x: -30rem;
     }
 }
 /* }}} */
@@ -277,11 +422,14 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     header .top-info .social a {
         color: #fff;
     }
+    header .top-info a:hover {
+        opacity: .75;
+    }
     header .top-info .phone,
     header .top-info .address {
         color: #fff;
         display: inline-block;
-        margin-left: 1rem;s
+        margin-left: 1rem;
     }
     header .top-info .address {
         padding-bottom: 0;
@@ -346,12 +494,16 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     #slider {
         margin-top: 100px;
     }
-    #slider .slide1 .grid-container {
+    #slider .slide1 .grid-container, 
+    #slider .slide2 .grid-container,
+    #slider .slide3 .grid-container {
         height: 900px;
     }
-    #slider .slide1 h1 {
+    #slider .slide1 h1, 
+    #slider .slide2 h1,
+    #slider .slide3 h1 {
         font-size:3.4rem;
-        line-height:3.75rem;
+        /* line-height:3.75rem; */
     }
 }
 /* }}} */
@@ -361,4 +513,11 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         padding: 30px 15px;
     }
 }
+
+/* @media only screen and (min-width: 800px) {
+    .doctors .doctors-slider li:nth-of-type(2) .content,
+    .doctors .doctors-slider li:nth-of-type(2) .content {
+        background-position-x: center;
+    }
+} */
 

@@ -9,9 +9,8 @@ jQuery(document).ready(function($) {
     });
 
     $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 350) {
-            $('#nav-wrapper').addClass('fixed');
-        } else {
+        $('#nav-wrapper').addClass('fixed');
+        if ($(this).scrollTop() < 300) {
             $('#nav-wrapper').removeClass('fixed');
         }
     });
@@ -19,6 +18,16 @@ jQuery(document).ready(function($) {
     $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
     });
+
+    /* if ( $(window).width() >767 ) {
+        $('#doctors-slider').addClass('doctors-slider');
+    } */
+
+    /* $('.doctors-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: false,
+    }); */
 });
