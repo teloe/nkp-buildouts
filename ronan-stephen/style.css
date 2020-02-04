@@ -76,7 +76,7 @@ header .logo{margin:2rem 0;text-align:center}
 
 #main{padding-top:80px}
 
-.about{margin-bottom:8rem}
+.about{margin: 2rem 0 8rem}
 .about h1{font-size:2.5rem;padding-bottom:1.5rem}
 .about p a{color:#000;font-weight:700}
 .about .content{position:relative}
@@ -173,6 +173,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     #slider .slide1 .grid-container,#slider .slide2 .grid-container,#slider .slide3 .grid-container{height:686px}
     #slider .slide1 h1,#slider .slide2 h1,#slider .slide3 h1{font-size:3rem}
     #slider.internal .slide1 .grid-container{height:550px}
+    .about h1{font-size:3.75rem}
     .doctors h2,.doctors p{color:#fff}
     .doctors h3::after{background:#fff}
     .doctors .mobile-bg{display:none}
