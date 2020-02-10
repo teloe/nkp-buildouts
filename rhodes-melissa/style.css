@@ -320,6 +320,40 @@ header .phone {
 .procs {
     margin: 4rem 0;
 }
+.procs .grid-container {
+    max-width: 1710px;
+}
+.procs .sub {
+    color: var(--dark-green-text);
+    font-size:1.25rem;
+    text-align:center;
+    padding: 1.5rem 0 .5rem;
+}
+.procs h2 {
+    font-size:1.875rem;
+    color: var(--dark-gray-text);
+    text-align:center;
+    padding-bottom: 1rem;
+}
+.procs p {
+    color: var(--dark-gray-text);
+}
+.procs .btn {
+    margin-top: 1rem;
+}
+.procs .content {
+    margin-bottom: 4rem;
+}
+.procs img {
+    display: block;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    max-width: none;
+}
+.procs .flex {
+    display:flex;
+}
+
 /* }}} */
 
 /* section {{{ */
@@ -436,6 +470,16 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .welcome .model {
         right: 30px;
         bottom: 30px;
+    }
+    .procs .content {
+        display:block;
+        /* width: 15%; */
+    }
+    .procs img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        position: absolute;
     }
 }
 /* }}} */
