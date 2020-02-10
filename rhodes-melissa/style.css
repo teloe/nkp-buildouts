@@ -472,8 +472,11 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         bottom: 30px;
     }
     .procs .content {
-        display:block;
-        /* width: 15%; */
+        width: 15%;
+        filter: grayscale(100%);
+    }
+    .procs .content.active {
+        width: 100%;
     }
     .procs img {
         display: block;
@@ -484,12 +487,14 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 /* }}} */
 
+/* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
     #slider .slide1,
     #slider .slide2 {
         background-position-x:center; 
     }
 }
+/* }}} */
 
 /* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
