@@ -22,8 +22,9 @@ jQuery(document).ready(function($) {
         controlNav: true,
     });
 
-    $('.procs .content').on('click', function() {
-        $(this).removeClass('active');
+    function toggleAccordion() {
+        $('.procs .content').removeClass('active');
         $(this).addClass('active');
-    });
+    }
+    $('.procs .content').on('click', toggleAccordion);
 });
