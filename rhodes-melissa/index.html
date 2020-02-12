@@ -220,28 +220,46 @@
     <section class="promo">
         <div class="grid-container">
             <div class="grid-50 tablet-grid-50">
-                <img class="img-resp" src="./images/products.jpg" alt="Products">
-                <h3>Products</h3>
+                <a href="" class="content">
+                    <img class="img-resp" src="./images/products.jpg" alt="Products">
+                    <h3>Products</h3>
+                </a>
             </div>
             <div class="grid-50 tablet-grid-50">
-                <img class="img-resp" src="./images/gift-cards.jpg" alt="Gift Cards">
-                <h3>Gift Cards</h3>
+                <a href="" class="content">
+                    <img class="img-resp" src="./images/gift-cards.jpg" alt="Gift Cards">
+                    <h3>Gift Cards</h3>
+                </a>
             </div>
             <div class="grid-50 tablet-grid-50">
-                <img class="img-resp" src="./images/specials.jpg" alt="Specials">
-                <h3>Specials</h3>
+                <a href="" class="content">
+                    <img class="img-resp" src="./images/specials.jpg" alt="Specials">
+                    <h3>Specials</h3>
+                </a>
             </div>
             <div class="grid-50 tablet-grid-50">
-                <img class="img-resp" src="./images/services.jpg" alt="Services">
-                <h3>Services</h3>
+                <a href="" class="content">
+                    <img class="img-resp" src="./images/services.jpg" alt="Services">
+                    <h3>Services</h3>
+                </a>
             </div>
         </div>
     </section>
 
     <div id="contact">
         <div class="grid-container">
-            <div class="grid-100">
-                <h1>Sign up for our newsletter</h1>
+            <div class="grid-100 tablet-grid-80 tablet-prefix-10">
+                <h1 class="tac">Sign up for our newsletter</h1>
+                <form action="/#wpcf7-f31-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                <div class="footer-form">
+                <div class="grid-25 tablet-grid-100 mobile-grid-100"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*"></span></div>
+                <div class="grid-25 tablet-grid-100 mobile-grid-100"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                <div class="grid-25 tablet-grid-100 mobile-grid-100 grid-parent form-agree">
+                <span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="agree" value="1" aria-invalid="false" class="checkbox-inline"></span></span></span>* I agree to the <a href="/terms-of-use/">terms of use</a>
+                </div>
+                <div class="grid-25 tablet-grid-100 mobile-grid-100 "><button class="wpcf7-form-control wpcf7-submit btn">Send Message</button><span class="ajax-loader"></span></div>
+                </div>
+        </form>
             </div>
         </div>
     </div>
@@ -249,7 +267,9 @@
     <footer>
         <div class="grid-container">
             <div class="grid-50">
-                <img class="img-resp" src="./images/logo1.png" alt="Ona Skincare">
+                <div>
+                    <img class="img-resp" src="./images/logo1.png" alt="Ona Skincare">
+                </div>
                 <i class="fas fa-map-marker-alt"></i><span>6592 Highway 100, Suite #1, Nashville, TN 37205</span>
                 <p><strong>615-353-8444</strong></p>
                 <i class="fas fa-map-marker-alt"></i><span>1013 Fatherland Street Nashville, TN 37206</span>
@@ -277,19 +297,6 @@
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script type="text/javascript" src="node_modules/lax.js/lib/lax.min.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            lax.setup() // init
-
-            const updateLax = () => {
-                lax.update(window.scrollY)
-                window.requestAnimationFrame(updateLax)
-            }
-
-            window.requestAnimationFrame(updateLax)
-        }
-    </script>
 
 </body>
 </html>
