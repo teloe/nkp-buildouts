@@ -269,6 +269,51 @@ header .phone {
 }
 /* }}} */
 
+/* internal {{{ */
+#slider.internal .grid-container {
+    height: 250px;
+    min-height:auto;
+}
+#slider.internal .slide1 {
+    background:url(images/banner-internal.jpg) no-repeat center;
+    background-size:cover;
+    color: var(--dark-gray-text);
+}
+#main {
+    padding: 5rem 0;
+}
+#main #content {
+    color: var(--dark-gray-text);
+}
+#main #content h2 {
+    font-size: 1.875rem;
+    padding-bottom: 2rem;
+}
+#sidebar .sb-form {
+    border: solid 2px var(--green-bg);
+    padding: 30px 15px;
+}
+#sidebar .sb-form * {
+    color: var(--dark-gray-text);
+    font-weight:400;
+    text-transform:uppercase;
+}
+#sidebar .sb-form h2 {
+    font-size: 1.875rem;
+    padding-bottom: 2rem;
+    text-align:center;
+}
+#sidebar .sb-form button {
+    margin-top: 2rem;
+} 
+#sidebar .sb-form .agreement {
+    text-align:center;
+}
+#sidebar .promo {
+    margin-top: 3rem;
+}
+/* }}} */
+
 /* .newsletter {{{ */
 .newsletter {
     margin: 4rem 0;
@@ -549,6 +594,25 @@ textarea {
     box-sizing: border-box
 }
 
+.sb-form input[type='text'],
+.sb-form input[type='email'],
+.sb-form input[type='tel'],
+.sb-form input[type='url'],
+.sb-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--dark-gray-text);
+    color: var(--dark-gray-text);
+    font-weight: 700;
+    background: transparent;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box
+}
+.sb-form textarea {
+    height: 120px;
+}
+
 /* .contact-form input[type='submit'],
 .contact-form input[type='submit'][disabled] {
     width: 100px;
@@ -569,10 +633,6 @@ textarea {
     background: #96bdda;
     border: 2px solid #1174a6
 } */
-
-.contact-form textarea {
-    height: 120px;
-}
 
 .contact-form ::-webkit-input-placeholder {
     color: #fff
@@ -636,6 +696,9 @@ textarea {
     #slider .btn {
         margin: 2rem 1rem 0 0;
         flex: 1;
+    }
+    #slider.internal .grid-container {
+        height: 370px;
     }
     .welcome {
         background:url(images/welcome-bg.jpg) no-repeat center;
@@ -812,7 +875,15 @@ textarea {
     #contact h1 {
         font-size:3.4rem;
     }
-    
+    #sidebar .promo h3 {
+        font-size:1rem;
+        padding: .8rem;
+        bottom: 1.5rem;
+    }
+    #sidebar .promo .content::after {
+        border-right: solid 1rem rgba(152,208,209,.2);
+        border-bottom: solid 1rem rgba(152,208,209,.2);
+    }
     
 }
 /* }}} */
