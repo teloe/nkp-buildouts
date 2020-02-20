@@ -184,10 +184,13 @@
     </section>
 
     <section class="procs">
-        <div class="grid-container">
+        <div class="hide-on-tablet hide-on-desktop">
+            <img class="img-resp" src="./images/treatments-bg.jpg" alt="Treatments">
+        </div>
+        <div class="grid-container grid-parent">
             <div class="grid-40 tablet-grid-50 mobile-grid-100">
                 <div class="flex">
-                    <div class="content">
+                    <div class="content active">
                         <h3>MLS Laser Treatments</h3>
                         <p>for Neuropathy, Foot Pain, and Arthritis Effectively treats foot and ankle conditions such as plantar fasciitis, neuromas, neuropathies, much more.</p>
                     </div>
@@ -206,27 +209,28 @@
 
     <section class="edu">
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                <img class="img-resp" src="./images/heels.jpg" alt="High Heels">
-                <h3 class="sub">From the Doctor's Front Desk</h3>
-                <p>Hight Heels Hints for Healthy Happy Feet</p>
-                <a class="btn" href="">Learn More</a>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 tac">
+                <img class="img-resp" src="./images/high-heels.jpg" alt="High Heels">
+                <div class="text">
+                    <h3 class="sub">From the Doctor's Front Desk</h3>
+                    <p>Hight Heels Hints for Healthy Happy Feet</p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
             </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                <img class="img-resp" src="./images/patient-edu.jpg" alt="Patient Education">
-                <h3 class="sub">Patient Education</h3>
-                <p>Learn more about your diagnosies in our award-winning patient education library</p>
-                <a class="btn" href="">Learn More</a>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 tac">
+                <img class="img-resp" src="./images/woman-edu.jpg" alt="Patient Education">
+                <div class="text">
+                    <h3 class="sub">Patient Education</h3>
+                    <p>Learn more about your diagnosies in our award-winning patient education library</p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
     
     <section id="contact">
         <div class="grid-container">
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
-                <h1>Contact Us</h1>
-            </div>
-            <div class="grid-50 tablet-grid-50 mobile-grid-100">
+            <div class="grid-40 tablet-grid-50 mobile-grid-100 push-60 tablet-push-50">
                 <h1>Patient Testimonials</h1>
                 <div id="testimonials-slider">
                     <ul class="slides">
@@ -235,17 +239,33 @@
                             <p>- Matt W.</p>
                         </li>
                         <li>
-                            <p>“I have seen Dr. Wright four times and each experience has been great. He has explained the situation clearly, and I've always left with great results. I had an issue with billing, and wanted to find out some more information, he and his office staff took care of it with practically no questions asked. I would recommend him to anyone looking for a pediatrist.”</p>
-                            <p>- Matt W.</p>
+                            <p>“Velit tempor id esse cupidatat excepteur laborum duis cillum ea fugiat qui excepteur reprehenderit exercitation. Nisi incididunt commodo incididunt dolore deserunt qui adipisicing minim adipisicing labore minim officia. Nostrud tempor aliqua qui aliquip do. Irure deserunt minim dolor in. Non deserunt amet do amet nostrud minim id ut do irure.”</p>
+                            <p>- Some B.</p>
                         </li>
                         <li>
-                            <p>“I have seen Dr. Wright four times and each experience has been great. He has explained the situation clearly, and I've always left with great results. I had an issue with billing, and wanted to find out some more information, he and his office staff took care of it with practically no questions asked. I would recommend him to anyone looking for a pediatrist.”</p>
-                            <p>- Matt W.</p>
+                            <p>“In laboris irure adipisicing cupidatat ex quis pariatur in fugiat labore minim. Consectetur commodo elit deserunt commodo exercitation duis qui ipsum aliquip occaecat ex adipisicing ipsum occaecat. Veniam veniam irure enim labore ut do qui quis aliqua esse laboris. Incididunt dolor irure ullamco non veniam eiusmod in enim Lorem reprehenderit aliqua.”</p>
+                            <p>- John D.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="clr"></div>
                 <a class="btn" href="">Read More Reviews</a>
+            </div>
+            <div class="grid-50 tablet-grid-50 mobile-grid-100 pull-40 tablet-pull-50">
+                <h1>Contact Us</h1>
+                <form action="/#wpcf7-f31-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                    <div class="footer-form">
+                        <div class="grid-100"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name"></span></div>
+                        <div class="grid-100 tablet-grid-100 mobile-grid-100"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span></div>
+                        <div class="grid-100 tablet-grid-100 mobile-grid-100"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone"></span></div>
+                        <div class="grid-100"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span></div>
+                        <div class="grid-100 agreements"><span class="wpcf7-form-control-wrap acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance" value="1" aria-invalid="false"><span></span></span></span></span> I agree to the <a href="/terms-of-use/">Terms of Use</a></div>
+                        <!-- <div> -->
+                            <button type="submit" class="wpcf7-form-control wpcf7-submit btn">Send Message</button>
+                        <!-- </div> -->
+                    </div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                </form>
             </div>
         </div>
     </section>

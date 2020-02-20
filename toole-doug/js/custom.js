@@ -15,7 +15,13 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('#slider').flexslider({
+    function toggleActive() {
+        $('.procs .content').removeClass('active');
+        $(this).addClass('active');
+    }
+    $('.procs .content').on('click', toggleActive);
+
+    $('#testimonials-slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false,
