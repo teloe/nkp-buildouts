@@ -32,19 +32,29 @@ a:link {
     color: #1a7ae1;
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 a:hover {
     color: #1667be;
     text-decoration: none;
     outline: none;
 }
+.sub {
+    color: #1a7ae1;
+    font-size:1.5rem;
+    padding-bottom:1rem;
+}
+p {
+    line-height:2rem;
+    padding-bottom: 1.5rem;
+}
 .btn {
     text-align:center;
     display:inline-block;
-    padding: 1rem;
+    width:210px;
+    padding: 1.25rem;
     border-radius: 50px;
     border: solid 2px #1a7ae1;
     background:#fff;
@@ -83,6 +93,8 @@ header .top-info p:nth-of-type(2) {
 }
 header p {
     color: #4e4e4e;
+    line-height:1.5rem;
+    padding-bottom:0;
 }
 header i {
     color: #1a7ae1;
@@ -90,21 +102,224 @@ header i {
 /* }}} */
 
 /* nav {{{ */
+nav .grid-container {
+    padding: 15px;
+}
+.stellarnav.mobile {
+    border: solid 1px rgba(0,0,0,.2);
+}
+.stellarnav li a {
+    color: #4e4e4e;
+}
+.stellarnav li {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.stellarnav li:hover,
+.stellarnav li.open {
+    background: #d6e7fa;
+}
+.stellarnav.mobile .dd-toggle {
+    height: 55px;
+    width: 55px;
+}
+.stellarnav.mobile .close-menu {
+    width:100%;
+}
+.stellarnav.mobile .third {
+    width: 33.333%;
+}
+.stellarnav.mobile > a:hover {
+    background:#E7F1FC;
+}
+.stellarnav .call-btn-mobile, 
+.stellarnav .close-menu, 
+.stellarnav .location-btn-mobile, 
+.stellarnav .menu-toggle {
+    color: #4e4e4e;
+    padding: 25px 0;
+}
+.stellarnav.mobile ul {
+    background:#E7F1FC;
+}
 /* }}} */
 
-/* section {{{ */
+/* #banner-main {{{ */
+#banner-main {
+    background:url(images/banner-main.jpg) no-repeat top center;
+    background-size:cover;
+}
+#banner-main .grid-container {
+    height: 60vw;
+    display: flex;
+    align-items:center;
+}
+#banner-main .banner-content {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+#banner-main .banner-content h1 {
+    font-size: 5.2vw;
+}
 /* }}} */
 
-/* section {{{ */
+/* .bottom-info {{{ */
+.bottom-info .grid-container {
+    padding: 2rem 15px;
+    text-align: center;
+}
+.bottom-info .grid-50 {
+    position:relative;
+    margin-bottom: 4rem;
+}
+.bottom-info .grid-50 .fas {
+    position:absolute;
+    color: #E7F1FC;
+    font-size:12rem;
+    z-index:-1;
+    top:0;right:0;bottom:0;left:0;
+}
+.bottom-info h2 {
+    color: #1a7ae1;
+    font-size:1.5rem;
+    padding-bottom: .5rem;
+}
+.bottom-info p {
+    line-height:1;
+    padding-bottom: 0;
+}
+.bottom-info .btn {
+    margin-top: 2.2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* .services {{{ */
+.services {
+    margin-bottom: 4rem;
+}
+.services .grid-container {
+    max-width:100%;
+}
+.services .content {
+    position:relative;
+    min-height:350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 10px;
+    z-index:1;
+}
+.services .content::before {
+    content: '';
+    display:block;
+    position:absolute;
+    background: rgba(26,122,225,.5);
+    top:50%;right:50%;bottom:50%;left:50%;
+    transition:all .5s ease;
+    z-index:-1
+}
+.services .content:hover::before {
+    top:0;right:0;bottom:0;left:0;
+}
+.services .content h3 {
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align:center;
+    font-size:2.25rem;
+}
+.services .grid-33:nth-of-type(1) .content {
+    background:url(images/orthotics.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(2) .content {
+    background:url(images/ingrown-toenails.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(3) .content {
+    background:url(images/runners-spot.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(4) .content {
+    background:url(images/achilles-tendon-repair.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(5) .content {
+    background:url(images/foot-ankle-injuries.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(6) .content {
+    background:url(images/bunion-corn-repair.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(7) .content {
+    background:url(images/innovative-wound-care.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(8) .content {
+    background:url(images/diabetic-foot-complications.jpg) no-repeat center;
+    background-size:cover;
+}
+.services .grid-33:nth-of-type(9) .content {
+    background:url(images/alternative-medicine.jpg) no-repeat center;
+    background-size:cover;
+}
 /* }}} */
 
-/* section {{{ */
+/* .doctors {{{ */
+.doctors .grid-container {
+    max-width:100%;
+}
+.doctors h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.25;
+    padding-bottom: 1rem;
+}
+.doctors .grid-40 {
+    height: 80vw;
+    width:100%;
+}
+.doctors .grid-60 {
+    width:100%;
+    padding: 2rem 30px 4rem;
+}
+.doctors .grid-50:first-of-type .grid-40 {
+    background:url(images/dr-toole.jpg) no-repeat top center;
+    background-size:cover;
+}
+.doctors .grid-50:last-of-type .grid-40 {
+    background:url(images/dr-taylor.jpg) no-repeat top center;
+    background-size:cover;
+}
+.doctors .sub {
+    text-align: center;
+}
+.doctors .btn {
+    margin-top: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* .welcome {{{ */
+.welcome {
+    background: #F3F3F3;
+}
+.welcome .grid-container {
+    max-width: 1450px;
+    padding: 5rem 15px;
+}
+.welcome img {
+    width: 100%;
+}
+.welcome h1 {
+    font-size:3.1rem;
+    margin: 1.25rem 0;
+}
+.welcome .btn {
+    display:block;
+    margin: 1.5rem auto 0;
+}
 /* }}} */
 
 /* section {{{ */
@@ -146,13 +361,34 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .patient-single{width:100%!important}
 }
 
+@media only screen and (max-width: 767px) {
+    .rellax { 
+        transform: translate3d(0,0,0) !important; 
+    }
+}
+
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
+    #banner-main .grid-container {
+        height: 695px;
+    }
+    .bottom-info .grid-50:first-of-type {
+        border-right: solid 3px #B7B7B7;
+    }
+    .doctors h1 {
+        font-size: 3.125rem;
+    }
+    .doctors .grid-40 {
+        height: 600px;
+    }
 }
 /* }}} */
 
 /* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
+    .services .content {
+        min-height: 420px;
+    }
 }
 /* }}} */
 
@@ -180,27 +416,74 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         position:fixed;
         top: 0;
         animation: slideDown .5s ease;
-        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+        box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    }
+    nav .grid-container {
+        padding: 0;
+    }
+    .stellarnav ul ul {
+        background:rgba(255,255,255,.95);
     }
     .stellarnav > ul > li > a {
-        padding: 25px 15px;
+        padding: 25px 20px;
     }
-    #banner-main {
-        background:url(images/banner-main.jpg) no-repeat top center;
-        background-size:cover;
-    }
-    #banner-main .flex {
+    #banner-main .grid-container {
         height: 850px;
-        display:flex;
-        align-items:center;
+    }
+    #banner-main .banner-content {
         justify-content:space-around;
     }
-    #banner-main .flex h1 {
+    #banner-main .banner-content h1 {
         font-size:3rem;
+    }
+    .services {
+        margin-bottom: 0;
+    }
+    .doctors .grid-40 {
+        height: 833px;
+    }
+    .welcome .btn-wrapper {
+        display: flex;
+        justify-content:space-between;
+    }
+    .welcome .btn {
+        flex: 0 auto;
     }
 }
 /* }}} */
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .services {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+    .services .grid-33:last-of-type {
+        width: 100%;
+    }
 }
 
+@media only screen and (min-width: 1440px) {
+    .doctors .grid-40 {
+        width: 40%;
+        float:left;
+    }
+    .doctors .grid-60 {
+        width:60%;
+        float:left;
+        padding-top: 4.5rem;
+    }
+    .doctors h1,
+    .doctors .sub {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    #banner-main .grid-container {
+        height: 34vw;
+    }
+    .services .content {
+        min-height: 17vw;
+    }
+}
