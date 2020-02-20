@@ -12,94 +12,22 @@ Template: nkpv2
 @import url(https://use.typekit.net/xll3ibr.css);
 /*---- Do Not Remove ----*/
 
-/* GENERAL {{{ */
-html {
-    box-sizing: border-box;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-body {
-    font-family: gill-sans-nova, sans-serif;
-    font-size:16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-a,
-a:visited,
-a:link {
-    color: #1a7ae1;
-    text-decoration: none;
-    outline: none;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-a:hover {
-    color: #1667be;
-    text-decoration: none;
-    outline: none;
-}
-.sub {
-    color: #1a7ae1;
-    font-size:1.5rem;
-    padding-bottom:1rem;
-}
-p {
-    line-height:2rem;
-    padding-bottom: 1.5rem;
-}
-a.btn,
-button.btn {
-    color: #1a7ae1;
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit;
-    text-align:center;
-    position: relative;
-    display:inline-block;
-    width:210px;
-    padding: 1.25rem;
-    border-radius: 50px;
-    border: solid 2px #1a7ae1;
-    background:#fff;
-    overflow: hidden;
-    z-index:1;
-}
-a.btn::before,
-button.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    background-color: rgb(26,122,225);
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    z-index:-1;
-}
-a.btn:hover::before,
-button.btn:hover::before {
-    opacity: 1;
-    width: 100%;
-}
-a.btn:hover,
-button.btn:hover {
-    color: #fff;
-}
-
-
-
+/*---- GENERAL ----*/
+html{box-sizing:border-box}
+*,::before,::after{box-sizing:inherit}
+body{font-family:gill-sans-nova,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a,a:visited,a:link{color:#1a7ae1;text-decoration:none;outline:none;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+a:hover{color:#1667be;text-decoration:none;outline:none}
+.sub{color:#1a7ae1;font-size:1.5rem;padding-bottom:1rem}
+p{line-height:2rem;padding-bottom:1.5rem}
+a.btn,button.btn{color:#1a7ae1;cursor:pointer;font-size:inherit;font-family:inherit;text-align:center;position:relative;display:inline-block;width:210px;padding:1.25rem;border-radius:50px;border:solid 2px #1a7ae1;background:#fff;overflow:hidden;z-index:1}
+a.btn::before,button.btn::before{content:'';position:absolute;top:0;left:0;width:0;height:100%;z-index:1;opacity:0;background-color:#1a7ae1;-webkit-transition:all .4s;-moz-transition:all .4s;transition:all .4s;z-index:-1}
+a.btn:hover::before,button.btn:hover::before{opacity:1;width:100%}
+a.btn:hover,button.btn:hover{color:#fff}
 @keyframes slideDown {
 0%{transform:translateY(-100%)}
 100%{transform:translateY(0)}
 }
-
 ul,ol{clear:both}
 .fl{float:left}
 .fr{float:right}
@@ -111,380 +39,105 @@ ul,ol{clear:both}
 .clr-r{clear:right}
 .clr,.clear{clear:both}
 .nodisp{display:none}
-/* }}} */
 
-/* header {{{ */
-header .grid-container {
-    padding: 30px 15px 0;
-}
-header #logo {
-    text-align:center;
-}
-header .top-info {
-    text-align:center;
-    margin: 1.5rem 0;
-}
-header .top-info p:nth-of-type(2) {
-    margin-bottom: 1rem;
-}
-header p {
-    color: #4e4e4e;
-    line-height:1.5rem;
-    padding-bottom:0;
-}
-header i {
-    color: #1a7ae1;
-}
-/* }}} */
+header .grid-container{padding:30px 15px 0}
+header #logo{text-align:center}
+header .top-info{text-align:center;margin:1.5rem 0}
+header .top-info p:nth-of-type(2){margin-bottom:1rem}
+header p{color:#4e4e4e;line-height:1.5rem;padding-bottom:0}
+header i{color:#1a7ae1}
 
-/* nav {{{ */
-nav .grid-container {
-    padding: 15px;
-}
-.stellarnav.mobile {
-    border: solid 1px rgba(0,0,0,.2);
-}
-.stellarnav li a {
-    color: #4e4e4e;
-}
-.stellarnav li {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-.stellarnav li:hover,
-.stellarnav li.open {
-    background: #d6e7fa;
-}
-.stellarnav.mobile .dd-toggle {
-    height: 55px;
-    width: 55px;
-}
-.stellarnav.mobile .close-menu {
-    width:100%;
-}
-.stellarnav.mobile .third {
-    width: 33.333%;
-}
-.stellarnav.mobile > a:hover {
-    background:#E7F1FC;
-}
-.stellarnav .call-btn-mobile, 
-.stellarnav .close-menu, 
-.stellarnav .location-btn-mobile, 
-.stellarnav .menu-toggle {
-    color: #4e4e4e;
-    padding: 25px 0;
-}
-.stellarnav.mobile ul {
-    background:#E7F1FC;
-}
-/* }}} */
+nav .grid-container{padding:15px}
+.stellarnav.mobile{border:solid 1px rgba(0,0,0,.2)}
+.stellarnav li a{color:#4e4e4e}
+.stellarnav li{-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+.stellarnav li:hover,.stellarnav li.open{background:#d6e7fa}
+.stellarnav.mobile .dd-toggle{height:55px;width:55px}
+.stellarnav.mobile .close-menu{width:100%}
+.stellarnav.mobile .third{width:33.333%}
+.stellarnav.mobile > a:hover{background:#E7F1FC}
+.stellarnav .call-btn-mobile,.stellarnav .close-menu,.stellarnav .location-btn-mobile,.stellarnav .menu-toggle{color:#4e4e4e;padding:25px 0}
+.stellarnav.mobile ul{background:#E7F1FC}
 
-/* #banner-main {{{ */
-#banner-main {
-    background:url(images/banner-main.jpg) no-repeat top center;
-    background-size:cover;
-}
-#banner-main .grid-container {
-    height: 60vw;
-    display: flex;
-    align-items:center;
-}
-#banner-main .banner-content {
-    display: flex;
-    width: 100%;
-    justify-content:space-between;
-}
-#banner-main .banner-content h1 {
-    font-size: 5.2vw;
-}
-/* }}} */
+#banner-main{background:url(images/banner-main.jpg) no-repeat top center;background-size:cover}
+#banner-main .grid-container{height:60vw;display:flex;align-items:center}
+#banner-main .banner-content{display:flex;width:100%;justify-content:space-between}
+#banner-main .banner-content h1{font-size:5.2vw}
 
-/* .bottom-info {{{ */
-.bottom-info .grid-container {
-    padding: 2rem 15px;
-    text-align: center;
-}
-.bottom-info .grid-50 {
-    position:relative;
-    margin-bottom: 4rem;
-}
-.bottom-info .grid-50 .fas {
-    position:absolute;
-    color: #E7F1FC;
-    font-size:12rem;
-    z-index:-1;
-    top:0;right:0;bottom:0;left:0;
-}
-.bottom-info h2 {
-    color: #1a7ae1;
-    font-size:1.5rem;
-    padding-bottom: .5rem;
-}
-.bottom-info p {
-    line-height:1;
-    padding-bottom: 0;
-}
-.bottom-info .btn {
-    margin-top: 2.2rem;
-}
-/* }}} */
+.bottom-info .grid-container{padding:2rem 15px;text-align:center}
+.bottom-info .grid-50{position:relative;margin-bottom:4rem}
+.bottom-info .grid-50 .fas{position:absolute;color:#E7F1FC;font-size:12rem;z-index:-1;top:0;right:0;bottom:0;left:0}
+.bottom-info h2{color:#1a7ae1;font-size:1.5rem;padding-bottom:.5rem}
+.bottom-info p{line-height:1;padding-bottom:0}
+.bottom-info .btn{margin-top:2.2rem}
 
-/* .services {{{ */
-.services {
-    margin-bottom: 4rem;
-}
-.services .grid-container {
-    max-width:100%;
-}
-.services .content {
-    position:relative;
-    min-height:350px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0 10px;
-    z-index:1;
-}
-.services .content::before {
-    content: '';
-    display:block;
-    position:absolute;
-    background: rgba(26,122,225,.5);
-    top:50%;right:50%;bottom:50%;left:50%;
-    transition:all .5s ease;
-    z-index:-1
-}
-.services .content:hover::before {
-    top:0;right:0;bottom:0;left:0;
-}
-.services .content h3 {
-    color: #fff;
-    margin-bottom: 3rem;
-    text-align:center;
-    font-size:2.25rem;
-}
-.services .grid-33:nth-of-type(1) .content {
-    background:url(images/orthotics.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(2) .content {
-    background:url(images/ingrown-toenails.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(3) .content {
-    background:url(images/runners-spot.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(4) .content {
-    background:url(images/achilles-tendon-repair.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(5) .content {
-    background:url(images/foot-ankle-injuries.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(6) .content {
-    background:url(images/bunion-corn-repair.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(7) .content {
-    background:url(images/innovative-wound-care.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(8) .content {
-    background:url(images/diabetic-foot-complications.jpg) no-repeat center;
-    background-size:cover;
-}
-.services .grid-33:nth-of-type(9) .content {
-    background:url(images/alternative-medicine.jpg) no-repeat center;
-    background-size:cover;
-}
-/* }}} */
+.services{margin-bottom:4rem}
+.services .grid-container{max-width:100%}
+.services .content{position:relative;min-height:350px;display:flex;align-items:flex-end;justify-content:center;padding:0 10px;z-index:1}
+.services .content::before{content:'';display:block;position:absolute;background:rgba(26,122,225,.5);top:50%;right:50%;bottom:50%;left:50%;transition:all .5s ease;z-index:-1}
+.services .content:hover::before{top:0;right:0;bottom:0;left:0}
+.services .content h3{color:#fff;margin-bottom:3rem;text-align:center;font-size:2.25rem}
+.services .grid-33:nth-of-type(1) .content{background:url(images/orthotics.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(2) .content{background:url(images/ingrown-toenails.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(3) .content{background:url(images/runners-spot.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(4) .content{background:url(images/achilles-tendon-repair.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(5) .content{background:url(images/foot-ankle-injuries.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(6) .content{background:url(images/bunion-corn-repair.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(7) .content{background:url(images/innovative-wound-care.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(8) .content{background:url(images/diabetic-foot-complications.jpg) no-repeat center;background-size:cover}
+.services .grid-33:nth-of-type(9) .content{background:url(images/alternative-medicine.jpg) no-repeat center;background-size:cover}
 
-/* .doctors {{{ */
-.doctors .grid-container {
-    max-width:100%;
-}
-.doctors h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 1.25;
-    padding-bottom: 1rem;
-}
-.doctors .grid-40 {
-    height: 80vw;
-    width:100%;
-}
-.doctors .grid-60 {
-    width:100%;
-    padding: 2rem 30px 4rem;
-}
-.doctors .grid-50:first-of-type .grid-40 {
-    background:url(images/dr-toole.jpg) no-repeat top center;
-    background-size:cover;
-}
-.doctors .grid-50:last-of-type .grid-40 {
-    background:url(images/dr-taylor.jpg) no-repeat top center;
-    background-size:cover;
-}
-.doctors .sub {
-    text-align: center;
-}
-.doctors .btn {
-    margin-top: 2rem;
-}
-/* }}} */
+.doctors .grid-container{max-width:100%}
+.doctors h1{font-size:2.5rem;text-align:center;line-height:1.25;padding-bottom:1rem}
+.doctors .grid-40{height:80vw;width:100%}
+.doctors .grid-60{width:100%;padding:2rem 30px 4rem}
+.doctors .grid-50:first-of-type .grid-40{background:url(images/dr-toole.jpg) no-repeat top center;background-size:cover}
+.doctors .grid-50:last-of-type .grid-40{background:url(images/dr-taylor.jpg) no-repeat top center;background-size:cover}
+.doctors .sub{text-align:center}
+.doctors .btn{margin-top:2rem}
 
-/* .welcome {{{ */
-.welcome {
-    background: #F3F3F3;
-}
-.welcome .grid-container {
-    max-width: 1450px;
-    padding: 5rem 15px;
-}
-.welcome img {
-    width: 100%;
-}
-.welcome h1 {
-    font-size:3.1rem;
-    margin: 1.25rem 0;
-}
-.welcome .btn {
-    display:block;
-    margin: 1.5rem auto 0;
-}
-.welcome .btn:last-of-type {
-    background: #1a7ae1;
-    color: #fff;
-}
-.welcome .btn:last-of-type::before {
-    background-color: rgb(255,255,255);
-}
-.welcome .btn:last-of-type:hover {
-    color: #1a7ae1;
-}
-/* }}} */
+.welcome{background:#F3F3F3}
+.welcome .grid-container{max-width:1450px;padding:5rem 15px}
+.welcome img{width:100%}
+.welcome h1{font-size:3.1rem;margin:1.25rem 0}
+.welcome .btn{display:block;margin:1.5rem auto 0}
+.welcome .btn:last-of-type{background:#1a7ae1;color:#fff}
+.welcome .btn:last-of-type::before{background-color:#fff}
+.welcome .btn:last-of-type:hover{color:#1a7ae1}
 
-/* .procs {{{ */
-.procs {
-    background-color: #2C79D3;
-}
-.procs .grid-container {
-    padding: 2rem 0;
-}
-.procs h3,
-.procs p {
-    color: #fff;
-}
-.procs h3 {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-.procs .content {
-    padding: 1rem 30px;
-    margin-bottom: 2rem;
-    border: solid 2px transparent; 
-    cursor: pointer;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
-}
-.procs .content.active {
-    border-color: #7DC1E9; 
-}
-/* }}} */
+.procs{background-color:#2C79D3}
+.procs .grid-container{padding:2rem 0}
+.procs h3,.procs p{color:#fff}
+.procs h3{font-size:1.5rem;padding-bottom:1rem}
+.procs .content{padding:1rem 30px;margin-bottom:2rem;border:solid 2px transparent;cursor:pointer;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+.procs .content.active{border-color:#7DC1E9}
 
-/* .edu {{{ */
-.edu {
-    background: url(images/edu-bg.png) no-repeat center;
-    background-size: cover;
-}
-.edu .grid-container {
-    padding: 6rem 0;
-}
-.edu img {
-    margin-bottom: 1rem;
-}
-.edu .sub {
-    padding-bottom: .25rem;
-}
-.edu .grid-50:first-of-type {
-    margin-bottom: 4rem;
-}
-/* }}} */
+.edu{background:url(images/edu-bg.png) no-repeat center;background-size:cover}
+.edu .grid-container{padding:6rem 0}
+.edu img{margin-bottom:1rem}
+.edu .sub{padding-bottom:.25rem}
+.edu .grid-50:first-of-type{margin-bottom:4rem}
 
-/* #contact {{{ */
-#contact {
-    background: #E8EDF2;
-}
-#contact .grid-container {
-    padding: 4rem 15px;
-}
-#contact h1 {
-    font-size: 2.5rem;
-    line-height: 1.25;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-#contact .grid-40 {
-    margin-bottom: 4rem;
-}
-#contact .grid-40 p {
-    font-size: 1.3rem;
-    line-height: 2.6rem;
-}
-#contact .footer-form .btn {
-    margin-top: 4.3rem;
-}
+#contact{background:#E8EDF2}
+#contact .grid-container{padding:4rem 15px}
+#contact h1{font-size:2.5rem;line-height:1.25;margin-bottom:2rem;text-align:center}
+#contact .grid-40{margin-bottom:4rem}
+#contact .grid-40 p{font-size:1.3rem;line-height:2.6rem}
+#contact .footer-form .btn{margin-top:4.3rem}
 
-/* }}} */
+footer .grid-container{padding:3rem 15px}
+footer .grid-container:first-of-type{border-bottom:solid 2px #C9D1DA}
+footer .grid-container:last-of-type{text-align:center}
+footer .grid-container:last-of-type p{padding-bottom:0}
+footer .grid-container:last-of-type .grid-25{margin-bottom:.75rem}
+footer .grid-33{display:flex;flex-direction:column}
+footer .grid-33 a{color:#4e4e4e;display:inline-block;margin:1rem auto 0 0}
+footer .grid-33 a:hover{color:#1a7ae1}
+footer .social{margin-top:2rem;text-align:center}
+footer .social a{display:inline-block;margin:0 .35rem}
+footer .social a:hover,footer .grid-container:last-of-type a:hover{opacity:.6}
 
-/* footer {{{ */
-footer .grid-container {
-    padding: 3rem 15px;
-}
-footer .grid-container:first-of-type {
-    border-bottom: solid 2px #C9D1DA;
-}
-footer .grid-container:last-of-type {
-    text-align: center;
-}
-footer .grid-container:last-of-type p {
-    padding-bottom: 0;
-}
-footer .grid-container:last-of-type .grid-25 {
-    margin-bottom: .75rem;
-}
-footer .grid-33 {
-    display: flex;
-    flex-direction: column;
-}
-footer .grid-33 a {
-    color: #4e4e4e;
-    display: inline-block;
-    margin: 1rem auto 0 0;
-}
-footer .grid-33 a:hover {
-    color: #1a7ae1;
-}
-footer .social {
-    margin-top: 2rem;
-    text-align: center;
-}
-footer .social a {
-    display: inline-block;
-    margin: 0 .35rem;
-}
-footer .social a:hover,
-footer .grid-container:last-of-type a:hover {
-    opacity: .6;
-}
-/* }}} */
-
-/* NKP GLOBAL STYLES {{{ */
+/*---- NKP GLOBAL STYLES ----*/
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
 img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
@@ -502,7 +155,7 @@ textarea{height:120px}
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 #nav{background-color:#000;height:50px}
-/* NKP GLOBAL STYLES }}} */
+/*---- NKP GLOBAL STYLES ----*/
 
 
 /*---- MEDIA QUERIES ----*/
@@ -515,174 +168,63 @@ textarea{height:120px}
     .rellax{transform:translate3d(0,0,0)!important}
 }
 
-/* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
-    #banner-main .grid-container {
-        height: 695px;
-    }
-    .bottom-info .grid-50:first-of-type {
-        border-right: solid 3px #B7B7B7;
-    }
-    .doctors h1 {
-        font-size: 3.125rem;
-    }
-    .doctors .grid-40 {
-        height: 600px;
-    }
-    .welcome .btn-wrapper {
-        display:flex;
-        justify-content: space-evenly;
-    }
-    .welcome .btn {
-        margin: 1.5rem 0 0;
-    }
-    .procs {
-        background: url(images/treatments-bg.jpg) no-repeat center;
-        background-size: cover;
-    }
-    .procs .grid-container {
-        padding: 6rem 0;
-    }
-    .procs .content {
-        padding: 2rem 30px;
-    }
-    .procs .content:last-of-type {
-        margin-bottom: 0;
-    }
-    .edu .grid-50:first-of-type {
-        margin-bottom: 0;
-    }
-    .edu .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 80%;
-        margin: 0 auto;
-        min-height: 210px;
-    }
-    .edu .btn {
-        margin-top: auto;
-    }
-    #contact h1 {
-        font-size: 3rem;
-        text-align: left;
-    }
-    #contact .grid-40 {
-        margin-bottom: 0;
-    }
-    footer .grid-container:last-of-type {
-        display: flex;
-        align-items: center;
-    }
+    #banner-main .grid-container{height:695px}
+    .bottom-info .grid-50:first-of-type{border-right:solid 3px #B7B7B7}
+    .doctors h1{font-size:3.125rem}
+    .doctors .grid-40{height:600px}
+    .welcome .btn-wrapper{display:flex;justify-content:space-evenly}
+    .welcome .btn{margin:1.5rem 0 0}
+    .procs{background:url(images/treatments-bg.jpg) no-repeat center;background-size:cover}
+    .procs .grid-container{padding:6rem 0}
+    .procs .content{padding:2rem 30px}
+    .procs .content:last-of-type{margin-bottom:0}
+    .edu .grid-50:first-of-type{margin-bottom:0}
+    .edu .text{display:flex;flex-direction:column;align-items:center;max-width:80%;margin:0 auto;min-height:210px}
+    .edu .btn{margin-top:auto}
+    #contact h1{font-size:3rem;text-align:left}
+    #contact .grid-40{margin-bottom:0}
+    footer .grid-container:last-of-type{display:flex;align-items:center}
 }
-/* }}} */
 
-/* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
-    .services .content {
-        min-height: 420px;
-    }
+    .services .content{min-height:420px}
 }
-/* }}} */
 
-/* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
-    header {
-        position:absolute;
-        width:100%;
-    }
-    header #logo {
-        text-align:left;
-    }
-    header .top-info {
-        margin-top: 0;
-        text-align:right;
-    }
-    nav {
-        position:absolute;
-        top: 142px;
-        width: 100%;
-        z-index:999;
-        background:rgba(255,255,255,.95);
-    }
-    nav.sticky {
-        position:fixed;
-        top: 0;
-        animation: slideDown .5s ease;
-        box-shadow: 0 2px 10px rgba(0,0,0,.1);
-    }
-    nav .grid-container {
-        padding: 0;
-    }
-    .stellarnav ul ul {
-        background:rgba(255,255,255,.95);
-    }
-    .stellarnav > ul > li > a {
-        padding: 25px 20px;
-    }
-    #banner-main .grid-container {
-        height: 850px;
-    }
-    #banner-main .banner-content {
-        justify-content:space-around;
-    }
-    #banner-main .banner-content h1 {
-        font-size:3rem;
-    }
-    .services {
-        margin-bottom: 0;
-    }
-    .doctors .grid-40 {
-        height: 833px;
-    }
-    .welcome .grid-container {
-        padding: 7rem 15px;
-    }
-    .welcome .btn {
-        flex: 0 auto;
-    }
+    header{position:absolute;width:100%}
+    header #logo{text-align:left}
+    header .top-info{margin-top:0;text-align:right}
+    nav{position:absolute;top:142px;width:100%;z-index:999;background:rgba(255,255,255,.95)}
+    nav.sticky{position:fixed;top:0;animation:slideDown .5s ease;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+    nav .grid-container{padding:0}
+    .stellarnav ul ul{background:rgba(255,255,255,.95)}
+    .stellarnav > ul > li > a{padding:25px 20px}
+    #banner-main .grid-container{height:850px}
+    #banner-main .banner-content{justify-content:space-around}
+    #banner-main .banner-content h1{font-size:3rem}
+    .services{margin-bottom:0}
+    .doctors .grid-40{height:833px}
+    .welcome .grid-container{padding:7rem 15px}
+    .welcome .btn{flex:0 auto}
 }
-/* }}} */
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .services {
-        display:flex;
-        flex-flow: row wrap;
-        justify-content:center;
-    }
-    .services .grid-33:last-of-type {
-        width: 100%;
-    }
+    .services{display:flex;flex-flow:row wrap;justify-content:center}
+    .services .grid-33:last-of-type{width:100%}
 }
 
 @media only screen and (max-width: 1380px) and (min-width: 1025px) {
-    .welcome .btn-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
+    .welcome .btn-wrapper{flex-direction:column;align-items:center}
 }
 
 @media only screen and (min-width: 1440px) {
-    .doctors .grid-40 {
-        width: 40%;
-        float:left;
-    }
-    .doctors .grid-60 {
-        width:60%;
-        float:left;
-        padding-top: 4.5rem;
-    }
-    .doctors h1,
-    .doctors .sub {
-        text-align: left;
-    }
+    .doctors .grid-40{width:40%;float:left}
+    .doctors .grid-60{width:60%;float:left;padding-top:4.5rem}
+    .doctors h1,.doctors .sub{text-align:left}
 }
 
 @media only screen and (min-width: 2500px) {
-    #banner-main .grid-container {
-        height: 34vw;
-    }
-    .services .content {
-        min-height: 17vw;
-    }
+    #banner-main .grid-container{height:34vw}
+    .services .content{min-height:17vw}
 }
