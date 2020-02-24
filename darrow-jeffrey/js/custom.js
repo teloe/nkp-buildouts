@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
         menuLabel: 'Menu',
         phoneBtn: '617-267-0710',
         locationBtn: 'https://goo.gl/maps/jhVqq3TVGJ3YRBXt9',
+        closeBtn: true,
     });
 
     $('#slider').flexslider({

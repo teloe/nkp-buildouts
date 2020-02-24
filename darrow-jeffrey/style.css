@@ -9,6 +9,7 @@ Template: nkpv2
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+@import url(https://use.typekit.net/eci2qin.css);
 /*---- Do Not Remove ----*/
 
 /* GENERAL {{{ */
@@ -19,6 +20,8 @@ html {
     box-sizing: inherit;
 }
 body {
+    font-family: "century-gothic",sans-serif;
+    font-size:16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +29,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #28659a;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease-out;
@@ -34,10 +37,25 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #09557c;
+    color: #456F94;
     text-decoration: none;
     outline: none;
 }
+
+a.btn,
+button.btn {
+    background: #456F94;
+    display:inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    width: 300px;
+}
+p {
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
 
 ul,ol{clear:both}
 .fl{float:left}
@@ -52,10 +70,53 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
-/* section {{{ */
+/* .mobile-header {{{ */
+.mobile-header .grid-container {
+    padding: 30px 0;
+    text-align: center;
+}
+.mobile-header .logo {
+    margin-bottom: 2rem;
+}
+.mobile-header .phone {
+    display:inline-block;
+    font-weight:700;
+    margin-top: 1rem;
+}
+.mobile-header p {
+    line-height:1.5;
+    padding-bottom: 0;
+}
 /* }}} */
 
-/* section {{{ */
+/* nav {{{ */
+.stellarnav.mobile {
+    border: solid 1px rgba(0,0,0,.2);
+}
+.stellarnav .third {
+    width: 33.333%
+}
+.stellarnav.mobile ul {
+    background: rgba(40,101,154,.9);
+}
+.stellarnav.mobile li a {
+    color: #fff;
+}
+/* .stellarnav.mobile > ul {
+    border-top: solid 1px rgba(0,0,0,.2);
+} */
+.stellarnav.mobile .fa-plus::before {
+    content: '\f078';
+}
+.stellarnav li.open > a.dd-toggle i {
+    transform: rotate(0) !important;
+}
+.stellarnav ul li:hover {
+    background: rgba(40,101,154,.5);
+}
+.stellarnav li a {
+    text-transform: uppercase;
+}
 /* }}} */
 
 /* section {{{ */
@@ -124,6 +185,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 /* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
+    .mobile-header {
+        display: none;
+    }
 }
 /* }}} */
 
