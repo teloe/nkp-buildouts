@@ -8,9 +8,9 @@ jQuery(document).ready(function($) {
         closeBtn: true,
     });
 
-    $('#slider').flexslider({
+    /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false,
-    });
+    }); */
 });
