@@ -8,6 +8,13 @@ jQuery(document).ready(function($) {
         closeBtn: true,
     });
 
+    $('#procs-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        manualControls: '.controls li',
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,

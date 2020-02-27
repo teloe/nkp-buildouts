@@ -10,6 +10,7 @@ Template: nkpv2
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 @import url(https://use.typekit.net/eci2qin.css);
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 /*---- Do Not Remove ----*/
 
 /* GENERAL {{{ */
@@ -45,15 +46,67 @@ a:hover {
 a.btn,
 button.btn {
     background: #456F94;
-    display:inline-block;
+    display:block;
+    margin-top: 1rem;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
     padding: 1.5rem;
-    width: 300px;
+    max-width: 300px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+a.btn::before {
+    content: '';
+    background: #E9E9E9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    z-index: -1;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+a.btn:hover::before {
+    height: 100%;
+}
+a.btn:hover {
+    color: #456F94;
+}
+.section-header {
+    font-size: 2.4rem;
+    color: #616161;
+    text-transform: uppercase;
+}
+.section-header::after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 60%;
+    background: #23669C;
+    margin: 1rem 0 2rem;
+}
+.sub-header {
+    color: #23669C;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.625rem;
+    padding-bottom: 1rem;
+}
+sub {
+    top: -.25em;
 }
 p {
     line-height: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -129,9 +182,9 @@ nav {
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
-.stellarnav ul li:hover,
-.stellarnav ul li.open {
-    background: rgba(40,101,154,.5);
+.stellarnav.mobile ul li:hover,
+.stellarnav.mobile ul li.open {
+    background: rgba(40,101,154,.9);
 }
 .stellarnav li a {
     text-transform: uppercase;
@@ -150,6 +203,7 @@ nav {
     height: 100vw;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 #slider .slide1 h1 {
     font-size: 5.8vw;
@@ -163,19 +217,91 @@ nav {
 }
 /* }}} */
 
-/* section {{{ */
+/* .doctor {{{ */
+.doctor {
+    margin-top: 4rem;
+}
+.doctor .bg-extend {
+    background: url(images/dr-darrow.jpg) no-repeat right;
+    background-size: cover;
+    height: 60vw;
+}
+.doctor .section-header {
+    margin-top: 2rem;
+}
+
+.associations {
+    margin: 4rem 0;
+}
+
 /* }}} */
 
-/* section {{{ */
+/* .procs {{{ */
+.procs .grid-container {
+    position: relative;
+}
+.procs .proc-image {
+    margin-bottom: 2rem;
+}
+.procs .controls {
+    display: none;
+}
 /* }}} */
 
-/* section {{{ */
+/* .philosophy {{{ */
+.philosophy {
+    margin-top: 6rem;
+    position: relative;
+}
+.philosophy .bg-extend {
+    background: url(images/practice-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+    margin-bottom: 2rem;
+}
+.philosophy .sub-header {
+    padding-bottom: 2.5rem;
+}
+
 /* }}} */
 
-/* section {{{ */
+/* .testimonials {{{ */
+.testimonials {
+    margin-top: 6rem;
+}
+.testimonials .sub-header {
+    padding-bottom: 2.5rem;
+}
+.testimonials .grid-50:first-of-type {
+    margin-bottom: 2rem;
+}
+.testimonials .quote {
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.testimonials .author {
+    font-weight: 700;
+}
 /* }}} */
 
-/* section {{{ */
+/* .kf {{{ */
+.kf {
+    margin-top: 2rem;
+}
+.kf .grid-45 {
+    padding: 3rem 15px 1rem;
+    background: #eeeeee;
+}
+.kf .section-header {
+    font-size:2.2rem;
+}
+.kf .content img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+.kf .content a {
+    font-weight: 700;
+}
 /* }}} */
 
 /* section {{{ */
@@ -216,6 +342,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
+    .section-header {
+        font-size: 3.25rem;
+    }
     #slider .slide1 .grid-container {
         height: 767px;
     }
@@ -224,11 +353,128 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         margin-bottom: 8rem;
         padding: 2rem;
     }
+    .doctor {
+        margin-top: 0;
+        position: relative;
+    }
+    .doctor .grid-50 {
+        float: right;
+    }
+    .doctor .bg-extend {
+        background-position-x: -38rem;
+        height: 650px;
+        width: 48%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+    .associations {
+        margin: 6rem 0;
+    }
+    .procs .btn::before {
+        background: #fff;
+    }
+    .procs .controls {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .procs .controls li {
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        padding: 0 .5rem;
+    }
+    .procs .controls li img {
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        -moz-transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    .procs .controls li.flex-active img,
+    .procs .controls li:hover img {
+        filter: brightness(.45);
+    }
+    .procs .controls li.flex-active h2 {
+        opacity: 1;
+        bottom: 20px;
+    }
+    .procs .controls h2 {
+        color: #fff;
+        font-size: 1.56rem;
+        text-transform: uppercase;
+        position: absolute;
+        text-align: center;
+        right: 0;
+        bottom: -50px;
+        left: 0;
+        opacity: 0;
+        -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+        -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .procs #procs-slider {
+        position: relative;
+    }
+    .procs .section-header {
+        font-size: 3rem;
+    }
+    .procs #procs-slider .grid-60 {
+        background: #ebebeb;
+    }
+    .procs #procs-slider .content .text {
+        padding: 4rem 15px;
+    }
+    .procs .proc-image {
+        position: absolute;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .procs #procs-slider li:nth-of-type(1) .proc-image {
+        background: url(images/slide-face.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .procs #procs-slider li:nth-of-type(2) .proc-image {
+        background: url(images/slide-face.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .procs #procs-slider li:nth-of-type(3) .proc-image {
+        background: url(images/slide-face.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .philosophy {
+        background: #EEEEEE;
+        min-height: 656px;
+    }
+    .philosophy .grid-40 {
+        padding: 4rem 15px;
+    }
+    .philosophy .bg-extend {
+        position: absolute;
+        width: 48%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+    .philosophy .btn::before {
+        background: #fff;
+    }
+    .testimonials .grid-50:first-of-type {
+        margin-bottom: 0;
+        padding-right: 45px;
+    }
+    .testimonials .grid-50:last-of-type {
+        padding-left: 45px;
+    }
 }
 /* }}} */
 
 /* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
+    .procs .text {
+        background: #EBEBEB;
+    }
 }
 /* }}} */
 
@@ -248,6 +494,16 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
     .stellarnav > ul > li > a {
         padding: 25px 10px;
+    }
+    .stellarnav ul li a:hover {
+        background: rgba(40,101,154,.9);
+        color: #fff;
+    }
+    .stellarnav ul ul {
+        background: rgba(40,101,154,.9);
+    }
+    .stellarnav ul ul li a {
+        color: #fff;
     }
     .top-info {
         display:block;
@@ -279,6 +535,16 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     #slider .slide1 h1 {
         font-size: 3.6rem;
     }
+    .doctor .bg-extend {
+        background-position-x: right;
+    }
+    .doctor .section-header {
+        margin-top: 4rem;
+    }
+    .philosophy .bg-extend {
+        width: 52%;
+    }
+
 }
 /* }}} */
 
@@ -288,8 +554,42 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
 }
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
+    .procs {
+        padding-top: 4rem;
+    }
+    .procs #procs-slider .content .text {
+        width: 80%;
+        background: none;
+        padding: 4rem 30px 4rem 15px;
+    }
+    .procs .controls {
+        position: absolute;
+        top: -5.5rem;
+        right: -10%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        margin-top: 0;
+    }
+    .procs .controls li {
+        padding: 1rem 0;
+    }
+    .procs .controls li.flex-active h2 {
+        bottom: 40px;
+    }
+    .philosophy {
+        margin-top: 12rem;
+    }
+
 }
 
+@media only screen and (min-width: 2600px) {
+    #slider .slide1 .grid-container {
+        height: 36.5vw;
+    }
+}
 
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+}
 
