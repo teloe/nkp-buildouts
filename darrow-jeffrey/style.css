@@ -64,6 +64,131 @@ nav{margin-bottom:1.5rem}
 #slider .slide1 .grid-container{height:100vw;display:flex;align-items:flex-end;justify-content:center}
 #slider .slide1 h1{font-size:5.8vw;font-weight:300;margin-bottom:14vw;text-transform:uppercase;background:rgba(40,101,154,.8);padding:5vw;text-align:center;color:#fff}
 
+#slider.internal .slide1 {
+    background: url(images/banner-internal.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+
+#main {
+    padding-top: 5rem;
+}
+#main #content h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#main #content h1,
+#main #content h2,
+#main #content h3,
+#main #content h4,
+#main #content h5,
+#main #content h6 {
+    color: #616161;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+#main #content h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height:1.5;
+}
+
+#main #content ul {
+    padding-left: 15px;
+    margin-bottom: 1rem;
+}
+#main #content li {
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    list-style: initial;
+}
+
+.gray-box {
+    background: #f6f6f6;
+    margin: 2rem 0;
+}
+.gray-box .title {
+    background: #23679C; 
+    padding: .5rem 2rem;
+}
+.gray-box .title p {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.gray-box .content {
+    padding: 2rem 1rem;
+}
+.stars {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    color: #CDBF00;
+}
+#sidebar > div {
+    margin-bottom: 2rem;
+}
+#sidebar > div:last-of-type {
+    margin-bottom: 0;
+}
+#sidebar .testimonials {
+    background: #f6f6f6;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+#sidebar .testimonials h4 {
+    color: #23679C;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1.5rem;
+    padding-bottom: 1rem;
+}
+#sidebar .testimonials .btn::before {
+    background: #fff;
+}
+#sidebar .related-procs {
+    background: url(images/sidebar-related-procs.jpg) no-repeat center;
+    background-size: cover;
+}
+#sidebar .related-procs * {
+    text-transform: uppercase;
+}
+#sidebar .related-procs .title {
+    background: #f6f6f6;
+    padding: 1.25rem 2rem;
+}
+#sidebar .related-procs .content {
+    padding: 2rem;
+}
+#sidebar .related-procs h4 {
+    color: #23679C;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1.25rem;
+}
+#sidebar .related-procs li {
+    padding-bottom: 1rem;
+}
+#sidebar .dr img {
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#sidebar .dr:hover img {
+    filter: brightness(.9);
+}
+#sidebar .dr img {
+    width: 100%;
+}
+#sidebar .dr h4 {
+    color: #fff;
+    background:rgba(40,101,154,.9);
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 .doctor{margin-top:4rem}
 .doctor .bg-extend{background:url(images/dr-darrow.jpg) no-repeat right;background-size:cover;height:60vw}
 .doctor .section-header{margin-top:2rem}
@@ -133,6 +258,15 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .section-header{font-size:3.25rem}
     #slider .slide1 .grid-container{height:767px}
     #slider .slide1 h1{font-size:3rem;margin-bottom:8rem;padding:2rem}
+    #slider.internal .slide1 {
+        height: 380px;
+    }
+    #main #content h1 {
+        font-size: 3rem;
+    }
+    #sidebar .testimonials {
+        margin-top: 0;
+    }
     .doctor{margin-top:0;position:relative}
     .doctor .grid-50{float:right}
     .doctor .bg-extend{background-position-x:-38rem;height:650px;width:48%;left:0;top:0;bottom:0;position:absolute}
@@ -183,6 +317,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     #slider{padding-top:4rem}
     #slider .slide1 .grid-container{height:950px}
     #slider .slide1 h1{font-size:3.6rem}
+    #slider.internal .slide1 {
+        height: 480px;
+    }
     .doctor .bg-extend{background-position-x:right}
     .doctor .section-header{margin-top:4rem}
     .philosophy .bg-extend{width:52%}
