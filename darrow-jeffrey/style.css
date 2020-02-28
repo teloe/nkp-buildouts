@@ -38,7 +38,7 @@ a:link {
     transition: all 0.5s ease-out;
 }
 a:hover {
-    color: #456F94;
+    color: #000;
     text-decoration: none;
     outline: none;
 }
@@ -289,8 +289,11 @@ nav {
     margin-top: 2rem;
 }
 .kf .grid-45 {
-    padding: 3rem 15px 1rem;
+    padding: 3rem 30px 1rem;
     background: #eeeeee;
+}
+.kf .grid-55 img {
+    width: 100%;
 }
 .kf .section-header {
     font-size:2.2rem;
@@ -304,10 +307,41 @@ nav {
 }
 /* }}} */
 
-/* section {{{ */
-/* }}} */
-
-/* section {{{ */
+/* footer {{{ */
+footer {
+    background: #23679C;
+    margin-top: 6rem;
+}
+footer .grid-container {
+    padding: 3rem 15px;
+    text-align: center;
+}
+footer .grid-60 > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+footer .grid-60 img:nth-of-type(1) {
+    display:block;
+    margin: 0 auto 1rem;    
+}
+footer .grid-60 img:nth-of-type(2),
+footer .grid-60 img:nth-of-type(3) {
+    display: inline-block;
+    margin: 1rem;
+}
+footer p {
+    color: #fff;
+    padding-bottom: 0;
+}
+footer a {
+    color: #fff !important;
+    margin: .5rem;
+}
+footer a:hover {
+    opacity: .6;
+}
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
@@ -467,6 +501,20 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .testimonials .grid-50:last-of-type {
         padding-left: 45px;
     }
+    .kf .grid-55 img {
+        width: 70%;
+        display: block;
+        margin: 0 auto 2rem;
+    }
+    .kf .section-header {
+        font-size: 3.25rem;
+    }
+    footer .grid-60 > div {
+        justify-content: space-between;
+    }
+    footer a {
+        margin: .75rem 0;
+    }
 }
 /* }}} */
 
@@ -544,6 +592,13 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .philosophy .bg-extend {
         width: 52%;
     }
+    .kf .grid-55 {
+        background: url(images/kf-bg.jpg) no-repeat center;
+        background-size:cover;
+    }
+    .kf .grid-55 img {
+        display: none;
+    }
 
 }
 /* }}} */
@@ -554,6 +609,14 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
 }
 
+@media only screen and (min-width: 1116px) {
+    .kf .grid-55,
+    .kf .grid-45 {
+        min-height: 797px;
+    }
+}
+
+/* min-width: 1280px {{{ */
 @media only screen and (min-width: 1280px) {
     .procs {
         padding-top: 4rem;
@@ -583,6 +646,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
 
 }
+/* }}} */
 
 @media only screen and (min-width: 2600px) {
     #slider .slide1 .grid-container {
@@ -590,6 +654,10 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
 }
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (max-width: 1115px) and (min-width: 1025px) {
+    .kf .grid-55,
+    .kf .grid-45 {
+        min-height: 894px;
+    }
 }
 
