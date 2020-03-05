@@ -14,31 +14,61 @@
     <title>Inglefield, Chris</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-    <div id="logo">
-        <a href="/" title="">
-            <img class="img-resp" src="./images/logo.png" alt="">
-        </a>
-    </div>
+    <header>
+        <div class="grid-container grid-parent">
+            <div class="grid-50">
+                <div class="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="The London Transgender Clinic">
+                    </a>
+                </div>
+            </div>
+            <div class="grid-50">
+                <div class="top-info">
+                    <button class="hamburger hamburger--spring" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <a class="phone" href="tel:">0207 487 0910</a>
+                    <a class="email" href="mailto:">info@thelondontransgenderclinic.uk</a>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                    <a class="btn" href="">Hatfield - our second location now open!</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <nav>
-        <div class="stellarnav">
-            <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <div id="nav-overlay-close"></div>
+
+    <nav id="main-nav">
+        <div class="overlay-content">
+            <div class="stellarnav">
+                <ul>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -46,10 +76,177 @@
         <ul class="slides">
             <li>
                 <div class="slide1">
+                    <div class="grid-container">
+                        <div class="grid-100">
+                            <h1>Proud to be a part of your gender journey</h1>
+                            <h4 class="sub">#myltcjourney</h4>
+                            <a class="btn" href="">Make an enquiry</a>
+                        </div>
+                    </div>
                 </div>
             </li>
         </ul>
     </div>
+
+    <div class="clr"></div>
+
+    <section class="procs">
+        <div class="grid-container">
+            <div class="grid-33">
+                <img class="img-resp" src="./images/journey.png" alt="Start my journey">
+                <h2>Help me start my journey</h2>
+            </div>
+            <div class="grid-33">
+                <img class="img-resp" src="./images/friends-family.png" alt="Friends and Family">
+                <h2>Friends &amp; Family</h2>
+            </div>
+            <div class="grid-33">
+                <img class="img-resp" src="./images/healthcare.png" alt="Healthcare professionals and employers">
+                <h2>Healthcare Professionals &amp; Employers</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="dr">
+        <div class="bg-extend"></div>
+        <div class="grid-container">
+            <div class="grid-50 tablet-50">
+                <div class="content">
+                    <h1>Meet Mr. Inglefield</h1>
+                    <h3 class="sub">Education, treatment, and support to achieve lasting contentment with your gendered self</h3>
+                    <p>I established The London Transgender Clinic in 2015 in response to a noticeable increase in enquires from transgender and non-binary patients.  Many of these patients were unable to access quality and timely care from the overwhelmed NHS gender services, resulting in high levels of anxiety and stress with suicide and self-harm a major risk.  With 15 years of experience in transgender surgery, I wanted to set up a dedicated specialist team providing holistic care to enable individuals to get to the next stepping stone of their transition, with many services provided under one roof.</p>
+                    <p>My team and I are proud to be part of the journey of so many and the positive feedback received over the years has been incredibly motivating.  Many praise the exceptionally high standards of care and their improved confidence, health, and overall wellbeing.</p>
+                    <p>This has spurred me to do more and the future is exciting.  We will continue to set up our Centre of Excellence using the latest research and innovative technologies.  The goal is to treat, support, train and educate the wider community including patients, family, friends, other health professionals, and employers. Plans include the opening of new clinics in Hatfield, Manchester, and Dublin.</p>
+                    <div class="flex">
+                        <a class="btn" href="">Learn more</a>
+                        <img class="img-resp" src="./images/realself.png" alt="RealSelf Verified Doctor">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="grid-container">
+            <div class="grid-60 tablet-60">
+                <h1>Gallery</h1>
+                <p>We are internationally recognised for our extraordinary patient care and outstanding surgical results. Mr Inglefield and his team prioritise safety and use advanced surgical techniques with cutting edge technology.</p>
+                <a class="btn" href="">View Gallery</a>
+            </div>
+            <div class="grid-40 tablet-40">
+                <img class="img-resp" src="./images/bxa.png" alt="Before and Afters">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="bg-extend"></div>
+        <div class="grid-container">
+            <div class="grid-50 tablet-50">
+                <div class="content">
+                    <h1>Patient Testimonials</h1>
+                    <div id="testimonials-slider">
+                        <ul class="slides">
+                            <li>
+                                <p>"After 9460 days in the wrong body, Christopher Inglefield and the amazing team at London Transgender Clinic changed my life forever. All my life, I never got to develop a relationship with my body because I knew all along it wasn’t mine to begin with. I existed through the years in a survival mode where living in my head became the only place I felt free to be me and so good at it I became that my external reality didn’t matter. Until one day I decided it did! From first flicking that switch in my head, to having my first consultation, to right up until and after my surgery - the entire team have been nothing short of incredible.I didn’t have much of a life before, but now I have a future and for that I’ll forever be grateful"</p>
+                                <p class="author">-A.P</p>
+                            </li>
+                            <li>
+                                <p>"Labore laborum commodo quis id. Nulla enim minim aliqua anim eu labore duis. Ipsum occaecat sunt ipsum labore elit.Laborum consequat elit tempor tempor nisi sunt voluptate consequat. Anim exercitation cillum sint ut non fugiat dolore reprehenderit. Est id qui commodo anim incididunt ut officia eu.Eu commodo dolor ea elit aliquip exercitation anim. Fugiat adipisicing elit Lorem duis consectetur enim. In ea ipsum exercitation officia sit adipisicing adipisicing Lorem minim. Est ullamco excepteur et laborum dolore aute veniam aliquip eu velit aliqua ipsum. Consectetur exercitation cillum elit nostrud adipisicing quis deserunt voluptate nulla ea aliqua incididunt. Veniam in officia enim ut non eu in aliquip ex aute dolore aute. Nulla consequat irure commodo Lorem dolore in dolore duis reprehenderit."</p>
+                                <p class="author">-A.P</p>
+                            </li>
+                            <li>
+                                <p>"Velit non et ad incididunt dolore incididunt elit incididunt quis est culpa elit culpa sit. Dolore labore cillum eiusmod eiusmod consectetur voluptate quis consequat cillum eiusmod. Dolor laborum magna pariatur occaecat elit consequat nisi nulla excepteur dolor proident ipsum. Elit magna nostrud cupidatat id proident voluptate anim ullamco reprehenderit est consequat.Nisi elit minim est ullamco ad magna mollit velit Lorem esse ullamco sunt cupidatat qui. Non consequat occaecat esse cillum cupidatat mollit elit sint. Non in ex nulla est esse occaecat deserunt pariatur irure duis minim cupidatat adipisicing. Et veniam irure officia deserunt qui commodo velit labore minim. Quis est culpa qui dolor nulla eiusmod qui incididunt."</p>
+                                <p class="author">-A.P</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="follow-us">
+        <div class="grid-container">
+            <div class="grid-100">
+                <h1>Follow Us</h1>
+                <h3 class="sub">@londontransclinic</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-up">
+        <div class="grid-container">
+            <div class="grid-80 prefix-10">
+                <h2>Be the first to find out about our latest procedures, research, news and offers.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="logos">
+        <div class="flex">
+            <img class="img-resp" src="./images/isaps.png" alt="ISAPS">
+            <img class="img-resp" src="./images/wpath.png" alt="WPath">
+            <img class="img-resp" src="./images/rcs.png" alt="RCS">
+            <img class="img-resp" src="./images/injectable-cosmetic.png" alt="Register of injectable cosmetic providers">
+            <img class="img-resp" src="./images/epath.png" alt="EPath">
+            <img class="img-resp" src="./images/bagis.png" alt="BAGIS">
+            <img class="img-resp" src="./images/care-quality.png" alt="Care Quality Commission">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="grid-container grid-parent">
+            <div class="grid-100">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid-container">
+            <div class="grid-30">
+                <h3>Office Hours for North London Location</h3>
+                <p>54 Wimpole Street <br>London. W1G 8YJ</p>
+                <ul>
+                    <li>Monday 07:30-18:00</li>
+                    <li>Tuesday 07:30-17:00</li>
+                    <li>Wednesday 07:30-17:00</li>
+                    <li>Thursday 07:30-20:00</li>
+                    <li>Friday 07:00-17:00</li>
+                    <li>Saturday 09:00-17:00</li>
+                </ul>
+            </div>
+            <div class="grid-30">
+                <h3>Office Hours for Central London Location</h3>
+                <p>One Hatfield Hospital <br>Hatfield. AL10 9UA</p>
+                <ul>
+                    <li>Monday 07:30-18:00</li>
+                    <li>Tuesday 07:30-17:00</li>
+                    <li>Wednesday 07:30-17:00</li>
+                    <li>Thursday 07:30-20:00</li>
+                    <li>Friday 07:00-17:00</li>
+                    <li>Saturday 09:00-17:00</li>
+                </ul>
+            </div>
+            <div class="grid-40">
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+                <p>&copy; 2020 London Transgender Clinic. All Rights Reserved.</p>
+                <p>
+                    <a href=""><i class="fas fa-th-large"></i> Sitemap</a> | 
+                    <a href="">Terms &amp; Conditions</a> | 
+                    <a href="">HIPAA Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
 
     <script type="text/javascript" src="js/custom.js"></script>

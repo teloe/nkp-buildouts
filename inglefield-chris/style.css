@@ -9,6 +9,7 @@ Template: nkpv2
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+@import url(https://use.typekit.net/gou7mzg.css);
 /*---- Do Not Remove ----*/
 
 /* GENERAL {{{ */
@@ -19,6 +20,10 @@ html {
     box-sizing: inherit;
 }
 body {
+    font-family: open-sans, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background:#1174a6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -29,9 +34,9 @@ a:link {
     color: #1174a6;
     text-decoration: none;
     outline: none;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 a:hover {
     color: #09557c;
@@ -52,13 +57,141 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
-/* section {{{ */
+/* header {{{ */
+header .grid-container {
+    position: relative;
+    padding-top: 90px;
+}
+header .logo {
+    text-align: center;
+}
 /* }}} */
 
-/* section {{{ */
+/* nav {{{ */
+.hamburger {
+    z-index: 999;
+    position: fixed;
+    top: 15px;
+    right: 0px;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    background-color: #fff;
+    height: 3px;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before {
+    background-color: #fff;
+}
+.hamburger.is-active {
+    right: 80%;
+}
+#nav-overlay-close {
+    background: rgba(5,5,5,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+}
+#nav-overlay-close.active {
+    opacity: 1;
+    visibility: visible;
+}
+#main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 450px;
+    max-width: 80%;
+    /* background: #fff; */
+    background: rgba(255,255,255,.9);
+    z-index: 999;
+    transform: translateX(100%);
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#main-nav.active {
+    transform: translateX(0);
+}
+#main-nav .overlay-content {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.stellarnav.mobile > ul {
+    display: block !important;
+}
+.stellarnav.mobile ul {
+    background: none; 
+}
+.stellarnav .menu-toggle {
+    display: none !important;
+}
+.stellarnav .fa-plus {
+    -moz-transform: rotate(0) !important;
+    -webkit-transform: rotate(0) !important;
+    transform: rotate(0) !important;
+}
+.stellarnav .fa-plus::before {
+    content: '\f078';
+}
+.stellarnav li {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.stellarnav li.open,
+.stellarnav li:nth-child(odd):hover {
+    background:#77D2F1;
+}
+.stellarnav li:nth-child(even):hover {
+    /* background: rgba(238,29,142,.6); */
+    background: rgb(238,29,142); 
+}
+.stellarnav li.has-sub ul li:hover {
+    background: rgb(238,29,142); 
+}
+.stellarnav li.open ul {
+    background:#77D2F1;
+}
+.stellarnav .dd-toggle i {
+    top: 45%;
+}
+.stellarnav li a {
+    color: #292929;
+}
 /* }}} */
 
-/* section {{{ */
+/* #slider {{{ */
+#slider {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    max-width: 2157px;
+    z-index: -1;
+}
+#slider .slide1 {
+    background: url(images/banner-main.jpg) no-repeat center;
+    background-size: cover;
+}
+#slider .slide1 .grid-container {
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#slider .slide1 h1 {
+    text-align: center;
+}
 /* }}} */
 
 /* section {{{ */
@@ -110,6 +243,11 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 @media only screen and (max-width: 740px) {
     iframe{width:100%;height:280px}
     .patient-single{width:100%!important}
+}
+@media only screen and (min-width: 563px) {
+    .hamburger.is-active {
+        right: 450px;
+    }
 }
 
 /* min-width: 768px {{{ */
