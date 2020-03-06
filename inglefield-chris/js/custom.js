@@ -20,13 +20,13 @@ jQuery(document).ready(function($) {
         $('#nav-overlay-close').removeClass('active');
     });
 
-    const contentTop = $('.procs').offset().top;
+    /* const contentTop = $('.procs').offset().top;
     $(window).on('scroll', function() {
         $('.hamburger-inner').addClass('menu-blue');
         if ($(this).scrollTop() < contentTop) {
             $('.hamburger-inner').removeClass('menu-blue');
         }
-    });
+    }); */
 
     $('#testimonials-slider').flexslider({
         animation: 'fade',
