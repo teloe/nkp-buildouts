@@ -141,6 +141,9 @@ header .btn {
     z-index: 999;
 }
 .hamburger {
+    height: 65px;
+    display: flex;
+    align-items: center;
     position: absolute;
     right: 15px;
     border-radius: 50%;
@@ -261,8 +264,6 @@ header .btn {
 
 /* #slider {{{ */
 #slider {
-    /* position: absolute; */
-    top: 0;
     width: 100%;
     max-width: 2157px;
     margin: 0 auto;
@@ -274,6 +275,7 @@ header .btn {
 }
 #slider .slide1 .grid-container {
     height: 80vw;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -400,6 +402,7 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     #slider .slide1 h1 {
         font-size:70px;
+        margin-top: 10rem;
     }
 }
 /* }}} */
@@ -408,6 +411,12 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 @media only screen and (min-width: 1025px) {
 }
 /* }}} */
+
+@media only screen and (min-width: 2080px) {
+    .hamburger.is-active {
+        right: 15px;
+    }
+}
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 }
