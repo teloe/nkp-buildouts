@@ -8,13 +8,13 @@ jQuery(document).ready(function($) {
         mobileMode: true,
     });
 
-    $('.hamburger').on('click', function() {
+    $('.hamburger').on('click touchstart', function() {
         $(this).toggleClass('is-active');
         $('#main-nav').toggleClass('active');
         $('#nav-overlay-close').toggleClass('active');
     });
 
-    $('#nav-overlay-close').on('click', function() {
+    $('#nav-overlay-close').on('click touchstart', function() {
         $('#main-nav').toggleClass('active');
         $('.hamburger').removeClass('is-active');
         $('#nav-overlay-close').removeClass('active');
