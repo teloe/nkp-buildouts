@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
         $('#nav-overlay-close').toggleClass('active');
     });
 
-    $('#nav-overlay-close').on('click touchstart', function() {
+    $('#nav-overlay-close, .close-btn').on('click touchstart', function() {
         $('#main-nav').toggleClass('active');
         $('.hamburger').removeClass('is-active');
         $('#nav-overlay-close').removeClass('active');
