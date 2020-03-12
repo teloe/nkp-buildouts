@@ -25,4 +25,18 @@ jQuery(document).ready(function($) {
         directionNav: false,
         controlNav: false,
     });
+
+    $('.bxa-slider').flexslider({
+        animation: 'slide',
+        directionNav: true,
+        controlNav: false,
+        prevText: '',
+        nextText: '',
+    });
+
+    $('.faq .content').hide();
+    $('.faq .title').on('click', function() {
+        $(this).siblings('.content').slideToggle(200);
+        $(this).toggleClass('active');
+    });
 });
