@@ -25,6 +25,13 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('.about .content').on('touchstart', function() {
+        $(this).addClass('active');
+        $(this)
+            .find('.title')
+            .css('opacity', '0');
+    });
+
     /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
