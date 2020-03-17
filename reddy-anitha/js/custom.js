@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
-        breakpoint: 960,
+        breakpoint: 999999,
         menuLabel: 'Menu',
-        mobileMenu: true,
+        mobileMode: true,
     });
 
     $('#main-menu').on('click touchstart', function() {
@@ -16,6 +16,13 @@ jQuery(document).ready(function($) {
         $('#main-nav').toggleClass('active');
         $('#main-menu').removeClass('active');
         $('#nav-overlay-close').removeClass('active');
+    });
+
+    $(window).on('scroll', function() {
+        $('#main-menu').addClass('scroll');
+        if ($(this).scrollTop() === 0) {
+            $('#main-menu').removeClass('scroll');
+        }
     });
 
     /* $('#slider').flexslider({
