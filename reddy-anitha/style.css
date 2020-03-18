@@ -81,6 +81,17 @@ header .top-info a:hover{color:#E03186}
 #banner-slider .slide1{background:url(images/banner-main.jpg) no-repeat center;background-size:cover;height:80vw;display:flex;align-items:flex-end}
 #banner-slider .grid-container{width:100%}
 #banner-slider .slide1 h1{background:rgba(224,49,134,.9);color:#fff;font-weight:600;padding:2vw 4vw;margin-bottom:8vw;line-height:1.5;text-align:center;font-size:6vw}
+#banner-slider.internal .slide1{background:url(images/banner-internal.jpg) no-repeat center;background-size:cover;align-items:center;height:auto;padding:2rem 0}
+#banner-slider.internal .slide1 .content{position:relative;z-index:-1;padding:2rem 1rem;text-align:left}
+#banner-slider.internal .slide1 .content::before{content:'';display:block;background:#E949B6;position:absolute;left:0;top:0;height:100%;width:100%;z-index:-1}
+#banner-slider.internal .slide1 h1{margin-bottom:0;font-size:3rem;padding:0;text-align:left;background:none}
+#banner-slider.internal .slide1 h3{font-family:trajan-pro-3,serif;color:#fff;font-size:1.4rem}
+#banner-slider.internal .slide1 h3::after{content:'';display:block;height:2px;width:80%;margin-top:.5rem;background:#fff}
+
+#main{padding:5rem 0}
+#main #content h1{color:#E03186;font-size:2.5rem;line-height:1.25;padding-bottom:2rem}
+#main #content img,#main #content ul{margin-bottom:2rem}
+#main #content li{line-height:2}
 
 .welcome{margin:4rem 0}
 .welcome .mobile-bg{background:url(images/welcome-bg.jpg) no-repeat center;background-size:cover;height:60vw}
@@ -185,11 +196,19 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     header{background:none;position:absolute;width:100%}
     header .grid-container{display:flex;align-items:center;padding:30px 15px}
     header #logo{text-align:left;margin-bottom:0}
-    header .top-info{text-align:right}
+    header .top-info{text-align:right;margin-top:1.5rem}
     header .top-info p{display:inline-block}
     header .top-info p:first-of-type{padding-bottom:0;margin-right:1rem}
     #banner-slider .slide1{height:1050px;max-height:100vh}
+    #banner-slider.internal .slide1{height:auto;display:block;padding:0}
+    #banner-slider.internal .slide1 .grid-container{position:relative;height:863px;display:flex;align-items:flex-end;justify-content:flex-end}
+    #banner-slider.internal .slide1 img{position:absolute;bottom:0;left:0}
+    #banner-slider.internal .slide1 .content{margin-bottom:2rem}
+    #banner-slider.internal .slide1 .content::before{left:-40%}
+    #banner-slider.internal .slide1 h1{font-size:5rem;line-height:1.25}
+    #banner-slider.internal .slide1 h3{font-size:2.4rem}
     #banner-slider .slide1 h1{font-size:3.125rem;margin-bottom:6rem;padding:1.5rem 2rem}
+    #main #content h1{font-size:4rem}
     .welcome{background:url(images/welcome-bg.jpg) no-repeat center;background-size:cover;margin:6rem 0}
     .welcome .grid-container{padding:6rem 15px}
     .welcome .mobile-bg{display:none}
@@ -212,6 +231,10 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 }
 
 @media only screen and (min-width: 1025px) {
+    #banner-slider.internal .slide1 img{z-index:2}
+    #banner-slider.internal .slide1 .content{margin-bottom:6rem}
+    #banner-slider.internal .slide1 .content::before{left:-35%}
+    #banner-slider.internal .slide1 h1{font-size:6rem}
     .procs .bg-extend{background-position-x:right}
     .gallery{min-height:819px}
     .gallery a{padding:5rem 4rem;margin-bottom:4rem}
