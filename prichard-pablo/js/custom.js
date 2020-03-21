@@ -13,6 +13,24 @@ jQuery(document).ready(function($) {
         '<img class="img-resp" src="images/logo.png" />'
     );
 
+    $('.dropdown').on('touchstart', function() {
+        $(this)
+            .find('.dropdown-content')
+            .toggleClass('active');
+    });
+
+    if ($(window).width() > 1024) {
+        $('.popup-iframe').magnificPopup({
+            type: 'iframe',
+            mainClass: 'mfp-tee',
+            removalDelay: 160,
+            preloader: true,
+            fixedContentPos: true,
+        });
+    } else {
+        $('.popup-iframe').attr('target', '_blank');
+    }
+
     $('.banner-slider').flexslider({
         animation: 'fade',
         directionNav: false,

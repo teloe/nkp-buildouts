@@ -14,6 +14,7 @@
     <title>Prichard, Pablo</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://static.nkpmedical.com/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -55,15 +56,39 @@
     </header>
 
     <div id="banner-wrapper">
-        <div class="banner-content">
-            <h1>Phoenix's Premier Golf Course</h1>
-            <div class="text-wrap">
-				<h2>IT'S TEE TIME.</h2>
-				<p>The Quintero Golf Club offers players the consummate golfing experience in the Scottsdale Phoenix area. Ranked as the “Best Public Course” by both Golf Digest and GolfWeekly Magazines in 2017, the course was designed by master <em>golf course</em> architect Rees Jones. Experience Arizona golfing at its very best.</p>
-        <p class="text-center larger"><em>Top 40 Course in the U.S.</em></p>
-        <p><img class="img-resp" src="./images/logo-golf-advisor.png" alt="Golf Advisor"></p>
-				<img class="img-resp" src="./images/slider-logos.png" alt="">
-			</div>
+        <div class="grid-container">
+            <div class="banner-content">
+                <h1>Phoenix's Premier Golf Course</h1>
+                <div class="text grid-50">
+                    <h2>IT'S TEE TIME.</h2>
+                    <p>The Quintero Golf Club offers players the consummate golfing experience in the Scottsdale Phoenix area. Ranked as the “Best Public Course” by both Golf Digest and GolfWeekly Magazines in 2017, the course was designed by master <em>golf course</em> architect Rees Jones. Experience Arizona golfing at its very best.</p>
+                    <p class="larger"><em>Top 40 Course in the U.S.</em></p>
+                    <p><img class="golf-advisor img-resp" src="./images/logo-golf-advisor.png" alt="Golf Advisor"></p>
+                    <img class="img-resp" src="./images/slider-logos.png" alt="">
+                    <p class="larger book">Book your tee time below</p>
+                    <div class="btn-wrap">
+                        <div class="flex">
+                            <a class="btn popup-iframe" href="https://quinteroresident2.ezlinks.com/(S(ksggdc5502zlwsfertvib045))/Search/ReservationChannel.aspx">AZ Resident</a>
+                            <a class="btn popup-iframe" href="https://quintero2.ezlinks.com/(S(44d2kdabszeqa4r400wauc45))/Search/ReservationChannel.aspx">Non-Resident</a>
+                        </div>
+                        <div class="dropdown btn">
+                            Troon Tee Times
+                            <div class="dropdown-content">
+                                <a class="btn popup-iframe" href="https://aztrooncardquintero.ezlinksgolf.com">Troon Card Holder</a>
+                                <a class="btn popup-iframe" href="https://quinterotrooncert.ezlinks.com/">Troon Certificates</a>
+                            </div>
+                        </div>
+                        <a class="btn popup-iframe block" href="https://quinteroresidentpackage.ezlinks.com/(S(fhhgpnzjhzqdmxnz0n1hsxum))/Search/ReservationSearch.aspx">Players Card/Southwest Pass</a>
+                        <div href="#" class="dropdown btn">
+                            Single Player
+                            <div class="dropdown-content">
+                                <a class="btn popup-iframe" href="https://quinteroazres1.ezlinks.com">Resident</a>
+                                <a class="btn popup-iframe" href="https://quinteronr1.ezlinks.com">Non-Resident</a>
+                            </div>
+                        </div>			
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="banner-slider">
             <ul class="slides">
@@ -81,24 +106,24 @@
             <div class="grid-50">
                 <div class="content">
                     <div class="text">
+                        <div class="blue-dot"></div>
                         <h3>A course fit <strong>for royalty</strong></h3>
                         <p>Artistically carved out of a pristine piece of lush Arizona desert, Quintero golf course is described as the “Purest Golf Experience” in the Southwest, testing players at every level of expertise in the game.</p>
-                        <div class="bullet-blue"></div>
+                        <img class="img-resp" src="./images/royalty.png" alt="Scottsdale Golf Course">
                     </div>
-                    <img class="img-resp" src="./images/royalty.png" alt="Scottsdale Golf Course">
                 </div>
             </div>
             <div class="grid-50">
                 <div class="content">
-                    <img class="img-resp" src="./images/clubs.png" alt="Golf clubs">
                     <div class="text">
+                        <div class="blue-dot"></div>
+                        <img class="img-resp" src="./images/clubs.png" alt="Golf clubs">
                         <h3>Play in <strong>style &amp; seclusion</strong></h3>
                         <p>Enter a secluded world free from distraction, styled in the tradition of some of the world’s most celebrated golf courses. Enjoy the strategic bunker placement, generous landing areas, and some of the smoothest bentgrass greens in the Southwest.</p>
                         <p>If you want to dive into our lush <a href="/about/golfing-in-arizona/">Arizona golf course</a>, luxurious accommodations, or precision golf instruction, we’re just a click away.</p>
                         <a href="/contact" class="btn">Contact Us</a>
-                        <div class="bullet-blue"></div>
+                        <img class="img-resp" src="./images/clubs.png" alt="Golf clubs">
                     </div>
-                    <img class="img-resp" src="./images/clubs.png" alt="Golf clubs">
                 </div>
             </div>
         </div>
@@ -106,9 +131,9 @@
 
     <div class="rental-clubs">
         <div class="grid-container">
-            <div class="grid-60 prefix-10">
+            <div class="grid-60 tablet-80">
                 <div class="text">
-                    <img class="img-resp" src="./images/style-seclusion.png" alt="Best Golf Course Scottsdale">
+                    <img class="img-resp clubs" src="./images/clubs.png" alt="Golf clubs">
                     <h3 class="brand-title">Rental Clubs</h3>
                         <div class="logo-wrap">
                             <img class="pad-fix img-resp" src="./images//logo-ping.png" alt="Best Golf Course Phoenix">
@@ -124,7 +149,7 @@
 
     <section class="flyover">
         <div class="grid-container">
-            <div>
+            <div class="content">
                 <h3>Take the <strong>flyover tour</strong></h3>
                 <a href=""><img class="img-resp" src="./images//button-flyover.png" alt="Quintero Golf Course, Arizona: Course Flyover"></a>
             </div>
@@ -133,10 +158,10 @@
 
     <section class="destination">
         <div class="grid-container">
-            <div class="grid-50">
+            <div class="grid-50 tablet-50">
                 <img class="img-resp" src="./images/feat-destination.jpg" alt="Golf Course">
             </div>
-            <div class="grid-50">
+            <div class="grid-50 tablet-50">
                 <div class="content">
                     <h2><span>Your New</span> Favorite Destination</h2>
                     <p>Every year, <strong>Quintero Golf Club in Phoenix</strong> is ranked among the country’s <em>best golf courses</em>, comparable to the country’s most acclaimed championship courses -- a “must-play” for committed golfers. Quintero offers fresh challenges for scratch players, demanding exacting shots from tee to green.</p>
@@ -157,10 +182,10 @@
 
     <div class="events">
         <div class="grid-container grid-parent">
-            <div class="grid-50">
+            <div class="grid-50 tablet-50">
                 <img class="img-resp" src="./images/feat-cta.jpg" alt="Golf Course Phoenix">
             </div>
-            <div class="grid-50">
+            <div class="grid-50 tablet-50">
                 <h2>Beyond a mere round</h2>
                 <p>The Quintero Golf Club is available for corporate golfing getaways, tournaments, weddings venues, and events. Every detail will be managed with consummate skill, providing members and guests with the finest playing surfaces along with challenging shots, with the added benefit of a staff that offers warm personal hospitality, providing for your every need. For an unforgettable, exclusive golfing experience, make a trip to Quintero an essential part of your itinerary when visiting the Phoenix Scottsdale area.</p>
                 <p>Experience the game of golf at its very best. Book a tee time or the ultimate golfing vacation at Quintero Golf Course in Phoenix, AZ area.</p>
@@ -171,26 +196,27 @@
     <section class="book">
         <div class="dot-wrap"></div>
         <div class="grid-container">
-            <div class="grid-100">
-                <div class="small-11 large-4 small-centered column widget">
-                    <h3>Book a Tee Time</h3>
+            <div class="btn-wrap">
+                <h3>Book a tee time</h3>
+                <div class="flex">
                     <a class="btn popup-iframe" href="https://quinteroresident2.ezlinks.com/(S(ksggdc5502zlwsfertvib045))/Search/ReservationChannel.aspx">AZ Resident</a>
                     <a class="btn popup-iframe" href="https://quintero2.ezlinks.com/(S(44d2kdabszeqa4r400wauc45))/Search/ReservationChannel.aspx">Non-Resident</a>
-                    <div class="js-dropdown btn">
-                        Troon Tee Times
-                        <div>
-                            <a class="btn popup-iframe" href="https://aztrooncardquintero.ezlinksgolf.com">Troon Card Holder</a>
-                            <a class="btn popup-iframe" href="https://quinterotrooncert.ezlinks.com/">Troon Certificates</a>
-                        </div>
+                </div>
+                <div class="dropdown btn">
+                    Troon Tee Times
+                    <div class="dropdown-content">
+                        <a class="btn popup-iframe" href="https://aztrooncardquintero.ezlinksgolf.com">Troon Card Holder</a>
+                        <a class="btn popup-iframe" href="https://quinterotrooncert.ezlinks.com/">Troon Certificates</a>
                     </div>
-                    <a class="btn popup-iframe block" href="https://quinteroresidentpackage.ezlinks.com/(S(fhhgpnzjhzqdmxnz0n1hsxum))/Search/ReservationSearch.aspx">Players Card/Southwest Pass</a>
-                    <div href="#" class="js-dropdown btn">
-                        Single Player
-                        <div>
-                            <a class="btn popup-iframe" href="https://quinteroazres1.ezlinks.com">Resident</a>
-                            <a class="btn popup-iframe" href="https://quinteronr1.ezlinks.com">Non-Resident</a>
-                        </div>
-                    </div>    </div>
+                </div>
+                <a class="btn popup-iframe block" href="https://quinteroresidentpackage.ezlinks.com/(S(fhhgpnzjhzqdmxnz0n1hsxum))/Search/ReservationSearch.aspx">Players Card/Southwest Pass</a>
+                <div href="#" class="dropdown btn">
+                    Single Player
+                    <div class="dropdown-content">
+                        <a class="btn popup-iframe" href="https://quinteroazres1.ezlinks.com">Resident</a>
+                        <a class="btn popup-iframe" href="https://quinteronr1.ezlinks.com">Non-Resident</a>
+                    </div>
+                </div>			
             </div>
         </div>
     </section>
@@ -270,6 +296,7 @@
     </footer>
 
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 

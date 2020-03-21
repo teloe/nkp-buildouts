@@ -27,7 +27,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 h1, h2, h3, h4, h5 {
     margin: 0 0 15px 0;
     font-weight: 100;
@@ -36,11 +35,17 @@ h1, h2, h3, h4, h5 {
     line-height: 1.2;
     text-transform: uppercase;
 }
-
+p {
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+p.larger {
+    font-size:1.375rem;
+}
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #000;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease;
@@ -48,9 +53,36 @@ a:link {
     transition: all 0.5s ease;
 }
 a:hover {
-    color: #09557c;
+    opacity: .6;
     text-decoration: none;
     outline: none;
+}
+.btn,
+a.btn,
+button.btn {
+    cursor: pointer;
+    display: block;
+    padding: 14px 21px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    background: #335b92;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.btn:hover,
+a.btn:hover,
+button.btn:hover {
+    color: #fff;
+    background: #143c73;
+    opacity: 1;
 }
 
 ul,ol{clear:both}
@@ -76,6 +108,7 @@ ul,ol{clear:both}
 }
 .stellarnav.mobile .third {
     color: #000;
+    font-size: 15px;
 }
 .stellarnav.mobile .dd-toggle {
     height: 52px;
@@ -101,7 +134,7 @@ ul,ol{clear:both}
 .stellarnav li a {
     font-weight: 500;
     text-transform: uppercase;
-    border-top: solid 1px #dadada;
+    border-top: solid 1px rgba(0,0,0,.05);
     color: #000;
     font-family: raleway, sans-serif;
     font-size: 14px;
@@ -129,16 +162,90 @@ header #logo {
 /* slider {{{ */
 #banner-wrapper {
     position: relative;
+    /* overflow: hidden; */
 }
 .banner-content {
+    text-align: center;
+    background: rgba(0,0,0,0.43);
+    margin: 20px 0;
+    padding: 15px;
+    width: auto;
+}
+.banner-content h1 {
+    text-shadow: 0 0 20px #888;
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+.banner-content h2 {
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+.banner-content p {
+    font-weight: 500;
+    color: #fff;
+}
+.btn-wrap {
+    background: rgba(255,255,255,0.49);
+    margin-top: 15px;
+    padding: 20px;
+    position: relative;
+}
+.btn-wrap .btn {
+    margin-bottom: 20px;
+}
+.btn-wrap .dropdown {
+    position: relative;
+}
+.btn-wrap .dropdown::before {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     position: absolute;
-    z-index: 999;
+    right: 8px;
+}
+.btn-wrap .dropdown:hover .dropdown-content, 
+.btn-wrap .dropdown .dropdown-content.active {
+    opacity: 1;
+    visibility: visible;
+}
+.btn-wrap .dropdown-content {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    z-index: 9;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.banner-slider {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-slider .slides {
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.banner-slider .slides li {
+    height: 100%;
 }
 .banner-slider .slide1,
 .banner-slider .slide2,
 .banner-slider .slide3,
 .banner-slider .slide4 {
-    min-height: 1130px;
+    height: 100%;
 }
 .banner-slider .slide1 {
     background: url(images/slider1.jpg) no-repeat center;
@@ -156,15 +263,240 @@ header #logo {
     background: url(images/slider4.jpg) no-repeat center;
     background-size: cover;
 }
+.mfp-bg {
+    background: rgba(0,0,0,.5);
+}
 /* }}} */
 
-/* section {{{ */
+/* .about {{{ */
+.about .grid-container {
+    max-width: 100%;
+    padding: 0;
+}
+.about .grid-50 {
+    padding: 0;
+}
+.about .content {
+    background: url(images/flag.png) repeat center;
+    padding-top: 3.5rem;
+    text-align: center;
+}
+.about .content .text {
+    padding: 30px;
+}
+.about .content h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+.about .content h3 strong {
+    display: block;
+}
+.about .grid-50:first-of-type .content {
+    padding-bottom: 0;
+}
+.about .grid-50:first-of-type .content p {
+    margin-bottom: 2.5rem;
+}
+.about .grid-50:last-of-type .content {
+    padding-bottom: 8rem;
+}
+.about .grid-50:last-of-type .content img:first-of-type {
+    display: none;
+}
+.about .grid-50:last-of-type .content img:last-of-type {
+    margin-top: 2rem;
+}
+.about .btn {
+    max-width: 140px;
+    margin: 0 auto;
+}
 /* }}} */
 
-/* section {{{ */
+/* .rental-clubs {{{ */
+.rental-clubs .grid-container {
+    position: relative;
+}
+.rental-clubs .grid-60 {
+    position: absolute;
+    top: -100px;
+    right: 15px;
+    left: 15px;
+    text-align: center;
+    margin: auto;
+    background: url(images/flag.png) repeat center;
+    padding: 2rem 15px;
+    border: 3px solid #2f4500; 
+    z-index: 2;
+}
+.rental-clubs .grid-60 .clubs {
+    max-width: 50px;
+}
+.rental-clubs .brand-title {
+    font-size: 2.125rem;
+    font-weight: 700;
+    padding: 1rem 0 .5rem;
+}
+.rental-clubs .logo-wrap {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.rental-clubs .logo-wrap img {
+    width: 80%;
+}
 /* }}} */
 
-/* section {{{ */
+/* .flyover {{{ */
+.flyover {
+    background: url(images/bkg-hole-11.jpg) center center no-repeat;
+    /* background-attachment: scroll; */
+    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+.flyover::before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: -1;
+}
+.flyover .content {
+    max-width: 300px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 4px solid #fff;
+    margin: 485px auto 180px;
+    z-index: 9;
+}
+.flyover .content h3 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.flyover .content h3 strong {
+    display: block;
+}
+.flyover .content img {
+    width: 55%;
+}
+/* }}} */
+
+/* .destination {{{ */
+.destination {
+    background: #fff url(images//bkg-designed.jpg) center top no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.destination .grid-container {
+    padding: 5rem 15px;
+}
+.destination h2 {
+    margin: 20px 0 15px;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+.destination h2 span {
+    display: block;
+    font-size: 75%;
+}
+/* }}} */
+
+/* .convenience {{{ */
+.convenience {
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+}
+.convenience .grid-container {
+    padding: 5rem 15px;
+    text-align: center;
+}
+.convenience h2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+/* }}} */
+
+/* .events {{{ */
+.events {
+    background: #fff url(images/bkg-designed.jpg) center top no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 2rem;
+}
+.events .grid-container {
+    padding: 5rem 15px;
+}
+.events h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/* }}} */
+
+/* .book {{{ */
+.book {
+    position: relative;
+    background: url(images/flag.png) center top repeat;
+}
+.book .dot-wrap {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 50%;
+    height: 100px;
+    background: url(images/flag.png) repeat;
+    border-top-right-radius: 35px;
+    border-right: 3px solid #2f4500;
+}
+.book .dot-wrap::before {
+    position: absolute;
+    width: calc(100% + 6px);
+    height: 100%;
+    content: " ";
+    display: block;
+    left: 100%;
+    background: url(images/flag.png) repeat;
+    border-top-left-radius: 35px;
+    border-left: 3px solid #2f4500;
+}
+.book .dot-wrap::after {
+    position: absolute;
+    content: " ";
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background: #6baaff;
+    display: block;
+    right: -15px;
+    bottom: -15px;
+}
+.book .grid-container {
+    padding: 7rem 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book h3 {
+    color: #0b2d51;
+    font-size: 2rem;
+    text-align: center;
+}
+.book .btn-wrap {
+    max-width: 405px;
+    padding: 40px 34px 55px 34px;
+    border: 3px solid #e3e3e3;
+}
 /* }}} */
 
 /* section {{{ */
@@ -211,6 +543,64 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
+    .flex {
+        display: flex;
+    }
+    #banner-wrapper .grid-container {
+        padding-bottom: 4rem;
+    }
+    .banner-content {
+        margin: 20px;
+        padding: 30px;
+        background: none; 
+    }
+    .banner-content .golf-advisor {
+        width: 75%;
+    }
+    .btn-wrap .flex {
+        justify-content: center;
+    }
+    .btn-wrap .flex .btn {
+        margin: 5px;
+    }
+    .banner-content h1 {
+        font-size: 80px;
+        text-align: left;
+    }
+    .banner-content .text {
+        background: rgba(0,0,0,0.43);
+        padding: 30px;
+    }
+    .banner-content .larger.book {
+        text-transform: uppercase;
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+    .btn-wrap .btn {
+        margin-bottom: 5px;
+    }
+    .rental-clubs .text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .rental-clubs .logo-wrap {
+        display: inline-block;
+        width: 48%;
+    }
+    .flyover .content {
+        margin: 400px auto 180px;
+    }
+    .destination h2 {
+        font-size: 2.25rem;
+        margin-top: 0;
+    }
+    .convenience h2 {
+        font-size: 2.25rem;
+    }
+    .events h2 {
+        margin-top: 0;
+        font-size: 2.25rem;
+    }
 }
 /* }}} */
 
@@ -221,6 +611,22 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 /* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background: #fff;
+        padding: 10px 0;
+        box-shadow: 1px 18px 27px -20px rgba(0,0,0,0.3);
+    }
+
+    header #logo {
+        display: none;
+    }
+    header .peoria-temp {
+        display: block;
+    }
     #main-nav .grid-container {
         padding: 0;
     }
@@ -233,17 +639,88 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     .stellarnav .desktop-logo:hover {
         opacity: .5;
     }
+    .stellarnav ul ul {
+        background: #fff;
+        box-shadow:0px 0px 21px -5px rgba(0,0,0,0.3);
+    }
     .stellarnav li a {
         border-top: none; 
     }
     .stellarnav > ul > li > a {
         padding: 20px 14px;
     }
-    header #logo {
+    #banner-wrapper {
+        margin-top: 176px;
+    }
+    .banner-content h1 {
+        float: right; 
+        width: 48%;
+        margin-top: 6rem;
+    }
+    .about .content {
+        display: flex;
+        padding: 0 !important;
+        min-height: 800px;
+        margin-top: -40px;
+        align-items: center;
+    }
+    .about .grid-50:first-of-type .content {
+        border-radius:0 35px 35px 0;
+        border-right: 2px solid #2f4500;
+        justify-content: flex-end;
+    }
+    .about .grid-50 .content .text {
+        position: relative;
+        max-width: 585px;
+    }
+    .about .grid-50:first-of-type .content .text h3,
+    .about .grid-50:first-of-type .content .text p {
+        text-align: right;
+    }
+    .about .grid-50:first-of-type .content .text h3 {
+        margin-bottom: 3rem;
+    }
+    .about .grid-50:first-of-type .content .text img {
+        margin-top: 3rem;
+    }
+    .about .grid-50:last-of-type .content .text h3,
+    .about .grid-50:last-of-type .content .text p {
+        text-align: left;
+    }
+    .about .grid-50:last-of-type .content .text .btn {
+        margin-left: 0;
+    }
+    .about .grid-50:last-of-type .content img:first-of-type {
+        display: block;
+        margin: 0 auto 3rem;
+    }
+    .about .grid-50:last-of-type .content img:last-of-type {
         display: none;
     }
-    header .peoria-temp {
-        display: block;
+    .about .grid-50:last-of-type .content {
+        border-left: 2px solid #2f4500;
+        border-radius: 35px 0 0 35px;
+    }
+    .about .content .blue-dot {
+        position: absolute;
+        background-color: #6baaff;
+        width: 25px;
+        height: 25px;
+        border-radius: 15px;
+    }
+    .about .grid-50:first-of-type .content .text .blue-dot {
+        top: 20%;
+        right: -15px; 
+    }
+    .about .grid-50:last-of-type .content .text .blue-dot {
+        top: 70%;
+        left: -15px; 
+    }
+    .rental-clubs .grid-60 {
+        top: -70px;
+    }
+    .events {
+        padding-bottom: 4rem;
     }
 }
 /* }}} */
@@ -260,3 +737,8 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
 }
 
+@media only screen and (max-width: 767px) and (min-width: 445px) {
+    .rental-clubs .logo-wrap img {
+        width: 50%;
+    }
+}
