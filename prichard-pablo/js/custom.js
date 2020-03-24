@@ -36,4 +36,17 @@ jQuery(document).ready(function($) {
         directionNav: false,
         controlNav: false,
     });
+
+    $('.ranking .desc').hide();
+
+    $('.ranking .next-btn').on('click', function() {
+        $('.ranking .rank').fadeOut('slow', function() {
+            $('.ranking .desc').fadeIn('slow');
+        });
+    });
+    $('.ranking .prev-btn').on('click', function() {
+        $('.ranking .desc').fadeOut('slow', function() {
+            $('.ranking .rank').fadeIn('slow');
+        });
+    });
 });
