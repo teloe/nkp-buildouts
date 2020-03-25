@@ -668,7 +668,136 @@ footer .rating * {
     color: #fff;
 }
 footer .social {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+}
+footer .stars-container {
+    margin-top: .5rem;
+}
+/* }}} */
+
+/* .course-slider {{{ */
+.course-slider {
+    position: relative;
+}
+.course-slider .banner-img {
+    width: 100%;
+}
+
+.course-slider .flex-direction-nav {
+    background: rgba(0,0,0,.9);
+    display: flex;
+    justify-content: center;
+}
+.course-slider .flex-nav-prev,
+.course-slider .flex-nav-next {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+}
+.course-slider .flex-prev,
+.course-slider .flex-next {
+    display: block;
+    padding: 2rem;
+    width: 100%;
+}
+.course-slider .flex-prev::before,
+.course-slider .flex-next::before {
+    content: '';
+    display: block;
+    border-right: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+.course-slider .flex-prev:hover,
+.course-slider .flex-next:hover {
+    opacity: 1;
+}
+.course-slider .flex-prev::before {
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.course-slider .flex-next::before {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.course-slider .drone {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    max-width: 160px;
+    box-shadow: 0px 0px 26px -6px #000;
+}
+.course-slider .drone img {
+    display: none;
+}
+.course-slider .drone .btns {
+    padding: 10px 5px;
+    background: #fff;
+    text-align: center;
+}
+.course-slider .drone .btns a {
+    color: #000;
+    display: inline-block;
+    padding: 2px 9px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.course-slider .drone .btns a:first-of-type {
+    border-right: solid 1px lightgray;
+}
+.course-slider .text {
+    background: #e4e4e4;
+    padding: 30px;
+}
+.course-slider .text p {
+    font-size: 14px;
+}
+.course-slider .text table {
+    margin-bottom: 10px;
+    position: relative;
+    left: -9px;
+}
+.course-slider .hole {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+.course-slider .text td {
+    padding: 6px 9px;
+    letter-spacing: 0.7px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.course-slider .text td.circle::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #000;
+    display: block;
+    border-radius: 100%;
+    position: relative;
+    top: 3px;
+    margin: 0 10px 10px 0;
+    box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.2);
+}
+.course-slider .text td.circle.gold::before {
+    background: #FFD700;
+}
+.course-slider .text td.circle.silver::before {
+    background: #C0C0C0;
+}
+.course-slider .text td.circle.copper::before {
+    background: #b87333;
+}
+.course-slider .text td.circle.jade::before {
+    background: #2cc48a;
 }
 /* }}} */
 
@@ -768,7 +897,91 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
 
 /* min-width: 960px {{{ */
 @media only screen and (min-width: 960px) {
+    .course-slider {
+        overflow: hidden;
+    }
+    .course-slider .text {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.63) 100%);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 100px 0 30px 75px;
+        text-shadow: 0px 1px 7px #000;
+        opacity: 0;
+        -moz-transition: all 500ms ease-in-out 500ms;
+        -webkit-transition: all 500ms ease-in-out 500ms;
+        transition: all 500ms ease-in-out 500ms;
+        -moz-transform: translateY(40px);
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    .course-slider .flex-active-slide .text {
+        opacity: 1;
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .course-slider .text * {
+        color: #fff;
+    }
+    .course-slider .text p {
+        font-weight: 400;
+    }
+    .course-slider .text .description {
+        max-width: 300px;
+    }
+    .course-slider .text td.circle {
+        font-size: 18px;
+    }
+    .course-slider .text td.circle::before {
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+    .course-slider .flex-direction-nav {
+        display: block;
+        background: none;
+    }
+    .course-slider .flex-nav-prev, 
+    .course-slider .flex-nav-next {
+        display: block;
+    }
+    .course-slider .flex-prev, 
+    .course-slider .flex-next {
+        position: absolute;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,.8);
+        width: 42px;
+        height: 75px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 9;
+    }
+    .course-slider .flex-prev {
+        left: 15px;
+    }
+    .course-slider .flex-next {
+        right: 15px;
+    }
+    .course-slider .flex-prev::before,
+    .course-slider .flex-next::before {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        margin: 0;
+    }
+    .course-slider .flex-prev::before {
+        left: 5px;
+    }
+    .course-slider .flex-next::before {
+        right: 5px;
+    }
 }
+
 /* }}} */
 
 /* min-width: 1025px {{{ */
@@ -963,12 +1176,48 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         left:0;
         margin: auto;
     }
+    .course-slider {
+        margin-top: 144px;
+    }
+    .course-slider .text {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.63) 100%);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 100px 0 30px;
+        text-shadow: 0px 1px 7px #000;
+    }
+    .course-slider .text .description {
+        float: left;
+        padding: 0 30px;
+        max-width: 400px;
+    }
+    .course-slider .text .hole {
+        position: relative;
+        left: 30px;
+        top: 10px;
+    }
+    .course-slider .details {
+        border-left: 1px solid rgba(255,255,255,0.28);
+        float: left;
+        padding: 0 30px;
+    }
+    .course-slider .drone img {
+        display: block;
+        background: rgba(0,0,0,0.76);
+        padding: 12px 40px;
+        width: 100%;
+    }
 }
 /* }}} */
 
 @media only screen and (min-width: 1131px) {
     .stellarnav .desktop-logo img {
         width: 170px;
+    }
+    .course-slider {
+        margin-top: 176px;
     }
 }
 

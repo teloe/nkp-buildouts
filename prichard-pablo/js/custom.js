@@ -31,10 +31,34 @@ jQuery(document).ready(function($) {
         $('.popup-iframe').attr('target', '_blank');
     }
 
+    $('.popup-image').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: true,
+        fixedContentPos: true,
+    });
+
+    $('.popup-video').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false,
+    });
+
     $('.banner-slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false,
+    });
+
+    $('.course-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: false,
+        prevText: '',
+        nextText: '',
     });
 
     $('.ranking .desc').hide();
