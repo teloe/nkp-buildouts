@@ -136,6 +136,14 @@ ul,ol{clear:both}
     color: #000;
     font-size: 15px;
 }
+.stellarnav.mobile .third:hover {
+    background: rgba(0,0,0,.9);
+    opacity: 1;
+    color: #fff;
+}
+.stellarnav.mobile .menu-toggle {
+    color: #000;
+}
 .stellarnav.mobile .dd-toggle {
     height: 52px;
 }
@@ -147,23 +155,18 @@ ul,ol{clear:both}
 .stellarnav.mobile .dd-toggle .fa-plus::before {
     content: '\f078';
 }
-.stellarnav.mobile .close-menu {
-    color: #000;
-    width: 100%;
-}
-.stellarnav.mobile .third:hover {
-    opacity: .5;
+.stellarnav.mobile > ul {
+    background: #fff;
+    z-index: 999;
+    box-shadow: -10px 0px 15px rgba(0,0,0,.1);
 }
 .stellarnav.mobile ul {
     background: #fff;
 }
 .stellarnav li a {
-    font-weight: 500;
-    text-transform: uppercase;
     border-top: solid 1px rgba(0,0,0,.05);
     color: #000;
     font-family: raleway, sans-serif;
-    font-size: 14px;
     font-style: normal;
 }
 .stellarnav li a:hover {
@@ -666,6 +669,7 @@ footer .address p {
 }
 footer .rating * {
     color: #fff;
+    /* font-weight: 400; */
 }
 footer .social {
     margin: 1rem 0;
@@ -801,6 +805,74 @@ footer .stars-container {
 }
 /* }}} */
 
+/* #main {{{ */
+#main #content .pb {
+    padding-bottom: 2rem;
+}
+#main #content .white-bg {
+    background: #fff;
+}
+#main #content .white-bg-border {
+    background: #fff;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+}
+#main #content .bg-1 {
+    background: #fff url(images/bkg-designed.jpg) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#main #content .bg-2 {
+    background: #fff url(images/bkg-2.jpg) center top no-repeat;
+    background-size: cover;
+}
+#main #content .bg-3 {
+    background: #fff url(images/bkg-3.jpg) center top no-repeat;
+    background-size: cover;
+}
+#main #content .flag-bg {
+    background: #fff url(images/flag.png) center top repeat;
+    /* background-size: cover; */
+}
+#main #content .course-bg-white {
+    background: #fff url(images/bkg-designed.jpg) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#main #content .grid-container {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+#main #content .course-intro h1 {
+    font-size: 2.125rem;
+    font-weight: 300;
+}
+#main #content .course-bg-white h2 span {
+    display: block;
+    font-size: 56%;
+}
+#main #content h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#main #content .btn {
+    max-width: 150px;
+    margin: 2rem auto 0;
+}
+#main #content img {
+    padding-bottom: 2rem;
+}
+#main #content .book .btn {
+    max-width: 100%;
+    margin: 0 0 5px;
+
+}
+#main #content .book .flex .btn {
+    margin: 0 5px 5px;
+}
+/* }}} */
+
 /* NKP GLOBAL STYLES {{{ */
 img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
@@ -888,9 +960,27 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     footer .address {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: center;
         margin-bottom: 1rem;
+    }
+    #main #content .grid-container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    #main #content .course-intro h1 {
+        font-size: 2.75rem;
+    }
+    #main #content h2 {
+        font-size: 2.25rem;
+        margin-top: 0;
+    }
+    #main #content img {
+        padding-bottom: 0;
+    }
+    #main #content .btn {
+        margin-left: 0;
     }
 }
 /* }}} */
@@ -1003,6 +1093,15 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
     }
     #main-nav .grid-container {
         padding: 0;
+    }
+    .stellarnav li a {
+        font-weight: 500;
+        text-transform: uppercase;
+        border-top: solid 1px rgba(0,0,0,.05);
+        color: #000;
+        font-family: raleway, sans-serif;
+        font-size: 14px;
+        font-style: normal;
     }
     .stellarnav .desktop-logo {
         display: inline-block !important;
@@ -1208,6 +1307,9 @@ input,select,textarea{-webkit-transition:all .5s ease-out;-moz-transition:all .5
         background: rgba(0,0,0,0.76);
         padding: 12px 40px;
         width: 100%;
+    }
+    #main #content .pb {
+        padding-bottom: 4rem;
     }
 }
 /* }}} */
