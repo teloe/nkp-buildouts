@@ -30,7 +30,7 @@
             </div>
             <div class="grid-50">
                 <div class="top-info">
-                    <p class="bold"><a href="">(831 758-2746)</a></p>
+                    <p><strong><a href="">(831 758-2746)</a></strong></p>
                     <p>1260 S Main St #201, Salinas, CA 93901</p>
                     <p>665 Munras Avenue Suite 220, Monterey, CA 93940</p>
                 </div>
@@ -69,7 +69,7 @@
             <li>
                 <div class="slide1">
                     <div class="grid-container">
-                        <div class="grid-80 prefix-10 tablet-80 tablet-prefix-10">
+                        <div class="grid-80 prefix-10 tablet-80 tablet-prefix-10" data-aos="fade-up" data-aos-delay="500">
                             <h1 class="tac">Salinas Valley Plastic Surgery</h1>
                             <div class="btn-wrap flex">
                                 <a class="btn" href="">Medical Spa</a>
@@ -95,19 +95,19 @@
 
     <section class="procs">
         <div class="grid-container">
-            <div class="grid-33">
+            <div class="grid-33" data-aos="fade-right">
                 <a class="content" href="">
                     <img class="img-resp" src="./images/face.jpg" alt="">
                     <h2>Face</h2>
                 </a>
             </div>
-            <div class="grid-33">
+            <div class="grid-33" data-aos="fade-right" data-aos-delay="200">
                 <a class="content" href="">
                     <img class="img-resp" src="./images/breast.jpg" alt="">
                     <h2>Breast</h2>
                 </a>
             </div>
-            <div class="grid-33">
+            <div class="grid-33" data-aos="fade-right" data-aos-delay="400">
                 <a class="content" href="">
                     <img class="img-resp" src="./images/body.jpg" alt="">
                     <h2>Body</h2>
@@ -119,7 +119,7 @@
     <section class="shop">
         <div class="mobile-bg"></div>
         <div class="grid-container">
-            <div class="grid-50 tablet-55">
+            <div class="grid-50 tablet-55" data-aos="fade-right">
                 <h1 class="section-header">Shop</h1>
                 <h3 class="sub">View Products</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat at turpis eu vestibulum. In et diam nec sapien finibus lacinia ac quis sem. Aenean gravida viverra libero a fermentum. Nulla varius vitae tortor pharetra semper. In in vehicula augue. In efficitur felis id aliquet facilisis. Donec varius ullamcorper velit, id faucibus justo volutpat vel. </p>
@@ -150,7 +150,7 @@
     <section class="credit">
         <div class="mobile-bg"></div>
         <div class="grid-container">
-            <div class="grid-50 tablet-50 fr">
+            <div class="grid-50 tablet-50 fr" data-aos="fade-left">
                 <img class="img-resp" src="./images/care-credit.png" alt="Care Credit">
                 <h1 class="section-header">Get the care you need</h1>
                 <p>For over 30 years, CareCredit has been providing a valuable financing option for treatments and procedures that typically are not covered by insurance, or for times when insurance doesn't cover the full amount. CareCredit is also used by cardholders to pay for deductibles and co-payments.</p>
@@ -240,6 +240,35 @@
                 <div class="form-wrap">
                     <h3 class="sub">Contact Us</h3>
                     <h1 class="section-header">Say Hello!</h1>
+                    <form action="/#wpcf7-f4789-p1994-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div class="footer-form">
+
+                            <div class="grid-50 tablet-50">    
+                                <div><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
+                                <div><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone (optional)"></span></div>
+                                <div><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                            </div>
+                            
+                            <div class="grid-50 tablet-50">
+                                <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span>
+                            </div>
+
+                            <div class="grid-50 tablet-50 agreement">
+                                <span class="wpcf7-form-control-wrap agree">
+                                    <span class="wpcf7-form-control wpcf7-acceptance">
+                                        <span class="wpcf7-list-item">
+                                            <input type="checkbox" name="agree" value="1" aria-invalid="false" class="checkbox-inline">
+                                        </span>
+                                    </span>
+                                </span> I agree to the  <a href="/terms-of-use/">terms of use</a>
+                            </div>
+
+                            <div class="grid-50 tablet-50">
+                                <button class="wpcf7-form-control wpcf7-submit btn">Send Message</button>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -250,14 +279,18 @@
             <div class="grid-50">
                 <div class="footer-nav">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Photo Gallery</a></li>
-                        <li><a href="">Locations</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Specials</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <div class="grid-50 tablet-50 mobile-50 grid-parent">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Photo Gallery</a></li>
+                        </div>
+                        <div class="grid-50 tablet-50 mobile-50 grid-parent">
+                            <li><a href="">Locations</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Specials</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -277,6 +310,7 @@
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
     <script type="text/javascript" src="js/lax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- lax.js init -->
     <script type="text/javascript">
         window.onload = function() {
@@ -289,6 +323,19 @@
 
         window.requestAnimationFrame(updateLax)
         }
+    </script>
+    <!-- aos init-->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
     </script>
 
 </body>
