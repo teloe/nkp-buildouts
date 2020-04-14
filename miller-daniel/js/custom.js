@@ -25,6 +25,14 @@ jQuery(document).ready(function ($) {
         nextText: '',
     });
 
+    $('#gallery-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: false,
+        prevText: '',
+        nextText: '',
+    });
+
     // #dr-slider counter
     const a = $('#dr-slider .slides li').length,
         c = $('.counter .current'),
