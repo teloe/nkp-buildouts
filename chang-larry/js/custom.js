@@ -89,4 +89,11 @@ jQuery(document).ready(function ($) {
         controlNav: true,
         manualControls: '.controls li a',
     });
+
+    $('.video').magnificPopup({
+        items: {
+            src: 'https://www.youtube.com/watch?v=rhEFKLXj5rg',
+        },
+        type: 'iframe',
+    });
 });
