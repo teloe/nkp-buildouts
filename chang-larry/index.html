@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NKP</title>
+    <title>Chang, Larry</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -21,46 +21,289 @@
 
     <header>
         <div class="grid-container">
-            <div class="grid-30 tablet-30">
-                <a class="btn" href="">Noveau Medispa</a>
+            <div class="logo grid-100 tablet-100 hide-on-desktop tac">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="">
+                </a>
             </div>
-            <div class="grid-40 tablet-40">
-                <div id="menu">
+            <div class="grid-40 tablet-40 push-30 tablet-push-30">
+                <div class="open-menu">
+                    <span></span>
                 </div>
+            </div>
+            <div class="grid-30 tablet-30 pull-40 tablet-pull-40">
+                <a class="btn" href="">Noveau Medispa</a>
             </div>
             <div class="grid-30 tablet-30">
                 <a class="btn" href="">Hair Restoration</a>
             </div>
         </div>
     </header>
-    <!-- header -->
+    <!-- /header -->
+
+    <div id="sticky-nav">
+        <div class="grid-container">
+            <div class="logo grid-50 tablet-50">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="grid-50 tablet-50">
+                <div class="open-menu">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #/sticky-nav -->
+
+    <section id="nav-overlay">
+        <div id="desktop-menu" class="hide-on-mobile hide-on-tablet">
+            <div class="left grid-40">
+                <div id="menu">
+                    <div class="logo">
+                        <a href="/" title="">
+                            <img class="img-resp" src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div id="menu-desktop-menu-container">
+                        <ul id="menu-desktop-menu">
+                            <li class="home"><a href="">Home</a></li>
+                            <li class="about"><a href="">About Us</a></li>
+                            <li class="surgery"><a href="">Surgery</a></li>
+                            <li class="medispa"><a href="">Medispa</a></li>
+                            <li class="reviews"><a href="">Reviews</a></li>
+                            <li class="resources"><a href="">Resources</a></li>
+                            <li class="contact"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p class="add">18947 John J Williams Hwy, Rehoboth Beach, DE 19971</p>
+                        <p class="phone">(302) 645-7435</p>
+                        <ul class="social">
+                            <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-yelp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right grid-60">
+                <div class="sub-menu">
+                    <div class="close-menu">
+                        <span></span>
+                        <span></span>
+                        <p>CLOSE</p>
+                    </div>
+                </div>
+                <div id="menu-area" class="grid-100 grid-parent">
+                    <div id="about-menu">
+                        <ul>
+                            <li><a href="">Meet the Doctor</a></li>
+                            <li><a href="">Meet the Team</a></li>
+                            <li><a href="">Our Office</a></li>
+                        </ul>
+                    </div>
+                    <div id="surgery-menu">
+                        <ul>
+                            <li class="service-title"><a href="">Breast</a>
+                                <ul>
+                                    <li><a href="">Breast Lift</a></li>
+                                    <li><a href="">Breast Revisions</a></li>
+                                    <li><a href="">Breast Augmentation</a></li>
+                                    <li><a href="">Breast Reconstruction</a></li>
+                                </ul>
+                            </li>
+                            <li class="service-title"><a href="">Body</a>
+                                <ul>
+                                    <li><a href="">Liposuction</a></li>
+                                    <li><a href="">Mommy Makeover</a></li>
+                                    <li><a href="">Tummy Tuck</a></li>
+                                </ul>
+                            </li>
+                            <li class="service-title"><a href="">Face</a>
+                                <ul>
+                                    <li><a href="">Facelift</a></li>
+                                    <li><a href="">Mini Facelift</a></li>
+                                    <li><a href="">Rhinoplasty</a></li>
+                                    <li><a href="">Blepharoplasty</a></li>
+                                </ul>
+                            </li>
+                            <li class="service-title"><a href="">Medical Dermatology</a>
+                                <ul>
+                                    <li><a href="">Melanoma Skin Cancer Care &amp; Screenings</a></li>
+                                    <li><a href="">Medical Grade Skin Care</a></li>
+                                    <li><a href="">Breast Cancer Reconstructive Surgery</a></li>
+                                    <li><a href="">MOHs</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="medispa-menu">
+                        <ul>
+                            <li><a href="">Body</a>
+                                <ul>
+                                    <li><a href="">Non-Invasive Muscle Contouring</a></li>
+                                    <li><a href="">Noninvasive Fat/Cellulite Reduction</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Injectables</a>
+                                <ul>
+                                    <li><a href="">Neurotoxins</a></li>
+                                    <li><a href="">Dermal Fillers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Facials</a>
+                                <ul>
+                                    <li><a href="">Microdermabrasion</a></li>
+                                    <li><a href="">Microneedling</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Chemical Peels</a></li>
+                            <li><a href="">Skin Tightening</a>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/desktop-menu -->
+
+        <div id="mobile-menu" class="hide-on-desktop">
+            <div class="sub-menu">
+                <div class="close-menu">
+                    <span></span>
+                    <span></span>
+                    <p>CLOSE</p>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="stellarnav">
+                <ul>
+                    <li class="home"><a href="">Home</a></li>
+                    <li class="about"><a href="">About Us</a></li>
+                    <li class="surgery"><a href="">Surgery</a>
+                        <ul>
+                            <li class="service-title"><a href="">Breast</a>
+                                <ul>
+                                    <li><a href="">Breast Lift</a></li>
+                                    <li><a href="">Breast Revisions</a></li>
+                                    <li><a href="">Breast Augmentation</a></li>
+                                    <li><a href="">Breast Reconstruction</a></li>
+                                </ul>
+                            </li>
+                            <li class="service-title"><a href="">Body</a>
+                                <ul>
+                                    <li><a href="">Liposuction</a></li>
+                                    <li><a href="">Mommy Makeover</a></li>
+                                    <li><a href="">Tummy Tuck</a></li>
+                                </ul>
+                            </li>
+                            <li class="service-title"><a href="">Face</a>
+                                <ul>
+                                    <li><a href="">Facelift</a></li>
+                                    <li><a href="">Mini Facelift</a></li>
+                                    <li><a href="">Rhinoplasty</a></li>
+                                    <li><a href="">Blepharoplasty</a></li>
+                                </ul>
+                            </li>
+                            <li class="service-title"><a href="">Medical Dermatology</a>
+                                <ul>
+                                    <li><a href="">Melanoma Skin Cancer Care &amp; Screenings</a></li>
+                                    <li><a href="">Medical Grade Skin Care</a></li>
+                                    <li><a href="">Breast Cancer Reconstructive Surgery</a></li>
+                                    <li><a href="">MOHs</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="medispa"><a href="">Medispa</a>
+                        <ul>
+                            <li><a href="">Body</a>
+                                <ul>
+                                    <li><a href="">Non-Invasive Muscle Contouring</a></li>
+                                    <li><a href="">Noninvasive Fat/Cellulite Reduction</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Injectables</a>
+                                <ul>
+                                    <li><a href="">Neurotoxins</a></li>
+                                    <li><a href="">Dermal Fillers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Facials</a>
+                                <ul>
+                                    <li><a href="">Microdermabrasion</a></li>
+                                    <li><a href="">Microneedling</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Chemical Peels</a></li>
+                            <li><a href="">Skin Tightening</a>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="reviews"><a href="">Reviews</a></li>
+                    <li class="resources"><a href="">Resources</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p class="add">18947 John J Williams Hwy, Rehoboth Beach, DE 19971</p>
+                <p class="phone">(302) 645-7435</p>
+                <ul class="social">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-yelp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- #/mobile-menu -->
+
+    </section>
+    <!-- #/nav-overlay -->
 
     <section id="banner">
-        <div class="grid-container">
-            <div class="grid-50 tablet-60">
-                <div id="logo">
+        <div class="grid-container grid-parent">
+            <div class="grid-60 tablet-60 tablet-prefix-5 mobile-70">
+                <div class="logo" data-aos="fade-up">
                     <a href="/" title="">
                         <img class="img-resp" src="./images/logo.png" alt="">
                     </a>
                 </div>
-                <div id="banner-slider">
-                    <ul class="slides">
-                        <li>
-                            <div class="slide1">
-                                <h3>Our goal is to help patients</h3>
-                                <h1>Look <span>&amp; feel<br>confident</span></h1>
-                            </div>
-                            <div class="slide2">
-                                <h3>Our goal is to help patients</h3>
-                                <h1>Look <span>&amp; feel<br>confident</span></h1>
-                            </div>
-                            <div class="slide3">
-                                <h3>Our goal is to help patients</h3>
-                                <h1>Look <span>&amp; feel<br>confident</span></h1>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <ul id="cyclelist" data-aos="fade-up" data-aos-delay="400">
+                    <li class="active">
+                        <div class="slide1">
+                            <h3>Our goal is to help patients</h3>
+                            <h1>Look <span>&amp; feel<br>confident</span></h1>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide2">
+                            <h3>Labore ipsum duis pariatur.</h3>
+                            <h1>Feel <span>more<br>beautiful</span></h1>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide3">
+                            <h3>Aute quis ipsum proident.</h3>
+                            <h1>Lorem <span>&amp; ipsum<br>better</span></h1>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -68,58 +311,97 @@
 
     <section id="doctors">
         <div class="grid-container">
-            <div id="doctors-slider">
+            <h1 data-aos="fade-right">Meet our Doctors</h1>
+            <div id="dr-slider">
                 <ul class="slides">
                     <li>
+                        <div class="grid-50 tablet-50 push-50 tablet-push-50 grid-parent">
+                            <img class="img-resp" src="./images/dr.jpg" alt="Dr. Lawrence D. Chang">
+                        </div>
+                        <div class="grid-50 tablet-50 pull-50 tablet-pull-50 grid-parent">
+                            <div class="title">
+                                <h2>Dr. Lawrence D. Chang</h2>
+                                <div class="count">
+                                    <h2>1/2</h2>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Dr. Lawrence D. Chang is a Board Certified Cosmetic and Reconstructive Plastic Surgeon whose areas of focus include cosmetic and reconstructive breast and facial surgery, as well as body sculpting. His advanced surgical skills and refined eye for aesthetics enable him to achieve results that are highly satisfying and natural. Dr. Chang is an exceptional plastic surgeon who takes pride in exceeding the expectations of his patients. As so, he has been named Top Doc consistently in Plastic Surgery since 1996, and the only plastic surgeon to be named Top Doc for Reconstructive, Cosmetic, and Dermatologic Surgery since 2009.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid-50 tablet-50 push-50 tablet-push-50 grid-parent">
+                            <img class="img-resp" src="./images/dr.jpg" alt="Dr. Lawrence D. Chang">
+                        </div>
+                        <div class="grid-50 tablet-50 pull-50 tablet-pull-50 grid-parent">
+                            <div class="title">
+                                <h2>Dr. Lawrence D. Chang</h2>
+                                <div class="count">
+                                    <h2>2/2</h2>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Dr. Lawrence D. Chang is a Board Certified Cosmetic and Reconstructive Plastic Surgeon whose areas of focus include cosmetic and reconstructive breast and facial surgery, as well as body sculpting. His advanced surgical skills and refined eye for aesthetics enable him to achieve results that are highly satisfying and natural. Dr. Chang is an exceptional plastic surgeon who takes pride in exceeding the expectations of his patients. As so, he has been named Top Doc consistently in Plastic Surgery since 1996, and the only plastic surgeon to be named Top Doc for Reconstructive, Cosmetic, and Dermatologic Surgery since 2009.</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <!-- /#doctors -->
+    <!-- #/doctors -->
 
     <div class="accolades">
         <div class="grid-container">
             <div class="flex">
-                <img class="img-resp" src="./images/asps.png" alt="American Society of Plastic Surgeons">
-                <img class="img-resp" src="./images/asaps.png" alt="The American Society for Aesthetic Plastic Surgery">
-                <img class="img-resp" src="./images/nouveau.png" alt="Found and Medical Director Noveau Medispa">
-                <img class="img-resp" src="./images/apsc.png" alt="Found and Medical Director Advanced Plastic Surgery Center">
-                <img class="img-resp" src="./images/perelman.png" alt="Perelman School of Medicine">
-                <img class="img-resp" src="./images/johns-hopkins.png" alt="Johns Hopkins Medicine">
-                <img class="img-resp" src="./images/top-doctors.png" alt="Top Doctors 2019">
-                <img class="img-resp" src="./images/delaware-today.png" alt="Delaware Today">
+                <img class="img-resp" src="./images/asps.png" alt="American Society of Plastic Surgeons" data-aos="fade-up">
+                <img class="img-resp" src="./images/asaps.png" alt="The American Society for Aesthetic Plastic Surgery" data-aos="fade-up" data-aos-delay="100">
+                <img class="img-resp" src="./images/nouveau.png" alt="Found and Medical Director Noveau Medispa" data-aos="fade-up" data-aos-delay="200">
+                <img class="img-resp" src="./images/apsc.png" alt="Found and Medical Director Advanced Plastic Surgery Center" data-aos="fade-up" data-aos-delay="300">
+                <img class="img-resp" src="./images/perelman.png" alt="Perelman School of Medicine" data-aos="fade-up" data-aos-delay="400">
+                <img class="img-resp" src="./images/johns-hopkins.png" alt="Johns Hopkins Medicine" data-aos="fade-up" data-aos-delay="500">
+                <img class="img-resp" src="./images/top-doctors.png" alt="Top Doctors 2019" data-aos="fade-up" data-aos-delay="600">
+                <img class="img-resp" src="./images/delaware-today.png" alt="Delaware Today" data-aos="fade-up" data-aos-delay="700">
             </div>
         </div>
     </div>
-    <!-- /.accolades -->
+    <!-- ./accolades -->
 
     <section id="about">
         <div class="mobile-bg"></div>
+        <img class="img-resp hide-on-mobile hide-on-tablet" src="./images/about1.jpg" alt="background">
+        <img class="img-resp hide-on-mobile hide-on-tablet" src="./images/about3.jpg" alt="background">
         <div class="grid-container">
-            <div class="grid-80 prefix-10 tablet-80 tablet-prefix-10">
-                <img class="img-resp" src="./images/about2.png" alt="background">
-                <div class="text">
-                    <h1>Advanced Plastic Surgery</h1>
-                    <p>At Advanced Plastic Surgery Center, it is our goal to help patients look and feel confident. Each of our Plastic Surgeons at our 5 locations in Newark, Rehoboth Beach, Hockessin and Dover, Delaware as well as Elkton, Maryland is a specialist in many areas of plastic surgery and cosmetic surgery and medicine. They are recognized for utilizing the most advanced surgical techniques and regularly participate in accredited continuing education courses.</p>
+            <div class="grid-100 tablet-80 tablet-prefix-10">
+                <div class="content">
+                    <div class="text tac">
+                        <h1 class="section-header">Advanced Plastic Surgery</h1>
+                        <p>At Advanced Plastic Surgery Center, it is our goal to help patients look and feel confident. Each of our Plastic Surgeons at our 5 locations in Newark, Rehoboth Beach, Hockessin and Dover, Delaware as well as Elkton, Maryland is a specialist in many areas of plastic surgery and cosmetic surgery and medicine. They are recognized for utilizing the most advanced surgical techniques and regularly participate in accredited continuing education courses.</p>
+                        <a class="btn" href="">Hair Restoration</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /#about -->
+    <!-- #/about -->
 
     <section id="nouveau">
-        <div class="mobile-bg"></div>
+        <div class="mobile-bg">
+            <img class="img-resp" src="./images/nouveau-logo.png" alt="Nouveau Medispa">
+            <h1>Since 1999</h1>
+        </div>
         <div class="grid-container">
-            <div class="grid-55 tablet-60">
-                <img class="img-resp" src="./images/nouveau-logo.png" alt="Nouveau Medispa">
+            <div class="grid-55 tablet-80">
+                <img class="img-resp hide-on-mobile" src="./images/nouveau-logo.png" alt="Nouveau Medispa">
                 <h1 class="section-header">Proudly Serving the Delaware Valley</h1>
                 <p>Nouveau Medispa Lobby has set the standard of care in the noninvasive medispa industry since 1999 supervised and run by board certified Plastic Surgeons.</p>
                 <a class="btn" href="">Learn more</a>
             </div>
+            <h1 class="hide-on-mobile">Since 1999</h1>
         </div>
     </section>
-    <!-- /#nouveau -->
+    <!-- #/nouveau -->
 
     <section id="services">
         <div class="mobile-bg"></div>
@@ -155,7 +437,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="grid-100">
+            <div class="clr"></div>
+            <div class="grid-100 grid-parent">
                 <div class="controls">
                     <ul>
                         <li><a href="#">Cosmetic Surgery &amp; Medicine</a></li>
@@ -168,7 +451,7 @@
             </div>
         </div>
     </section>
-    <!-- /#services -->
+    <!-- #/services -->
 
     <section id="injectables">
         <div class="mobile-bg"></div>
@@ -180,23 +463,25 @@
             </div>
         </div>
     </section>
-    <!-- /#injectables -->
+    <!-- #/injectables -->
 
-    <section id="hair-video">
+    <section id="hair-vid">
         <div class="grid-container grid-parent"> <!-- 1395px -->
             <div class="grid-100">
                 <video src=""></video>
             </div>
         </div>
     </section>
+    <!-- #/hair-vid -->
 
-    <section id="ps-video">
+    <section id="ps-vid">
         <div class="grid-container grid-parent"> <!-- 1395px -->
             <div class="grid-100">
                 <video src=""></video>
             </div>
         </div>
     </section>
+    <!-- #/ps-vid -->
 
     <section id="contact">
         <div class="mobile-bg"></div>
@@ -208,6 +493,7 @@
             </div>
         </div>
     </section>
+    <!-- #/contact -->
 
     <footer>
         <div class="grid-container">
@@ -218,16 +504,16 @@
                     <a href="">Terms &amp; Conditions</a> | 
                     <a href="">HIPAA Privacy Policy</a>
                 </p>
-                <div class="social">
-                    <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-yelp"></i></a>
-                </div>
+                <ul class="social">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-yelp"></i></a></li>
+                </ul>
             </div>
         </div>
     </footer>
-
+    <!-- /footer -->
 
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
