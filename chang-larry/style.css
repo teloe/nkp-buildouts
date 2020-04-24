@@ -22,13 +22,77 @@ h1,h2,h3,h4,h5,h6{font-weight:500;text-transform:uppercase}
 .section-header{text-transform:uppercase;font-weight:500;font-size:1.5rem;padding-bottom:1rem}
 a,a:visited,a:link{color:#000;text-decoration:none;outline:none;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
 a:hover{color:#CAAF84;text-decoration:none;outline:none}
-a.btn,button.btn{font-size:inherit;font-family:inherit;font-weight:500;text-transform:uppercase;text-align:center;border-style:solid;border-width:4px;padding:1rem;display:inline-block;position:relative;width:100%;max-width:210px;cursor:pointer;z-index:1;overflow:hidden;-moz-transition:all .4s cubic-bezier(0.215,0.61,0.355,1) 0;-webkit-transition:all .4s cubic-bezier(0.215,0.61,0.355,1) 0;transition:all .4s cubic-bezier(0.215,0.61,0.355,1) 0}
-a.btn::before,button.btn::before,a.btn::after,button.btn::after{content:'';position:absolute;z-index:-1}
-a.btn::before,button.btn::before{display:block;left:0;bottom:0;height:0;width:100%;background:#fff;-moz-transition:all .4s cubic-bezier(0.215,0.61,0.355,1) 0;-webkit-transition:all .4s cubic-bezier(0.215,0.61,0.355,1) 0;transition:all .4s cubic-bezier(0.215,0.61,0.355,1) 0}
-a.btn::after,button.btn::after{height:0;left:50%;top:50%;width:150%;-moz-transition:all .75s ease 0;-webkit-transition:all .75s ease 0;transition:all .75s ease 0}
-a.btn:hover,button.btn:hover{color:#c09f68}
-a.btn:hover::before,button.btn:hover::before{top:0;bottom:auto;height:100%}
-a.btn:hover::after,button.btn:hover::after{height:450%}
+a.btn,
+button.btn {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    border-style: solid;
+    border-width: 4px;
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 210px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    -moz-transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+a.btn::before,
+button.btn::before,
+a.btn::after,
+button.btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+a.btn::before,
+button.btn::before {
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #fff;
+    -moz-transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+a.btn::after,
+button.btn::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    -moz-transition: all .75s ease;
+    -webkit-transition: all .75s ease;
+    transition: all .75s ease;
+}
+
+a.btn:hover,
+button.btn:hover {
+    color: #c09f68;
+}
+
+a.btn:hover::before,
+button.btn:hover::before {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+}
+
+a.btn:hover::after,
+button.btn:hover::after {
+    height: 450%
+}
 .social{display:flex}
 .social li{margin:0 .5rem}
 ul,ol{clear:both}
@@ -63,6 +127,11 @@ header .btn{border-color:#fff;color:#fff}
 #banner #cyclelist{position:relative;margin-top:20vw}
 #banner #cyclelist li{border-right:solid 2px #fff;border-left:solid 2px #fff;padding:0 1rem;position:absolute;opacity:0;-moz-transform:translateY(40px);-webkit-transform:translateY(40px);transform:translateY(40px);-moz-transition:opacity .6s ease,transform 1s ease;-webkit-transition:opacity .6s ease,transform 1s ease;transition:opacity .6s ease,transform 1s ease}
 #banner #cyclelist li.active{transform:translateY(0);opacity:1}
+
+#banner.internal {
+    background: url(images/banner-internal.png) no-repeat center;
+    background-size: cover;
+}
 
 #sticky-nav{background:rgba(210,183,137,.95);position:fixed;top:0;width:100%;z-index:999;transform:translateY(-100%);box-shadow:0 5px 20px rgba(0,0,0,.15);transition:all .3s}
 #sticky-nav .grid-container{padding:10px 15px;display:flex;align-items:center}
