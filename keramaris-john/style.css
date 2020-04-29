@@ -10,6 +10,7 @@ Template: nkpv2
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 @import url(https://use.typekit.net/jux8dry.css);
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 @import url(https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css);
 /*---- Do Not Remove ----*/
 
@@ -74,7 +75,7 @@ a:link {
     transition: all 0.5s ease;
 }
 a:hover {
-    /* color: #000; */
+    color: #000;
     text-decoration: none;
     outline: none;
 }
@@ -577,16 +578,63 @@ header #open-menu span::after {
 }
 /* }}} */
 
-/* section {{{ */
+/* about {{{ */
+#about {
+    margin: 6rem 0;
+}
+#about p {
+    padding-bottom: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* team {{{ */
+#team img {
+    display: block;
+    margin: 0 auto;
+}
+#team h2 {
+    text-transform: uppercase;
+    color: #D7B8B6;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+#team .content p:first-of-type {
+    padding-bottom: 1.5rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* contact {{{ */
+#contact {
+    margin-top: 6rem;
+    background: #F4F4F4;
+    padding: 4rem 0;
+}
+#contact img {
+    width: 100%;
+}
+#contact .grid-40 {
+    text-align: center;
+    margin-top: 2rem;
+}
+#contact .grid-40 p {
+    padding-bottom: 1.5rem;
+}
+#contact .btn {
+    margin: 1rem auto 0;
+}
 /* }}} */
 
-/* section {{{ */
+/* footer {{{ */
+footer .grid-container {
+    padding: 5rem 15px;
+}
+footer img {
+    margin-bottom: 2rem;
+}
+footer p {
+    padding-bottom: 1rem;
+}
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
@@ -709,6 +757,16 @@ textarea {
     #procs .content .overlay .text a {
         font-size: 1.5rem;
     }
+    #team h2 {
+        font-size: 2.8rem;
+    }
+    #contact .grid-container:last-of-type {
+        display: flex;
+        align-items: center;
+    }
+    #contact .grid-40 {
+        margin-top: 0;
+    }
 }
 /* }}} */
 
@@ -729,8 +787,15 @@ textarea {
     #main-banner {
         height: 1000px;
     }
+    #team h2 {
+        margin: 0 0 1.5rem;
+    }
+    #team .text {
+        padding-left: 30px;
+    }
 }
 /* }}} */
+
 @media only screen and (min-width: 1250px) {
     #bxa .btn-wrapper {
         display: block;
