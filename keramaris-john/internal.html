@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NKP</title>
+    <title>Keramaris, John</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,44 +19,287 @@
 </head>
 <body>
 
-    <nav>
-        <div class="stellarnav">
-            <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="slider" class="internal">
-        <ul class="slides">
-            <li>
-                <div class="slide1">
+    <header data-aos="fade-down" data-aos-delay="500">
+        <div class="grid-container">
+            <div class="grid-50 tablet-50 mobile-50">
+                <div class="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="Skin Tight Medspa">
+                    </a>
                 </div>
-            </li>
-        </ul>
+            </div>
+            <div class="grid-50 tablet-50 mobile-50">
+                <div id="open-menu">
+                    <p>MENU</p>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <div id="nav-overlay">
+        <div id="desktop-menu" class="hide-on-mobile hide-on-tablet">
+            <div class="grid-container">
+                <div id="left" class="grid-40">
+                    <div id="menu">
+                        <div class="logo">
+                            <a href="/" title="">
+                                <img class="img-resp" src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div id="menu-desktop-menu-container">
+                            <ul id="menu-desktop-menu">
+                                <li class="home"><a href="">Home</a></li>
+                                <li class="about"><a href="">About Us</a></li>
+                                <li class="procs"><a href="">Procedures</a>
+                                </li>
+                                <li class="fin-op"><a href="">Financial Opportunities</a></li>
+                                <li class="contact"><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <p>436 Great Road, Acton, MA 01720</p>
+                            <p class="phone">555-555-5555</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right" class="grid-60">
+                    <div class="grid-80 grid-parent">
+                        <div id="menu-area">
+                            <div id="procs-menu">
+                                <ul>
+                                    <li><a href="">CoolSculpting</a></li>
+                                    <li><a href="">Facials</a></li>
+                                    <li><a href="">Miecrodermabrasion &amp; Chemical Peels</a></li>
+                                    <li><a href="">Hydrafacial</a></li>
+                                    <li><a href="">Botox and Fillers</a></li>
+                                    <li><a href="">Laser Hair Removal</a></li>
+                                    <li><a href="">PRP</a></li>
+                                    <li><a href="">Skin Tightening</a></li>
+                                    <li><a href="">VelaShape</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-20 grid-parent">
+                        <div class="close-menu">
+                            <span></span>
+                            <span></span>
+                            <p>CLOSE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/desktop-menu -->
+
+        <div id="mobile-menu" class="hide-on-desktop">
+            <div class="close-menu">
+                <span></span>
+                <span></span>
+                <p>CLOSE</p>
+            </div>
+            <div class="logo">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="stellarnav">
+                <ul>
+                    <li class="home"><a href="">Home</a></li>
+                    <li class="about"><a href="">About Us</a></li>
+                    <li class="procs"><a href="">Procedures</a>
+                        <ul>
+                            <li><a href="">CoolSculpting</a></li>
+                            <li><a href="">Facials</a></li>
+                            <li><a href="">Miecrodermabrasion &amp; Chemical Peels</a></li>
+                            <li><a href="">Hydrafacial</a></li>
+                            <li><a href="">Botox and Fillers</a></li>
+                            <li><a href="">Laser Hair Removal</a></li>
+                            <li><a href="">PRP</a></li>
+                            <li><a href="">Skin Tightening</a></li>
+                            <li><a href="">VelaShape</a></li>
+                        </ul>
+                    </li>
+                    <li class="fin-op"><a href="">Financial Opportunities</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p>436 Great Road, Acton, MA 01720</p>
+                <p class="phone">555-555-5555</p>
+                <!-- <ul class="social">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-yelp"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+        <!-- #/mobile-menu -->
+
     </div>
+    <!-- #/nav-overlay -->
+
+    <div id="main-banner" class="internal">
+        <div class="grid-container grid-parent">
+            <div class="grid-100 tac">
+                <h1>CoolSculpting</h1>
+            </div>
+        </div>
+    </div>
+    <!-- #/main-banner -->
 
     <div id="main">
-        <div class="grid-container">
-            <div id="content" class="grid-70 tablet-60">
+        <div class="grid-container grid-parent">
+            <div id="content" class="grid-100">
+                <div class="proc-info-wrapper grid-container grid-parent">
+                    <div class="grid-50 tablet-50">
+                        <h2 class="proc-header">Elimnate Unwanted Body Fat</h2>
+                        <h3 class="sub-header">CoolSculpting in MA</h3>
+                    </div>
+                    <div class="grid-50 tablet-50">
+                        <p>CoolSculpting is an FDA-cleared, non-surgical fat reduction / body sculpting treatment.</p>
+                        <p>The procedure utilizes a device that literally freezes areas of unwanted fat. Most clients see a reduction of 20-30% of the fat with each treatment. It is ideal for abs, love handles, thighs, double chins, arms, and more.
+    </p>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="proc-info grid-container grid-parent">
+                    <div class="bg-extend"></div>
+                    <div class="grid-50 tablet-60 grid-parent fr">
+                        <ul class="proc-list">
+                            <li>
+                                <div class="title-wrapper">
+                                    <i class="far fa-question-circle"></i>
+                                    <h3>What is treats?</h3>
+                                </div>
+                                <ul class="flex">
+                                    <li>Unwanted body fat</li>
+                                    <li>Love Handles</li>
+                                    <li>Muffin top</li>
+                                    <li>Bra Fat</li>
+                                    <li>Arm Fat</li>
+                                    <li>Inner and Outer Thighs</li>
+                                    <li>Belly Fat</li>
+                                    <li>Double Chin</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="title-wrapper">
+                                    <i class="far fa-clock"></i>
+                                    <h3>Procedure Time</h3>
+                                </div>
+                                <p>45 - 60 minute per targetd</p>
+                            </li>
+                            <li>
+                                <div class="title-wrapper">
+                                    <i class="fas fa-redo"></i>
+                                    <h3>Recovery &amp; Side Effects</h3>
+                                </div>
+                                <p>Common side effects can include numbness and tenderness in the treated area for a short period of time</p>
+                            </li>
+                            <li>
+                                <div class="title-wrapper">
+                                    <i class="far fa-check-circle"></i>
+                                    <h3>Results</h3>
+                                </div>
+                                <p>CoolSculpting + ZWave produces noticeable, permanent results within 2-3 months. Some individuals may begin to notice results within three weeks.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="proc-info-wrapper grid-container grid-parent">
+                    <div class="grid-50 tablet-50">
+                        <h2 class="proc-header">Our Results</h2>
+                        <h3 class="sub-header">CoolSculpting Before &amp; After</h3>
+                    </div>
+                    <div class="grid-50 tablet-50">
+                        <img class="img-resp" src="./images/internal-bxa1.jpg" alt="Before & After">
+                        <img class="img-resp" src="./images/internal-bxa2.jpg" alt="Before & After">
+                        <img class="img-resp" src="./images/internal-bxa3.jpg" alt="Before & After">
+                    </div>
+                </div>
+                <div class="clr"></div>
+                
+
+                <div class="proc-info-wrapper grid-container grid-parent">
+                    <div class="grid-50 tablet-50">
+                        <h2 class="proc-header">What is CoolSculpting?</h2>
+                    </div>
+                    <div class="grid-50 tablet-50">
+                        <p>Currently, there are several cosmetic fat-loss procedures avialable on the market. Few, however, are as effective as CoolSculpting. CoolSculpting boasts a high success rate and reports fewer side effects than most other fat-removal treatments. CoolScul;ting just celebrated its 10-year anniversary.</p>
+                        <p>CoolSculpting works on a principle konwn as cryolipolysis, or fat removal through use of cold energy. Cold temperatures are used to freeze the lipids in fat cells, causing the breadown of the cells.</p>
+                        <p>Other cells in the body do not freeze at this temperature, so the procedure only negatively affects the fact cells. This preserves the health of your skin, muscles, and other tissues. In short, thefat cells are destroyed, die, and are eliminated from the body for good.</p>
+                    </div>
+                </div>
+
+                <div class="st-diff grid-container grid-parent">
+                    <h1>The SkinTight Difference</h1>
+                    <img class="img-resp hide-on-desktop" src="./images/skintight-bg.jpg" alt="Skin Tight Medspa">
+                    <div class="content">
+                        <img class="img-resp hide-on-mobile hide-on-tablet" src="./images/skintight-bg.jpg" alt="Skin Tight Medspa">
+                        <div class="text">
+                            <p>We have the latest technology available and
+multiple machines to allow for DualSculpting to give you the ideal body in half the time of the competition.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div id="sidebar" class="grid-30 tablet-40">
+            <!-- #/content -->
+        </div>
+        <!-- ./grid-container -->
+    </div>
+    <!-- #/main -->
+
+    <section id="contact">
+        <div class="grid-container grid-parent">
+            <div class="grid-60 prefix-20 tablet-80 tablet-prefix-10">
+                <h1 class="section-header">Contact Us</h1>
             </div>
         </div>
-    </div>
+        <div class="grid-container">
+            <div class="grid-60 tablet-60">
+                <a href="https://goo.gl/maps/WEjZMra7dQ1CFm399" target="_blank"><img class="img-resp" src="./images/map.png" alt="Location"></a>
+            </div>
+            <div class="grid-40 tablet-40">
+                <p>Appointments available Monday through Saturday.</p>
+                <p>For all scheduling inquiries please contact us at 
+                info@skintightmedspa.com</p>
+                <p>436 Great Road, Acton, MA 01720</p>
+                <a class="btn btn-white" href="">Book your skin consultation</a>
+            </div>
+        </div>
+    </section>
+    <!-- #/contact -->
 
+    <footer>
+        <div class="grid-container">
+            <div class="grid-40 prefix-30 tac">
+                <img class="img-resp" src="./images/logo.png" alt="Skin Tight Medspa">
+                <p>436 Great Road, Acton, MA 01720</p>
+                <p>Copyright &copy; 2020 Skin Tight Medspa. All Rights Reserved.</p>
+                <p>
+                    <a href="">Sitemap</a> | 
+                    <a href="">HIPAA Privacy Policy</a> | 
+                    <a href="">Terms &amp; Conditions</a>
+                </p>
+                <p>Design and SEO by <a href="https://www.nkpmedical.com/" target="_blank">NKP Medical</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <script id="__bs_script__">
+     //<![CDATA[document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));//]]>
+   </script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- aos init-->
     <script type="text/javascript">

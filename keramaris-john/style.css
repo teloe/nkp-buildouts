@@ -108,6 +108,31 @@ header #open-menu span::after{content:'';top:9px}
 #main-banner .btn{margin:0 auto -2.5rem;display:block}
 #main-banner .arrow{background:url(images/arrow-down.png) no-repeat center;background-size:contain;height:60px;width:100px;margin:auto;display:block;position:absolute;left:0;right:0;bottom:4rem;-webkit-animation:arrow_down 1.5s ease-in-out infinite;-moz-animation:arrow_down 1.5s ease-in-out infinite;animation:arrow_down 1.5s ease-in-out infinite}
 
+#main-banner.internal{background:url(images/banner-internal.jpg) no-repeat top center;background-size:cover;height:auto}
+#main-banner.internal .grid-container{height:500px;display:flex;align-items:center;justify-content:center}
+#main-banner.internal .grid-container .grid-100{width:100%}
+#main-banner.internal h1{color:#fff;text-transform:uppercase;font-size:9vw}
+
+#main{padding:6rem 0}
+#main #content p,#main #content li{line-height:2rem;padding-bottom:1.5rem}
+#main #content img{margin-bottom:1.5rem}
+#main #content .proc-info-wrapper{margin-bottom:4rem}
+#main #content .proc-info-wrapper p:last-of-type{padding-bottom:0}
+#main #content .proc-header{font-size:2rem;padding-bottom:1rem;color:#D7B8B6}
+#main #content .sub-header{font-size:1.7rem;padding-bottom:1rem}
+#main #content .proc-info{position:relative;margin:4rem 0;padding:6rem 0}
+#main #content .proc-info .bg-extend{position:absolute;top:0;right:-10%;bottom:0;left:-10%;background:url(images/internal-bg.jpg) no-repeat;background-size:cover;z-index:-1;background-position-x:-4rem}
+#main #content .proc-info .proc-list{background:rgba(255,255,255,.8);padding:3rem 30px}
+#main #content .proc-info p{padding-bottom:0}
+#main #content .proc-info .proc-list > li{padding-bottom:3rem}
+#main #content .proc-info .proc-list > li:last-of-type{padding-bottom:0}
+#main #content .proc-info .title-wrapper{display:flex;align-items:center;margin-bottom:.5rem}
+#main #content .proc-info .title-wrapper i{margin-right:1rem}
+#main #content .proc-info .flex{display:flex;flex-flow:row wrap}
+#main #content .proc-info .flex li{padding:1rem 1.5rem 0 0;line-height:1.25rem}
+#main #content .st-diff h1{font-size:10vw;line-height:1.2;text-align:center;text-transform:uppercase;margin-bottom:1.5rem}
+#main #content .st-diff .content .text p{font-size:1.5rem;line-height:1.5;padding-bottom:0}
+
 #mission{padding:8rem 0 6rem;background:#FCF5F5}
 #mission p{padding-bottom:2rem}
 #mission .btn{margin:2rem auto 0}
@@ -142,11 +167,11 @@ header #open-menu span::after{content:'';top:9px}
 #about{margin:6rem 0}
 #about p{padding-bottom:2rem}
 
-#team img{display:block;margin:0 auto}
+#team img{display:block;margin:0 auto 6rem}
 #team h2{text-transform:uppercase;color:#D7B8B6;text-align:center;margin:2rem 0;font-size:2rem}
 #team .content p:first-of-type{padding-bottom:1.5rem}
 
-#contact{margin-top:6rem;background:#F4F4F4;padding:4rem 0}
+#contact{background:#F4F4F4;padding:4rem 0}
 #contact img{width:100%}
 #contact .grid-40{text-align:center;margin-top:2rem}
 #contact .grid-40 p{padding-bottom:1.5rem}
@@ -188,6 +213,8 @@ input,select,textarea{font-size:inherit;font-family:inherit;width:100%;margin:0 
 @media only screen and (min-width: 768px) {
     .section-header{font-size:4rem}
     #main-banner{height:800px;max-height:90vh;background-position-x:center}
+    #main-banner.internal .grid-container{height:700px}
+    #main-banner.internal h1{font-size:4rem}
     #procs h2{font-size:1.5rem;bottom:3rem}
     #procs .content .overlay .text li{margin-bottom:1.25rem}
     #procs .content .overlay .text a{font-size:1.5rem}
@@ -195,11 +222,21 @@ input,select,textarea{font-size:inherit;font-family:inherit;width:100%;margin:0 
     #contact .grid-container:last-of-type{display:flex;align-items:center}
     #contact .grid-40{margin-top:0}
 }
+@media only screen and (min-width: 960px) {
+    #main #content .st-diff h1{font-size:4.97rem}
+}
 
 @media only screen and (min-width: 1025px) {
     .section-header::before,.section-header::after{width:70px}
     #nav-overlay .close-menu{margin-right:0}
     #main-banner{height:1000px}
+    #main-banner.internal .grid-container{height:900px}
+    #main-banner.internal h1{font-size:6rem}
+    #main #content .proc-header{font-size:2.3rem}
+    #main #content .proc-info{margin:6rem 0}
+    #main #content .st-diff .content{position:relative;overflow:hidden}
+    #main #content .st-diff .content .text{background:rgba(255,255,255,.6);position:absolute;bottom:0;right:0;padding:4rem;max-width:50%}
+    #main #content .st-diff .content .text p{font-size:2rem}
     #team h2{margin:0 0 1.5rem}
     #team .text{padding-left:30px}
 }
