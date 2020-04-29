@@ -21,51 +21,367 @@
 
     <header>
         <div class="grid-container">
-            <div class="grid-50 tablet-50">
+            <div class="grid-50 tablet-50 mobile-50">
                 <div class="logo">
                     <a href="/" title="">
                         <img class="img-resp" src="./images/logo.png" alt="Skin Tight Medspa">
                     </a>
                 </div>
             </div>
-            <div class="grid-50 tablet-50">
-                <div class="info">
+            <div class="grid-50 tablet-50 mobile-50">
+                <!-- <div class="info">
                     <p>436 Great Road, Acton, MA 01720</p>
+                </div> -->
+                <div id="open-menu">
+                    <p>MENU</p>
+                    <span></span>
                 </div>
             </div>
         </div>
     </header>
+    <!-- /header -->
 
-    <nav>
-        <div class="stellarnav">
-            <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="slider">
-        <ul class="slides">
-            <li>
-                <div class="slide1">
+    <div id="nav-overlay">
+        <div id="desktop-menu" class="hide-on-mobile hide-on-tablet">
+            <div class="grid-container">
+                <div id="left" class="grid-40">
+                    <div id="menu">
+                        <div class="logo">
+                            <a href="/" title="">
+                                <img class="img-resp" src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div id="menu-desktop-menu-container">
+                            <ul id="menu-desktop-menu">
+                                <li class="home"><a href="">Home</a></li>
+                                <li class="about"><a href="">About Us</a></li>
+                                <li class="procs"><a href="">Procedures</a>
+                                </li>
+                                <li class="fin-op"><a href="">Financial Opportunities</a></li>
+                                <li class="contact"><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <p>436 Great Road, Acton, MA 01720</p>
+                            <p class="phone">555-555-5555</p>
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul>
+                <div id="right" class="grid-60">
+                    <div class="grid-80 grid-parent">
+                        <div id="menu-area">
+                            <div id="procs-menu">
+                                <ul>
+                                    <li><a href="">CoolSculpting</a></li>
+                                    <li><a href="">Facials</a></li>
+                                    <li><a href="">Miecrodermabrasion &amp; Chemical Peels</a></li>
+                                    <li><a href="">Hydrafacial</a></li>
+                                    <li><a href="">Botox and Fillers</a></li>
+                                    <li><a href="">Laser Hair Removal</a></li>
+                                    <li><a href="">PRP</a></li>
+                                    <li><a href="">Skin Tightening</a></li>
+                                    <li><a href="">VelaShape</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-20 grid-parent">
+                        <div class="close-menu">
+                            <span></span>
+                            <span></span>
+                            <p>CLOSE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/desktop-menu -->
+
+        <div id="mobile-menu" class="hide-on-desktop">
+            <div class="close-menu">
+                <span></span>
+                <span></span>
+                <p>CLOSE</p>
+            </div>
+            <div class="logo">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="stellarnav">
+                <ul>
+                    <li class="home"><a href="">Home</a></li>
+                    <li class="about"><a href="">About Us</a></li>
+                    <li class="procs"><a href="">Procedures</a>
+                        <ul>
+                            <li><a href="">CoolSculpting</a></li>
+                            <li><a href="">Facials</a></li>
+                            <li><a href="">Miecrodermabrasion &amp; Chemical Peels</a></li>
+                            <li><a href="">Hydrafacial</a></li>
+                            <li><a href="">Botox and Fillers</a></li>
+                            <li><a href="">Laser Hair Removal</a></li>
+                            <li><a href="">PRP</a></li>
+                            <li><a href="">Skin Tightening</a></li>
+                            <li><a href="">VelaShape</a></li>
+                        </ul>
+                    </li>
+                    <li class="fin-op"><a href="">Financial Opportunities</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p>436 Great Road, Acton, MA 01720</p>
+                <p class="phone">555-555-5555</p>
+                <!-- <ul class="social">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-yelp"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+        <!-- #/mobile-menu -->
+
     </div>
+    <!-- #/nav-overlay -->
 
+    <div id="main-banner">
+        <div class="grid-container">
+            <div class="grid-100">
+                <span class="arrow"></span>
+                <a class="btn btn-white" href="">Book your<br>skin consultation</a>
+            </div>
+        </div>
+    </div>
+    <!-- #/main-banner -->
 
+    <section id="mission">
+        <div class="grid-container">
+            <div class="grid-60 prefix-20 tac">
+                <h1 class="section-header">Our Mission</h1>
+                <p>We are committed to provide our worthy clients innovative aesthetic enrichments and cosmetic enhancements by combining superior industry experience and state of the art equipment.</p>
+                <p>We know that aging is inevitable and we want you to do it gracefully! Our knowledgeable team will help you look and feel your best with a treatment regimen customized specifically for YOU!</p>
+                <a class="btn btn-pink" href="">Learn more</a>
+            </div>
+        </div>
+    </section>
+    <!-- #/mission -->
+
+    <section id="procs">
+        <div class="grid-container grid-parent">
+            <div class="flex">
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/coolsculpting.jpg" alt="Coolsculpting">
+                        <h2>CoolSculpting</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>CoolSculpting</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/laser-hair.jpg" alt="Laser Hair Removal">
+                        <h2>Laser Hair Removal</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Laser Hair Removal</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/body-contouring.jpg" alt="Body Contouring">
+                        <h2>Body Contouring</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Body Contouring</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/injectables.jpg" alt="Injectables">
+                        <h2>Injectables</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Injectables</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/skin-tightening.jpg" alt="Skin Tightening">
+                        <h2>Skin Tightening</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Skin Tightening</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/coolsculpting.jpg" alt="">
+                        <h2>PRP Facials</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>PRP Facials</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <a class="content" href="">
+                        <img class="img-resp" src="./images/hydrafacial.jpg" alt="Hydrafacial">
+                        <h2>Hydrafacial</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <h2>Hydrafacial</h2>
+                                <!-- <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    </ul> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-50 tablet-50">
+                    <div class="content" href="">
+                        <img class="img-resp" src="./images/facials.jpg" alt="Facials">
+                        <h2>Facials</h2>
+                        <div class="overlay">
+                            <div class="text">
+                                <ul>
+                                    <li><a href="">Facials</a></li>
+                                    <li><a href="">Miecrodermabrasion</a></li>
+                                    <li><a href="">Chemical Peels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #/procs -->
+
+    <section id="bxa">
+        <div class="grid-container">
+            <div class="grid-60 prefix-20 tablet-80 tablet-prefix-10 tac">
+                <h1 class="section-header">View Results</h1>
+                <p>We revise challenging skin conditions such as Rosacea, Melasma and Acne by developing a progressive skin program that is as unique as you.</p>
+            </div>
+            <div class="grid-100 grid-parent">
+                <ul id="bxa-slider">
+                    <li><img class="img-resp" src="./images/bxa1.jpg" alt="Before & After"></li>
+                    <li><img class="img-resp" src="./images/bxa2.jpg" alt="Before & After"></li>
+                    <li><img class="img-resp" src="./images/bxa3.jpg" alt="Before & After"></li>
+                    <li><img class="img-resp" src="./images/bxa1.jpg" alt="Before & After"></li>
+                    <li><img class="img-resp" src="./images/bxa2.jpg" alt="Before & After"></li>
+                    <li><img class="img-resp" src="./images/bxa3.jpg" alt="Before & After"></li>
+                </ul>
+                <div class="btn-wrapper"></div>
+            </div>
+        </div>
+    </section>
+    <!-- #/bxa -->
+
+    <section id="about">
+        <div class="grid-container">
+            <div class="grid-60 prefix-20 tablet-80 tablet-prefix-10">
+                <h1>About us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+    <!-- #/about -->
+
+    <section id="team">
+        <div class="grid-container grid-parent">
+            <div class="grid-100">
+                <div class="content">
+                    <img class="img-resp" src="./images/team-bg.jpg" alt="Team">
+                    <h2>Meet our team</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #/team -->
+
+    <section id="contact">
+        <div class="grid-container">
+            <h1>Contact Us</h1>
+            <div class="grid-60 tablet-60">
+                <img class="img-resp" src="./images/map.jpg" alt="Location">
+            </div>
+            <div class="grid-40 tablet-40">
+                <p>Appointments available Monday through Saturday.</p>
+                <p>For all scheduling inquiries please contact us at 
+                info@skintightmedspa.com</p>
+                <p>436 Great Road, Acton, MA 01720</p>
+                <a class="btn" href="">Book your skin consultation</a>
+            </div>
+        </div>
+    </section>
+    <!-- #/contact -->
+
+    <footer>
+        <div class="grid-container">
+            <div class="grid-40 prefix-30">
+                <img class="img-resp" src="./images/logo.png" alt="Skin Tight Medspa">
+                <p>436 Great Road, Acton, MA 01720</p>
+                <p>Copyright &copy; 2020 Skin Tight Medspa. All Rights Reserved.</p>
+                <p>
+                    <a href="">Sitemap</a> | 
+                    <a href="">HIPAA Privacy Policy</a> | 
+                    <a href="">Terms &amp; Conditions</a>
+                </p>
+                <p>Design and SEO by <a href="https://www.nkpmedical.com/" target="_blank">NKP Medical</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <script id="__bs_script__">
+     //<![CDATA[document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));//]]>
+   </script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- aos init-->
     <script type="text/javascript">
