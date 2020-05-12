@@ -22,12 +22,4 @@ jQuery(document).ready(function ($) {
             $nav.removeClass('sticky');
         }
     });
-
-    /* $('.hamburger').on('click', function () {
-        $(this).toggleClass('is-active');
-        $('#mobile-nav .container > ul').slideToggle(300);
-    });
-    $('#mobile-nav').on('click', '.has-sub', function () {
-        $(this).find('ul').slideToggle(200);
-    }); */
 });
