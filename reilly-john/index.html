@@ -19,37 +19,243 @@
 </head>
 <body>
 
-    <div id="logo">
-        <a href="/" title="">
-            <img class="img-resp" src="./images/logo.png" alt="">
-        </a>
-    </div>
-
-    <nav>
-        <div class="stellarnav">
-            <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="slider">
-        <ul class="slides">
-            <li>
-                <div class="slide1">
+    <header>
+        <div class="grid-container grid-parent">
+            <!-- <div class="grid-50"> -->
+                <div class="logo hide-on-desktop">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="">
+                    </a>
                 </div>
-            </li>
-        </ul>
+            <!-- </div> -->
+            <!-- <div class="grid-50"> -->
+                <div class="info tac hide-on-desktop">
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="loc">Shelton, CT 06484</p>
+                    <p class="phone">(203) 402-8115</p>
+                </div>
+            <!-- </div> -->
+            <div id="mobile-menu-cta" class="hide-on-desktop">
+                <a class="menu-btn" href=""><i class="fas fa-calendar-check"></i></a>
+                <a class="menu-btn" href=""><i class="fas fa-map-marker-alt"></i></a>
+                <a class="menu-btn" href=""><i class="fas fa-phone-alt"></i></a>
+            </div>
+            
+        </div>
+    </header>
+    <!-- /header -->
+
+    <div id="nav-overlay">
+        <div class="grid-container grid-parent">
+            <div class="grid-50 tablet-50 mobile-50">
+                <div class="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="info tac hide-on-mobile hide-on-tablet">
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="loc">Shelton, CT 06484</p>
+                    <p class="phone">(203) 402-8115</p>
+                </div>
+            </div>
+            <div class="grid-50 tablet-50 mobile-50">
+                <div id="menu-btn">
+                    <div class="bar-wrapper">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="text-wrapper">
+                        <span>MENU</span>
+                        <span>CLOSE</span>
+                    </div>
+                </div>
+                <div class="contact-cta hide-on-mobile hide-on-tablet">
+                    <a class="menu-btn" href=""><i class="fas fa-map-marker-alt"></i></a>
+                    <a class="menu-btn" href=""><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="desktop-menu" class="hide-on-mobile hide-on-tablet">
+            <!-- <div id="right"></div> -->
+            <div class="grid-container">
+                <div id="left"></div>
+                <div id="menu" class="grid-45">
+                    <div class="logo">
+                        <a href="/" title="">
+                            <img class="img-resp" src="./images/logo-menu.png" alt="">
+                        </a>
+                    </div>
+                    <div id="menu-desktop-menu-container">
+                        <ul id="menu-desktop-menu">
+                            <li class="home"><a href="">Home</a></li>
+                            <li class="about"><a href="">About Us</a></li>
+                            <li class="procs"><a href="">Procedures</a></li>
+                            <li class="resources"><a href="">Resources</a></li>
+                            <li class="specials"><a href="">Specials</a></li>
+                            <li class="contact"><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p class="loc">Shelton, CT 06484</p>
+                        <p class="phone">(203) 402-8115</p>
+                    </div>
+                </div>
+                <div id="right"></div>
+                <div class="grid-55">
+                    <div id="menu-area">
+                        <div id="about-menu">
+                            <ul>
+                                <li><a href="">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div id="procs-menu">
+                            <ul>
+                                <li><a href="">Body</a>
+                                    <ul>
+                                        <li><a href="">Brachioplasty</a></li>
+                                        <li><a href="">Braizillian Butt Lift</a></li>
+                                        <li><a href="">Labiaplasty</a></li>
+                                        <li><a href="">Liposuction</a></li>
+                                        <li><a href="">In-Office Liposuction</a></li>
+                                        <li><a href="">Lower Body Lift</a></li>
+                                        <li><a href="">Thigh Lift</a></li>
+                                        <li><a href="">Tummy Tuck</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Face</a>
+                                    <ul>
+                                        <li><a href="">Botox, Fillers, &amp; Peels</a></li>
+                                        <li><a href="">Blepharoplasty</a></li>
+                                        <li><a href="">Fat Grafting</a></li>
+                                        <li><a href="">Facelift</a></li>
+                                        <li><a href="">Rhinoplasty</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Breast</a>
+                                    <ul>
+                                        <li><a href="">Breast Augmentation</a></li>
+                                        <li><a href="">Breast Lift</a></li>
+                                        <li><a href="">Gynecomastia</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="resources-menu">
+                            <ul>
+                                <li><a href="">Patient Portal</a></li>
+                                <li><a href="">First Visit</a></li>
+                                <li><a href="">Post-Operative Instructions</a></li>
+                                <li><a href="">Financing</a></li>
+                                <li><a href="">Cancel/ Refund Form</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div id="contact-menu">
+                            <ul>
+                                <li><a href="">Fairfield</a></li>
+                                <li><a href="">Milford</a></li>
+                                <li><a href="">Monrose</a></li>
+                                <li><a href="">New Haven</a></li>
+                                <li><a href="">Orange</a></li>
+                                <li><a href="">Shelton</a></li>
+                                <li><a href="">Trumbull</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/desktop-menu -->
+
+        <div id="mobile-menu" class="hide-on-desktop">
+            <div class="logo">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="stellarnav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a>
+                        <ul>
+                            <li><a href="">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Procedures</a>
+                        <ul>
+                            <li><a href="">Body</a>
+                                <ul>
+                                    <li><a href="">Brachioplasty</a></li>
+                                    <li><a href="">Braizillian Butt Lift</a></li>
+                                    <li><a href="">Labiaplasty</a></li>
+                                    <li><a href="">Liposuction</a></li>
+                                    <li><a href="">In-Office Liposuction</a></li>
+                                    <li><a href="">Lower Body Lift</a></li>
+                                    <li><a href="">Thigh Lift</a></li>
+                                    <li><a href="">Tummy Tuck</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Face</a>
+                                <ul>
+                                    <li><a href="">Botox, Fillers, &amp; Peels</a></li>
+                                    <li><a href="">Blepharoplasty</a></li>
+                                    <li><a href="">Fat Grafting</a></li>
+                                    <li><a href="">Facelift</a></li>
+                                    <li><a href="">Rhinoplasty</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Breast</a>
+                                <ul>
+                                    <li><a href="">Breast Augmentation</a></li>
+                                    <li><a href="">Breast Lift</a></li>
+                                    <li><a href="">Gynecomastia</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Resources</a>
+                        <ul>
+                            <li><a href="">Patient Portal</a></li>
+                            <li><a href="">First Visit</a></li>
+                            <li><a href="">Post-Operative Instructions</a></li>
+                            <li><a href="">Financing</a></li>
+                            <li><a href="">Cancel/ Refund Form</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Specials</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="info tac">
+                <p class="loc">Shelton, CT 06484</p>
+                <p class="phone">(203) 402-8115</p>
+                <ul class="social">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- #/mobile-menu -->
     </div>
+    <!-- #/nav-overlay -->
+
+    <section id="main-banner">
+        <div class="grid-container">
+            <div class="grid-50 hide-on-mobile hide-on-tablet">
+                <img class="img-resp" src="./images/logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
 
 
     <script type="text/javascript" src="js/custom.js"></script>
