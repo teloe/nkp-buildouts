@@ -87,12 +87,15 @@ jQuery(document).ready(function ($) {
             $(this).delay(500).fadeOut(200);
         });
 
-    $(window).on('scroll', function () {
+    checkHeight();
+    $(window).on('scroll', checkHeight);
+
+    function checkHeight() {
         $('#nav-overlay').addClass('scroll');
         if ($(this).scrollTop() === 0) {
             $('#nav-overlay').removeClass('scroll');
         }
-    });
+    }
 
     $('.stellarnav').stellarNav({
         showArrows: false,
@@ -101,6 +104,31 @@ jQuery(document).ready(function ($) {
         phoneBtn: '',
         locationBtn: '',
         mobileMode: true,
+    });
+
+    $('#videos-carousel').flickity({
+        autoPlay: true,
+        autoPlay: 5000,
+        // contain: true,
+        wrapAround: true,
+        pageDots: true,
+        prevNextButtons: false,
+    });
+
+    $('#testimonials .carousel').flickity({
+        autoPlay: true,
+        contain: true,
+        wrapAround: true,
+        pageDots: false,
+        prevNextButtons: false,
+    });
+
+    $('#videos-carousel .content').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false,
     });
 
     $('#slider').flexslider({
