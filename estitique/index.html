@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Estitique</title>
+    <title>Estetique</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,38 +19,256 @@
 </head>
 <body>
 
-    <div id="logo">
-        <a href="/" title="">
-            <img class="img-resp" src="./images/logo.png" alt="">
-        </a>
-    </div>
-
-    <nav>
-        <div class="stellarnav">
-            <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="slider">
-        <ul class="slides">
-            <li>
-                <div class="slide1">
+    <header>
+        <div class="grid-container">
+            <div class="logo">
+                <a href="/" title="">
+                    <img class="img-resp" src="./images/logo.png" alt="Estetique Spa Med & Aesthetic Solutions">
+                </a>
+            </div>
+            <div class="info hide-on-desktop">
+                <p class="loc">123 Main St</p>
+                <p class="phone">555-555-5555</p>
+                <div class="social">
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+            <nav>
+                <div class="stellarnav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a>
+                            <ul>
+                                <li><a href="#">LipoMax RF 360</a></li>
+                                <li><a href="#">LumiMax PL</a></li>
+                                <li><a href="#">Treatment Bed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social hide-on-mobile hide-on-tablet">
+                <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="lng">
+                <a href="">ESP</a>
+                <a href="">ENG</a>
+            </div>
+        </div>
+    </header>
 
+    <section id="banner">
+        <div class="grid-container grid-parent">
+            <div class="grid-100">
+                <a class="btn" href="">Schedule An Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="grid-container grid-parent">
+            <div class="grid-100 tac">
+                <h3 class="sub">Estetique is the leading company in the development and sales of</h3>
+                <h1 class="section-header">Professional Medical Aesthetic Equipment</h1>
+                <p>These devices are manufactured in the United States and Europe, and they comply with the highest quality standards. Specialized in non-surgical, non-chemical and non-invasive techniques, Estetique has revolutionized the market with unique systems that provide more effective and faster facial and body treatments of all kinds.</p>
+                <a class="btn" href="">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="grid-container grid-parent"> <!-- 1700px -->
+            <div class="grid-33">
+                <div class="content">
+                    <img class="img-resp" src="./images/products.jpg" alt="Products">
+                    <div class="overlay">
+                        <h1>Products</h1>
+                        <ul class="service-list">
+                            <li><a href="">LipoMax RF</a></li>
+                            <li><a href="">RejuveMax</a></li>
+                            <li><a href="">LumiMax PL</a></li>
+                            <li><a href="">Treatment Bed</a></li>
+                            <li><a href="">More...</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-33">
+                <div class="content">
+                    <img class="img-resp" src="./images/products.jpg" alt="Products">
+                    <div class="overlay">
+                        <h1>Treatments</h1>
+                        <ul class="service-list">
+                            <li><a href="">Hair Removal</a></li>
+                            <li><a href="">Photorejuvenation</a></li>
+                            <li><a href="">Cellulite</a></li>
+                            <li><a href="">Body Shaping</a></li>
+                            <li><a href="">Circumferential Reduction</a></li>
+                            <li><a href="">Anit-Aging</a></li>
+                            <li><a href="">Tightening &amp; Toning</a></li>
+                            <li><a href="">More...</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-33">
+                <div class="content">
+                    <img class="img-resp" src="./images/products.jpg" alt="Products">
+                    <div class="overlay">
+                        <h1>Technologies</h1>
+                        <ul class="service-list">
+                            <li><a href="">Bipolar Radiofrequency</a></li>
+                            <li><a href="">Intense Pulsed Light</a></li>
+                            <li><a href="">Ultrasonido</a></li>
+                            <li><a href="">Masaje Fotoneumático</a></li>
+                            <li><a href="">More...</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="centers">
+        <div class="grid-container grid-parent"> <!-- 2115px -->
+            <div class="title tac">
+                <h3 class="sub">more than 1,000 centers in more than 25 countries</h3>
+                <h1 class="section-header">Reinventing Aesthetics, One Center at a Time</h1>
+            </div>
+            <img class="img-resp" src="./images/world.svg" alt="Centers around the world">
+        </div>
+    </section>
+
+    <section id="owner">
+        <div class="grid-container grid-parent">
+            <div class="grid-50 tablet-50">
+                <h3 class="sub">Owner and operator</h3>
+                <h1 class="section-header">Moshe Segebre</h1>
+                <p>Born in Barranquilla, Colombia, <strong>Moshe Segebre</strong> is the successful owner and operator of the privately owned Estetique Inc, USA, www.estetique.com, which he founded along with his wife, Tracy Harder Segebre, in 1999. With his concept “Spa-Med Solutions,” which is part of the registered trademark Estetique.</p>
+            </div>
+            <div class="grid-50 tablet-50">
+                <img class="img-resp" src="./images/owner.jpg" alt="Moshe Segebre">
+            </div>
+            <div class="grid-90 prefix-5 grid-parent">
+                <div class="grid-25 tablet-50 tac">
+                    <img class="img-resp" src="./images/icon-credit.png" alt="Fast Credit">
+                    <p>The best financing plans available in the market.</p>
+                </div>
+                <div class="grid-25 tablet-50 tac">
+                    <img class="img-resp" src="./images/icon-talk.png" alt="Live Talk">
+                    <p>Speak with us instantly with one simple click.</p>
+                </div>
+                <div class="grid-25 tablet-50 tac">
+                    <img class="img-resp" src="./images/icon-applications.png" alt="Applications">
+                    <p>The widest range of facial and body solutions.</p>
+                </div>
+                <div class="grid-25 tablet-50 tac">
+                    <img class="img-resp" src="./images/icon-success.png" alt="Success Stories">
+                    <p>Our clients talk about how they achieved success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dr">
+        <div class="grid-container grid-parent">
+            <div id="dr-slider">
+                <ul class="slides">
+                    <li>
+                        <div class="grid-50 tablet-50">
+                            <img class="img-resp" src="./images/dr.jpg" alt="Dr. Richard Silva">
+                        </div>
+                        <div class="grid-50 tablet-50">
+                            <h3 class="sub">General practitioner</h3>
+                            <h1 class="section-header">Dr. Richard Silva</h1>
+                            <p>“When I learned about Estetique I was very impressed and I realized that the technology I had was completely obsolete. What I like most about the Estetique products is that they provide treatments without pain, without surgeries and without recovery time, and that patients can immediately return to their regular life. My patients are very satisfied with the results they have achieved and in such a short period of time.”</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid-50 tablet-50">
+                            <img class="img-resp" src="./images/dr.jpg" alt="Dr. Richard Silva">
+                        </div>
+                        <div class="grid-50 tablet-50">
+                            <h3 class="sub">General practitioner</h3>
+                            <h1 class="section-header">Dr. Someone Else</h1>
+                            <p>“When I learned about Estetique I was very impressed and I realized that the technology I had was completely obsolete. What I like most about the Estetique products is that they provide treatments without pain, without surgeries and without recovery time, and that patients can immediately return to their regular life. My patients are very satisfied with the results they have achieved and in such a short period of time.”</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid-50 tablet-50">
+                            <img class="img-resp" src="./images/dr.jpg" alt="Dr. Richard Silva">
+                        </div>
+                        <div class="grid-50 tablet-50">
+                            <h3 class="sub">General practitioner</h3>
+                            <h1 class="section-header">Dr. John Doe</h1>
+                            <p>“When I learned about Estetique I was very impressed and I realized that the technology I had was completely obsolete. What I like most about the Estetique products is that they provide treatments without pain, without surgeries and without recovery time, and that patients can immediately return to their regular life. My patients are very satisfied with the results they have achieved and in such a short period of time.”</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid-container">
+            <div id="footer-navigation">
+                <ul>
+                    <li class="title"><a href="">Estetique</a></li>
+                    <li><a href="">The Company</a></li>
+                    <li><a href="">Community Support</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Technical Support</a></li>
+                    <li><a href="">Training</a></li>
+                    <li><a href="">Warranty</a></li>
+                    <li><a href="">Supplies and Parts Sale</a></li>
+                    <li><a href="">Global Shipping Options</a></li>
+                </ul>
+                <ul>
+                    <li class="title"><a href="">Products</a></li>
+                    <li><a href="">LipoMax RF</a></li>
+                    <li><a href="">RejuveMax</a></li>
+                    <li><a href="">LumiMax PL</a></li>
+                    <li><a href="">Treatment Bed</a></li>
+                </ul>
+                <ul>
+                    <li class="title"><a href="">Technologies</a></li>
+                    <li><a href="">Bipolar Radiofrequency</a></li>
+                    <li><a href="">Intense Pulsed Light</a></li>
+                    <li><a href="">Ultrasonido</a></li>
+                    <li><a href="">Masaje Fotoneumático</a></li>
+                </ul>
+                <ul>
+                    <li class="title"><a href="">Treatments</a></li>
+                    <li><a href="">Hair Removal</a></li>
+                    <li><a href="">Photorejuvenation</a></li>
+                    <li><a href="">Cellulite</a></li>
+                    <li><a href="">Body Shaping</a></li>
+                    <li><a href="">Circumferential Reduction</a></li>
+                    <li><a href="">Anti-Aging</a></li>
+                    <li><a href="">Tightening and Toning</a></li>
+                    <li><a href="">Vascular Lesoins</a></li>
+                    <li><a href="">Hyperpigmentation</a></li>
+                    <li><a href="">Acne</a></li>
+                </ul>
+            </div>
+            <div class="grid-50 tablet-50">
+                <img class="img-resp" src="./images/logo.png" alt="Estetique Spa Med & Aesthetic Solutions">
+            </div>
+            <div class="grid-50 tablet-50">
+                
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
