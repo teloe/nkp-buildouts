@@ -7,6 +7,22 @@ jQuery(document).ready(function ($) {
         locationBtn: '',
     });
 
+    $('#open-menu').on('click', function () {
+        $('#menu-content').addClass('open');
+        $('#nav-overlay-close').addClass('active');
+    });
+    $('#close-menu, #nav-overlay-close').on('click', function () {
+        $('#menu-content').removeClass('open');
+        $('#nav-overlay-close').removeClass('active');
+    });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode === 27) {
+            $('#menu-content').removeClass('open');
+            $('#nav-overlay-close').removeClass('active');
+        }
+    });
+
     $(window).on('scroll', function () {
         $('#main-nav').addClass('scroll');
         $('#main-nav .logo')
@@ -20,9 +36,9 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#slider').flexslider({
-        animation: 'fade',
+    $('#banner-slider').flexslider({
+        animation: 'slide',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
     });
 });

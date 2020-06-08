@@ -36,7 +36,7 @@
                         <li class="hide-on-mobile"><a href="">Faq</a></li>
                         <li class="appt hide-on-mobile"><a href="">Request Appointment</a></li>
                         <li class="hide-on-mobile"><a href="tel:555-555-5555"><i class="fas fa-phone-alt"></i></a></li>
-                        <li><a href="" id="nav-btn"><img class="img-resp" src="./images/nav-btn-icon.png" alt="Menu"></a></li>
+                        <li><div id="open-menu"><img class="img-resp" src="./images/nav-btn-icon.png" alt="Menu"></div></li>
                     </ul>
                 </div>
             </div>
@@ -44,10 +44,12 @@
     </nav>
     <!-- #/main-nav -->
 
-    <div id="nav-content">
-        <span class="close-btn">×</span>
+    <div id="nav-overlay-close"></div>
+
+    <div id="menu-content">
+        <span id="close-menu">×</span>
         <ul class="flex-wrapper">
-            <li class="title"><a href="#">About</a>
+            <li class="menu-wrapper"><h4>About</h4>
                 <ul>
                     <li><a href="#">Business Operations</a></li>
                     <li><a href="#">Our Story &amp; Promise</a></li>
@@ -56,7 +58,7 @@
                     <li><a href="#">Find Us</a></li>
                 </ul>
             </li>
-            <li class="title"><a href="#">Services</a>
+            <li class="menu-wrapper"><h4>Services</h4>
                 <ul>
                     <li><a href="#">Urgent Care</a></li>
                     <li><a href="#">Urget Care Membership</a></li>
@@ -65,7 +67,7 @@
                     <li><a href="#">Video Vault</a></li>
                 </ul>
             </li>
-            <li class="title"><a href="#">Information</a>
+            <li class="menu-wrapper"><h4>Information</h4>
                 <ul>
                     <li><a href="#">Faq</a></li>
                     <li><a href="#">Blog</a></li>
@@ -74,7 +76,7 @@
                     <li><a href="#">Notice of Privacy Practices &amp; Policy</a></li>
                 </ul>
             </li>
-            <li class="title"><a href="#">Customer Service</a>
+            <li class="menu-wrapper"><h4>Customer Service</h4>
                 <ul>
                     <li><a href="#">Join Our Email List</a></li>
                     <li><a href="#">Employer options</a></li>
@@ -92,7 +94,7 @@
             <li>
                 <div class="slide1">
                     <div class="grid-container">
-                        <div class="grid-50 tablet-50">
+                        <div class="grid-60 tablet-70">
                             <h1>Feeling Better, Already</h1>
                             <h3>Urgent Care brought to you wherever you are</h3>
                             <div class="btn-wrapper">
@@ -100,17 +102,17 @@
                                 <a class="btn" href="">Contact for Business</a>
                             </div>
                         </div>
-                        <div class="bottom-info"> 
+                        <!-- <div class="bottom-info"> 
                             <p>On-Demand house calls and video visits</p> 
                             <p>Mon-Sat 8-8 Sunday 10-6</p> 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </li>
-            <!-- <li>
+            <li>
                 <div class="slide2">
                     <div class="grid-container">
-                        <div class="grid-50 tablet-50">
+                        <div class="grid-60 tablet-70">
                             <h1>We Come To You</h1>
                             <h3>Primary care at your home or office</h3>
                             <div class="btn-wrapper">
@@ -118,17 +120,17 @@
                                 <a class="btn" href="">Contact for Business</a>
                             </div>
                         </div>
-                        <div class="bottom-info"> 
+                        <!-- <div class="bottom-info"> 
                             <p>On-Demand house calls and video visits</p> 
                             <p>Mon-Sat 8-8 Sunday 10-6</p> 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </li>
             <li>
                 <div class="slide3">
                     <div class="grid-container">
-                        <div class="grid-50 tablet-50">
+                        <div class="grid-60 tablet-70">
                             <h3>Wellness at your Doorstep</h3>
                             <h1>Transforming Health</h1>
                             <h3>By balancing mind, body and spirit</h3>
@@ -137,14 +139,14 @@
                                 <a class="btn" href="">Contact for Business</a>
                             </div>
                         </div>
-                        <div class="bottom-info"> 
-                            <p>On-Demand house calls and video visits</p> 
-                            <p>Mon-Sat 8-8 Sunday 10-6</p> 
-                        </div>
                     </div>
                 </div>
-            </li> -->
+            </li>
         </ul>
+        <div class="bottom-info"> 
+            <p>On-Demand house calls and video visits</p> 
+            <p>Mon-Sat 8-8 Sunday 10-6</p> 
+        </div>
     </section>
     <!-- #/banner-slider -->
 
@@ -375,7 +377,11 @@
     <div id="map">
        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11687.58741443927!2d-87.9112205!3d42.9172163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b7b559780c4101f!2sRemedyNow%20HealthCare!5e0!3m2!1sen!2sus!4v1591231388634!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
     </div>
+    <!-- #/map -->
 
+    <script id="__bs_script__">
+     //<![CDATA[document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));//]]>
+    </script>
 
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
