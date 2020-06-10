@@ -29,7 +29,35 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.text-muted {
+    color: #828282;
+}
+.section-heading {
+    font-size:1.75rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight:900;
+    color: #04A29B;
+}
+.section-heading.white {
+    color: #fff;
+}
+.section-heading::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 8px;
+    background-color: #fd9f2f;
+    margin: 0 auto 10px;
+}
+.sub {
+	font-family: Roboto-Light,Arial,sans-serif;
+	font-size: 17px;
+	line-height: 1.3;
+	text-transform: none;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
 a,
 a:visited,
 a:link {
@@ -243,6 +271,9 @@ ul,ol{clear:both}
 #menu-content .menu-wrapper:nth-of-type(4) > h4 {
     border-color: #ff9f36;
 }
+#menu-content .menu-wrapper:nth-of-type(5) > h4 {
+    border-color: #dc6567;
+}
 #menu-content .menu-wrapper li {
     margin-bottom: 10px;
 }
@@ -270,16 +301,141 @@ ul,ol{clear:both}
 
 /* }}} */
 
-/* section {{{ */
+/* #services {{{ */
+#services .grid-container {
+    padding: 4rem 15px;
+}
+#services h2 {
+	font-size: 1.625rem;
+	color: #FD9F2F;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+}
+#services .grid-50 {
+    margin-bottom: 2rem;
+}
+#services .content {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#services .content h3 {
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    bottom: 30px;
+    text-align: center;
+}
+#services .urgent-care {
+    background: url(images/urgentcare-header-img.jpg) no-repeat center;
+    background-size: cover;
+    border-top: solid 6px #dc6567;
+}
+#services .primary-care {
+    background: url(images/primarycare-header-img.jpg) no-repeat center;
+    background-size: cover;
+    border-top: solid 6px #885ff0;
+}
+#services .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 30px 15px;
+    opacity:0;
+    visibility: hidden;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#services .content:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+#services .overlay p {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: .875rem;
+}
+#services .urgent-care .overlay {
+    background: #dc6567;
+}
+#services .primary-care .overlay {
+    background: #885ff0;
+}
+
 /* }}} */
 
-/* section {{{ */
+/* #membership-banner {{{ */
+#membership-banner {
+	padding: 0;
+	background-color: #88888a;
+	height: 180px;
+    display: block;
+	background-image: url(images/urgentcare-header-img.jpg);
+	background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#membership-banner .ribbon {
+    position: absolute;
+	top: 0;
+	z-index: 1;
+	color: #fff;
+    width: 100px;
+	line-height: .5em;
+	padding-top: 15px;
+}
+#membership-banner .ribbon::after {
+	content: "";
+	position: absolute;
+	border: 55px solid #dc6567;
+	z-index: -1;
+	top: 0;
+	border-top-width: 93px;
+	border-bottom-color: transparent;
+    right: 0;
+}
+#membership-banner .grid-50 {
+    position: relative;
+}
+#membership-banner .ribbon p {
+   font-size: 14px; 
+}
+#membership-banner .ribbon h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+}
+#membership-banner .content {
+    margin-left: 7rem;
+}
+#membership-banner .content h3 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.25rem;
+}
+#membership-banner .content h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height:1;
+}
 /* }}} */
 
-/* section {{{ */
+/* #video {{{ */
+#video {
+    margin-top: 3.125rem;
+}
+#video h4 {
+    font-size: 1.125rem;
+    margin: 10px 0 0 3%;
+}
 /* }}} */
 
-/* section {{{ */
+/* #how-it-works {{{ */
+#how-it-works
 /* }}} */
 
 /* section {{{ */
@@ -296,7 +452,7 @@ img{border:0}
 .img-resp,.img-responsive{max-width:100%;height:auto}
 img.left,img.alignleft,.img-l{float:left;margin:10px 15px 0 0}
 img.right,img.alignright,.img-r{float:right;margin:10px 0 0 15px}
-iframe{width:100%;height:500px}
+iframe{width:100%;height:600px}
 .embed-responsive{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-bottom:20px}
 .embed-responsive iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ccc}
 
@@ -387,6 +543,12 @@ textarea {
 @media only screen and (max-width: 740px) {
     iframe{width:100%;height:280px}
     .patient-single{width:100%!important}
+}
+
+@media only screen and (min-height: 1286px) {
+    #menu-content {
+        height: auto;
+    }
 }
 
 /* min-width: 768px {{{ */
@@ -486,6 +648,15 @@ textarea {
     }
     #menu-content .flex-wrapper .menu-wrapper {
         width: 50%;
+    }
+    #membership-banner {
+        background-size: contain;
+    }
+    #membership-banner .content h3 {
+        font-size: 2rem;
+    }
+    #membership-banner .content h1 {
+        font-size: 2.5rem;
     }
 }
 /* }}} */
