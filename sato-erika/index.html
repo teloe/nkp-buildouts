@@ -1,0 +1,74 @@
+<!--
+    oooo   oooo oooo   oooo oooooooooo
+    8888o  88   888  o88    888    888
+    88 888o88   888888      888oooo88
+    88   8888   888  88o    888
+    o88o    88  o888o o888o o888o
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sato, Erika</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="logo">
+        <a href="/" title="">
+            <img class="img-resp" src="./images/logo.png" alt="">
+        </a>
+    </div>
+
+    <nav>
+        <div class="stellarnav">
+            <ul>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Dropdown</a>
+                    <ul>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="slider">
+        <ul class="slides">
+            <li>
+                <div class="slide1">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos init-->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
+    </script>
+
+</body>
+</html>
