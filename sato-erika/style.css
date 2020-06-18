@@ -8,9 +8,23 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
-@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
+/* @import url(https://unpkg.com/aos@2.3.1/dist/aos.css); */
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+@import url(https://use.typekit.net/mat5ash.css);
 /*---- Do Not Remove ----*/
+
+
+
+/* Rama Gothic Semibold */
+/* font-family: rama-gothic-e, sans-serif; */
+/* font-weight: 600; */
+/* font-style: normal; */
+
+/* Work Sans Light
+font-family: work-sans, sans-serif;
+font-weight: 300;
+font-style: normal; */
+
 
 /* GENERAL {{{ */
 html {
