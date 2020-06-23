@@ -1,17 +1,17 @@
-jQuery(document).ready(function($) {
-
+jQuery(document).ready(function ($) {
     $('.stellarnav').stellarNav({
-        showArrows:false,
-        breakpoint:960,
-        menuLabel:'Menu',
-        phoneBtn:'',
-        locationBtn:''
+        showArrows: false,
+        breakpoint: 1024,
+        menuLabel: 'Menu',
+        phoneBtn: '713-791-0700',
+        locationBtn: 'https://g.page/MyHoustonSurgeons?share',
+        closeBtn: true,
     });
 
-    $('#slider').flexslider({
+    $('#services-slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false
+        controlNav: true,
+        manualControls: '.controls li',
     });
-
 });
