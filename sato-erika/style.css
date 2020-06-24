@@ -21,7 +21,8 @@ html{box-sizing:border-box}
 body{font-family:work-sans,sans-serif;font-weight:300;font-style:normal;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .section-heading{font-family:rama-gothic-e,sans-serif;font-weight:100;text-align:center;font-size:5rem;line-height:1;margin-bottom:2rem;text-transform:uppercase}
 .section-heading span{display:block;font-weight:600;font-size:2.8rem}
-p,li{line-height:1.75;padding-bottom:2rem}
+p{padding-bottom:2rem}
+p,li{line-height:1.75}
 a,a:visited,a:link{color:#000;text-decoration:none;outline:none;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
 a:hover{color:rgba(0,0,0,.6);text-decoration:none;outline:none}
 a.btn,button.btn{font-family:rama-gothic-e,sans-serif;border:none;font-size:1.1875rem;text-align:center;display:inline-block;text-transform:lowercase;font-weight:700;letter-spacing:1px;position:relative;z-index:1;padding:1rem 2rem}
@@ -77,6 +78,119 @@ header .social a{color:#fff;font-size:1.25rem;display:inline-block;margin:0 .35r
 #banner .cta a::after{content:'';background:rgba(255,255,255,.6);width:100%;height:0;bottom:0;left:0;position:absolute;transition:all .3s ease;z-index:-1}
 #banner .cta a:hover::after{height:100%}
 #banner .cta a:hover{background:transparent;color:#000}
+
+@keyframes fadeInRight {
+0%{opacity:0;transform:translateX(-40px)}
+100%{opacity:1;transform:translateY(0)}
+}
+#banner.internal {
+    background: url(images/banner-breast-aug.jpg) no-repeat center;
+    background-size: cover;
+    height:300px;
+}
+#banner.internal .section-heading {
+    font-size: 3rem;
+}
+
+#main {
+    padding: 6rem 0;
+}
+#main .section-heading {
+    font-size: 3rem;
+}
+#main .section-heading span {
+    font-size: 2.5rem;
+}
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+    font-family:rama-gothic-e,sans-serif;
+    text-transform: uppercase;
+}
+#main .mt {
+    margin-top: 6rem;
+}
+#main .mb {
+    margin-bottom: 6rem;
+}
+#main .considerations {
+    margin: 8rem 0;
+}
+#main .considerations .mobile-bg img {
+    width: 100%;
+}
+#main .considerations .content {
+    padding: 4rem 30px;
+}
+#main .considerations h1,
+#main .proc-info h1 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    font-weight:600;
+}
+#main .considerations .grid-container {
+    position: relative;
+    background: #f7f7f7;
+}
+#main .considerations .bg {
+    background: url(images/dr-sato.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    height: 920px;
+    width: 100%;
+    top: 0;
+    z-index:-1;
+}
+#main .considerations .btn-arrow {
+    color: #000;
+    border-color: rgba(0,0,0,.5);
+    margin-top: 2rem;
+}
+#main .considerations .btn-arrow::after {
+    border-left-color: #000;
+}
+#main .considerations .btn-arrow:hover {
+    background: rgba(0,0,0,.1);
+    border-color: transparent;
+}
+#main .proc-info {
+    background: url(images/proc-info-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 6rem 0;
+}
+#main .proc-info h1 {
+    color: #fff;
+    padding-left: 15px;
+}
+#main .proc-info p,
+#main .proc-info li {
+    color: #fff;
+}
+#main .proc-info .proc-list {
+    padding-left: 20px;
+}
+#main .proc-info .proc-list li {
+    list-style: square;
+    font-family:rama-gothic-e,sans-serif;
+    font-size:1.1875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom:.5rem;
+}
+#main .faq {
+    margin-top: 6rem;
+}
+#main .faq .bg-extend {
+    background: url(images/faq-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+#main .faq-wrapper {
+    margin-top: 4rem;
+}
 
 #awards{padding:6rem 0}
 #awards .flex{display:flex;flex-flow:row wrap;justify-content:center}
@@ -180,6 +294,40 @@ input,select,textarea{font-size:inherit;font-family:inherit;width:100%;margin:0 
     #banner{height:600px}
     #banner h3{font-size:2.125rem}
     #banner h1{font-size:10rem;font-weight:100}
+    #banner.internal {
+        height:420px;
+    }
+    #banner.internal .section-heading {
+        color: #000;
+        font-size: 5rem;
+        text-align: right;
+        animation:fadeInRight .75s ease;
+        animation-delay:.5s;
+        animation-fill-mode:both
+    }
+    #main .section-heading {
+        font-size: 5rem;
+    }
+    #main .section-heading span {
+        font-size: 2.8rem;
+    }
+    #main .considerations .grid-container {
+        background: none;
+    }
+    #main .faq {
+        position: relative;
+    }
+    #main .faq .bg-extend {
+        height: 850px;
+        width: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index:-1;
+    }
+
+
+
     #services{margin:12rem 0 14rem}
     #services .section-heading{text-align:right;margin-top:0;font-size:4rem}
     #services .bg{position:absolute;background:url(images/mommy-makeover1.jpg) no-repeat top center;background-size:cover;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:-1}
@@ -222,6 +370,20 @@ input,select,textarea{font-size:inherit;font-family:inherit;width:100%;margin:0 
     #banner .social::before{content:'';background:#fff;position:absolute;height:72px;width:50vw;margin-left:-50vw;left:0;bottom:0}
     #banner .social a{color:#000;font-size:1.25rem;display:inline-block;margin:0 .35rem}
     #banner .social a:hover{color:rgba(0,0,0,.6)}
+    #banner.internal {
+        height:540px;
+    }
+    #main .considerations .content {
+        padding: 6rem 30px;
+    }
+    #main .faq .grid-60 {
+        background:#fff;
+        margin-top: 6rem;
+    }
+    #main .faq .content {
+        max-width:90%;
+        float:right;
+    }
     #testimonials .content{padding:6rem 0 6rem 30%}
     #contact{padding:8rem 0}
     #contact .btn-wrapper{display:flex;align-items:center;justify-content:center}
