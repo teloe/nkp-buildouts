@@ -8,6 +8,7 @@ Template: nkpv2
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
+@import url(https://use.typekit.net/wbm2iwk.css);
 /* @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css); */
 /*---- Do Not Remove ----*/
 
@@ -19,15 +20,27 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-size: 16px;
+    font-family: futura-pt,Helvetica,arial,sans-serif;
+    font-weight: 400;
+	font-style: normal;
+	line-height: 1.8em;
+	font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+h2 {
+	font-weight: bold;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 1.2em;
+	font-size: 1.6em;
+	text-transform: uppercase;
 }
 
 a,
 a:visited,
 a:link {
-    /* color: #1174a6; */
+    color: #999;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease;
@@ -35,9 +48,21 @@ a:link {
     transition: all 0.5s ease;
 }
 a:hover {
-    /* color: #09557c; */
+    color: #111;
     text-decoration: none;
     outline: none;
+}
+a.btn-black {
+    display:inline-block;
+	padding: 10px 26px;
+    font-family: proxima-nova, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: #272727;
 }
 
 ul,ol{clear:both}
@@ -53,16 +78,80 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
-/* section {{{ */
+/* menus {{{ */
+#mobile-menu {
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#mobile-menu .menu li {
+    margin-bottom: 1rem;
+}
+#mobile-menu #menu-controls {
+    display:flex;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+#mobile-menu #menu-controls > div {
+    flex: 1;
+    cursor: pointer;
+}
+#mobile-menu .menu {
+    display:none;
+}
+#desktop-menu {
+    display:none;
+}
 /* }}} */
 
-/* section {{{ */
+/* header {{{ */
+header .grid-50 {
+    text-align: center;
+}
+header .logo {
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+header .logo img {
+    width: 250px;
+}
+header .phone {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
 /* }}} */
 
-/* section {{{ */
+/* ctas {{{ */
+#ctas {
+    margin-top: 2rem;
+}
+#ctas h1 {
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 2rem;
+    font-weight:300;
+    line-height:1.5;
+}
+#ctas .btn-black {
+    margin-top: 2rem;
+}
+#ctas h2 {
+    margin-top: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* #procs {{{ */
+#procs {
+    margin: 4rem 0;
+}
+#procs .content {
+    display:block;
+    position: relative;
+}
 /* }}} */
 
 /* section {{{ */

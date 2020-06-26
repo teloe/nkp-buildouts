@@ -19,8 +19,8 @@
 </head>
 <body>
 
-    <div id="mobile-nav">
-        <ul>
+    <div id="mobile-menu">
+        <ul class="menu">
             <li><a href="#">Procedures</a></li>
             <li><a href="#">Awards and Affiliates</a></li>
             <li><a href="#">Videos</a></li>
@@ -28,12 +28,18 @@
             <li><a href="#">Online Consultation</a></li>
             <li><a href="#">Patient Resources</a></li>
             <li><a href="#">Video Consultations</a></li>
+            <li id="close-menu"><a href="#">CLOSE MENU ✖</a></li>
         </ul>
+        <div id="menu-controls">
+           <div id="menu-toggle"><a href="javascript:void(0);"><span>MENU</span> <i class="fas fa-bars"></i></a></div>
+           <div><a href="" target="_blank"><span>LOCATION</span> <i class="fas fa-map-marker-alt"></i></a></div>
+           <div><a href="tel:555-555-5555"><span>CALL</span> <i class="fas fa-phone-alt"></i></a></div>
+        </div>
     </div>
 
     <header>
         <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 fr">
+            <div class="grid-50 tablet-50">
                 <div class="logo">
                     <a href="/" title="">
                         <img class="img-resp" src="./images/logo.png" alt="Dr. Cap Lesesne">
@@ -44,7 +50,7 @@
         </div>
     </header>
 
-    <div id="desktop-nav">
+    <div id="desktop-menu">
         <ul>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
@@ -63,8 +69,8 @@
         <div class="grid-container grid-parent">
             <div class="grid-100 tac">
                 <h1>NEW YORK   LONDON   GREENWICH   PALM BEACH</h1>
-                <a class="btn" href="">schedule a consultation</a>
-                <a class="btn" href="">new virtual appointments</a>
+                <a class="btn-black" href="">schedule a consultation</a>
+                <a class="btn-black" href="">new virtual appointments</a>
                 <h2>DR. CAP LESESNE IS A NEW YORK BASED, GLOBALLY RECOGNIZED TOP BOARD CERTIFIED PLASTIC SURGEON WITH OVER 30 YEARS OF EXPERIENCE. HIS PASSION IS TO HELP YOU ACHIEVE A MORE REFINED, ENHANCED AND RESTORED YOU.</h2>
             </div>
         </div>
