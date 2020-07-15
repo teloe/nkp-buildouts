@@ -10,6 +10,7 @@ Template: nkpv2
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
+@import url(https://use.typekit.net/baw3slk.css);
 /*---- Do Not Remove ----*/
 
 /* GENERAL {{{ */
@@ -20,15 +21,34 @@ html {
     box-sizing: inherit;
 }
 body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: open-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 16px;
+    color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.heading {
+    font-family: gill-sans-nova, sans-serif;
+    font-size: 400;
+    color: #a9a8a9;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+p {
+    padding-bottom: 2rem;
+}
+p,li {
+    line-height: 2rem;
+}
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    color: #1a453c;
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease;
@@ -36,11 +56,27 @@ a:link {
     transition: all 0.5s ease;
 }
 a:hover {
-    color: #09557c;
+    color: rgba(26,69,60,.6);
     text-decoration: none;
     outline: none;
 }
-
+a.btn,
+button.btn {
+    font-size: inherit;
+    font-size: inherit;
+    text-align: center;
+    border:none;
+    display: inline-block;
+    background-color: #87FFE3;
+    color: #1a453c;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+}
+a.btn:hover,
+button.btn:hover {
+    color: #87FFE3;
+    background-color: #1a453c;
+}
 ul,ol{clear:both}
 .fl{float:left}
 .fr{float:right}
@@ -54,34 +90,241 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
-/* section {{{ */
+/* header {{{ */
+header .grid-container {
+    padding: 15px 0;
+}
+header .logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+header .info {
+    margin-bottom: 1.5rem;
+}
+header .loc,
+header .phone,
+header .hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .loc i,
+header .phone i,
+header .hours i {
+    margin-right: .5rem;
+}
+header p {
+    padding-bottom: 0;
+    line-height:initial;
+}
 /* }}} */
 
-/* section {{{ */
+/* nav {{{ */
+.stellarnav.mobile {
+    border: solid 1px rgba(0,0,0,.2);
+}
+.stellarnav.mobile .third {
+    width: 33.3333%;
+    padding: 25px 15px;
+    color: #000;
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    font-size: .9rem;
+}
+.stellarnav.mobile .third:hover {
+    background-color: #87FFE3;
+}
+.stellarnav.mobile ul {
+    background-color: #fff;
+}
+.stellarnav ul li a {
+    color: #000;
+    font-size: .9rem;
+}
+.stellarnav ul li a:hover {
+    background-color: #87FFE3;
+}
+.stellarnav.mobile li a {
+    border-bottom: solid 1px rgba(0,0,0,.1);
+}
+.stellarnav.mobile .close-menu {
+    color: #000;
+    width: 100%;
+}
 /* }}} */
 
-/* section {{{ */
+/* #banner {{{ */
+#banner {
+    background: url(images/banner-main.jpg) no-repeat center;
+    background-size: cover;
+    padding: 2rem 0;
+}
+#banner h1,
+#banner h3 {
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#banner h1 {
+    font-size: 2.25rem;
+}
+#banner h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
 /* }}} */
 
-/* section {{{ */
+/* #free-trial {{{ */
+#free-trial {
+    background-color: #BAFFEF;
+    padding: 2rem 0;
+}
+#free-trial h1 {
+    color: #1a453c;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
 /* }}} */
 
-/* section {{{ */
+/* #products {{{ */
+#products {
+    padding: 6rem 0;
+}
+#products li {
+    font-size:1.8rem;
+    padding-bottom: .75rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+#products li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight:900;
+    position: absolute;
+    left: 0;
+    color: #00A64F;
+}
 /* }}} */
 
-/* section {{{ */
+/* #bookkeeping {{{ */
+#bookkeeping {
+    background-color: #F7F7F7;
+    padding: 6rem 0;
+}
+#bookkeeping .grid-50:first-of-type {
+    margin-bottom: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* #taxes {{{ */
+#taxes {
+    padding: 6rem 0;
+}
 /* }}} */
 
-/* section {{{ */
+/* #records {{{ */
+#records {
+    padding: 6rem 0;
+    background-color: #F7F7F7;
+}
+#records .grid-50:first-of-type {
+    margin-bottom: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* #pricing {{{ */
+#pricing {
+    padding: 6rem 0;
+}
+#pricing .grid-container {
+    max-width: 1580px;
+}
+#pricing h1 {
+    margin-bottom: 4rem;
+}
+#pricing .grid-25 {
+    margin-bottom: 4rem;
+}
+#pricing .content {
+    background-color: #fff;
+    border: solid 2px #6DFDDB;
+    padding: 30px 15px;
+    box-shadow: 5px 5px 25px rgba(0,0,0,.15);
+}
+#pricing .btn {
+    display: block;
+    width: 100%;
+    max-width:160px;
+    margin: 0 auto;
+}
+#pricing .top {
+    position: relative;
+    padding-bottom: 2rem;
+}
+#pricing .top::after {
+    content: '';
+    background-color: rgba(0,0,0,.1);
+    height: 2px;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#pricing .price {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#pricing .top h3 {
+    text-transform: uppercase;
+    font-size:2.25rem;
+}
+#pricing .top p {
+    line-height:1.25;
+}
+#pricing .info {
+    padding-top: 2rem;
+}
+#pricing .info ul {
+    margin-bottom: 4rem;
+}
+#pricing .info ul li {
+    position: relative;
+    padding-left: 1.75rem;
+}
+#pricing .info ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight:900;
+    position: absolute;
+    left: 0;
+    color: #00A64F;
+}
+#pricing .info p {
+    padding-bottom:0;
+}
 /* }}} */
 
-/* section {{{ */
+/* #founding {{{ */
+#founding {
+    background-color: #F7F7F7;
+    padding: 6rem 0;
+}
+/* }}} */
+
+/* footer {{{ */
+footer {
+    background-color: #E6E6E6;
+    padding: 6rem 0;
+}
+footer img {
+    margin-bottom: 2rem;
+}
+footer p {
+    padding-bottom: .5rem;
+}
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
@@ -186,6 +429,50 @@ textarea {
 
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
+    .heading {
+        font-size: 4.5rem;
+    }
+    #banner {
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+    #banner .grid-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        z-index:1;
+    }
+    #banner h1 {
+        font-size: 3rem;
+    }
+    #banner h3 {
+        font-size: 1.6rem;
+    }
+    #banner .grid-50:last-of-type img {
+        position: absolute;
+        right: -30%;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        margin: auto;
+    }
+    #bookkeeping .grid-50:first-of-type {
+        margin-bottom: 0;
+    }
+    #taxes .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    #records .grid-container {
+        display: flex;
+        align-items: center;
+        max-width: 1250px;
+    }
+    #records .grid-50:first-of-type {
+        margin-bottom: 0;
+    }
 }
 /* }}} */
 
@@ -196,9 +483,72 @@ textarea {
 
 /* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
+    header {
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    }
+    header .grid-container {
+        display: flex;
+        align-items: center;
+        padding-bottom:0;
+    }
+    header .logo {
+        margin: 0;
+    }
+    header .info p {
+        line-height: 1.25;
+    }
+    header .info .loc,
+    header .info .phone,
+    header .info .hours {
+        justify-content: flex-start;
+        text-align: left;
+        margin-bottom: .5rem;
+    }
+    header .info .hours {
+        margin: 0;
+    }
+    header .info .loc i,
+    header .info .phone i,
+    header .info .hours i {
+        margin-right: .75rem;
+    }
+    .stellarnav > ul > li > a {
+        padding: 20px 10px;
+    }
+    #banner {
+        height: 600px;
+        margin-top: 135px;
+    }
+    #banner h1 {
+        font-size: 4.6rem;
+    }
+    #banner h3 {
+        font-size: 3rem;
+    }
+    #pricing .content {
+        display: flex;
+        flex-direction: column;
+    }
+    #pricing .btn {
+        margin-top: auto;
+    }
 }
 /* }}} */
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (min-width: 1301px) {
+    #pricing .content {
+        min-height: 610px;
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1025px) {
+    #pricing .content {
+        min-height: 705px;
+    }
 }
 
