@@ -3,8 +3,16 @@ jQuery(document).ready(function ($) {
         showArrows: false,
         breakpoint: 1024,
         menuLabel: 'Menu',
-        phoneBtn: '',
-        locationBtn: '',
+        phoneBtn: '555-555-5555',
+        locationBtn: 'https://goo.gl/maps/VdKfSZcWoZAZy1aY6',
+        closeBtn: true,
+    });
+
+    $(window).on('scroll', function () {
+        $('header').addClass('stuck');
+        if ($(this).scrollTop() === 0) {
+            $('header').removeClass('stuck');
+        }
     });
 
     /* $('#slider').flexslider({
