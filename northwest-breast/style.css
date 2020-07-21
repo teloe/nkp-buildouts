@@ -60,6 +60,35 @@ header .grid-container{padding:15px 0}
 #banner h3{font-size:1.1rem}
 #banner .btn{margin-top:1.5rem}
 
+#banner.internal{background:url(images/banner-internal.jpg) no-repeat center;background-size:cover}
+#main{padding:5rem 0}
+#main h2{font-size:2.5rem;margin-bottom:1rem}
+#main h3{font-size:2.2rem;margin-bottom:1rem}
+#main img{margin-bottom:2rem}
+#main .gray-bg{background-color:#f6f6f6;padding:4rem 15px;margin-bottom:4rem;text-align:center}
+#main .questions-box{background-color:#A7CDD7;color:#fff;font-size:1.5rem;text-align:center;padding:1.5rem 15px;margin-bottom:4rem}
+#main .blue-border{border-top:solid 10px #3E499B}
+.appt-row{background-color:#BCD06B;color:#fff;text-align:center;padding:2rem 0}
+.appt-row h3{font-size:2rem;margin-bottom:1rem}
+
+#sidebar .agree{display:inline-block}
+#sidebar .sb-form .btn{margin-top:2rem}
+#sidebar .services {margin-top:4rem}
+#sidebar .services h1{text-align:center;font-size:3rem;margin-bottom:4rem}
+#sidebar .services .grid-100{margin-bottom:4rem}
+#sidebar .services .grid-100 img{display:block;margin:0 auto;width:100%}
+#sidebar .services .content{position:relative;display:block;overflow:hidden}
+#sidebar .services .content:hover .text{height:100%}
+#sidebar .services .content img{-moz-transition:all .3s;-webkit-transition:all .3s;transition:all .3s}
+#sidebar .services .content:hover img{filter:blur(5px)}
+#sidebar .services .text{position:absolute;display:flex;align-items:center;height:30%;bottom:0;left:0;right:0;width:100%;-moz-transition:all .7s cubic-bezier(0.19,1,0.22,1);-webkit-transition:all .7s cubic-bezier(0.19,1,0.22,1);transition:all .7s cubic-bezier(0.19,1,0.22,1)}
+#sidebar .services .grid-container{max-width:1600px}
+#sidebar .services h3{font-size:1.5rem;line-height:1.1;padding:2rem;color:#fff}
+#sidebar .services .grid-100:nth-of-type(1) .text{background-color:rgba(62,73,155,.8)}
+#sidebar .services .grid-100:nth-of-type(2) .text{background-color:rgba(148,183,200,.8)}
+#sidebar .services .grid-100:nth-of-type(3) .text{background-color:rgba(189,209,118,.8)}
+#sidebar .services .grid-100:nth-of-type(4) .text{background-color:rgba(88,88,88,.8)}
+
 #learning-center{padding:6rem 0}
 #learning-center h1{text-align:center;font-size:3rem;margin-bottom:4rem}
 #learning-center .grid-25{margin-bottom:4rem}
@@ -127,72 +156,14 @@ img.right,img.alignright,.img-r{float:right;margin:10px 0 0 15px}
 iframe{width:100%;height:500px}
 .embed-responsive{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-bottom:20px}
 .embed-responsive iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #ccc}
-
-input,
-select,
-textarea {
-    font-size: inherit;
-    font-family: inherit;
-    width: 100%;
-    margin: 0 0 10px;
-    padding: 15px;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
-}
-
-.contact-form input[type='text'],
-.contact-form input[type='email'],
-.contact-form input[type='tel'],
-.contact-form input[type='url'],
-.contact-form textarea {
-    
-    border: 1px solid #ccc;
-    background: #fff;
-    
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    box-sizing: border-box
-}
-
-.contact-form input[type='submit'],
-.contact-form input[type='submit'][disabled] {
-    width: 100px;
-    height: 26px;
-    background: #adadad;
-    border: 0;
-    color: #fff;
-    text-transform: uppercase;
-    clear: both;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    outline: none
-}
-
-.contact-form textarea {
-    height: 120px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px
-}
-
-.contact-form ::-webkit-input-placeholder {
-    color: #777
-}
-
-:-moz-placeholder {
-    color: #777
-}
-
-:-ms-input-placeholder {
-    color: #777
-}
-
-.contact-form input.wpcf7-captchar {
-    width: 135px
-}
+input,select,textarea{font-size:inherit;font-family:inherit;width:100%;margin:0 0 10px;padding:15px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+.contact-form input[type='text'],.contact-form input[type='email'],.contact-form input[type='tel'],.contact-form input[type='url'],.contact-form textarea{border:1px solid #ccc;background:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-sizing:border-box}
+.contact-form input[type='submit'],.contact-form input[type='submit'][disabled]{width:100px;height:26px;background:#adadad;border:0;color:#fff;text-transform:uppercase;clear:both;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;outline:none}
+.contact-form textarea{height:120px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.contact-form ::-webkit-input-placeholder{color:#777}
+:-moz-placeholder{color:#777}
+:-ms-input-placeholder{color:#777}
+.contact-form input.wpcf7-captchar{width:135px}
 .patient-single{width:50%}
 .patient-single img{width:96%;height:auto}
 #nav{background-color:#000;height:50px}
@@ -211,6 +182,7 @@ textarea {
     #banner h1{font-size:3.5rem}
     #banner h3{font-size:1.5rem}
     #banner .btn{margin-top:2rem}
+    #banner.internal{height:300px}
 }
 
 @media only screen and (min-width: 768px) {
@@ -218,6 +190,7 @@ textarea {
     #banner{height:600px}
     #banner h1{font-size:5rem}
     #banner .btn{margin-top:4rem}
+    #banner.internal{height:450px}
     #learning-center h1{font-size:5rem}
     #surgeons{background:url(images/surgeons-bg.jpg) no-repeat center;background-size:cover;height:600px;display:flex;align-items:flex-end;padding:0;margin:8rem auto;max-width:2015px}
     #surgeons .grid-container{background:none;padding:0}
@@ -269,6 +242,8 @@ textarea {
     #banner .info{position:absolute;top:-160px;right:30px}
     #banner .info p{padding-bottom:1rem;line-height:1.5;font-weight:700}
     #banner .social{justify-content:flex-end}
+    #banner.internal .info{top:-130px}
+    #banner.internal{margin-top:100px}
     #learning-center .grid-25{margin-bottom:0}
     #surgeons{height:850px}
     #surgeons .content{padding:16rem 2rem}
