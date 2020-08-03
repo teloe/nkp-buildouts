@@ -1,0 +1,140 @@
+<!--
+    oooo   oooo oooo   oooo oooooooooo
+    8888o  88   888  o88    888    888
+    88 888o88   888888      888oooo88
+    88   8888   888  88o    888
+    o88o    88  o888o o888o o888o
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sousa, Nicholas</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="grid-container grid-parent">
+            <div class="grid-30 tablet-50 mobile-100">
+                <div class="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="grid-70 tablet-50 mobile-100">
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <nav id="main-nav">
+        <div class="stellarnav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dr. Nicholas Sousa</a></li>
+                <li><a href="#">Surgical Weight Loss</a></li>
+                <li><a href="#">Non-Surgical Weight Loss</a></li>
+                <li><a href="#">Foregut Surgery</a></li>
+                <li><a href="#">General Surgery</a></li>
+                <li><a href="#">Medical Weight Loss</a></li>
+                <li><a href="#">Cosmetics</a></li>
+                <li><a href="#">Pain Management</a></li>
+                <li><a href="#">Endoscopy</a></li>
+                <li><a href="#">Diet &amp; Nutrition</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- #/main-nav -->
+
+    <section id="banner">
+        <div class="grid-container grid-parent">
+            <div class="grid-50 tablet-50 mobile-100">
+                <h1><span>Make The Most</span><br>of who you are</h1>
+                <div class="btn-wrapper">
+                    <a class="btn" href="">Make Appointment</a>
+                    <a class="btn" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #/banner -->
+
+    <section id="dr">
+        <div class="grid-container grid-parent tac">
+            <h1>Meet Dr. Sousa</h1>
+            <img class="img-resp" src="./images/DET-Weightloss-Doc-1024x576.png" alt="">
+            <p>During your first meeting with Dr. Sousa, he will listen to your weight loss goals and expectations.  He understands that weight loss surgery is not one size fits all. The two of you will develop a bespoke plan that may include a surgical or non-surgical weight-loss procedure.  You will be part of a team of physicians, nurses, and dietitians with your weight loss goals as their ultimate goal.</p>
+            <a class="btn" href="">Read More</a>
+        </div>
+    </section>
+    <!-- #/dr -->
+
+    <section id="procs">
+        <div class="grid-container grid-parent">
+            <div class="grid-25 tablet-50 mobile-100">
+            </div>
+            <div class="grid-25 tablet-50 mobile-100">
+            </div>
+            <div class="grid-25 tablet-50 mobile-100">
+            </div>
+            <div class="grid-25 tablet-50 mobile-100">
+            </div>
+            <div class="grid-100 tablet-100 mobile-100">
+                <img class="img-resp" src="./images/beplastic_img_01.png" alt="">
+                <img class="img-resp" src="./images/beplastic_img_02.png" alt="">
+                <h2>Renowned Specialists in <em>Weight Loss</em></h2>
+            </div>
+        </div>
+    </section>
+    <!-- #/procs -->
+
+    <section id="gallery">
+        <div class="grid-container grid-parent">
+            <div class="grid-100 tablet-100 mobile-100">
+                <h1>Successful Before &amp; After Gallery</h1>
+                <h2>View some success stories</h2>
+                <h3>Before &amp; After</h3>
+                <div id="gallery-slider">
+                    <ul class="slides">
+                        <li>
+                            <div class="content">
+                                <img class="img-resp" src="./images/" alt="">
+                                <h3 class="title">Sleeve</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #/gallery -->
+
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos init-->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
+    </script>
+
+</body>
+</html>
