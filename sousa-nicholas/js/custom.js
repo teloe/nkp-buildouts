@@ -37,4 +37,24 @@ jQuery(document).ready(function ($) {
         nextText: '',
         slideshowSpeed: 5000,
     });
+
+    // Slide in elements on scroll
+    $(window)
+        .on('scroll', function () {
+            var windowBottom =
+                $(this).scrollTop() + $(this).innerHeight() + 300; // add 300px so larger sections slide in earlier
+            $('.slide').each(function () {
+                /* Check the location of each element */
+                let objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                /* If the element is completely within bounds of the window, slide it in */
+                if (objectBottom < windowBottom) {
+                    //object slides into view (scrolling down)
+                    if (!$(this).hasClass('active')) {
+                        $(this).addClass('active');
+                    }
+                }
+            });
+        })
+        .scroll(); //invoke scroll-handler on page-load
 });

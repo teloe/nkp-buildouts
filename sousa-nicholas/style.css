@@ -31,6 +31,32 @@ a.btn:hover,button.btn:hover{background-color:#fff;color:#000}
 #toTop.show{opacity:1;visibility:visible}
 #toTop::before{content:'\f077';font-family:'Font Awesome 5 Free';font-weight:900;color:#91c3d4;transition:all .5s ease}
 
+.slide {
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.slide.right {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.slide.left {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.slide.right.active {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.slide.left.active {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
 ul,ol{clear:both}
 .fl{float:left}
 .fr{float:right}
