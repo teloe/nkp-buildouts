@@ -41,11 +41,11 @@ jQuery(document).ready(function ($) {
     // Slide in elements on scroll
     $(window)
         .on('scroll', function () {
-            var windowBottom =
-                $(this).scrollTop() + $(this).innerHeight() + 300; // add 300px so larger sections slide in earlier
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
             $('.slide').each(function () {
                 /* Check the location of each element */
-                let objectBottom = $(this).offset().top + $(this).outerHeight();
+                let objectBottom =
+                    $(this).offset().top + $(this).outerHeight() / 2; // divide by 2 so larger sections slide in earlier
 
                 /* If the element is completely within bounds of the window, slide it in */
                 if (objectBottom < windowBottom) {
