@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
             $('.slide').each(function () {
                 /* Check the location of each element */
                 let objectBottom =
-                    $(this).offset().top + $(this).outerHeight() / 2; // divide by 2 so larger sections slide in earlier
+                    $(this).offset().top + $(this).outerHeight() / 2; // divide by 2 so sections slide in halfway through scroll
 
                 /* If the element is completely within bounds of the window, slide it in */
                 if (objectBottom < windowBottom) {
