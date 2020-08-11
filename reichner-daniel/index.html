@@ -19,56 +19,443 @@
 </head>
 <body>
 
-    <div id="logo">
-        <a href="/" title="">
-            <img class="img-resp" src="./images/logo.png" alt="">
-        </a>
-    </div>
-
-    <nav>
-        <div class="stellarnav">
-            <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <div id="mobile-controls">
+        <div class="grid-container grid-parent">
+            <div class="tablet-25 mobile-25">
+                <a href="#" class="open-nav">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </a>
+            </div>
+            <div class="tablet-25 mobile-25">
+                <a href="#">
+                    <i class="fas fa-camera"></i>
+                    <span>Gallery</span>
+                </a>
+            </div>
+            <div class="tablet-25 mobile-25">
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location</span>
+                </a>
+            </div>
+            <div class="tablet-25 mobile-25">
+                <a href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call</span>
+                </a>
+            </div>
         </div>
-    </nav>
+    </div>
+    <!-- #/mobile-nav -->
 
-    <div id="slider">
+    <header>
+        <div class="top">
+            <div class="grid-container grid-parent">
+                <div class="grid-50 tablet-100 mobile-100">
+                    <div class="social">
+                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="grid-50 tablet-100 mobile-100">
+                    <div class="info">
+                        <p>Orange County, CA <a href="#" class="serif-bold">(714) 997-5200</a></p>
+                        <p class="call-now">Call Or Text Now To Schedule Your Consultation!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container grid-parent">
+            <div class="grid-100">
+                <div class="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="./images/logo.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-nav">
+            <div class="overlay">
+                <a class="close-nav" href="#">&times;</a>
+                <div class="grid-container grid-parent">
+                    <div class="grid-100">
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li class="has-sub about"><a href="#">About</a><span class="open-sub"><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub procs"><a href="#">Procedures</a><span class="open-sub"><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu face">
+                                    <img class="img-resp" src="./images/face.jpg" alt="Face">
+                                    <li class="title"><a href="#">Face</a></li>
+                                    <li><a href="#">Brow Lift</a></li>
+                                    <li><a href="#">Ear Reduction Surgery</a></li>
+                                    <li><a href="#">Eyelid Surgery</a></li>
+                                    <li><a href="#">Facelift</a></li>
+                                    <li><a href="#">Facial Implants</a></li>
+                                    <li><a href="#">Rhinoplasty</a></li>
+                                </ul>
+                                <ul class="sub-menu breast">
+                                    <img class="img-resp" src="./images/breast.jpg" alt="Breast">
+                                    <li class="title"><a href="#">Breast</a></li>
+                                    <li><a href="#">Breast Augmentation</a></li>
+                                    <li><a href="#">Breast Lift</a></li>
+                                    <li><a href="#">Breast Reduction</a></li>
+                                    <li><a href="#">Breast Implant Removal</a></li>
+                                    <li><a href="#">Breast Reconstruction</a></li>
+                                    <li><a href="#">Breast Revision</a></li>
+                                    <li><a href="#">Male Breast Reduction</a></li>
+                                </ul>
+                                <ul class="sub-menu body">
+                                    <img class="img-resp" src="./images/body.jpg" alt="Body">
+                                    <li class="title"><a href="#">Body</a></li>
+                                    <li><a href="#">Abdominoplasty</a></li>
+                                    <li><a href="#">Arm Lift</a></li>
+                                    <li><a href="#">Brazillian Butt Lift</a></li>
+                                    <li><a href="#">Fat Grafting</a></li>
+                                    <li><a href="#">Liposuction</a></li>
+                                    <li><a href="#">Mommy Makeover</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub med-spa"><a href="#">Med Spa</a><span class="open-sub"><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu about">
+                                    <img class="img-resp" src="./images/medspa.jpg" alt="Med Spa">
+                                    <li class="title"><a href="#">About</a></li>
+                                    <li><a href="#">About Spa Aesthetica</a></li>
+                                    <li><a href="#">Spa Aesthetica Staff</a></li>
+                                    <li><a href="#">Specials</a></li>
+                                    <li><a href="#">Spa Aesthetica Testimonials</a></li>
+                                </ul>
+                                <ul class="sub-menu products">
+                                    <img class="img-resp" src="./images/medspa-products.jpg" alt="Med Spa Products">
+                                    <li class="title"><a href="#">Products</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
+                                    <li><a href="#">Skin Care Products</a></li>
+                                    <li><a href="#">Obagi Premier Points</a></li>
+                                </ul>
+                                <ul class="sub-menu treatments">
+                                    <img class="img-resp" src="./images/medspa-treatment.jpg" alt="Med Spa Treatment">
+                                    <li class="title"><a href="#">Treatments</a></li>
+                                    <li><a href="#">Chemical Peels</a></li>
+                                    <li><a href="#">Aesthetic Facials</a></li>
+                                    <li><a href="#">Waxing</a></li>
+                                    <li><a href="#">Skin Analysis</a></li>
+                                </ul>
+                                <ul class="sub-menu procs">
+                                    <img class="img-resp" src="./images/medspa-procedure.jpg" alt="Med Spa Procedure">
+                                    <li class="title"><a href="#">Procedures</a></li>
+                                    <li><a href="#">Photo Facial/IPL</a></li>
+                                    <li><a href="#">Skin Care Products</a></li>
+                                    <li><a href="#">BOTOX Cosmetic and Dysport</a></li>
+                                    <li><a href="#">Injectable Fillers</a></li>
+                                    <li><a href="#">KYBELLA</a></li>
+                                    <li><a href="#">Laser Hair Removal</a></li>
+                                    <li><a href="#">Lip Augmentation</a></li>
+                                    <li><a href="#">Laser Skin Resurfacing / Mixto CO2</a></li>
+                                    <li><a href="#">Non Surgical Rhinoplasty</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Photo Gallery</a></li>
+                            <li><a href="#">Monthly Specials</a></li>
+                            <li class="has-sub resources"><a href="#">Patient Resources</a><span class="open-sub"><i class="fas fa-chevron-down"></i></span>
+                                <ul class="sub-menu">
+                                    <li><a href="">Patient Financing Options</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Employment Opportunities</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/mobile-nav -->
+        <div id="desktop-nav">
+            <div class="grid-container grid-parent">
+                <div class="grid-100">
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li class="has-sub about"><a href="#">About</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub mega"><a href="#">Procedures</a>
+                            <div class="mega-menu">
+                                <ul class="mega-sub face">
+                                    <img class="img-resp" src="./images/face.jpg" alt="Face">
+                                    <li class="title"><a href="#">Face</a></li>
+                                    <li><a href="#">Brow Lift</a></li>
+                                    <li><a href="#">Ear Reduction Surgery</a></li>
+                                    <li><a href="#">Eyelid Surgery</a></li>
+                                    <li><a href="#">Facelift</a></li>
+                                    <li><a href="#">Facial Implants</a></li>
+                                    <li><a href="#">Rhinoplasty</a></li>
+                                </ul>
+                                <ul class="mega-sub breast">
+                                    <img class="img-resp" src="./images/breast.jpg" alt="Breast">
+                                    <li class="title"><a href="#">Breast</a></li>
+                                    <li><a href="#">Breast Augmentation</a></li>
+                                    <li><a href="#">Breast Lift</a></li>
+                                    <li><a href="#">Breast Reduction</a></li>
+                                    <li><a href="#">Breast Implant Removal</a></li>
+                                    <li><a href="#">Breast Reconstruction</a></li>
+                                    <li><a href="#">Breast Revision</a></li>
+                                    <li><a href="#">Male Breast Reduction</a></li>
+                                </ul>
+                                <ul class="mega-sub body">
+                                    <img class="img-resp" src="./images/body.jpg" alt="Body">
+                                    <li class="title"><a href="#">Body</a></li>
+                                    <li><a href="#">Abdominoplasty</a></li>
+                                    <li><a href="#">Arm Lift</a></li>
+                                    <li><a href="#">Brazillian Butt Lift</a></li>
+                                    <li><a href="#">Fat Grafting</a></li>
+                                    <li><a href="#">Liposuction</a></li>
+                                    <li><a href="#">Mommy Makeover</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-sub mega"><a href="#">Med Spa</a>
+                            <div class="mega-menu">
+                                <ul class="mega-sub about">
+                                    <img class="img-resp" src="./images/medspa.jpg" alt="Med Spa">
+                                    <li class="title"><a href="#">About</a></li>
+                                    <li><a href="#">About Spa Aesthetica</a></li>
+                                    <li><a href="#">Spa Aesthetica Staff</a></li>
+                                    <li><a href="#">Specials</a></li>
+                                    <li><a href="#">Spa Aesthetica Testimonials</a></li>
+                                </ul>
+                                <ul class="mega-sub products">
+                                    <img class="img-resp" src="./images/medspa-products.jpg" alt="Med Spa Products">
+                                    <li class="title"><a href="#">Products</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
+                                    <li><a href="#">Skin Care Products</a></li>
+                                    <li><a href="#">Obagi Premier Points</a></li>
+                                </ul>
+                                <ul class="mega-sub treatments">
+                                    <img class="img-resp" src="./images/medspa-treatment.jpg" alt="Med Spa Treatment">
+                                    <li class="title"><a href="#">Treatments</a></li>
+                                    <li><a href="#">Chemical Peels</a></li>
+                                    <li><a href="#">Aesthetic Facials</a></li>
+                                    <li><a href="#">Waxing</a></li>
+                                    <li><a href="#">Skin Analysis</a></li>
+                                </ul>
+                                <ul class="mega-sub procs">
+                                    <img class="img-resp" src="./images/medspa-procedure.jpg" alt="Med Spa Procedure">
+                                    <li class="title"><a href="#">Procedures</a></li>
+                                    <li><a href="#">Photo Facial/IPL</a></li>
+                                    <li><a href="#">Skin Care Products</a></li>
+                                    <li><a href="#">BOTOX Cosmetic and Dysport</a></li>
+                                    <li><a href="#">Injectable Fillers</a></li>
+                                    <li><a href="#">KYBELLA</a></li>
+                                    <li><a href="#">Laser Hair Removal</a></li>
+                                    <li><a href="#">Lip Augmentation</a></li>
+                                    <li><a href="#">Laser Skin Resurfacing / Mixto CO2</a></li>
+                                    <li><a href="#">Non Surgical Rhinoplasty</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Monthly Specials</a></li>
+                        <li class="has-sub resources"><a href="#">Patient Resources</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Patient Financing Options</a></li>
+                                <li><a href="">FAQ's</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Employment Opportunities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- #/desktop-nav -->
+    </header>
+    <!-- /header -->
+
+    <section id="banner-slider">
         <ul class="slides">
-            <li>
-                <div class="slide1">
+            <li class="slide1">
+                <div class="grid-container grid-parent">
+                    <div class="grid-45 tablet-45 mobile-100">
+                        <img class="img-resp hide-on-tablet hide-on-desktop" src="./images/slide1.jpg" alt="">
+                        <h1 class="serif">Rhinoplasty</h1>
+                        <p class="description">It is a very common and safe procedure that modifies the shape or size of your nose. It can be a slight or drastic change, depending on what you are looking for.</p>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="">Learn More</a>
+                            <a class="btn" href="">View Before &amp; Afters</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide2">
+                <div class="grid-container grid-parent">
+                    <div class="grid-45 tablet-45 mobile-100">
+                        <img class="img-resp hide-on-tablet hide-on-desktop" src="./images/slide2.jpg" alt="">
+                        <h1 class="serif">Mommy Makeover</h1>
+                        <p class="description">Reichner performs all cosmetic procedures of the breast, body and face in one of three accredited surgery centers in Newport Beach, Orange or Irvine.</p>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="">Learn More</a>
+                            <a class="btn" href="">View Before &amp; Afters</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide3">
+                <div class="grid-container grid-parent">
+                    <div class="grid-45 tablet-45 mobile-100">
+                        <img class="img-resp hide-on-tablet hide-on-desktop" src="./images/slide3.jpg" alt="">
+                        <h1 class="serif">Breast Augmentation</h1>
+                        <p class="description">Dr Reichner realizes that every woman’s breasts are different and the best augmentation is enhancing one’s own natural breasts.</p>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="">Learn More</a>
+                            <a class="btn" href="">View Before &amp; Afters</a>
+                        </div>
+                    </div>
                 </div>
             </li>
         </ul>
-    </div>
+    </section>
+    <!-- #/banner-slider -->
+
+    <section id="welcome">
+        <div class="grid-container grid-parent">
+            <div class="grid-25 tablet-50 mobile-100">
+                <a href="">
+                    <img class="img-resp" src="./images/dr-image.jpg" alt="">
+                    <div class="text">
+                        <p>Learn More<br>About Dr. Reichner</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-50 tablet-50 mobile-100">
+                <h1 class="serif">Reichner Plastic Surgery</h1>
+                <p>As an experienced provider of plastic surgery in Orange County, Dr. Reichner’s highest priority is complete patient satisfaction. He provides each patient with individualized care and precise surgical technique to help them look and feel their best. Your decision to have cosmetic surgery can be both an exciting and rewarding time in your life. Our team will work to make this process both positive and enjoyable.</p>
+                <p>Dr. Reichner emphasizes a total wellness approach with his patients. He also continues his plastic surgery education with advanced courses and continually incorporates these latest techniques and innovations in cosmetic surgery into his practice. Dr. Reichner’s goal is to provide you with the highest standard in plastic surgery.</p>
+                <div class="awards">
+                    <a href="https://www.abplasticsurgery.org/" target="_blank"><img class="img-resp" src="./images/abps.png" alt="American Board of Plastic Surgery"></a>
+                    <a href="https://www.plasticsurgery.org/" target="_blank"><img class="img-resp" src="./images/asps.png" alt="American Society of Plastic Surgeons"></a>
+                    <a href="https://www.surgery.org/" target="_blank"><img class="img-resp" src="./images/as.png" alt="The Aesthetic Society"></a>
+                    <a href="https://www.facs.org/" target="_blank"><img class="img-resp" src="./images/acs.png" alt="American College of Surgeons"></a>
+                </div>
+            </div>
+            <div class="grid-25 tablet-100 mobile-100">
+                <a href="">
+                    <img class="img-resp" src="./images/spa-blue.jpg" alt="">
+                    <div class="text">
+                        <p>Learn More<br>About Our Medical Spa</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- #/welcome -->
+
+    <section id="about">
+        <div class="grid-container grid-parent">
+            <div class="grid-33 tablet-100 mobile-100">
+                <div class="content tac">
+                    <img class="img-resp" src="./images/photo-gallery.jpg" alt="Gallery">
+                    <div class="text">
+                        <h4 class="serif"><span>Photo</span> Gallery</h4>
+                        <p>His combination of artistic talent, precise attention to detail and surgical expertise, ensure a beautiful and successful outcome, take a look for yourself.</p>
+                        <a class="btn" href="">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-33 tablet-100 mobile-100">
+                <div class="content tac">
+                    <img class="img-resp" src="./images/specials2.jpg" alt="Specials">
+                    <div class="text">
+                        <h4 class="serif"><span>Current</span> Specials</h4>
+                        <p>We want you to be completely satisfied with your cosmetic surgery or spa experience. Check out our current monthly specials for surgical and non-surgical procedures.</p>
+                        <a class="btn" href="">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-33 tablet-100 mobile-100">
+                <div class="content tac">
+                    <img class="img-resp" src="./images/patient-portal3.jpg" alt="Financing">
+                    <div class="text">
+                        <h4 class="serif"><span>Patient</span> Financing</h4>
+                        <p>We offer our patients CareCredit® and Alpheon so you begin your treatments immediately, then pay for it over time with monthly payments that fit into your budget.</p>
+                        <a class="btn" href="">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #/about -->
+
+    <section id="contact">
+        <div class="grid-container grid-parent">
+            <div class="grid-40 tablet-40 mobile-100">
+                <h2 class="serif">Orange County</h2>
+                <p class="address">1310 W. Stewart Drive, Suite 303<br>Orange, CA 92868</p>
+                <p class="phone">Phone: (714) 997-5200</p>
+                <img class="img-resp" src="./images/orange-county.jpg" alt="Orange County">
+                <a class="btn" href="">Get Directions</a>
+            </div>
+            <div class="grid-60 tablet-60 mobile-100">
+                <h2 class="serif">Contact Us</h2>
+                <p>Please fill out form below</p>
+                <form action="/#wpcf7-f265-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
+                    <div class="footer-form">
+                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
+                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone"></span></div>
+                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
+                        <div class="grid-100 agreement grid-parent"><span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="agree" value="1" aria-invalid="false" class="checkbox-inline"></span></span></span> I agree to the&nbsp;<a href="/terms-of-use/"> terms of use</a></div>
+                        <div class="grid-100 grid-parent"><button class="wpcf7-form-control wpcf7-submit btn">Submit</button><span class="ajax-loader"></span></div>
+                    </div>
+                    <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- #/contact -->
+
+    <footer>
+        <div class="grid-container grid-parent">
+            <div class="grid-40 tablet-30 mobile-100">
+                <div class="social">
+                    <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="grid-60 tablet-70 mobile-100">
+                <p>Before and After Photos - individual results may vary – Some images may be models.</p>
+                <p>Copyright© 2020 Daniel Reichner, MD, FACS Newport Beach Plastic Surgeon. All rights reserved.</p>
+                <p>
+                    <a href="">Sitemap</a> | 
+                    <a href="">HIPAA Privacy Policy</a> | 
+                    <a href="">Terms &amp; Conditions</a>
+                </p>
+                <p>Design and SEO by <a href="https://www.nkpmedical.com/" target="_blank">NKP Medical</a></p>
+
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
 
 
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- aos init-->
-    <script type="text/javascript">
-        AOS.init({
-            duration: 1000,
-            disable: 'mobile'
-        })
-        jQuery(function () {
-            AOS.init();
-        });
-        jQuery(window).on('load', function () {
-            AOS.refresh();
-        });
-    </script>
 
 </body>
 </html>
