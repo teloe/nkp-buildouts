@@ -28,7 +28,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: #1174a6;
+    /* color: #1174a6; */
     text-decoration: none;
     outline: none;
     -webkit-transition: all 0.5s ease;
@@ -36,7 +36,7 @@ a:link {
     transition: all 0.5s ease;
 }
 a:hover {
-    color: #09557c;
+    /* color: #09557c; */
     text-decoration: none;
     outline: none;
 }
