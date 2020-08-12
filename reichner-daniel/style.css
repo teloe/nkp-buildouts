@@ -1,5 +1,5 @@
 /*
-Theme Name: {{TAG}}
+Theme Name: Reichner, Daniel (drreichner.com)
 Author: NKP Development Team
 Description: NKP Medical responsive theme
 Template: nkpv2
@@ -12,10 +12,31 @@ Template: nkpv2
 @import url(https://use.typekit.net/cxh0wdl.css);
 /*---- Do Not Remove ----*/
 
-/* GENERAL */
+/*---- GENERAL ----*/
 html{box-sizing:border-box}
 *,::before,::after{box-sizing:inherit}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+body.spa-aesthetica a{color:#9bc6c9}
+body.spa-aesthetica #main h1,
+body.spa-aesthetica #main h2,
+body.spa-aesthetica #main h3,
+body.spa-aesthetica #main h4,
+body.spa-aesthetica #main h5,
+body.spa-aesthetica #main h6 {
+	color: #7caaad;
+}
+body.spa-aesthetica .social a{background-color:#7caaad;color:#fff}
+body.spa-aesthetica #mobile-nav,body.spa-aesthetica #desktop-nav{background-color:#fff}
+body.spa-aesthetica #mobile-nav a,body.spa-aesthetica #desktop-nav a{color:#7caaad}
+body.spa-aesthetica #mobile-nav a:hover,body.spa-aesthetica #desktop-nav a:hover{background:none}
+
+body.spa-aesthetica a.btn,
+body.spa-aesthetica button.btn{
+	background-color: #7caaad !important;
+	color: #fff!important;	
+}
+
 .serif{font-family:trajan-pro-3,serif;font-weight:400;font-style:normal}
 .serif-bold{font-family:trajan-pro-3,serif;font-weight:700;font-style:normal}
 p,li{line-height:1.4}
@@ -59,15 +80,25 @@ header p a{font-size:1.25rem}
 #mobile-nav.open{-moz-transform:translateX(0);-webkit-transform:translateX(0);transform:translateX(0)}
 #mobile-nav .close-nav{font-size:3rem;float:right;margin-right:10px;color:#fff}
 #mobile-nav a{color:#fff;display:block;padding:0 15px}
-#mobile-nav .sub-menu{display:none}
+#mobile-nav li.has-sub > .sub-menu{display:none}
+#mobile-nav li.title > .sub-menu{display:block}
 #mobile-nav li{line-height:35px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
 #mobile-nav li.has-sub{position:relative}
 #mobile-nav li.has-sub .open-sub{position:absolute;right:15px;top:0;bottom:0;margin:auto;color:#fff;cursor:pointer}
+
+body.spa-aesthetica #mobile-controls{background-color:#7caaad}
+body.spa-aesthetica #mobile-nav li.has-sub .open-sub{color:#7caaad}
+body.spa-aesthetica #mobile-nav li:hover{background:none}
+body.spa-aesthetica #mobile-nav li.has-sub.open > a{background-color:#7caaad;color:#fff}
+body.spa-aesthetica #mobile-nav li.has-sub.open .open-sub{color:#fff}
+body.spa-aesthetica #mobile-nav{box-shadow: rgba(0, 0, 0, .1) 0px 6px 10px}
+
 #mobile-nav li:hover{background-color:#63d9ff}
+#mobile-nav li.title:hover{background:none}
 #mobile-nav li.has-sub.open:hover{background-color:transparent}
 #mobile-nav li.has-sub.open > a{background-color:#63d9ff}
 #mobile-nav li.has-sub ul.sub-menu li a{font-size:14px;margin-left:20px}
-#mobile-nav .sub-menu .title > a{text-transform:uppercase;font-weight:700;font-size:1rem!important;margin-top:1.5rem}
+#mobile-nav .sub-menu .title > a{text-transform:uppercase;font-weight:700;margin-top:1.5rem}
 #mobile-nav .sub-menu img{margin-top:1rem}
 #mobile-nav .overlay{overflow-y:auto;height:100%}
 
@@ -81,6 +112,301 @@ header p a{font-size:1.25rem}
 #banner-slider .flex-prev::before{content:'\f053'}
 #banner-slider .flex-next::before{content:'\f054'}
 #banner-slider .flex-prev::before,#banner-slider .flex-next::before{font-family:'Font Awesome 5 Free';font-weight:900;color:#fff;font-size:1.25rem;text-shadow:0 1px 2px rgba(0,0,0,0.6)}
+
+
+/* procedure pages */
+#banner-procedure {
+	background: linear-gradient(135deg, rgba(210, 210, 210, .4) 0%,rgba(163, 163, 163, .4) 65%, rgba(83, 83, 83, .4) 65%, rgba(210, 210, 210, .4) 100%);
+    position: relative;
+    overflow: hidden;
+}
+#banner-procedure .grid-60 {
+	padding: 8vw 15px 15vw;
+}
+#banner-procedure h1 {
+	font-family:trajan-pro-3,serif;
+	font-weight:400;
+	font-style:normal;
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+#banner-procedure h1::after {
+	content: '';
+	height: 1px;
+	width: 60px;
+	display: block;
+	background-color: #00a4d9;
+	margin-bottom: 30px;
+}
+#banner-procedure .description {
+	line-height: 2rem;
+}
+#banner-procedure img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+body.procedure-page .btn {
+	font-family: trajan-pro-3,serif;
+	font-size: 15px;
+	padding: 10px 15px;
+	color: #7d7d7d;
+	background: #f3f3f3;
+	border: 2px solid #cccccc;
+	margin-top: 1.5rem;
+}
+body.procedure-page .btn:hover {
+	background: #7d7d7d;
+	color: #f3f3f3;
+	border: 2px solid #cccccc;
+}
+body.procedure-page .slider {
+    background:linear-gradient(20deg, rgba(42,178,222,1) 0%,rgba(27,162,205,1) 55%,rgba(42,178,222,1) 55%,rgba(42,178,222,1) 100%);
+    padding: 4rem 0;
+}
+body.procedure-page .slider .grid-container {
+	position: relative;
+}
+body.procedure-page .slider h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+body.procedure-page .slider .content {
+    background-color: #fff;
+    box-shadow:0 0 15px rgba(0, 0, 0, .4);
+    position: relative;
+    padding: 45px 30px;
+}
+body.procedure-page .slider .content::before {
+    content: '';
+    border: solid 1px #00a4d8;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    position: absolute;
+}
+body.procedure-page .slider .grid-50:first-of-type {
+    margin-bottom: 2rem;
+}
+body.procedure-page .slider .content h2 {
+    font-size: 1.5rem;
+}
+body.procedure-page .underline::after {
+	content: '';
+	height: 1px;
+	width: 60px;
+	display: block;
+	background-color: #00a4d9;
+	margin: 1rem 0 2rem;
+}
+body.procedure-page .underline-center::after {
+	content: '';
+	height: 1px;
+	width: 60px;
+	display: block;
+	background-color: #00a4d9;
+	margin: 1.5rem auto 2rem;
+}
+body.procedure-page .slider p,
+body.procedure-page .slider li {
+    line-height: 2rem;
+}
+body.procedure-page .slider .flex-prev,
+body.procedure-page .slider .flex-next {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+body.procedure-page .slider .flex-prev {
+	left: 0;
+}
+body.procedure-page .slider .flex-next {
+	right: 0;
+}
+body.procedure-page .slider .flex-prev::before {
+	content: '\f053'
+}
+
+body.procedure-page .slider .flex-next::before {
+	content: '\f054'
+}
+body.procedure-page .slider .flex-prev::before,
+body.procedure-page .slider .flex-next::before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	color: #fff;
+	font-size: 3rem;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+body.procedure-page .proc-info {
+    background-color: #f1f1f1;
+}
+body.procedure-page .proc-info .bg-img.facelift {
+    background: url(images/facelift-model-options.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+}
+body.procedure-page .proc-info .grid-container {
+    max-width: 100%;
+}
+body.procedure-page .proc-info .grid-50 .content {
+    padding: 4rem 15px;
+
+}
+body.procedure-page .proc-info .grid-50 .content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+body.procedure-page .proc-info .grid-50 .content p {
+    line-height: 1.75rem;
+}
+body.procedure-page .accordion .title h4 {
+    font-size: 1.25rem;
+    padding-bottom:1rem;
+    font-weight:400;
+    padding-left: 20px;
+}
+body.procedure-page .accordion .panel {
+    margin: 1rem 0;
+}
+body.procedure-page .accordion .title {
+    position: relative;
+    cursor: pointer;
+}
+body.procedure-page .accordion .title.active {
+    color: #00a4d8;
+}
+body.procedure-page .accordion .title::before {
+    content: '\002B';
+    position: absolute;
+    left: 0;
+    font-size: 1.25rem;
+}
+body.procedure-page .accordion .title.active::before {
+    content: '\2212';
+}
+body.procedure-page .bxa {
+    background:linear-gradient(20deg, rgba(42,178,222,1) 0%,rgba(27,162,205,1) 55%,rgba(42,178,222,1) 55%,rgba(42,178,222,1) 100%);
+    padding: 4rem 0;
+}
+body.procedure-page .bxa h1 {
+    color: #fff;
+    font-size: 2.25rem;
+}
+body.procedure-page .bxa h1::after {
+    background-color: #fff;
+}
+body.procedure-page .bxa .img-wrapper {
+    border: solid 4px #fff;
+}
+body.procedure-page .bxa .img-wrapper img {
+    width: 100%;
+}
+body.procedure-page .bxa .grid-50 {
+    margin-bottom: 2rem;
+}
+body.procedure-page .bxa .btn {
+    display: block;
+    max-width: 265px;
+    margin: 0 auto;
+}
+body.procedure-page .concerns {
+    background:linear-gradient(to bottom, #ffffff 0%,#d0f4ff 100%);
+    padding: 4rem 0;
+}
+body.procedure-page .concerns h1 {
+    font-size: 2.25rem;
+}
+body.procedure-page .concerns .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem 0;
+    margin: 0 auto 4rem;
+    max-width: 400px;
+}
+body.procedure-page .concerns .controls li {
+    margin: 0 2rem;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.25rem;
+}
+body.procedure-page .concerns .controls li::after {
+    content: '';
+    border-radius: 50%;
+    width: 15px;
+    height:15px;
+    background-color: #00a4d8;
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+body.procedure-page .concerns .controls li.flex-active::after {
+    background-color: #6b6b6b;
+}
+body.procedure-page .concerns .controls::before {
+    content: '';
+    background-color: #00a4d8;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+body.procedure-page .concerns p {
+    line-height: 2;
+}
+body.procedure-page .faq {
+    background-color:rgba(255, 255, 255, .8);
+}
+body.procedure-page .faq .grid-container {
+    max-width: 100%;
+}
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+/* body.procedure-page */
+
+#main #content{padding:3rem 0}
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+	color: #00a4d8;
+	font-family: trajan-pro-3, serif;
+	font-weight: 400;
+	font-style: normal;
+	margin-bottom: 1rem
+}
+#main h1{font-size:2.25rem}
+#main h2{font-size:1.5rem}
+#main h3{font-size:1.25rem}
+#sidebar{margin-bottom:2rem}
+#sidebar .sb-form{background:linear-gradient(to bottom,#ede9e6 0%,#fff 50%,#ede9e6 100%);padding:10px 15px 20px}
 
 #welcome{padding:2rem 0;background:linear-gradient(to bottom,#d0f4ff 0%,#fff 100%)}
 #welcome .grid-25,#welcome .grid-50{margin-bottom:2rem}
@@ -110,6 +436,27 @@ header p a{font-size:1.25rem}
 #contact .btn{display:block;width:130px;margin-top:1rem}
 #contact .grid-40{margin-bottom:2rem}
 #contact .grid-60 p{margin-bottom:1.5rem}
+
+body.spa-aesthetica #specials {
+	background-color: #bed6d8;
+	padding: 2rem 0 1rem;
+
+}
+body.spa-aesthetica #specials .grid-33 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+body.spa-aesthetica #specials img {
+	border: solid 2px #fff;
+}
+body.spa-aesthetica #specials .btn {
+	display: block;
+	max-width: 155px;
+	margin: 1rem auto 0;
+}
+body.spa-aesthetica footer {
+	background-color: #bed6d8;
+}
 
 footer{background-color:#ede9e6;border-top:2px solid #229f77;padding:2rem 0}
 footer p{font-size:14px;text-align:center;padding-bottom:.5rem}
@@ -161,7 +508,13 @@ input,select,textarea{font-size:14px;font-family:inherit;width:100%;margin:0 0 1
     #banner-slider .flex-prev::before,#banner-slider .flex-next::before{font-size:2.5rem}
     footer .grid-container{display:flex;align-items:center}
     footer .social{margin-bottom:0}
-    footer .grid-60 p{text-align:right}
+	footer .grid-60 p{text-align:right}
+	body.spa-aesthetica #specials .grid-33 {
+		text-align: left;
+	}
+	body.spa-aesthetica #specials .btn {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 1025px) {
@@ -176,31 +529,66 @@ input,select,textarea{font-size:14px;font-family:inherit;width:100%;margin:0 0 1
     #desktop-nav.stuck{position:fixed;top:0;animation:smoothScroll .5s ease}
     #mobile-controls,#mobile-nav{display:none}
     #desktop-nav a{color:#fff}
-    #desktop-nav a:hover{background-color:#63d9ff}
-    #desktop-nav .menu{display:flex;align-items:center;justify-content:center}
-    #desktop-nav .menu > li{display:inline-block;flex:auto}
-    #desktop-nav .menu > li > a{display:inline-block;text-align:center;padding:15px 20px;width:100%;position:relative}
-    #desktop-nav .menu > li.has-sub > a{text-align:left}
-    #desktop-nav .menu > li.has-sub > a::after{content:'\f078';font-family:'Font Awesome 5 Free';font-weight:900;font-size:12px;position:absolute;right:12px;top:2px;bottom:0;margin:auto;color:#fff;display:flex;align-items:center}
-    #desktop-nav .has-sub{position:relative}
-    #desktop-nav .mega-menu,#desktop-nav .sub-menu{opacity:0;visibility:hidden;position:absolute;left:0;right:0;margin:auto;background-color:#00a4d8;-moz-transform:translateY(20px);-webkit-transform:translateY(20px);transform:translateY(20px);-moz-transition:all .3s ease;-webkit-transition:all .3s ease;transition:all .3s ease}
-    #desktop-nav .has-sub:hover .mega-menu,#desktop-nav .has-sub:hover .sub-menu{opacity:1;visibility:visible;-moz-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0)}
-    #desktop-nav .sub-menu li a{padding:10px;display:block}
-    #desktop-nav li.mega{position:inherit}
-    #desktop-nav .about .sub-menu,#desktop-nav .resources .sub-menu{width:300px}
-    #desktop-nav .mega .mega-menu{width:100%;max-width:1170px;margin:0 auto;display:flex;justify-content:space-between}
-    #desktop-nav .mega-menu .mega-sub{padding:15px}
-    #desktop-nav .mega-menu img{margin-bottom:1rem;width:300px}
-    #desktop-nav .mega-menu a{font-size:14px;padding:5px 15px;display:block}
-    #desktop-nav .mega-menu .title > a{font-size:16px;display:block;text-transform:uppercase;font-weight:700}
-    #banner-slider{margin-top:52px}
+	#desktop-nav a:hover{background-color:#63d9ff}
+	#desktop-nav .menu{display:flex;align-items:center;justify-content:center}
+	#desktop-nav .menu>li{display:inline-block;flex:auto}
+	#desktop-nav .menu>li>a{display:inline-block;text-align:center;padding:15px 20px;width:100%;position:relative}
+	#desktop-nav .menu>li.has-sub>a{text-align:left}
+	#desktop-nav .menu>li.has-sub>a::after{content:'\f078';font-family:'Font Awesome 5 Free';font-weight:900;font-size:12px;position:absolute;right:12px;top:2px;bottom:0;margin:auto;color:#fff;display:flex;align-items:center}
+	#desktop-nav .has-sub{position:relative}
+	#desktop-nav .mega-menu,#desktop-nav .sub-menu{opacity:0;visibility:hidden;position:absolute;left:0;right:0;margin:auto;background-color:#00a4d8;-moz-transform:translateY(20px);-webkit-transform:translateY(20px);transform:translateY(20px);-moz-transition:all .3s ease;-webkit-transition:all .3s ease;transition:all .3s ease}
+	#desktop-nav .has-sub:hover .mega-menu,#desktop-nav .has-sub:hover .sub-menu{opacity:1;visibility:visible;-moz-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0)}
+	#desktop-nav .sub-menu li a{padding:10px;display:block}
+	#desktop-nav li.mega{position:inherit}
+	#desktop-nav .about .sub-menu,#desktop-nav .resources .sub-menu{width:300px}
+	#desktop-nav .mega .mega-menu{width:100%;max-width:1170px;margin:0 auto;display:flex;justify-content:space-between}
+	#desktop-nav .mega .mega-menu .sub-menu{opacity:1;visibility:visible;position:inherit;-moz-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0)}
+	#desktop-nav .mega-menu .mega-sub{padding:15px}
+	#desktop-nav .mega-menu img{margin-bottom:1rem;width:300px}
+	#desktop-nav .mega-menu a{font-size:14px;padding:5px 15px!important;display:block}
+	#desktop-nav .mega-menu .title>a{font-size:16px;display:block;text-transform:uppercase;font-weight:700}
+    #banner-slider,#main,#banner-procedure{margin-top:52px}
     #banner-slider .slides > li .grid-container{height:500px}
     #banner-slider .flex-prev,#banner-slider .flex-next{width:10%}
     #banner-slider .grid-45{text-align:left;margin:8rem 0 0 5rem}
     #welcome .grid-25,#welcome .grid-50{margin-bottom:0}
-    #about .grid-33{margin-bottom:0}
+	#about .grid-33{margin-bottom:0}
+	body.spa-aesthetica #desktop-nav .mega-menu,
+	body.spa-aesthetica #desktop-nav .sub-menu {
+		background-color: #fff;
+		box-shadow: rgba(0, 0, 0, .1) 0px 6px 10px;
+	}
+    body.procedure-page .slider .content,
+    body.procedure-page .slider img {
+        height: 450px;
+    }
+    body.procedure-page .slider .grid-50:first-of-type {
+        margin-bottom: 0;
+    }
+    body.procedure-page .proc-info .bg-img.facelift {
+        height: 700px;
+    }
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
+    /* body.procedure-page */
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     #welcome .grid-25:last-of-type a{max-width:365px}
 }
+

@@ -14,12 +14,11 @@
     <title>Reichner, Daniel</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-
-    <!-- <?php if ( is_page(array(PAGE_ID, PAGE_ID)) ) : ?>spa-aesthetica<?php endif; ?> -->
+<body class="procedure-page">
 
     <div id="mobile-controls">
         <div class="grid-container grid-parent">
@@ -286,147 +285,166 @@
     </header>
     <!-- /header -->
 
-    <section id="banner-slider">
-        <ul class="slides">
-            <li class="slide1">
-                <div class="grid-container grid-parent">
-                    <div class="grid-45 tablet-45 mobile-100">
-                        <img class="img-resp hide-on-tablet hide-on-desktop" src="./images/slide1.jpg" alt="">
-                        <h1 class="serif">Rhinoplasty</h1>
-                        <p class="description">It is a very common and safe procedure that modifies the shape or size of your nose. It can be a slight or drastic change, depending on what you are looking for.</p>
-                        <div class="btn-wrapper">
-                            <a class="btn" href="">Learn More</a>
-                            <a class="btn" href="">View Before &amp; Afters</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="slide2">
-                <div class="grid-container grid-parent">
-                    <div class="grid-45 tablet-45 mobile-100">
-                        <img class="img-resp hide-on-tablet hide-on-desktop" src="./images/slide2.jpg" alt="">
-                        <h1 class="serif">Mommy Makeover</h1>
-                        <p class="description">Reichner performs all cosmetic procedures of the breast, body and face in one of three accredited surgery centers in Newport Beach, Orange or Irvine.</p>
-                        <div class="btn-wrapper">
-                            <a class="btn" href="">Learn More</a>
-                            <a class="btn" href="">View Before &amp; Afters</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="slide3">
-                <div class="grid-container grid-parent">
-                    <div class="grid-45 tablet-45 mobile-100">
-                        <img class="img-resp hide-on-tablet hide-on-desktop" src="./images/slide3.jpg" alt="">
-                        <h1 class="serif">Breast Augmentation</h1>
-                        <p class="description">Dr Reichner realizes that every woman’s breasts are different and the best augmentation is enhancing one’s own natural breasts.</p>
-                        <div class="btn-wrapper">
-                            <a class="btn" href="">Learn More</a>
-                            <a class="btn" href="">View Before &amp; Afters</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <!-- #/banner-slider -->
+    <section id="banner-procedure">
+		<div class="grid-container grid-parent">
+			<div class="grid-60 tablet-60 mobile-100">
+				<h1 class="serif underline">Facelift</h1>
+                <img class="img-resp" src="<?php echo get_stylesheet_directory_uri(); ?>/images/facelift-hero.png" alt="">
+				<p class="description">Many factors contribute to the rate at which your face ages. Sun damage, genetics, gravity, environmental factors, and lifestyle choices all leave their mark in the way of fine lines, wrinkles, deep creases, and sagging skin and tissues. Facelift surgery restores youthful contours and definition to your mid and lower face by removing excess skin and repositioning underlying tissues and fat on the face and neck.</p>
+			</div>
+		</div>
+	</section>
 
-    <section id="welcome">
-        <div class="grid-container grid-parent">
-            <div class="grid-25 tablet-50 mobile-100">
-                <a href="">
-                    <img class="img-resp" src="./images/dr-image.jpg" alt="">
-                    <div class="text">
-                        <p>Learn More<br>About Dr. Reichner</p>
+<section class="slider">
+    <div class="grid-container grid-parent">
+        <h1 class="serif tac"> What a Facelift can achieve</h1>
+        <div class="procedure-slider">
+            <ul class="slides">
+                <li>
+                    <div class="grid-90 prefix-5 tablet-90 tablet-prefix-5 mobile-100 grid-parent">
+                        <div class="grid-50 tablet-100 mobile-100">
+                            <img class="img-resp" src="./images/facelift-model-1.jpg" alt="">
+                        </div>
+                        <div class="grid-50 tablet-100 mobile-100">
+                            <div class="content">
+                                <h2 class="serif tac underline-center">Reduced Facial Wrinkles</h2>
+                                <p>Gravity, sun damage, and lifestyle choices contribute to the development of wrinkles and lines anywhere on the face, which can make you appear tired and older than you are. Facelift surgery eliminates fine lines and wrinkles, such as marionette lines and nasolabial folds, to provide a smoother, natural-looking complexion.</p>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="grid-50 tablet-50 mobile-100">
-                <h1 class="serif">Reichner Plastic Surgery</h1>
-                <p>As an experienced provider of plastic surgery in Orange County, Dr. Reichner’s highest priority is complete patient satisfaction. He provides each patient with individualized care and precise surgical technique to help them look and feel their best. Your decision to have cosmetic surgery can be both an exciting and rewarding time in your life. Our team will work to make this process both positive and enjoyable.</p>
-                <p>Dr. Reichner emphasizes a total wellness approach with his patients. He also continues his plastic surgery education with advanced courses and continually incorporates these latest techniques and innovations in cosmetic surgery into his practice. Dr. Reichner’s goal is to provide you with the highest standard in plastic surgery.</p>
-                <div class="awards">
-                    <a href="https://www.abplasticsurgery.org/" target="_blank"><img class="img-resp" src="./images/abps.png" alt="American Board of Plastic Surgery"></a>
-                    <a href="https://www.plasticsurgery.org/" target="_blank"><img class="img-resp" src="./images/asps.png" alt="American Society of Plastic Surgeons"></a>
-                    <a href="https://www.surgery.org/" target="_blank"><img class="img-resp" src="./images/as.png" alt="The Aesthetic Society"></a>
-                    <a href="https://www.facs.org/" target="_blank"><img class="img-resp" src="./images/acs.png" alt="American College of Surgeons"></a>
-                </div>
-            </div>
-            <div class="grid-25 tablet-100 mobile-100">
-                <a href="">
-                    <img class="img-resp" src="./images/spa-blue.jpg" alt="">
-                    <div class="text">
-                        <p>Learn More<br>About Our Medical Spa</p>
+                </li>
+                <li>
+                    <div class="grid-90 prefix-5 tablet-90 tablet-prefix-5 mobile-100 grid-parent">
+                        <div class="grid-50 tablet-100 mobile-100">
+                            <img class="img-resp" src="./images/facelift-model-1.jpg" alt="">
+                        </div>
+                        <div class="grid-50 tablet-100 mobile-100">
+                            <div class="content">
+                                <h2 class="serif tac underline-center">Reduced Facial Wrinkles</h2>
+                                <p>Gravity, sun damage, and lifestyle choices contribute to the development of wrinkles and lines anywhere on the face, which can make you appear tired and older than you are. Facelift surgery eliminates fine lines and wrinkles, such as marionette lines and nasolabial folds, to provide a smoother, natural-looking complexion.</p>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </div>
+                </li>
+                <li>
+                    <div class="grid-90 prefix-5 tablet-90 tablet-prefix-5 mobile-100 grid-parent">
+                        <div class="grid-50 tablet-100 mobile-100">
+                            <img class="img-resp" src="./images/facelift-model-1.jpg" alt="">
+                        </div>
+                        <div class="grid-50 tablet-100 mobile-100">
+                            <div class="content">
+                                <h2 class="serif tac underline-center">Reduced Facial Wrinkles</h2>
+                                <p>Gravity, sun damage, and lifestyle choices contribute to the development of wrinkles and lines anywhere on the face, which can make you appear tired and older than you are. Facelift surgery eliminates fine lines and wrinkles, such as marionette lines and nasolabial folds, to provide a smoother, natural-looking complexion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </section>
-    <!-- #/welcome -->
+        <div class="clr"></div>
+    </div>
+</section>
 
-    <section id="about">
-        <div class="grid-container grid-parent">
-            <div class="grid-33 tablet-100 mobile-100">
-                <div class="content tac">
-                    <img class="img-resp" src="./images/photo-gallery.jpg" alt="Gallery">
-                    <div class="text">
-                        <h4 class="serif"><span>Photo</span> Gallery</h4>
-                        <p>His combination of artistic talent, precise attention to detail and surgical expertise, ensure a beautiful and successful outcome, take a look for yourself.</p>
-                        <a class="btn" href="">View Gallery</a>
+<section class="proc-info">
+    <div class="grid-container grid-parent">
+        <div class="grid-50 tablet-100 mobile-100 grid-parent">
+            <div class="bg-img facelift"></div>
+        </div>
+        <div class="grid-50 tablet-100 mobile-100">
+            <div class="content">
+                <h1 class="serif underline">Facelift Procedure</h1>
+                <p>As each person’s facial features, level of visible aging, and expectations vary, there is no single facelift technique used by Dr. Reichner for everyone. He will examine your facial structure and degree of skin laxity and listen to your concerns to determine which techniques will best fit your needs and expectations.</p>
+                <div class="accordion">
+                    <div class="panel">
+                        <div class="title">
+                            <h4>Removes Excess Skin</h4>
+                        </div>
+                        <div class="info">
+                            <p>During facelift surgery, an incision is made along the hairline, starting at the temples and running down and around the earlobe. Through this incision, skin is tightened, and any excess is trimmed away.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="grid-33 tablet-100 mobile-100">
-                <div class="content tac">
-                    <img class="img-resp" src="./images/specials2.jpg" alt="Specials">
-                    <div class="text">
-                        <h4 class="serif"><span>Current</span> Specials</h4>
-                        <p>We want you to be completely satisfied with your cosmetic surgery or spa experience. Check out our current monthly specials for surgical and non-surgical procedures.</p>
-                        <a class="btn" href="">View Gallery</a>
+                    <div class="panel">
+                        <div class="title">
+                            <h4>Repositions Underlying Facial Muscles </h4>
+                        </div>
+                        <div class="info">
+                            <p>Through the incision made in the hairline, sagging muscles are tightened and repositioned, contributing to greater definition of the midface and jawline. Because of the lifting of the underlying muscles, more natural-looking results can be attained.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="grid-33 tablet-100 mobile-100">
-                <div class="content tac">
-                    <img class="img-resp" src="./images/patient-portal3.jpg" alt="Financing">
-                    <div class="text">
-                        <h4 class="serif"><span>Patient</span> Financing</h4>
-                        <p>We offer our patients CareCredit® and Alpheon so you begin your treatments immediately, then pay for it over time with monthly payments that fit into your budget.</p>
-                        <a class="btn" href="">View Gallery</a>
+                    <div class="panel">
+                        <div class="title">
+                            <h4>Enhances Cheeks</h4>
+                        </div>
+                        <div class="info">
+                            <p>As skin and tissue begin to break down with age, gravity, and sun damage, fullness in the cheeks begins to disappear or slide toward the jawline. To enhance the cheeks, facial fat is redistributed to create volume. In patients who have lost a significant amount of volume, fat grafting can be used. During fat grafting, fat is harvested from another part of your body via liposuction and added to the areas of the face in need of enhancement, such as the cheeks or around the mouth.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="title">
+                            <h4>Tightens Neck</h4>
+                        </div>
+                        <div class="info">
+                            <p>Along with facial aging, many patients experience skin laxity and vertical banding on the neck that contributes to a prematurely aged appearance. Often, a neck lift with or without liposuction is performed to create a more defined and youthful contour that restores balance between the face and neck. Neck lift surgery uses a small incision beneath the chin through which loose skin is trimmed and tightened. If excess fat is present on the neck, liposuction is employed.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- #/about -->
+    </div>
+</section>
 
-    <section id="contact">
-        <div class="grid-container grid-parent">
-            <div class="grid-40 tablet-40 mobile-100">
-                <h2 class="serif">Orange County</h2>
-                <p class="address">1310 W. Stewart Drive, Suite 303<br>Orange, CA 92868</p>
-                <p class="phone">Phone: (714) 997-5200</p>
-                <img class="img-resp" src="./images/orange-county.jpg" alt="Orange County">
-                <a class="btn" href="">Get Directions</a>
-            </div>
-            <div class="grid-60 tablet-60 mobile-100">
-                <h2 class="serif">Contact Us</h2>
-                <p>Please fill out form below</p>
-                <form action="/#wpcf7-f265-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
-                    <div class="footer-form">
-                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
-                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
-                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone"></span></div>
-                        <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
-                        <div class="grid-100 agreement grid-parent"><span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="agree" value="1" aria-invalid="false" class="checkbox-inline"></span></span></span> I agree to the&nbsp;<a href="/terms-of-use/"> terms of use</a></div>
-                        <div class="grid-100 grid-parent"><button class="wpcf7-form-control wpcf7-submit btn">Submit</button><span class="ajax-loader"></span></div>
-                    </div>
-                    <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
-                </form>
+<section class="bxa">
+    <div class="grid-container grid-parent">
+        <h1 class="serif tac underline-center">Before &amp; After</h1>
+        <div class="grid-50 tablet-50 mobile-100">
+            <div class="img-wrapper">
+                <img class="img-resp" src="./images/facelift-before.jpg" alt="">
+                <img class="img-resp" src="./images/facelift-after.jpg" alt="">
             </div>
         </div>
-    </section>
-    <!-- #/contact -->
+        <div class="grid-50 tablet-50 mobile-100">
+            <div class="img-wrapper">
+                <img class="img-resp" src="./images/facelift-before-2.jpg" alt="">
+                <img class="img-resp" src="./images/facelift-after-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="clr"></div>
+        <a class="btn" href="">View Before &amp; After Images</a>
+    </div>
+</section>
+
+<section class="concerns">
+    <div class="grid-container grid-parent">
+        <h1 class="serif tac underline-center">Concerns</h1>
+        <div class="grid-60 prefix-20 tablet-60 tablet-prefix-20 mobile-100">
+            <ul class="controls">
+                <li>Recovery</li>
+                <li>Scars</li>
+                <li>Pain</li>
+            </ul>
+            <div class="concerns-slider">
+                <ul class="slides">
+                    <li>
+                        <p>Although facelift surgery is an outpatient procedure, it is performed under general anesthesia, and you are required to have a driver present to get you home and stay with you for the first 24 hours. To help reduce bruising and swelling and to promote healing, you should keep your head elevated, even when you are sleeping. Patients typically return to work in one to two weeks, but exercise and strenuous activities should be avoided for at least three weeks.</p>
+                    </li>
+                    <li>
+                        <p>Scarring will form at the incision sites. Fortunately, with facelift surgery, most of the incision is hidden within the hairline so that it will be inconspicuous. Dr. Reichner does his best to make these incisions as small and hidden as possible. To help minimize your chance of scarring, be sure to keep your incisions out of the sun and avoid putting any extra tension or pressure on them. All scarring will fade with time.</p>
+                    </li>
+                    <li>
+                        <p>Following your facelift, you may experience bruising, swelling, tightness, and numbness. Bandages will cover any incisions for protection and to help in the healing process. Cold compresses and oral pain medication will help minimize discomfort.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="grid-container grid-parent">
+    </div>
+</section>
+
 
     <footer>
         <div class="grid-container grid-parent">
@@ -455,58 +473,9 @@
     <!-- /footer -->
 
 
-<section class="slider">
-    <div class="grid-container grid-parent">
-        <h1 class="serif tac"> What a Facelift can achieve</h1>
-        <div class="procedure-slider">
-            <ul class="slides">
-                <li>
-                    <div class="grid-90 prefix-5 tablet-90 tablet-prefix-5 mobile-100 grid-parent">
-                        <div class="grid-50 tablet-50 mobile-100">
-                            <img class="img-resp" src="/wp-content/uploads/2020/08/facelift-model-1.jpg" alt="">
-                        </div>
-                        <div class="grid-50 tablet-50 mobile-100">
-                            <div class="content">
-                                <h2 class="serif tac">Reduced Facial Wrinkles</h2>
-                                <p>Gravity, sun damage, and lifestyle choices contribute to the development of wrinkles and lines anywhere on the face, which can make you appear tired and older than you are. Facelift surgery eliminates fine lines and wrinkles, such as marionette lines and nasolabial folds, to provide a smoother, natural-looking complexion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="grid-90 prefix-5 tablet-90 tablet-prefix-5 mobile-100 grid-parent">
-                        <div class="grid-50 tablet-50 mobile-100">
-                            <img class="img-resp" src="/wp-content/uploads/2020/08/facelift-model-1.jpg" alt="">
-                        </div>
-                        <div class="grid-50 tablet-50 mobile-100">
-                            <div class="content">
-                                <h2 class="serif tac">Reduced Facial Wrinkles</h2>
-                                <p>Gravity, sun damage, and lifestyle choices contribute to the development of wrinkles and lines anywhere on the face, which can make you appear tired and older than you are. Facelift surgery eliminates fine lines and wrinkles, such as marionette lines and nasolabial folds, to provide a smoother, natural-looking complexion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="grid-90 prefix-5 tablet-90 tablet-prefix-5 mobile-100 grid-parent">
-                        <div class="grid-50 tablet-50 mobile-100">
-                            <img class="img-resp" src="/wp-content/uploads/2020/08/facelift-model-1.jpg" alt="">
-                        </div>
-                        <div class="grid-50 tablet-50 mobile-100">
-                            <div class="content">
-                                <h2 class="serif tac">Reduced Facial Wrinkles</h2>
-                                <p>Gravity, sun damage, and lifestyle choices contribute to the development of wrinkles and lines anywhere on the face, which can make you appear tired and older than you are. Facelift surgery eliminates fine lines and wrinkles, such as marionette lines and nasolabial folds, to provide a smoother, natural-looking complexion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="clr"></div>
-    </div>
-</section>
-
-
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
 

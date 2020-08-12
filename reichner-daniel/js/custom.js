@@ -35,4 +35,40 @@ jQuery(document).ready(function ($) {
         prevText: '',
         nextText: '',
     });
+
+    $('.procedure-slider').flexslider({
+        animation: 'slide',
+        directionNav: true,
+        controlNav: false,
+        prevText: '',
+        nextText: '',
+    });
+
+    $('.concerns-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        manualControls: '.controls li',
+    });
+
+    $('body.procedure-page .accordion .info').hide();
+    $('body.procedure-page .accordion .title').on('click', function () {
+        $(this)
+            .parent()
+            .find('.title')
+            .toggleClass('active')
+            .siblings('.info')
+            .slideToggle(200);
+        $(this)
+            .parent()
+            .siblings('.panel')
+            .find('.title')
+            .removeClass('active')
+            .siblings('.info')
+            .slideUp(200);
+    });
+
+    $(window).on('load', function () {
+        $('.img-wrapper').twentytwenty();
+    });
 });
