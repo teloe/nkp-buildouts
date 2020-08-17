@@ -28,17 +28,13 @@ jQuery(document).ready(function ($) {
         $(this).siblings('.sub').slideToggle(300).parent().toggleClass('open');
     });
 
-    /* $('.stellarnav').stellarNav({
-        showArrows: false,
-        breakpoint: 1024,
-        menuLabel: 'Menu',
-        phoneBtn: '',
-        locationBtn: '',
+    $('#services .service-col').on('click', function () {
+        $(this).find('.service-list').toggleClass('active');
+        $(this)
+            .parent('.grid-33')
+            .siblings()
+            .find('.service-col')
+            .find('.service-list')
+            .removeClass('active');
     });
-
-    $('#slider').flexslider({
-        animation: 'fade',
-        directionNav: false,
-        controlNav: false,
-    }); */
 });

@@ -22,18 +22,30 @@
     <div id="fixed-wrapper">
         <div id="open-nav">
             <div>MENU</div>
-            <span></span>
+            <svg class="icon icon-menu">
+                <use xlink:href="#icon-menu">
+                <symbol id="icon-menu" viewBox="0 0 32 32">
+                    <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                </symbol>
+                </use>
+            </svg>
         </div>
     </div>
 
     <nav id="main-nav">
-        <!-- <div class="stellarnav"> -->
         <div class="nav-overlay">
             <div class="grid-container">
                 <div class="grid-100">
                     <div id="close-nav">
                         <div>CLOSE</div>
-                        <span></span>
+                        <svg class="icon icon-cross">
+                            <use xlink:href="#icon-cross">
+                                <symbol id="icon-cross" viewBox="0 0 32 32">
+                                    <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+                                </symbol>
+                            </use>
+                        </svg>
+                        <!-- <span></span> -->
                     </div>
                     <div class="logo">
                         <a href="/" title="">
@@ -151,10 +163,12 @@
     <!-- #/banner -->
 
     <section id="services">
+        <div class="mobile-bg"></div>
+        <div class="bg-image"></div>
         <div class="grid-container grid-parent">
             <div class="grid-33 tablet-33 mobile-100">
                 <div class="service-col">
-                    <h2>Cosmetic Surgery</h2>
+                    <h2>Cosmetic<br>Surgery</h2>
                     <ul class="service-list">
                         <li><a href="#">Breast Surgery</a></li>
                         <li><a href="#">Body Contouring &amp; Liposuction</a></li>
@@ -169,7 +183,7 @@
             </div>
             <div class="grid-33 tablet-33 mobile-100">
                 <div class="service-col">
-                    <h2>Reconstructive Surgery</h2>
+                    <h2>Reconstructive<br>Surgery</h2>
                     <ul class="service-list">
                         <li><a href="#">Breast Cancer</a></li>
                         <li><a href="#">Skin Cancer</a></li>
@@ -207,7 +221,7 @@
 
     <section id="about">
         <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100 grid-parent">
+            <div class="grid-50 tablet-50 mobile-100 grid-parent hide-on-desktop">
                 <img class="img-resp" src="./images/dr.jpg" alt="Dr. Christopher Parks">
             </div>
             <div class="grid-50 tablet-50 mobile-100">
@@ -244,12 +258,13 @@
             <div class="grid-50 tablet-50 mobile-100">
                 <h1>Real Patient Testimonials</h1>
                 <p>“I love Dr. Park! He has been so attentive to my wishes. He called and text me after my breast augmentation to make sure I was doing good, which highly impressed me!”</p>
-                <cite>- Verified Patient</cite>
+                <p>- Verified Patient</p>
                 <div class="reviews">
                     <a href="" taget="_blank"><img class="img-resp" src="./images/healthgrades.png" alt="Healthgrades"></a>
                     <a href="" taget="_blank"><img class="img-resp" src="./images/realself.png" alt="RealSelf"></a>
                     <a href="" taget="_blank"><img class="img-resp" src="./images/vitals.png" alt="Vitals"></a>
                 </div>
+                <a class="btn" href="">Learn more</a>
             </div>
         </div>
     </section>
@@ -258,7 +273,7 @@
     <section id="specialties">
         <div class="mobile-bg"></div>
         <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
+            <div class="grid-50 tablet-60 mobile-100">
                 <h1>Specialties</h1>
                 <h3>Book What we are most known for</h3>
                 <ul class="specialty-list">
@@ -275,7 +290,7 @@
     <section id="medspa">
         <div class="mobile-bg"></div>
         <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
+            <div class="grid-60 tablet-50 mobile-100">
                 <div class="title">
                     <h1>Med Spa</h1>
                     <img class="img-resp" src="./images/med-spa-logo.png" alt="">
@@ -310,15 +325,17 @@
 
     <footer>
         <div class="grid-container grid-parent">
-            <img class="img-resp" src="./images/logo.png" alt="">
+            <div class="grid-100 tac">
+                <img class="img-resp" src="./images/logo.png" alt="">
+            </div>
             <div class="grid-50 tablet-50 mobile-100">
-                <div class="location">
+                <div class="location1">
                     <h3>The Park Clinic &amp; Medspa at the park</h3>
                     <p>3153 Dauphin St,<br>Mobile, AL 36606</p>
                 </div>
             </div>
             <div class="grid-50 tablet-50 mobile-100">
-                <div class="location">
+                <div class="location2">
                     <h3>The Park Clinic Bayside</h3>
                     <p>411 N Section St 3rd Floor<br>Fairhope, AL 36532</p>
                 </div>
@@ -342,20 +359,6 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- aos init-->
-    <!-- <script type="text/javascript">
-        AOS.init({
-            duration: 1000,
-            disable: 'mobile'
-        })
-        jQuery(function () {
-            AOS.init();
-        });
-        jQuery(window).on('load', function () {
-            AOS.refresh();
-        });
-    </script> -->
 
 </body>
 </html>
