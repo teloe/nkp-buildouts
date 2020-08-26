@@ -41,6 +41,16 @@ h6 {
     line-height:1.5;
     padding-bottom: 1.5rem;
 }
+.section-header {
+    font-size: 3rem;
+    line-height:1.1;
+    text-transform:capitalize;
+}
+.sub-header {
+    font-size:1.5rem;
+    line-height:1.1;
+    text-transform:uppercase;
+}
 p,li {
     line-height: 2rem;
 }
@@ -251,6 +261,9 @@ header .top {
     border-bottom: none;
     border-top: solid 1px rgba(0,0,0,.1);
 }
+#main-nav .stellarnav ul ul li a {
+    font-size:.875rem;
+}
 /* }}} */
 
 /* #banner {{{ */
@@ -294,8 +307,38 @@ header .top {
 
 /* #procs {{{ */
 #procs {
-    height: 2000px;
+    background: url(images/procs-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding: 6rem 0;
 }
+#procs #proc-list .title h2 {
+    color: #a1a1a1;
+    font-weight:700;
+    font-size:1.625rem;
+}
+#procs #proc-list .description {
+    display:none;
+}
+#procs #proc-list .title {
+    cursor: pointer;
+}
+#procs #proc-list li:first-of-type .description {
+    display:block;
+}
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
+/* #procs #proc-list */
 /* }}} */
 
 /* section {{{ */
@@ -344,7 +387,7 @@ textarea {
     -moz-border-radius: 4px;
     border-radius: 4px
 }
-
+span.agree{display:inline-block}
 input[type='text'],
 input[type='email'],
 input[type='tel'],
@@ -387,6 +430,17 @@ form ::-webkit-input-placeholder {
     .patient-single{width:100%!important}
 }
 
+/* min-width: 576px {{{ */
+@media only screen and (min-width: 576px) {
+    #banner h1 {
+        font-size: 3rem;
+    }
+    #banner h3 {
+        font-size: 1.5625rem;
+    }
+}
+/* }}} */
+
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
     .mobile-bg {
@@ -418,19 +472,6 @@ form ::-webkit-input-placeholder {
     header .top .info p:first-of-type {
         margin-right: 1rem;
     }
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    /* header */
-    #main-nav .stellarnav > ul > li > a {
-        padding:20px 10px;
-    }
 
     #banner {
         background: url(images/banner-main.jpg) no-repeat center;
@@ -447,9 +488,6 @@ form ::-webkit-input-placeholder {
     }
     #banner h1 {
         font-size: 6.4vw;
-    }
-    #banner h3 {
-        font-size: 1.5625rem;
     }
     #banner .btn-wrapper {
         display: block;
@@ -482,6 +520,14 @@ form ::-webkit-input-placeholder {
         align-items: flex-end;
         padding: .625rem 0;
     }
+    @keyframes navSlideDown {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
     header .bottom.stuck {
         background-color:rgba(255,255,255,.9);
         background-color: #fff;
@@ -490,6 +536,24 @@ form ::-webkit-input-placeholder {
         top: 0;
         width: 100%;
         z-index: 999;
+        animation: navSlideDown .3s ease;
+    }
+    #main-nav .stellarnav > ul > li > a {
+        padding:20px 10px;
+    }
+    #main-nav .stellarnav > ul > li > a:hover {
+        background-color: #f0f0f0;
+    }
+    #main-nav .stellarnav ul ul {
+        background-color: #fff;
+        box-shadow: 2px 8px 20px rgba(0,0,0,.1);
+        padding: 10px;
+    }
+    #main-nav .stellarnav ul ul li a:hover {
+        background-color:#f0f0f0;
+    }
+    #main-nav .stellarnav ul ul ul {
+        left: 210px;
     }
     #banner {
         /* margin-top: 168px; */

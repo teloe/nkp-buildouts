@@ -8,17 +8,28 @@ jQuery(document).ready(function ($) {
         closeBtn: true,
     });
 
-    let navTop = $('header .bottom').offset().top;
     $(window).on('scroll', function () {
         $('header .bottom').addClass('stuck');
-        if ($(this).scrollTop() < navTop) {
+        if ($(this).scrollTop() < 300) {
             $('header .bottom').removeClass('stuck');
         }
     });
 
-    $('#slider').flexslider({
+    $('#proc-list .title').on('click', function () {
+        $(this)
+            .siblings('.description')
+            .slideToggle(300)
+            .parent()
+            .toggleClass('active')
+            .siblings()
+            .removeClass('active')
+            .find('.description')
+            .slideUp();
+    });
+
+    /* $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: false,
-    });
+    }); */
 });
