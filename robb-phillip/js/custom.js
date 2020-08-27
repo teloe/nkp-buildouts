@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#proc-list .title').on('click', function () {
+    function checkClick() {
         $(this)
             .siblings('.description')
             .slideToggle(300)
@@ -25,7 +25,13 @@ jQuery(document).ready(function ($) {
             .removeClass('active')
             .find('.description')
             .slideUp();
-    });
+    }
+
+    $('#proc-list li:first-of-type')
+        .addClass('active')
+        .find('.description')
+        .show();
+    $('#proc-list .title').on('click', checkClick);
 
     /* $('#slider').flexslider({
         animation: 'fade',

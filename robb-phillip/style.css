@@ -26,6 +26,8 @@ body {
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     font-style: normal;
+    width: 100%;
+    overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -309,12 +311,20 @@ header .top {
 #procs {
     background: url(images/procs-bg.jpg) no-repeat center;
     background-size:cover;
+    background-attachment: fixed;
     padding: 6rem 0;
+    min-height: 1100px;
+}
+#procs .dot,
+#procs .model {
+    display:none;
 }
 #procs #proc-list .title h2 {
     color: #a1a1a1;
     font-weight:700;
-    font-size:1.625rem;
+    padding-bottom:.5rem;
+    font-size:1.375rem;
+    text-transform:uppercase;
 }
 #procs #proc-list .description {
     display:none;
@@ -322,23 +332,20 @@ header .top {
 #procs #proc-list .title {
     cursor: pointer;
 }
-#procs #proc-list li:first-of-type .description {
-    display:block;
+#procs #proc-list {
+    text-align: center;
 }
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
-/* #procs #proc-list */
+#procs .section-header {
+    font-size:3.75rem;
+    text-align: center;
+    /* margin-bottom: 1rem; */
+}
+#procs #proc-list li {
+    margin-bottom: 1.5rem;
+}
+#procs #proc-list li.active .title h2 {
+    color: #000;
+}
 /* }}} */
 
 /* section {{{ */
@@ -570,12 +577,91 @@ form ::-webkit-input-placeholder {
         font-size: 4rem;
         padding-bottom: 1rem;
     }
+    /* #procs */
+    /* #procs */
+    /* #procs */
 }
 /* }}} */
 
+@media only screen and (min-width: 1170px) {
+    #procs {
+        min-height: auto;
+        padding:0;
+    }
+    #procs .grid-container {
+        position: relative;
+        min-height: 1200px;
+        padding: 8rem 0;
+        z-index:1;
+    }
+    #procs .section-header {
+        text-align: left;
+    }
+    #procs #proc-list {
+        text-align: left;
+    }
+    #procs .model {
+        display:block;
+        position: absolute;
+        bottom: 0;
+        right: -10%;
+        z-index:-1;
+    }
+    #procs .dot {
+        display: block;
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius:50%;
+        cursor:pointer;
+    }
+    #procs #eyelid-surgery .dot {
+        background-color: blue;
+        top: 49%;
+        right:45%;
+    }
+    #procs #rhinoplasty .dot {
+        background-color: red;
+        right:33%;
+        top: 58%;
+    }
+    #procs #facelift .dot {
+        background-color: green;
+        top: 56%;
+        right:48%;
+    }
+    #procs #bfr .dot {
+        background-color: yellow;
+        right:26%;
+        top: 78%;
+    }
+    #procs #neck-lift .dot {
+        background-color: purple;
+        right:45%;
+        top: 86%;
+    }
+    #procs #chin-aug .dot {
+        background-color: black;
+        right:38%;
+        top: 79%;
+    }
+    #procs #browlift .dot {
+        background-color: orange;
+        right: 20%;
+        top: 47%;
+    }
+}
 @media only screen and (min-width: 2560px) {
     #banner {
         height:37.5vw; 
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1169px) {
+    #procs .grid-45 {
+        width: 80%;
+        float:none;
+        margin: 0 auto;
     }
 }
 
