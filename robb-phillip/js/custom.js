@@ -33,9 +33,31 @@ jQuery(document).ready(function ($) {
         .show();
     $('#proc-list .title').on('click', checkClick);
 
-    /* $('#slider').flexslider({
+    $('#gallery-slider').flexslider({
         animation: 'fade',
-        directionNav: false,
-        controlNav: false,
-    }); */
+        directionNav: true,
+        controlNav: true,
+        manualControls: '.controls li',
+        prevText: '',
+        nextText: '',
+        slideshow: false,
+    });
+
+    $('#reviews-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        centerMode: true,
+        responsive: [
+            {
+                // mobile
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
 });

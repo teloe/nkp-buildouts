@@ -49,6 +49,7 @@ h6 {
     text-transform:capitalize;
 }
 .sub-header {
+    padding-bottom:1rem;
     font-size:1.5rem;
     line-height:1.1;
     text-transform:uppercase;
@@ -144,7 +145,7 @@ button.btn.black span::before {
 }
 a.btn:hover span::before,
 button.btn:hover span::before {
-    width: 250%;
+    width: 280%;
 }
 .social {
     display: flex;
@@ -348,22 +349,289 @@ header .top {
 }
 /* }}} */
 
-/* section {{{ */
+/* #welcome {{{ */
+#welcome {
+    margin: 6rem 0;
+}
+#welcome .grid-50:first-of-type {
+    margin-bottom: 4rem;
+}
+#welcome .grid-50:first-of-type .content {
+    position: relative;
+    padding-bottom: 4rem;
+}
+#welcome .grid-50:first-of-type .content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4rem;
+    height: 80%;
+    width: 100%;
+    max-width: 575px;
+    border: solid 1rem #383053;
+    z-index: -1;
+}
+#welcome .grid-50:first-of-type img {
+    display: block;
+    margin: 0 auto;
+}
+#welcome .btn {
+    margin-top: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* #treatments {{{ */
+#treatments {
+    margin: 6rem 0;
+}
+#treatments .section-header {
+    font-size: 2.6rem;
+}
+#treatments .btn {
+    margin-top: 2rem;
+}
+#treatments .grid-50:first-of-type {
+    margin-bottom: 4rem;
+}
+#treatments .grid-50:last-of-type .content {
+    position: relative;
+}
+#treatments .grid-50:last-of-type .content::before {
+    content: '';
+    position: absolute;
+    bottom: -4rem;
+    right: -4rem;
+    height: 100%;
+    width: 100%;
+    max-width: 575px;
+    border: solid 1rem #383053;
+    z-index: -1;
+}
+#treatments img {
+    display: block;
+    margin: 0 auto;
+}
 /* }}} */
 
-/* section {{{ */
+/* #gallery {{{ */
+#gallery {
+    margin: 12rem 0 6rem;
+    text-align: center;
+}
+#gallery .mobile-bg {
+    background: url(images/gallery-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 60vw;
+    margin-bottom: 4rem;
+}
+#gallery #gallery-slider img {
+    display:block;
+    margin: 0 auto;
+}
+#gallery .controls {
+    margin: 1rem 0 3rem;
+}
+#gallery .controls li {
+    color: #a1a1a1;
+    text-transform: uppercase;
+    font-weight:700;
+    text-align: center;
+    /* font-size: 1.25rem; */
+    padding-bottom: .75rem;
+    cursor:pointer;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+#gallery .controls li:hover {
+    color: #000;
+}
+#gallery .controls li.flex-active {
+    color: #000;
+}
+#gallery #gallery-slider .flex-direction-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gallery #gallery-slider .flex-prev::before,
+#gallery #gallery-slider .flex-next::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid 1px #000;
+    font-size:1.5rem;
+    margin: 1rem .5rem;
+}
+#gallery #gallery-slider .flex-prev::before {
+    content: '\f060';
+}
+#gallery #gallery-slider .flex-next::before {
+    content: '\f061';
+}
 /* }}} */
 
-/* section {{{ */
+/* #educator {{{ */
+#educator .mobile-bg {
+    background: url(images/educator-bg.jpg) no-repeat left;
+    background-size: cover;
+    height: 58vw;
+    margin-bottom: 4rem;
+}
+#educator .btn {
+    margin-top: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* #video {{{ */
+#video .mobile-bg {
+    background: url(images/video-bg.jpg) no-repeat right;
+    background-size: cover;
+    height: 68vw;
+    margin-bottom: 4rem;
+}
+#video {
+    margin: 6rem 0;
+}
+#video .btn {
+    margin-top: 2rem;
+}
 /* }}} */
 
-/* section {{{ */
+/* #consult {{{ */
+#consult {
+    background: url(images/consultation-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 8rem 0;
+}
+#consult h1 {
+    color: #fff;
+}
+/* }}} */
+
+/* #testimonials {{{ */
+#testimonials {
+    margin: 6rem 0;
+}
+#testimonials .section-header{
+    margin-bottom: 2rem;
+}
+#testimonials .section-header,
+#testimonials .sub-header {
+    text-align: center;
+}
+#testimonials .content img {
+    width: 100%;
+}
+#testimonials .content > div:nth-of-type(3) h2 {
+    text-align: center;
+    line-height: 1.25;
+    font-size: 2rem;
+}
+#testimonials .content > div:nth-of-type(3),
+#testimonials .content > div:nth-of-type(4){
+    margin-bottom: 2rem;
+}
+/* }}} */
+
+/* #reviews {{{ */
+#reviews {
+    margin-bottom: 6rem;
+}
+#reviews .sub-header {
+    margin-bottom: 2rem;
+}
+#reviews .grid-container {
+    max-width: 100%;
+}
+#reviews .slick-slide .client-photo img {
+    margin: 0 auto 2rem
+}
+
+#reviews #reviews-carousel button {
+    display: none !important
+}
+
+#reviews .description {
+    padding-bottom: .5rem
+}
+
+#reviews .description a {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#reviews .date {
+    color: rgba(0, 0, 0, .7);
+    font-size: .8rem
+}
+
+#reviews #reviews-carousel .slick-slide .content {
+    opacity: .4 !important;
+    padding: 0 2rem
+}
+
+#reviews #reviews-carousel .slick-slide.slick-current .content {
+    opacity: 1 !important
+}
+
+#reviews #reviews-carousel .slick-list {
+    overflow: hidden !important;
+    padding: 0 !important
+}
+
+/* }}} */
+
+/* #contact {{{ */
+#contact {
+    background: url(images/contact-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 8rem 0;
+}
+#contact .sub-header,
+#contact .section-header {
+    color: #fff;
+}
+#contact .agreement {
+    color: #fff;
+    margin-top: 1rem;
+}
+#contact .agreement a {
+    color: #fff;
+    font-weight:700;
+}
+#contact .btn {
+    margin-top: 2rem;
+}
+/* }}} */
+
+/* footer {{{ */
+footer {
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+footer .social {
+    margin: 2rem 0 6rem;
+    position: relative;
+}
+footer .social::after {
+    content: '';
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    display: block;
+    bottom: -2rem;
+}
+footer p {
+    line-height: 1.25;
+    padding-bottom: 1rem;
+}
 /* }}} */
 
 /* NKP GLOBAL STYLES {{{ */
@@ -389,7 +657,7 @@ textarea {
     transition: all .5s ease;
 }
 textarea {
-    height: 120px;
+    height: 180px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px
@@ -401,7 +669,7 @@ input[type='tel'],
 input[type='url'],
 textarea {
     border: 1px solid #ccc;
-    background: #fff;
+    background: rgba(255,255,255,.6);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -450,6 +718,9 @@ form ::-webkit-input-placeholder {
 
 /* min-width: 768px {{{ */
 @media only screen and (min-width: 768px) {
+    .section-header {
+        font-size: 3.75rem;
+    }
     .mobile-bg {
         display:none;
     }
@@ -506,6 +777,123 @@ form ::-webkit-input-placeholder {
         background-color: #fff;
         margin-left: 0;
     }
+    #welcome {
+        margin: 8rem 0;
+    }
+    #welcome .grid-50:first-of-type {
+        margin-bottom: 0;
+    }
+    #treatments {
+        margin: 8rem 0;
+    }
+    #gallery {
+        text-align: left;
+        background: url(images/gallery-bg.jpg) no-repeat center;
+        background-size: cover;
+        padding: 6rem 0;
+        margin-bottom: 0;
+    }
+    #gallery .grid-60 {
+        float: right;
+    }
+    #gallery .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 1rem;
+    }
+    #gallery .controls li {
+        margin: 0 .25rem;
+        font-size:.9375rem;
+    }
+    #educator {
+        background: url(images/educator-bg.jpg) no-repeat center;
+        background-size: cover;
+        padding: 6rem 0;
+    }
+    #educator .grid-50 {
+        float: right;
+    }
+    #video {
+        background: url(images/video-bg.jpg) no-repeat center;
+        background-size:cover;
+        padding: 18rem 0;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0;
+    }
+    #video video {
+        position: absolute;
+        width: 50vw;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: -1;
+    }
+    #video .grid-50:last-of-type {
+        float: right;
+    }
+    #video .grid-50 .content {
+        background: rgba(255,255,255,.9);
+        padding: 4rem 2rem;
+        position: relative;
+    }
+    #video .grid-50:last-of-type .content::before {
+        content: '';
+        position: absolute;
+        bottom: -8rem;
+        left: -8rem;
+        height: 100%;
+        width: 100%;
+        max-width: 575px;
+        border: solid 1rem #383053;
+        z-index: -1;
+    }
+    #consult {
+        padding: 12rem 0;
+    }
+    #testimonials {
+        margin: 8rem 0;
+    }
+    #testimonials .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #testimonials .content > div:nth-of-type(1){
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #testimonials .content > div:nth-of-type(2){
+        grid-column: 2 / 3;
+        grid-row: 1 / span 2;
+    }
+    #testimonials .content > div:nth-of-type(3){
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    #testimonials .content > div:nth-of-type(4){
+        grid-column:1 / 2;
+        grid-row: 3 / 4;
+        margin-bottom: 0;
+    }
+    #testimonials .content > div:nth-of-type(5){
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        padding: 1rem;
+    }
+    #reviews {
+        margin-bottom: 8rem;
+    }
+
 }
 /* }}} */
 
@@ -577,12 +965,49 @@ form ::-webkit-input-placeholder {
         font-size: 4rem;
         padding-bottom: 1rem;
     }
-    /* #procs */
-    /* #procs */
-    /* #procs */
+    #welcome .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    #welcome .title {
+        background-color: #fff;
+        padding: 2rem;
+        margin-left: -10rem;
+        z-index: 2;
+        position: relative;
+    }
+    #welcome img {
+        z-index: -1;
+    }
+    #welcome .section-header {
+        font-size: 2.6rem;
+        padding-bottom: 0;
+    }
+    #treatments .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    #gallery {
+        position: relative;
+    }
+    #gallery .grid-50 {
+        float: right;
+    }
+    #testimonials .content > div:nth-of-type(3){
+        padding: 2rem;
+    }
+    #testimonials .content > div:nth-of-type(5){
+        padding: 4rem 2rem;
+    }
+    #testimonials .content > div:nth-of-type(3) h2 {
+        text-align: center;
+        line-height: 1.25;
+        font-size: 3rem;
+    }
 }
 /* }}} */
 
+/* min-width: 1170px {{{ */
 @media only screen and (min-width: 1170px) {
     #procs {
         min-height: auto;
@@ -614,43 +1039,54 @@ form ::-webkit-input-placeholder {
         height: 2rem;
         border-radius:50%;
         cursor:pointer;
+        background-color:rgba(255,255,255,.6);
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    #procs .dot:hover {
+        background-color:rgba(0,0,0,.6);
+    }
+    #procs #proc-list li.active .dot {
+        background-color:rgba(0,0,0,.6);
     }
     #procs #eyelid-surgery .dot {
-        background-color: blue;
         top: 49%;
         right:45%;
     }
     #procs #rhinoplasty .dot {
-        background-color: red;
         right:33%;
         top: 58%;
     }
     #procs #facelift .dot {
-        background-color: green;
         top: 56%;
         right:48%;
     }
     #procs #bfr .dot {
-        background-color: yellow;
         right:26%;
         top: 78%;
     }
     #procs #neck-lift .dot {
-        background-color: purple;
         right:45%;
         top: 86%;
     }
     #procs #chin-aug .dot {
-        background-color: black;
         right:38%;
         top: 79%;
     }
     #procs #browlift .dot {
-        background-color: orange;
         right: 20%;
         top: 47%;
     }
 }
+/* }}} */
+
+@media only screen and (min-width: 1400px) {
+    #reviews .client-photo{width:30%;float:left}
+    #reviews .text{width:70%;float:left;padding-left:15px}
+    #reviews .slick-slide .client-photo img{margin:0 auto}
+}
+
 @media only screen and (min-width: 2560px) {
     #banner {
         height:37.5vw; 

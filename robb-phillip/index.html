@@ -14,6 +14,7 @@
     <title>Robb, Phillip</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -264,8 +265,10 @@
             </div>
             <div class="grid-50 tablet-50 mobile-100">
                 <div class="content">
-                    <h3 class="sub-header">Philip Robb Jr., M.D.</h3>
-                    <h1 class="section-header">Welcome to Robb Facial Plastic Surgery</h1>
+                    <div class="title">
+                        <h3 class="sub-header">Philip Robb Jr., M.D.</h3>
+                        <h1 class="section-header">Welcome to Robb Facial Plastic Surgery</h1>
+                    </div>
                     <p>Dr. Robb Jr. is aas a board certified plastic surgeon  who was brought up serving and caring for patients. As a board-certified facial surgeon, Dr. Robb Jr. brings the highest level of patient care, attention to detail, and customer service to each and every patient. Each approach is personalized, customized, and comfortable, in our state-of-the-art center focused on bringing out confidence in our patients. An exclusive facial expert, Dr. Robb Jr. has devoted his entire training, experience, and surgery to the neck and face.</p>
                     <a class="btn black" href=""><span>Learn</span> More</a>
                 </div>
@@ -309,29 +312,31 @@
     <!-- #/treatments -->
 
     <section id="gallery">
+        <div class="mobile-bg"></div>
         <div class="grid-container grid-parent"> <!-- 100% -->
-            <div class="grid-50 tablet-100 mobile-100">
+            <div class="grid-60 tablet-70 mobile-100">
                 <h3 class="sub-header">Before &amp; After</h3>
                 <h1 class="section-header">Photo Gallery</h1>
                 <p>Here, we have provided you with a “Before and After” gallery. We encourage you to peruse through the photos, allowing you to get a better idea of the amazing results Dr. Robb consistently delivers to each of his patients. 
 </p>
-                <div id="gallery-carousel">
+                <div id="gallery-slider">
                     <ul class="slides">
-                        <li>
-                            <img class="img-resp" src="./images/bxa1.png" alt="Before & After Photos">
-                        </li>
-                        <li>
-                            <img class="img-resp" src="./images/bxa2.png" alt="Before & After Photos">
-                        </li>
-                        <li>
-                            <img class="img-resp" src="./images/bxa3.png" alt="Before & After Photos">
-                        </li>
-                        <li>
-                            <img class="img-resp" src="./images/bxa4.png" alt="Before & After Photos">
-                        </li>
+                        <li><img class="img-resp" src="./images/bxa1.png" alt="Before & After Photos"></li>
+                        <li><img class="img-resp" src="./images/bxa2.png" alt="Before & After Photos"></li>
+                        <li><img class="img-resp" src="./images/bxa3.png" alt="Before & After Photos"></li>
+                        <li><img class="img-resp" src="./images/bxa4.png" alt="Before & After Photos"></li>
                     </ul>
                 </div>
-                <div class="clr"></div>
+                <!-- <div class="arrows">
+                    <div class="prev"><i class="fas fa-arrow-left"></i></div>
+                    <div class="next"><i class="fas fa-arrow-right"></i></div>
+                </div> -->
+                <ul class="controls">
+                    <li>Facelift</li>
+                    <li>Blephoraplasty</li>
+                    <li>Rhinoplasty</li>
+                    <li>Buccal Fat Removal</li>
+                </ul>
                 <a class="btn black" href=""><span>View All</span> Photos</a>
             </div>
         </div>
@@ -339,10 +344,11 @@
     <!-- #/gallery -->
 
     <section id="educator">
+        <div class="mobile-bg"></div>
         <div class="grid-container grid-parent">
             <div class="grid-50 tablet-50 mobile-100">
                 <h3 class="sub-header">AAFPRS educator</h3>
-                <h1 class="sub-header">Student & Teacher</h1>
+                <h1 class="section-header">Student & Teacher</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <a class="btn black" href=""><span>Learn</span> More</a>
             </div>
@@ -351,20 +357,23 @@
     <!-- #/educator -->
 
     <section id="video">
+        <div class="mobile-bg"></div>
         <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
-                <h3 class="sub-header">Expert advice</h3>
-                <h1 class="section-header">Facial Plastic Surgery</h1>
-                <p>Atlanta and Alpharetta Facial Plastic Surgeon Dr. Philip Robb Jr.,M.D. performs his signature NO DRAIN facelift- all of Dr. Robb Jr., M.D.’s facelift are performed without the use of drains. No tubes dangling and pulling on your skin. No drains to remove after surgery! Dr. Robb Jr. can perform your facelift while awake, lightly sedated in the office, or in an accredited surgery center while you are comfortable and asleep.
-</p>
-                <a class="btn black" href=""><span>Learn</span> More</a>
-            </div>
-            <div class="grid-50 tablet-50 mobile-100">
-                <!-- <video loop="" preload="none" autoplay="" muted="" playsinline="" style="width: 3622.3px; left: 50%; margin-left: -1811.15px;">
+            <div class="grid-50 tablet-50 mobile-100 hide-on-mobile">
+                <video loop="" preload="none" autoplay="" muted="" playsinline="">
                     <source src="https://www.robbfacialplastics.com/wp-content/themes/robbfacialplastics_com/media/Robb-Facial-Plastics-Brand Video.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser
                     <source src="https://www.robbfacialplastics.com/wp-content/themes/robbfacialplastics_com/media/Robb-Facial-Plastics-Brand Video.webm" type="video/webm">
                     <source src="https://www.robbfacialplastics.com/wp-content/themes/robbfacialplastics_com/media/Robb-Facial-Plastics-Brand Video.ogv" type="video/webm">
-                </video> -->
+                </video>
+            </div>
+            <div class="grid-50 tablet-50 mobile-100">
+                <div class="content">
+                    <h3 class="sub-header">Expert advice</h3>
+                    <h1 class="section-header">Facial Plastic Surgery</h1>
+                    <p>Atlanta and Alpharetta Facial Plastic Surgeon Dr. Philip Robb Jr.,M.D. performs his signature NO DRAIN facelift- all of Dr. Robb Jr., M.D.’s facelift are performed without the use of drains. No tubes dangling and pulling on your skin. No drains to remove after surgery! Dr. Robb Jr. can perform your facelift while awake, lightly sedated in the office, or in an accredited surgery center while you are comfortable and asleep.
+                    </p>
+                    <a class="btn black" href=""><span>Learn</span> More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -385,6 +394,25 @@
             <div class="grid-100">
                 <h3 class="sub-header">Patient Stories</h3>
                 <h1 class="section-header">Testimonials</h1>
+                <div class="content">
+                    <div class="hide-on-mobile">
+                        <img class="img-resp" src="./images/testimonials1.jpg" alt="Testimonials">
+                    </div>
+                    <div class="hide-on-mobile">
+                        <img class="img-resp" src="./images/testimonials2.jpg" alt="Testimonials">
+                    </div>
+                    <div>
+                        <h2>“The Goal of Robb Facial Plastic Surgery is to love and serve our patients.”</h2>
+                        <h3 class="sub-header">- Dr. Robb Philip Jr., M.D.</h3>
+                    </div>
+                    <div>
+                        <img class="img-resp" src="./images/testimonials3.jpg" alt="Testimonials">
+                    </div>
+                    <div>
+                        <p>Dr. Robb Jr.,M.D. did an excellent job of reconstructive surgery after cancer surgery left a large hole in my nose. He was very professional, knowledgeable and the procedure and recovery was painless and came out exactly as he predicted. I was very happy with the results and highly recommend him for any facial surgery.</p>
+                        <a class="btn black" href=""><span>Learn</span> More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -393,7 +421,7 @@
     <section id="reviews">
         <div class="grid-container grid-parent">
             <div class="grid-100">
-                <h3 class="sub-header">Why we love Dr. Robb Philip Jr.</h3>
+                <h3 class="sub-header tac">Why we love Dr. Robb Philip Jr.</h3>
                 <div id="reviews-carousel">
                     <div class="content">
                         <div class="client-photo">
@@ -486,6 +514,7 @@
 
 
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
     <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
