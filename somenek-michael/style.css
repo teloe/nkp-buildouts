@@ -60,6 +60,7 @@ button.btn {
     font-size: inherit;
     font-family: inherit;
     font-weight: 600;
+    line-height:normal;
     cursor: pointer;
     border:none;
     background:none;
@@ -84,7 +85,26 @@ ul,ol{clear:both}
 .nodisp{display:none}
 /* }}} */
 
-/* section {{{ */
+/* header {{{ */
+header .grid-container {
+    padding: 15px 0;
+}
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
 /* }}} */
 
 /* section {{{ */
@@ -226,6 +246,19 @@ textarea {
 
 /* min-width: 1025px {{{ */
 @media only screen and (min-width: 1025px) {
+    header  {
+        position: fixed; 
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        -moz-transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    header.stuck {
+        background-color: rgba(255,255,255,.9);
+        box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    }
 }
 /* }}} */
 

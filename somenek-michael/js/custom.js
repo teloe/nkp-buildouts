@@ -7,6 +7,13 @@ jQuery(document).ready(function ($) {
         locationBtn: '',
     });
 
+    $(window).on('scroll', function () {
+        $('header').addClass('stuck');
+        if ($(this).scrollTop() === 0) {
+            $('header').removeClass('stuck');
+        }
+    });
+
     $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
