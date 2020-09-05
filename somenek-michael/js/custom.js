@@ -38,9 +38,30 @@ jQuery(document).ready(function ($) {
 
     $('#menu-desktop-menu > li > ul > li').addClass('title');
 
-    $('#slider').flexslider({
+    $('#services-slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
+        manualControls: '.controls li',
+    });
+
+    $('#testimonials-carousel').slick({
+        slidesToShow: 3,
+        centerPadding: 0,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        responsive: [
+            {
+                // mobile
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     });
 });
