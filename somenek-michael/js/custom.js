@@ -51,12 +51,12 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         autoplay: true,
         arrows: false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 8000,
         centerMode: true,
         responsive: [
             {
-                // mobile
-                breakpoint: 992,
+                // tablet & mobile
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
