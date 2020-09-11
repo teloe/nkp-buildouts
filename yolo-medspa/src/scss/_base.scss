@@ -1,0 +1,121 @@
+// Colors
+$primary-color: #f2bc29;
+$alt-color: #FFD164;
+$black: #000;
+$white: #fff;
+
+// Font colors
+$base: #363636;
+$dark: #808080;
+$sub: #acacac;
+
+// Typography
+$font-size: 16px;
+$font-stack: 'proxima-nova', sans-serif;
+$header-stack: 'trajan-pro-3', serif;
+$style: normal;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+// Spacing
+$sm: 1rem;
+$md: 1.5rem;
+$lg: 2rem;
+
+// General
+html {
+    font-size: $font-size;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $font-stack;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a,
+a:visited,
+a:link {
+    color: $primary-color;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+a:hover {
+    color: rgba($primary-color, .6);
+    text-decoration: none;
+    outline: none;
+}
+ul,
+ol {
+    clear: both
+}
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.fn {
+    float: none;
+    display: inline-block
+}
+
+.tal {
+    text-align: left
+}
+
+.tar {
+    text-align: right
+}
+
+.tac {
+    text-align: center
+}
+
+.clr-l {
+    clear: left
+}
+
+.clr-r {
+    clear: right
+}
+
+.clr,
+.clear {
+    clear: both
+}
+.nodisp {
+    display: none
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: $header-stack;
+}
+h1 {
+    font-style: $style;
+    font-weight: $regular;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+p {
+    padding-bottom: 2rem;
+}
+p, li {
+    line-height: 2rem;
+}

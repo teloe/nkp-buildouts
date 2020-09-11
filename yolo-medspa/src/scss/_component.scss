@@ -1,0 +1,75 @@
+// Buttons
+a.btn,
+button.btn {
+    font-size: inherit;
+    font-family: inherit;
+    display: inline-block;
+    border:none;
+    background-color:$primary-color;
+    color:$black; 
+    cursor:pointer;
+    text-align: center;
+    @include padding($top:$sm, $right:$lg, $bottom:$sm, $left:$lg);
+    &:hover {
+        color: rgba($primary-color, .6);
+    }
+}
+
+//Nav
+.stellarnav {
+    li.has-sub > ul {
+        padding-left: 1rem;
+    }
+    li.open > .dd-toggle i {
+        -moz-transform: rotate(180deg)!important;
+        -webkit-transform: rotate(180deg)!important;
+        transform: rotate(180deg!important);
+    }
+    li.open > a {
+        font-weight:700;
+        text-decoration: underline;
+    }
+    &.mobile {
+        ul {
+            background:none;
+        }
+    }
+    .dd-toggle {
+        height: 51px;
+        .fa-plus::before {
+            content: '\f078';
+        }
+    }
+
+}
+
+/* FORM */
+form {
+    input,
+    select,
+    textarea {
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        margin: 0 0 10px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        background: #fff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    textarea {
+        height: 120px;
+    }
+    @include placeholder {
+        font-style: normal;
+        color: $dark;
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
