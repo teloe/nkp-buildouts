@@ -32,6 +32,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    color: $base;
     font-family: $font-stack;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -97,21 +98,27 @@ ol {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
+    line-height: 1.25;
 }
 h1 {
+    color: $primary-color;
+    margin-bottom: .5rem;
     font-style: $style;
     font-weight: $regular;
     text-transform: uppercase;
-    font-size: 2.5rem;
-}
-h2 {
     font-size: 2rem;
 }
+h2 {
+    font-size: 1.6rem;
+}
 h3 {
-    font-size: 1.5rem;
+    font-family: proxima-nova, sans-serif;
+    color: $sub;
+    margin-bottom: $md;
+    font-size: 1.2rem;
 }
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 p {
     padding-bottom: 2rem;
