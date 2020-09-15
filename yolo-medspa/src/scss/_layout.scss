@@ -63,8 +63,8 @@ header {
     }
 }
 
-// #procs
-#procs {
+// .procs
+.procs {
     margin: 4rem 0;
     .grid-container {
         max-width: 1695px;
@@ -77,47 +77,50 @@ header {
         .grid-20 {
             margin-bottom: 2rem;
         }
-        .content {
-            position: relative;
-            display: block;
-            z-index: 1;
-            overflow: hidden;
+    }
+    .grid-100 {
+        margin-bottom: 2rem;
+    }
+    .content {
+        position: relative;
+        display: block;
+        z-index: 1;
+        overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: rgba(0,0,0,.4);
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            @include transition(all .5s ease);
+        }
+        &:hover {
             &::after {
-                content: '';
-                position: absolute;
-                background-color: rgba(0,0,0,.4);
-                top:0;
-                right:0;
-                bottom:0;
-                left:0;
-                width: 100%;
-                height: 100%;
-                @include transition(all .5s ease);
-            }
-            &:hover {
-                &::after {
-                    background-color: rgba(255,255,255,.6);
-                }
-                h2 {
-                    color: $primary-color;
-                }
+                background-color: rgba(255,255,255,.6);
             }
             h2 {
-                font-family: inherit;
-                color: $white;
-                position: absolute;
-                bottom: 2rem;
-                right: 0;
-                left: 0;
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                z-index: 2;
-                @include transition(all .5s ease);
+                color: $primary-color;
             }
-            img {
-                width: 100%;
-            }
+        }
+        h2 {
+            font-family: inherit;
+            color: $white;
+            position: absolute;
+            bottom: 2rem;
+            right: 0;
+            left: 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            z-index: 2;
+            @include transition(all .5s ease);
+        }
+        img {
+            width: 100%;
         }
     }
 }
@@ -322,4 +325,59 @@ footer {
     }
 }
 
+// #main
+#main {
+    .grid-container {
+        max-width: 1760px;
+    }
+    padding: 8rem 0 6rem;
+    .bxa-box {
+        padding: 4rem 15px;
+        border: solid 1px rgba(0,0,0,.2);
+        .grid-50 {
+            text-align: center;
+            h4 {
+                margin-bottom: 1rem;
+            }
+        }
+        .btn {
+            margin-top: 2rem;
+        }
+    }
+    .call-box {
+        background-color: $primary-color;
+        padding: 2rem 15px;
+        margin: 2rem 0;
+        h2 {
+            color: $white;
+            text-align: center;
+        }
+    }
+    .get-started {
+        background-color: $primary-color;
+        padding: 3rem 15px;
+        h2 {
+            color: $white;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: $white;
+            color: $primary-color;
+            &:hover {
+                background-color: $alt-color;
+                color: $white;
+            }
+        }
+    }
+}
 
+// #sidebar
+#sidebar {
+    .procs {
+        margin: 0;
+        .content {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+    }
+}

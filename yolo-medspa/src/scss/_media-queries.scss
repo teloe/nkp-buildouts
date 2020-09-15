@@ -8,6 +8,17 @@
 }
 
 @include for-size(sm) {
+    #main {
+        .bxa-box {
+            margin-bottom: 2rem;
+            .grid-50:first-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+        .get-started {
+            margin-top: 4rem;
+        }
+    }
 }
 
 @include for-size(md) {
@@ -98,6 +109,12 @@
                     text-align: right;
                 }
             }
+        }
+    }
+    #main {
+        .bxa-box {
+            float: left;
+            margin: 0 2rem 2rem 0;
         }
     }
 }
@@ -194,6 +211,12 @@
 }
 
 @include for-size(lg) {
+    #main {
+        .video-wrapper {
+            display: flex;
+            align-items: center;
+        }
+    }
 }
 
 @include for-size(xl) {
