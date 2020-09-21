@@ -8,6 +8,13 @@ jQuery(document).ready(function ($) {
         closeBtn: true,
     });
 
+    $(window).on('scroll', function () {
+        $('#main-nav').addClass('stuck');
+        if ($(this).scrollTop() < 400) {
+            $('#main-nav').removeClass('stuck');
+        }
+    });
+
     $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,

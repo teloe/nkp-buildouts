@@ -17,6 +17,14 @@
 }
 
 @include for-size(desktop) {
+    @keyframes slideDown {
+        0%{@include transform(translateY(-100%));}
+        100%{@include transform(translateY(0));}
+    }
+
+    #main-nav{position:absolute;width:100%;background-color:rgba(255,255,255,0.97)}
+    #main-nav.stuck{position:fixed;top:0;z-index:999;box-shadow:5px 10px 20px rgba(0,0,0,0.1);animation:slideDown .3s ease}
+
 }
 
 @include for-size(lg) {
