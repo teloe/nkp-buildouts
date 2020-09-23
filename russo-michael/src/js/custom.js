@@ -15,9 +15,19 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#slider').flexslider({
+    $('#gallery-slider').flexslider({
         animation: 'fade',
-        directionNav: false,
+        directionNav: true,
         controlNav: false,
+        prevText: '',
+        nextText: '',
+    });
+
+    $('#testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: false,
+        prevText: '',
+        nextText: '',
     });
 });

@@ -4,20 +4,21 @@ button.btn {
     font-size: inherit;
     font-family: inherit;
     font-weight: $bold;
-    display: block;
-    width: 100%;
-    max-width: 320px;
+    display: inline-block;
+    // width: 100%;
+    // max-width: 320px;
     margin: 0 auto;
-    border:none;
-    color: $white;
-    background-color:$primary-color;
+    border:solid 3px $primary-color;
+    color: $primary-color;
+    background-color:$white;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
-    @include padding($top:$md, $right:$lg, $bottom:$md, $left:$lg);
+    @include padding($top:$sm, $right:$lg, $bottom:$sm, $left:$lg);
     @include transition(all .5s ease);
     &:hover {
-        background-color: $alt-color;
+        background-color: $primary-color;
+        color: $white;
     }
 }
 
@@ -48,21 +49,19 @@ button.btn {
         text-decoration: underline;
     }
     &.mobile {
-        border: solid 1px rgba(0,0,0,.2);
+        background-color:#E9E9E9;
         .third {
             width: 33.3333%;
-            color: $base;
+            color: $primary-color;
             padding: 25px 15px;
             &:hover {
-                color:$primary-color;
+                background-color:$primary-color;
+                color: $white;
             }
         }
         .close-menu {
             width: 100%;
             color: $base;
-            &:hover {
-                color:$primary-color;
-            }
         }
         li > a {
             border-top: solid 1px rgba(0,0,0,.08);
@@ -81,18 +80,19 @@ button.btn {
         li {
             a {
                 color: $base;
-                &:hover {
-                    color:$primary-color;
-                }
             }
         }
     }
     &.desktop {
-        ul ul a {
-            font-size: .875rem;
+        ul ul {
+            background-color: $white;
+            box-shadow: 5px 5px 20px rgba(0,0,0,.06);
+            a {
+                font-size: .875rem;
+            }
         }
         > ul > li > a {
-            padding: 20px;
+            padding: 20px 10px;
             font-weight: $extra-bold;
         }
     } 

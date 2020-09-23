@@ -53,7 +53,7 @@ a:link {
     @include transition(all .5s ease);
 }
 a:hover {
-    color: rgba($primary-color, .6);
+    color: $alt-color;
     text-decoration: none;
     outline: none;
 }
@@ -105,13 +105,16 @@ h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
     font-weight: $regular;
     font-style: $style;
+    line-height: 1.25;
 }
 h1 {
     color: $primary-color;
-    font-size: $xl;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
 }
 h2 {
     font-size: $lg;
+    margin-bottom: 1rem;
 }
 h3 {
     font-family: proxima-nova, sans-serif;
