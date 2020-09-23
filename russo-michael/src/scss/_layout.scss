@@ -42,11 +42,22 @@ header {
             margin-top: 2rem;
         }
     }
+    &.internal {
+        background: url(../images/banner-internal.jpg) no-repeat center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        height: 300px;
+        max-height: 500px;
+        .grid-container {
+            width: 100%;
+        }
+    }
 }
 // }}}
 
-// #services {{{
-#services {
+// .services {{{
+.services {
     .flex {
         background-color: $white;
         box-shadow: 5px 10px 20px rgba(0,0,0,.08);
@@ -57,23 +68,23 @@ header {
         .grid-20 {
             text-align: center;
             padding: 0;
-            a {
-                display: block;
-                padding: 2rem 1rem;
-                // height: 170px;
-                color: $base;
-                font-weight: $bold;
-                &:hover {
-                    background-color: #f5f5f5;
-                    color: $alt-color;
-                }
-                img {
-                    margin-bottom: $sm;
-                }
-                p {
-                    padding: 0;
-                    line-height: 1.25;
-                }
+        }
+        a {
+            display: block;
+            padding: 2rem 1rem;
+            // height: 170px;
+            color: $base;
+            font-weight: $bold;
+            &:hover {
+                background-color: #f5f5f5;
+                color: $alt-color;
+            }
+            img {
+                margin-bottom: $sm;
+            }
+            p {
+                padding: 0;
+                line-height: 1.25;
             }
         }
     }
@@ -108,43 +119,43 @@ header {
     background: url(../images/gallery-bg.jpg) no-repeat center;
     background-size: cover;
     padding: 6rem 0;
-    #gallery-slider {
-        position: relative;
-        img {
-            display: block;
-            margin: 0 auto;
+}
+.gallery-slider {
+    position: relative;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .flex-prev, .flex-next {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border: solid 1px $primary-color;
+        z-index:2;
+        &::before {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 2rem;
         }
-        .flex-prev, .flex-next {
-            position: absolute;
-            top: 50%;
-            -moz-transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $white;
-            border: solid 1px $primary-color;
-            z-index:2;
-            &::before {
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-                font-size: 2rem;
-            }
+    }
+    .flex-prev {
+        left: 0;
+        &::before {
+            content: '\f053';
         }
-        .flex-prev {
-            left: 0;
-            &::before {
-                content: '\f053';
-            }
-        }
-        .flex-next {
-            right: 0;
-            &::before {
-                content: '\f054';
-            }
+    }
+    .flex-next {
+        right: 0;
+        &::before {
+            content: '\f054';
         }
     }
 }
@@ -243,4 +254,45 @@ footer {
 // }}}
 
 // #main {{{
+#main {
+    padding: 4rem 0;
+    #content {
+        img {
+            margin-bottom: 2rem;
+        }
+    }
+}
 // }}}
+
+#sidebar {
+    .testimonials {
+        background: url(../images/sb-bg.jpg) no-repeat center;
+        background-size: cover;
+        padding: 2rem 1rem;
+        margin-top: 3rem;
+        h2, p {
+            color: $white;
+        }
+        .btn {
+            width: 100%;
+            &:hover {
+                background-color: $alt-color;
+            }
+        }
+    }
+    .services {
+        .flex {
+            margin: 4rem 0 0;
+            flex-direction: column;
+            .grid-100 {
+                width: 100%;
+            }
+            a {
+                height: auto;
+                display: block;
+                text-align: center;
+                padding: 2rem 0;
+            }
+        }
+    }
+}

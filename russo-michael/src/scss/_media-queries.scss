@@ -32,6 +32,9 @@
                 margin-top: 4rem;
             }
         }
+        &.internal {
+            height: 400px;
+        }
     }
     #sleeve, #bypass, #bariatric, #balloon, #gerd {
         .grid-container {
@@ -114,7 +117,7 @@
             }
         }
     }
-    #services {
+    .services {
         .flex {
             margin-top: -3rem;
             a {

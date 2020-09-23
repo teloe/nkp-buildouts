@@ -91,6 +91,7 @@ h1 {
   margin-bottom: 1.5rem; }
 
 h2 {
+  color: #5DAAA4;
   font-size: 2rem;
   margin-bottom: 1rem; }
 
@@ -274,30 +275,39 @@ header {
       color: #3a6a5b;
       font-size: 2.4rem;
       margin-top: 2rem; }
+  #banner.internal {
+    background: url(../images/banner-internal.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    max-height: 500px; }
+    #banner.internal .grid-container {
+      width: 100%; }
 
-#services .flex {
+.services .flex {
   background-color: #fff;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center; }
-  #services .flex .grid-20 {
+  .services .flex .grid-20 {
     text-align: center;
     padding: 0; }
-    #services .flex .grid-20 a {
-      display: block;
-      padding: 2rem 1rem;
-      color: #363636;
-      font-weight: 700; }
-      #services .flex .grid-20 a:hover {
-        background-color: #f5f5f5;
-        color: #3a6a5b; }
-      #services .flex .grid-20 a img {
-        margin-bottom: 1rem; }
-      #services .flex .grid-20 a p {
-        padding: 0;
-        line-height: 1.25; }
+  .services .flex a {
+    display: block;
+    padding: 2rem 1rem;
+    color: #363636;
+    font-weight: 700; }
+    .services .flex a:hover {
+      background-color: #f5f5f5;
+      color: #3a6a5b; }
+    .services .flex a img {
+      margin-bottom: 1rem; }
+    .services .flex a p {
+      padding: 0;
+      line-height: 1.25; }
 
 #mission {
   padding: 6rem 0 4rem; }
@@ -317,37 +327,38 @@ header {
   background: url(../images/gallery-bg.jpg) no-repeat center;
   background-size: cover;
   padding: 6rem 0; }
-  #gallery #gallery-slider {
-    position: relative; }
-    #gallery #gallery-slider img {
-      display: block;
-      margin: 0 auto; }
-    #gallery #gallery-slider .flex-prev, #gallery #gallery-slider .flex-next {
-      position: absolute;
-      top: 50%;
-      -moz-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #fff;
-      border: solid 1px #5DAAA4;
-      z-index: 2; }
-      #gallery #gallery-slider .flex-prev::before, #gallery #gallery-slider .flex-next::before {
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        font-size: 2rem; }
-    #gallery #gallery-slider .flex-prev {
-      left: 0; }
-      #gallery #gallery-slider .flex-prev::before {
-        content: '\f053'; }
-    #gallery #gallery-slider .flex-next {
-      right: 0; }
-      #gallery #gallery-slider .flex-next::before {
-        content: '\f054'; }
+
+.gallery-slider {
+  position: relative; }
+  .gallery-slider img {
+    display: block;
+    margin: 0 auto; }
+  .gallery-slider .flex-prev, .gallery-slider .flex-next {
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: solid 1px #5DAAA4;
+    z-index: 2; }
+    .gallery-slider .flex-prev::before, .gallery-slider .flex-next::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 2rem; }
+  .gallery-slider .flex-prev {
+    left: 0; }
+    .gallery-slider .flex-prev::before {
+      content: '\f053'; }
+  .gallery-slider .flex-next {
+    right: 0; }
+    .gallery-slider .flex-next::before {
+      content: '\f054'; }
 
 #testimonials {
   padding-top: 6rem; }
@@ -411,6 +422,34 @@ footer .bottom .flex {
   footer .bottom .flex p {
     margin: 0 1.5rem;
     padding-bottom: .5rem; }
+
+#main {
+  padding: 4rem 0; }
+  #main #content img {
+    margin-bottom: 2rem; }
+
+#sidebar .testimonials {
+  background: url(../images/sb-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 2rem 1rem;
+  margin-top: 3rem; }
+  #sidebar .testimonials h2, #sidebar .testimonials p {
+    color: #fff; }
+  #sidebar .testimonials .btn {
+    width: 100%; }
+    #sidebar .testimonials .btn:hover {
+      background-color: #3a6a5b; }
+
+#sidebar .services .flex {
+  margin: 4rem 0 0;
+  flex-direction: column; }
+  #sidebar .services .flex .grid-100 {
+    width: 100%; }
+  #sidebar .services .flex a {
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 2rem 0; }
 
 /* NKP GLOBAL STYLES */
 img {
@@ -478,6 +517,8 @@ iframe {
       #banner .grid-container h1 {
         font-size: 4rem;
         margin-top: 4rem; }
+    #banner.internal {
+      height: 400px; }
   #sleeve .grid-container, #bypass .grid-container, #bariatric .grid-container, #balloon .grid-container, #gerd .grid-container {
     display: flex;
     align-items: center; } }
@@ -537,9 +578,9 @@ iframe {
     margin-top: 60px; }
     #banner .grid-container h1 {
       margin: 1rem 0; }
-  #services .flex {
+  .services .flex {
     margin-top: -3rem; }
-    #services .flex a {
+    .services .flex a {
       height: 198px; } }
 
 @media only screen and (min-width: 1200px) {

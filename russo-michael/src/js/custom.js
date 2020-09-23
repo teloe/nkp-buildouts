@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#gallery-slider').flexslider({
+    $('.gallery-slider').flexslider({
         animation: 'fade',
         directionNav: true,
         controlNav: false,
