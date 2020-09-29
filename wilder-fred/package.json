@@ -1,0 +1,24 @@
+{
+    "name": "wilder-fred",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "last 2 versions"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.0.0",
+        "browser-sync": "^2.26.12",
+        "eslint": "^7.9.0",
+        "gulp": "^4.0.2",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "postcss": "^8.0.9"
+    }
+}

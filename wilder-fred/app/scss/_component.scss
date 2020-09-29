@@ -1,0 +1,125 @@
+// Buttons
+a.btn,
+button.btn {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    border:none;
+    color: $white;
+    background-color:$primary-color;
+    cursor:pointer;
+    text-align: center;
+    text-transform: uppercase;
+    @include padding($top:$md, $right:$lg, $bottom:$md, $left:$lg);
+    transition: all .5s ease;
+    &:hover {
+        background-color: $alt-color;
+    }
+}
+
+// Social
+.social {
+    a {
+        display: inline-block;
+        margin: 0 $xs;
+        font-size: 1.25rem;
+    }
+}
+
+//Nav
+.stellarnav {
+    li.has-sub > ul {
+        padding-left: 1rem;
+    }
+    li.open > .dd-toggle i {
+        -moz-transform: rotate(180deg)!important;
+        -webkit-transform: rotate(180deg)!important;
+        transform: rotate(180deg)!important;
+    }
+    li.open > a {
+        font-weight:700;
+        text-decoration: underline;
+    }
+    &.mobile {
+        border: solid 1px rgba(0,0,0,.2);
+        .third {
+            width: 33.3333%;
+            color: $base;
+            padding: 25px 15px;
+            &:hover {
+                color:$primary-color;
+            }
+        }
+        .close-menu {
+            width: 100%;
+            color: $base;
+            &:hover {
+                color:$primary-color;
+            }
+        }
+        li > a {
+            border-top: solid 1px rgba(0,0,0,.08);
+        }
+        ul {
+            background:none;
+        }
+    }
+    .dd-toggle {
+        height: 51px;
+        .fa-plus::before {
+            content: '\f078';
+        }
+    }
+    ul {
+        li {
+            a {
+                color: $base;
+                &:hover {
+                    color:$primary-color;
+                }
+            }
+        }
+    }
+    > ul > li > a {
+        padding: 20px 18px;
+    }
+
+}
+
+/* FORM */
+form {
+    input,
+    select,
+    textarea {
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        margin: 0 0 10px;
+        padding: 15px;
+        border: 1px solid $primary-color;
+        background: #fff;
+        @include transition(all .5s ease);
+        &:focus {
+            outline:none;
+        }
+    }
+    textarea {
+        height: 200px;
+    }
+    span.agree {
+        display: inline-block;
+    }
+    ::placeholder {
+        color: blue;
+    }
+    // @include placeholder {
+    //     font-style: normal;
+    //     color: $dark;
+    //     font-family: inherit;
+    //     font-size: inherit;
+    // }
+}
+
