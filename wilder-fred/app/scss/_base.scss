@@ -1,20 +1,21 @@
 // Colors
-$primary-color: #f2bc29;
-$alt-color: #FFD164;
+$primary-color: rgb(12, 146, 146);
+$alt-color: rgba(206, 240, 234, 0.68);
 $black: #000;
 $white: #fff;
 
 // Font colors
-$base: #363636;
-$dark: #808080;
-$sub: #acacac;
+// $base: #363636;
+$base: rgb(46, 46, 46);
+$sub: rgb(169, 169, 169);
 
 // Typography
 $font-size: 16px;
-$font-stack: Arial, Helvetica, sans-serif;
-$header-stack: 'trajan-pro-3', serif;
+$font-stack: avenir-light, sans-serif;
+$alt-stack: futura-pt, sans-serif;
+$header-stack: din-2014, sans-serif;
 $style: normal;
-$thin: 300;
+$light: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
@@ -26,8 +27,13 @@ $md: 1.5rem;
 $lg: 2rem;
 $xl: 4rem;
 $xxl: 6rem;
+$xxxl: 8rem;
 
 // General
+@font-face {
+    font-family: avenir-light;
+    src: url(../fonts/avenirltstd-light.otf);
+}
 html {
     font-size: $font-size;
     box-sizing: border-box;
@@ -39,7 +45,7 @@ body {
     color: $base;
     font-family: $font-stack;
     font-style: $style;
-    font-weight: $regular;
+    font-weight: $light;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -102,15 +108,20 @@ ol {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
+    line-height: 1.1;
 }
 h1 {
     color: $primary-color;
     font-style: $style;
-    font-weight: $regular;
-    font-size: $xl;
+    font-weight: $light;
+    // font-size: $xl;
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 h2 {
-    font-size: $lg;
+    // font-size: $lg;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: clamp(1.25rem, 5vw, 2.5rem);
 }
 h3 {
     font-family: proxima-nova, sans-serif;

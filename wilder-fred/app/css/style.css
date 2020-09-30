@@ -9,7 +9,12 @@ Template: nkpv2
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 @import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
+@import url(https://use.typekit.net/bsz0bub.css);
 /*---- Do Not Remove ----*/
+@font-face {
+  font-family: avenir-light;
+  src: url(../fonts/avenirltstd-light.otf); }
+
 html {
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -20,24 +25,24 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #363636;
-  font-family: "proxima-nova", sans-serif;
+  color: #2e2e2e;
+  font-family: avenir-light, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 a,
 a:visited,
 a:link {
-  color: #f2bc29;
+  color: #0c9292;
   text-decoration: none;
   outline: none;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
 a:hover {
-  color: rgba(242, 188, 41, 0.6);
+  color: rgba(12, 146, 146, 0.6);
   text-decoration: none;
   outline: none; }
 
@@ -78,20 +83,23 @@ ol {
   display: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "trajan-pro-3", serif; }
+  font-family: din-2014, sans-serif;
+  line-height: 1.1; }
 
 h1 {
-  color: #f2bc29;
+  color: #0c9292;
   font-style: normal;
-  font-weight: 400;
-  font-size: 4rem; }
+  font-weight: 300;
+  font-size: clamp(1.5rem, 5vw, 3rem); }
 
 h2 {
-  font-size: 2rem; }
+  color: #0c9292;
+  text-transform: uppercase;
+  font-size: clamp(1.25rem, 5vw, 2.5rem); }
 
 h3 {
   font-family: proxima-nova, sans-serif;
-  color: #acacac;
+  color: darkgray;
   font-size: 1.5rem; }
 
 p {
@@ -110,7 +118,7 @@ button.btn {
   margin: 0 auto;
   border: none;
   color: #fff;
-  background-color: #f2bc29;
+  background-color: #0c9292;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
@@ -118,23 +126,24 @@ button.btn {
   padding-right: 2rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
   a.btn:hover,
   button.btn:hover {
-    background-color: #FFD164; }
+    background-color: rgba(206, 240, 234, 0.68); }
 
 .social a {
   display: inline-block;
   margin: 0 0.5rem;
   font-size: 1.25rem; }
 
-.stellarnav li.has-sub > ul {
-  padding-left: 1rem; }
+.stellarnav li > .dd-toggle i {
+  -webkit-transition: none;
+  transition: none; }
 
 .stellarnav li.open > .dd-toggle i {
   -webkit-transform: rotate(180deg) !important;
-  transform: rotate(180deg) !important; }
+          transform: rotate(180deg) !important; }
 
 .stellarnav li.open > a {
   font-weight: 700;
@@ -142,17 +151,17 @@ button.btn {
 
 .stellarnav.mobile {
   border: solid 1px rgba(0, 0, 0, 0.2); }
-  .stellarnav.mobile .third {
-    width: 33.3333%;
-    color: #363636;
-    padding: 25px 15px; }
-    .stellarnav.mobile .third:hover {
-      color: #f2bc29; }
+  .stellarnav.mobile li.has-sub > ul li a {
+    padding-left: 2rem; }
+  .stellarnav.mobile #menu-main-nav {
+    display: block !important; }
+  .stellarnav.mobile .menu-toggle {
+    display: none !important; }
   .stellarnav.mobile .close-menu {
     width: 100%;
-    color: #363636; }
+    color: #2e2e2e; }
     .stellarnav.mobile .close-menu:hover {
-      color: #f2bc29; }
+      color: #0c9292; }
   .stellarnav.mobile li > a {
     border-top: solid 1px rgba(0, 0, 0, 0.08); }
   .stellarnav.mobile ul {
@@ -164,9 +173,9 @@ button.btn {
     content: '\f078'; }
 
 .stellarnav ul li a {
-  color: #363636; }
+  color: #2e2e2e; }
   .stellarnav ul li a:hover {
-    color: #f2bc29; }
+    color: #0c9292; }
 
 .stellarnav > ul > li > a {
   padding: 20px 18px; }
@@ -180,10 +189,10 @@ form textarea {
   width: 100%;
   margin: 0 0 10px;
   padding: 15px;
-  border: 1px solid #f2bc29;
+  border: 1px solid #0c9292;
   background: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
   form input:focus,
   form select:focus,
   form textarea:focus {
