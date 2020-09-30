@@ -25,6 +25,8 @@ html {
           box-sizing: inherit; }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   color: #2e2e2e;
   font-family: avenir-light, sans-serif;
   font-style: normal;
