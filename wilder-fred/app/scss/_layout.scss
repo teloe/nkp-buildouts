@@ -1,8 +1,215 @@
 // header {{{
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255,255,255,.95);
+    transition: all .3s ease;
+    .grid-container {
+        padding: 10px 0;
+        .logo {
+            text-align: center;
+            // margin-top: 3rem;
+            img {
+                width: 200px;
+                transition: all .3s ease;
+            }
+        }
+        .phone {
+            font-family: $header-stack;
+            font-weight: $bold;
+            color: rgb(6, 73, 73);
+            margin-top: .5rem;
+            padding-bottom:.25rem;
+        }
+    }
+    &.scroll {
+        box-shadow: 0 10px 20px rgba(0,0,0,.08);
+        .logo {
+            img {
+                width: 160px;
+            }
+        }
+    }
+}
+.hamburger {
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    .hamburger-box {
+        width: 24px!important;
+        .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+            width: 24px;
+            height: 3px;
+        }
+        .hamburger-inner::before {
+            top: -8px;
+        }
+        .hamburger-inner::after {
+            bottom: -8px;
+        }
+    }
+}
+// }}}
+
+// nav {{{
+#main-nav {
+    opacity: 0;
+    overflow-y: scroll;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #E6E6E6;
+    transition: all .3s ease;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 // }}}
 
 // #banner {{{
+#banner-video {
+    display: none;
+    .grid-container {
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+        video {
+            // position: absolute;
+            // top: 0;
+            // right: 0;
+            // left: 0;
+            width: 83%;
+            margin: 0 auto;
+        }
+    }
+}
 // }}}
+
+// #testimonials {{{
+#testimonials {
+    padding: 4rem 0;
+    h2 {
+        color: $base;
+        font-weight: $light;
+        text-shadow:rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+        position:relative;
+        margin-bottom: 1rem;
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 4px;
+            background-color: $alt-color;
+            display: block;
+            width: 24%;
+        }
+    }
+}
+// }}}
+
+// .services {{{
+.services {
+    .content {
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        height: 35vw;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color:rgba(195, 217, 217, 0.4);
+            z-index: -1;
+        }
+        h2 {
+            font-family: $alt-stack;
+            font-weight: $bold;
+            font-size: 9vw;
+            color: $link;
+        }
+    }
+    .breast {
+        background: url(../images/breast.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .body {
+        background: url(../images/body.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .face {
+        background: url(../images/face.jpg) no-repeat center;
+        background-size: cover;
+        background-position-y: 35%;
+    }
+    .skin {
+        background: url(../images/skin.jpg) no-repeat center;
+        background-size: cover;
+        h2 {
+            color: $white;
+        }
+    }
+    .faq {
+        background: #C3D9D9;
+        h2 {
+            color: $white;
+        }
+    }
+    &.mobile {
+        margin-top: 134px;
+        .grid-100 {
+            padding:0;
+        }
+    }
+    &.desktop {
+        display: none;
+        .grid-container {
+            max-width: 100%;
+        }
+        .grid-20 {
+            padding: 0;
+        }
+    }
+}
+// }}}
+
+#breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
+    margin-bottom: 6rem;
+    .grid-container {
+        display: flex;
+        align-items: center;
+    }
+    h2 {
+        margin-bottom: 1rem;
+    }
+    img {
+        width: 100%;
+    }
+    .btn {
+        margin-left: 0;
+    }
+}
 
 // #contact {{{
 // }}}

@@ -7,14 +7,164 @@
 @include for-size(xs) {
 }
 
+// max 767 {{{
 @include for-size(sm) {
+    #testimonials {
+        h2 {
+            margin-bottom: 2rem;
+            &::before {
+                top: -15px;
+                bottom: initial;
+                width: 100%;
+                margin-bottom: auto;
+            }
+            &::after {
+                bottom: -15px;
+                top: initial;
+                width: 100%;
+                margin-bottom: auto;
+            }
+        }
+    }
+    #breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
+        margin-bottom: 4rem;
+        h2 {
+            margin: 2rem 0;
+            text-align: center;
+        }
+    }
 }
+// }}}
 
+// min 768 {{{
 @include for-size(md) {
+    header {
+        .grid-container {
+            .logo {
+                img {
+                    width: 380px;
+                }
+            }
+        }
+        &.scroll {
+            .logo {
+                img {
+                    width: 320px;
+                }
+            }
+        }
+    }
+    .services {
+        &.mobile {
+            margin-top: 167px;
+        }
+        .content {
+            height: 175px;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
 }
+// }}}
 
+// min 960 {{{
 @include for-size(tablet) {
+    header {
+        .grid-container {
+            position: relative;
+            .logo {
+                margin-top: 0;
+            }
+            .phone {
+                position: absolute;
+                right: 15px;
+                top: 0;
+            }
+        }
+    }
+    .hamburger {
+        display:none!important;
+    }
+    #main-nav {
+        opacity: 1;
+        visibility: visible;
+        position: initial;
+        overflow-y: initial;
+        background:none;
+        height: auto;
+        .stellarnav {
+            padding: 0;
+            ul {
+                ul {
+                    background-color: rgba(255,255,255,.95);
+                    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+                }
+            }
+        }
+    }
+    #banner-video {
+        margin-top: 188px;
+        display: block;
+    }
+    .services {
+        .content {
+            display: block;
+            height: 350px;
+            h2 {
+                position: absolute;
+                transform: rotate(-90deg);
+                transform-origin: top;
+                font-size: 3rem;
+            }
+            &.faq {
+                h2 {
+                    bottom: 10px;
+                    right: 2.5rem;
+                }
+            }
+            &.breast {
+                h2 {
+                    bottom: 60px;
+                    right: 2.5rem;
+                    font-size: 4rem;
+                }
+            }
+            &.body {
+                h2 {
+                    bottom: 40px;
+                    right: 2.5rem;
+                    font-size: 4rem;
+                }
+            }
+            &.face {
+                h2 {
+                    bottom: 28px;
+                    right: 2.5rem;
+                    font-size: 4rem;
+                }
+            }
+            &.skin {
+                h2 {
+                    bottom: 28px;
+                    right: 2.5rem;
+                    font-size: 4rem;
+                }
+            }
+        }
+        &.mobile {
+            display: none;
+        }
+        &.desktop {
+            display: block;
+        }
+    }
+    #breast-aug {
+        margin-top: 6rem;
+    }
+
 }
+// }}}
 
 @include for-size(desktop) {
 }
@@ -24,3 +174,4 @@
 
 @include for-size(xl) {
 }
+

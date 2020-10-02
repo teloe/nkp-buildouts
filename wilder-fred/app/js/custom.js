@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
-        breakpoint: 1024,
+        breakpoint: 959,
         menuLabel: 'Menu',
         phoneBtn: '',
         locationBtn: '',
@@ -9,6 +9,14 @@ jQuery(document).ready(function ($) {
 
     $('.hamburger').on('click', function () {
         $(this).toggleClass('is-active');
+        $('#main-nav').toggleClass('open');
+    });
+
+    $(window).on('scroll', function () {
+        $('header').addClass('scroll');
+        if ($(this).scrollTop() === 0) {
+            $('header').removeClass('scroll');
+        }
     });
 
     $('#slider').flexslider({

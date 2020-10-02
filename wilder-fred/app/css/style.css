@@ -97,7 +97,7 @@ h1 {
 h2 {
   color: #0c9292;
   text-transform: uppercase;
-  font-size: clamp(1.25rem, 5vw, 2.5rem); }
+  font-size: clamp(1.25rem, 5vw, 1.75rem); }
 
 h3 {
   font-family: proxima-nova, sans-serif;
@@ -113,46 +113,45 @@ p, li {
 a.btn,
 button.btn {
   font-size: inherit;
-  font-family: inherit;
+  font-family: din-2014, sans-serif;
+  font-weight: 700;
   display: block;
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
   border: none;
-  color: #fff;
-  background-color: #0c9292;
+  color: #727272;
+  background-color: rgba(206, 240, 234, 0.68);
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 1.5rem;
-  padding-right: 2rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
+  padding: .25rem 1rem;
+  line-height: normal;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
   a.btn:hover,
   button.btn:hover {
-    background-color: rgba(206, 240, 234, 0.68); }
+    background-color: #cef0ea; }
 
 .social a {
   display: inline-block;
   margin: 0 0.5rem;
   font-size: 1.25rem; }
 
-.stellarnav li > .dd-toggle i {
-  -webkit-transition: none;
-  transition: none; }
-
-.stellarnav li.open > .dd-toggle i {
-  -webkit-transform: rotate(180deg) !important;
-          transform: rotate(180deg) !important; }
-
-.stellarnav li.open > a {
-  font-weight: 700;
-  text-decoration: underline; }
-
-.stellarnav.mobile {
-  border: solid 1px rgba(0, 0, 0, 0.2); }
+.stellarnav {
+  padding: 4rem 0; }
+  .stellarnav li > .dd-toggle i {
+    -webkit-transition: none;
+    transition: none; }
+  .stellarnav li.open > .dd-toggle i {
+    -webkit-transform: rotate(180deg) !important;
+            transform: rotate(180deg) !important; }
+  .stellarnav li.open > a {
+    font-weight: 700;
+    text-decoration: underline; }
   .stellarnav.mobile li.has-sub > ul li a {
     padding-left: 2rem; }
   .stellarnav.mobile #menu-main-nav {
@@ -165,22 +164,25 @@ button.btn {
     .stellarnav.mobile .close-menu:hover {
       color: #0c9292; }
   .stellarnav.mobile li > a {
-    border-top: solid 1px rgba(0, 0, 0, 0.08); }
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08); }
+  .stellarnav.mobile li:last-of-type > a {
+    border-bottom: none; }
   .stellarnav.mobile ul {
     background: none; }
-
-.stellarnav .dd-toggle {
-  height: 51px; }
-  .stellarnav .dd-toggle .fa-plus::before {
-    content: '\f078'; }
-
-.stellarnav ul li a {
-  color: #2e2e2e; }
-  .stellarnav ul li a:hover {
-    color: #0c9292; }
-
-.stellarnav > ul > li > a {
-  padding: 20px 18px; }
+  .stellarnav .dd-toggle {
+    height: 51px; }
+    .stellarnav .dd-toggle .fa-plus::before {
+      content: '\f078'; }
+  .stellarnav ul li a {
+    font-family: din-2014, sans-serif;
+    font-weight: 700;
+    color: #727272 !important;
+    text-transform: uppercase;
+    color: #2e2e2e; }
+    .stellarnav ul li a:hover {
+      color: #0c9292 !important; }
+  .stellarnav > ul > li > a {
+    padding: 20px 18px; }
 
 /* FORM */
 form input,
@@ -220,6 +222,178 @@ form ::-ms-input-placeholder {
 
 form ::placeholder {
   color: blue; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  header .grid-container {
+    padding: 10px 0; }
+    header .grid-container .logo {
+      text-align: center; }
+      header .grid-container .logo img {
+        width: 200px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease; }
+    header .grid-container .phone {
+      font-family: din-2014, sans-serif;
+      font-weight: 700;
+      color: #064949;
+      margin-top: .5rem;
+      padding-bottom: .25rem; }
+  header.scroll {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); }
+    header.scroll .logo img {
+      width: 160px; }
+
+.hamburger {
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  right: 15px; }
+  .hamburger .hamburger-box {
+    width: 24px !important; }
+    .hamburger .hamburger-box .hamburger-inner, .hamburger .hamburger-box .hamburger-inner::after, .hamburger .hamburger-box .hamburger-inner::before {
+      width: 24px;
+      height: 3px; }
+    .hamburger .hamburger-box .hamburger-inner::before {
+      top: -8px; }
+    .hamburger .hamburger-box .hamburger-inner::after {
+      bottom: -8px; }
+
+#main-nav {
+  opacity: 0;
+  overflow-y: scroll;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #E6E6E6;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+  #main-nav.open {
+    opacity: 1;
+    visibility: visible; }
+
+#banner-video {
+  display: none; }
+  #banner-video .grid-container {
+    max-width: 100%;
+    position: relative;
+    text-align: center; }
+    #banner-video .grid-container video {
+      width: 83%;
+      margin: 0 auto; }
+
+#testimonials {
+  padding: 4rem 0; }
+  #testimonials h2 {
+    color: #2e2e2e;
+    font-weight: 300;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    position: relative;
+    margin-bottom: 1rem; }
+    #testimonials h2::before {
+      left: 0; }
+    #testimonials h2::after {
+      right: 0; }
+    #testimonials h2::before, #testimonials h2::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 4px;
+      background-color: rgba(206, 240, 234, 0.68);
+      display: block;
+      width: 24%; }
+
+.services .content {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35vw;
+  position: relative;
+  z-index: 1; }
+  .services .content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(195, 217, 217, 0.4);
+    z-index: -1; }
+  .services .content h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 9vw;
+    color: #727272; }
+
+.services .breast {
+  background: url(../images/breast.jpg) no-repeat center;
+  background-size: cover; }
+
+.services .body {
+  background: url(../images/body.jpg) no-repeat center;
+  background-size: cover; }
+
+.services .face {
+  background: url(../images/face.jpg) no-repeat center;
+  background-size: cover;
+  background-position-y: 35%; }
+
+.services .skin {
+  background: url(../images/skin.jpg) no-repeat center;
+  background-size: cover; }
+  .services .skin h2 {
+    color: #fff; }
+
+.services .faq {
+  background: #C3D9D9; }
+  .services .faq h2 {
+    color: #fff; }
+
+.services.mobile {
+  margin-top: 134px; }
+  .services.mobile .grid-100 {
+    padding: 0; }
+
+.services.desktop {
+  display: none; }
+  .services.desktop .grid-container {
+    max-width: 100%; }
+  .services.desktop .grid-20 {
+    padding: 0; }
+
+#breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
+  margin-bottom: 6rem; }
+  #breast-aug .grid-container, #mommy-makeover .grid-container, #rhinoplasty .grid-container, #implant-removal .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #breast-aug h2, #mommy-makeover h2, #rhinoplasty h2, #implant-removal h2 {
+    margin-bottom: 1rem; }
+  #breast-aug img, #mommy-makeover img, #rhinoplasty img, #implant-removal img {
+    width: 100%; }
+  #breast-aug .btn, #mommy-makeover .btn, #rhinoplasty .btn, #implant-removal .btn {
+    margin-left: 0; }
 
 /* NKP GLOBAL STYLES */
 img {
@@ -274,5 +448,99 @@ iframe {
     height: 280px; }
   .patient-single {
     width: 100% !important; } }
+
+@media only screen and (max-width: 767px) {
+  #testimonials h2 {
+    margin-bottom: 2rem; }
+    #testimonials h2::before {
+      top: -15px;
+      bottom: initial;
+      width: 100%;
+      margin-bottom: auto; }
+    #testimonials h2::after {
+      bottom: -15px;
+      top: initial;
+      width: 100%;
+      margin-bottom: auto; }
+  #breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
+    margin-bottom: 4rem; }
+    #breast-aug h2, #mommy-makeover h2, #rhinoplasty h2, #implant-removal h2 {
+      margin: 2rem 0;
+      text-align: center; } }
+
+@media only screen and (min-width: 768px) {
+  header .grid-container .logo img {
+    width: 380px; }
+  header.scroll .logo img {
+    width: 320px; }
+  .services.mobile {
+    margin-top: 167px; }
+  .services .content {
+    height: 175px; }
+    .services .content h2 {
+      font-size: 3rem; } }
+
+@media only screen and (min-width: 960px) {
+  header .grid-container {
+    position: relative; }
+    header .grid-container .logo {
+      margin-top: 0; }
+    header .grid-container .phone {
+      position: absolute;
+      right: 15px;
+      top: 0; }
+  .hamburger {
+    display: none !important; }
+  #main-nav {
+    opacity: 1;
+    visibility: visible;
+    position: initial;
+    overflow-y: initial;
+    background: none;
+    height: auto; }
+    #main-nav .stellarnav {
+      padding: 0; }
+      #main-nav .stellarnav ul ul {
+        background-color: rgba(255, 255, 255, 0.95);
+        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+  #banner-video {
+    margin-top: 188px;
+    display: block; }
+  .services .content {
+    display: block;
+    height: 350px; }
+    .services .content h2 {
+      position: absolute;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      font-size: 3rem; }
+    .services .content.faq h2 {
+      bottom: 10px;
+      right: 2.5rem; }
+    .services .content.breast h2 {
+      bottom: 60px;
+      right: 2.5rem;
+      font-size: 4rem; }
+    .services .content.body h2 {
+      bottom: 40px;
+      right: 2.5rem;
+      font-size: 4rem; }
+    .services .content.face h2 {
+      bottom: 28px;
+      right: 2.5rem;
+      font-size: 4rem; }
+    .services .content.skin h2 {
+      bottom: 28px;
+      right: 2.5rem;
+      font-size: 4rem; }
+  .services.mobile {
+    display: none; }
+  .services.desktop {
+    display: block; }
+  #breast-aug {
+    margin-top: 6rem; } }
 
 /*# sourceMappingURL=style.css.map */
