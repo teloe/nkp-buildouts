@@ -33,6 +33,18 @@
             text-align: center;
         }
     }
+    footer {
+        .gallery {
+            .content {
+                h2 {
+                    font-size: 2.25rem;
+                }
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
 }
 // }}}
 
@@ -62,6 +74,39 @@
             height: 175px;
             h2 {
                 font-size: 3rem;
+            }
+        }
+    }
+    #breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
+        .grid-container {
+            display: flex;
+            align-items: center;
+        }
+    }
+    #about {
+        .goal {
+            position: relative;
+            margin: 0 0 2rem -5rem;
+            padding-left: 5rem;
+        }
+    }
+    footer {
+        .bottom {
+            .grid-33 {
+                &:first-of-type {
+                    text-align: left;
+                }
+                &:last-of-type {
+                    text-align: right;
+                }
+            }
+            .grid-50 {
+                &:first-of-type {
+                    text-align: left;
+                }
+                &:last-of-type {
+                    text-align: right;
+                }
             }
         }
     }
@@ -162,6 +207,16 @@
     #breast-aug {
         margin-top: 6rem;
     }
+    footer {
+        .grid-33 {
+            .phone {
+                padding-right: 1rem;
+            }
+            .phone, .fax {
+                display:inline-block;
+            }
+        }
+    }
 
 }
 // }}}
@@ -170,8 +225,39 @@
 }
 
 @include for-size(lg) {
+    footer {
+        .top {
+            .grid-container {
+                height: 28vw;
+                overflow-y: hidden;
+            }
+            .contact {
+                background: url(../images/contact-bg.jpg) no-repeat center;
+                background-size: cover;
+                position: relative;
+                .content {
+                    padding: 15px;
+                    max-width: 585px;
+                    height: 28.5vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+        
+    }
 }
 
 @include for-size(xl) {
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 1025px) {
+    footer {
+        .top {
+            .grid-50 {
+                width: 100%;
+            }
+        }
+    }
+}

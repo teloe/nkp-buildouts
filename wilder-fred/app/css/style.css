@@ -190,11 +190,14 @@ form select,
 form textarea {
   font-size: inherit;
   font-family: inherit;
+  color: #fff;
+  font-weight: 700;
   width: 100%;
   margin: 0 0 10px;
-  padding: 15px;
-  border: 1px solid #0c9292;
-  background: #fff;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #0c9292;
+  background: none;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
   form input:focus,
@@ -203,25 +206,25 @@ form textarea {
     outline: none; }
 
 form textarea {
-  height: 200px; }
+  height: 170px; }
 
 form span.agree {
   display: inline-block; }
 
 form ::-webkit-input-placeholder {
-  color: blue; }
+  color: #fff; }
 
 form ::-moz-placeholder {
-  color: blue; }
+  color: #fff; }
 
 form :-ms-input-placeholder {
-  color: blue; }
+  color: #fff; }
 
 form ::-ms-input-placeholder {
-  color: blue; }
+  color: #fff; }
 
 form ::placeholder {
-  color: blue; }
+  color: #fff; }
 
 header {
   position: fixed;
@@ -316,6 +319,8 @@ header {
       background-color: rgba(206, 240, 234, 0.68);
       display: block;
       width: 24%; }
+  #testimonials .btn {
+    margin-top: 1rem; }
 
 .services .content {
   padding: 0 2rem;
@@ -381,19 +386,189 @@ header {
 
 #breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
   margin-bottom: 6rem; }
-  #breast-aug .grid-container, #mommy-makeover .grid-container, #rhinoplasty .grid-container, #implant-removal .grid-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   #breast-aug h2, #mommy-makeover h2, #rhinoplasty h2, #implant-removal h2 {
     margin-bottom: 1rem; }
   #breast-aug img, #mommy-makeover img, #rhinoplasty img, #implant-removal img {
     width: 100%; }
   #breast-aug .btn, #mommy-makeover .btn, #rhinoplasty .btn, #implant-removal .btn {
     margin-left: 0; }
+
+#about {
+  margin-bottom: 4rem; }
+  #about .grid-100 h1 {
+    font-size: 2.25rem;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    color: #2e2e2e;
+    margin-bottom: 2rem; }
+    #about .grid-100 h1 span {
+      color: #0c9292; }
+  #about .grid-50 h1 {
+    text-transform: uppercase;
+    color: #2e2e2e;
+    font-size: 2rem;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    margin-bottom: 1rem; }
+    #about .grid-50 h1 span:first-of-type {
+      color: #0c9292;
+      font-size: 4rem; }
+    #about .grid-50 h1 span:last-of-type {
+      font-size: 1.5rem; }
+  #about .video-wrapper {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2rem; }
+    #about .video-wrapper img {
+      -webkit-filter: brightness(0.7);
+              filter: brightness(0.7); }
+    #about .video-wrapper .text {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-40%);
+              transform: translateY(-40%);
+      right: 0;
+      left: 0; }
+      #about .video-wrapper .text h3 {
+        font-family: din-2014, sans-serif;
+        color: #fff;
+        margin-bottom: 1rem; }
+  #about .img-wrapper {
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #about .img-wrapper a {
+      display: inline-block;
+      margin: 1rem .5rem; }
+  #about .goal {
+    background-color: rgba(206, 240, 234, 0.68);
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+    z-index: 9; }
+    #about .goal p {
+      line-height: normal;
+      padding: 0; }
+  #about .btn {
+    margin-left: 0; }
+
+footer .top .grid-container {
+  max-width: 100%; }
+  footer .top .grid-container .grid-50 {
+    padding: 0; }
+
+footer .gallery {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  footer .gallery video {
+    width: 100%;
+    z-index: -1; }
+  footer .gallery .content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    footer .gallery .content h2 {
+      color: #2e2e2e;
+      font-family: din-2014, sans-serif;
+      font-weight: 300;
+      font-size: 60px;
+      text-align: center; }
+      footer .gallery .content h2 span {
+        border-top: solid 4px #c3d9d9;
+        font-size: 50%; }
+    footer .gallery .content h1 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-family: futura-pt, sans-serif !important;
+      text-transform: uppercase;
+      color: #064949;
+      font-family: din-2014, sans-serif;
+      font-size: 100px;
+      letter-spacing: 0.2em; }
+
+footer .contact {
+  background: url(../images/contact-bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative; }
+  footer .contact .content {
+    padding: 2rem 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    footer .contact .content h1 {
+      color: #fff;
+      margin-bottom: 1rem; }
+  footer .contact .agreement {
+    color: #fff;
+    margin-bottom: .5rem;
+    text-align: left; }
+  footer .contact .btn {
+    margin-left: 0; }
+
+footer .bottom {
+  padding: 2rem 0;
+  background-color: #CFE1E1; }
+  footer .bottom p {
+    padding-bottom: .5rem; }
+  footer .bottom .grid-33 {
+    text-align: center; }
+    footer .bottom .grid-33:first-of-type img {
+      margin-bottom: 2rem; }
+    footer .bottom .grid-33 .img-wrapper {
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      footer .bottom .grid-33 .img-wrapper a {
+        display: inline-block;
+        padding: .5rem;
+        margin: .5rem; }
+    footer .bottom .grid-33 .social {
+      margin-bottom: 1rem; }
+      footer .bottom .grid-33 .social a {
+        color: #2e2e2e;
+        font-size: 1.5rem; }
+    footer .bottom .grid-33 p {
+      font-weight: 700;
+      padding-bottom: 0; }
+    footer .bottom .grid-33:last-of-type {
+      margin-bottom: 2rem; }
+  footer .bottom .grid-50 {
+    text-align: center; }
 
 /* NKP GLOBAL STYLES */
 img {
@@ -417,8 +592,7 @@ img.alignright,
   margin: 10px 0 0 15px; }
 
 iframe {
-  width: 100%;
-  height: 500px; }
+  width: 100%; }
 
 .embed-responsive {
   position: relative;
@@ -466,7 +640,11 @@ iframe {
     margin-bottom: 4rem; }
     #breast-aug h2, #mommy-makeover h2, #rhinoplasty h2, #implant-removal h2 {
       margin: 2rem 0;
-      text-align: center; } }
+      text-align: center; }
+  footer .gallery .content h2 {
+    font-size: 2.25rem; }
+  footer .gallery .content h1 {
+    font-size: 3.5rem; } }
 
 @media only screen and (min-width: 768px) {
   header .grid-container .logo img {
@@ -478,7 +656,26 @@ iframe {
   .services .content {
     height: 175px; }
     .services .content h2 {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  #breast-aug .grid-container, #mommy-makeover .grid-container, #rhinoplasty .grid-container, #implant-removal .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #about .goal {
+    position: relative;
+    margin: 0 0 2rem -5rem;
+    padding-left: 5rem; }
+  footer .bottom .grid-33:first-of-type {
+    text-align: left; }
+  footer .bottom .grid-33:last-of-type {
+    text-align: right; }
+  footer .bottom .grid-50:first-of-type {
+    text-align: left; }
+  footer .bottom .grid-50:last-of-type {
+    text-align: right; } }
 
 @media only screen and (min-width: 960px) {
   header .grid-container {
@@ -541,6 +738,37 @@ iframe {
   .services.desktop {
     display: block; }
   #breast-aug {
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+  footer .grid-33 .phone {
+    padding-right: 1rem; }
+  footer .grid-33 .phone, footer .grid-33 .fax {
+    display: inline-block; } }
+
+@media only screen and (min-width: 1200px) {
+  footer .top .grid-container {
+    height: 28vw;
+    overflow-y: hidden; }
+  footer .top .contact {
+    background: url(../images/contact-bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative; }
+    footer .top .contact .content {
+      padding: 15px;
+      max-width: 585px;
+      height: 28.5vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+@media only screen and (max-width: 1199px) and (min-width: 1025px) {
+  footer .top .grid-50 {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

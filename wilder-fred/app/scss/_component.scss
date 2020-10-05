@@ -106,24 +106,27 @@ form {
     textarea {
         font-size: inherit;
         font-family: inherit;
+        color: $white;
+        font-weight:700;
         width: 100%;
         margin: 0 0 10px;
-        padding: 15px;
-        border: 1px solid $primary-color;
-        background: #fff;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid $primary-color;
+        background: none;
         transition: all .5s ease;
         &:focus {
             outline:none;
         }
     }
     textarea {
-        height: 200px;
+        height: 170px;
     }
     span.agree {
         display: inline-block;
     }
     ::placeholder {
-        color: blue;
+        color: $white;
     }
 }
 

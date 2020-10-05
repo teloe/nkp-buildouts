@@ -121,6 +121,9 @@ header {
             width: 24%;
         }
     }
+    .btn {
+        margin-top: 1rem;
+    }
 }
 // }}}
 
@@ -196,10 +199,6 @@ header {
 
 #breast-aug, #mommy-makeover, #rhinoplasty, #implant-removal {
     margin-bottom: 6rem;
-    .grid-container {
-        display: flex;
-        align-items: center;
-    }
     h2 {
         margin-bottom: 1rem;
     }
@@ -211,10 +210,202 @@ header {
     }
 }
 
-// #contact {{{
+// #about {{{
+#about {
+    margin-bottom: 4rem;
+    .grid-100 {
+        h1 {
+            font-size: 2.25rem;
+            text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+            color: $base;
+            margin-bottom: 2rem;
+            span {
+                color: rgb(12, 146, 146);
+            }
+        }
+    }
+    .grid-50 {
+        h1 {
+            text-transform: uppercase;
+            color: $base;
+            font-size: 2rem;
+            text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+            margin-bottom: 1rem;
+            span:first-of-type {
+                color: rgb(12, 146, 146);
+                font-size: 4rem;
+            }
+            span:last-of-type {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .video-wrapper {
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        img {
+            filter: brightness(.7);
+        }
+        .text {
+            h3 {
+                font-family: $header-stack;
+                color: $white;
+                margin-bottom: 1rem;
+            }
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
+            right: 0;
+            left: 0;
+        }
+    }
+    .img-wrapper {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: inline-block;
+            margin: 1rem .5rem;
+        }
+    }
+    .goal {
+        background-color: $alt-color;
+        padding: 15px; 
+        font-size: 1.1rem;
+        font-weight: $bold;
+        margin: 0 0 2rem 0;
+        z-index:9;
+        p {
+            line-height: normal;
+            padding: 0;
+        }
+    }
+    .btn {
+        margin-left: 0;
+    }
+}
 // }}}
 
 // footer {{{
+footer {
+    .top {
+        .grid-container {
+            max-width: 100%;
+            .grid-50 {
+                padding:0;
+                
+            }
+        }
+    }
+    .gallery {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        video {
+            width: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            h2 {
+                color: $base;
+                font-family: $header-stack;
+                font-weight: $light;
+                font-size:60px;
+                text-align: center;
+                span {
+                    border-top: solid 4px rgb(195, 217, 217);
+                    font-size: 50%;
+                }
+            }
+            h1 {
+                font-weight:$bold;
+                margin-bottom: 1rem;
+                text-align: center;
+                font-family: $alt-stack!important;
+                text-transform: uppercase;
+                color: rgb(6, 73, 73);
+                font-family: $header-stack;
+                font-size: 100px;
+                letter-spacing: 0.2em;
+            }
+        }
+    }
+    .contact {
+        background: url(../images/contact-bg.jpg) no-repeat center;
+        background-size: cover;
+        position: relative;
+        .content {
+            padding: 2rem 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+                color: $white;
+                margin-bottom: 1rem;
+            }
+        }
+        .agreement {
+            color: $white;
+            margin-bottom: .5rem;
+            text-align: left;
+        }
+        .btn {
+            margin-left: 0;
+        }
+    }
+    .bottom {
+        padding: 2rem 0;
+        background-color: #CFE1E1;
+        p {
+            padding-bottom: .5rem;
+        }
+        .grid-33 {
+            text-align: center;
+            &:first-of-type {
+                img {
+                    margin-bottom: 2rem;
+                }
+            }
+            .img-wrapper {
+                margin-bottom: 1rem;
+                display: flex;
+                // flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                a {
+                    display:inline-block;
+                    padding: .5rem;
+                    margin:.5rem;
+                }
+            }
+            .social {
+                margin-bottom: 1rem;
+                a {
+                    color: $base;
+                    font-size: 1.5rem;
+                }
+            }
+            p {
+                font-weight: $bold;
+                padding-bottom:0;
+            }
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+        .grid-50 {
+            text-align:center;
+        }
+    }
+}
 // }}}
 
 // #main {{{

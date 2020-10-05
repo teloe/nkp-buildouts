@@ -16,18 +16,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hamburgers.min.css">
+    <link rel="stylesheet" href="./css/flexslider.css">
 
 </head>
 <body>
-
-    <!-- banner video -->
-    <!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="position: absolute; top: -283px; opacity: 1; width: 2375px; height: 1336px; left: 0px;" loop="" muted="" id="comp-jtuadfbqbalatamediavideovideo" class="bgVideovideo" autoplay="" src="https://video.wixstatic.com/video/9f8f2c_27df516e8211479e97c6b61ad374dc62/1080p/mp4/file.mp4" width="2375" height="1336"></video> -->
-
-    <!-- body video -->
-    <!-- <video preload="none" src="blob:https://www.drwilder.com/7e148517-8072-3147-a4b0-12a9848724b3" class="focus-within"></video> -->
-
-    <!-- footer video -->
-    <!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="position: absolute; top: -462px; opacity: 1; width: 2535px; height: 1426px; left: 0px;" loop="" muted="" id="comp-k1a510lybalatamediavideovideo" class="bgVideovideo" autoplay="" src="https://video.wixstatic.com/video/11062b_95d34f15761e4114a57b17823228948e/1080p/mp4/file.mp4" width="2535" height="1426"></video> -->
 
     <header>
         <div class="grid-container grid-parent">
@@ -139,7 +131,17 @@
                 <h2>Real Patients Real Results</h2>
             </div>
             <div class="grid-60 prefix-20 tablet-80 tablet-prefix-10 mobile-100 tac">
-                <p><em>“I am two and a half years out from my mammoplasty and I am soooooooo glad that I did that surgery.  My T-scars are almost invisible, the shapes of my breasts are perfect.  I bless Dr. Wilder when I see them in the mirror and I am grateful for your kind support on multiple visit to the practice. Your practice and Dr. Wilder is first on my list of referrals when anyone asks – thank you for the great work you do!! “<br>-a patient who is a physician</em></p>
+                <div id="testimonials-slider">
+                    <ul class="slides">
+                        <li>
+                            <p><em>“I am two and a half years out from my mammoplasty and I am soooooooo glad that I did that surgery.  My T-scars are almost invisible, the shapes of my breasts are perfect.  I bless Dr. Wilder when I see them in the mirror and I am grateful for your kind support on multiple visit to the practice. Your practice and Dr. Wilder is first on my list of referrals when anyone asks – thank you for the great work you do!! “<br>-a patient who is a physician</em></p>
+                        </li>
+                        <li>
+                            <p><em>Dr Wilder is THE BEST. My breast are PERFECT!!! They look 100% natural and he did the perfect size! I get so happy that I feel comfortable in my own body. He sees the art in a woman’s body and I am so thankful for that!! Thank you dr. Wilder and staff for taking care of me, you guys did such an amazing job!"</em></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clr"></div>
                 <a class="btn" href="">More Testimonials</a>
             </div>
         </div>
@@ -238,10 +240,21 @@
     <section id="about">
         <div class="grid-container grid-parent">
             <div class="grid-100 tac">
-                <h1>BOARD-CERTIFIED, COMPASSIONATE CARE</h1>
+                <h1><span>BOARD-CERTIFIED</span>, COMPASSIONATE CARE</h1>
             </div>
             <div class="grid-50 tablet-50 mobile-100">
-                <video preload="none" src="blob:https://www.drwilder.com/7e148517-8072-3147-a4b0-12a9848724b3" class="focus-within"></video>
+                <div class="video-wrapper">
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        <img class="img-resp" src="./images/about-video.jpg" alt="" style="cursor:pointer;">
+                        <div class="text">
+                            <h3>Choosing a Qualified Plastic Surgeon</h3>
+                            <svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" class="sk22k"><g fill="#FFF" fill-rule="evenodd"><path d="M28 53c13.807 0 25-11.193 25-25S41.807 3 28 3 3 14.193 3 28s11.193 25 25 25zm0 3C12.536 56 0 43.464 0 28S12.536 0 28 0s28 12.536 28 28-12.536 28-28 28z"></path><path d="M37.232 27.91L22 36.82V19z"></path></g></svg>
+                        </div>
+                    </div>
+                    <div style="display:none">
+                        <iframe width="560" height="300" src="https://www.youtube.com/embed/LZNIWeFJdE4?rel=0&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
                 <div class="img-wrapper">
                     <a href="" target="_blank"><img class="img-resp" src="./images/asps.png" alt="American Society of Plastic Surgery"></a>
                     <a href="" target="_blank"><img class="img-resp" src="./images/ISAPSlogo.png" alt="ISAPS logo"></a>
@@ -263,23 +276,58 @@
     <footer>
         <div class="top">
             <div class="grid-container grid-parent">
-                <div class="grid-50 tablet-50 mobile-100 gallery">
-                    <!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="" loop="" muted="" id="comp-k1a510lybalatamediavideovideo" class="bgVideovideo" autoplay="" src="https://video.wixstatic.com/video/11062b_95d34f15761e4114a57b17823228948e/1080p/mp4/file.mp4"></video> -->
-                    <h1>Wilder<span> Plastic Surgery</span><br><span>Gallery</span></h1>
-                    <a class="btn" href="">View</a>
+                <div class="grid-50 tablet-100 mobile-100 gallery">
+                    <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="" loop="" muted="" id="comp-k1a510lybalatamediavideovideo" class="bgVideovideo" autoplay="" src="https://video.wixstatic.com/video/11062b_95d34f15761e4114a57b17823228948e/1080p/mp4/file.mp4"></video>
+                    <div class="content">
+                        <h2>Wilder<span> Plastic Surgery</span></h2>
+                        <h1>Gallery</h1>
+                        <a class="btn" href="">View</a>
+                    </div>
                 </div>
-                <div class="grid-50 tablet-50 mobile-100 contact">
-                    <h1>Contact Us</h1>
+                <div class="grid-50 tablet-100 mobile-100 contact">
+                    <div class="content">
+                        <h1>Contact Us</h1>
+                        <form action="/#wpcf7-f265-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
+                            <div class="footer-form">
+                                <div class="grid-50 tablet-100 mobile-100">
+                                    <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
+                                    <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                                    <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone"></span></div>
+                                    
+                                </div>
+
+                                <div class="grid-50 tablet-100 mobile-100">
+                                    <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
+                                    <div class="grid-100 agreement grid-parent"><span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="agree" value="1" aria-invalid="false" class="checkbox-inline"></span></span></span> I agree to the&nbsp;<a href="/terms-of-use/"> terms of use</a></div>
+                                    <div class="grid-100 grid-parent"><button class="wpcf7-form-control wpcf7-submit btn">Send Message</button><span class="ajax-loader"></span></div>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottom">
             <div class="grid-container grid-parent">
                 <div class="grid-33 tablet-33 mobile-100">
+                    <img class="img-resp" src="./images/logo.png" alt="">
                 </div>
                 <div class="grid-33 tablet-33 mobile-100">
+                    <div class="img-wrapper">
+                        <a href="" target="_blank"><img class="img-resp" src="./images/asps.png" alt="American Society of Plastic Surgery"></a>
+                        <a href="" target="_blank"><img class="img-resp" src="./images/ISAPSlogo.png" alt="ISAPS logo"></a>
+                        <a href="" target="_blank"><img class="img-resp" src="./images/acp.png" alt="American Cleft Palate Association"></a>
+                    </div>
                 </div>
                 <div class="grid-33 tablet-33 mobile-100">
+                    <div class="social">
+                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="phone">Tel: 512.459.1234</p>
+                    <p class="fax">Fax: 512.459.1251</p>
                 </div>
             </div>
             <div class="grid-container grid-parent">
