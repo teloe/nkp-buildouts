@@ -45,6 +45,12 @@
             }
         }
     }
+    #main {
+        margin-top: 134px;
+        &.top {
+            padding: 4rem 0;
+        }
+    }
 }
 // }}}
 

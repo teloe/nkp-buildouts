@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
         $('#main-nav').toggleClass('open');
     });
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', () => {
         $('header').addClass('scroll');
         if ($(this).scrollTop() === 0) {
             $('header').removeClass('scroll');
@@ -24,4 +24,11 @@ jQuery(document).ready(function ($) {
         directionNav: false,
         controlNav: true,
     });
+    
+    $('#about-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: false,
+    });
+
 });

@@ -206,7 +206,7 @@ form textarea {
     outline: none; }
 
 form textarea {
-  height: 170px; }
+  height: 200px; }
 
 form span.agree {
   display: inline-block; }
@@ -570,6 +570,72 @@ footer .bottom {
   footer .bottom .grid-50 {
     text-align: center; }
 
+#main {
+  margin-top: 188px; }
+  #main:not(.about) {
+    padding: 4rem 0; }
+  #main.about .top {
+    overflow: hidden;
+    background-color: #E6E6E6; }
+    #main.about .top .grid-container {
+      padding: 4rem 0;
+      position: relative;
+      z-index: 1; }
+    #main.about .top .bg {
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 60%;
+      width: 100%;
+      z-index: -1;
+      -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+              clip-path: polygon(0 0, 0% 100%, 100% 0); }
+    #main.about .top .grid-50 .tac h1 {
+      color: darkgray;
+      font-weight: 700;
+      font-family: futura-pt, sans-serif;
+      text-transform: uppercase; }
+    #main.about .top p {
+      line-height: 1.5; }
+    #main.about .top .info, #main.about .top .edu, #main.about .top .memberships {
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+              box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+      border-radius: 6px;
+      padding: 15px; }
+    #main.about .top .info, #main.about .top .edu, #main.about .top .memberships {
+      background-color: rgba(201, 201, 201, 0.4); }
+    #main.about .top .edu, #main.about .top .memberships {
+      margin-top: 2rem; }
+    #main.about .top .info {
+      background-color: rgba(206, 240, 234, 0.68);
+      margin-top: 2rem; }
+  #main.about #about-slider {
+    height: 350px;
+    overflow: hidden; }
+  #main.about .memberships h2 {
+    display: inline-block;
+    margin-bottom: 1rem; }
+  #main.about .memberships i {
+    color: #AFF3DC;
+    display: inline-block;
+    font-size: 2rem; }
+  #main.about .team {
+    padding-top: 2rem; }
+    #main.about .team h2 {
+      margin-bottom: 2rem; }
+    #main.about .team h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem; }
+    #main.about .team img {
+      display: block;
+      margin: 0 auto 1rem;
+      border: solid 6px #fff;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 14px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0 14px 0px rgba(0, 0, 0, 0.2); }
+
 /* NKP GLOBAL STYLES */
 img {
   border: 0; }
@@ -644,7 +710,11 @@ iframe {
   footer .gallery .content h2 {
     font-size: 2.25rem; }
   footer .gallery .content h1 {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+  #main {
+    margin-top: 134px; }
+    #main.top {
+      padding: 4rem 0; } }
 
 @media only screen and (min-width: 768px) {
   header .grid-container .logo img {

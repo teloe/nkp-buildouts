@@ -409,4 +409,92 @@ footer {
 // }}}
 
 // #main {{{
+#main {
+    margin-top: 188px;
+    &:not(.about) {
+        padding: 4rem 0;
+    }
+    &.about {
+        .top {
+            overflow: hidden;
+            background-color: #E6E6E6;
+            .grid-container {
+                padding: 4rem 0;
+                position: relative;
+                z-index: 1;
+            }
+            .bg {
+                background-color: $white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                height: 60%;
+                width: 100%;
+                z-index: -1;
+                clip-path: polygon(0 0, 0% 100%, 100% 0);
+            }
+            .grid-50 {
+                .tac {
+                    h1 {
+                        color: $sub;
+                        font-weight:$bold;
+                        font-family: $alt-stack;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            p {
+                line-height: 1.5;
+            }
+            .info, .edu, .memberships {
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+                border-radius: 6px;
+                padding: 15px;
+            }
+            .info, .edu, .memberships {
+                background-color:rgba(201,201,201,.4);
+            }
+            .edu, .memberships {
+                margin-top: 2rem;
+            }
+            .info {
+                background-color: $alt-color;
+                margin-top: 2rem;
+            }
+        }
+        #about-slider {
+            height: 350px;
+            overflow: hidden;
+        }
+        .memberships {
+            h2 {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+            i {
+                color: #AFF3DC;
+                display: inline-block;
+                font-size: 2rem;
+            }
+        }
+        .team {
+            padding-top: 2rem;
+            h2 {
+                margin-bottom: 2rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+            img {
+                display: block;
+                margin: 0 auto 1rem;
+                border: solid 6px $white;
+                border-radius: 50%;
+                box-shadow: 0 0 14px 0px rgba(0,0,0,0.2);
+            }
+        }
+    }
+}
 // }}}
