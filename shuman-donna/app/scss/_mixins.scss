@@ -1,0 +1,62 @@
+// Margin
+@mixin margin-helper($level, $spacing) {
+    .m-#{$level}  {margin: #{$spacing};}
+    .mx-#{$level} {margin-left: #{$spacing};margin-right: #{$spacing};}
+    .my-#{$level} {margin-top: #{$spacing};margin-bottom: #{$spacing};}
+    .mt-#{$level} {margin-top: #{$spacing};}
+    .mb-#{$level} {margin-bottom: #{$spacing};}
+    .ml-#{$level} {margin-left: #{$spacing};}
+    .mr-#{$level} {margin-right: #{$spacing};}
+}
+
+@include margin-helper(auto, auto);
+@include margin-helper(0, 0);
+@include margin-helper(1, .5rem);
+@include margin-helper(2, 1rem);
+@include margin-helper(3, 1.5rem);
+@include margin-helper(4, 2rem);
+@include margin-helper(5, 3rem);
+
+// Padding
+@mixin padding-helper($level, $spacing) {
+    .p-#{$level}  {padding: #{$spacing};}
+    .px-#{$level} {padding-left: #{$spacing};padding-right: #{$spacing};}
+    .py-#{$level} {padding-top: #{$spacing};padding-bottom: #{$spacing};}
+    .pt-#{$level} {padding-top: #{$spacing};}
+    .pb-#{$level} {padding-bottom: #{$spacing};}
+    .pl-#{$level} {padding-left: #{$spacing};}
+    .pr-#{$level} {padding-right: #{$spacing};}
+}
+
+@include padding-helper(auto, auto);
+@include padding-helper(0, 0);
+@include padding-helper(1, .5rem);
+@include padding-helper(2, 1rem);
+@include padding-helper(3, 1.5rem);
+@include padding-helper(4, 2rem);
+@include padding-helper(5, 3rem);
+
+// Breakpoints
+@mixin for-size($size) {
+    @if $size == xs {
+        @media only screen and (max-width: 500px) { @content; }
+    } 
+    @else if $size == sm {
+        @media only screen and (max-width: 767px) { @content; }
+    } 
+    @else if $size == md {
+        @media only screen and (min-width: 768px) { @content; }
+    } 
+    @else if $size == tablet {
+        @media only screen and (min-width: 960px) { @content; }
+    } 
+    @else if $size == desktop {
+        @media only screen and (min-width: 1025px) { @content; }
+    } 
+    @else if $size == lg {
+        @media only screen and (min-width: 1200px) { @content; }
+    } 
+    @else if $size == xl {
+        @media only screen and (min-width: 2560px) { @content; }
+    }
+}
