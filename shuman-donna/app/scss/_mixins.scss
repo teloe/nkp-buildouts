@@ -1,40 +1,54 @@
-// Margin
-@mixin margin-helper($level, $spacing) {
-    .m-#{$level}  {margin: #{$spacing};}
-    .mx-#{$level} {margin-left: #{$spacing};margin-right: #{$spacing};}
-    .my-#{$level} {margin-top: #{$spacing};margin-bottom: #{$spacing};}
-    .mt-#{$level} {margin-top: #{$spacing};}
-    .mb-#{$level} {margin-bottom: #{$spacing};}
-    .ml-#{$level} {margin-left: #{$spacing};}
-    .mr-#{$level} {margin-right: #{$spacing};}
+// Margin/ Padding Utilities
+$spaces: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+$sides: (top, right, bottom, left);
+
+// size, sides should be maps with key values
+// need x, y added to sides/ need 'auto' added to size
+
+@each $space in $spaces {
+    .m-#{$space} {
+        margin: #{$space/2}rem;
+    }
+    .p-#{$space} {
+        padding: #{$space/2}rem;
+    }
+    .m-auto {
+        margin: auto;
+    }
+    .p-auto {
+        padding: auto;
+    }
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space/2}rem;
+        }
+        .m#{str-slice($side, 0, 1)}-auto {
+            margin-#{$side}: auto;
+        }
+        .my-auto {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .mx-auto {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space/2}rem;
+        }
+        .p#{str-slice($side, 0, 1)}-auto {
+            padding-#{$side}: auto;
+        }
+        .py-auto {
+            padding-top: auto;
+            padding-bottom: auto;
+        }
+        .px-auto {
+            padding-right: auto;
+            padding-left: auto;
+        }
+    }
 }
-
-@include margin-helper(auto, auto);
-@include margin-helper(0, 0);
-@include margin-helper(1, .5rem);
-@include margin-helper(2, 1rem);
-@include margin-helper(3, 1.5rem);
-@include margin-helper(4, 2rem);
-@include margin-helper(5, 3rem);
-
-// Padding
-@mixin padding-helper($level, $spacing) {
-    .p-#{$level}  {padding: #{$spacing};}
-    .px-#{$level} {padding-left: #{$spacing};padding-right: #{$spacing};}
-    .py-#{$level} {padding-top: #{$spacing};padding-bottom: #{$spacing};}
-    .pt-#{$level} {padding-top: #{$spacing};}
-    .pb-#{$level} {padding-bottom: #{$spacing};}
-    .pl-#{$level} {padding-left: #{$spacing};}
-    .pr-#{$level} {padding-right: #{$spacing};}
-}
-
-@include padding-helper(auto, auto);
-@include padding-helper(0, 0);
-@include padding-helper(1, .5rem);
-@include padding-helper(2, 1rem);
-@include padding-helper(3, 1.5rem);
-@include padding-helper(4, 2rem);
-@include padding-helper(5, 3rem);
 
 // Breakpoints
 @mixin for-size($size) {

@@ -1,22 +1,25 @@
 // Colors
-$primary-color: blue;
-$alt-color: green;
+$light-blue: #89cddf;
+$blue: #3E97CB;
+$dark-blue: #378aa0;;
+$tan: #f0ebd8;
+$dark-overlay: rgba(0,0,0,0.1);
 $black: #000;
 $white: #fff;
+$white: green;
 
 // Font colors
-$base: #363636;
-$dark: #808080;
-$sub: #acacac;
+$text-base: #4d4d4d;
+$text-dark: #333333;
+$text-sub: #b5ad8f;
 
 // Typography
 $font-size: 16px;
-$font-stack: 'proxima-nova', sans-serif;
-$header-stack: 'trajan-pro-3', serif;
+$font-stack: quicksand, sans-serif;
 $style: normal;
 $thin: 300;
 $regular: 400;
-$semibold: 600;
+$semibold: 500;
 $bold: 700;
 
 // General
@@ -28,7 +31,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: $base;
+    color: $text-base;
     font-family: $font-stack;
     font-style: $style;
     font-weight: $regular;
@@ -38,13 +41,13 @@ body {
 a,
 a:visited,
 a:link {
-    color: $primary-color;
+    color: $light-blue;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    color: rgba($primary-color, .6);
+    color: $text-sub;
     text-decoration: none;
     outline: none;
 }
@@ -92,11 +95,13 @@ ol {
 .nodisp {
     display: none
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family: $header-stack;
-}
+
+// h1,h2,h3,h4,h5,h6 {
+    // font-family: $header-stack;
+// }
+
 h1 {
-    color: $primary-color;
+    color: $light-blue;
     font-style: $style;
     font-weight: $regular;
     font-size: 2.5rem;
@@ -106,7 +111,7 @@ h2 {
 }
 h3 {
     font-family: proxima-nova, sans-serif;
-    color: $sub;
+    color: $text-sub;
     font-size: 1.5rem;
 }
 p {

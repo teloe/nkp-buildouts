@@ -10,23 +10,23 @@ jQuery(document).ready(function ($) {
     $('#slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
     });
 
     $('.accordion-content').hide();
-    $('.gdl-accordion .title').on('click', function () {
+    $('.accordion-title').on('click', function () {
         $(this)
             .parent()
             .find('.title')
             .toggleClass('active')
-            .siblings('.info')
+            .siblings('.accordion-content')
             .slideToggle(200);
         $(this)
             .parent()
             .siblings('.panel')
-            .find('.title')
+            .find('.accordion-title')
             .removeClass('active')
-            .siblings('.info')
+            .siblings('.accordion-content')
             .slideUp(200);
     });
 });
