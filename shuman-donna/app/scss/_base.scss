@@ -6,7 +6,6 @@ $tan: #f0ebd8;
 $dark-overlay: rgba(0,0,0,0.1);
 $black: #000;
 $white: #fff;
-$white: green;
 
 // Font colors
 $text-base: #4d4d4d;
@@ -31,6 +30,8 @@ html {
     box-sizing: inherit;
 }
 body {
+    width: 100vw;
+    overflow-x: hidden;
     color: $text-base;
     font-family: $font-stack;
     font-style: $style;
@@ -101,16 +102,24 @@ ol {
 // }
 
 h1 {
-    color: $light-blue;
     font-style: $style;
     font-weight: $regular;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    &::before {
+        content: '';
+        background-color: $light-blue;
+        width: 51px;
+        height: 3px;
+        display: block;
+        text-align: center;
+        margin: 0 0 1rem;
+    }
 }
 h2 {
     font-size: 2rem;
 }
 h3 {
-    font-family: proxima-nova, sans-serif;
     color: $text-sub;
     font-size: 1.5rem;
 }

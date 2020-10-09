@@ -5,7 +5,7 @@ button.btn {
     font-family: inherit;
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     margin: 0 auto;
     border:none;
     color: $white;
@@ -25,6 +25,7 @@ button.btn {
     a {
         display: inline-block;
         font-size: 1.25rem;
+        margin: 0 .5rem;
     }
 }
 
@@ -41,18 +42,19 @@ button.btn {
         text-decoration: underline;
     }
     &.mobile {
-        border: solid 1px rgba(0,0,0,.2);
+        border: solid 1px rgba(0,0,0,.1);
         li.has-sub > ul li a {
             &:first-of-type {
                 padding-left: 2rem;
             }
         }
         .third {
+            background-color: $tan;
             width: 33.3333%;
             color: $text-base;
-            padding: 25px 15px;
+            padding: 20px 15px;
             &:hover {
-                color:$light-blue;
+                color:$blue;
             }
         }
         .close-menu {
@@ -66,7 +68,7 @@ button.btn {
             border-top: solid 1px rgba(0,0,0,.08);
         }
         ul {
-            background:none;
+            background:$white;
         }
     }
     .dd-toggle {
@@ -76,17 +78,22 @@ button.btn {
         }
     }
     ul {
+        ul {
+            background-color: rgba(255,255,255,.9);
+            box-shadow: 0 5px 20px rgba(0,0,0,.1);
+        }
         li {
             a {
-                color: $text-base;
+                color: $black;
+                font-weight:$semibold;
                 &:hover {
-                    color:$light-blue;
+                    color: $blue;
                 }
             }
         }
     }
     > ul > li > a {
-        padding: 20px 18px;
+        padding: 20px 11px;
     }
 
 }

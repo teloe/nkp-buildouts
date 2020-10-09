@@ -14,25 +14,26 @@
     <title>Shuman, Donna</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/flexslider.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
 
     <header>
-        <div class="top">
+        <div class="top py-1">
             <div class="grid-container grid-parent">
                 <div class="grid-50 tablet-50 mobile-50">
                     <div class="hide-on-mobile hide-on-tablet">
-                        <p class="loc">775 W Indiantown Rd Suite 5, Jupiter, FL 33458</p>
+                        <p class="loc p-0">775 W Indiantown Rd Suite 5, Jupiter, FL 33458</p>
                     </div>
-                    <div class="social">
+                    <div class="social hide-on-desktop">
                         <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="grid-50 tablet-50 mobile-50">
-                    <div class="social hide-on-mobile hide-on-tablet">
+                    <div class="social hide-on-mobile hide-on-tablet mr-2">
                         <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -40,16 +41,16 @@
                 </div>
             </div>
         </div>
-        <div class="header-body">
+        <div class="header-body py-2">
             <div class="grid-container grid-parent">
-                <div class="grid-20 tablet-70 mobile-100">
+                <div class="grid-20 tablet-100 mobile-100">
                     <div class="logo">
                         <a href="/" title="">
                             <img class="img-resp" src="./images/logo.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="grid-80 tablet-30 mobile-100">
+                <div class="grid-80 tablet-100 mobile-100">
                     <nav id="main-nav">
                         <div class="stellarnav">
                             <ul id="menu-main-nav" class="menu">
@@ -210,104 +211,94 @@
     </header>
     <!-- /header -->
 
-    <section id="banner-slider">
+    <section id="banner-slider" class="flexslider">
         <ul class="slides">
-            <li class="slide1">
-                <div class="grid-container grid-parent">
-                    <div class="grid-100">
-                    </div>
-                </div>
-            </li>
-            <li class="slide2">
-                <div class="grid-container grid-parent">
-                    <div class="grid-100">
-                    </div>
-                </div>
-            </li>
-            <li class="slide3">
-                <div class="grid-container grid-parent">
-                    <div class="grid-100">
-                    </div>
-                </div>
-            </li>
+            <li class="slide1"></li>
+            <li class="slide2"></li>
+            <li class="slide3"></li>
         </ul>
     </section>
     <!-- #/banner-slider -->
 
     <section id="services">
-        <div class="grid-container grid-parent">
-            <h1>Cutting-Edge Cosmetic Services in Jupiter</h1>
-            <div class="grid-25 tablet-50 mobile-100">
-                <div class="content">
-                    <img class="img-resp" src="images/vein2.jpg" alt="Laser Hair Removal">
-                    <h3>Laser Hair Removal</h3>
-                    <p>A permanent solution for eliminating unwanted hair almost anywhere, laser hair removal works for both men and women.</p>
-                    <a href="">Read More</a>
+        <div class="grid-container">
+            <h1 class="tac mb-4">Cutting-Edge Cosmetic Services in Jupiter</h1>
+            <div class="flex">
+                <div class="grid-25 tablet-50 mobile-100">
+                    <a href="" class="content">
+                        <img class="img-resp mx-auto mt-0 mb-5" src="images/vein2.jpg" alt="Laser Hair Removal">
+                        <h3>Laser Hair Removal</h3>
+                        <p>A permanent solution for eliminating unwanted hair almost anywhere, laser hair removal works for both men and women. <span>Read More</span></p>
+                    </a>
                 </div>
-            </div>
-            <div class="grid-25 tablet-50 mobile-100">
-                <div class="content">
-                    <img class="img-resp" src="images/laser.jpg" alt="IPL Photofacial">
-                    <h3>IPL Photofacial</h3>
-                    <p>Brown spots, red blotches and other skin pigment issues can be erased by this skin resurfacing technique. Your skin will appear fresh and clear. </p>
-                    <a href="">Read More</a>
+                <div class="grid-25 tablet-50 mobile-100">
+                    <a href="" class="content">
+                        <img class="img-resp mx-auto mt-0 mb-4" src="images/laser.jpg" alt="IPL Photofacial">
+                        <h3>IPL Photofacial</h3>
+                        <p>Brown spots, red blotches and other skin pigment issues can be erased by this skin resurfacing technique. Your skin will appear fresh and clear <span>Read More</span></p>
+                    </a>
                 </div>
-            </div>
-            <div class="grid-25 tablet-50 mobile-100">
-                <div class="content">
-                    <img class="img-resp" src="images/chemical-peel.jpg" alt="Chemical Peels">
-                    <h3>Chemical Peels</h3>
-                    <p>A great solution for any kind of skin, chemical peels rejuvenate and repair. They can easily be layered to create the best chemical peel for your skin type.</p>
-                    <a href="">Read More</a>
+                <div class="grid-25 tablet-50 mobile-100">
+                    <a href="" class="content">
+                        <img class="img-resp mx-auto mt-0 mb-4" src="images/chemical-peel.jpg" alt="Chemical Peels">
+                        <h3>Chemical Peels</h3>
+                        <p>A great solution for any kind of skin, chemical peels rejuvenate and repair. They can easily be layered to create the best chemical peel for your skin type. <span>Read More</span></p>
+                    </a>
                 </div>
-            </div>
-            <div class="grid-25 tablet-50 mobile-100">
-                <div class="content">
-                    <img class="img-resp" src="images/needling-sm.jpg" alt="Microneedling">
-                    <h3>Microneedling</h3>
-                    <p>Utilizing a small pen or roller that lightly pricks your skin with small needles, microneedling activates your skin’s natural collagen and tissue regeneration.</p>
-                    <a href="">Read More</a>
+                <div class="grid-25 tablet-50 mobile-100">
+                    <a href="" class="content">
+                        <img class="img-resp mx-auto mt-0 mb-4" src="images/needling-sm.jpg" alt="Microneedling">
+                        <h3>Microneedling</h3>
+                        <p>Utilizing a small pen or roller that lightly pricks your skin with small needles, microneedling activates your skin’s natural collagen and tissue regeneration. <span>Read More</span></p>
+                    </a>
                 </div>
             </div>
             <div class="clr"></div>
-            <a class="btn" href="">View More Services</a>
+            <a class="btn mt-4" href="">View More Services</a>
         </div>
     </section>
     <!-- #/services -->
 
     <section id="procs">
-        <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
-                <div class="content">
-                    <h2>About Aqua Laser Studio</h2>
-                    <p>At AQUA Laser Studio, we are a one-stop-shop for cosmetic services including clinical laser hair removal in Jupiter. We are dedicated to helping you enhance your natural beauty and maintain a youthful appearance with a comprehensive range of aesthetic treatments and products.</p>
-                    <p>Our cutting-edge studio is outfitted with the latest in anti-aging and skin care equipment, as we implement advanced laser technology as soon as it becomes available. Our competitive pricing and commitment to developing relationships are what keeps our clients returning time and again.</p>
+        <div class="top">
+            <div class="grid-container grid-parent">
+                <div class="grid-50 tablet-50 mobile-100 p-0">
+                    <div class="content py-5 px-2">
+                        <img class="img-rsp" src="images/parallax-quote-bg.png" alt="">
+                        <h1>About Aqua Laser Studio</h1>
+                        <p>At AQUA Laser Studio, we are a one-stop-shop for cosmetic services including clinical laser hair removal in Jupiter. We are dedicated to helping you enhance your natural beauty and maintain a youthful appearance with a comprehensive range of aesthetic treatments and products.</p>
+                        <p>Our cutting-edge studio is outfitted with the latest in anti-aging and skin care equipment, as we implement advanced laser technology as soon as it becomes available. Our competitive pricing and commitment to developing relationships are what keeps our clients returning time and again.</p>
+                    </div>
+                </div>
+                <div class="grid-50 tablet-50 mobile-100 p-0">
+                    <div class="content py-5 px-2">
+                        <h2 class="mb-3">Our Complete List Of Procedures</h2>
+                        <ul>
+                            <li>IPL Photo Facials</li>
+                            <li>Laser Hair Removal</li>
+                            <li>Chemical Peels</li>
+                            <li>Microneedling</li>
+                            <li>BOTOX Injections</li>
+                            <li>JUVÉDERM Injections</li>
+                            <li>UltraShape</li>
+                            <li>Cherry Angiomas Removal</li>
+                            <li>Dermaplaning</li>
+                            <li>Vein Removal</li>
+                            <li>Skin Tag Removal</li>
+                            <li>VelaShape</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="grid-50 tablet-50 mobile-100">
-                <h2>Our Complete List Of Procedures</h2>
-                <ul>
-                    <li>IPL Photo Facials</li>
-                    <li>Laser Hair Removal</li>
-                    <li>Chemical Peels</li>
-                    <li>Microneedling</li>
-                    <li>BOTOX Injections</li>
-                    <li>JUVÉDERM Injections</li>
-                    <li>UltraShape</li>
-                    <li>Cherry Angiomas Removal</li>
-                    <li>Dermaplaning</li>
-                    <li>Vein Removal</li>
-                    <li>Skin Tag Removal</li>
-                    <li>VelaShape</li>
-                </ul>
-            </div>
         </div>
-        <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
-                <p class="phone">561.250.6169</p>
-            </div>
-            <div class="grid-50 tablet-50 mobile-100">
-                <p class="loc">775 W Indiantown Rd Suite 5, Jupiter, FL</p>
+        <div class="bottom">
+            <div class="grid-container grid-parent">
+                <div class="grid-50 tablet-100 mobile-100">
+                    <p class="phone"><i class="fas fa-phone-alt"></i> 561.250.6169</p>
+                </div>
+                <div class="grid-50 tablet-100 mobile-100">
+                    <p class="loc pb-0"><i class="fas fa-map-marker-alt"></i> 775 W Indiantown Rd Suite 5, Jupiter, FL</p>
+                </div>
             </div>
         </div>
     </section>
@@ -315,13 +306,13 @@
 
     <section id="staff">
         <div class="grid-container grid-parent">
-            <h1>Our Staff</h1>
+            <h1 class="tac">Our Staff</h1>
             <div class="grid-100 tablet-100 mobile-100">
                 <p><strong>Donna Feinberg Shuman</strong></p>
                 <p>Donna Feinberg Shuman is a Certified Clinical Electrologist, Certified Medical Electrologist, Certified Laser Practitioner and Licensed Electrologist. She has been specializing in skin care and hair removal for over 25 years. She is certified by the American Academy of Anti-Aging Medicine and the Florida College of Natural Health and Medical Anti-Aging. Donna is a member of the American Society for Laser Medicine and Surgery and the Society for Clinical and Medical Hair Removal.</p>
                 <p>Always researching a better way to serve her clients, Donna strongly believes in continuing education. She utilizes multiple state-of-the-art lasers for the newest technology in skin care and hair removal. Donna will customize your treatments to meet your individual needs and goals. Photo rejuvenation is her specialty, using a high-frequency laser pulse on top of the skin to change the molecular structure and appearance of aging skin below the surface, giving your skin a tighter and younger look.</p>
                 <p>Donna Feinberg Shuman is the owner of AQUA Laser Studio and services all South Florida. Donna is a local resident of Jupiter and resides here with her husband and three beautiful children. She prides herself on being friendly and professional. Her motto is ‘Make the most of the skin you’re in!’ and her clients’ needs are her motivation and inspiration. She has helped thousands of her clients feel happier and more confident in their own skin.</p>
-                <a class="btn" href="">Meet More of our staff</a>
+                <a class="btn mt-2" href="">Meet More of our staff</a>
             </div>
         </div>
     </section>
@@ -329,14 +320,16 @@
 
     <section id="appointment">
         <div class="grid-container grid-parent">
-            <img class="img-resp hide-on-mobile hide-on-tablet" src="images/appointment-banner-img.png" alt="Schedule appointment">
-            <div class="grid-50 tablet-50 mobile-100">
-                <h2>Schedule an Appointment</h2>
+            <div class="grid-55 tablet-100 mobile-100">
+                <img class="img-resp hide-on-mobile hide-on-tablet" src="images/appointment-banner-img.png" alt="Schedule appointment">
+            </div>
+            <div class="grid-45 tablet-60 tablet-prefix-20 mobile-100">
+                <h1 class="mb-4">Schedule an Appointment</h1>
                 <form action="/#wpcf7-f265-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
                     <div class="appointment-form">
                         <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
                         <div class="grid-100 grid-parent"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone"></span></div>
-                        <div class="grid-100 grid-parent"><button class="wpcf7-form-control wpcf7-submit btn">Send Message</button><span class="ajax-loader"></span></div>
+                        <div class="grid-100 grid-parent"><button class="wpcf7-form-control wpcf7-submit btn ml-0 mt-2">Send Message</button><span class="ajax-loader"></span></div>
                     </div>
                     <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
                 </form>
@@ -347,7 +340,7 @@
 
     <section id="reviews">
         <div class="grid-container grid-parent">
-            <div class="grid-100 tablet-100 mobile-100">
+            <div class="grid-80 prefix-10 tablet-80 tablet-prefix-10 mobile-100">
                 <div class="quote"></div>
                 <div id="reviews-slider">
                     <ul class="slides">
@@ -368,27 +361,27 @@
                 <div class="clr"></div>
                 <ul class="controls">
                     <li>
-                        <a href=""><img class="img-resp" src="images/client1.jpeg" alt="Client"></a>
+                        <a href=""><img class="img-resp" src="images/client1.jpg" alt="Client"></a>
                         <div class="author">
-                            <p><strong>Amy</strong> - Client</p>
+                            <p><strong>Amy</strong> - <em>Client</em></p>
                         </div>
                     </li>
                     <li>
                         <a href=""><img class="img-resp" src="images/client2.jpg" alt="Client"></a>
                         <div class="author">
-                            <p><strong>Sharon</strong> - Client</p>
+                            <p><strong>Sharon</strong> - <em>Client</em></p>
                         </div>
                     </li>
                     <li>
                         <a href=""><img class="img-resp" src="images/client3.jpg" alt="Client"></a>
                         <div class="author">
-                            <p><strong>Elf G</strong> - Client</p>
+                            <p><strong>Elf G</strong> - <em>Client</em></p>
                         </div>
                     </li>
                     <li>
                         <a href=""><img class="img-resp" src="images/client4.jpg" alt="Client"></a>
                         <div class="author">
-                            <p><strong>K. Lee Shagena</strong> - Client</p>
+                            <p><strong>K. Lee Shagena</strong> - <em>Client</em></p>
                         </div>
                     </li>
                 </ul>
@@ -399,10 +392,10 @@
 
     <section id="faq">
         <div class="grid-container grid-parent">
-            <div class="grid-30 tablet-30 mobile-100">
+            <div class="grid-30 tablet-100 mobile-100 p-0">
                 <img class="img-resp" src="images/faq-bg.jpg" alt="FAQs">
             </div>
-            <div class="grid-70 tablet-70 mobile-100">
+            <div class="grid-70 tablet-100 mobile-100">
                 <div class="content">
                     <h1>FAQ</h1>
                     <div class="accordion">
@@ -504,8 +497,10 @@
                 <a class="btn" href="">View Gallery</a>
             </div>
             <div class="grid-50 tablet-50 mobile-100">
-                <img class="img-resp" src="images/before-1.png" alt="Before">
-                <img class="img-resp" src="images/after-1.png" alt="After">
+                <div class="img-wrapper">
+                    <img class="img-resp" src="images/before-1.png" alt="Before">
+                    <img class="img-resp" src="images/after-1.png" alt="After">
+                </div>
             </div>
         </div>
     </section>
@@ -513,70 +508,74 @@
 
     <footer>
         <div class="top">
+            <img class="img-resp" src="images/footer-pattern-top.png" alt="Pattern">
             <div class="grid-container grid-parent">
-                <div class="grid-25 tablet-50 mobile-100">
-                    <img class="img-resp" src="images/logo.png" alt="">
-                    <p class="call"><strong>Call Now: 561.250.6169</strong></p>
-                    <div class="hours">
-                        <p><strong>Hours of Operation</strong></p>
-                        <ul>
-                            <li>Monday: 9am - 5:30pm</li>
-                            <li>Tuesday: 9am - 5:30pm</li>
-                            <li>Wednesday: 9am - 4pm</li>
-                            <li>Thursday: 9am - 9pm</li>
-                            <li>Friday: 9am - 5:30pm</li>
-                            <li>Sat-Sun: Closed</li>
-                        </ul>
-                        <div class="follow-us">
-                            <h3>Follow Us</h3>
-                            <div class="social">
-                                <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                <div class="flex">
+                    <div class="grid-25 tablet-50 mobile-100">
+                        <img class="img-resp" src="images/logo.png" alt="">
+                        <p class="call"><strong>Call Now: 561.250.6169</strong></p>
+                        <div class="hours">
+                            <p><strong>Hours of Operation</strong></p>
+                            <ul>
+                                <li>Monday: 9am - 5:30pm</li>
+                                <li>Tuesday: 9am - 5:30pm</li>
+                                <li>Wednesday: 9am - 4pm</li>
+                                <li>Thursday: 9am - 9pm</li>
+                                <li>Friday: 9am - 5:30pm</li>
+                                <li>Sat-Sun: Closed</li>
+                            </ul>
+                            <div class="follow-us">
+                                <h3>Follow Us</h3>
+                                <div class="social">
+                                    <a href="" target="_blank" class="ml-0"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-25 tablet-50 mobile-100">
-                    <h3>Sitemap</h3>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Specials &amp; Promos</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Our Staff</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">ISResorces</a></li>
-                    </ul>
-                </div>
-                <div class="grid-25 tablet-50 mobile-100">
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="">Laser Hair Removal</a></li>
-                        <li><a href="">IPL Photofacials</a></li>
-                        <li><a href="">Vein Removal</a></li>
-                        <li><a href="">Cherry Angiomas Removal</a></li>
-                        <li><a href="">Skin Tag Removal</a></li>
-                        <li><a href="">Electrolysis</a></li>
-                        <li><a href="">Chemical Peels</a></li>
-                        <li><a href="">Dermaplaning</a></li>
-                        <li><a href="">Microneedling</a></li>
-                        <li><a href="">BOTOX Injections</a></li>
-                        <li><a href="">UltraShape</a></li>
-                        <li><a href="">VelaShape</a></li>
-                    </ul>
-                </div>
-                <div class="grid-25 tablet-50 mobile-100">
-                    <h3>Location</h3>
-                    <iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.0253068652482!2d-80.10975678507211!3d26.934412183118223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ded58c3450491b%3A0xc6420a242d0be804!2sAqua%20Laser%20Studio!5e0!3m2!1sen!2sus!4v1575951154221!5m2!1sen!2sus" allowfullscreen="" frameborder="0"></iframe>
-                    <img class="img-resp" src="images/vi.png" alt="Ultimate Provider Logo">
+                    <div class="grid-25 tablet-50 mobile-100">
+                        <h3 class="mb-3">Sitemap</h3>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Specials &amp; Promos</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Our Staff</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">ISResorces</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-25 tablet-50 mobile-100">
+                        <h3 class="mb-3">Our Services</h3>
+                        <ul>
+                            <li><a href="">Laser Hair Removal</a></li>
+                            <li><a href="">IPL Photofacials</a></li>
+                            <li><a href="">Vein Removal</a></li>
+                            <li><a href="">Cherry Angiomas Removal</a></li>
+                            <li><a href="">Skin Tag Removal</a></li>
+                            <li><a href="">Electrolysis</a></li>
+                            <li><a href="">Chemical Peels</a></li>
+                            <li><a href="">Dermaplaning</a></li>
+                            <li><a href="">Microneedling</a></li>
+                            <li><a href="">BOTOX Injections</a></li>
+                            <li><a href="">UltraShape</a></li>
+                            <li><a href="">VelaShape</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-25 tablet-50 mobile-100">
+                        <h3 class="mb-3">Location</h3>
+                        <iframe class="mb-3" style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.0253068652482!2d-80.10975678507211!3d26.934412183118223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ded58c3450491b%3A0xc6420a242d0be804!2sAqua%20Laser%20Studio!5e0!3m2!1sen!2sus!4v1575951154221!5m2!1sen!2sus" allowfullscreen="" frameborder="0"></iframe>
+                        <img class="img-resp" src="images/vi.png" alt="Ultimate Provider Logo">
+                    </div>
                 </div>
             </div>
+            <img class="img-resp" src="images/footer-pattern-bottom.png" alt="Pattern">
         </div>
-        <div class="bottom">
+        <div class="bottom py-4">
             <div class="grid-container grid-parent">
                 <div class="grid-50 tablet-50 mobile-100">
                     <p> 
@@ -587,7 +586,7 @@
                     </p>
                 </div>
                 <div class="grid-50 tablet-50 mobile-100">
-                    <p>&copy; 2020 Smart DIMENSIONS™. All Rights Reserved.</p>
+                    <p>&copy; 2020 Aqua Laser Studio. All Rights Reserved.</p>
                     <p>Website Design &amp; SEO by <a href="https://www.nkpmedical.com/" target="_blank">NKP Medical</a></p>
                 </div>
             </div>
