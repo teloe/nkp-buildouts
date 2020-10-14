@@ -1,16 +1,14 @@
-# NKP Buildouts
+# NKP Client Websites
 
-### Client websites I built during my time with [NKP Medical Marketing](https://www.nkpmedical.com/).
+Development repo used for building client websites during my time at [NKP Medical Marketing](https://www.nkpmedical.com/).
 
-Most projects were developed locally using npm / browser-sync.
+<!-- Click [here]() to view a list of all live sites. -->
 
-To view any of these projects, run: 
-``` git clone https://github.com/teloe/nkp-buildouts ```
+To view the development version of each project: 
+1. download or clone this repo
+2. ```cd``` into any project root
+3. run ```npm install```.
+4. run ```npm start```, or for projects that have gulpfile.js, run ```gulp watch```
+5. browser-sync will open project files in your default browser
 
-cd into any project and run 
-``` npm install ```
-
-In project root, run: 
-``` npm start ```
-
-browser-sync should open the project files in your browser. select the index.html or internal.html files to view.
+Most project were built locally using browser-sync and gulp.
