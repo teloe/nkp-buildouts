@@ -1,42 +1,36 @@
 // Colors
-$primary-color: #f2bc29;
-$alt-color: #FFD164;
+$blue: blue;
+$green: green;
+$red: red;
+$yellow: yellow;
 $black: #000;
 $white: #fff;
 
 // Font colors
-$base: #363636;
-$dark: #808080;
-$sub: #acacac;
+$text-base: #333;
+$text-dark: #202020;
+$text-sub: #555;
 
 // Typography
-$font-size: 16px;
+$font-root-size: 16px;
 $font-stack: 'proxima-nova', sans-serif;
 $header-stack: 'trajan-pro-3', serif;
 $style: normal;
-$thin: 300;
+$light: 300;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
 
-// Spacing
-$xs: .5rem;
-$sm: 1rem;
-$md: 1.5rem;
-$lg: 2rem;
-$xl: 4rem;
-$xxl: 6rem;
-
 // General
 html {
-    font-size: $font-size;
+    font-size: $font-root-size;
     box-sizing: border-box;
 }
 *, *::before, *::after {
     box-sizing: inherit;
 }
 body {
-    color: $base;
+    color: $text-base;
     font-family: $font-stack;
     font-style: $style;
     font-weight: $regular;
@@ -46,13 +40,13 @@ body {
 a,
 a:visited,
 a:link {
-    color: $primary-color;
+    color: $blue;
     text-decoration: none;
     outline: none;
-    @include transition(all .5s ease);
+    transition: all .5s ease;
 }
 a:hover {
-    color: rgba($primary-color, .6);
+    color: rgba($blue, .6);
     text-decoration: none;
     outline: none;
 }
@@ -104,22 +98,26 @@ h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
 }
 h1 {
-    color: $primary-color;
+    color: $blue;
     font-style: $style;
     font-weight: $regular;
-    font-size: $xl;
 }
 h2 {
-    font-size: $lg;
+    color: $text-sub;
 }
 h3 {
     font-family: proxima-nova, sans-serif;
-    color: $sub;
-    font-size: $md;
+    color: $text-sub;
 }
 p {
-    padding-bottom: $lg;
+    padding-bottom: 2rem;
 }
 p, li {
-    line-height: $lg;
+    line-height: 2rem;
+}
+ol, ul {
+    padding-bottom: 2rem;
+}
+img {
+    padding-bottom: 2rem;
 }

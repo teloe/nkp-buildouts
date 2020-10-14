@@ -1,20 +1,12 @@
-/*
-Theme Name: {{TAG}}
-Author: NKP Development Team
-Description: NKP Medical responsive theme
-Template: nkpv2
-*/
-
 /*---- Do Not Remove ----*/
 @import url(https://static.nkpmedical.com/unsemantic/css/nkp.min.css);
 @import url(https://use.fontawesome.com/releases/v5.9.0/css/all.css);
 @import url(https://static.nkpmedical.com/stellarnav/stellarnav.min.css);
 @import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
-//import typekit
 /*---- Do Not Remove ----*/
 
-@import 'base';
 @import 'mixins';
+@import 'base';
 @import 'component';
 @import 'layout';
 @import 'global';

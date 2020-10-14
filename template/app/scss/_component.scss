@@ -8,15 +8,15 @@ button.btn {
     max-width: 320px;
     margin: 0 auto;
     border:none;
-    color: $white;
-    background-color:$primary-color;
+    // color: $white;
+    // background-color:$primary-color;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
-    @include padding($top:$md, $right:$lg, $bottom:$md, $left:$lg);
-    @include transition(all .5s ease);
+    padding: 1rem 2rem;
+    transition: all .5s ease;
     &:hover {
-        background-color: $alt-color;
+        // background-color: $alt-color;
     }
 }
 
@@ -24,7 +24,7 @@ button.btn {
 .social {
     a {
         display: inline-block;
-        margin: 0 $xs;
+        // margin: 0 $xs;
         font-size: 1.25rem;
     }
 }
@@ -51,17 +51,17 @@ button.btn {
         }
         .third {
             width: 33.3333%;
-            color: $base;
+            color: $text-base;
             padding: 25px 15px;
             &:hover {
-                color:$primary-color;
+                // color:$primary-color;
             }
         }
         .close-menu {
             width: 100%;
-            color: $base;
+            color: $text-base;
             &:hover {
-                color:$primary-color;
+                // color:$primary-color;
             }
         }
         li > a {
@@ -82,7 +82,7 @@ button.btn {
             a {
                 color: $base;
                 &:hover {
-                    color:$primary-color;
+                    // color:$primary-color;
                 }
             }
         }
@@ -103,9 +103,9 @@ form {
         width: 100%;
         margin: 0 0 10px;
         padding: 15px;
-        border: 1px solid $primary-color;
+        border: 1px solid $text-base;
         background: #fff;
-        @include transition(all .5s ease);
+        transition: all .5s ease;
         &:focus {
             outline:none;
         }
@@ -118,7 +118,7 @@ form {
     }
     @include placeholder {
         font-style: normal;
-        color: $dark;
+        // color: $dark;
         font-family: inherit;
         font-size: inherit;
     }
