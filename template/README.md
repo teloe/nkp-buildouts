@@ -1,12 +1,16 @@
 # Project template files
 
 Start a new project by first copying this directory:
-```cp -r template/ <NAME-OF-NEW-PROJECT> ```
+```cp -r template/ <NAME-OF-NEW-PROJECT>```
 
 ```cd``` into the new project root and run ```npm init```
 
 Download dependencies by running 
 ```npm install --save-dev gulp gulp-sass gulp-postcss postcss autoprefixer cssnano gulp-imagemin gulp-sourcemaps eslint browser-sync```
+
+Set up eslint by running 
+```./node_modules/.bin/eslint --init```
+and answer all the questions to initialize your eslint config file
 
 For automatic vendor prefixes, add this to your package.json:
 ```javascript
