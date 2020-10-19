@@ -1,0 +1,26 @@
+{
+    "name": "rachel-john",
+    "version": "1.0.0",
+    "description": "Start a new project by first copying this directory: ```cp -r template/ <NAME-OF-NEW-PROJECT>```",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "last 2 versions"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.0.1",
+        "browser-sync": "^2.26.12",
+        "cssnano": "^4.1.10",
+        "eslint": "^7.11.0",
+        "gulp": "^4.0.2",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "postcss": "^8.1.1"
+    }
+}
