@@ -1,7 +1,7 @@
 // Colors
 $blue: blue;
 $green: green;
-$red: red;
+$dark-red: #8b1626;
 $yellow: yellow;
 $black: #000;
 $white: #fff;
@@ -15,7 +15,7 @@ $text-sub: #555;
 $font-root-size: 16px;
 $font-stack: 'proxima-nova', sans-serif;
 $header-stack: 'trajan-pro-3', serif;
-$style: normal;
+$font-style-normal: normal;
 $light: 300;
 $regular: 400;
 $semibold: 600;
@@ -32,7 +32,7 @@ html {
 body {
     color: $text-base;
     font-family: $font-stack;
-    font-style: $style;
+    font-style: $font-style-normal;
     font-weight: $regular;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -96,18 +96,36 @@ ol {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
+    line-height:1.1;
 }
 h1 {
-    color: $blue;
-    font-style: $style;
+    color: $dark-red;
+    font-style: $font-style-normal;
     font-weight: $regular;
+    font-size: 2rem;
+}
+@supports ( font-size:clamp(2rem, 5vw, 4rem) ) {
+    h1 {
+        font-size: clamp(2rem, 5vw, 4rem);
+    }
 }
 h2 {
-    color: $text-sub;
+    color: $dark-red;
+    font-size: 1.5rem;
+}
+@supports ( font-size:clamp(1.5rem, 4vw, 3rem) ) {
+    h2 {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+    }
 }
 h3 {
-    font-family: proxima-nova, sans-serif;
-    color: $text-sub;
+    color: $dark-red;
+    font-size: 1.25rem;
+}
+@supports ( font-size:clamp(1.25rem, 3.5vw, 2rem) ) {
+    h3 {
+        font-size: clamp(1.25rem, 3.5vw, 2rem);
+    }
 }
 p {
     padding-bottom: 2rem;

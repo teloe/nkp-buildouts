@@ -3,10 +3,10 @@ a.btn,
 button.btn {
     font-size: inherit;
     font-family: inherit;
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+    display: inline-block;
+    // width: 100%;
+    // max-width: 320px;
+    // margin: 0 auto;
     border:none;
     // color: $white;
     // background-color:$primary-color;
@@ -24,15 +24,36 @@ button.btn {
 .social {
     a {
         display: inline-block;
-        // margin: 0 $xs;
         font-size: 1.25rem;
     }
 }
 
 //Nav
 .stellarnav {
-    li.has-sub > ul {
-        padding-left: 1rem;
+    > ul > li > a:first-of-type {
+        font-size: clamp(1rem, 4vw, 1.25rem);
+    }
+    &.mobile {
+        > ul {
+            border:none;
+        }
+        li {
+            a {
+                border:none;
+                text-transform: uppercase;
+                color: rgba($white, .65);
+                display: inline-block;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        li.has-sub > ul li a:first-of-type {
+            padding-left: 2rem;
+        }
+        ul {
+            background:none;
+        }
     }
     li > .dd-toggle i {
         transition:none;
@@ -41,35 +62,15 @@ button.btn {
         transform: rotate(180deg)!important;
     }
     li.open > a {
-        font-weight:700;
+        color: $white;
+        font-weight:$bold;
         text-decoration: underline;
     }
-    &.mobile {
-        border: solid 1px rgba(0,0,0,.2);
-        li.has-sub > ul li a {
-            padding-left: 2rem;
-        }
-        .third {
-            width: 33.3333%;
-            color: $text-base;
-            padding: 25px 15px;
-            &:hover {
-                // color:$primary-color;
-            }
-        }
-        .close-menu {
-            width: 100%;
-            color: $text-base;
-            &:hover {
-                // color:$primary-color;
-            }
-        }
-        li > a {
-            border-top: solid 1px rgba(0,0,0,.08);
-        }
-        ul {
-            background:none;
-        }
+    .menu-toggle {
+        display: none!important;
+    }
+    #menu-main-navigation {
+        display: block!important;
     }
     .dd-toggle {
         height: 51px;
@@ -77,20 +78,6 @@ button.btn {
             content: '\f078';
         }
     }
-    ul {
-        li {
-            a {
-                color: $base;
-                &:hover {
-                    // color:$primary-color;
-                }
-            }
-        }
-    }
-    > ul > li > a {
-        padding: 20px 18px;
-    }
-
 }
 
 /* FORM */
@@ -116,11 +103,37 @@ form {
     span.agree {
         display: inline-block;
     }
-    @include placeholder {
+    placeholder {
         font-style: normal;
-        // color: $dark;
         font-family: inherit;
         font-size: inherit;
     }
 }
+
+// Accordion
+.accordion {
+    .panel {
+        margin-bottom: 1rem;
+    }
+    p {
+        line-height: 1.75;
+        padding: 0;
+    }
+    .accordion-title {
+        cursor: pointer;
+        padding: 1rem 15px;
+        position: relative;
+        h3 {
+            margin-left: 3.5rem;
+            font-size: 1.125rem;
+            line-height:1.1;
+            padding: 0;
+            transition: all .3s ease;
+        }
+    }
+    .accordion-content {
+        padding: 5px 15px 0;
+    }
+}
+
 
