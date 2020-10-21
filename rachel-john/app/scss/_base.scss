@@ -15,6 +15,7 @@ $text-sub: #555;
 $font-root-size: 16px;
 $font-stack: 'proxima-nova', sans-serif;
 $header-stack: 'trajan-pro-3', serif;
+$btn-stack: 'myriad-pro', sans-serif;
 $font-style-normal: normal;
 $light: 300;
 $regular: 400;
@@ -96,12 +97,12 @@ ol {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
-    line-height:1.1;
+    font-weight: $regular;
+    line-height:1.2;
 }
 h1 {
     color: $dark-red;
     font-style: $font-style-normal;
-    font-weight: $regular;
     font-size: 2rem;
 }
 @supports ( font-size:clamp(2rem, 5vw, 4rem) ) {
@@ -111,11 +112,11 @@ h1 {
 }
 h2 {
     color: $dark-red;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
-@supports ( font-size:clamp(1.5rem, 4vw, 3rem) ) {
+@supports ( font-size:clamp(1.75rem, 4vw, 2.5rem) ) {
     h2 {
-        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
     }
 }
 h3 {

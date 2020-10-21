@@ -2,14 +2,10 @@
 a.btn,
 button.btn {
     font-size: inherit;
-    font-family: inherit;
+    font-family: $btn-stack;
     display: inline-block;
-    // width: 100%;
-    // max-width: 320px;
-    // margin: 0 auto;
     border:none;
-    // color: $white;
-    // background-color:$primary-color;
+    background:none;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
@@ -17,6 +13,28 @@ button.btn {
     transition: all .5s ease;
     &:hover {
         // background-color: $alt-color;
+    }
+}
+
+a.btn-square,
+button.btn-square {
+    font-size: inherit;
+    font-family: $btn-stack;
+    letter-spacing: 6px;
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    border:none;
+    background: rgba($dark-red, .75);
+    cursor:pointer;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    transition: all .5s ease;
+    &:hover {
+        background-color: $dark-red;
     }
 }
 
