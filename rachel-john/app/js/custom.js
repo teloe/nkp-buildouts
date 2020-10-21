@@ -24,17 +24,21 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $(window).on('scroll', function () {
+    function checkTop() {
         $('header').addClass('stuck');
-        if ($(this).scrollTop() === 0) {
+        if ($(window).scrollTop() === 0) {
             $('header').removeClass('stuck');
         }
-    });
+    }
+    checkTop();
 
-    $('#slider').flexslider({
+    $(window).on('scroll', checkTop);
+
+    $('#procs-slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
+        manualControls: '.controls li',
     });
 
     $('.accordion-content').hide();
@@ -63,6 +67,7 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         arrows: false,
         dots: true,
+        speed: 600,
         autoplaySpeed: 8000,
         centerMode: true,
         responsive: [

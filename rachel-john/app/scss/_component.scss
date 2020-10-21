@@ -3,16 +3,77 @@ a.btn,
 button.btn {
     font-size: inherit;
     font-family: $btn-stack;
+    font-weight: $bold;
+    letter-spacing: 6px;
     display: inline-block;
     border:none;
     background:none;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 2rem;
-    transition: all .5s ease;
+    position: relative;
+    color: $dark-red;
+    &.white {
+        color: $white;
+        &::before, &::after {
+            background-color: $white;
+        }
+        span {
+            &::before, &::after {
+                background-color: $white;
+            }
+        }
+    }
+    &::before, &::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: $dark-red;
+        transition-delay: 0.2s;
+    }
     &:hover {
-        // background-color: $alt-color;
+        &::before, &::after {
+            transition-delay: 0s;
+            width: 100%;
+        }
+        span {
+            &::before, &::after {
+                transition-delay: .2s;
+                height: 100%;
+            }
+        }
+    }
+    &::before {
+        top: 0;
+        right: 0;
+    }
+    &::after {
+        width: 2rem;
+        bottom: 0;
+        left: 0;
+    }
+    span {
+        padding: 1rem 2rem;
+        display: block;
+        &::before, &::after {
+            content: '';
+            width: 2px;
+            height: 0;
+            position: absolute;
+            transition: all 0.2s linear;
+            transition-delay: 0s;
+            background: $dark-red;
+        }
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        &::after {
+            right: 0;
+            bottom: 0;
+        }
     }
 }
 
@@ -41,8 +102,12 @@ button.btn-square {
 // Social
 .social {
     a {
+        color: rgba(255,255,255,.75);
         display: inline-block;
         font-size: 1.25rem;
+        &:hover {
+            color: $white;
+        }
     }
 }
 
@@ -61,6 +126,8 @@ button.btn-square {
                 text-transform: uppercase;
                 color: rgba($white, .65);
                 display: inline-block;
+                font-family: $btn-stack;
+                letter-spacing: 2px;
                 &:hover {
                     color: $white;
                 }
