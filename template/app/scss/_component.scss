@@ -116,7 +116,7 @@ form {
     span.agree {
         display: inline-block;
     }
-    @include placeholder {
+    ::placeholder {
         font-style: normal;
         // color: $dark;
         font-family: inherit;
