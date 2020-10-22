@@ -102,6 +102,27 @@ header {
     @include for-size(xl) {
         height: 35.15vw;
     }
+    &.internal {
+        background: url(../images/banner-internal.jpg) no-repeat center;
+        background-size: cover;
+        @include for-size(sm) {
+            display:none;
+        }
+        @include for-size(md) {
+            height: 400px;
+            h1 {
+                font-size: 2rem;
+            }
+            @supports ( font-size:clamp(2rem, 5vw, 4rem) ) {
+                h1 {
+                    font-size: clamp(2rem, 5vw, 4rem);
+                }
+            }
+        }
+        @include for-size(desktop) {
+            height: 500px;
+        }
+    }
 }
 // }}}
 
@@ -551,7 +572,7 @@ footer {
         &:last-of-type {
             @include for-size(md) {
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
             }
             .grid-50 {
                 &:first-of-type, &:last-of-type {
@@ -576,4 +597,16 @@ footer {
 // }}}
 
 // #main {{{
+#main {
+    padding: 4rem 0;
+    h1 {
+        padding-bottom: 2rem;
+    }
+    h2 {
+        padding-bottom: 1rem;
+    }
+    h3 {
+        padding-bottom: 1rem;
+    }
+}
 // }}}
