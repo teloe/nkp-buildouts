@@ -1,0 +1,77 @@
+<!--
+    oooo   oooo oooo   oooo oooooooooo
+    8888o  88   888  o88    888    888
+    88 888o88   888888      888oooo88
+    88   8888   888  88o    888
+    o88o    88  o888o o888o o888o
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NKP</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <section id="banner">
+        <div class="grid-container grid-parent">
+            <div class="grid-100">
+                <div class="logo">
+                    <a href="/" title="">
+                        <img class="img-resp" src="images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #/banner -->
+
+    <section id="main">
+        <div class="grid-container grid-parent">
+            <div class="grid-80 prefix-10 tablet-80 tablet-prefix-10 mobile-100">
+                <h1>New Website Coming Soon....</h1>
+                <p>Stay Connected</p>
+                <h3>Contact Us</h3>
+                <form action="/#wpcf7-f5065-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                    <div class="footer-form">
+                        <div class="grid-33 tablet-grid-50 mobile-grid-100"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
+                        <div class="grid-33 tablet-grid-50 mobile-grid-100"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                        <div class="grid-33 tablet-grid-50 mobile-grid-100"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone (optional)"></span></div>
+                        <div class="grid-100"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
+                        <div class="grid-100 agreement tac"><span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="agree" value="1" aria-invalid="false" class="checkbox-inline"></span></span></span> I agree to the <a href="/terms-of-use/">terms of use</a></div>
+                        <div class="grid-100"><button class="wpcf7-form-control wpcf7-submit btn">Send Message</button><span class="ajax-loader"></span></div>
+                    </div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- #/main -->
+
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/stellarnav/stellarnav.min.js"></script>
+    <script type="text/javascript" src="https://static.nkpmedical.com/unsemantic/js/jquery.flexslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos init-->
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        })
+        jQuery(function () {
+            AOS.init();
+        });
+        jQuery(window).on('load', function () {
+            AOS.refresh();
+        });
+    </script>
+
+</body>
+</html>

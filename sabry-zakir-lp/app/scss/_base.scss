@@ -1,0 +1,122 @@
+// Colors
+$purple: #3b3450;
+$gold: #B29138;
+$light-gold: #F5DF89;
+$black: #000;
+$white: #fff;
+
+// Font colors
+$text-base: #333;
+$text-dark: #202020;
+$text-sub: #555;
+
+// Typography
+$font-root-size: 16px;
+$font-stack: 'proxima-nova', sans-serif;
+$style: normal;
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+// General
+html {
+    font-size: $font-root-size;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    color: $text-base;
+    font-family: $font-stack;
+    font-style: $style;
+    font-weight: $thin;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a,
+a:visited,
+a:link {
+    color: $white;
+    text-decoration: none;
+    outline: none;
+    transition: all .5s ease;
+}
+a:hover {
+    color: rgba($white, .6);
+    text-decoration: none;
+    outline: none;
+}
+ul,
+ol {
+    clear: both
+}
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.fn {
+    float: none;
+    display: inline-block
+}
+
+.tal {
+    text-align: left
+}
+
+.tar {
+    text-align: right
+}
+
+.tac {
+    text-align: center
+}
+
+.clr-l {
+    clear: left
+}
+
+.clr-r {
+    clear: right
+}
+
+.clr,
+.clear {
+    clear: both
+}
+.nodisp {
+    display: none
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-stack;
+}
+h1 {
+    // color: $blue;
+    font-style: $style;
+    font-weight: $regular;
+}
+h2 {
+    color: $text-sub;
+}
+h3 {
+    font-family: proxima-nova, sans-serif;
+    color: $text-sub;
+}
+p {
+    padding-bottom: 1rem;
+}
+p, li {
+    line-height: 2rem;
+}
+ol, ul {
+    padding-bottom: 2rem;
+}
+img {
+    padding-bottom: 2rem;
+}
