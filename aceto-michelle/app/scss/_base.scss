@@ -1,7 +1,8 @@
 // Colors
 $light-green: #E8F4F4;
 $border-green: #D0E0E0;
-$dark-green: #0aa1af;
+$green: #0aa1af;
+$dark-green: #007B88;
 $yellow: #F0AD4E;
 $quote-gray: #818a91;
 $black: #000;
@@ -146,16 +147,13 @@ h2 {
 
 h3 {
     color: $text-sub;
-    font-size: 1.25rem;
-}
-@supports ( font-size:clamp(1.25rem, 3.5vw, 2rem) ) {
-    h3 {
-        font-size: clamp(1.25rem, 3.5vw, 2rem);
-    }
+    font-family: $sub-header-stack;
+    text-transform: uppercase;
+    font-size: .9rem;
 }
 
 p {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 p, li {
     line-height: 2rem;

@@ -4,7 +4,14 @@
 // #banner {{{
 // }}}
 
-// #section {{{
+// #about {{{
+#about {
+    p {
+        &::before {
+            // content: '\002605';
+        }
+    }
+}
 // }}}
 
 // #section {{{

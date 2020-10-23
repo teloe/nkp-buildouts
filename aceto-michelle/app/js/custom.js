@@ -3,13 +3,14 @@ jQuery(document).ready(function ($) {
         showArrows: false,
         breakpoint: 1024,
         menuLabel: 'Menu',
-        phoneBtn: '',
-        locationBtn: '',
+        phoneBtn: '905-493-6832',
+        locationBtn: 'https://goo.gl/maps/nCRAm65gf6KFAsUNA',
+        closeBtn: true,
     });
 
     const header = $('header');
     const menuTop = header.offset().top;
-    
+
     function checkTop() {
         header.addClass('stuck');
         if ($(window).scrollTop() < menuTop) {
@@ -46,5 +47,4 @@ jQuery(document).ready(function ($) {
             },
         ],
     });
-
 });

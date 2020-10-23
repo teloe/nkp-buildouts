@@ -3,20 +3,20 @@ a.btn,
 button.btn {
     font-size: inherit;
     font-family: inherit;
-    display: block;
-    width: 100%;
-    max-width: 320px;
+    display: inline-block;
+    // width: 100%;
+    // max-width: 320px;
     margin: 0 auto;
     border:none;
-    // color: $white;
-    // background-color:$primary-color;
+    color: $white;
+    background-color:$dark-green;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem 2rem;
     transition: all .5s ease;
     &:hover {
-        // background-color: $alt-color;
+        background-color: $green;
     }
 }
 
@@ -80,7 +80,7 @@ button.btn {
     ul {
         li {
             a {
-                color: $base;
+                color: $text-base;
                 &:hover {
                     // color:$primary-color;
                 }
@@ -88,7 +88,7 @@ button.btn {
         }
     }
     > ul > li > a {
-        padding: 20px 18px;
+        padding: 20px 15px;
     }
 
 }
