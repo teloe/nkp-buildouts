@@ -21,12 +21,6 @@ jQuery(document).ready(function ($) {
 
     $(window).on('scroll', checkTop);
 
-    // $('#slider').flexslider({
-    //     animation: 'fade',
-    //     directionNav: false,
-    //     controlNav: false,
-    // });
-
     $('.carousel').slick({
         slidesToShow: 3,
         centerPadding: 0,
