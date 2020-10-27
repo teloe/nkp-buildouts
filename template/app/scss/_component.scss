@@ -9,14 +9,12 @@ button.btn {
     margin: 0 auto;
     border:none;
     // color: $white;
-    // background-color:$primary-color;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem 2rem;
     transition: all .5s ease;
     &:hover {
-        // background-color: $alt-color;
     }
 }
 
@@ -24,16 +22,13 @@ button.btn {
 .social {
     a {
         display: inline-block;
-        // margin: 0 $xs;
+        margin: 0 .5rem;
         font-size: 1.25rem;
     }
 }
 
 //Nav
 .stellarnav {
-    li.has-sub > ul {
-        padding-left: 1rem;
-    }
     li > .dd-toggle i {
         transition:none;
     }
@@ -80,7 +75,7 @@ button.btn {
     ul {
         li {
             a {
-                color: $base;
+                color: $text-base;
                 &:hover {
                     // color:$primary-color;
                 }
@@ -118,7 +113,6 @@ form {
     }
     ::placeholder {
         font-style: normal;
-        // color: $dark;
         font-family: inherit;
         font-size: inherit;
     }
