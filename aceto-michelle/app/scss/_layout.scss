@@ -505,6 +505,15 @@ footer {
         z-index: -1;
     }
 }
+.right-here {
+    background-color: $light-green;
+    p {
+        padding-bottom:0;
+    }
+}
+.intro {
+    background-color: $light-green;
+}
 #main {
     padding: 5rem 0;
     &.about {
@@ -529,9 +538,6 @@ footer {
         }
         @include for-size(desktop) {
             padding-top: 5rem;
-        }
-        .intro {
-            background-color: $light-green;
         }
         .number {
             color: $dark-green;
@@ -566,10 +572,23 @@ footer {
                 }
             }
         }
-        .right-here {
+    }
+    &.products {
+        padding: 0;
+        .grid-container {
+            max-width: 1300px;
+        }
+        @include for-size(desktop) {
+            padding-top: 5rem;
+        }
+        .intro {
             background-color: $light-green;
-            p {
-                padding-bottom:0;
+            .grid-container {
+                @include for-size(md) {
+                    display: flex;
+                    align-items: center;
+                }
+
             }
         }
     }
