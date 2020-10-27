@@ -216,7 +216,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -40px;
+    bottom: 0;
     display: block;
     width: 100%;
     padding: 0;
@@ -239,8 +239,8 @@
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     padding: 5px;
     cursor: pointer;
     color: transparent;
@@ -261,22 +261,23 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 30px;
+    font-size: 8px;
     line-height: 20px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
-    content: '\25A0';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '\2b24';
     text-align: center;
     opacity: .25;
-    color: #8b1626;
+    color: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: #8b1626;
+    color: #000;
 }

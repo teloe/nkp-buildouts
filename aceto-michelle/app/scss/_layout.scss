@@ -72,6 +72,7 @@ header {
         width: 100%;
         background-color: rgba(255,255,255,.95);
         z-index: 999;
+        transition: all .3s ease;
         .grid-container {
             display: flex;
             align-items: center;
@@ -406,8 +407,12 @@ footer {
     }
     .bottom {
         background-color: $light-green;
-        @include for-size(desktop) {
-            p {
+        p {
+            font-size: .875rem;
+            font-family: $sub-header-stack;
+            color: $text-dark;
+            text-transform: uppercase;
+            @include for-size(desktop) {
                 padding-bottom:0;
             }
         }
@@ -450,4 +455,72 @@ footer {
 // }}}
 
 // #main {{{
+.border-top {
+    border-top: solid 1px $dark-green;
+}
+.border-bottom {
+    border-bottom: solid 1px $dark-green;
+}
+.border-left {
+    position: relative;
+    z-index: 1;
+    @include for-size(sm) {
+        margin-bottom: 8rem;
+    }
+    img {
+        border-radius: 0 60px 0 0;
+        padding:0;
+    }
+    &::before {
+        content: '';
+        background-color: $border-green;
+        position: absolute;;
+        height: 100%;
+        width: 100%;
+        left: -4rem;
+        bottom: -4rem;
+        border-radius: 0 60px 0 0;
+        z-index: -1;
+    }
+}
+.border-right {
+    position: relative;
+    z-index: 1;
+    @include for-size(sm) {
+        margin-bottom: 8rem;
+    }
+    img {
+        border-radius: 60px 0 0 0;
+        padding:0;
+    }
+    &::before {
+        content: '';
+        background-color: $border-green;
+        position: absolute;;
+        height: 100%;
+        width: 100%;
+        right: -4rem;
+        bottom: -4rem;
+        border-radius: 60px 0 0 0;
+        z-index: -1;
+    }
+}
+#main {
+    padding: 5rem 0;
+    &.about {
+        padding: 0;
+        @include for-size(desktop) {
+            padding-top: 5rem;
+        }
+        .grid-container {
+            max-width: 1460px;
+        }
+        .grid-25 {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
 // }}}
