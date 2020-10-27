@@ -522,5 +522,56 @@ footer {
             }
         }
     }
+    &.procedure {
+        padding: 0;
+        .grid-container {
+            max-width: 1300px;
+        }
+        @include for-size(desktop) {
+            padding-top: 5rem;
+        }
+        .intro {
+            background-color: $light-green;
+        }
+        .number {
+            color: $dark-green;
+            font-family: $specialty-stack;
+            font-size: 2rem;
+        }
+        .proc-info {
+            .border-left {
+               margin: 0 auto 0 4rem;
+            }
+            .grid-container {
+                @include for-size(desktop) {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .content {
+                position: relative;
+                padding-bottom: .5rem;
+                margin-bottom: 3rem;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom:0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    display: block;
+                    height: 2px;
+                    width: 80px;
+                    background-color: $light-green;
+                }
+            }
+        }
+        .right-here {
+            background-color: $light-green;
+            p {
+                padding-bottom:0;
+            }
+        }
+    }
 }
 // }}}
