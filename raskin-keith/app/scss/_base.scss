@@ -13,8 +13,8 @@ $text-sub: #555;
 
 // Typography
 $font-root-size: 16px;
-$font-stack: 'proxima-nova', sans-serif;
-$header-stack: 'trajan-pro-3', serif;
+$font-stack: 'muli', sans-serif;
+$header-stack: 'Frank Ruhl Libre', sans-serif;
 $style: normal;
 $thin: 100;
 $light: 300;
@@ -23,6 +23,11 @@ $semibold: 600;
 $bold: 700;
 
 // General
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url(../fonts/Frank-Ruhl-Libre.ttf);
+}
+
 html {
     font-size: $font-root-size;
     box-sizing: border-box;
