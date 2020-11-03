@@ -45,7 +45,7 @@ $directions: (
 }
 
 // Breakpoints
-@mixin for-size($size) {
+@mixin bp($size) {
     @if $size == xs {
         @media only screen and (max-width: 500px) { @content; }
     } 
