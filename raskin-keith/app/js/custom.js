@@ -33,6 +33,19 @@ jQuery(document).ready(function ($) {
         animation: 'fade',
         directionNav: false,
         controlNav: true,
-        manualControls: '.controls li',
+        manualControls: '.conditions-controls li',
+    });
+
+    $('#info-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        manualControls: '.info-controls li',
+    });
+
+    $('#testimonials-slider').flexslider({
+        animation: 'slide',
+        directionNav: false,
+        controlNav: true,
     });
 });

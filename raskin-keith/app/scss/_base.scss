@@ -104,18 +104,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
     font-style: $style;
-    font-size: 2.5rem;
+    font-size: 24px;
+    @include bp(md) {
+        font-size: 40px;
+    }
 }
 h2 {
     color: $text-sub;
-    font-size: 2rem;
+    font-size: 20px;
+    @include bp(md) {
+        font-size: 30px;
+    }
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 18px;
+    @include bp(md) {
+        font-size: 24px;
+    }
 }
 
 p {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 p, li {
     line-height: 2rem;

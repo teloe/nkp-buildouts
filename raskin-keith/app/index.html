@@ -14,6 +14,7 @@
     <title>Raskin, Keith</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/flexslider.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -145,7 +146,7 @@
             </div>
             <div class="grid-70">
                 <div class="grid-40 tablet-30 mobile-100">
-                    <ul class="controls">
+                    <ul class="conditions-controls">
                         <li>Common Hand Conditions</li>
                         <li>Common Wrist Conditions</li>
                         <li>Common Elbow Conditions</li>
@@ -218,23 +219,23 @@
     </section>
     <!-- #/conditions -->
 
-    <section id="info">
+    <section id="info" class="py-4">
         <div class="grid-container grid-parent">
-            <h3><span>Surgery</span> Information</h3>
+            <h1><span>Surgery</span><br>Information</h1>
             <div class="grid-100">
-                <ul class="controls">
-                    <li>Surgical Facility Information</li>
-                    <li>Pre-Operative Instructions</li>
+                <ul class="info-controls">
+                    <li class="mb-2">Surgical Facility Information</li>
+                    <li class="mb-2">Pre-Operative Instructions</li>
                     <li>Post-Operative Instructions</li>
                 </ul>
                 <div id="info-slider">
                     <ul class="slides">
                         <li>
-                            <div class="grid-30 tablet-30 mobile-100">
+                            <div class="grid-30 tablet-100 mobile-100">
                                 <img src="./images/surgicare_of_manhattan.png" alt="Surgicare" class="img-resp">
                             </div>
-                            <div class="grid-70 tablet-70 mobile-100">
-                                <h3>Surgicar of Manhattan</h3>
+                            <div class="grid-70 tablet-100 mobile-100">
+                                <h3 class="mb-2">Surgicare of Manhattan</h3>
                                 <p class="phone">Tel: 212-867-0609</p>
                                 <p>Bring Photo ID with you. Upon entering the building, check in with security then proceed to the elevators. Take elevators up to the 7th Floor, and check in with receptionists.</p>
                                 <a href="" class="btn">Learn More</a>
@@ -242,22 +243,22 @@
                             </div>
                         </li>
                         <li>
-                            <div class="grid-30 tablet-30 mobile-100">
+                            <div class="grid-30 tablet-100 mobile-100">
                                 <img src="./images/pre_operative01.jpg" alt="Pre-Operative Instructions" class="img-resp">
                             </div>
-                            <div class="grid-70 tablet-70 mobile-100">
-                                <h3>Pre-Operative Instructions</h3>
+                            <div class="grid-70 tablet-100 mobile-100">
+                                <h3 class="mb-2">Pre-Operative Instructions</h3>
                                 <p>Medical Clearance is typically NOT required unless otherwise specified by Dr. Raskin/Physician Assistant, Ashley Madsen. If medical clearance is required, it must be obtained within 30 days of your surgery date.</p>
                                 <p>You will be called by our office the day before surgery with the time of the procedures as well as the time to arrive at the surgical facility. If you do not hear from us by 4:30 pm, please call the office at 212-889-8600.</p>
                                 <a href="" class="btn">Learn More</a>
                             </div>
                         </li>
                         <li>
-                            <div class="grid-30 tablet-30 mobile-100">
+                            <div class="grid-30 tablet-100 mobile-100">
                                 <img src="./images/post_operative.jpg" alt="Post-Operative Instructions" class="img-resp">
                             </div>
-                            <div class="grid-70 tablet-70 mobile-100">
-                                <h3>Post-Operative Instructions</h3>
+                            <div class="grid-70 tablet-100 mobile-100">
+                                <h3 class="mb-2">Post-Operative Instructions</h3>
                                 <p>ELEVATION Please keep your hand elevated above the level of your heart as much as possible for 1 week after your surgery this includes bedtime.</p>
                                 <p>You will receive a call from Ashley within 24-48 hours of your surgery to discuss the post operative plan, answer any questions, and schedule your follow up appointment. In case of an emergency at any time, call our office at (212) 889-8600.</p>
                                 <a href="" class="btn">Learn More</a>
@@ -270,11 +271,11 @@
     </section>
     <!-- #/info -->
 
-    <section id="testimonials">
+    <section id="testimonials" class="pt-5">
         <div class="grid-container grid-parent">
-            <div class="grid-100">
-                <h2>Testimonials</h2>
-                <div id="testimonials-slider">
+            <div class="grid-90 prefix-5 tablet-100 mobile-100">
+                <h1 class="tac mb-5">Testimonials</h1>
+                <div id="testimonials-slider" class="flexslider">
                     <ul class="slides">
                         <li>
                             <blockquote>
@@ -316,24 +317,30 @@
 
     <section id="contact">
         <div class="grid-container grid-parent">
-            <div class="grid-30 tablet-30 mobile-100">
-                <h2>Contact Us</h2>
-                <div class="loc">
-                    <div class="grid-50 tablet-50 mobile-100">
+            <div class="grid-30 tablet-100 mobile-100">
+                <h1 class="mb-4">Contact Us</h1>
+                <div class="loc grid-container grid-parent">
+                    <div class="grid-30 tablet-30 mobile-30">
                         <p>Address</p>
                     </div>
-                    <div class="grid-50 tablet-50 mobile-100">
+                    <div class="grid-70 tablet-70 mobile-70">
                         <p><a href="">317 East 34th Street<br>3rd Floor<br>New York, NY 10016</a></p>
                         <p>Between First and Second Avenues</p>
-                        <a href="">Get Directions</a>
+                        <a href="" class="directions">Get Directions</a>
                     </div>
                 </div>
-                <div class="contact">
-                    <p class="phone">Tel: 212-889-8600</p>
-                    <p class="fax">Fax: 212-685-2667</p>
+                <div class="contact grid-container grid-parent mt-4">
+                    <div class="grid-30 tablet-30 mobile-30">
+                        <p class="phone">Tel: </p>
+                        <p class="fax">Fax: </p>
+                    </div>
+                    <div class="grid-70 tablet-70 mobile-70">
+                        <p>212-889-8600</p>
+                        <p>212-685-2667</p>
+                    </div>
                 </div>
             </div>
-            <div class="grid-70 tablet-70 mobile-100">
+            <div class="grid-70 tablet-100 mobile-100">
                 <p>Please call the office during business hours Monday thru Friday from 9:00 am until 5:00 pm for questions, concerns, and appointment scheduling.</p>
                 <p>To ensure a productive and efficient office visit, please bring any test results or applicable information with you, such as MRI scans/images, nerve conduction studies, or previous operative reports. Please be sure to bring with you both the reports and images.</p>
             </div>
@@ -341,21 +348,20 @@
     </section>
     <!-- #/contact -->
 
-    <footer>
+    <footer class="py-4">
         <div class="grid-container grid-parent">
-            <div class="grid-20 tablet-100 mobile-100">
+            <div class="grid-30 tablet-100 mobile-100">
                 <img class="img-resp" src="images/footer_sitelogo.png" alt="">
                 <div class="social">
-                    <a href="" target="_blank"><img class="img-resp" src="images/1.png" alt="Facebook"></a>
-                    <a href="" target="_blank"><img class="img-resp" src="images/2.png" alt="Instagram"></a>
-                    <a href="" target="_blank"><img class="img-resp" src="images/3.png" alt="Healthgrades"></a>
-                    <a href="" target="_blank"><img class="img-resp" src="images/4.png" alt="RadeMDs"></a>
-                    <a href="" target="_blank"><img class="img-resp" src="images/5.png" alt="Vitals"></a>
-                    <a href="" target="_blank"><img class="img-resp" src="images/GooglePlus.png" alt="Google"></a>
-                    <a href="" target="_blank"><img class="img-resp" src="images/youtube1.png" alt="YouTube"></a>
+                    <a href="" target="_blank"><img class="img-resp" src="images/fb.png" alt="Facebook"></a>
+                    <a href="" target="_blank"><img class="img-resp" src="images/instagram.png" alt="Instagram"></a>
+                    <a href="" target="_blank"><img class="img-resp" src="images/healthgrades.png" alt="Healthgrades"></a>
+                    <a href="" target="_blank"><img class="img-resp" src="images/ratemds.png" alt="RadeMDs"></a>
+                    <a href="" target="_blank"><img class="img-resp" src="images/vitals.png" alt="Vitals"></a>
+                    <a href="" target="_blank"><img class="img-resp" src="images/youtube.png" alt="YouTube"></a>
                 </div>
             </div>
-            <div class="grid-80 tablet-100 mobile-100">
+            <div class="grid-70 tablet-100 mobile-100">
                 <ul class="footer-nav hide-on-mobile">
                     <li><a href="">About</a></li>
                     <li><a href="">Medical Conditions</a></li>
