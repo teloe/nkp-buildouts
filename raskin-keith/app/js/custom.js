@@ -48,4 +48,13 @@ jQuery(document).ready(function ($) {
         directionNav: false,
         controlNav: true,
     });
+
+    $('.nav-tabs a').on('click', function (e) {
+        e.preventDefault();
+
+        $('.tab-active').removeClass('tab-active');
+        $(this).parent().addClass('tab-active');
+        $('.tab-content > div').hide();
+        $($(this).attr('href')).show();
+    });
 });

@@ -61,11 +61,15 @@ ol {
     clear: both
 }
 .fl {
-    float: left
+    @include bp(desktop) {
+        float: left;
+    }
 }
 
 .fr {
-    float: right
+    @include bp(desktop) {
+        float: right;
+    }
 }
 
 .fn {

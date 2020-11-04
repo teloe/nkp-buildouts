@@ -148,6 +148,26 @@ header {
             bottom: 6rem;
         }
     }
+    &.internal {
+        height: 200px;
+        @include bp(md) {
+            height: 300px;
+        }
+        @include bp(desktop) {
+            height: 500px;
+        }
+        h1 {
+            color: $white;
+            font-size: 24px;
+            @include bp(md) {
+                font-size: 40px;
+            }
+        }
+        &.about {
+            background: url(../images/banner2.jpg) no-repeat center;
+            background-size: cover;
+        }
+    }
 }
 // }}}
 
@@ -489,15 +509,15 @@ header {
 #testimonials {
     background: url(../images/testi_bg.png) no-repeat center;
     background-size: cover;
-    height: 300px;
     h1 {
         color: $white;
     }
     #testimonials-slider {
         padding: 4rem 1rem;
+        margin-bottom: -6rem;
         &::before {
             content: '';
-            background: url(https://www.royacdn.com/unsafe/smart/Site-4df8b48f-38cf-4919-876e-0ed428ee9faf/headshot/testi_border.png);
+            background: url(../images/testi_border.png);
             background-size: contain;
             position: relative;
             left: 0;
@@ -529,10 +549,7 @@ header {
     background: url(../images/contact_bg.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 16rem 0 8rem;
-    @media only screen and (max-width: 480px) {
-        padding-top: 22rem;
-    }
+    padding: 8rem 0;
     h1 {
         color: $white;
         text-align: center;
@@ -601,6 +618,7 @@ header {
     > .grid-container {
         @include bp(desktop) {
             display: flex;
+            width: 100%;
             align-items: center;
         }
         > .grid-70 {
@@ -678,4 +696,54 @@ footer {
 // }}}
 
 // #main {{{
+#main {
+    padding: 4rem 0;
+    &.about {
+        background: url(../images/bginsidepage01.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .nav-tabs {
+        li {
+            display: block;
+            margin-bottom: 1rem;
+            line-height: 1.42857143;
+            &.tab-active {
+                a {
+                    background: $green;
+                }
+            }
+            @include bp(desktop) {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+        }
+        a {
+            background: $black;
+            font-weight: $bold;
+            padding: 10px 15px;
+            text-align: center;
+            display: block;
+            font-size: .875rem;
+            border: solid 1px none;
+            border-bottom-color: transparent;
+            color: #FFF;
+            letter-spacing: 0px;
+            &:hover {
+                background: $green;
+            }
+        }
+    }
+    .list {
+        li {
+            margin-bottom: 10px;
+            &::before {
+                content: '\f30b';
+                font-family: 'Font Awesome 5 Free';
+                font-weight:900;
+                margin-right: 15px;
+            }
+        }
+    }
+}
 // }}}
