@@ -46,14 +46,13 @@ body {
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $green;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
-    text-decoration: none;
+    // color: rgba($green, .6);
     outline: none;
 }
 ul,
@@ -136,7 +135,7 @@ p, li {
     line-height: 2rem;
 }
 ol, ul {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 img {
     padding-bottom: 1.5rem;

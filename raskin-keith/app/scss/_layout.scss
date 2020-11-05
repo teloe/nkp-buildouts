@@ -167,6 +167,10 @@ header {
             background: url(../images/banner2.jpg) no-repeat center;
             background-size: cover;
         }
+        &.conditions {
+            background: url(../images/banner6.jpg) no-repeat center;
+            background-size: cover;
+        }
     }
 }
 // }}}
@@ -643,11 +647,11 @@ footer {
         }
     }
     p, a {
-        color: $white;
+        color: $white !important;
     }
     a {
         &:hover {
-            color: $green;
+            color: $green!important;
         }
     }
     .grid-30 {
@@ -698,11 +702,9 @@ footer {
 // #main {{{
 #main {
     padding: 4rem 0;
-    &.about {
-        background: url(../images/bginsidepage01.png) no-repeat center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    background: url(../images/bginsidepage01.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     .nav-tabs {
         li {
             display: block;
@@ -742,6 +744,60 @@ footer {
                 font-family: 'Font Awesome 5 Free';
                 font-weight:900;
                 margin-right: 15px;
+            }
+        }
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    #sidebar {
+        section {
+            box-shadow: 0 11px 17px -12px #666;
+            .title {
+                background-color: $black;
+                text-align: center;
+                padding: .5rem;
+                h3 {
+                    color: $white;
+                    font-size: 20px;
+                    a {
+                        color: $white;
+                        &:hover {
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+            .content {
+                padding: 1rem;
+                background-color: $green;
+                ul {
+                    padding-bottom: 0;
+                }
+                li {
+                    &::before {
+                        color: $white;
+                    }
+                }
+                a {
+                    color: $white;
+                    font-weight: $bold;
+                    &:hover {
+                        text-decoration: none;
+                        margin-left: 5px;
+                    }
+                }
+                p {
+                    font-weight: $bold;
+                    color: $white;
+                }
+            }
+        }
+        &:first-of-type {
+            @include bp(sm) {
+                margin-top: 4rem;
             }
         }
     }
