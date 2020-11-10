@@ -1,0 +1,70 @@
+// Margin/ Padding utilities
+$spacer: 1rem !default;
+$spacers: (
+    auto: auto,
+    0: 0,
+    1: $spacer / 2,
+    2: $spacer,
+    3: $spacer * 1.5,
+    4: $spacer * 2,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 5,
+    8: $spacer * 6,
+    9: $spacer * 7,
+    10: $spacer * 8,
+    11: $spacer * 10,
+    12: $spacer * 12,
+    13: $spacer * 14,
+    14: $spacer * 16,
+    15: $spacer * 18,
+    16: $spacer * 20 
+) !default;
+
+$directions: (
+    top: t,
+    right: r,
+    bottom: b,
+    left: l
+) !default;
+
+@each $prop, $letter in (margin: m, padding: p) { 
+    @each $direction, $d in $directions {
+        @each $unit, $rem in $spacers {
+            .#{$letter}#{$d}-#{$unit} {
+                #{$prop}-#{$direction}: #{$rem};
+            }
+            .#{$letter}x-#{$unit} {
+                #{$prop}: 0 $rem;
+            }
+            .#{$letter}y-#{$unit} {
+                #{$prop}: $rem 0;
+            }
+        }
+    }
+}
+
+// Breakpoints
+@mixin bp($size) {
+    @if $size == xs {
+        @media only screen and (max-width: 500px) { @content; }
+    } 
+    @else if $size == sm {
+        @media only screen and (max-width: 767px) { @content; }
+    } 
+    @else if $size == md {
+        @media only screen and (min-width: 768px) { @content; }
+    } 
+    @else if $size == tablet {
+        @media only screen and (min-width: 960px) { @content; }
+    } 
+    @else if $size == desktop {
+        @media only screen and (min-width: 1025px) { @content; }
+    } 
+    @else if $size == lg {
+        @media only screen and (min-width: 1200px) { @content; }
+    } 
+    @else if $size == xl {
+        @media only screen and (min-width: 2560px) { @content; }
+    }
+}
