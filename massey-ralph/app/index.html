@@ -184,10 +184,10 @@
             <div class="grid-container grid-parent">
                 <h2 class="tac">An Expert in his field</h2>
                 <div class="flex-wrapper">
-                    <div class="grid-50 tablet-50 mobile-100 grid-parent">
+                    <div class="grid-50 tablet-50 mobile-100 grid-parent" data-aos="fade-left">
                         <iframe src="https://www.youtube.com/embed/GXMtp03qW7Q?rel=0&amp;showinfo=0" allowfullscreen="" width="840" height="376" frameborder="0"></iframe>
                     </div>
-                    <div class="grid-50 tablet-50 mobile-100 grid-parent">
+                    <div class="grid-50 tablet-50 mobile-100 grid-parent" data-aos="fade-left" data-aos-delay="200">
                         <div class="content">
                             <p>Dr. Massey is an award-winning surgeon, winning the prestigious Theodore Tromovitch award from the American College of Mohs Micrographic Surgery for excellence in research in dermatologic and cosmetic surgery. As well as lecturing extensively, Dr. Massey has published numerous articles on dermatologic and cosmetic surgery in leading peer-reviewed medical journals. He graduated from Cambridge University and London University in England prior to completing his dermatology residency in the United States. Dr. Massey went on to complete a fellowship in Mohs Micrographic and Cosmetic Surgery at Columbia University in New York.</p>
                         </div>
@@ -199,7 +199,7 @@
 
         <section id="specialties">
             <div class="grid-container grid-parent">
-                <div class="grid-50 tablet-50 mobile-100">
+                <div class="grid-50 tablet-50 mobile-100" data-aos="fade-right" data-aos-delay="200">
                     <div class="content">
                         <img class="img-resp" src="images/skin-cancer.jpg" alt="Skin Cancer">
                         <div class="text">
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-50 tablet-50 mobile-100">
+                <div class="grid-50 tablet-50 mobile-100" data-aos="fade-right">
                     <div class="content">
                         <img class="img-resp" src="images/cosmetic-surgery.jpg" alt="Cosmetic Surgery">
                         <div class="text">
@@ -239,7 +239,7 @@
                 <img class="img-resp" src="images/doc.jpg" alt="Dr. Massey">
             </div>
             <div class="grid-container grid-parent">
-                <div class="grid-50 tablet-100 mobile-100 grid-parent">
+                <div class="grid-50 tablet-100 mobile-100 grid-parent" data-aos="fade-right" data-aos-delay="200">
                     <div class="content">
                         <h2 class="left-align">Meet Dr. Massey</h2>
                         <p>Dr. Massey is a cosmetic and skin cancer surgeon. He graduated from Cambridge University and London University in England prior to completing his dermatology residency in the United States. Dr. Massey went on to complete a fellowship in Mohs Micrographic and Cosmetic Surgery at Columbia University in New York.</p>
@@ -253,7 +253,7 @@
                         <a class="btn" href="">Read more</a>
                     </div>
                 </div>
-                <div class="grid-50 tablet-100 mobile-100 hide-on-mobile hide-on-tablet grid-parent">
+                <div class="grid-50 tablet-100 mobile-100 hide-on-mobile hide-on-tablet grid-parent" data-aos="fade-right">
                     <img class="img-resp" src="images/doc.jpg" alt="Dr. Massey">
                 </div>
             </div>
@@ -287,13 +287,28 @@
         </section>
         <!-- #/reviews -->
 
-        <section id="bxa">
+        <section id="bxa" data-aos="fade-up">
             <div class="grid-container grid-parent">
                 <div class="grid-100">
                     <h2 class='tac'>Before &amp; Afters</h2>
-                    <img class="img-resp one" src="images/before1.jpg" alt="Before">
-                    <img class="img-resp two" src="images/after1.jpg" alt="After">
-                    <!-- <a class="btn" href="">See more Before &amp; afters</a> -->
+                    <img class="img-resp" src="images/bxa2.png" alt="Before & After">
+                    <div class="bxa-wrapper">
+                        <div class="flex-wrapper">
+                            <div class="before mr-2">
+                                <p>Before</p>
+                                <img class="img-resp one" src="images/before1.jpg" alt="Before">
+                            </div>
+                            <div class="after mr-2">
+                                <p>After</p>
+                                <img class="img-resp two" src="images/after1.jpg" alt="After">
+                            </div>
+                        </div>
+                        <p class="procedure">Lower Blepharoplasty</p>
+                    </div>
+                    <img class="img-resp one" src="images/bxa3.png" alt="Before & After">
+                    <div class="tac mt-6">
+                        <a class="btn" href="">See more Before &amp; afters</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -301,11 +316,27 @@
 
         <section id="contact">
             <div class="grid-container grid-parent">
-                <div class="grid-40 tablet-40 mobile-100">
-                    <img class="img-resp" src="images/contact-bg.jpg" alt="">
+                <div class="grid-40 tablet-40 mobile-100 grid-parent">
+                    <div class="doc-image"></div>
+                    <!-- <img class="img-resp" src="images/contact-bg.jpg" alt=""> -->
                 </div>
-                <div class="grid-60 tablet-60 mobile-100">
-                    <h2>Contact Dr. Massey</h2>
+                <div class="grid-60 tablet-60 mobile-100 grid-parent">
+                    <div class="content">
+                        <h2>Contact Dr. Massey</h2>
+                        <form action="/#wpcf7-f22-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
+                            <div class="footer-form">
+                                <div class="grid-100"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*"></span></div>
+                                <div class="grid-100"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                                <div class="grid-100"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone (optional)"></span></div>
+                                <div class="grid-100"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
+                                <div class="grid-100 agreements"><span class="wpcf7-form-control-wrap acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance" value="1" aria-invalid="false"></span></span></span> I agree to the <a href="/terms-of-use/">Terms of Use*</a></div>
+                                <div class="grid-100 recaptcha">
+
+                                </div>
+                                <div class="grid-100"><button class="wpcf7-form-control wpcf7-submit btn white"><span>Send</span> Message</button><span class="ajax-loader"></span></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -333,7 +364,7 @@
                     <a href="https://www.abderm.org/" target="_blank"><img class="img-resp" src="images/ABD.png" alt="ABD Logo"></a>
                     <a href="https://www.cosmeticsurgery.org/" target="_blank"><img class="img-resp" src="images/aacs.png" alt="AACS Logo"></a>
                 </div>
-                <div class="logo">
+                <div class="logo my-4">
                     <img class="img-resp" src="images/logo-footer.png" alt="">
                 </div>
                 <div class="social">
