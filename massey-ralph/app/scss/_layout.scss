@@ -116,6 +116,18 @@ header {
     @include bp(md) {
         padding: 6rem 0;
     }
+    &.internal {
+        background: url(../images/banner-internal.jpg) no-repeat center;
+        background-size:cover;
+        padding:0;
+        height: 300px;
+        @include bp(sm) {
+            display: none;
+        }
+        @include bp(desktop) {
+            height: 400px;
+        }
+    }
 }
 // }}}
 
@@ -414,7 +426,10 @@ header {
 
 // #reviews {{{
 #reviews {
-    padding: 4rem 0;
+    padding: 4rem 0 6rem;
+    @include bp(md) {
+        padding-bottom: 8rem;
+    }
     .content {
         background-color: #CAC4AA;
         padding: 4rem 2rem;
@@ -455,9 +470,9 @@ header {
 
 // #bxa {{{
 #bxa {
-    padding: 6rem 0 10rem;
+    padding: 4rem 0 10rem;
     @include bp(desktop) {
-        padding: 8rem 0 14rem;
+        padding: 6rem 0 14rem;
     }
     .grid-100 {
         position: relative;
@@ -591,5 +606,8 @@ footer {
 .main-bg {
     background: url(../images/body-bg.jpg) no-repeat center;
     background-size: cover;
+}
+#main {
+    padding: 5rem 0;
 }
 // }}}
