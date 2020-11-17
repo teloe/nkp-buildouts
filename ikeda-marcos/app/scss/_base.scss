@@ -1,15 +1,14 @@
 // Colors
-$blue: blue;
-$green: green;
-$red: red;
-$yellow: yellow;
+$pink: #EA5192;
+$dark-gray: #1F1D1E;
+$light-gray: #3F3B3C;
 $black: #000;
 $white: #fff;
 
 // Font colors
-$text-base: #333;
-$text-dark: #202020;
-$text-sub: #555;
+$text-base: #000;
+// $text-dark: #202020;
+$text-sub: #B2B2B2;
 
 // Typography
 $font-root-size: 16px;
@@ -41,13 +40,13 @@ body {
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $black;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
+    color: $pink;
     text-decoration: none;
     outline: none;
 }

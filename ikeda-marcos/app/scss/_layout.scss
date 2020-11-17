@@ -1,7 +1,26 @@
 // header {{{
+header {
+    background: linear-gradient($dark-gray, $light-gray);
+    padding: 1rem 0;
+    .top {
+        text-align: center;
+    }
+    .logo {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .btn, p {
+        color: $white;
+    }
+}
 // }}}
 
 // #banner {{{
+#banner {
+    background: url(../images/banner-main2.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
 // }}}
 
 // #section {{{
