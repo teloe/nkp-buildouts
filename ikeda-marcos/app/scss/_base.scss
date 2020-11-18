@@ -1,5 +1,6 @@
 // Colors
 $pink: #EA5192;
+$dark-pink: #e41c71;
 $dark-gray: #1F1D1E;
 $light-gray: #3F3B3C;
 $black: #000;
@@ -13,9 +14,10 @@ $text-sub: #B2B2B2;
 // Typography
 $font-root-size: 16px;
 $font-stack: work-sans, sans-serif;
-$header-stack:  rama-gothic-e, sans-serif;
+// $header-stack:  rama-gothic-e, sans-serif;
+$header-stack: proxima-nova-condensed, sans-serif;
 $style: normal;
-$thin: 100;
+$thin: 200;
 $light: 300;
 $regular: 400;
 $semibold: 600;
@@ -98,6 +100,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
     font-weight: $thin;
     line-height: 1;
+    text-transform: uppercase;
 }
 h1 {
     font-style: $style;

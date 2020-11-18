@@ -1,29 +1,229 @@
 // header {{{
 header {
-    background: linear-gradient($dark-gray, $light-gray);
-    padding: 1rem 0;
+    background: $dark-gray;
+    padding-top: 1rem;
     .top {
         text-align: center;
+        margin-bottom: 2rem;
+        .grid-container {
+            @include bp(md) {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .grid-70 {
+        @include bp(md) {
+            text-align: right;
+        }
     }
     .logo {
         margin-bottom: 1.5rem;
         text-align: center;
+        @include bp(md) {
+            margin-bottom:0;
+        }
     }
     .btn, p {
         color: $white;
+    }
+    .info {
+        .btn {
+            transition: all .5s ease;
+            &::before {
+                width: 100%;
+            }
+            &:hover {
+                &::before {
+                    background-color: $dark-pink;
+                }
+            }
+        }
+        .social {
+            margin-top: 2rem;
+            @include bp(md) {
+                margin-top:0;
+                margin-left: 1rem;
+            }
+        }
+        @include bp(md) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 1.5rem;
+        }
+    }
+    .call {
+        display: none;
+        padding:0;
+        @include bp(desktop) {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        &::before {
+            content: '\f879';
+            font-family:'Font Awesome 5 Free';
+            font-weight:900;
+            display: inline-block;
+            margin-right: .5rem;
+        }
+    }
+    .quote {
+        display: block;
+        color: $white;
+        margin: 1rem 0;
+        font-family: $header-stack;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        &:hover {
+            color: $pink;
+        }
+        @include bp(md) {
+            margin-right: 1rem;
+        }
+        @include bp(desktop) {
+            margin-right: 2rem;
+        }
+    }
+    @include bp(desktop) {
+        background: linear-gradient($dark-gray, rgba(0,0,0,0));
+        position: absolute;
+        height: 231px;
+        width: 100%;
     }
 }
 // }}}
 
 // #banner {{{
+.main-wrapper {
+    background: $white;
+    position: relative;
+    z-index:1;
+}
 #banner {
-    background: url(../images/banner-main2.jpg) no-repeat center;
+    background: url(../images/banner-main1.jpg) no-repeat center;
     background-size: cover;
-    height: 500px;
+    height: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 300%;
+        transform: translateX(-50%);
+        z-index: -1;
+        @include bp(desktop) {
+            width: 240%;
+        }
+        @include bp(lg) {
+            width: 160%;
+            // width: 180vw;
+        }
+        @include bp(xl) {
+            width: 120%;
+        }
+    }
+    @include bp(md) {
+        height: 600px;
+    }
+    @include bp(desktop) {
+        height: 960px;
+        background:none;
+    }
+    @include bp(lg) {
+        height: 1200px;
+    }
+    @include bp(xl) {
+        height: 50vw;
+    }
+    .grid-container {
+        width: 100%;
+        h1 {
+            font-size: 4rem;
+            color: $white;
+            margin: 8rem 0 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,.6);
+            @include bp(md) {
+                font-size: 6.7rem;
+                // margin: 10vw 0 1rem;
+                margin: 6rem 0 1rem;
+            }
+            @include bp(lg) {
+                font-size: 10rem;
+            }
+        }
+        h2 {
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: $bold;
+            position: relative;
+            display: inline-block;
+            padding: 0 2rem;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,.6);
+            @include bp(md) {
+                padding: 0 4rem;
+            }
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 1px;
+                width: 1.5rem;
+                background-color: rgba(255,255,255,.5);
+                @include bp(md) {
+                    width: 3.5rem;
+                }
+            }
+            &::before {
+                left:0;
+            }
+            &::after {
+                right:0;
+            }
+            @include bp(md) {
+                font-size: 3.5rem;
+            }
+        }
+    }
 }
 // }}}
 
-// #section {{{
+// #menu {{{
+#main-menu {
+    nav {
+        @include bp(desktop) {
+            position: absolute;
+            width: 100%;
+            z-index: 999;
+            transition: all .3s ease;
+            &.stuck {
+                position: fixed;
+                top: 0;
+                background: rgba($dark-gray, .97);
+                // box-shadow: 0 10px 20px rgba(0,0,0,.2);
+            }
+        }
+    }
+    .grid-100 {
+        @include bp(desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .social {
+        display: none;
+        @include bp(desktop) {
+            display: inline-block;
+        }
+    }
+}
 // }}}
 
 // #section {{{
