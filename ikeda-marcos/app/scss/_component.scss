@@ -3,7 +3,7 @@ a.btn,
 button.btn {
     font-size: 1.1875rem;
     font-family: $header-stack;
-    font-weight: $bold;
+    font-weight: $medium;
     display: inline-block;
     border:none;
     cursor:pointer;
@@ -72,16 +72,12 @@ button.btn {
             width: 33.3333%;
             color: $white;
             padding: 25px 15px;
-            &:hover {
-                // color:$primary-color;
-            }
+            font-family: $header-stack;
         }
         .close-menu {
             width: 100%;
             color: $white;
-            &:hover {
-                // color:$primary-color;
-            }
+            font-family: $header-stack;
         }
         li > a {
             border-top: solid 1px rgba(255,255,255,.08);
@@ -100,24 +96,68 @@ button.btn {
         li {
             a {
                 color: $white;
-                &:hover {
-                    // color:$primary-color;
-                }
+                text-transform: uppercase;
+                font-family: $header-stack;
             }
         }
     }
-    > ul > li > a {
-        padding: 20px 16px;
-        @include bp(lg) {
-            padding: 25px 20px;
-        }
-    }
     &.desktop {
+        > ul > li {
+            &.has-sub {
+                > a {
+                    @include bp(desktop) {
+                        padding-right: 24px;
+                    }
+                    @include bp(lg) {
+                        padding-right: 40px;
+                    }
+                }
+                &::after {
+                    content: '\f078';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $white;
+                    font-size: .75rem;
+                    @include bp(desktop) {
+                        right: 8px;
+                    }
+                    @include bp(lg) {
+                        right: 20px;
+                    }
+                }
+            }
+        > a {
+            padding: 20px 10px;
+            font-size: 1.1875rem;
+            @include bp(lg) {
+                padding: 25px 20px;
+            }
+        } 
+
+        }
         ul {
+            #menu-item-3052 {
+                > ul {
+                    width: 360px;
+                }
+            }
+            #menu-item-3057, #menu-item-3118 {
+                > ul {
+                    width: 220px;
+                }
+            }
             ul {
                 padding: 10px;
-                // background: linear-gradient($light-gray, $dark-gray);
                 background: rgba($dark-gray, .97);
+                width: 300px;
+                li {
+                    a {
+                        padding: 10px 15px;
+                    }
+                }
                 ul {
                     top: -10px!important;
                     left: 210px;

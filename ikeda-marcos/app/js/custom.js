@@ -18,9 +18,7 @@ jQuery(document).ready(function ($) {
     }
     checkTop();
 
-    $(window).on('scroll', checkTop);
-
-    $(window).on('scroll', function () {
+    function bannerScroll() {
         const scroll = $(window).scrollTop();
         $('#banner > img').css({
             transform:
@@ -30,12 +28,37 @@ jQuery(document).ready(function ($) {
                 (100 + scroll / 20) / 100 +
                 ')',
         });
-        // $('#banner .grid-100').css('opacity', 1 - $(this).scrollTop() / 500);
-    });
+    }
+    bannerScroll();
 
-    $('#slider').flexslider({
+    function animateOnScroll() {
+        const windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        // const windowTop = $(this).scrollTop() + 64;
+        $('.scroll').each(function () {
+            const objectBottom = $(this).offset().top + $(this).innerHeight();
+            // const objectTop = $(this).offset().top;
+
+            $(this).removeClass('visible');
+            if (objectBottom < windowBottom) {
+                // if (!$(this).hasClass('visible')) {
+                $(this).addClass('visible');
+                // }
+            }
+            // if (objectTop < windowTop) {
+            // $(this).removeClass('visible');
+            // }
+        });
+    }
+    animateOnScroll();
+
+    $(window).on('scroll', checkTop);
+    $(window).on('scroll', bannerScroll);
+    $(window).on('scroll', animateOnScroll);
+
+    $('#services-slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
+        manualControls: '.controls li',
     });
 });
