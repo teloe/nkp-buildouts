@@ -992,6 +992,15 @@ footer {
         .content {
             background: $white;
             padding: 6rem 2rem 2rem;
+            > div {
+                &:not(:last-of-type) {
+                    p {
+                        &:last-of-type {
+                            padding-bottom: 4rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
