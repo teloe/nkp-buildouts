@@ -38,6 +38,9 @@ header {
     }
     .info {
         .btn {
+            @include bp(sm) {
+                margin-top: 1rem;
+            }
             transition: all .5s ease;
             &::before {
                 width: 100%;
@@ -96,26 +99,16 @@ header {
             margin-right: 2rem;
         }
     }
+    .quote, .social {
+        @include bp(sm) {
+            display:none;
+        }
+    }
     @include bp(desktop) {
         background: linear-gradient($dark-gray, rgba(0,0,0,0));
         position: absolute;
         height: 231px;
         width: 100%;
-    }
-    &.internal {
-        .info {
-            .btn {
-                @include bp(sm) {
-                    margin-top: 1rem;
-                }
-            }
-        }
-        .quote, .social {
-            @include bp(sm) {
-                display:none;
-            }
-        }
-
     }
 }
 // }}}
@@ -838,9 +831,67 @@ footer {
     @include bp(md) {
         padding: 8rem 0;
     }
-    h1, h2, h3 {
+    h1 {
+        color: $pink;
+        margin-bottom: 3rem;
+    }
+    h2, h3 {
         color: $pink;
         margin-bottom: 1.5rem;
+    }
+    #intro {
+        img {
+            display: block;
+            margin: 0 auto;
+            @include bp(sm) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    #related-services {
+        padding: 8rem 0;
+        ul {
+            a {
+                display:inline-block;
+                padding: .5rem 0;
+                font-family: $header-stack;
+                font-size: 1.375rem;
+                text-transform: uppercase;
+                transition: all .3s ease;
+                &::after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-right: solid 1px $dark-gray;
+                    border-bottom: solid 1px $dark-gray;
+                    display: inline-block;
+                    margin-left: .5rem;
+                    font-size: 1rem;
+                    transform: rotate(-45deg);
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    margin-left: .5rem;
+                    &::after {
+                        border-color: $pink;
+                    }
+                }
+            }
+        }
+    }
+    #staff {
+        .grid-50 {
+            margin-bottom: 4rem;
+        }
+        img {
+            display: block;
+            margin: 0 auto 2rem;
+            box-shadow: 8px 5px 20px rgba(0,0,0,.2);
+        }
+        h3, h4 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
     }
     #considerations {
         padding: 6rem 0 8rem;
