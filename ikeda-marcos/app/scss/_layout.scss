@@ -102,6 +102,21 @@ header {
         height: 231px;
         width: 100%;
     }
+    &.internal {
+        .info {
+            .btn {
+                @include bp(sm) {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .quote, .social {
+            @include bp(sm) {
+                display:none;
+            }
+        }
+
+    }
 }
 // }}}
 
@@ -199,6 +214,17 @@ header {
             }
         }
     }
+    &.internal {
+        background: url(../images/banner-internal.jpg) no-repeat center;
+        background-size: cover;
+        height: 200px;
+        @include bp(md) {
+            height: 350px;
+        }
+        @include bp(desktop) {
+            height: 550px;
+        }
+    }
 }
 // }}}
 
@@ -209,12 +235,11 @@ header {
             position: absolute;
             width: 100%;
             z-index: 999;
-            transition: all .3s ease;
+            transition: all .2s ease;
             &.stuck {
                 position: fixed;
                 top: 0;
                 background: rgba($dark-gray, .97);
-                // box-shadow: 0 10px 20px rgba(0,0,0,.2);
             }
         }
     }
@@ -229,6 +254,11 @@ header {
         display: none;
         @include bp(desktop) {
             display: inline-block;
+        }
+        a {
+            @media only screen and (max-width: 1199px) and (min-width: 1025px) {
+                margin: 0 .4rem;
+            }
         }
     }
 }
@@ -803,4 +833,115 @@ footer {
 // }}}
 
 // #main {{{
+#main {
+    padding: 5rem 0;
+    @include bp(md) {
+        padding: 8rem 0;
+    }
+    h1, h2, h3 {
+        color: $pink;
+        margin-bottom: 1.5rem;
+    }
+    #considerations {
+        padding: 6rem 0 8rem;
+        @include bp(md) {
+            padding: 10rem 0 12rem;
+        }
+        .grid-container {
+            @include bp(md) {
+                display:  flex;
+                align-items: center;
+            }
+        }
+        .grid-60 {
+            .tac {
+                margin: 3rem 0;
+            }
+            h3 {
+                @include bp(sm) {
+                    margin-top: 4rem;
+                }
+            }
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    #related-content {
+        background: url(../images/related-links-bg.jpg) no-repeat center;
+        background-size: cover;
+        padding: 10rem 0;
+        @include bp(desktop) {
+            background-attachment: fixed;
+        }
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+        }
+        ul {
+            a {
+                padding: 1rem 0;
+                display: inline-block;
+                font-family: $header-stack;
+                font-size: 1.5rem;
+                color: $white;
+                text-transform: uppercase;
+                &:hover {
+                    color: $pink;
+                    &::before {
+                        background: $pink;
+                    }
+                }
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    background: $white;
+                    display: inline-block;
+                    margin-right: .75rem;
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+    #reviews {
+        h1 {
+            color: $dark-gray;
+        }
+        h3 {
+            margin-bottom: 8rem;
+            color: $text-sub;
+        }
+    }
+    #proc-info {
+        margin: 2rem 0;
+        position: relative;
+        z-index: 1;
+        @include bp(md) {
+            margin: 12rem 0 0;
+            padding-top: 8rem;
+        }
+        .bg {
+            background: url(../images/breast-aug-bg.jpg) no-repeat center;
+            background-size: cover;
+            height: 60vw;
+            @include bp(sm) {
+                margin-bottom: 4rem;
+            }
+            @include bp(md) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60%;
+                height: 760px;
+                z-index: -1;
+            }
+        }
+        .content {
+            background: $white;
+            padding: 6rem 2rem 2rem;
+        }
+    }
+}
 // }}}
