@@ -12,12 +12,12 @@ $spacers: (
     7: $spacer * 5,
     8: $spacer * 6,
     9: $spacer * 7,
-    10: $spacer * 8
-    11: $spacer * 10 
-    12: $spacer * 12 
-    13: $spacer * 14 
-    14: $spacer * 16 
-    15: $spacer * 18 
+    10: $spacer * 8,
+    11: $spacer * 10, 
+    12: $spacer * 12, 
+    13: $spacer * 14, 
+    14: $spacer * 16, 
+    15: $spacer * 18, 
     16: $spacer * 20 
 ) !default;
 
@@ -45,7 +45,7 @@ $directions: (
 }
 
 // Breakpoints
-@mixin for-size($size) {
+@mixin bp($size) {
     @if $size == xs {
         @media only screen and (max-width: 500px) { @content; }
     } 
