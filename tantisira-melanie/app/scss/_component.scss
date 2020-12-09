@@ -1,0 +1,132 @@
+// Buttons
+a.btn,
+button.btn {
+    font-size: inherit;
+    font-family: inherit;
+    display: inline-block;
+    margin: 0 auto;
+    border:none;
+    // color: $white;
+    cursor:pointer;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    transition: all .5s ease;
+    &:hover {
+    }
+}
+
+// Social
+.social {
+    a {
+        display: inline-block;
+        margin: 0 .5rem;
+        font-size: 1.25rem;
+    }
+}
+
+//Nav
+.stellarnav {
+    &.mobile {
+        border: solid 1px rgba(0,0,0,.2);
+        ul {
+            background:none;
+        }
+        li {
+            > .dd-toggle {
+                height: 51px;
+                i {
+                    transition:none;
+                    &::before {
+                        content: '\f078';
+                    }
+                }
+            }
+            &.open {
+                > .dd-toggle {
+                    i {
+                        transform: rotate(180deg)!important;
+                    }
+                }
+                > a {
+                    font-weight:700;
+                    text-decoration: underline;
+                } 
+            }
+            &.has-sub {
+                > ul {
+                    li {
+                        > a {
+                            &:first-of-type {
+                                padding-left: 2rem;
+                            }
+                        }
+                    } 
+                } 
+            }
+            > a {
+                border-top: solid 1px rgba(0,0,0,.08);
+            }
+        }
+        .third {
+            width: 33.3333%;
+            color: $black;
+            padding: 25px 15px;
+        }
+        .close-menu {
+            width: 100%;
+            color: $black;
+        }
+
+    }
+    &.desktop {
+        > ul {
+            > li {
+                > a {
+                    padding: 20px 5px;
+                    font-size: .75rem;
+                }
+            }
+        } 
+    }
+    ul {
+        li {
+            a {
+                color: $black;
+                text-transform: uppercase;
+                font-size: .75rem;
+            }
+        }
+    }
+}
+
+/* FORM */
+form {
+    input,
+    select,
+    textarea {
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        margin: 0 0 10px;
+        padding: 15px;
+        border: 1px solid $black;
+        background: #fff;
+        transition: all .5s ease;
+        &:focus {
+            outline:none;
+        }
+    }
+    textarea {
+        height: 200px;
+    }
+    span.agree {
+        display: inline-block;
+    }
+    ::placeholder {
+        font-style: normal;
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
