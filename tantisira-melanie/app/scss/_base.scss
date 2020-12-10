@@ -2,7 +2,7 @@
 $lightblue-text: #7291a5;
 $lightblue-bg: #E2EBF3;
 $gold: #b07e3e;
-$gold-gradient: linear-gradient(#C9A576, #F8DEAD); // dark to light
+$gold-gradient: #C9A576, #F8DEAD; // dark to light
 $blue-gradient: linear-gradient(#A8C5DD, #E7F5FF); // dark to light
 $black: #000;
 $white: #fff;
@@ -43,13 +43,13 @@ body {
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $black;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
+    color: $lightblue-text;
     text-decoration: none;
     outline: none;
 }
@@ -108,16 +108,20 @@ h1 {
     }
 }
 h2 {
+    font-weight: 300;
     font-size: 1.75rem;
+    margin-bottom: 1.5rem;
     @include bp(md) {
         font-size: 3rem;
     }
 }
 h3 {
-    font-size: 1.25rem;
-    @include bp(md) {
-        font-size: 2rem;
-    }
+    color: $lightblue-text;
+    margin-bottom: 1rem;
+    font-family: $font-stack;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.125rem;
 }
 p {
     padding-bottom: 2rem;

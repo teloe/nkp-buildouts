@@ -5,11 +5,23 @@ jQuery(document).ready(function ($) {
         menuLabel: 'Menu',
         phoneBtn: '808-591-9111',
         locationBtn: 'https://goo.gl/maps/WgHgmZee7TXRbPtJ8',
+        closeBtn: true,
     });
 
-    $('#slider').flexslider({
+    $('.specialties-slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
+    });
+
+    $(document).on('click', '.arrow', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate(
+            {
+                scrollTop: $($.attr(this, 'href')).offset().top - 120,
+            },
+            500
+        );
     });
 });
