@@ -1,0 +1,134 @@
+// Colors
+$blue: blue;
+$green: green;
+$red: red;
+$yellow: yellow;
+$black: #000;
+$white: #fff;
+
+// Font colors
+$text-base: #333;
+$text-dark: #202020;
+$text-sub: #555;
+
+// Typography
+$font-root-size: 16px;
+$font-stack: 'proxima-nova', sans-serif;
+$header-stack: 'trajan-pro-3', serif;
+$style: normal;
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// General
+html {
+    font-size: $font-root-size;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    color: $text-base;
+    font-family: $font-stack;
+    font-style: $style;
+    font-weight: $regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a,
+a:visited,
+a:link {
+    // color: $blue;
+    text-decoration: none;
+    outline: none;
+    transition: all .5s ease;
+}
+a:hover {
+    // color: rgba($blue, .6);
+    text-decoration: none;
+    outline: none;
+}
+ul,
+ol {
+    clear: both
+}
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.fn {
+    float: none;
+    display: inline-block
+}
+
+.tal {
+    text-align: left
+}
+
+.tar {
+    text-align: right
+}
+
+.tac {
+    text-align: center
+}
+
+.clr-l {
+    clear: left
+}
+
+.clr-r {
+    clear: right
+}
+
+.clr,
+.clear {
+    clear: both
+}
+.nodisp {
+    display: none
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: $header-stack;
+}
+h1 {
+    font-style: $style;
+    font-size: 2rem;
+    @include bp(md) {
+        font-size: 4rem;
+    }
+}
+h2 {
+    color: $text-sub;
+    font-size: 1.75rem;
+    @include bp(md) {
+        font-size: 3rem;
+    }
+}
+h3 {
+    color: $text-sub;
+    font-size: 1.25rem;
+    @include bp(md) {
+        font-size: 2rem;
+    }
+}
+p {
+    padding-bottom: 2rem;
+}
+p, li {
+    line-height: 2rem;
+}
+ol, ul {
+    padding-bottom: 2rem;
+}
+img {
+    margin-bottom: 1rem;
+}

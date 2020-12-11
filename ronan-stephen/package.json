@@ -2,14 +2,25 @@
     "name": "ronan-stephen",
     "version": "1.0.0",
     "description": "",
-    "main": ".eslintrc.js",
+    "main": "gulpfile.js",
     "scripts": {
-        "start": "browser-sync start --directory --server --files \"**/*\""
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
     "license": "ISC",
+    "browserslist": [
+        "last 2 versions"
+    ],
     "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "eslint": "^6.8.0"
+        "autoprefixer": "^10.1.0",
+        "browser-sync": "^2.26.13",
+        "cssnano": "^4.1.10",
+        "eslint": "^7.15.0",
+        "gulp": "^4.0.2",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "postcss": "^8.2.1"
     }
 }
