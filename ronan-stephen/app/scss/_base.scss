@@ -1,8 +1,7 @@
 // Colors
 $blue: blue;
-$green: green;
-$red: red;
-$yellow: yellow;
+$gold: #a37e53;
+$yellow: #d2b24e;
 $black: #000;
 $white: #fff;
 
@@ -13,8 +12,10 @@ $text-sub: #555;
 
 // Typography
 $font-root-size: 16px;
-$font-stack: 'proxima-nova', sans-serif;
-$header-stack: 'trajan-pro-3', serif;
+// $font-stack: 'futura-pt',sans-serif;
+$font-stack: 'raleway', sans-serif;
+$alt-stack: 'proxima-nova', sans-serif;
+$header-stack: 'raleway', sans-serif;
 $style: normal;
 $thin: 100;
 $light: 300;
