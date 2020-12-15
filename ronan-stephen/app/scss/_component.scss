@@ -2,17 +2,53 @@
 a.btn,
 button.btn {
     font-size: inherit;
-    font-family: inherit;
+    font-family: $alt-stack1;
     display: inline-block;
-    margin: 0 auto;
-    border:none;
-    // color: $white;
+    // margin: 0 auto;
+    color: $white;
+    letter-spacing: 2px;
+    border: solid 4px rgba(255,255,255,.9);
+    font-weight: 700;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem 2rem;
-    transition: all .5s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        display: block;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background: rgba(255,255,255,.9);
+        transition: all .4s cubic-bezier(.215,.61,.355,1);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 0;
+        left: 50%;
+        top: 50%;
+        width: 150%;
+        transition: all .75s ease;
+    }
     &:hover {
+        color: $yellow;
+        &::before {
+            top: 0;
+            // bottom: auto;
+            height: 100%;
+        }
+        &::after {
+            height: 450%;
+        }
     }
 }
 
@@ -34,6 +70,7 @@ button.btn {
     transition-duration: 0.15s;
     transition-timing-function: linear;
     font: inherit;
+    font-family: $alt-stack1;
     color: inherit;
     text-transform: none;
     background-color: transparent;
@@ -72,9 +109,9 @@ transition-timing-function: ease; }
     content: "";
 display: block; }
 .hamburger-inner::before {
-top: -10px; }
+top: -8px; }
 .hamburger-inner::after {
-bottom: -10px; }
+bottom: -8px; }
 
 // Squeeze
 .hamburger--squeeze .hamburger-inner {

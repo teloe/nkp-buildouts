@@ -15,6 +15,7 @@ $font-root-size: 16px;
 // $font-stack: 'futura-pt',sans-serif;
 $font-stack: 'raleway', sans-serif;
 $alt-stack: 'proxima-nova', sans-serif;
+$alt-stack1: 'futura-pt',sans-serif;
 $header-stack: 'raleway', sans-serif;
 $style: normal;
 $thin: 100;
@@ -129,7 +130,4 @@ p, li {
 }
 ol, ul {
     padding-bottom: 2rem;
-}
-img {
-    margin-bottom: 1rem;
 }

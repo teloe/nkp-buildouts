@@ -65,6 +65,6 @@ $directions: (
         @media only screen and (min-width: 1200px) { @content; }
     } 
     @else if $size == xl {
-        @media only screen and (min-width: 2560px) { @content; }
+        @media only screen and (min-width: 2200px) { @content; }
     }
 }
