@@ -125,7 +125,7 @@ header {
     animation-fill-mode: both;
     .grid-100 {
         text-align: center;
-        height: 760px;
+        height: 700px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -167,6 +167,7 @@ header {
         }
         @include bp(md) {
             height: 1000px;
+            max-height: 110vh;
             padding-bottom: 12rem;
         }
         @include bp(xl) {
@@ -188,6 +189,7 @@ header {
     padding: 8rem 0 6rem;
     opacity: 0;
     visibility: hidden;
+    z-index: -1;
     transition: all .5s ease;
     > div {
         &:not(:first-child) {
@@ -198,6 +200,10 @@ header {
             > ul {
                 animation: fadeIn 1s ease;
                 // animation-delay: .1s;
+                animation-fill-mode:both;
+            }
+            > div {
+                animation: fadeIn .75s ease;
                 animation-fill-mode:both;
             }
         }
@@ -277,7 +283,7 @@ header {
             }
         }
     }
-    #menu-procedures, #menu-medspa {
+    #menu-procedures, #menu-medspa, #menu-about, #menu-resources {
         .menu-item-has-children {
             > a {
                 text-transform: uppercase;
@@ -290,7 +296,242 @@ header {
             width: 100%;
         }
     }
+    .menu-bxa-container {
+        .menu-bxa-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 2rem;
+            a {
+                text-transform: uppercase;
+                position: relative;
+                // font-weight: 300;
+                // font-family: $alt-stack1;
+                padding: .5rem;
+                // font-weight: 700;
+                &.flex-active {
+                    color: $yellow;
+                    &::after {
+                        content: '\f078';
+                        font-family:'Font Awesome 5 Free';
+                        font-weight:900;
+                        display: block;
+                        text-align: center;
+                        left: 0;
+                        right: 0;
+                        bottom: -.7rem;
+                        position: absolute;
+                        animation: caretFadeIn .5s ease;
+                        animation-fill-mode: both;
+                    }
+                }
+            }
+        }
+        .bxa-menu-slider {
+            .grid-33 {
+                text-align: center;
+                a {
+                    &:hover {
+                        h3 {
+                            color: $yellow;
+                        }
+                        img {
+                            filter: brightness(1);
+                        }
+                    }
+                    img {
+                        filter: brightness(.8);
+                        transition: all .5s ease;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size: 1rem;
+            text-align: center;
+            color: $white;
+            margin-top: 1rem;
+            transition: all .5s ease;
+            font-family: $alt-stack1;
+            text-transform: uppercase;
+        }
+        .btn {
+            margin-top: 2rem;
+            border-color: $yellow;
+            color: $yellow;
+            &::before {
+                background: $yellow;
+            }
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+    .menu-membership-container, .menu-out-of-town-container, .menu-promos-container {
+        a {
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            &:hover {
+                h3 {
+                    // color: $yellow;
+                    opacity:1;
+                    visibility: visible;
+                    transform: translateY(-50%);
+                }
+                img {
+                    filter: brightness(.4);
+                }
+            }
+            img {
+                // filter: brightness(.8);
+                transition: all .5s ease;
+            }
+            h3 {
+                text-align: center;
+                position: absolute;
+                font-weight: 300;
+                color: $white;
+                margin-top: 1rem;
+                top: 50%;
+                left: 0;
+                right: 0;
+                font-family: $alt-stack1;
+                text-transform: uppercase;
+                opacity:0;
+                visibility: hidden;
+                // transform: translateY(5px);
+                transition: all .4s ease;
+            }
+        }
+    }
+    .menu-videos-container {
+        .btn {
+            margin-top: 2rem;
+            border-color: $yellow;
+            color: $yellow;
+            &::before {
+                background: $yellow;
+            }
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+    .menu-video-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        a {
+            text-transform: uppercase;
+            position: relative;
+            // font-weight: 300;
+            // font-family: $alt-stack1;
+            padding: .5rem;
+            // font-weight: 700;
+            &.flex-active {
+                color: $yellow;
+                &::after {
+                    content: '\f078';
+                    font-family:'Font Awesome 5 Free';
+                    font-weight:900;
+                    display: block;
+                    text-align: center;
+                    left: 0;
+                    right: 0;
+                    bottom: -.7rem;
+                    position: absolute;
+                    animation: caretFadeIn .5s ease;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+    }
+    .menu-out-of-town-container {
+        a {
+            padding:0;
+        }
+        img {
+            width: 100%;
+        }
+        h3 {
+            @media only screen and (max-width: 1199px) and (min-width: 1025px) {
+                font-size: 1.125rem;
+            }
+        }
+    }
 }
+// }}}
+
+// #welcome {{{
+#welcome {
+    margin-top: 4rem;
+    p {
+        color: $gold;
+        font-size: 1.25rem;
+        line-height: 1.75;
+        text-align: center;
+        @include bp(md) {
+            font-size: 1.875rem;
+        }
+    }
+}
+// }}}
+
+// #doctors {{{
+#doctors {
+    margin-top: 8rem;
+    padding: 6rem 0 12rem;
+    background: url(../images/meet-bg.png) no-repeat center;
+    background-size: cover;
+    @include bp(md) {
+        min-height: 848px;
+        height: 30vw;
+        padding: 6rem 0;
+    }
+    h2, p {
+        color: $white;
+    }
+    h2 {
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    p {
+        font-size: 1.125rem;
+    }
+    .btn-wrapper {
+        text-align: center;
+        @include bp(md) {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .btn {
+            margin-bottom: 2rem;
+            margin-right: 1rem;
+        }
+    }
+}
+// }}}
+
+// #specialties {{{
+#specialties {
+    padding: 14rem 0 6rem;
+    margin-top: -16rem;
+    background: url(../images/procs-bg.png) no-repeat center;
+    background-size: cover;
+    @include bp(md) {
+        min-height: 806px;
+        height: 30vw;
+    }
+    @include bp(xl) {
+        margin-top: -8vw;
+    }
+}
+// }}}
+
+// #section {{{
 // }}}
 
 // #section {{{

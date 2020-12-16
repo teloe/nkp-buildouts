@@ -7,10 +7,15 @@ jQuery(document).ready(function ($) {
         locationBtn: '',
     });
 
+    // Open/ Close Menu
     $('.hamburger').on('click', function () {
         $(this).toggleClass('is-active');
         $('#desktop-menu').toggleClass('open');
         $('.close-overlay').toggleClass('active');
+        /* $('#desktop-menu > div:not(:first-child)').removeClass('active');
+        if (!$('#desktop-menu').hasClass('open')) {
+            $('#desktop-menu > div:not(:first-child)').removeClass('active');
+        } */
     });
 
     function closeMenu() {
@@ -28,11 +33,13 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#menu-desktop-menu, #menu-procedures, #menu-medspa').addClass(
-        'grid-parent grid-container'
-    );
+    // Desktop Menu
+    $(
+        '#menu-desktop-menu, #menu-procedures, #menu-medspa, #menu-about, #menu-resources'
+    ).addClass('grid-parent grid-container');
 
-    $('#menu-desktop-menu li').on('click', function () {
+    $('#menu-desktop-menu li').on('click', function (e) {
+        e.preventDefault();
         $(this).addClass('active').siblings().removeClass('active');
     });
 
@@ -93,12 +100,13 @@ jQuery(document).ready(function ($) {
     });
 
     $('#menu-desktop-menu .promos').on('click', function () {
-        $('#desktop-menu .menu-promotions-container')
+        $('#desktop-menu .menu-promos-container')
             .addClass('active')
             .siblings()
             .removeClass('active');
     });
 
+    // Menu images
     $('#menu-procedures .body > a').before(
         '<img class="img-resp" src="../images/menu-body.jpg" alt="Body procedures">'
     );
@@ -131,6 +139,36 @@ jQuery(document).ready(function ($) {
         '<img class="img-resp" src="../images/menu-medspa.jpg" alt="Medspa procedures">'
     );
 
+    $('#menu-about .docs > a').before(
+        '<img class="img-resp" src="../images/menu-body.jpg" alt="Body procedures">'
+    );
+    $('#menu-about .team > a').before(
+        '<img class="img-resp" src="../images/menu-face.jpg" alt="Face procedures">'
+    );
+    $('#menu-about .practice > a').before(
+        '<img class="img-resp" src="../images/menu-men.jpg" alt="Mens procedures">'
+    );
+    $('#menu-about .contact > a').before(
+        '<img class="img-resp" src="../images/menu-medspa.jpg" alt="Medspa procedures">'
+    );
+
+    $('#menu-resources .consult > a').before(
+        '<img class="img-resp" src="../images/menu-body.jpg" alt="Body procedures">'
+    );
+    $('#menu-resources .financing > a').before(
+        '<img class="img-resp" src="../images/menu-breast.jpg" alt="Breast procedures">'
+    );
+    $('#menu-resources .forms > a').before(
+        '<img class="img-resp" src="../images/menu-face.jpg" alt="Face procedures">'
+    );
+    $('#menu-resources .membership > a').before(
+        '<img class="img-resp" src="../images/menu-men.jpg" alt="Mens procedures">'
+    );
+    $('#menu-resources .faq > a').before(
+        '<img class="img-resp" src="../images/menu-medspa.jpg" alt="Medspa procedures">'
+    );
+
+    // Scroll functions
     function checkTop() {
         const header = $('header');
         header.addClass('stuck');
@@ -175,9 +213,17 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', bannerScroll);
     $(window).on('scroll', animateOnScroll);
 
-    $('#slider').flexslider({
+    $('.bxa-menu-slider').flexslider({
         animation: 'fade',
         directionNav: false,
-        controlNav: false,
+        controlNav: true,
+        manualControls: '.menu-bxa-controls li a',
+    });
+
+    $('.videos-menu-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        manualControls: '.menu-video-controls li a',
     });
 });
