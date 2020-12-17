@@ -1,27 +1,32 @@
 jQuery(document).ready(function ($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
-        breakpoint: 1024,
-        menuLabel: 'Menu',
+        breakpoint: 99999,
+        // menuLabel: 'Menu',
         phoneBtn: '',
         locationBtn: '',
+        mobileMenu: true,
     });
 
     // Open/ Close Menu
     $('.hamburger').on('click', function () {
         $(this).toggleClass('is-active');
         $('#desktop-menu').toggleClass('open');
+        $('#mobile-menu').toggleClass('open');
         $('.close-overlay').toggleClass('active');
-        /* $('#desktop-menu > div:not(:first-child)').removeClass('active');
-        if (!$('#desktop-menu').hasClass('open')) {
-            $('#desktop-menu > div:not(:first-child)').removeClass('active');
-        } */
+        if (!$('header').hasClass('stuck') || $(window).scrollTop() === 0) {
+            $('header').toggleClass('stuck');
+        }
     });
 
     function closeMenu() {
         $('.hamburger').removeClass('is-active');
         $('#desktop-menu').removeClass('open');
+        $('#mobile-menu').removeClass('open');
         $('.close-overlay').removeClass('active');
+        if (!$('header').hasClass('stuck') || $(window).scrollTop() === 0) {
+            $('header').toggleClass('stuck');
+        }
     }
     closeMenu();
 

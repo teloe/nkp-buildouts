@@ -2,17 +2,17 @@
 a.btn,
 button.btn {
     font-size: inherit;
-    // font-family: $alt-stack1;
+    font-family: $alt-stack5;
     // display: inline-block;
     display: block;
     width: 100%;
     max-width: 320px;
     // margin: 0 auto;
     color: $white;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
     border: solid 3px rgba(255,255,255,.9);
     // border-radius: 4px;
-    font-weight: 700;
+    font-weight: 600;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
@@ -55,7 +55,7 @@ button.btn {
         }
     }
     @include bp(sm) {
-        font-size: .875rem;
+        // font-size: .875rem;
         // padding: 1rem;
     }
 }
@@ -148,7 +148,9 @@ bottom: -8px; }
 //Nav
 .stellarnav {
     &.mobile {
-        border: solid 1px rgba(0,0,0,.2);
+        > ul {
+            border:none;
+        }
         ul {
             background:none;
         }
@@ -184,8 +186,8 @@ bottom: -8px; }
                     } 
                 } 
             }
-            > a {
-                border-top: solid 1px rgba(0,0,0,.08);
+            a {
+                border-bottom: 1px solid rgba(255,255,255,0);
             }
         }
         .third {
@@ -199,20 +201,22 @@ bottom: -8px; }
         }
 
     }
-    &.desktop {
-        > ul {
-            > li {
-                > a {
-                    padding: 20px 18px;
+    ul {
+        ul {
+            li {
+                a {
+                    font-size: .875rem;
                 }
             }
-        } 
-    }
-    ul {
+        }
         li {
             a {
-                color: $text-base;
+                color: $white;
+                // font-size: .875rem; 
                 text-transform: uppercase;
+                &:hover {
+                    color: $yellow;
+                }
             }
         }
     }
