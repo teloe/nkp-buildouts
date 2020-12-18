@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
     $('.stellarnav').stellarNav({
         showArrows: false,
         breakpoint: 99999,
-        // menuLabel: 'Menu',
         phoneBtn: '',
         locationBtn: '',
         mobileMenu: true,
@@ -198,18 +197,13 @@ jQuery(document).ready(function ($) {
 
     function animateOnScroll() {
         const windowBottom = $(this).scrollTop() + $(this).innerHeight();
-        // const windowTop = $(this).scrollTop() + 64;
         $('.scroll').each(function () {
             const objectBottom = $(this).offset().top + $(this).innerHeight();
-            // const objectTop = $(this).offset().top;
 
             $(this).removeClass('visible');
             if (objectBottom < windowBottom) {
                 $(this).addClass('visible');
             }
-            // if (objectTop < windowTop) {
-            // $(this).removeClass('visible');
-            // }
         });
     }
     animateOnScroll();
@@ -218,6 +212,7 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', bannerScroll);
     $(window).on('scroll', animateOnScroll);
 
+    // Sliders
     $('.bxa-menu-slider').flexslider({
         animation: 'fade',
         directionNav: false,
@@ -230,5 +225,43 @@ jQuery(document).ready(function ($) {
         directionNav: false,
         controlNav: true,
         manualControls: '.menu-video-controls li a',
+    });
+
+    $('.testimonials-slider').flexslider({
+        animation: 'fade',
+        directionNav: true,
+        controlNav: false,
+        prevText: '',
+        nextText: '',
+    });
+
+    $('.services-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        manualControls: '.services-controls li a',
+    });
+
+    $('#procs .content').on('click mouseenter', function () {
+        $(this)
+            .addClass('active')
+            .parent()
+            .siblings()
+            .find('.content')
+            .removeClass('active');
+    });
+    $('#procs .content').on('mouseleave', function () {
+        $(this).removeClass('active');
+    });
+    $(document).on('click', function (e) {
+        if ($(e.target).is('#procs .content') === false) {
+            $('#procs .content').removeClass('active');
+        }
+    });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode === 27) {
+            $('#procs .content').removeClass('active');
+        }
     });
 });
