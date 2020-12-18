@@ -182,19 +182,6 @@ jQuery(document).ready(function ($) {
     }
     checkTop();
 
-    function bannerScroll() {
-        const scroll = $(window).scrollTop();
-        $('#banner > img').css({
-            transform:
-                'translate3d(-50%, -' +
-                scroll / 100 +
-                '%, 0) scale(' +
-                (100 + scroll / 20) / 100 +
-                ')',
-        });
-    }
-    bannerScroll();
-
     function animateOnScroll() {
         const windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $('.scroll').each(function () {
@@ -209,7 +196,6 @@ jQuery(document).ready(function ($) {
     animateOnScroll();
 
     $(window).on('scroll', checkTop);
-    $(window).on('scroll', bannerScroll);
     $(window).on('scroll', animateOnScroll);
 
     // Sliders
