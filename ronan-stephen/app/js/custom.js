@@ -61,8 +61,54 @@ jQuery(document).ready(function ($) {
             .removeClass('active');
     });
 
+    // Bxa Menu
     $('#menu-desktop-menu .bxa').on('click', function () {
-        $('#desktop-menu .menu-bxa-container')
+        $(
+            '.menu-bxa-controls .body, #desktop-menu .menu-bxa-container, .bxa-menu-slider .body'
+        )
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+
+    $('.menu-bxa-controls li').on('click', function (e) {
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $('.bxa-menu-slider .body').addClass('active');
+    $('.menu-bxa-controls .body').on('click', function () {
+        $('.bxa-menu-slider .body')
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+    $('.menu-bxa-controls .breast').on('click', function () {
+        $('.bxa-menu-slider .breast')
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+    $('.menu-bxa-controls .face').on('click', function () {
+        $('.bxa-menu-slider .face')
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+    $('.menu-bxa-controls .skin').on('click', function () {
+        $('.bxa-menu-slider .skin')
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+    $('.menu-bxa-controls .mens').on('click', function () {
+        $('.bxa-menu-slider .mens')
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+    $('.menu-bxa-controls .medspa').on('click', function () {
+        $('.bxa-menu-slider .medspa')
             .addClass('active')
             .siblings()
             .removeClass('active');
@@ -199,11 +245,67 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', animateOnScroll);
 
     // Sliders
-    $('.bxa-menu-slider').flexslider({
+    // $('.bxa-menu-slider').flexslider({
+    //     animation: 'fade',
+    //     directionNav: false,
+    //     controlNav: true,
+    //     slideshow: false,
+    //     startAt: 0,
+    //     manualControls: '.menu-bxa-controls li a',
+    // });
+
+    $('.bxa-body-slider').flexslider({
         animation: 'fade',
         directionNav: false,
         controlNav: true,
-        manualControls: '.menu-bxa-controls li a',
+        slideshow: false,
+        startAt: 0,
+        manualControls: '.menu-body-controls li a',
+    });
+
+    $('.bxa-breast-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        slideshow: false,
+        startAt: 0,
+        manualControls: '.menu-breast-controls li a',
+    });
+
+    $('.bxa-face-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        slideshow: false,
+        startAt: 0,
+        manualControls: '.menu-face-controls li a',
+    });
+
+    $('.bxa-skin-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        slideshow: false,
+        startAt: 0,
+        manualControls: '.menu-skin-controls li a',
+    });
+
+    $('.bxa-mens-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        slideshow: false,
+        startAt: 0,
+        manualControls: '.menu-mens-controls li a',
+    });
+
+    $('.bxa-medspa-slider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        controlNav: true,
+        slideshow: false,
+        startAt: 0,
+        manualControls: '.menu-medspa-controls li a',
     });
 
     $('.videos-menu-slider').flexslider({

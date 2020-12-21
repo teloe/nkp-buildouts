@@ -280,7 +280,7 @@ header {
             padding: 0 30px;
         }
     }
-    #menu-desktop-menu {
+    #menu-desktop-menu, .menu-bxa-controls {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -327,6 +327,20 @@ header {
             }
         }
     }
+    .menu-bxa-controls {
+        margin-bottom: 1rem;
+        padding-bottom: 0;
+    }
+    .bxa-menu-slider {
+        > ul {
+            > li {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
     #menu-procedures, #menu-medspa, #menu-about, #menu-resources {
         .menu-item-has-children {
             > a {
@@ -341,7 +355,7 @@ header {
         }
     }
     .menu-bxa-container {
-        .menu-bxa-controls {
+        .menu-bxa-controls, .menu-body-controls, .menu-breast-controls, .menu-face-controls, .menu-skin-controls, .menu-mens-controls, .menu-medspa-controls {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
