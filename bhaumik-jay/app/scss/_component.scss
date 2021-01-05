@@ -85,10 +85,21 @@ button.btn {
 
 // Social
 .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
         display: inline-block;
         margin: 0 .5rem;
         font-size: 1.25rem;
+        background: $blue;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
     }
 }
 
@@ -149,6 +160,7 @@ button.btn {
     &.desktop {
         > ul {
             ul {
+                border-top: solid 3px $blue;
                 background-color: $white;
                 box-shadow: 0 5px 20px rgba(0,0,0,.08);
                 padding: 10px;

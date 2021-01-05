@@ -19,21 +19,7 @@ jQuery(document).ready(function ($) {
     }
     checkTop();
 
-    function animateOnScroll() {
-        const windowBottom = $(this).scrollTop() + $(this).innerHeight();
-        $('.scroll').each(function () {
-            const objectBottom = $(this).offset().top + $(this).innerHeight();
-
-            $(this).removeClass('visible');
-            if (objectBottom < windowBottom) {
-                $(this).addClass('visible');
-            }
-        });
-    }
-    animateOnScroll();
-
     $(window).on('scroll', checkTop);
-    $(window).on('scroll', animateOnScroll);
 
     $('.accordion-content').hide();
     $('.accordion .panel:first-of-type .accordion-content').show();
@@ -56,9 +42,8 @@ jQuery(document).ready(function ($) {
 
     $('.carousel').slick({
         slidesToShow: 2,
-        // centerPadding: 0,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         dots: true,
         speed: 600,
@@ -74,10 +59,4 @@ jQuery(document).ready(function ($) {
             },
         ],
     });
-
-    // $('.testimonials-slider').flexslider({
-    // animation: 'slide',
-    // directionNav: false,
-    // controlNav: true,
-    // });
 });

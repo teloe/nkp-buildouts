@@ -285,6 +285,7 @@ footer {
     background: $dark-blue;
     .logo {
         text-align: center;
+        margin-bottom: 1.5rem;
         img {
             width: 120px;
         }
@@ -297,8 +298,10 @@ footer {
         text-transform: none;
         font-weight: 400;
         font-size: 18px;
+        margin-bottom: 1rem;
     }
     .footer-menu {
+        border-bottom: solid 1px $white;
         .menu {
             display: flex;
             flex-direction: column;
@@ -360,6 +363,29 @@ footer {
                     }
                 }
             }
+        }
+    }
+    .bottom {
+        padding-top: 2rem;
+        border-bottom: solid 1px #2a3948;
+        @include bp(sm) {
+            padding-bottom: 2rem;
+        }
+        .grid-33 {
+            text-align: center;
+            &:first-of-type {
+                @include bp(sm) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .btn {
+            background: $white;
+            border-color: $white;
+            color: $dark-blue;
+        }
+        .phone {
+            padding-bottom: 0;
         }
     }
 }
