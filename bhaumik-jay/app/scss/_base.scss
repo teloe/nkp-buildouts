@@ -35,20 +35,20 @@ body {
     color: $text-base;
     font-family: $font-stack;
     font-style: $style;
-    font-weight: $regular;
+    font-weight: $medium;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $blue;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
+    color: rgba($blue, .7);
     text-decoration: none;
     outline: none;
 }
@@ -98,37 +98,36 @@ ol {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
+    padding-bottom: 10px;
+    line-height: 1.2;
+    color: $dark-blue;
+    text-transform: uppercase;
 }
 h1 {
     font-style: $style;
-    font-size: 2rem;
+    font-size: 1.5rem;
     @include bp(md) {
-        font-size: 4rem;
+        font-size: 2.14rem;
     }
 }
 h2 {
-    color: $text-sub;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     @include bp(md) {
-        font-size: 3rem;
+        font-size: 2.14rem;
     }
 }
 h3 {
-    color: $text-sub;
     font-size: 1.25rem;
     @include bp(md) {
         font-size: 2rem;
     }
 }
 p {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 p, li {
     line-height: 2rem;
 }
 ol, ul {
-    padding-bottom: 2rem;
-}
-img {
-    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }

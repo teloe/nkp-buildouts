@@ -2,17 +2,84 @@
 a.btn,
 button.btn {
     font-size: inherit;
-    font-family: inherit;
+    font-family: $alt-stack;
+    font-weight: $medium;
     display: inline-block;
     margin: 0 auto;
-    border:none;
-    // color: $white;
+    border:solid 2px $dark-blue;
+    background: $dark-blue;
+    color: $white;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: .75rem 2rem;
+    position: relative;
+    box-shadow:0px 12px 18px -6px rgba(0,0,0,0.3);
     transition: all .5s ease;
+    &::before {
+        content: '\f054';
+        font-family:'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 30px;
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s ease;
+    }
     &:hover {
+        &::before {
+            opacity: 1;
+            visibility: visible;
+            right: 10px;
+        }
+    }
+    &.transparent-bg {
+        background: none;
+        color: $dark-blue;
+    }
+    @include bp(desktop) {
+        font-size: 16px;
+    }
+}
+
+// Accordion
+.accordion {
+    .panel {
+        margin-bottom: 15px;
+        border:1px solid #d9d9d9;
+    }
+    .accordion-title {
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: all .3s ease;
+        &.active {
+            background-color: $dark-blue;
+            p {
+                color: $white;
+                &::after {
+                    content: '\f056';
+                }
+            }
+        }
+        p {
+            font-family: $header-stack;
+            font-size: 16px;
+            padding: 0;
+            transition: all .3s ease;
+            position: relative;
+            &::after {
+                content: '\f055';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .accordion-content {
+        padding: 20px 10px 15px;
     }
 }
 
@@ -30,11 +97,11 @@ button.btn {
     &.mobile {
         border: solid 1px rgba(0,0,0,.2);
         ul {
-            background:none;
+            background:$white;
         }
         li {
             > .dd-toggle {
-                height: 51px;
+                height: 52px;
                 i {
                     transition:none;
                     &::before {
@@ -81,9 +148,19 @@ button.btn {
     }
     &.desktop {
         > ul {
+            ul {
+                background-color: $white;
+                box-shadow: 0 5px 20px rgba(0,0,0,.08);
+                padding: 10px;
+            }
             > li {
                 > a {
-                    padding: 20px 18px;
+                    padding: 15px 18px;
+                    font-size: 18px;
+                    font-weight: $regular;
+                    &:hover {
+                        background:none;
+                    }
                 }
             }
         } 
@@ -91,8 +168,17 @@ button.btn {
     ul {
         li {
             a {
+                // font-weight:$bold;
+                font-family: $alt-stack;
                 color: $text-base;
                 text-transform: uppercase;
+                @include bp(desktop) {
+                    font-weight: $regular;
+                }
+                &:hover {
+                    background-color: rgba(0,0,0,.03);
+                    color: $blue;
+                }
             }
         }
     }
