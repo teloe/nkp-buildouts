@@ -79,7 +79,11 @@ button.btn {
         }
     }
     .accordion-content {
-        padding: 20px 10px 15px;
+        padding: 20px 10px;
+        p {
+            padding: 0;
+            font-family: $alt-stack;
+        }
     }
 }
 
