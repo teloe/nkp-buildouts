@@ -17,6 +17,13 @@ header {
             }
         }
     }
+    &.internal {
+        background: rgba(255,255,255,.96);
+        padding-bottom: 1rem;
+        @include bp(desktop) {
+            padding-bottom: 0;
+        }
+    }
     .top {
         padding: .357rem 0;
         background: $dark-blue;
@@ -83,6 +90,40 @@ header {
                 margin-right: 1rem;
             }
         }
+    }
+    &.about {
+        background-image: url(../images/aboutbanner.jpg);
+        background-color: rgba(30,46,61,0.75);
+        background-blend-mode: multiply;
+        img {
+            width: 150px;
+        }
+        h1, p {
+            color: $white;
+        }
+        h1 {
+            margin-top: 2rem;
+        }
+        .btn {
+            background: $white;
+            color: $dark-blue;
+            border-color: $white;
+        }
+    }
+    &.services {
+        background-image: url(../images/serviceheader.jpg);
+        background-color: rgba(30,46,61,0.75);
+        background-blend-mode: multiply;
+    }
+    &.contact {
+        background-image: url(../images/contactbanner.jpg);
+        background-color: rgba(30,46,61,0.75);
+        background-blend-mode: multiply;
+    }
+    &.faq {
+        background-image: url(../images/faqbanner.jpg);
+        background-color: rgba(30,46,61,0.75);
+        background-blend-mode: multiply;
     }
 }
 // }}}
@@ -301,8 +342,17 @@ footer {
         margin-bottom: 1rem;
     }
     .footer-menu {
-        border-bottom: solid 1px $white;
+        &::after {
+            content: '';
+            height: 1px;
+            width: 100%;
+            max-width: 900px;
+            background-color: $white;
+            display: block;
+            margin: 0 auto;
+        }
         .menu {
+            padding-bottom: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -392,4 +442,7 @@ footer {
 // }}}
 
 // #main {{{
+#main {
+    padding: 4rem 0;
+}
 // }}}
