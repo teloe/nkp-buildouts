@@ -114,16 +114,40 @@ header {
         background-image: url(../images/serviceheader.jpg);
         background-color: rgba(30,46,61,0.75);
         background-blend-mode: multiply;
+        h1 {
+            color: $white;
+        }
+        .btn {
+            background: $white;
+            color: $dark-blue;
+            border-color: $white;
+        }
     }
     &.contact {
         background-image: url(../images/contactbanner.jpg);
         background-color: rgba(30,46,61,0.75);
         background-blend-mode: multiply;
+        h1 {
+            color: $white;
+        }
+        .btn {
+            background: $white;
+            color: $dark-blue;
+            border-color: $white;
+        }
     }
     &.faq {
         background-image: url(../images/faqbanner.jpg);
         background-color: rgba(30,46,61,0.75);
         background-blend-mode: multiply;
+        h1 {
+            color: $white;
+        }
+        .btn {
+            background: $white;
+            color: $dark-blue;
+            border-color: $white;
+        }
     }
 }
 // }}}

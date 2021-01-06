@@ -59,4 +59,25 @@ jQuery(document).ready(function ($) {
             },
         ],
     });
+
+    $('.bxa-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        cssEase: 'linear',
+        speed: 6000,
+        autoplaySpeed: 0,
+        responsive: [
+            {
+                // tablet & mobile
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
 });
