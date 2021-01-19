@@ -1,12 +1,13 @@
 // Colors
 $green: #693;
+$light-green: #91e424;
 $pink: rgb(169, 54, 115);
 $black: #000;
 $white: #fff;
 
 // Font colors
 $text-base: #666;
-// $text-dark: #202020;
+$text-dark: #222;
 // $text-sub: #555;
 
 // Typography
@@ -40,13 +41,13 @@ body {
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $green;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
+    color: $light-green;
     text-decoration: none;
     outline: none;
 }
@@ -106,14 +107,14 @@ h1 {
     }
 }
 h2 {
-    // color: $text-sub;
+    color: $pink;
     font-size: 1.75rem;
     @include bp(md) {
         font-size: 3rem;
     }
 }
 h3 {
-    // color: $text-sub;
+    color: $green;
     font-size: 1.25rem;
     @include bp(md) {
         font-size: 2rem;
@@ -127,7 +128,4 @@ p, li {
 }
 ol, ul {
     padding-bottom: 2rem;
-}
-img {
-    margin-bottom: 1rem;
 }
