@@ -17,19 +17,6 @@ jQuery(document).ready(function ($) {
     }
     checkTop();
 
-    function bannerScroll() {
-        const scroll = $(window).scrollTop();
-        $('#banner > img').css({
-            transform:
-                'translate3d(-50%, -' +
-                scroll / 100 +
-                '%, 0) scale(' +
-                (100 + scroll / 100) / 100 +
-                ')',
-        });
-    }
-    bannerScroll();
-
     function animateOnScroll() {
         const windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $('.scroll').each(function () {
@@ -44,7 +31,6 @@ jQuery(document).ready(function ($) {
     animateOnScroll();
 
     $(window).on('scroll', checkTop);
-    $(window).on('scroll', bannerScroll);
     $(window).on('scroll', animateOnScroll);
 
     $('#services-slider').flexslider({
@@ -53,5 +39,24 @@ jQuery(document).ready(function ($) {
         controlNav: true,
         manualControls: '.controls li',
     });
-});
 
+    $('.carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        speed: 600,
+        autoplaySpeed: 5000,
+        responsive: [
+            {
+                // tablet & mobile
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
+});
