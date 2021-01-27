@@ -7,14 +7,16 @@ button.btn {
     letter-spacing: 2px;
     display: inline-block;
     margin: 0 auto;
-    border:solid 1px #000;
-    color: $black;
+    border:solid 1px $text-dark;
+    color: $text-dark;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     transition: all .5s ease;
     &:hover {
+        background: $text-dark;
+        color: $white;
     }
 }
 
@@ -27,120 +29,90 @@ button.btn {
     }
 }
 
+.close-overlay {
+    background:rgba(0,0,0,.06);
+}
 
+// Nav
 .snazzymenu {
-    background: $white;
+    background: rgba(255,255,255,.95);
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    .controls {
+        // max-width: 1400px;
+        max-width: 1170px;
+        margin: 0 auto;
+        .logo {
+            img {
+                width: 224px;
+            }
+        }
+    }
     a,span,svg {
-        color: #000;
+        color: $text-dark;
     }
     .menu-toggle {
         &:hover {
-            color: #000
+            color: $text-dark;
         }
-        color: #000
+        color: $text-dark;
     }
+
     &.desktop {
+        border-bottom: none;
+        &.fixed {
+            border-bottom: solid 1px rgba(0,0,0,.1);
+        }
         > ul {
-            background: $white;
+            background: rgba(255,255,255,.95);
             li {
                 &.has-sub {
                     > a {
                         &::after {
-                            border-color: $black;
+                            border-color: $text-dark;
+                            transition: all .5s ease;
                         }
                     }
                 }
                 &.active {
                     > a {
-                        color: rgba($black, .7);
+                        color: $dark-turquoise;
                         &::after {
-                            border-color: rgba($black, .7);
+                            border-color: $dark-turquoise;
                         }
                     }
                 }
             }
             a {
-                color: #000;
+                color: $text-dark;
             }
         }
         .mega-menu {
-            background: $white;
+            background: rgba(255,255,255,.95);
+            padding: 0 1rem 2rem;
+        }
+    }
+    &.mobile {
+        ul {
+            li {
+                &.has-sub {
+                    .toggle {
+                        &::after {
+                            border-color: $text-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        padding-bottom: 0;
+        li {
+            a {
+                color:$text-dark;
+            }
         }
     }
 }
-
-//Nav
-/* .stellarnav {
-    &.mobile {
-        border: solid 1px rgba(0,0,0,.2);
-        ul {
-            background:none;
-        }
-        li {
-            > .dd-toggle {
-                height: 51px;
-                i {
-                    transition:none;
-                    &::before {
-                        content: '\f078';
-                    }
-                }
-            }
-            &.open {
-                > .dd-toggle {
-                    i {
-                        transform: rotate(180deg)!important;
-                    }
-                }
-                > a {
-                    font-weight:700;
-                    text-decoration: underline;
-                } 
-            }
-            &.has-sub {
-                > ul {
-                    li {
-                        > a {
-                            &:first-of-type {
-                                padding-left: 2rem;
-                            }
-                        }
-                    } 
-                } 
-            }
-            > a {
-                border-top: solid 1px rgba(0,0,0,.08);
-            }
-        }
-        .third {
-            width: 33.3333%;
-            color: $text-base;
-            padding: 25px 15px;
-        }
-        .close-menu {
-            width: 100%;
-            color: $text-base;
-        }
-
-    }
-    &.desktop {
-        > ul {
-            > li {
-                > a {
-                    padding: 20px 18px;
-                }
-            }
-        } 
-    }
-    ul {
-        li {
-            a {
-                color: $text-base;
-                text-transform: uppercase;
-            }
-        }
-    }
-} */
 
 /* FORM */
 form {

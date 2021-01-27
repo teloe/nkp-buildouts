@@ -1,15 +1,13 @@
 // Colors
-$blue: blue;
-$green: green;
-$red: red;
-$yellow: yellow;
+$turquoise: #39d5d5;
+$dark-turquoise: #00BAB9;
 $black: #000;
 $white: #fff;
 
 // Font colors
-$text-base: #333;
-$text-dark: #202020;
-$text-sub: #555;
+$text-base: #787878;
+$text-dark: #444545;
+$text-sub: #CECECF;
 
 // Typography
 $font-root-size: 16px;
@@ -32,7 +30,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: $text-base;
+    color: $black;
     font-family: $font-stack;
     font-style: $style;
     font-weight: $regular;
@@ -42,13 +40,13 @@ body {
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $text-dark;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
+    color: $dark-turquoise;
     text-decoration: none;
     outline: none;
 }
@@ -98,7 +96,9 @@ ol {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $header-stack;
+    text-transform: uppercase;
     font-weight: 200;
+    line-height: 1.1;
 }
 h1 {
     font-style: $style;
