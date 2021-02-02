@@ -6,13 +6,15 @@ button.btn {
     display: inline-block;
     margin: 0 auto;
     border:none;
-    // color: $white;
+    color: $white;
+    background: $dark-blue;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2.5rem;
     transition: all .5s ease;
     &:hover {
+        background: $blue;
     }
 }
 
@@ -70,12 +72,12 @@ button.btn {
         }
         .third {
             width: 33.3333%;
-            color: $text-base;
+            color: $white;
             padding: 25px 15px;
         }
         .close-menu {
             width: 100%;
-            color: $text-base;
+            color: $white;
         }
 
     }
@@ -91,8 +93,11 @@ button.btn {
     ul {
         li {
             a {
-                color: $text-base;
+                color: $white;
                 text-transform: uppercase;
+                &:hover {
+                    background: $blue;
+                }
             }
         }
     }
@@ -108,15 +113,17 @@ form {
         width: 100%;
         margin: 0 0 10px;
         padding: 15px;
-        border: 1px solid $text-base;
-        background: #fff;
+        border: none;
+        border-bottom: 1px solid rgba(#fff, .6);
+        color: #fff;
+        background: none;
         transition: all .5s ease;
         &:focus {
             outline:none;
         }
     }
     textarea {
-        height: 200px;
+        height: 160px;
     }
     span.agree {
         display: inline-block;
