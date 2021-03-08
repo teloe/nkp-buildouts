@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="grid-50 tablet-50 mobile-100">
-                <a class="btn" href="">Request a consultation</a>
+                <a class="btn blue" href="">Request a consultation</a>
                 <div class="info">
                     <a href="">Shop now</a> | 
                     <a href="">Newsletter</a>
@@ -279,8 +279,11 @@
     <!-- #/main-nav -->
 
     <section id="banner">
+        <div class="mobile-bg">
+            <img class="img-resp" src="images/banner-main.jpg" alt="Doctors">
+        </div>
         <div class="grid-container grid-parent">
-            <div class="grid-50 prefix-25 tablet-100 mobile-100">
+            <div class="grid-50 prefix-50 tablet-50 tablet-prefix-50 mobile-100">
                 <img class="img-resp" src="images/banner-logo.png" alt="Cool Springs Plastic Surgery">
                 <a class="btn" href="">Meet the doctors</a>
             </div>
@@ -290,7 +293,7 @@
 
     <section id="awards">
         <div class="grid-container grid-parent">
-            <div class="grid-100">
+            <div class="grid-100 tac">
                 <h2>Highly Trusted, Board-Certified Plastic Surgeons</h2>
                 <div class="flex">
                     <a href="https://www.abplasticsurgery.org/" target="_blank"><img class="img-resp" src="images/abps.png" alt="American Board of Plastic Surgery"></a>
@@ -307,6 +310,7 @@
         <div class="mobile-bg">
             <img class="img-resp" src="images/about-bg.png" alt="Cool Springs Plastic Surgery">
         </div>
+        <img class="img-resp bg" src="images/about-bg.png" alt="Cool Springs Plastic Surgery">
         <div class="grid-container grid-parent">
             <div class="grid-50 tablet-50 mobile-100">
                 <h2>Create, Design, and Enhance</h2>
@@ -322,48 +326,48 @@
 
     <section id="procs">
         <div class="grid-container grid-parent">
-            <div class="content">
+            <div class="bg">
                 <h2>Featured Procedures</h2>
-                <div class="grid-20 tablet-20 mobile-100">
-                    <a class="proc-container" href="">
-                        <img class="img-resp" src="images/breast.jpg" alt="Breast">
-                        <div class="text">
-                            <p>Breast</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-20 tablet-20 mobile-100">
-                    <a class="proc-container" href="">
-                        <img class="img-resp" src="images/face.jpg" alt="Face">
-                        <div class="text">
-                            <p>Face</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-20 tablet-20 mobile-100">
-                    <a class="proc-container" href="">
-                        <img class="img-resp" src="images/skin.jpg" alt="Skin">
-                        <div class="text">
-                            <p>Skin</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-20 tablet-20 mobile-100">
-                    <a class="proc-container" href="">
-                        <img class="img-resp" src="images/body.jpg" alt="Body">
-                        <div class="text">
-                            <p>Body</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-20 tablet-20 mobile-100">
-                    <a class="proc-container" href="">
-                        <img class="img-resp" src="images/men.jpg" alt="Hair">
-                        <div class="text">
-                            <p>Hair</p>
-                        </div>
-                    </a>
-                </div>
+            </div>
+            <div class="grid-20 tablet-20 mobile-100">
+                <a class="proc-container" href="">
+                    <img class="img-resp" src="images/breast.jpg" alt="Breast">
+                    <div class="text">
+                        <p>Breast</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-20 tablet-20 mobile-100">
+                <a class="proc-container" href="">
+                    <img class="img-resp" src="images/face.jpg" alt="Face">
+                    <div class="text">
+                        <p>Face</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-20 tablet-20 mobile-100">
+                <a class="proc-container" href="">
+                    <img class="img-resp" src="images/skin.jpg" alt="Skin">
+                    <div class="text">
+                        <p>Skin</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-20 tablet-20 mobile-100">
+                <a class="proc-container" href="">
+                    <img class="img-resp" src="images/body.jpg" alt="Body">
+                    <div class="text">
+                        <p>Body</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-20 tablet-20 mobile-100">
+                <a class="proc-container" href="">
+                    <img class="img-resp" src="images/men.jpg" alt="Hair">
+                    <div class="text">
+                        <p>Hair</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -371,7 +375,7 @@
 
     <section id="testimonials">
         <div class="grid-container grid-parent">
-            <div class="grid-100 tac">
+            <div class="grid-80 prefix-10 talet-100 mobile-100 tac">
                 <h2>Patient Testimonials</h2>
                 <div class="testimonials-slider">
                     <ul class="slides">
@@ -392,10 +396,19 @@
 
     <section id="newsletter">
         <div class="grid-container grid-parent">
-            <div class="grid-100">
+            <div class="grid-60 prefix-20 tablet-80 tablet-prefix-10 mobile-100">
                 <div class="content">
                     <h2>Join our Newsletter</h2>
                     <h3>Monthy news &plus; specials signup</h3>
+                    <form action="/#wpcf7-f4581-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                        <div class="requestForm">
+                            <div class="grid-100"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*"></span></div>
+                            <div class="grid-100"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span></div>
+                            <div class="grid-100 tal"><button class="wpcf7-form-control wpcf7-submit btn">Subscribe</button><span class="ajax-loader"></span></div>
+                            <div class="clr"></div>
+                        </div>
+                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -406,8 +419,9 @@
         <div class="mobile-bg">
             <img class="img-resp" src="images/office.png" alt="Office">
         </div>
+        <img class="img-resp bg" src="images/office.png" alt="Office">
         <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
+            <div class="grid-50 prefix-50 tablet-50 tablet-prefix-50 mobile-100">
                 <h2>Care and Comfort</h2>
                 <h3>4 Locations | On-Site Surgery Center | 3-story Building</h3>
                 <p>Cool Springs Plastic Surgery is honored to serve our patients across 4 various locations in the surrounding Nashville area. Located out of our 3-story Brentwood office, we offer patients an excellent surgical experience with the utilization of our own state-of-the-art surgery center. With surgical staff boasting over 150 years of combined experience, our surgery center ensures a private, safe environment for each of our patients. Between our doctors and aesthetic providers, we perform over 2,500 surgical procedures and over 10,000 non-surgical treatments yearly. Through these immense resources, we are proud to offer convenience and ease to our patients throughout their entire aesthetic journey.</p>
@@ -415,49 +429,65 @@
             </div>
         </div>
     </section>
+    <!-- #/locations -->
 
-    <section id="contact">
-        <div class="grid-container grid-parent">
-            <div class="grid-50 tablet-50 mobile-100">
-                <div class="locations">
-                    <a class="btn" href="">Nashville, TN</a>
-                    <a class="btn" href="">Brentwood, TN</a>
-                    <a class="btn" href="">Mount Juliet, TN</a>
-                    <a class="btn" href="">Franklin, TN</a>
+    <section class="bottom">
+        <section id="contact">
+            <div class="grid-container grid-parent">
+                <div class="grid-50 tablet-50 mobile-100">
+                    <div class="locations">
+                        <a class="btn" href="">Nashville, TN</a>
+                        <a class="btn" href="">Brentwood, TN</a>
+                        <a class="btn" href="">Mount Juliet, TN</a>
+                        <a class="btn" href="">Franklin, TN</a>
+                    </div>
+                </div>
+                <div class="grid-50 tablet-50 mobile-100">
+                    <h2>Contact Us</h2>
+                    <h3>Schedule an appointment</h3>
+                    <form>
+                        <div class="footer-form">
+                            <div class="grid-100"><span class="wpcf7-form-control-wrap fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*"></span></div>
+                            <div class="grid-50 tablet-grid-50 mobile-grid-100"><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address*"></span></div>
+                            <div class="grid-50 tablet-grid-50 mobile-grid-100"><span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Phone (optional)"></span></div>
+                            <div class="grid-100"><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
+                            <div class="align-center">
+                                <div class="grid-50 tablet-100 agreements"><span class="wpcf7-form-control-wrap acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input type="checkbox" name="acceptance" value="1" aria-invalid="false"></span></span></span> I agree to the <a href="/terms-of-use/">Terms of Use*</a></div>
+                                <div class="grid-50 tablet-100 tar"><button class="wpcf7-form-control wpcf7-submit btn blue">Send Message</button></div>
+                            </div>
+                    </form>
                 </div>
             </div>
-            <div class="grid-50 tablet-50 mobile-100">
-                <h2>Contact Us</h2>
-                <h3>Schedule an appointment</h3>
-            </div>
-        </div>
-    </section>
+        </section>
+        <!-- #/contact -->
 
-    <footer>
-        <div class="grid-container grid-parent">
-            <div class="grid-100 tac">
-                <div class="locations">
-                    <p>Tennessee</p>
-                    <p>Nashville, Brentwood, Mount Juliet, Franklin</p>
-                </div>
-                <div class="social">
-                    <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-                <p>Copyright 2021 &copy; Cool Springs Plastic Surgery. All Rights Reserved</p>
-                <p>Design and SEO by <a href="https://www.nkpmedical.com/" target="_blank">NKP Medical</a></p>
-                <p>
-                    <a href="">Sitemap</a>
-                    <a href="">HIPPA Privacy Policy</a>
-                    <a href="">Privacy Policy</a>
+        <footer>
+            <div class="grid-container grid-parent">
+                <div class="grid-100 tac">
+                    <div class="locations">
+                        <p>Tennessee</p>
+                        <p>Nashville, Brentwood, Mount Juliet, Franklin</p>
+                    </div>
+                    <div class="social">
+                        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p>Copyright 2021 &copy; Cool Springs Plastic Surgery. All Rights Reserved</p>
+                    <p>Design and SEO by <a href="https://www.nkpmedical.com/" target="_blank">NKP Medical</a></p>
+                    <p>
+                    <a href="">Sitemap</a> | 
+                    <a href="">HIPPA Privacy Policy</a> | 
+                    <a href="">Privacy Policy</a> | 
                     <a href="">Terms &amp; Conditions</a>
-                </p>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- /footer -->
+        </footer>
+        <!-- /footer -->
+    </section>
+    <!-- ./bottom -->
 
 
     <script type="text/javascript" src="js/custom.js"></script>

@@ -5,14 +5,25 @@ button.btn {
     font-family: inherit;
     display: inline-block;
     margin: 0 auto;
-    border:none;
-    // color: $white;
+    border:solid 1px $dark-blue;
+    color: $dark-blue;
+    background: $white;
     cursor:pointer;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem 2rem;
     transition: all .5s ease;
+    &.blue {
+        background: $dark-blue;
+        color: $white;
+        &:hover {
+            background: $white;
+            color: $dark-blue;
+        }
+    }
     &:hover {
+        background: $dark-blue;
+        color: $white;
     }
 }
 
@@ -80,6 +91,7 @@ button.btn {
 
     }
     &.desktop {
+        padding: 10px 0;
         > ul {
             > li {
                 > a {
@@ -89,10 +101,21 @@ button.btn {
         } 
     }
     ul {
+        ul {
+            background-color: $white;
+            padding: 10px;
+            ul {
+                left: 210px;
+            }
+        }
         li {
             a {
                 color: $text-base;
                 text-transform: uppercase;
+                &:hover {
+                    background: $dark-blue;
+                    color: $white;
+                }
             }
         }
     }
@@ -109,11 +132,21 @@ form {
         margin: 0 0 10px;
         padding: 15px;
         border: 1px solid $text-base;
-        background: #fff;
+        background:rgba(#fff, .2);
         transition: all .5s ease;
+        color: $white;
         &:focus {
             outline:none;
         }
+    }
+    .agreements {
+        color: $white;
+        span, a {
+            color: $white;
+        }
+    }
+    .acceptance {
+        display:inline-block;
     }
     textarea {
         height: 200px;

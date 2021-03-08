@@ -1,11 +1,13 @@
 // Colors
+$blue: #8399b3;
+$dark-blue: #7D9AB7;
 $black: #000;
 $white: #fff;
 
 // Font colors
 $text-base: #333;
 $text-dark: #202020;
-$text-sub: #555;
+$text-sub: #545454;
 
 // Typography
 $font-root-size: 16px;
@@ -38,13 +40,13 @@ body {
 a,
 a:visited,
 a:link {
-    // color: $blue;
+    color: $text-sub;
     text-decoration: none;
     outline: none;
     transition: all .5s ease;
 }
 a:hover {
-    // color: rgba($blue, .6);
+    color: $dark-blue;
     text-decoration: none;
     outline: none;
 }
@@ -106,15 +108,20 @@ h1 {
 h2 {
     color: $text-sub;
     font-size: 1.75rem;
+    margin-bottom: .5rem;
     @include bp(md) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 h3 {
     color: $text-sub;
     font-size: 1.25rem;
+    font-family: $font-stack;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
     @include bp(md) {
-        font-size: 2rem;
+        // font-size: 2rem;
     }
 }
 p {
@@ -126,6 +133,8 @@ p, li {
 ol, ul {
     padding-bottom: 2rem;
 }
-img {
-    margin-bottom: 1rem;
+.mobile-bg {
+    @include bp(md) {
+        display:none;
+    }
 }
