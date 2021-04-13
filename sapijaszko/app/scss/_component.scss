@@ -1,0 +1,62 @@
+// Buttons
+a.btn,
+button.btn {
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    max-width: 230px;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    border:none;
+    border-radius: 0;
+    color: $white;
+    background: linear-gradient(to right, #C49726, #EBC672);
+    cursor:pointer;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    transition: all .5s ease;
+    &:hover {
+    }
+}
+
+// Social
+.social {
+    a {
+        display: inline-block;
+        margin: 0 .5rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* FORM */
+form {
+    input,
+    select,
+    textarea {
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        margin: 0 0 10px;
+        padding: 15px;
+        border: 1px solid;
+        background: #fff;
+        transition: all .5s ease;
+        &:focus {
+            outline:none;
+        }
+    }
+    textarea {
+        height: 200px;
+    }
+    span.agree {
+        display: inline-block;
+    }
+    ::placeholder {
+        font-style: normal;
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
