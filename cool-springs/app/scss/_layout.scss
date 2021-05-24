@@ -168,7 +168,7 @@ header {
 // }}}
 
 // #procs {{{
-#procs {
+/* #procs {
     padding: 4rem 0 6rem;
     @include bp(md) {
         padding: 6rem 0;
@@ -229,6 +229,87 @@ header {
             font-size: 1.25rem;
             text-align: center;
             padding: 0;
+        }
+    }
+} */
+#procs {
+    background: url(../images/Cool-Springs-Top-5.jpg) no-repeat center;
+    background-size: cover;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        background: rgba(0,0,0,.3);
+        position: absolute;
+        width: 100%;
+        top:0;
+        height: 100%;
+        z-index: -1;
+    }
+    @include bp(md) {
+        padding:0;
+    }
+    .grid-container {
+        max-width: 1600px;
+    }
+    .grid-20 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 15px;
+        transition: all .3s ease;
+        &:hover {
+            @include bp(md) {
+                background: rgba(#ADBBCD, .8);
+            }
+            .proc-list {
+                @include bp(md) {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        @include bp(md) {
+            padding:3rem 15px;
+        }
+        @include bp(desktop) {
+            justify-content: space-between;
+            height: 800px;
+        }
+        @include bp(xl) {
+            height: 34vw;
+        }
+    }
+    .proc-list {
+        order: 1;
+        @include bp(md) {
+            order: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease;
+        }
+        li {
+            a {
+                color: #fff;
+                text-transform: uppercase;
+                font-size:1.25rem;
+                display:inline-block;
+                padding: .25rem;
+                @include bp(md) {
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+    h2 {
+        font-family: $font-stack;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 2rem;
+        @include bp(desktop) {
+            font-size: 3rem;
         }
     }
 }
